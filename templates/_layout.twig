@@ -1,23 +1,34 @@
+{# Beyond Foundation, Basic Layout #}
+{% set slug = craft.app.request.segments|first ? craft.app.request.segments|first : 'index' %}{# auf welcher seite befinden wir uns? #}
 <!DOCTYPE html>
 <html lang="{{ currentSite.language }}"> {# switch language depending on locale #}
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ currentSite.group }}</title>
-  <link rel="stylesheet" href="/assets/css/reset.css">
-  <link rel="stylesheet" href="/assets/css/fonts.css"> 
-  <link rel="stylesheet" href="/assets/css/style.css"> 
-</head>
+		<head>
+			 {% include 'includes/head' %}
+		</head>
 
-<body>
+	<body class="{{ slug }}">
 
-{% block content %}
+		<header>
+			{% include 'includes/header' %}
+		</header>
 
-<p>If you see this, there is a malfunction in the template engine. Please contact an Administrator.</p>
+		<nav id="nav-overlay"> {# triggered by hamburger #}
+			{% include 'includes/nav' %}
+		</nav>
+		
 
-{% endblock %}
-  
-</body>
+		{% block content %}
+			<p>If you see this, there is a malfunction in the template engine. Please contact an Administrator.</p> 
+		{% endblock %}
+		  
+		<footer>
+			{% include 'includes/footer' %}
+		</footer>
+
+		<script>
+			console.log('I & I is at ' {{ slug }});
+		</script>
+	</body>
 </html>
 
