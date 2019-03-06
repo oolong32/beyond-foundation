@@ -1,4 +1,4 @@
-dateModified: 1551879291
+dateModified: 1551879383
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -43,12 +43,12 @@ sections:
         enabledByDefault: true
         hasUrls: true
         template: music-production/_entry
-        uriFormat: 'music-production-entries/{slug}'
+        uriFormat: 'music-production/{slug}'
       96f6905b-bcc3-4e74-91a8-e5458eb5e532:
         enabledByDefault: true
         hasUrls: true
         template: music-production/_entry
-        uriFormat: 'music-production-entries/{slug}'
+        uriFormat: 'music-production/{slug}'
     structure:
       maxLevels: '1'
       uid: cfc7958e-06c8-44db-b556-256f0f2a27f4
@@ -77,6 +77,31 @@ sections:
         hasUrls: true
         template: impressum
         uriFormat: imprint
+    type: single
+  ab6b1fbe-1119-4a6c-b252-4a2393b0ef78:
+    enableVersioning: true
+    entryTypes:
+      d67387df-0ee1-44be-9f63-540538e502a5:
+        handle: events
+        hasTitleField: false
+        name: Events
+        sortOrder: 1
+        titleFormat: '{section.name|raw}'
+        titleLabel: null
+    handle: events
+    name: Events
+    propagateEntries: true
+    siteSettings:
+      802d4b06-1f71-4c60-8b00-c331a21b5134:
+        enabledByDefault: true
+        hasUrls: true
+        template: events
+        uriFormat: events
+      96f6905b-bcc3-4e74-91a8-e5458eb5e532:
+        enabledByDefault: true
+        hasUrls: true
+        template: events
+        uriFormat: events
     type: single
   bdcc5b99-d47c-4d7f-a59c-2535c42dc0da:
     enableVersioning: true
@@ -173,7 +198,7 @@ sections:
         sortOrder: 1
         titleFormat: null
         titleLabel: Titel
-    handle: stories
+    handle: storyEntries
     name: 'Story Entries'
     propagateEntries: true
     siteSettings:
@@ -225,4 +250,4 @@ users:
   photoSubpath: ''
   photoVolumeUid: null
   requireEmailVerification: true
-dateApplied: '2019-03-06 14:35:24'
+dateApplied: '2019-03-06 14:38:03'

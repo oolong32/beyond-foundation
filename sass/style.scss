@@ -1,15 +1,111 @@
 @charset "UTF-8";
 
-/* Variables {{{ */
+/* Variables {{{1 */
+
+$text-color: rgb(0, 0, 0);
 $blue: rgb(165, 180, 255);
 $blue-hover: rgb(0, 40, 255);
 $gray: rgb(125, 215, 215);
-/* Variables }}} */
+$antiqua: 'serif';
+$grotesk: 'Calibre', 'Helvetica Neue', helvetica, arial, sans-serif;
 
+/* End Variables }}}1 */
+
+/* quick stuff {{{1 */
+
+#hamburger g rect { fill: $blue; }
+#hamburger:hover g rect { fill: $blue-hover; }
+
+/* end quick stuff }}}1 */
+
+/* Basic Text formatting {{{1 */
 
 body {
-  color: blue;
-  font-family: 'Calibre', 'Helvetica Neue', helvetica, arial, sans-serif;
+  color: $text-color;
+  font-family: $grotesk;
   font-size: 16px;
   line-height: 1.1;
 }
+
+/* Links {{{2 */
+
+h1 a {
+  text-decoration: none;
+  border: none;
+  background: transparent;
+  color: black;
+  // padding: 0;
+}
+h1 a:hover {
+  background: none;
+  border-bottom: none;
+}
+
+header nav ul li a { border-bottom: none; }
+header nav ul li a:hover {
+  font-weight: 900;
+  background: transparent;
+  border: none;
+}
+header nav ul li.active a { font-weight: 900; }
+
+a {
+  text-decoration: none;
+  color: $text-color;
+  border-bottom: solid $blue .1875rem;
+}
+
+a:link,
+a:visited { color: black; }
+a:hover { border-bottom: solid $blue-hover .1875rem; }
+
+a.arrow-left-before:before {
+  padding-right: 0.25rem;
+  content: url("/assets/_pic/arrow_left.svg");
+}
+a.arrow-left-after:after {
+  padding-left: 0.25rem;
+  content: url("/assets/_pic/arrow_left.svg");
+}
+a.arrow-right-before:before {
+  padding-right: 0.25rem;
+  content: url("/assets/_pic/arrow_right.svg");
+}
+a.arrow-right-after:after {
+  padding-left: 0.25rem;
+  content: url("/assets/_pic/arrow_right.svg");
+}
+
+.sign-up p a:before,
+a.mail-link:before {
+  padding-right: 0.25rem;
+  content: url("/assets/_pic/arrow_right.svg");
+}
+
+.button a { // «Buttons» sind natürlich degenerierte Links
+  background: $blue;
+  display: inline-block;
+  padding: 0 0.25rem;
+  border: none;
+}
+.button a:hover,
+.button a:active,
+.button a:focus { background: $blue-hover; }
+
+#nav-overlay ul a { border: none; }
+
+a.social-media-link {
+  text-decoration: none;
+  border: transparent;
+  border: 0;
+  border-bottom: 0 !important;
+  outline: 0;
+}
+
+// a.social-media-link:hover svg use { fill: $blue-hover; }
+a.social-media-link svg path { fill: $blue; }
+a.social-media-link:hover svg path { fill: $blue-hover; }
+
+/* End Links }}}2 */
+
+/* End Basic Text formatting }}}1 */

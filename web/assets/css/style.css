@@ -1,7 +1,101 @@
-/* Variables {{{ */
-/* Variables }}} */
+/* Variables {{{1 */
+/* End Variables }}}1 */
+/* quick stuff {{{1 */
+#hamburger g rect {
+  fill: #a5b4ff; }
+
+#hamburger:hover g rect {
+  fill: #0028ff; }
+
+/* end quick stuff }}}1 */
+/* Basic Text formatting {{{1 */
 body {
-  color: blue;
-  font-family: 'Calibre', 'Helvetica Neue', helvetica, arial, sans-serif;
+  color: black;
+  font-family: "Calibre", "Helvetica Neue", helvetica, arial, sans-serif;
   font-size: 16px;
   line-height: 1.1; }
+
+/* Links {{{2 */
+h1 a {
+  text-decoration: none;
+  border: none;
+  background: transparent;
+  color: black; }
+
+h1 a:hover {
+  background: none;
+  border-bottom: none; }
+
+header nav ul li a {
+  border-bottom: none; }
+
+header nav ul li a:hover {
+  font-weight: 900;
+  background: transparent;
+  border: none; }
+
+header nav ul li.active a {
+  font-weight: 900; }
+
+a {
+  text-decoration: none;
+  color: black;
+  border-bottom: solid #a5b4ff 0.1875rem; }
+
+a:link,
+a:visited {
+  color: black; }
+
+a:hover {
+  border-bottom: solid #0028ff 0.1875rem; }
+
+a.arrow-left-before:before {
+  padding-right: 0.25rem;
+  content: url("/assets/_pic/arrow_left.svg"); }
+
+a.arrow-left-after:after {
+  padding-left: 0.25rem;
+  content: url("/assets/_pic/arrow_left.svg"); }
+
+a.arrow-right-before:before {
+  padding-right: 0.25rem;
+  content: url("/assets/_pic/arrow_right.svg"); }
+
+a.arrow-right-after:after {
+  padding-left: 0.25rem;
+  content: url("/assets/_pic/arrow_right.svg"); }
+
+.sign-up p a:before,
+a.mail-link:before {
+  padding-right: 0.25rem;
+  content: url("/assets/_pic/arrow_right.svg"); }
+
+.button a {
+  background: #a5b4ff;
+  display: inline-block;
+  padding: 0 0.25rem;
+  border: none; }
+
+.button a:hover,
+.button a:active,
+.button a:focus {
+  background: #0028ff; }
+
+#nav-overlay ul a {
+  border: none; }
+
+a.social-media-link {
+  text-decoration: none;
+  border: transparent;
+  border: 0;
+  border-bottom: 0 !important;
+  outline: 0; }
+
+a.social-media-link svg path {
+  fill: #a5b4ff; }
+
+a.social-media-link:hover svg path {
+  fill: #0028ff; }
+
+/* End Links }}}2 */
+/* End Basic Text formatting }}}1 */
