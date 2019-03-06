@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "Calibre";
+  src: url("/assets/fonts/calibre/CalibreWeb-Regular.eot");
+  src: url("/assets/fonts/calibre/CalibreWeb-Regular.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/calibre/CalibreWeb-Regular.woff2") format("woff2"), url("../fonts/calibre/CalibreWeb-Regular.woff2") format("woff2"), url("/assets/fonts/calibre/CalibreWeb-Regular.woff") format("woff");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px; }

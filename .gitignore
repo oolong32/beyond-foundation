@@ -2,5 +2,7 @@
 /.idea
 /vendor
 .DS_Store
-.swp
+*.swp
+*.swo
+*~
 gulpfile.js
