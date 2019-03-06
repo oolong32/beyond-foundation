@@ -1,0 +1,16 @@
+@charset "UTF-8";
+@import url("./fonts.css");
+
+/* Variables {{{ */
+$blue: rgb(165, 180, 255);
+$blue-hover: rgb(0, 40, 255);
+$gray: rgb(125, 215, 215);
+/* Variables }}} */
+
+
+body {
+  color: blue;
+  font-family: 'Calibre', 'Helvetica Neue', helvetica, arial, sans-serif;
+  font-size: 100px;
+  line-height: 1;
+}
