@@ -25,6 +25,9 @@ return [
 
         // The secure key Craft will use for hashing and encrypting data
         'securityKey' => getenv('SECURITY_KEY'),
+
+        // Activate project config to sync localhost & server
+        'useProjectConfigFile' => true,
     ],
 
     // Dev environment settings
@@ -46,5 +49,7 @@ return [
     'production' => [
         // Base site URL
         'siteUrl' => null,
+        // Disable project config changes on production
+        'allowAdminChanges' => false,
     ],
 ];
