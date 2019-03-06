@@ -3,6 +3,7 @@
 /* Variables {{{1 */
 
 $text-color: rgb(0, 0, 0);
+$white: rgb(255, 255, 255);
 $blue: rgb(165, 180, 255);
 $blue-hover: rgb(0, 40, 255);
 $gray: rgb(125, 215, 215);
@@ -20,12 +21,14 @@ $grotesk: 'Calibre', 'Helvetica Neue', helvetica, arial, sans-serif;
 
 /* Basic Text formatting {{{1 */
 
-body {
+:root {
   color: $text-color;
   font-family: $grotesk;
   font-size: 16px;
   line-height: 1.1;
 }
+
+body { font-size: 1.375rem; }
 
 /* Links {{{2 */
 
@@ -109,3 +112,105 @@ a.social-media-link:hover svg path { fill: $blue-hover; }
 /* End Links }}}2 */
 
 /* End Basic Text formatting }}}1 */
+
+/* Header {{{1 */
+
+nav#nav-overlay { display: none; } // Overlay ausblenden
+
+header {
+  background: $white;
+  margin: 0; padding: 0;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2);
+  #hamburger { display: none; } // no hamburger on desktop
+  #masthead {
+    height: 28rem; /* Variable wud b nice <—————————————————————————————————————————*/
+    /* collapse-transition */
+    transition: all 0.3s ease-out;
+    /* end collapse-transition */
+    padding: 1.5rem 1.5rem 2.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    h1, p {
+      margin: 0;
+      /* collapse transition */
+      transition: all 0.3s linear;
+      /* end collapse transition */
+    }
+  }
+  nav {
+    padding: 0.5rem 2rem;
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      li a {
+        // display: inline-block;
+        text-align:center;
+      }
+      // prevent shaky text alignment on hover
+      // problem: differing width when bold
+      // https://stackoverflow.com/questions/556153/inline-elements-shifting-when-made-bold-on-hover
+      li a:after {
+        display: block;
+        content: attr(title);
+        font-weight: 900;
+        height: 0;
+        overflow: hidden;
+        visibility: hidden;
+      }
+    }
+  }
+}
+
+header.shrink { /* collapsed header */
+  #masthead {
+    min-height: 0;
+    height: 7.8rem; /* Variable wud b nice <———————————————————————————————————— */
+    width: 100%;
+    padding: 0 0 0 2rem;
+    overflow: hidden; /* children have no influence on height */
+  }
+  h1, p {
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+}
+
+header.mini { // footer visible, see JS helpers
+  #masthead { height: 0; } 
+}
+
+/* Masthead Backgrounds {{{2 */
+
+#masthead {
+  background-image: url("../_pic/masthead_backgrounds/home.png");
+  background-position: bottom right;
+  background-size: cover;
+}
+
+/* End Masthead Backgrounds }}}2 */
+
+/* End Header }}}1 */
+
+/* Main {{{1 */
+
+main {
+  width: 65rem;
+  margin: 0 auto;
+  padding: 30.5rem 0 0; 
+  h2 {
+    text-align: center;
+    margin: 0 0 1rem;
+  }
+  h2:nth-child(n+2) {
+    // margin-top: 4rem; // too much
+  }
+}
+
+
+/* End Main }}}1 */

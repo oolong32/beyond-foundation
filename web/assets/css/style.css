@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Variables {{{1 */
 /* End Variables }}}1 */
 /* quick stuff {{{1 */
@@ -9,11 +10,14 @@
 
 /* end quick stuff }}}1 */
 /* Basic Text formatting {{{1 */
-body {
+:root {
   color: black;
   font-family: "Calibre", "Helvetica Neue", helvetica, arial, sans-serif;
   font-size: 16px;
   line-height: 1.1; }
+
+body {
+  font-size: 1.375rem; }
 
 /* Links {{{2 */
 h1 a {
@@ -99,3 +103,84 @@ a.social-media-link:hover svg path {
 
 /* End Links }}}2 */
 /* End Basic Text formatting }}}1 */
+/* Header {{{1 */
+nav#nav-overlay {
+  display: none; }
+
+header {
+  background: white;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2); }
+  header #hamburger {
+    display: none; }
+  header #masthead {
+    height: 28rem;
+    /* Variable wud b nice <—————————————————————————————————————————*/
+    /* collapse-transition */
+    transition: all 0.3s ease-out;
+    /* end collapse-transition */
+    padding: 1.5rem 1.5rem 2.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start; }
+    header #masthead h1, header #masthead p {
+      margin: 0;
+      /* collapse transition */
+      transition: all 0.3s linear;
+      /* end collapse transition */ }
+  header nav {
+    padding: 0.5rem 2rem; }
+    header nav ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+      header nav ul li a {
+        text-align: center; }
+      header nav ul li a:after {
+        display: block;
+        content: attr(title);
+        font-weight: 900;
+        height: 0;
+        overflow: hidden;
+        visibility: hidden; }
+
+header.shrink {
+  /* collapsed header */ }
+  header.shrink #masthead {
+    min-height: 0;
+    height: 7.8rem;
+    /* Variable wud b nice <———————————————————————————————————— */
+    width: 100%;
+    padding: 0 0 0 2rem;
+    overflow: hidden;
+    /* children have no influence on height */ }
+  header.shrink h1, header.shrink p {
+    opacity: 0;
+    transform: translateY(-200px); }
+
+header.mini #masthead {
+  height: 0; }
+
+/* Masthead Backgrounds {{{2 */
+#masthead {
+  background-image: url("../_pic/masthead_backgrounds/home.png");
+  background-position: bottom right;
+  background-size: cover; }
+
+/* End Masthead Backgrounds }}}2 */
+/* End Header }}}1 */
+/* Main {{{1 */
+main {
+  width: 65rem;
+  margin: 0 auto;
+  padding: 30.5rem 0 0; }
+  main h2 {
+    text-align: center;
+    margin: 0 0 1rem; }
+
+/* End Main }}}1 */
