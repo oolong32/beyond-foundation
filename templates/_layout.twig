@@ -3,32 +3,34 @@
 <!DOCTYPE html>
 <html lang="{{ currentSite.language }}"> {# switch language depending on locale #}
 
-		<head>
-			 {% include 'includes/head' %}
-		</head>
+  <head>
+    {% include 'includes/head' %}
+  </head>
 
 	<body class="{{ slug }}">
 
-		<header>
-			{% include 'includes/header' %}
-		</header>
+    <header>
+      {% include 'includes/header' %}
+    </header>
 
-		<nav id="nav-overlay"> {# triggered by hamburger #}
-			{% include 'includes/nav' %}
-		</nav>
-		
+    <nav id="nav-overlay"> {# triggered by hamburger #}
+      {% include 'includes/nav' %}
+    </nav>
+      
+    <main>
+      {% block content %}
+        <p>If you see this, there is a malfunction in the template engine. Please contact an Administrator.</p> 
+      {% endblock %}
+    </main>
+        
+    <footer>
+      {% include 'includes/footer' %}
+    </footer>
 
-		{% block content %}
-			<p>If you see this, there is a malfunction in the template engine. Please contact an Administrator.</p> 
-		{% endblock %}
-		  
-		<footer>
-			{% include 'includes/footer' %}
-		</footer>
+    <script>
+      console.log('I & I is at ' {{ slug }});
+    </script>
 
-		<script>
-			console.log('I & I is at ' {{ slug }});
-		</script>
 	</body>
 </html>
 
