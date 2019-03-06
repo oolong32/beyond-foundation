@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="{{ currentSite.language }}"> {# switch language depending on locale #}
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ currentSite.group }}</title>
+  <link rel="stylesheet" href="/assets/css/reset.css">
+  <link rel="stylesheet" href="/assets/css/fonts.css"> 
+  <link rel="stylesheet" href="/assets/css/style.css"> 
+</head>
+
+<body>
+
+{% block content %}
+
+<p>If you see this, there is a malfunction in the template engine. Please contact an Administrator.</p>
+
+{% endblock %}
+  
+</body>
+</html>
+

@@ -1,0 +1,8 @@
+@import url("./fonts.css");
+/* Variables {{{ */
+/* Variables }}} */
+body {
+  color: blue;
+  font-family: 'Calibre', 'Helvetica Neue', helvetica, arial, sans-serif;
+  font-size: 100px;
+  line-height: 1; }
