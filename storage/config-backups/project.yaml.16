@@ -1,4 +1,4 @@
-dateModified: 1551879137
+dateModified: 1547647496
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -22,59 +22,9 @@ fields:
       multiline: ''
       placeholder: 'jodok, enter text!'
     translationKeyFormat: null
-    translationMethod: site
+    translationMethod: none
     type: craft\fields\PlainText
 sections:
-  bdcc5b99-d47c-4d7f-a59c-2535c42dc0da:
-    enableVersioning: true
-    entryTypes:
-      5711e561-155d-4f0f-964e-cde1f92e24c8:
-        handle: story
-        hasTitleField: false
-        name: Story
-        sortOrder: 1
-        titleFormat: '{section.name|raw}'
-        titleLabel: null
-    handle: story
-    name: Story
-    propagateEntries: true
-    siteSettings:
-      802d4b06-1f71-4c60-8b00-c331a21b5134:
-        enabledByDefault: true
-        hasUrls: true
-        template: story/index
-        uriFormat: story
-      96f6905b-bcc3-4e74-91a8-e5458eb5e532:
-        enabledByDefault: true
-        hasUrls: true
-        template: story/index
-        uriFormat: story
-    type: single
-  d1b65841-7b36-47c5-8ff8-7adc6fc614c0:
-    enableVersioning: true
-    entryTypes:
-      a09a99a8-0b73-4d21-af04-4e21b8f0322e:
-        handle: musicProduction
-        hasTitleField: false
-        name: Music-Production
-        sortOrder: 1
-        titleFormat: '{section.name|raw}'
-        titleLabel: null
-    handle: musicProduction
-    name: Music-Production
-    propagateEntries: true
-    siteSettings:
-      802d4b06-1f71-4c60-8b00-c331a21b5134:
-        enabledByDefault: true
-        hasUrls: true
-        template: music-production/index
-        uriFormat: music-production
-      96f6905b-bcc3-4e74-91a8-e5458eb5e532:
-        enabledByDefault: true
-        hasUrls: true
-        template: music-production/index
-        uriFormat: music-production
-    type: single
   e85ccc74-f7f6-4b02-ac82-2d4796ec8d84:
     enableVersioning: true
     entryTypes:
@@ -102,42 +52,14 @@ sections:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
         enabledByDefault: true
         hasUrls: true
-        template: index
+        template: ''
         uriFormat: /
       96f6905b-bcc3-4e74-91a8-e5458eb5e532:
         enabledByDefault: true
         hasUrls: true
-        template: index
+        template: index.html
         uriFormat: /
     type: single
-  f73b28ff-cd41-466b-b46b-86d1ef9b89f3:
-    enableVersioning: true
-    entryTypes:
-      e1acb6fc-7956-41e8-b2b2-d9d6b24b7324:
-        handle: story
-        hasTitleField: true
-        name: Story
-        sortOrder: 1
-        titleFormat: null
-        titleLabel: Titel
-    handle: stories
-    name: 'Story Entries'
-    propagateEntries: true
-    siteSettings:
-      802d4b06-1f71-4c60-8b00-c331a21b5134:
-        enabledByDefault: true
-        hasUrls: true
-        template: story/_entry
-        uriFormat: 'story/{slug}'
-      96f6905b-bcc3-4e74-91a8-e5458eb5e532:
-        enabledByDefault: true
-        hasUrls: true
-        template: story/_entry
-        uriFormat: 'story/{slug}'
-    structure:
-      maxLevels: '1'
-      uid: f0f8d6c6-cb64-44e5-bd17-078762727ffb
-    type: structure
 siteGroups:
   be67c42e-6aa2-4656-8f77-d2b8cd57dedd:
     name: 'Beyond Foundation'
@@ -172,4 +94,4 @@ users:
   photoSubpath: ''
   photoVolumeUid: null
   requireEmailVerification: true
-dateApplied: '2019-03-06 14:33:10'
+dateApplied: '2019-01-16 15:06:07'
