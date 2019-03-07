@@ -1,4 +1,4 @@
-dateModified: 1547647304
+dateModified: 1547647320
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -24,7 +24,7 @@ sites:
     handle: default
     hasUrls: true
     language: de
-    name: 'Beyond Foundation'
+    name: 'Beyond Foundation Deutsch'
     primary: true
     siteGroup: be67c42e-6aa2-4656-8f77-d2b8cd57dedd
     sortOrder: 1
@@ -40,4 +40,4 @@ users:
   photoSubpath: ''
   photoVolumeUid: null
   requireEmailVerification: true
-dateApplied: '2019-01-16 15:02:00'
+dateApplied: '2019-01-16 15:02:06'

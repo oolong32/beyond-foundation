@@ -1,4 +1,4 @@
-dateModified: 1547647496
+dateModified: 1547647567
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -22,7 +22,7 @@ fields:
       multiline: ''
       placeholder: 'jodok, enter text!'
     translationKeyFormat: null
-    translationMethod: none
+    translationMethod: site
     type: craft\fields\PlainText
 sections:
   e85ccc74-f7f6-4b02-ac82-2d4796ec8d84:
@@ -94,4 +94,4 @@ users:
   photoSubpath: ''
   photoVolumeUid: null
   requireEmailVerification: true
-dateApplied: '2019-01-16 15:06:07'
+dateApplied: '2019-03-06 14:25:18'
