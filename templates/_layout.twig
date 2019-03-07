@@ -9,9 +9,11 @@
 
 	<body class="{{ slug }}">
 
-  {% block content %}
+    {% block content %}
     <p>If you see this, there is a malfunction in the template engine. Please contact an Administrator.</p> 
-  {% endblock %}
+    {% endblock %}
+
+    <script src="/assets/js/helpers.js?{{ random() }}"></script>
 
 	</body>
 </html>
