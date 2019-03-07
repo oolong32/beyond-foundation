@@ -1,0 +1,34 @@
+dateModified: 1547646618
+email:
+  fromEmail: renner@belingthoenen.com
+  fromName: 'Beyond Foundation'
+  transportType: craft\mail\transportadapters\Sendmail
+fieldGroups:
+  97dfc979-5ae8-418e-9249-5b4fdebd7c80:
+    name: Common
+siteGroups:
+  be67c42e-6aa2-4656-8f77-d2b8cd57dedd:
+    name: 'Beyond Foundation'
+sites:
+  96f6905b-bcc3-4e74-91a8-e5458eb5e532:
+    baseUrl: $DEFAULT_SITE_URL
+    handle: default
+    hasUrls: true
+    language: de
+    name: 'Beyond Foundation'
+    primary: true
+    siteGroup: be67c42e-6aa2-4656-8f77-d2b8cd57dedd
+    sortOrder: 1
+system:
+  edition: solo
+  live: true
+  name: 'Beyond Foundation'
+  schemaVersion: 3.1.19
+  timeZone: Europe/Zurich
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: ''
+  photoVolumeUid: null
+  requireEmailVerification: true
+dateApplied: '2019-01-16 15:01:45'

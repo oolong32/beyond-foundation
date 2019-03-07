@@ -1,31 +1,60 @@
-dateModified: 1551974091
+dateModified: 1551975903
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
   transportType: craft\mail\transportadapters\Sendmail
 fieldGroups:
-  24cc94b5-8336-4b25-bfe7-bd9a2d26b3d0:
-    name: Tests
   97dfc979-5ae8-418e-9249-5b4fdebd7c80:
     name: Common
 fields:
-  7fda35db-7461-444b-b4d2-216945e397ce:
+  78cf4c77-636b-48a0-b594-60ab78ef26a1:
     contentColumnType: text
-    fieldGroup: 24cc94b5-8336-4b25-bfe7-bd9a2d26b3d0
-    handle: testtext
-    instructions: fubar
-    name: TestText
+    fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
+    handle: visibleText
+    instructions: ''
+    name: 'Sichtbarer Text'
     searchable: true
     settings:
-      charLimit: ''
-      code: ''
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: '1'
       columnType: text
-      initialRows: '4'
-      multiline: ''
-      placeholder: 'jodok, enter text!'
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: Standard.json
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  e6776d44-d3d9-442b-90aa-f01d11baa789:
+    contentColumnType: string
+    fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
+    handle: portrait
+    instructions: 'Foto der Person'
+    name: Portrait
+    searchable: true
+    settings:
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:9eb7856b-e672-4fbf-b4b5-9d00ee79c726'
+      defaultUploadLocationSubpath: /images/portraits
+      limit: '1'
+      localizeRelations: ''
+      restrictFiles: ''
+      selectionLabel: Bildauswahl
+      singleUploadLocationSource: 'volume:9eb7856b-e672-4fbf-b4b5-9d00ee79c726'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: ''
+      viewMode: list
     translationKeyFormat: null
     translationMethod: site
-    type: craft\fields\PlainText
+    type: craft\fields\Assets
+plugins:
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.2.2
 sections:
   0d356b0b-cd19-4e37-8a27-af0cfc0787d1:
     enableVersioning: true
@@ -320,4 +349,14 @@ users:
   photoSubpath: ''
   photoVolumeUid: null
   requireEmailVerification: true
-dateApplied: '2019-03-07 16:54:53'
+volumes:
+  9eb7856b-e672-4fbf-b4b5-9d00ee79c726:
+    handle: uploads
+    hasUrls: true
+    name: Uploads
+    settings:
+      path: assets/uploads
+    sortOrder: 1
+    type: craft\volumes\Local
+    url: assets/uploads
+dateApplied: '2019-03-07 17:25:10'

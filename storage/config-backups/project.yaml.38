@@ -1,3 +1,4 @@
+dateModified: 1547647567
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -5,16 +6,79 @@ email:
 fieldGroups:
   97dfc979-5ae8-418e-9249-5b4fdebd7c80:
     name: Common
+fields:
+  7fda35db-7461-444b-b4d2-216945e397ce:
+    contentColumnType: text
+    fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
+    handle: testtext
+    instructions: fubar
+    name: TestText
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: 'jodok, enter text!'
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\PlainText
+sections:
+  e85ccc74-f7f6-4b02-ac82-2d4796ec8d84:
+    enableVersioning: true
+    entryTypes:
+      2de8227e-af0f-417f-a6ca-b95308d172d2:
+        fieldLayouts:
+          e20452df-e993-4792-b340-567baddada2d:
+            tabs:
+              -
+                fields:
+                  7fda35db-7461-444b-b4d2-216945e397ce:
+                    required: false
+                    sortOrder: 1
+                name: Common
+                sortOrder: 1
+        handle: home
+        hasTitleField: false
+        name: Home
+        sortOrder: 1
+        titleFormat: '{section.name|raw}'
+        titleLabel: ''
+    handle: home
+    name: Home
+    propagateEntries: true
+    siteSettings:
+      802d4b06-1f71-4c60-8b00-c331a21b5134:
+        enabledByDefault: true
+        hasUrls: true
+        template: ''
+        uriFormat: /
+      96f6905b-bcc3-4e74-91a8-e5458eb5e532:
+        enabledByDefault: true
+        hasUrls: true
+        template: index.html
+        uriFormat: /
+    type: single
 siteGroups:
   be67c42e-6aa2-4656-8f77-d2b8cd57dedd:
     name: 'Beyond Foundation'
 sites:
+  802d4b06-1f71-4c60-8b00-c331a21b5134:
+    baseUrl: 'http://beyond-foundation.test/en/'
+    handle: beyondFoundation
+    hasUrls: true
+    language: en
+    name: 'Beyond Foundation English'
+    primary: true
+    siteGroup: be67c42e-6aa2-4656-8f77-d2b8cd57dedd
+    sortOrder: 1
   96f6905b-bcc3-4e74-91a8-e5458eb5e532:
     baseUrl: $DEFAULT_SITE_URL
     handle: default
     hasUrls: true
     language: de
-    name: 'Beyond Foundation'
+    name: 'Beyond Foundation Deutsch'
     primary: true
     siteGroup: be67c42e-6aa2-4656-8f77-d2b8cd57dedd
     sortOrder: 1
@@ -23,11 +87,11 @@ system:
   live: true
   name: 'Beyond Foundation'
   schemaVersion: 3.1.19
-  timeZone: America/Los_Angeles
+  timeZone: Europe/Zurich
 users:
   allowPublicRegistration: false
   defaultGroup: null
   photoSubpath: ''
   photoVolumeUid: null
   requireEmailVerification: true
-dateApplied: '2019-01-16 05:50:18'
+dateApplied: '2019-03-06 14:25:18'

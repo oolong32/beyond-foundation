@@ -1,29 +1,13 @@
-dateModified: 1551879553
+dateModified: 1551974093
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
   transportType: craft\mail\transportadapters\Sendmail
 fieldGroups:
+  24cc94b5-8336-4b25-bfe7-bd9a2d26b3d0:
+    name: Tests
   97dfc979-5ae8-418e-9249-5b4fdebd7c80:
     name: Common
-fields:
-  7fda35db-7461-444b-b4d2-216945e397ce:
-    contentColumnType: text
-    fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
-    handle: testtext
-    instructions: fubar
-    name: TestText
-    searchable: true
-    settings:
-      charLimit: ''
-      code: ''
-      columnType: text
-      initialRows: '4'
-      multiline: ''
-      placeholder: 'jodok, enter text!'
-    translationKeyFormat: null
-    translationMethod: site
-    type: craft\fields\PlainText
 sections:
   0d356b0b-cd19-4e37-8a27-af0cfc0787d1:
     enableVersioning: true
@@ -53,16 +37,41 @@ sections:
       maxLevels: '1'
       uid: cfc7958e-06c8-44db-b556-256f0f2a27f4
     type: structure
+  118bca43-1e21-4e32-b85e-34b7fdaa8f6e:
+    enableVersioning: true
+    entryTypes:
+      a21833ef-5c35-41cc-91c4-4da2ccbbd2d7:
+        handle: musicNetwork
+        hasTitleField: false
+        name: 'Music Network'
+        sortOrder: 1
+        titleFormat: '{section.name|raw}'
+        titleLabel: null
+    handle: musicNetwork
+    name: 'Music Network'
+    propagateEntries: true
+    siteSettings:
+      802d4b06-1f71-4c60-8b00-c331a21b5134:
+        enabledByDefault: true
+        hasUrls: true
+        template: music-network
+        uriFormat: music-network
+      96f6905b-bcc3-4e74-91a8-e5458eb5e532:
+        enabledByDefault: true
+        hasUrls: true
+        template: music-network
+        uriFormat: music-network
+    type: single
   a7103738-e3bc-4556-8521-a66f06bd0e0a:
     enableVersioning: true
     entryTypes:
       dd2dc2fc-e081-483b-af9d-d3bd8a2e18ff:
         handle: imprint
-        hasTitleField: false
+        hasTitleField: true
         name: Impressum
         sortOrder: 1
         titleFormat: '{section.name|raw}'
-        titleLabel: null
+        titleLabel: Titel
     handle: imprint
     name: Impressum
     propagateEntries: true
@@ -210,16 +219,6 @@ sections:
     enableVersioning: true
     entryTypes:
       2de8227e-af0f-417f-a6ca-b95308d172d2:
-        fieldLayouts:
-          e20452df-e993-4792-b340-567baddada2d:
-            tabs:
-              -
-                fields:
-                  7fda35db-7461-444b-b4d2-216945e397ce:
-                    required: false
-                    sortOrder: 1
-                name: Common
-                sortOrder: 1
         handle: home
         hasTitleField: false
         name: Home
@@ -303,4 +302,4 @@ users:
   photoSubpath: ''
   photoVolumeUid: null
   requireEmailVerification: true
-dateApplied: '2019-03-06 14:39:54'
+dateApplied: '2019-03-07 16:58:57'

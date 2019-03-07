@@ -1,4 +1,4 @@
-dateModified: 1551879065
+dateModified: 1551879354
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -25,6 +25,109 @@ fields:
     translationMethod: site
     type: craft\fields\PlainText
 sections:
+  0d356b0b-cd19-4e37-8a27-af0cfc0787d1:
+    enableVersioning: true
+    entryTypes:
+      418a70c6-4db3-4d46-bdcd-9c23f9a666a3:
+        handle: musicProductionEntries
+        hasTitleField: true
+        name: 'Music Production Entries'
+        sortOrder: 1
+        titleFormat: null
+        titleLabel: Titel
+    handle: musicProductionEntries
+    name: 'Music Production Entries'
+    propagateEntries: true
+    siteSettings:
+      802d4b06-1f71-4c60-8b00-c331a21b5134:
+        enabledByDefault: true
+        hasUrls: true
+        template: music-production/_entry
+        uriFormat: 'music-production/{slug}'
+      96f6905b-bcc3-4e74-91a8-e5458eb5e532:
+        enabledByDefault: true
+        hasUrls: true
+        template: music-production/_entry
+        uriFormat: 'music-production/{slug}'
+    structure:
+      maxLevels: '1'
+      uid: cfc7958e-06c8-44db-b556-256f0f2a27f4
+    type: structure
+  a7103738-e3bc-4556-8521-a66f06bd0e0a:
+    enableVersioning: true
+    entryTypes:
+      dd2dc2fc-e081-483b-af9d-d3bd8a2e18ff:
+        handle: imprint
+        hasTitleField: false
+        name: Impressum
+        sortOrder: 1
+        titleFormat: '{section.name|raw}'
+        titleLabel: null
+    handle: imprint
+    name: Impressum
+    propagateEntries: true
+    siteSettings:
+      802d4b06-1f71-4c60-8b00-c331a21b5134:
+        enabledByDefault: true
+        hasUrls: true
+        template: impressum
+        uriFormat: imprint
+      96f6905b-bcc3-4e74-91a8-e5458eb5e532:
+        enabledByDefault: true
+        hasUrls: true
+        template: impressum
+        uriFormat: imprint
+    type: single
+  bdcc5b99-d47c-4d7f-a59c-2535c42dc0da:
+    enableVersioning: true
+    entryTypes:
+      5711e561-155d-4f0f-964e-cde1f92e24c8:
+        handle: story
+        hasTitleField: false
+        name: Story
+        sortOrder: 1
+        titleFormat: '{section.name|raw}'
+        titleLabel: null
+    handle: story
+    name: Story
+    propagateEntries: true
+    siteSettings:
+      802d4b06-1f71-4c60-8b00-c331a21b5134:
+        enabledByDefault: true
+        hasUrls: true
+        template: story/index
+        uriFormat: story
+      96f6905b-bcc3-4e74-91a8-e5458eb5e532:
+        enabledByDefault: true
+        hasUrls: true
+        template: story/index
+        uriFormat: story
+    type: single
+  d1b65841-7b36-47c5-8ff8-7adc6fc614c0:
+    enableVersioning: true
+    entryTypes:
+      a09a99a8-0b73-4d21-af04-4e21b8f0322e:
+        handle: musicProduction
+        hasTitleField: '0'
+        name: 'Music Production'
+        sortOrder: 1
+        titleFormat: '{section.name|raw}'
+        titleLabel: null
+    handle: musicProduction
+    name: 'Music Production'
+    propagateEntries: true
+    siteSettings:
+      802d4b06-1f71-4c60-8b00-c331a21b5134:
+        enabledByDefault: true
+        hasUrls: true
+        template: music-production/index
+        uriFormat: music-production
+      96f6905b-bcc3-4e74-91a8-e5458eb5e532:
+        enabledByDefault: true
+        hasUrls: true
+        template: music-production/index
+        uriFormat: music-production
+    type: single
   e85ccc74-f7f6-4b02-ac82-2d4796ec8d84:
     enableVersioning: true
     entryTypes:
@@ -52,12 +155,12 @@ sections:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
         enabledByDefault: true
         hasUrls: true
-        template: ''
+        template: index
         uriFormat: /
       96f6905b-bcc3-4e74-91a8-e5458eb5e532:
         enabledByDefault: true
         hasUrls: true
-        template: index.html
+        template: index
         uriFormat: /
     type: single
   f73b28ff-cd41-466b-b46b-86d1ef9b89f3:
@@ -70,7 +173,7 @@ sections:
         sortOrder: 1
         titleFormat: null
         titleLabel: Titel
-    handle: stories
+    handle: storyEntries
     name: 'Story Entries'
     propagateEntries: true
     siteSettings:
@@ -122,4 +225,4 @@ users:
   photoSubpath: ''
   photoVolumeUid: null
   requireEmailVerification: true
-dateApplied: '2019-03-06 14:31:28'
+dateApplied: '2019-03-06 14:36:23'

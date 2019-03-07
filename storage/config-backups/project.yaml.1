@@ -1,4 +1,4 @@
-dateModified: 1551974772
+dateModified: 1551976011
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -7,6 +7,59 @@ fieldGroups:
   97dfc979-5ae8-418e-9249-5b4fdebd7c80:
     name: Common
 fields:
+  597d3228-4fef-4e48-b794-3e488a088311:
+    contentColumnType: text
+    fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
+    handle: quote
+    instructions: ''
+    name: Zitat
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  78cf4c77-636b-48a0-b594-60ab78ef26a1:
+    contentColumnType: text
+    fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
+    handle: visibleText
+    instructions: ''
+    name: 'Sichtbarer Text'
+    searchable: true
+    settings:
+      availableTransforms: '*'
+      availableVolumes: ''
+      cleanupHtml: '1'
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: SimpleListTable.json
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  8a5aa2a1-d84f-4bbf-9ea5-4c6b67c7c105:
+    contentColumnType: text
+    fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
+    handle: collapsedText
+    instructions: 'Nur sichtbar, wenn Akkordeon ausgeklappt.'
+    name: VerborgenerText
+    searchable: true
+    settings:
+      availableTransforms: '*'
+      availableVolumes: ''
+      cleanupHtml: '1'
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: SimpleListTable.json
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
   e6776d44-d3d9-442b-90aa-f01d11baa789:
     contentColumnType: string
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
@@ -32,6 +85,28 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Assets
+  f509c340-3109-4f76-a749-0569c3dd49ae:
+    contentColumnType: text
+    fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
+    handle: quoteAuthor
+    instructions: ''
+    name: 'Zitat Autor'
+    searchable: false
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+plugins:
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.2.2
 sections:
   0d356b0b-cd19-4e37-8a27-af0cfc0787d1:
     enableVersioning: true
@@ -336,4 +411,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-03-07 17:07:00'
+dateApplied: '2019-03-07 17:26:57'
