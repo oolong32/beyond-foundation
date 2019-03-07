@@ -1,3 +1,4 @@
+dateModified: 1547646618
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -23,11 +24,11 @@ system:
   live: true
   name: 'Beyond Foundation'
   schemaVersion: 3.1.19
-  timeZone: America/Los_Angeles
+  timeZone: Europe/Zurich
 users:
   allowPublicRegistration: false
   defaultGroup: null
   photoSubpath: ''
   photoVolumeUid: null
   requireEmailVerification: true
-dateApplied: '2019-01-16 05:50:18'
+dateApplied: '2019-01-16 15:01:45'
