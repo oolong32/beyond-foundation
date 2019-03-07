@@ -1,6 +1,31 @@
 {# Beyond Foundation, Music Production Single Entry #}
 
 {% extends "_layout" %}
+
+{# hier korrekte entry query einsetzen #}
+{% set entry = craft.entries().section('musicProductionEntries') %}
+
 {% block content %}
-	<h2>Music Production Single Entry</h2>
+
+    <header>
+      {% include 'includes/header' %}
+    </header>
+
+    <nav id="nav-overlay"> {# triggered by hamburger #}
+      {% include 'includes/nav' %}
+    </nav>
+      
+    <main>
+      <h2>{{ entry.title }}</h2>
+      <p>{{ entry.testtext }}</p>
+    </main>
+        
+    <footer>
+      {% include 'includes/footer' %}
+    </footer>
+
+    <script>
+      console.log('I & I is at {{ slug }}' );
+    </script>
+
 {% endblock %}

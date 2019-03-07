@@ -1,6 +1,30 @@
 {# Beyond Foundation, Music Network #}
 
 {% extends "_layout" %}
+
+{% set entry = craft.entries().section('musicNetwork').one() %}
+
 {% block content %}
-	<h2>Music Network</h2>
+
+    <header>
+      {% include 'includes/header' %}
+    </header>
+
+    <nav id="nav-overlay"> {# triggered by hamburger #}
+      {% include 'includes/nav' %}
+    </nav>
+      
+    <main>
+      <h2>{{ entry.title }}</h2>
+      <p>{{ entry.testtext }}</p>
+    </main>
+        
+    <footer>
+      {% include 'includes/footer' %}
+    </footer>
+
+    <script>
+      console.log('I & I is at {{ slug }}' );
+    </script>
+
 {% endblock %}

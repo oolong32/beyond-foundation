@@ -1,0 +1,24 @@
+<div id="language-switch"
+style=" position: absolute; right: 20px; top: 50px; background: deeppink; padding: 5px; font-size: 0.875rem; color: white; border-radius: 5px;"
+>
+  {% if entry|length %}
+    {% set supportedSites = entry.getSupportedSites %}
+
+    {% for siteForEntry in entry.getSupportedSites %}
+        {# get the site #}
+        {% set site = craft.app.getSites.getSiteById(siteForEntry.siteId) %}
+        {# check if it's the current site #}
+        {% if site.id == entry.siteId %}
+          <p>active site = {{ site.id }} {{ site.language }}</p>
+        {% else %}
+          {# if it's not the current site, get the entry for this site #}
+          {% set entryForOtherSite = craft.entries.id(entry.id).site(site).one() %}
+        <p>link to site with id {{ entryForOtherSite.siteId }} <a href="{{ entryForOtherSite.getUrl() }}">{{ site.language }} – {{ entryForOtherSite.title }}</a></p>
+      {% endif %}
+  {% endfor %}
+
+  {% else %}
+    <p> Entry not set!</p>
+
+  {% endif %}
+</div>

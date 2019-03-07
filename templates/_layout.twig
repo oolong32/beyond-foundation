@@ -9,27 +9,9 @@
 
 	<body class="{{ slug }}">
 
-    <header>
-      {% include 'includes/header' %}
-    </header>
-
-    <nav id="nav-overlay"> {# triggered by hamburger #}
-      {% include 'includes/nav' %}
-    </nav>
-      
-    <main>
-      {% block content %}
-        <p>If you see this, there is a malfunction in the template engine. Please contact an Administrator.</p> 
-      {% endblock %}
-    </main>
-        
-    <footer>
-      {% include 'includes/footer' %}
-    </footer>
-
-    <script>
-      console.log('I & I is at {{ slug }}' );
-    </script>
+  {% block content %}
+    <p>If you see this, there is a malfunction in the template engine. Please contact an Administrator.</p> 
+  {% endblock %}
 
 	</body>
 </html>

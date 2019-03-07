@@ -1,6 +1,30 @@
 {# Beyond Foundation, Encouragement #}
 
 {% extends "_layout" %}
+
+{% set entry = craft.entries().section('encouragement').one() %}
+
 {% block content %}
-	<h2>Encouragement</h2>
+
+    <header>
+      {% include 'includes/header' %}
+    </header>
+
+    <nav id="nav-overlay"> {# triggered by hamburger #}
+      {% include 'includes/nav' %}
+    </nav>
+      
+    <main>
+      <h2>{{ entry.title }}</h2>
+    </main>
+        
+    <footer>
+      {% include 'includes/footer' %}
+    </footer>
+
+    <script>
+      console.log('I & I is at {{ slug }}' );
+      console.log('This entry title is {{ entry.title }}' );
+    </script>
+
 {% endblock %}

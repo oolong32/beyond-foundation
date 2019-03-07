@@ -11,7 +11,8 @@
 <meta property="og:description" content="{# TODO, de/en! #}">
 {#<meta property="og:image" content="/assets/_pic/beyond.png">#}
 
-<title>{{ currentSite.group }}</title>
+<title>{{ currentSite.group }}{{ slug == 'index' ? '' : ' – ' ~ slug|split('-')|join(' ') }}</title> {# |capitalize macht nur den ersten Buchstaben des ersten Wortes gross :-( #}
+
 
 <link rel="stylesheet" href="/assets/css/reset.css">
 <link rel="stylesheet" href="/assets/css/fonts.css"> 

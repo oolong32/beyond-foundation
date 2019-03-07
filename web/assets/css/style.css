@@ -14,16 +14,24 @@
   color: black;
   font-family: "Calibre", "Helvetica Neue", helvetica, arial, sans-serif;
   font-size: 16px;
-  line-height: 1.1; }
+  line-height: 1.1;
+  font-variant-numeric: proportional-nums; }
 
+/* Body Text {{{2 */
 body {
   font-size: 1.375rem; }
 
+h2 {
+  font-size: 6.25rem; }
+
+/* End Body Text }}}2 */
+/* Text Header {{{2 */
 #masthead h1 {
   font-family: "serif";
   font-size: 6.25rem; }
 
-/* Links {{{2 */
+/* End Text Header }}}2 */
+/* Link Styless {{{2 */
 /* Basic Links {{{3 */
 a {
   text-decoration: none;
@@ -115,7 +123,7 @@ a.social-media-link:hover svg path {
   fill: #0028ff; }
 
 /* End Social Media Links }}}3 */
-/* End Links }}}2 */
+/* End Link Styless }}}2 */
 /* End Basic Text formatting }}}1 */
 /* Masthead Basic Layout {{{1 */
 #masthead {
@@ -262,3 +270,150 @@ footer {
   /* End Main }}}2 */ }
 
 /* End Breakpoint for smaller Header/Footer }}}1 */
+/* Breakpoint for Mobile {{{1 */
+@media (max-width: 600px) {
+  /* Layout Header {{{2 */
+  header nav {
+    display: none; }
+  header #masthead {
+    height: 4.75rem;
+    padding: 0.25rem 1rem; }
+    header #masthead h1 {
+      font-size: 2.45rem; }
+    header #masthead p {
+      font-size: 1rem;
+      line-height: 1.35;
+      letter-spacing: 0.175rem; }
+  header #hamburger {
+    position: absolute;
+    display: block;
+    top: 1rem;
+    right: 1rem;
+    transform: scale(0.75);
+    transform-origin: top right;
+    transition: all .3s ease-in; }
+  header #hamburger:hover {
+    transform: scale(1.1); }
+  /* End Layout Header }}}2 */
+  /* Layout Collapsed Header {{{2 */
+  header.shrink #masthead {
+    height: 4.75rem;
+    padding: 0.25rem 1rem; }
+  header.shrink h1, header.shrink p {
+    opacity: 1;
+    transform: translateY(0); }
+  /* End Layout Collapsed Header }}}2 */
+  /* Navigation Overlay {{{2 */
+  body {
+    height: 100%;
+    overflow: auto; }
+  .noScroll {
+    opacity: 0;
+    height: 0;
+    overflow: hidden; }
+  #nav-overlay {
+    overflow-y: scroll;
+    width: 100%;
+    background: white;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    /*bottom: 0;*/
+    transition: all .2s ease-in;
+    z-index: 9500;
+    display: none;
+    font-size: 1.875rem;
+    line-height: 1.5;
+    animation: foo .2s ease-in;
+    /* Menü Style {{{3 */
+    /* End Menü Style }}}3 */ }
+    #nav-overlay ul {
+      margin: 6rem 0 0;
+      padding: 0 1rem 0 1rem;
+      height: 100%;
+      justify-content: space-between;
+      display: flex;
+      flex-direction: column; }
+    #nav-overlay #social-media-buttons {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 1rem; }
+  /*
+  #nav-footer {
+    div#infos {
+      margin: 1.5rem 1rem 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 0 2rem;
+      grid-template-rows: repeat(4, 1.875rem);
+      grid-auto-flow: column;
+    }
+  }
+  #masthead {
+    height: 4.75rem;
+    padding: 0.25rem 0.5rem;
+    h1 {
+      font-size: 2.625rem;
+      font-family: $francisGradientLeft; 
+    }
+    p {
+      font-size: 0.8125rem;
+      letter-spacing: 0.125rem;
+    }
+  }
+  */
+  #nav-overlay.visible {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+  /* Navigation Overlay }}}2 */
+  /* Layout Main {{{2 */
+  main {
+    width: 100%;
+    padding: 5rem 1rem 1rem;
+    /* Main Micro Typography {{{3 */
+    /* End Main Micro Typography }}}3 */ }
+    main h2 {
+      font-size: 2.625rem;
+      line-height: 1.1;
+      text-align: left;
+      margin: 0 0 0.8125rem 0; }
+    main h2:not(:first-of-type) {
+      margin-top: 1.75rem; }
+  /* End Layout Mobile Main }}}2 */
+  /* Layout Mobile Footer {{{2 */
+  footer,
+  #overlay-footer {
+    width: 100%;
+    margin-top: 1rem; }
+    footer div#infos,
+    #overlay-footer div#infos {
+      margin: 1rem 1rem 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 0 2rem;
+      grid-template-rows: repeat(4, 2rem);
+      grid-auto-flow: column;
+      font-size: 15px; }
+    footer #masthead,
+    #overlay-footer #masthead {
+      height: 4.75rem;
+      padding: 0.25rem 0.5rem; }
+      footer #masthead h1,
+      #overlay-footer #masthead h1 {
+        font-size: 2.625rem;
+        line-height: 1;
+        margin-bottom: 0; }
+      footer #masthead p,
+      #overlay-footer #masthead p {
+        color: white;
+        font-size: 0.8125rem;
+        letter-spacing: 0.125rem; }
+  /* positioning of #overlay-footer in overlay-styles */
+  #social-media-icons svg:first-of-type {
+    margin-right: 0.5rem; }
+  /* End Layout Mobile Footer }}}2*/ }
+
+/* End Breakpoint for Mobile }}}1 */
