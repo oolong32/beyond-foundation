@@ -432,7 +432,7 @@ footer {
     font-size: 1.875rem;
     line-height: 1.5;
     // padding: 20rem 1rem 0 2rem;
-    animation: foo .2s ease-in; // bringts nicht so, weil nur in eine Richtung möglich
+    animation: overlay-animation .2s ease-in; // bringts nicht so, weil nur in eine Richtung möglich
 
     /* Menü Style {{{3 */
     ul {
@@ -543,3 +543,12 @@ footer {
 }
 
 /* End Breakpoint for Mobile }}}1 */
+
+/* Keyframes Nav-Overlay {{{1 */
+@keyframes overlay-animation {
+  from { transform: translateY(3rem); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+/* End Keyframes Nav-Overlay }}}1 */
+
+/* The End */

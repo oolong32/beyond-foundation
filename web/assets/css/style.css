@@ -326,7 +326,7 @@ footer {
     display: none;
     font-size: 1.875rem;
     line-height: 1.5;
-    animation: foo .2s ease-in;
+    animation: overlay-animation .2s ease-in;
     /* Menü Style {{{3 */
     /* End Menü Style }}}3 */ }
     #nav-overlay ul {
@@ -417,3 +417,14 @@ footer {
   /* End Layout Mobile Footer }}}2*/ }
 
 /* End Breakpoint for Mobile }}}1 */
+/* Keyframes Nav-Overlay {{{1 */
+@keyframes overlay-animation {
+  from {
+    transform: translateY(3rem);
+    opacity: 0; }
+  to {
+    transform: translateY(0);
+    opacity: 1; } }
+
+/* End Keyframes Nav-Overlay }}}1 */
+/* The End */
