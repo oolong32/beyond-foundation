@@ -1,4 +1,4 @@
-dateModified: 1551879088
+dateModified: 1547647483
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -22,54 +22,19 @@ fields:
       multiline: ''
       placeholder: 'jodok, enter text!'
     translationKeyFormat: null
-    translationMethod: site
+    translationMethod: none
     type: craft\fields\PlainText
 sections:
-  bdcc5b99-d47c-4d7f-a59c-2535c42dc0da:
-    enableVersioning: true
-    entryTypes:
-      5711e561-155d-4f0f-964e-cde1f92e24c8:
-        handle: story
-        hasTitleField: false
-        name: Story
-        sortOrder: 1
-        titleFormat: '{section.name|raw}'
-        titleLabel: null
-    handle: story
-    name: Story
-    propagateEntries: true
-    siteSettings:
-      802d4b06-1f71-4c60-8b00-c331a21b5134:
-        enabledByDefault: true
-        hasUrls: true
-        template: story/index
-        uriFormat: story
-      96f6905b-bcc3-4e74-91a8-e5458eb5e532:
-        enabledByDefault: true
-        hasUrls: true
-        template: story/index
-        uriFormat: story
-    type: single
   e85ccc74-f7f6-4b02-ac82-2d4796ec8d84:
     enableVersioning: true
     entryTypes:
       2de8227e-af0f-417f-a6ca-b95308d172d2:
-        fieldLayouts:
-          e20452df-e993-4792-b340-567baddada2d:
-            tabs:
-              -
-                fields:
-                  7fda35db-7461-444b-b4d2-216945e397ce:
-                    required: false
-                    sortOrder: 1
-                name: Common
-                sortOrder: 1
         handle: home
         hasTitleField: false
         name: Home
         sortOrder: 1
         titleFormat: '{section.name|raw}'
-        titleLabel: ''
+        titleLabel: null
     handle: home
     name: Home
     propagateEntries: true
@@ -85,34 +50,6 @@ sections:
         template: index.html
         uriFormat: /
     type: single
-  f73b28ff-cd41-466b-b46b-86d1ef9b89f3:
-    enableVersioning: true
-    entryTypes:
-      e1acb6fc-7956-41e8-b2b2-d9d6b24b7324:
-        handle: story
-        hasTitleField: true
-        name: Story
-        sortOrder: 1
-        titleFormat: null
-        titleLabel: Titel
-    handle: stories
-    name: 'Story Entries'
-    propagateEntries: true
-    siteSettings:
-      802d4b06-1f71-4c60-8b00-c331a21b5134:
-        enabledByDefault: true
-        hasUrls: true
-        template: story/_entry
-        uriFormat: 'story/{slug}'
-      96f6905b-bcc3-4e74-91a8-e5458eb5e532:
-        enabledByDefault: true
-        hasUrls: true
-        template: story/_entry
-        uriFormat: 'story/{slug}'
-    structure:
-      maxLevels: '1'
-      uid: f0f8d6c6-cb64-44e5-bd17-078762727ffb
-    type: structure
 siteGroups:
   be67c42e-6aa2-4656-8f77-d2b8cd57dedd:
     name: 'Beyond Foundation'
@@ -147,4 +84,4 @@ users:
   photoSubpath: ''
   photoVolumeUid: null
   requireEmailVerification: true
-dateApplied: '2019-03-06 14:32:05'
+dateApplied: '2019-01-16 15:04:56'

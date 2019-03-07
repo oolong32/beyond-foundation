@@ -1,15 +1,17 @@
-dateModified: 1551879323
+dateModified: 1551880052
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
   transportType: craft\mail\transportadapters\Sendmail
 fieldGroups:
+  24cc94b5-8336-4b25-bfe7-bd9a2d26b3d0:
+    name: Tests
   97dfc979-5ae8-418e-9249-5b4fdebd7c80:
     name: Common
 fields:
   7fda35db-7461-444b-b4d2-216945e397ce:
     contentColumnType: text
-    fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
+    fieldGroup: 24cc94b5-8336-4b25-bfe7-bd9a2d26b3d0
     handle: testtext
     instructions: fubar
     name: TestText
@@ -53,16 +55,41 @@ sections:
       maxLevels: '1'
       uid: cfc7958e-06c8-44db-b556-256f0f2a27f4
     type: structure
+  118bca43-1e21-4e32-b85e-34b7fdaa8f6e:
+    enableVersioning: true
+    entryTypes:
+      a21833ef-5c35-41cc-91c4-4da2ccbbd2d7:
+        handle: musicNetwork
+        hasTitleField: false
+        name: 'Music Network'
+        sortOrder: 1
+        titleFormat: '{section.name|raw}'
+        titleLabel: null
+    handle: musicNetwork
+    name: 'Music Network'
+    propagateEntries: true
+    siteSettings:
+      802d4b06-1f71-4c60-8b00-c331a21b5134:
+        enabledByDefault: true
+        hasUrls: true
+        template: music-network
+        uriFormat: music-network
+      96f6905b-bcc3-4e74-91a8-e5458eb5e532:
+        enabledByDefault: true
+        hasUrls: true
+        template: music-network
+        uriFormat: music-network
+    type: single
   a7103738-e3bc-4556-8521-a66f06bd0e0a:
     enableVersioning: true
     entryTypes:
       dd2dc2fc-e081-483b-af9d-d3bd8a2e18ff:
         handle: imprint
-        hasTitleField: false
+        hasTitleField: true
         name: Impressum
         sortOrder: 1
         titleFormat: '{section.name|raw}'
-        titleLabel: null
+        titleLabel: Titel
     handle: imprint
     name: Impressum
     propagateEntries: true
@@ -77,6 +104,59 @@ sections:
         hasUrls: true
         template: impressum
         uriFormat: imprint
+    type: single
+  a80687fd-9729-406e-ae44-7a1dc0a20692:
+    enableVersioning: true
+    entryTypes:
+      3319b0c1-466e-4758-a4f1-41b93abcd988:
+        handle: eventsEntries
+        hasTitleField: true
+        name: 'Events Entries'
+        sortOrder: 1
+        titleFormat: null
+        titleLabel: Titel
+    handle: eventsEntries
+    name: 'Events Entries'
+    propagateEntries: true
+    siteSettings:
+      802d4b06-1f71-4c60-8b00-c331a21b5134:
+        enabledByDefault: true
+        hasUrls: true
+        template: events/_entry
+        uriFormat: 'events-entries/{slug}'
+      96f6905b-bcc3-4e74-91a8-e5458eb5e532:
+        enabledByDefault: true
+        hasUrls: true
+        template: events/_entry
+        uriFormat: 'events-entries/{slug}'
+    structure:
+      maxLevels: '1'
+      uid: 26e929d4-65b6-44a0-8512-3c6e6353b6c5
+    type: structure
+  ab6b1fbe-1119-4a6c-b252-4a2393b0ef78:
+    enableVersioning: true
+    entryTypes:
+      d67387df-0ee1-44be-9f63-540538e502a5:
+        handle: events
+        hasTitleField: false
+        name: Events
+        sortOrder: 1
+        titleFormat: '{section.name|raw}'
+        titleLabel: null
+    handle: events
+    name: Events
+    propagateEntries: true
+    siteSettings:
+      802d4b06-1f71-4c60-8b00-c331a21b5134:
+        enabledByDefault: true
+        hasUrls: true
+        template: events
+        uriFormat: events
+      96f6905b-bcc3-4e74-91a8-e5458eb5e532:
+        enabledByDefault: true
+        hasUrls: true
+        template: events
+        uriFormat: events
     type: single
   bdcc5b99-d47c-4d7f-a59c-2535c42dc0da:
     enableVersioning: true
@@ -128,6 +208,31 @@ sections:
         template: music-production/index
         uriFormat: music-production
     type: single
+  e603cb37-9532-4888-aa73-d0e9137675fd:
+    enableVersioning: true
+    entryTypes:
+      1638c75d-edf9-440b-859d-d10fb865dba0:
+        handle: encouragement
+        hasTitleField: false
+        name: Encouragement
+        sortOrder: 1
+        titleFormat: '{section.name|raw}'
+        titleLabel: null
+    handle: encouragement
+    name: Encouragement
+    propagateEntries: true
+    siteSettings:
+      802d4b06-1f71-4c60-8b00-c331a21b5134:
+        enabledByDefault: true
+        hasUrls: true
+        template: encouragement
+        uriFormat: encouragement
+      96f6905b-bcc3-4e74-91a8-e5458eb5e532:
+        enabledByDefault: true
+        hasUrls: true
+        template: encouragement
+        uriFormat: encouragement
+    type: single
   e85ccc74-f7f6-4b02-ac82-2d4796ec8d84:
     enableVersioning: true
     entryTypes:
@@ -173,7 +278,7 @@ sections:
         sortOrder: 1
         titleFormat: null
         titleLabel: Titel
-    handle: stories
+    handle: storyEntries
     name: 'Story Entries'
     propagateEntries: true
     siteSettings:
@@ -225,4 +330,4 @@ users:
   photoSubpath: ''
   photoVolumeUid: null
   requireEmailVerification: true
-dateApplied: '2019-03-06 14:35:54'
+dateApplied: '2019-03-07 15:09:08'
