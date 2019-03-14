@@ -5,6 +5,7 @@
 $text-color: rgb(0, 0, 0);
 $white: rgb(255, 255, 255);
 $blue: rgb(165, 180, 255);
+$gold: linear-gradient(20deg, #CCAF82 0%, #C6AD8C 20%, #C0AB97 100%);
 $blue-hover: rgb(0, 40, 255);
 $gray: rgb(125, 215, 215);
 $antiqua: 'Freight Display';
@@ -21,14 +22,14 @@ $bold: 700;
 
 /* End Font Weights }}}2 */
 
-/* Dimensions {{{1 */
+/* Dimensions {{{2 */
 
 $maincol-desktop: 65rem; // 1040px
 $centered-col-desktop: 42.5rem; // 680px
-$alt-grid-col-prim: 42.5rem; // 680px
-$alt-grid-col-sec: 1fr;
+$alt-vid-grid-col-prim: 42.5rem; // 680px
+$alt-vid-grid-col-sec: 1fr;
 
-/* End Dimensions }}}1 */
+/* End Dimensions }}}2 */
 
 /* End Variables }}}1 */
 
@@ -249,7 +250,8 @@ a.social-media-link:hover svg path { fill: $blue-hover; }
 /* Buttons {{{1 */
 
 button.accordion-trigger {
-  background: $blue;
+  // background: $blue;
+  background: $gold;
   color: white;
   padding: 1px 10px 2px 7px;
   margin: 1rem 0;
@@ -391,15 +393,15 @@ main {
 
   section.full-width { width: 100%; }
 
-  section.alternating-grid {
+  section.alternating-video-grid {
     display: grid;
-    grid-template-columns: $alt-grid-col-prim $alt-grid-col-sec;
+    grid-template-columns: $alt-vid-grid-col-prim $alt-vid-grid-col-sec;
     grid-column-gap: 2rem;
     border: none;
     .teaser { align-self: center; }
   }
-  section.alternating-grid:nth-child(2n+1) {
-    grid-template-columns: $alt-grid-col-sec $alt-grid-col-prim;
+  section.alternating-video-grid:nth-child(2n+1) {
+    grid-template-columns: $alt-vid-grid-col-sec $alt-vid-grid-col-prim;
     div:first-child { order: 1; }
   }
 }
@@ -475,25 +477,32 @@ footer {
   }
   /* End Header & Footer }}}2 */
 
+  :root {
+    font-size: 14px; // idealerweise reicht nur diese Anpassung?
+  }
+
   /* Main {{{2 */
   main {
-    padding: 22.5rem 2rem 0;
+    // padding: 22.5rem 2rem 0;
     width: 100%;
+    padding: 0 1rem;
 
-    h2 { font-size: 5rem; }
+    // h2 { font-size: 5rem; }
 
     section#main-lead {
       min-width: 550px;
       width: 60%;
     }
 
-    section.alternating-grid {
+    section.alternating-video-grid {
       grid-template-columns: 2fr 1fr;
       grid-gap: 1rem;
+      div.fake-video { width: 100%; }
       .teaser { 
-        h3, p { font-size: 1.5rem; }
+        // h3, p { font-size: 1.5rem; }
       }
     }
+    // blockquote { font-size: 5rem; }
 
   }
   /* End Main }}}2 */
@@ -633,7 +642,7 @@ footer {
 
     section,
     section#main-lead,
-    section.alternating-grid {
+    section.alternating-video-grid {
       // should probably stay two-col-grid
       width: 100%;
       min-width: 100%;
