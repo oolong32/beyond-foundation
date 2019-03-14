@@ -35,6 +35,7 @@ $bold: 700;
 :root {
   color: $text-color;
   font-family: $grotesk;
+  font-weight: $light;
   font-size: 16px;
   line-height: 1.1;
   font-variant-numeric: proportional-nums;
@@ -59,10 +60,10 @@ h2 { // Entry Title
 #masthead h1 {
   font-family: $antiqua;
   font-size: 6.25rem;
-  font-weight: 400;
+  font-weight: $book;
   font-style: normal;
   strong {
-    font-weight: 700;
+    font-weight: $bold;
     font-style: italic;
   }
 }
@@ -108,11 +109,11 @@ h1 a:hover {
 
 header nav ul li a { border-bottom: none; }
 header nav ul li a:hover {
-  font-weight: 900;
+  font-weight: $bold;
   background: transparent;
   border: none;
 }
-header nav ul li.active a { font-weight: 900; }
+header nav ul li.active a { font-weight: $bold; }
 
 /* End Header Nav Links }}}3 */
 
@@ -244,7 +245,7 @@ header {
       li a:after {
         display: block;
         content: attr(title);
-        font-weight: 900;
+        font-weight: $bold;
         height: 0;
         overflow: hidden;
         visibility: hidden;
@@ -548,7 +549,6 @@ footer {
         color: white;
         font-size: 0.8125rem;
         letter-spacing: 0.125rem;
-        // font-weight: 500;
       }
     }
   }
