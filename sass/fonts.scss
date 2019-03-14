@@ -1,12 +1,115 @@
+/* Calibre {{{1 */
+
 @font-face {
   font-family: "Calibre";
-  src: url("/assets/fonts/calibre/CalibreWeb-Regular.eot");
-  src: url("/assets/fonts/calibre/CalibreWeb-Regular.eot?#iefix") format('embedded-opentype'),
-    url("/assets/fonts/calibre/CalibreWeb-Regular.woff2") format('woff2'),
-    url("../fonts/calibre/CalibreWeb-Regular.woff2") format('woff2'),
-    url("/assets/fonts/calibre/CalibreWeb-Regular.woff") format('woff');
+  src: url("/assets/fonts/calibre/CalibreWeb-Light.eot}");
+  src: url("/assets/fonts/calibre/CalibreWeb-Light.eot?#iefix") format("eot"),
+  url("/assets/fonts/calibre/CalibreWeb-Light.woff2") format("woff2"),
+  url("/assets/fonts/calibre/CalibreWeb-Light.woff") format("woff");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+@font-face {
+  font-family: "Calibre";
+  src: url("/assets/fonts/calibre/CalibreWeb-Regular.eot}");
+  src: url("/assets/fonts/calibre/CalibreWeb-Regular.eot?#iefix") format("eot"),
+  url("/assets/fonts/calibre/CalibreWeb-Regular.woff2") format("woff2"),
+  url("/assets/fonts/calibre/CalibreWeb-Regular.woff") format("woff");
   /* Legacy iOS */
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
 }
+
+@font-face {
+  font-family: "Calibre";
+  src: url("/assets/fonts/calibre/CalibreWeb-Medium.eot}");
+  src: url("/assets/fonts/calibre/CalibreWeb-Medium.eot?#iefix") format("eot"),
+  url("/assets/fonts/calibre/CalibreWeb-Medium.woff2") format("woff2"),
+  url("/assets/fonts/calibre/CalibreWeb-Medium.woff") format("woff");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+@font-face {
+  font-family: "Calibre";
+  src: url("/assets/fonts/calibre/CalibreWeb-Semibold.eot}");
+  src: url("/assets/fonts/calibre/CalibreWeb-Semibold.eot?#iefix") format("eot"),
+  url("/assets/fonts/calibre/CalibreWeb-Semibold.woff2") format("woff2"),
+  url("/assets/fonts/calibre/CalibreWeb-Semibold.woff") format("woff");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+@font-face {
+  font-family: "Calibre";
+  src: url("/assets/fonts/calibre/CalibreWeb-Bold.eot}");
+  src: url("/assets/fonts/calibre/CalibreWeb-Bold.eot?#iefix") format("eot"),
+  url("/assets/fonts/calibre/CalibreWeb-Bold.woff2") format("woff2"),
+  url("/assets/fonts/calibre/CalibreWeb-Bold.woff") format("woff");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+/* End Calibre }}}1 */
+
+/* Freight Display {{{1 */
+
+@font-face {
+  font-family: "Freight Display";
+  src: url("/assets/fonts/freightDisplay/freightDisplay-Book.eot}");
+  src: url("/assets/fonts/freightDisplay/freightDisplay-Book.eot?#iefix") format("eot"),
+  url("/assets/fonts/freightDisplay/freightDisplay-Book.woff2") format("woff2"),
+  url("/assets/fonts/freightDisplay/freightDisplay-Book.woff") format("woff");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+@font-face {
+  font-family: "Freight Display";
+  src: url("/assets/fonts/freightDisplay/freightDisplay-Medium.eot}");
+  src: url("/assets/fonts/freightDisplay/freightDisplay-Medium.eot?#iefix") format("eot"),
+  url("/assets/fonts/freightDisplay/freightDisplay-Medium.woff2") format("woff2"),
+  url("/assets/fonts/freightDisplay/freightDisplay-Medium.woff") format("woff");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+@font-face {
+  font-family: "Freight Display";
+  src: url("/assets/fonts/freightDisplay/freightDisplay-Medium-Italic.eot}");
+  src: url("/assets/fonts/freightDisplay/freightDisplay-Medium-Italic.eot?#iefix") format("eot"),
+  url("/assets/fonts/freightDisplay/freightDisplay-Medium-Italic.woff2") format("woff2"),
+  url("/assets/fonts/freightDisplay/freightDisplay-Medium-Italic.woff") format("woff");
+  /* Legacy iOS */
+  font-style: italic;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+@font-face {
+  font-family: "Freight Display";
+  src: url("/assets/fonts/freightDisplay/freightDisplay-Bold-Italic.eot}");
+  src: url("/assets/fonts/freightDisplay/freightDisplay-Bold-Italic.eot?#iefix") format("eot"),
+  url("/assets/fonts/freightDisplay/freightDisplay-Bold-Italic.woff2") format("woff2"),
+  url("/assets/fonts/freightDisplay/freightDisplay-Bold-Italic.woff") format("woff");
+  /* Legacy iOS */
+  font-style: italic;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+/* End Freight Display }}}1 */

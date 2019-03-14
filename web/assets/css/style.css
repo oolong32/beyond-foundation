@@ -1,5 +1,7 @@
 @charset "UTF-8";
 /* Variables {{{1 */
+/* Font Weights {{{2 */
+/* End Font Weights }}}2 */
 /* End Variables }}}1 */
 /* quick stuff {{{1 */
 #hamburger g rect {
@@ -22,7 +24,10 @@ body {
   font-size: 1.375rem; }
 
 h2 {
-  font-size: 6.25rem; }
+  font-family: "Freight Display";
+  font-weight: 500;
+  font-size: 6.25rem;
+  line-height: 1; }
 
 /* End Body Text }}}2 */
 /* Text Header {{{2 */
@@ -30,9 +35,10 @@ h2 {
   font-family: "Freight Display";
   font-size: 6.25rem;
   font-weight: 400;
-  font-style: normal strong;
-    font-style-font-weight: 700;
-    font-style-font-style: italic; }
+  font-style: normal; }
+  #masthead h1 strong {
+    font-weight: 700;
+    font-style: italic; }
 
 /* End Text Header }}}2 */
 /* Link Styless {{{2 */
