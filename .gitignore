@@ -6,3 +6,4 @@
 *.swo
 *~
 gulpfile.js
+web/assets/fonts
