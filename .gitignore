@@ -5,5 +5,5 @@
 *.swp
 *.swo
 *~
-web/assets/fonts/
+#web/assets/fonts/
 gulpfile.js
