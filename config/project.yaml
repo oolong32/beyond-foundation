@@ -1,4 +1,4 @@
-dateModified: 1552560598
+dateModified: 1552581541
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -244,25 +244,25 @@ sections:
     entryTypes:
       5711e561-155d-4f0f-964e-cde1f92e24c8:
         handle: story
-        hasTitleField: false
-        name: Story
+        hasTitleField: true
+        name: Team
         sortOrder: 1
         titleFormat: '{section.name|raw}'
-        titleLabel: null
-    handle: story
-    name: Story
+        titleLabel: Heading
+    handle: team
+    name: Team
     propagateEntries: true
     siteSettings:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
         enabledByDefault: true
         hasUrls: true
-        template: story/index
-        uriFormat: story
+        template: team/index
+        uriFormat: team
       96f6905b-bcc3-4e74-91a8-e5458eb5e532:
         enabledByDefault: true
         hasUrls: true
-        template: story/index
-        uriFormat: story
+        template: team/index
+        uriFormat: team
     type: single
   d1b65841-7b36-47c5-8ff8-7adc6fc614c0:
     enableVersioning: true

@@ -1,4 +1,4 @@
-dateModified: 1551880052
+dateModified: 1551974091
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -237,16 +237,6 @@ sections:
     enableVersioning: true
     entryTypes:
       2de8227e-af0f-417f-a6ca-b95308d172d2:
-        fieldLayouts:
-          e20452df-e993-4792-b340-567baddada2d:
-            tabs:
-              -
-                fields:
-                  7fda35db-7461-444b-b4d2-216945e397ce:
-                    required: false
-                    sortOrder: 1
-                name: Common
-                sortOrder: 1
         handle: home
         hasTitleField: false
         name: Home
@@ -330,4 +320,4 @@ users:
   photoSubpath: ''
   photoVolumeUid: null
   requireEmailVerification: true
-dateApplied: '2019-03-07 15:07:59'
+dateApplied: '2019-03-07 16:54:53'
