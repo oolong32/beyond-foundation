@@ -21,6 +21,15 @@ $bold: 700;
 
 /* End Font Weights }}}2 */
 
+/* Dimensions {{{1 */
+
+$maincol-desktop: 65rem; // 1040px
+$centered-col-desktop: 42.5rem; // 680px
+$alt-grid-col-prim: 42.5rem; // 680px
+$alt-grid-col-sec: 1fr;
+
+/* End Dimensions }}}1 */
+
 /* End Variables }}}1 */
 
 /* quick stuff {{{1 */
@@ -31,6 +40,9 @@ $bold: 700;
 /* end quick stuff }}}1 */
 
 /* Basic Text formatting {{{1 */
+//
+// no margin and padding in this section!
+//
 
 :root {
   color: $text-color;
@@ -52,6 +64,7 @@ h2 { // Entry Title
   font-weight: $medium;
   font-size: 6.25rem;
   line-height: 1;
+  text-align: center;
 }
 
 h3 {
@@ -66,16 +79,33 @@ h3 {
 
 
 p {
- hypens: auto;  
+  hypens: auto;  
+  line-height: 1.4;
 }
+
+p.video-caption { // Video Legende Home ganzspaltig
+  font-size: 0.875rem;
+}
+
+.teaser {
+  h3, p {
+    font-size: 2rem;
+    line-height: 1.1875;
+    margin: 0;
+  }
+  h3 { font-weight: $light; }
+  p { font-weight: $medium; }
+}
+
+strong, em { font-weight: $semibold; }
 
 blockquote p {
   font-family: $antiqua;
   font-weight: $medium;
   font-style: italic;
   font-size: 6.25rem;
+  line-height: 1;
   text-align: center;
-  margin: 3.125rem auto;
 }
 
 /* End Body Text }}}2 */
@@ -96,7 +126,7 @@ blockquote p {
 
 /* End Text Header }}}2 */
 
-/* Link Styless {{{2 */
+/* Link Styles {{{2 */
 
 /* Basic Links {{{3 */
 
@@ -212,9 +242,33 @@ a.social-media-link:hover svg path { fill: $blue-hover; }
 
 /* End Social Media Links }}}3 */
 
-/* End Link Styless }}}2 */
+/* End Link Styles }}}2 */
 
 /* End Basic Text formatting }}}1 */
+
+/* Buttons {{{1 */
+
+button.accordion-trigger {
+  background: $blue;
+  color: white;
+  padding: 1px 10px 2px 7px;
+  margin: 1rem 0;
+  cursor: pointer;
+  span.prefixed-plus:before { 
+    content: "+";
+    font-weight: $semibold;
+    font-size: 1.2em;
+    line-height: 0.8;
+    display: inline-block;
+    transform: translateY(2px);
+    padding-right: 0.25rem;
+  }
+}
+button.accordion-trigger:hover {
+  background: $blue-hover;
+}
+
+/* End Buttons }}}1 */
 
 /* Masthead Basic Layout {{{1 */
 
@@ -234,11 +288,11 @@ a.social-media-link:hover svg path { fill: $blue-hover; }
 
 /* End Masthead Basic Layout }}}1 */
 
-/* Other Basic Settings {{{1 */
+/* Overlay Default Settings {{{1 */
 
 nav#nav-overlay { display: none; } // Overlay ausblenden
 
-/* End Other Basic Settings }}}1 */
+/* End Overlay Default Settings }}}1 */
 
 /* Header {{{1 */
 
@@ -321,15 +375,32 @@ header.mini { // footer visible, see JS helpers
 /* Main {{{1 */
 
 main {
-  width: 65rem;
+  width: $maincol-desktop;
   margin: 3.125rem auto;
   padding: 30.5rem 0 0; 
-  h2 {
-    text-align: center;
-    margin: 0 0 3.125rem;
-  }
+
+  h2 { margin: 0 0 3.125rem; }
+
   h2:nth-child(n+2) {
     // margin-top: 4rem; // too much
+  }
+
+  section { margin: 3.125rem auto; }
+
+  section#main-lead { width: $centered-col-desktop; }
+
+  section.full-width { width: 100%; }
+
+  section.alternating-grid {
+    display: grid;
+    grid-template-columns: $alt-grid-col-prim $alt-grid-col-sec;
+    grid-column-gap: 2rem;
+    border: none;
+    .teaser { align-self: center; }
+  }
+  section.alternating-grid:nth-child(2n+1) {
+    grid-template-columns: $alt-grid-col-sec $alt-grid-col-prim;
+    div:first-child { order: 1; }
   }
 }
 
@@ -355,7 +426,8 @@ footer {
   #infos {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0.5rem 2rem 0;
 
     /* Footer Info Items */
     p { 
@@ -405,10 +477,24 @@ footer {
 
   /* Main {{{2 */
   main {
-    padding: 22.5rem 0 0;
-    h2 {
-      font-size: 5rem;
+    padding: 22.5rem 2rem 0;
+    width: 100%;
+
+    h2 { font-size: 5rem; }
+
+    section#main-lead {
+      min-width: 550px;
+      width: 60%;
     }
+
+    section.alternating-grid {
+      grid-template-columns: 2fr 1fr;
+      grid-gap: 1rem;
+      .teaser { 
+        h3, p { font-size: 1.5rem; }
+      }
+    }
+
   }
   /* End Main }}}2 */
 
@@ -545,6 +631,15 @@ footer {
     width: 100%;
     padding: 5rem 1rem 1rem;
 
+    section,
+    section#main-lead,
+    section.alternating-grid {
+      // should probably stay two-col-grid
+      width: 100%;
+      min-width: 100%;
+      display: block;
+    }
+
     /* Main Micro Typography {{{3 */
     h2 { // Seitenüberschriften
       font-size: 2.625rem;
@@ -608,5 +703,7 @@ footer {
   to { transform: translateY(0); opacity: 1; }
 }
 /* End Keyframes Nav-Overlay }}}1 */
+
+
 
 /* The End */

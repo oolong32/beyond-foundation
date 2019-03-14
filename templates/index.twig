@@ -6,22 +6,112 @@
 
 {% block content %}
 
+    <!-- Start Header -->
+
     <header>
       {% include 'includes/header' %}
     </header>
+
+    <!-- End Header -->
+
+    <!-- Start Navigation -->
 
     <nav id="nav-overlay"> {# triggered by hamburger #}
       {% include 'includes/nav' %}
     </nav>
       
+    <!-- End Navigation -->
+
+    <!-- Start Main -->
+
     <main>
+
       <h2>{{ entry.title }}</h2>
-      {# … #}
+      
+      <section id="main-lead">
+        <h3>Beyond Foundation</h3>
+        <p>Elit accusamus possimus explicabo officiis rem! Vel nam assumenda maxime cum nobis laboriosam laborum? Cupiditate esse autem magni unde quidem Adipisci laboriosam quidem tempore sed fuga in. Omnis praesentium alias.</p>
+        <button class="accordion-trigger"><span class="prefixed-plus">Mehr erfahren<span></button>
+      </section>
+      
+      <section class="full-width">
+        <div style="margin-bottom: 10px; width: 1040px; height: 585px; background: papayawhip;"></div>
+        <p class="video-caption"><strong>Foo bar baz</strong> Et consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+      </section>
+
+      <section class="alternating-grid">
+        <div class="fake-video" style="width: 100%; height: 383px; background: papayawhip"></div>
+        <div class="teaser">
+          <h3>lorem ipsum</h3>
+          <p>Amet illum veniam reiciendis incidunt tempora Impedit pariatur magni veritatis animi nesciunt.</p>
+        </div>
+      </section>
+
+      <section class="alternating-grid">
+        <div class="fake-video" style="width: 100%; height: 383px; background: papayawhip"></div>
+        <div class="teaser">
+          <h3>Amet nobis?</h3>
+          <p>Amet harum suscipit maiores distinctio perspiciatis? Ad quia qui reprehenderit provident illo?</p>
+        </div>
+      </section>
+
+      <section class="alternating-grid">
+        <div class="fake-video" style="width: 100%; height: 383px; background: papayawhip"></div>
+        <div class="teaser">
+          <h3>Dolor tempora.</h3>
+          <p>Dolor quam quam incidunt modi dolores? Quasi facere quia laboriosam adipisci mollitia. Fuga aliquam optio officiis dolores inventore! Error corporis?</p>
+        </div>
+      </section>
+
+      <section>
+        <blockquote>
+          <p>“Create music out of the core of being human.”</p>
+        </blockquote>
+      </section>
+
+
+      <section class="alternating-grid">
+        <div class="fake-video" style="width: 100%; height: 383px; background: papayawhip"></div>
+        <div class="teaser">
+          <h3>lorem ipsum</h3>
+          <p>Amet illum veniam reiciendis incidunt tempora Impedit pariatur magni veritatis animi nesciunt.</p>
+        </div>
+      </section>
+
+      <section class="alternating-grid">
+        <div class="fake-video" style="width: 100%; height: 383px; background: papayawhip"></div>
+        <div class="teaser">
+          <h3>Amet nobis?</h3>
+          <p>Amet harum suscipit maiores distinctio perspiciatis? Ad quia qui reprehenderit provident illo?</p>
+        </div>
+      </section>
+
+      <section class="alternating-grid">
+        <div class="fake-video" style="width: 100%; height: 383px; background: papayawhip"></div>
+        <div class="teaser">
+          <h3>lorem ipsum</h3>
+          <p>Amet illum veniam reiciendis incidunt tempora Impedit pariatur magni veritatis animi nesciunt.</p>
+        </div>
+      </section>
+
+      <section class="alternating-grid">
+        <div class="fake-video" style="width: 100%; height: 383px; background: papayawhip"></div>
+        <div class="teaser">
+          <h3>Amet nobis?</h3>
+          <p>Amet harum suscipit maiores distinctio perspiciatis? Ad quia qui reprehenderit provident illo?</p>
+        </div>
+      </section>
     </main>
         
+    <!-- End Main -->
+
+    <!-- Start Footer -->
+
     <footer>
       {% include 'includes/footer' %}
     </footer>
+
+    <!-- End Footer -->
 
     <script>
       console.log('I & I is at {{ slug }}' );
