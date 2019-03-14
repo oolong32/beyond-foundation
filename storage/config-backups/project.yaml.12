@@ -1,4 +1,4 @@
-dateModified: 1551974417
+dateModified: 1551974772
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -16,13 +16,13 @@ fields:
     searchable: true
     settings:
       allowedKinds: null
-      defaultUploadLocationSource: ''
-      defaultUploadLocationSubpath: ''
+      defaultUploadLocationSource: 'volume:9eb7856b-e672-4fbf-b4b5-9d00ee79c726'
+      defaultUploadLocationSubpath: /images/portraits
       limit: '1'
       localizeRelations: ''
       restrictFiles: ''
       selectionLabel: Bildauswahl
-      singleUploadLocationSource: ''
+      singleUploadLocationSource: 'volume:9eb7856b-e672-4fbf-b4b5-9d00ee79c726'
       singleUploadLocationSubpath: ''
       source: null
       sources: '*'
@@ -326,4 +326,14 @@ users:
   photoSubpath: ''
   photoVolumeUid: null
   requireEmailVerification: true
-dateApplied: '2019-03-07 17:04:58'
+volumes:
+  9eb7856b-e672-4fbf-b4b5-9d00ee79c726:
+    handle: uploads
+    hasUrls: true
+    name: Uploads
+    settings:
+      path: assets/uploads
+    sortOrder: 1
+    type: craft\volumes\Local
+    url: assets/uploads
+dateApplied: '2019-03-07 17:07:00'

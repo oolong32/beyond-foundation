@@ -1,13 +1,37 @@
-dateModified: 1551974093
+dateModified: 1551974417
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
   transportType: craft\mail\transportadapters\Sendmail
 fieldGroups:
-  24cc94b5-8336-4b25-bfe7-bd9a2d26b3d0:
-    name: Tests
   97dfc979-5ae8-418e-9249-5b4fdebd7c80:
     name: Common
+fields:
+  e6776d44-d3d9-442b-90aa-f01d11baa789:
+    contentColumnType: string
+    fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
+    handle: portrait
+    instructions: 'Foto der Person'
+    name: Portrait
+    searchable: true
+    settings:
+      allowedKinds: null
+      defaultUploadLocationSource: ''
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: ''
+      restrictFiles: ''
+      selectionLabel: Bildauswahl
+      singleUploadLocationSource: ''
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: ''
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
 sections:
   0d356b0b-cd19-4e37-8a27-af0cfc0787d1:
     enableVersioning: true
@@ -302,4 +326,4 @@ users:
   photoSubpath: ''
   photoVolumeUid: null
   requireEmailVerification: true
-dateApplied: '2019-03-07 16:58:57'
+dateApplied: '2019-03-07 17:04:58'

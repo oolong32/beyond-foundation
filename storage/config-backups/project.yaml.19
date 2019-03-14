@@ -1,4 +1,4 @@
-dateModified: 1551880052
+dateModified: 1551967678
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -25,6 +25,23 @@ fields:
       placeholder: 'jodok, enter text!'
     translationKeyFormat: null
     translationMethod: site
+    type: craft\fields\PlainText
+  dd64ceaf-ad4b-496c-acc1-81c59bcbcb74:
+    contentColumnType: text
+    fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
+    handle: testFooBar
+    instructions: ''
+    name: 'Test Foo Bar'
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
     type: craft\fields\PlainText
 sections:
   0d356b0b-cd19-4e37-8a27-af0cfc0787d1:
@@ -330,4 +347,4 @@ users:
   photoSubpath: ''
   photoVolumeUid: null
   requireEmailVerification: true
-dateApplied: '2019-03-07 15:07:59'
+dateApplied: '2019-03-07 16:54:33'

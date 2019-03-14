@@ -1,9 +1,11 @@
-dateModified: 1551879594
+dateModified: 1551880036
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
   transportType: craft\mail\transportadapters\Sendmail
 fieldGroups:
+  24cc94b5-8336-4b25-bfe7-bd9a2d26b3d0:
+    name: Tests
   97dfc979-5ae8-418e-9249-5b4fdebd7c80:
     name: Common
 fields:
@@ -83,11 +85,11 @@ sections:
     entryTypes:
       dd2dc2fc-e081-483b-af9d-d3bd8a2e18ff:
         handle: imprint
-        hasTitleField: false
+        hasTitleField: true
         name: Impressum
         sortOrder: 1
         titleFormat: '{section.name|raw}'
-        titleLabel: null
+        titleLabel: Titel
     handle: imprint
     name: Impressum
     propagateEntries: true
@@ -328,4 +330,4 @@ users:
   photoSubpath: ''
   photoVolumeUid: null
   requireEmailVerification: true
-dateApplied: '2019-03-06 14:45:37'
+dateApplied: '2019-03-06 14:47:32'

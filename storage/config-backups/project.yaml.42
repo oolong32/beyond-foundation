@@ -1,4 +1,4 @@
-dateModified: 1547647334
+dateModified: 1547647483
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -6,6 +6,50 @@ email:
 fieldGroups:
   97dfc979-5ae8-418e-9249-5b4fdebd7c80:
     name: Common
+fields:
+  7fda35db-7461-444b-b4d2-216945e397ce:
+    contentColumnType: text
+    fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
+    handle: testtext
+    instructions: fubar
+    name: TestText
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: 'jodok, enter text!'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+sections:
+  e85ccc74-f7f6-4b02-ac82-2d4796ec8d84:
+    enableVersioning: true
+    entryTypes:
+      2de8227e-af0f-417f-a6ca-b95308d172d2:
+        handle: home
+        hasTitleField: false
+        name: Home
+        sortOrder: 1
+        titleFormat: '{section.name|raw}'
+        titleLabel: null
+    handle: home
+    name: Home
+    propagateEntries: true
+    siteSettings:
+      802d4b06-1f71-4c60-8b00-c331a21b5134:
+        enabledByDefault: true
+        hasUrls: true
+        template: ''
+        uriFormat: /
+      96f6905b-bcc3-4e74-91a8-e5458eb5e532:
+        enabledByDefault: true
+        hasUrls: true
+        template: index.html
+        uriFormat: /
+    type: single
 siteGroups:
   be67c42e-6aa2-4656-8f77-d2b8cd57dedd:
     name: 'Beyond Foundation'
@@ -40,4 +84,4 @@ users:
   photoSubpath: ''
   photoVolumeUid: null
   requireEmailVerification: true
-dateApplied: '2019-01-16 15:03:50'
+dateApplied: '2019-01-16 15:04:56'
