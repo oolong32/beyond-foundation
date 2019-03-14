@@ -1,26 +1,12 @@
 {# Beyond Foundation, Navigation #}
 
-<ul>
-	{# TODO: wie muss das aussehen für de/en? #}
-	<li><a title="Story" href="/story">Story</a></li>
-	<li><a title="Music Network" href="/music-network">Music Network</a></li>
-	<li><a title="Music Production" href="/music-production">Music Production</a></li>
-	<li><a title="Encouragement" href="/encouragement">Encouragement</a></li>
-	<li><a title="Events" href="/events">Events</a></li>
-</ul>
-{#
-Seeschau Setup:
-
-(statt p kann hier slug verwendet werden!?)
 {% set p = craft.request.firstSegment %}
 
 <ul>
-  <li {% if p == "news" %}class="active"{% endif %}><a title="News" href="/news">News</a></li>
-  <li {% if p == "team" %}class="active"{% endif %}><a title="Team" href="/team">Team</a></li>
-  <li {% if p == "yoga" %}class="active"{% endif %}><a title="Yoga" href="/yoga">Yoga</a></li>
-  <li {% if p == "music-and-voice" %}class="active"{% endif %}><a title="Music and Voice" href="/music-and-voice">Music & Voice</a></li>
-  <li {% if p == "workshops" %}class="active"{% endif %}><a title="Workshops" href="/workshops">Workshops</a></li>
-  <li {% if p == "calendar" %}class="active"{% endif %}><a title="Calendar" href="/calendar">Calendar</a></li>
-  <li {% if p == "info" %}class="active"{% endif %}><a title="Info" href="/info">Info</a></li>
+	{# TODO: wie muss das aussehen für de/en? #}
+	<li class="{{ slug == 'story' ? 'active' : '' }}"><a title="Story" href="/story">Story</a></li>
+	<li class="{{ slug == 'music-network' ? 'active' : '' }}"><a title="Music Network" href="/music-network">Music Network</a></li>
+	<li class="{{ slug == 'music-production' ? 'active' : '' }}"><a title="Music Production" href="/music-production">Music Production</a></li>
+	<li class="{{ slug == 'encouragement' ? 'active' : '' }}"><a title="Encouragement" href="/encouragement">Encouragement</a></li>
+	<li class="{{ slug == 'events' ? 'active' : '' }}"><a title="Events" href="/events">Events</a></li>
 </ul>
-#}

@@ -52,6 +52,16 @@ h2 { // Entry Title
   line-height: 1;
 }
 
+h3 {
+  font-family: $grotesk;
+  font-weight: $medium;
+  font-size: 2rem;
+  line-height: 1.1875;
+}
+
+p {
+  
+}
 
 /* End Body Text }}}2 */
 
@@ -275,7 +285,7 @@ header {
 header.shrink { /* collapsed header */
   #masthead {
     min-height: 0;
-    height: 7.8rem; /* Variable wud b nice <———————————————————————————————————— */
+    height: 7.8rem;
     width: 100%;
     padding: 0 0 0 2rem;
     overflow: hidden; /* children have no influence on height */
@@ -296,11 +306,11 @@ header.mini { // footer visible, see JS helpers
 
 main {
   width: 65rem;
-  margin: 0 auto;
+  margin: 3.125rem auto;
   padding: 30.5rem 0 0; 
   h2 {
     text-align: center;
-    margin: 0 0 1rem;
+    margin: 0 0 3.125rem;
   }
   h2:nth-child(n+2) {
     // margin-top: 4rem; // too much
