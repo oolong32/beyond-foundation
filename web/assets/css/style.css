@@ -15,6 +15,7 @@
 :root {
   color: black;
   font-family: "Calibre", "Helvetica Neue", helvetica, arial, sans-serif;
+  font-weight: 300;
   font-size: 16px;
   line-height: 1.1;
   font-variant-numeric: proportional-nums; }
@@ -74,12 +75,20 @@ header nav ul li a {
   border-bottom: none; }
 
 header nav ul li a:hover {
-  font-weight: 900;
+  font-weight: 700;
   background: transparent;
   border: none; }
 
+header nav ul li a::after {
+  display: block;
+  content: attr(title);
+  font-weight: 700;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden; }
+
 header nav ul li.active a {
-  font-weight: 900; }
+  font-weight: 700; }
 
 /* End Header Nav Links }}}3 */
 /* Arrow Links {{{3 */
@@ -186,7 +195,7 @@ header {
       header nav ul li a:after {
         display: block;
         content: attr(title);
-        font-weight: 900;
+        font-weight: 700;
         height: 0;
         overflow: hidden;
         visibility: hidden; }

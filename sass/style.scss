@@ -108,11 +108,23 @@ h1 a:hover {
 /* Header Nav Links {{{3 */
 
 header nav ul li a { border-bottom: none; }
+
 header nav ul li a:hover {
   font-weight: $bold;
   background: transparent;
   border: none;
 }
+
+header nav ul li a::after {
+  // prevent jumping on hover
+  display: block;
+  content: attr(title); // defines dimension of element
+  font-weight: $bold;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
 header nav ul li.active a { font-weight: $bold; }
 
 /* End Header Nav Links }}}3 */
