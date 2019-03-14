@@ -45,6 +45,12 @@ h2 { // Entry Title
 #masthead h1 {
   font-family: $antiqua;
   font-size: 6.25rem;
+  font-weight: 400;
+  font-style: normal
+  strong {
+    font-weight: 700;
+    font-style: italic;
+  }
 }
 
 /* End Text Header }}}2 */
