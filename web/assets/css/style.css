@@ -24,6 +24,7 @@
 body {
   font-size: 1.375rem; }
 
+/* Body Headings {{{3 */
 h2 {
   font-family: "Freight Display";
   font-weight: 500;
@@ -34,13 +35,27 @@ h3 {
   font-family: "Calibre", "Helvetica Neue", helvetica, arial, sans-serif;
   font-weight: 500;
   font-size: 2rem;
-  line-height: 1.1875; }
+  line-height: 1.1875;
+  margin-bottom: 1.25rem; }
+
+/* End Body Headings }}}3 */
+p {
+  hypens: auto; }
+
+blockquote p {
+  font-family: "Freight Display";
+  font-weight: 500;
+  font-style: italic;
+  font-size: 6.25rem;
+  text-align: center;
+  margin: 3.125rem auto; }
 
 /* End Body Text }}}2 */
 /* Text Header {{{2 */
 #masthead h1 {
   font-family: "Freight Display";
   font-size: 6.25rem;
+  line-height: .75;
   font-weight: 400;
   font-style: normal; }
   #masthead h1 strong {
