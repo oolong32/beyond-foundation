@@ -2,7 +2,7 @@
 
 {% extends "_layout" %}
 
-{% set entry = craft.entries().section('imprint').one() %}
+{% set entry = craft.entries().section('impressum').one() %}
 
 {% block content %}
 
@@ -15,7 +15,7 @@
     </nav>
       
     <main>
-      <h2>{{ entry.title }}</h2>
+      <h2>{{ entry.pageHeading }}</h2>
     </main>
         
     <footer>

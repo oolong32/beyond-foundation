@@ -1,18 +1,117 @@
-dateModified: 1551879190
+dateModified: 1552992470
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
   transportType: craft\mail\transportadapters\Sendmail
 fieldGroups:
+  85d8c0e7-6a43-4691-8d57-0ea516983de7:
+    name: 'Music Production Entries'
   97dfc979-5ae8-418e-9249-5b4fdebd7c80:
     name: Common
 fields:
-  7fda35db-7461-444b-b4d2-216945e397ce:
+  3f013fdf-9050-4d51-b818-050c8a105e6f:
+    contentColumnType: string
+    fieldGroup: 85d8c0e7-6a43-4691-8d57-0ea516983de7
+    handle: coverImage
+    instructions: ''
+    name: Cover-Image
+    searchable: false
+    settings:
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:9eb7856b-e672-4fbf-b4b5-9d00ee79c726'
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: ''
+      restrictFiles: '1'
+      selectionLabel: 'Bild auswählen'
+      singleUploadLocationSource: 'volume:9eb7856b-e672-4fbf-b4b5-9d00ee79c726'
+      singleUploadLocationSubpath: images/music-production/cover-images
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: '1'
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  597d3228-4fef-4e48-b794-3e488a088311:
     contentColumnType: text
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
-    handle: testtext
-    instructions: fubar
-    name: TestText
+    handle: quote
+    instructions: ''
+    name: Zitat
+    searchable: false
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  63060068-23fd-4091-9e13-96d982008822:
+    contentColumnType: text
+    fieldGroup: 85d8c0e7-6a43-4691-8d57-0ea516983de7
+    handle: lead
+    instructions: 'Kurzer Beschrieb der Produktion in einem Absatz.'
+    name: Lead
+    searchable: true
+    settings:
+      availableTransforms: '*'
+      availableVolumes: ''
+      cleanupHtml: '1'
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: Simple.json
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  78cf4c77-636b-48a0-b594-60ab78ef26a1:
+    contentColumnType: text
+    fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
+    handle: visibleText
+    instructions: ''
+    name: 'Sichtbarer Text'
+    searchable: true
+    settings:
+      availableTransforms: '*'
+      availableVolumes: ''
+      cleanupHtml: '1'
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: SimpleListTable.json
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  8a5aa2a1-d84f-4bbf-9ea5-4c6b67c7c105:
+    contentColumnType: text
+    fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
+    handle: collapsedText
+    instructions: 'Nur sichtbar, wenn Akkordeon ausgeklappt.'
+    name: VerborgenerText
+    searchable: true
+    settings:
+      availableTransforms: '*'
+      availableVolumes: ''
+      cleanupHtml: '1'
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: SimpleListTable.json
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  b729c087-ed9f-4371-8cf0-48e6ef2d9e6a:
+    contentColumnType: text
+    fieldGroup: 85d8c0e7-6a43-4691-8d57-0ea516983de7
+    handle: leadTitle
+    instructions: 'Überschrift über dem Lead'
+    name: 'Lead Title'
     searchable: true
     settings:
       charLimit: ''
@@ -20,21 +119,128 @@ fields:
       columnType: text
       initialRows: '4'
       multiline: ''
-      placeholder: 'jodok, enter text!'
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  e6776d44-d3d9-442b-90aa-f01d11baa789:
+    contentColumnType: string
+    fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
+    handle: portrait
+    instructions: 'Foto der Person, quadratisch.'
+    name: Portrait
+    searchable: true
+    settings:
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:9eb7856b-e672-4fbf-b4b5-9d00ee79c726'
+      defaultUploadLocationSubpath: /images/portraits
+      limit: '1'
+      localizeRelations: ''
+      restrictFiles: ''
+      selectionLabel: Bildauswahl
+      singleUploadLocationSource: 'volume:9eb7856b-e672-4fbf-b4b5-9d00ee79c726'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: ''
+      viewMode: list
     translationKeyFormat: null
     translationMethod: site
+    type: craft\fields\Assets
+  f509c340-3109-4f76-a749-0569c3dd49ae:
+    contentColumnType: text
+    fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
+    handle: quoteAuthor
+    instructions: ''
+    name: 'Zitat Autor'
+    searchable: false
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
     type: craft\fields\PlainText
+plugins:
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.2.2
 sections:
+  08de450d-3199-4c3b-9b6c-9a900c9ab5d7:
+    enableVersioning: true
+    entryTypes:
+      19b86539-461f-44b2-b733-0d4d3f387873:
+        fieldLayouts:
+          42aec16e-e045-4d2e-a9c2-9fa2ba6bc145:
+            tabs:
+              -
+                fields:
+                  78cf4c77-636b-48a0-b594-60ab78ef26a1:
+                    required: false
+                    sortOrder: 2
+                  8a5aa2a1-d84f-4bbf-9ea5-4c6b67c7c105:
+                    required: false
+                    sortOrder: 3
+                  e6776d44-d3d9-442b-90aa-f01d11baa789:
+                    required: false
+                    sortOrder: 1
+                name: Common
+                sortOrder: 1
+        handle: artitstsEntries
+        hasTitleField: true
+        name: 'Artitsts Entries'
+        sortOrder: 1
+        titleFormat: ''
+        titleLabel: Name
+    handle: artitstsEntries
+    name: 'Artitsts Entries'
+    propagateEntries: false
+    siteSettings:
+      802d4b06-1f71-4c60-8b00-c331a21b5134:
+        enabledByDefault: true
+        hasUrls: false
+        template: null
+        uriFormat: null
+      96f6905b-bcc3-4e74-91a8-e5458eb5e532:
+        enabledByDefault: true
+        hasUrls: false
+        template: null
+        uriFormat: null
+    structure:
+      maxLevels: '1'
+      uid: 26a3cb7a-6849-4b74-afb6-aaa515e3d2cd
+    type: structure
   0d356b0b-cd19-4e37-8a27-af0cfc0787d1:
     enableVersioning: true
     entryTypes:
       418a70c6-4db3-4d46-bdcd-9c23f9a666a3:
+        fieldLayouts:
+          807115de-9e0c-43da-a681-8e61502c9185:
+            tabs:
+              -
+                fields:
+                  3f013fdf-9050-4d51-b818-050c8a105e6f:
+                    required: false
+                    sortOrder: 1
+                  63060068-23fd-4091-9e13-96d982008822:
+                    required: false
+                    sortOrder: 2
+                  b729c087-ed9f-4371-8cf0-48e6ef2d9e6a:
+                    required: false
+                    sortOrder: 3
+                name: 'Music Production'
+                sortOrder: 1
         handle: musicProductionEntries
         hasTitleField: true
         name: 'Music Production Entries'
         sortOrder: 1
-        titleFormat: null
-        titleLabel: Titel
+        titleFormat: ''
+        titleLabel: 'Album Title'
     handle: musicProductionEntries
     name: 'Music Production Entries'
     propagateEntries: true
@@ -43,53 +249,156 @@ sections:
         enabledByDefault: true
         hasUrls: true
         template: music-production/_entry
-        uriFormat: 'music-production-entries/{slug}'
+        uriFormat: 'music-production/{slug}'
       96f6905b-bcc3-4e74-91a8-e5458eb5e532:
         enabledByDefault: true
         hasUrls: true
         template: music-production/_entry
-        uriFormat: 'music-production-entries/{slug}'
+        uriFormat: 'music-production/{slug}'
     structure:
       maxLevels: '1'
       uid: cfc7958e-06c8-44db-b556-256f0f2a27f4
     type: structure
-  bdcc5b99-d47c-4d7f-a59c-2535c42dc0da:
+  118bca43-1e21-4e32-b85e-34b7fdaa8f6e:
     enableVersioning: true
     entryTypes:
-      5711e561-155d-4f0f-964e-cde1f92e24c8:
-        handle: story
+      a21833ef-5c35-41cc-91c4-4da2ccbbd2d7:
+        handle: musicNetwork
         hasTitleField: false
-        name: Story
+        name: 'Music Network'
         sortOrder: 1
         titleFormat: '{section.name|raw}'
         titleLabel: null
-    handle: story
-    name: Story
+    handle: musicNetwork
+    name: 'Music Network'
     propagateEntries: true
     siteSettings:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
         enabledByDefault: true
         hasUrls: true
-        template: story/index
-        uriFormat: story
+        template: music-network
+        uriFormat: music-network
       96f6905b-bcc3-4e74-91a8-e5458eb5e532:
         enabledByDefault: true
         hasUrls: true
-        template: story/index
-        uriFormat: story
+        template: music-network
+        uriFormat: music-network
+    type: single
+  a7103738-e3bc-4556-8521-a66f06bd0e0a:
+    enableVersioning: true
+    entryTypes:
+      dd2dc2fc-e081-483b-af9d-d3bd8a2e18ff:
+        handle: imprint
+        hasTitleField: true
+        name: Impressum
+        sortOrder: 1
+        titleFormat: '{section.name|raw}'
+        titleLabel: Titel
+    handle: imprint
+    name: Impressum
+    propagateEntries: true
+    siteSettings:
+      802d4b06-1f71-4c60-8b00-c331a21b5134:
+        enabledByDefault: true
+        hasUrls: true
+        template: impressum
+        uriFormat: imprint
+      96f6905b-bcc3-4e74-91a8-e5458eb5e532:
+        enabledByDefault: true
+        hasUrls: true
+        template: impressum
+        uriFormat: imprint
+    type: single
+  a80687fd-9729-406e-ae44-7a1dc0a20692:
+    enableVersioning: true
+    entryTypes:
+      3319b0c1-466e-4758-a4f1-41b93abcd988:
+        handle: eventsEntries
+        hasTitleField: true
+        name: 'Events Entries'
+        sortOrder: 1
+        titleFormat: null
+        titleLabel: Titel
+    handle: eventsEntries
+    name: 'Events Entries'
+    propagateEntries: true
+    siteSettings:
+      802d4b06-1f71-4c60-8b00-c331a21b5134:
+        enabledByDefault: true
+        hasUrls: true
+        template: events/_entry
+        uriFormat: 'events-entries/{slug}'
+      96f6905b-bcc3-4e74-91a8-e5458eb5e532:
+        enabledByDefault: true
+        hasUrls: true
+        template: events/_entry
+        uriFormat: 'events-entries/{slug}'
+    structure:
+      maxLevels: '1'
+      uid: 26e929d4-65b6-44a0-8512-3c6e6353b6c5
+    type: structure
+  ab6b1fbe-1119-4a6c-b252-4a2393b0ef78:
+    enableVersioning: true
+    entryTypes:
+      d67387df-0ee1-44be-9f63-540538e502a5:
+        handle: events
+        hasTitleField: '0'
+        name: 'Events Overview'
+        sortOrder: 1
+        titleFormat: '{section.name|raw}'
+        titleLabel: null
+    handle: events
+    name: 'Events Overview'
+    propagateEntries: true
+    siteSettings:
+      802d4b06-1f71-4c60-8b00-c331a21b5134:
+        enabledByDefault: true
+        hasUrls: true
+        template: events
+        uriFormat: events
+      96f6905b-bcc3-4e74-91a8-e5458eb5e532:
+        enabledByDefault: true
+        hasUrls: true
+        template: events
+        uriFormat: events
+    type: single
+  bdcc5b99-d47c-4d7f-a59c-2535c42dc0da:
+    enableVersioning: true
+    entryTypes:
+      5711e561-155d-4f0f-964e-cde1f92e24c8:
+        handle: story
+        hasTitleField: true
+        name: Team
+        sortOrder: 1
+        titleFormat: '{section.name|raw}'
+        titleLabel: Heading
+    handle: team
+    name: Team
+    propagateEntries: true
+    siteSettings:
+      802d4b06-1f71-4c60-8b00-c331a21b5134:
+        enabledByDefault: true
+        hasUrls: true
+        template: team/index
+        uriFormat: team
+      96f6905b-bcc3-4e74-91a8-e5458eb5e532:
+        enabledByDefault: true
+        hasUrls: true
+        template: team/index
+        uriFormat: team
     type: single
   d1b65841-7b36-47c5-8ff8-7adc6fc614c0:
     enableVersioning: true
     entryTypes:
       a09a99a8-0b73-4d21-af04-4e21b8f0322e:
         handle: musicProduction
-        hasTitleField: false
-        name: Music-Production
+        hasTitleField: '0'
+        name: 'Music Production Overview'
         sortOrder: 1
         titleFormat: '{section.name|raw}'
         titleLabel: null
     handle: musicProduction
-    name: Music-Production
+    name: 'Music Production Overview'
     propagateEntries: true
     siteSettings:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
@@ -103,26 +412,41 @@ sections:
         template: music-production/index
         uriFormat: music-production
     type: single
+  e603cb37-9532-4888-aa73-d0e9137675fd:
+    enableVersioning: true
+    entryTypes:
+      1638c75d-edf9-440b-859d-d10fb865dba0:
+        handle: encouragement
+        hasTitleField: false
+        name: Encouragement
+        sortOrder: 1
+        titleFormat: '{section.name|raw}'
+        titleLabel: null
+    handle: encouragement
+    name: Encouragement
+    propagateEntries: true
+    siteSettings:
+      802d4b06-1f71-4c60-8b00-c331a21b5134:
+        enabledByDefault: true
+        hasUrls: true
+        template: encouragement
+        uriFormat: encouragement
+      96f6905b-bcc3-4e74-91a8-e5458eb5e532:
+        enabledByDefault: true
+        hasUrls: true
+        template: encouragement
+        uriFormat: encouragement
+    type: single
   e85ccc74-f7f6-4b02-ac82-2d4796ec8d84:
     enableVersioning: true
     entryTypes:
       2de8227e-af0f-417f-a6ca-b95308d172d2:
-        fieldLayouts:
-          e20452df-e993-4792-b340-567baddada2d:
-            tabs:
-              -
-                fields:
-                  7fda35db-7461-444b-b4d2-216945e397ce:
-                    required: false
-                    sortOrder: 1
-                name: Common
-                sortOrder: 1
         handle: home
-        hasTitleField: false
+        hasTitleField: true
         name: Home
         sortOrder: 1
         titleFormat: '{section.name|raw}'
-        titleLabel: ''
+        titleLabel: Heading
     handle: home
     name: Home
     propagateEntries: true
@@ -142,13 +466,35 @@ sections:
     enableVersioning: true
     entryTypes:
       e1acb6fc-7956-41e8-b2b2-d9d6b24b7324:
-        handle: story
+        fieldLayouts:
+          2b0e5516-52cb-4643-9cf4-5d0b2181d34c:
+            tabs:
+              -
+                fields:
+                  597d3228-4fef-4e48-b794-3e488a088311:
+                    required: false
+                    sortOrder: 2
+                  78cf4c77-636b-48a0-b594-60ab78ef26a1:
+                    required: false
+                    sortOrder: 4
+                  8a5aa2a1-d84f-4bbf-9ea5-4c6b67c7c105:
+                    required: false
+                    sortOrder: 5
+                  e6776d44-d3d9-442b-90aa-f01d11baa789:
+                    required: false
+                    sortOrder: 1
+                  f509c340-3109-4f76-a749-0569c3dd49ae:
+                    required: false
+                    sortOrder: 3
+                name: Common
+                sortOrder: 1
+        handle: teamEntry
         hasTitleField: true
-        name: Story
+        name: 'Team Entry'
         sortOrder: 1
-        titleFormat: null
+        titleFormat: ''
         titleLabel: Titel
-    handle: stories
+    handle: storyEntries
     name: 'Story Entries'
     propagateEntries: true
     siteSettings:
@@ -200,4 +546,14 @@ users:
   photoSubpath: ''
   photoVolumeUid: null
   requireEmailVerification: true
-dateApplied: '2019-03-06 14:33:19'
+volumes:
+  9eb7856b-e672-4fbf-b4b5-9d00ee79c726:
+    handle: uploads
+    hasUrls: true
+    name: Uploads
+    settings:
+      path: assets/uploads
+    sortOrder: 1
+    type: craft\volumes\Local
+    url: assets/uploads
+dateApplied: '2019-03-19 11:48:01'
