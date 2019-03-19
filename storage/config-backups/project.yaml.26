@@ -1,4 +1,4 @@
-dateModified: 1552999261
+dateModified: 1552999383
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -50,7 +50,7 @@ fields:
       multiline: ''
       placeholder: ''
     translationKeyFormat: null
-    translationMethod: none
+    translationMethod: site
     type: craft\fields\PlainText
   63060068-23fd-4091-9e13-96d982008822:
     contentColumnType: text
@@ -105,7 +105,7 @@ fields:
       purifyHtml: '1'
       redactorConfig: SimpleListTable.json
     translationKeyFormat: null
-    translationMethod: none
+    translationMethod: site
     type: craft\redactor\Field
   8a5aa2a1-d84f-4bbf-9ea5-4c6b67c7c105:
     contentColumnType: text
@@ -123,7 +123,7 @@ fields:
       purifyHtml: '1'
       redactorConfig: SimpleListTable.json
     translationKeyFormat: null
-    translationMethod: none
+    translationMethod: site
     type: craft\redactor\Field
   b729c087-ed9f-4371-8cf0-48e6ef2d9e6a:
     contentColumnType: text
@@ -597,4 +597,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-03-19 13:42:16'
+dateApplied: '2019-03-19 13:43:14'

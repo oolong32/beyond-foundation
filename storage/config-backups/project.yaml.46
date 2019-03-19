@@ -1,4 +1,4 @@
-dateModified: 1552992093
+dateModified: 1552992312
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -10,8 +10,6 @@ fieldGroups:
     name: 'Music Production'
   97dfc979-5ae8-418e-9249-5b4fdebd7c80:
     name: Common
-  c3a983d3-73f0-4862-9fe8-551d609181b6:
-    name: Artists
 fields:
   3a590370-7845-4f35-9cdd-fb39fe1acd6e:
     contentColumnType: text
@@ -240,12 +238,28 @@ sections:
     enableVersioning: true
     entryTypes:
       418a70c6-4db3-4d46-bdcd-9c23f9a666a3:
+        fieldLayouts:
+          807115de-9e0c-43da-a681-8e61502c9185:
+            tabs:
+              -
+                fields:
+                  3f013fdf-9050-4d51-b818-050c8a105e6f:
+                    required: false
+                    sortOrder: 1
+                  63060068-23fd-4091-9e13-96d982008822:
+                    required: false
+                    sortOrder: 2
+                  b729c087-ed9f-4371-8cf0-48e6ef2d9e6a:
+                    required: false
+                    sortOrder: 3
+                name: 'Music Production'
+                sortOrder: 1
         handle: musicProductionEntries
         hasTitleField: true
         name: 'Music Production Entries'
         sortOrder: 1
-        titleFormat: null
-        titleLabel: Titel
+        titleFormat: ''
+        titleLabel: 'Album Title'
     handle: musicProductionEntries
     name: 'Music Production Entries'
     propagateEntries: true
@@ -561,4 +575,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-03-19 11:41:44'
+dateApplied: '2019-03-19 11:45:38'

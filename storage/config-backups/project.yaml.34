@@ -1,4 +1,4 @@
-dateModified: 1552992505
+dateModified: 1552992664
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -391,12 +391,31 @@ sections:
     enableVersioning: true
     entryTypes:
       a09a99a8-0b73-4d21-af04-4e21b8f0322e:
+        fieldLayouts:
+          df4b0b91-07df-423d-b265-b0e4032ac467:
+            tabs:
+              -
+                fields:
+                  597d3228-4fef-4e48-b794-3e488a088311:
+                    required: false
+                    sortOrder: 3
+                  63060068-23fd-4091-9e13-96d982008822:
+                    required: false
+                    sortOrder: 2
+                  b729c087-ed9f-4371-8cf0-48e6ef2d9e6a:
+                    required: false
+                    sortOrder: 1
+                  f509c340-3109-4f76-a749-0569c3dd49ae:
+                    required: false
+                    sortOrder: 4
+                name: 'Tab 1'
+                sortOrder: 1
         handle: musicProduction
-        hasTitleField: '0'
+        hasTitleField: true
         name: 'Music Production Overview'
         sortOrder: 1
         titleFormat: '{section.name|raw}'
-        titleLabel: null
+        titleLabel: 'Music Production Overview Title'
     handle: musicProduction
     name: 'Music Production Overview'
     propagateEntries: true
@@ -556,4 +575,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-03-19 11:48:33'
+dateApplied: '2019-03-19 11:54:04'

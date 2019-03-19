@@ -1,4 +1,4 @@
-dateModified: 1553002645
+dateModified: 1553002824
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -447,24 +447,27 @@ sections:
                 fields:
                   597d3228-4fef-4e48-b794-3e488a088311:
                     required: false
-                    sortOrder: 3
+                    sortOrder: 4
                   63060068-23fd-4091-9e13-96d982008822:
                     required: false
-                    sortOrder: 2
+                    sortOrder: 3
                   b729c087-ed9f-4371-8cf0-48e6ef2d9e6a:
+                    required: false
+                    sortOrder: 2
+                  bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
                     required: false
                     sortOrder: 1
                   f509c340-3109-4f76-a749-0569c3dd49ae:
                     required: false
-                    sortOrder: 4
+                    sortOrder: 5
                 name: 'Tab 1'
                 sortOrder: 1
         handle: musicProduction
-        hasTitleField: true
+        hasTitleField: false
         name: 'Music Production Overview'
         sortOrder: 1
         titleFormat: '{section.name|raw}'
-        titleLabel: 'Music Production Overview Title'
+        titleLabel: 'Titel (Navigation)'
     handle: musicProduction
     name: 'Music Production Overview'
     propagateEntries: true
@@ -484,12 +487,28 @@ sections:
     enableVersioning: true
     entryTypes:
       1638c75d-edf9-440b-859d-d10fb865dba0:
+        fieldLayouts:
+          4dbaf390-d358-438e-9e9c-80acc70652d7:
+            tabs:
+              -
+                fields:
+                  63060068-23fd-4091-9e13-96d982008822:
+                    required: false
+                    sortOrder: 3
+                  b729c087-ed9f-4371-8cf0-48e6ef2d9e6a:
+                    required: false
+                    sortOrder: 2
+                  bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
+                    required: false
+                    sortOrder: 1
+                name: 'Tab 1'
+                sortOrder: 1
         handle: encouragement
         hasTitleField: false
         name: Encouragement
         sortOrder: 1
         titleFormat: '{section.name|raw}'
-        titleLabel: null
+        titleLabel: ''
     handle: encouragement
     name: Encouragement
     propagateEntries: true
@@ -624,4 +643,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-03-19 14:38:19'
+dateApplied: '2019-03-19 14:40:43'

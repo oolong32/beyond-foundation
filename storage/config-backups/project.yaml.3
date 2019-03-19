@@ -1,4 +1,4 @@
-dateModified: 1553003532
+dateModified: 1553003782
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -145,7 +145,7 @@ fields:
   bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
     contentColumnType: text
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
-    handle: displayedTitle
+    handle: pageHeading
     instructions: 'Überschrift der Seite, immer auf Englisch (gleiche für alle Sprachen)'
     name: 'Page Title'
     searchable: true
@@ -349,25 +349,35 @@ sections:
     enableVersioning: true
     entryTypes:
       dd2dc2fc-e081-483b-af9d-d3bd8a2e18ff:
+        fieldLayouts:
+          41d47ce2-2da4-487c-9b31-51a46b231de6:
+            tabs:
+              -
+                fields:
+                  bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
+                    required: false
+                    sortOrder: 1
+                name: 'Tab 1'
+                sortOrder: 1
         handle: imprint
-        hasTitleField: true
-        name: Impressum
+        hasTitleField: false
+        name: Imprint
         sortOrder: 1
         titleFormat: '{section.name|raw}'
         titleLabel: Titel
     handle: imprint
-    name: Impressum
+    name: Imprint
     propagateEntries: true
     siteSettings:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
         enabledByDefault: true
         hasUrls: true
-        template: impressum
+        template: imprint
         uriFormat: imprint
       96f6905b-bcc3-4e74-91a8-e5458eb5e532:
         enabledByDefault: true
         hasUrls: true
-        template: impressum
+        template: imprint
         uriFormat: imprint
     type: single
   a80687fd-9729-406e-ae44-7a1dc0a20692:
@@ -687,4 +697,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-03-19 14:53:14'
+dateApplied: '2019-03-19 15:00:37'

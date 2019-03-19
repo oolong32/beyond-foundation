@@ -1,4 +1,4 @@
-dateModified: 1552991879
+dateModified: 1552992104
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -192,6 +192,50 @@ plugins:
     enabled: true
     schemaVersion: 2.2.2
 sections:
+  08de450d-3199-4c3b-9b6c-9a900c9ab5d7:
+    enableVersioning: true
+    entryTypes:
+      19b86539-461f-44b2-b733-0d4d3f387873:
+        fieldLayouts:
+          42aec16e-e045-4d2e-a9c2-9fa2ba6bc145:
+            tabs:
+              -
+                fields:
+                  78cf4c77-636b-48a0-b594-60ab78ef26a1:
+                    required: false
+                    sortOrder: 2
+                  8a5aa2a1-d84f-4bbf-9ea5-4c6b67c7c105:
+                    required: false
+                    sortOrder: 3
+                  e6776d44-d3d9-442b-90aa-f01d11baa789:
+                    required: false
+                    sortOrder: 1
+                name: Common
+                sortOrder: 1
+        handle: artitstsEntries
+        hasTitleField: true
+        name: 'Artitsts Entries'
+        sortOrder: 1
+        titleFormat: ''
+        titleLabel: Name
+    handle: artitstsEntries
+    name: 'Artitsts Entries'
+    propagateEntries: false
+    siteSettings:
+      802d4b06-1f71-4c60-8b00-c331a21b5134:
+        enabledByDefault: true
+        hasUrls: false
+        template: null
+        uriFormat: null
+      96f6905b-bcc3-4e74-91a8-e5458eb5e532:
+        enabledByDefault: true
+        hasUrls: false
+        template: null
+        uriFormat: null
+    structure:
+      maxLevels: '1'
+      uid: 26a3cb7a-6849-4b74-afb6-aaa515e3d2cd
+    type: structure
   0d356b0b-cd19-4e37-8a27-af0cfc0787d1:
     enableVersioning: true
     entryTypes:
@@ -517,4 +561,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-03-19 11:40:49'
+dateApplied: '2019-03-19 11:44:34'

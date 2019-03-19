@@ -1,11 +1,9 @@
-dateModified: 1552992367
+dateModified: 1552992419
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
   transportType: craft\mail\transportadapters\Sendmail
 fieldGroups:
-  587b71ae-05db-4100-9844-7cae2743e4c9:
-    name: 'Music Production Single'
   85d8c0e7-6a43-4691-8d57-0ea516983de7:
     name: 'Music Production Entries'
   97dfc979-5ae8-418e-9249-5b4fdebd7c80:
@@ -344,13 +342,13 @@ sections:
     entryTypes:
       d67387df-0ee1-44be-9f63-540538e502a5:
         handle: events
-        hasTitleField: false
-        name: Events
+        hasTitleField: '0'
+        name: 'Events Overview'
         sortOrder: 1
         titleFormat: '{section.name|raw}'
         titleLabel: null
     handle: events
-    name: Events
+    name: 'Events Overview'
     propagateEntries: true
     siteSettings:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
@@ -395,12 +393,12 @@ sections:
       a09a99a8-0b73-4d21-af04-4e21b8f0322e:
         handle: musicProduction
         hasTitleField: '0'
-        name: 'Music Production'
+        name: 'Music Production Overview'
         sortOrder: 1
         titleFormat: '{section.name|raw}'
         titleLabel: null
     handle: musicProduction
-    name: 'Music Production'
+    name: 'Music Production Overview'
     propagateEntries: true
     siteSettings:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
@@ -558,4 +556,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-03-19 11:46:19'
+dateApplied: '2019-03-19 11:47:50'
