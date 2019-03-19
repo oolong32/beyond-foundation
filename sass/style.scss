@@ -209,7 +209,11 @@ a.arrow-right-after:after {
 
 /* Button Links {{{3 */
 
-.button a { // «Buttons» sind natürlich degenerierte Links
+.button a { // «Buttons» sind Links, keine Buttons
+  // wird das überhaupt irgendow eingesetzt?
+  // und stimmt das so oder müsste es a.button heissen???
+  // wird das überhaupt irgendow eingesetzt?
+  // wird das überhaupt irgendow eingesetzt?
   background: $blue;
   display: inline-block;
   padding: 0 0.25rem;
@@ -250,7 +254,6 @@ a.social-media-link:hover svg path { fill: $blue-hover; }
 /* Buttons {{{1 */
 
 button.accordion-trigger {
-  // background: $blue;
   background: $gold;
   color: white;
   padding: 1px 10px 2px 7px;
@@ -484,7 +487,7 @@ footer {
   /* Main {{{2 */
   main {
     // padding: 22.5rem 2rem 0;
-    width: 100%;
+    width: calc(100% - 2rem);
     padding: 0 1rem;
 
     // h2 { font-size: 5rem; }
@@ -638,7 +641,7 @@ footer {
   /* Layout Main {{{2 */
   main {
     width: 100%;
-    padding: 5rem 1rem 1rem;
+    padding: 5rem 0 1rem;
 
     section,
     section#main-lead,

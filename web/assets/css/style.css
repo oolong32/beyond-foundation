@@ -363,7 +363,7 @@ footer {
     font-size: 14px; }
   /* Main {{{2 */
   main {
-    width: 100%;
+    width: calc(100% - 2rem);
     padding: 0 1rem; }
     main section#main-lead {
       min-width: 550px;
@@ -478,7 +478,7 @@ footer {
   /* Layout Main {{{2 */
   main {
     width: 100%;
-    padding: 5rem 1rem 1rem;
+    padding: 5rem 0 1rem;
     /* Main Micro Typography {{{3 */
     /* End Main Micro Typography }}}3 */ }
     main section,
