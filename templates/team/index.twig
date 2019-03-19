@@ -19,32 +19,36 @@
       <h2>{{ entry.pageHeading }}</h2>
 
       {% for member in members %}
-      <section class="alternating-image-grid">
-        {% if member.portrait|length %}
+      <section class="alternating-image-grid"> <!-- start row -->
+
+        <div class="raster-bildfeld"> <!-- start image cell -->
+          {% if member.portrait|length %}
           <img src="{{ member.portrait[0].getUrl() }}" alt="{{ member.title }}">
-        {% else %}
+          {% else %}
           <img src="/assets/_pic/placeholder.png" alt="No image for this entry.">
-        {% endif %}
+          {% endif %}
+        </div> <!-- end image cell -->
 
-        <div class="accordion"> <!-- start accordion -->
+        <div class="raster-textfeld"> <!-- start text cell -->
+          <div class="accordion"> <!-- start accordion -->
 
-          <div class="visible">
-            <h3>{{ member.title }}</h3>
+          <div class="visible"> <!-- start accordion visible part -->
+              <h3>{{ member.title }}</h3>
+              {% if member.quote|length %}
+              <p class="team-quote">{{ member.quote }}</p>
+              {% endif %}
+              {{ member.visibleText }}
+              <p class="accordion-trigger" style="text-align: left;"><span>Weitere Informationen</span></p>
+            </div> <!-- end accordion visible part -->
 
-            {% if member.quote|length %}
-            <p class="team-quote">{{ member.quote }}</p>
-            {% endif %}
+            <div class="collapsed"> <!-- start accordion invisible part -->
+              {{ member.collapsedText }}
+            </div> <!-- end accordion invisible part -->
 
-            {{ member.visibleText }}
-          </div>
+          </div> <!-- end accordion -->
+        </div> <!-- end text cell -->
 
-          <div class="collapsed">
-            {{ member.collapsedText }}
-          </div>
-
-        </div> <!-- end accordion -->
-
-      </section>
+      </section> <!-- end row -->
       {% endfor %}
 
     </main>
