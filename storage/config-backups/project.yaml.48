@@ -1,33 +1,14 @@
-dateModified: 1552992274
+dateModified: 1552992664
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
   transportType: craft\mail\transportadapters\Sendmail
 fieldGroups:
-  587b71ae-05db-4100-9844-7cae2743e4c9:
-    name: 'Music Production Single'
   85d8c0e7-6a43-4691-8d57-0ea516983de7:
-    name: 'Music Production'
+    name: 'Music Production Entries'
   97dfc979-5ae8-418e-9249-5b4fdebd7c80:
     name: Common
 fields:
-  3a590370-7845-4f35-9cdd-fb39fe1acd6e:
-    contentColumnType: text
-    fieldGroup: 587b71ae-05db-4100-9844-7cae2743e4c9
-    handle: introQuote
-    instructions: 'Zitat über dem Lead-Text.'
-    name: 'Intro Quote'
-    searchable: true
-    settings:
-      charLimit: ''
-      code: ''
-      columnType: text
-      initialRows: '4'
-      multiline: ''
-      placeholder: ''
-    translationKeyFormat: null
-    translationMethod: none
-    type: craft\fields\PlainText
   3f013fdf-9050-4d51-b818-050c8a105e6f:
     contentColumnType: string
     fieldGroup: 85d8c0e7-6a43-4691-8d57-0ea516983de7
@@ -238,12 +219,28 @@ sections:
     enableVersioning: true
     entryTypes:
       418a70c6-4db3-4d46-bdcd-9c23f9a666a3:
+        fieldLayouts:
+          807115de-9e0c-43da-a681-8e61502c9185:
+            tabs:
+              -
+                fields:
+                  3f013fdf-9050-4d51-b818-050c8a105e6f:
+                    required: false
+                    sortOrder: 1
+                  63060068-23fd-4091-9e13-96d982008822:
+                    required: false
+                    sortOrder: 2
+                  b729c087-ed9f-4371-8cf0-48e6ef2d9e6a:
+                    required: false
+                    sortOrder: 3
+                name: 'Music Production'
+                sortOrder: 1
         handle: musicProductionEntries
         hasTitleField: true
         name: 'Music Production Entries'
         sortOrder: 1
-        titleFormat: null
-        titleLabel: Titel
+        titleFormat: ''
+        titleLabel: 'Album Title'
     handle: musicProductionEntries
     name: 'Music Production Entries'
     propagateEntries: true
@@ -345,13 +342,13 @@ sections:
     entryTypes:
       d67387df-0ee1-44be-9f63-540538e502a5:
         handle: events
-        hasTitleField: false
-        name: Events
+        hasTitleField: '0'
+        name: 'Events Overview'
         sortOrder: 1
         titleFormat: '{section.name|raw}'
         titleLabel: null
     handle: events
-    name: Events
+    name: 'Events Overview'
     propagateEntries: true
     siteSettings:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
@@ -370,13 +367,13 @@ sections:
     entryTypes:
       5711e561-155d-4f0f-964e-cde1f92e24c8:
         handle: story
-        hasTitleField: true
-        name: Team
+        hasTitleField: '1'
+        name: 'Team Overview'
         sortOrder: 1
         titleFormat: '{section.name|raw}'
         titleLabel: Heading
     handle: team
-    name: Team
+    name: 'Team Overview'
     propagateEntries: true
     siteSettings:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
@@ -394,14 +391,33 @@ sections:
     enableVersioning: true
     entryTypes:
       a09a99a8-0b73-4d21-af04-4e21b8f0322e:
+        fieldLayouts:
+          df4b0b91-07df-423d-b265-b0e4032ac467:
+            tabs:
+              -
+                fields:
+                  597d3228-4fef-4e48-b794-3e488a088311:
+                    required: false
+                    sortOrder: 3
+                  63060068-23fd-4091-9e13-96d982008822:
+                    required: false
+                    sortOrder: 2
+                  b729c087-ed9f-4371-8cf0-48e6ef2d9e6a:
+                    required: false
+                    sortOrder: 1
+                  f509c340-3109-4f76-a749-0569c3dd49ae:
+                    required: false
+                    sortOrder: 4
+                name: 'Tab 1'
+                sortOrder: 1
         handle: musicProduction
-        hasTitleField: '0'
-        name: 'Music Production'
+        hasTitleField: true
+        name: 'Music Production Overview'
         sortOrder: 1
         titleFormat: '{section.name|raw}'
-        titleLabel: null
+        titleLabel: 'Music Production Overview Title'
     handle: musicProduction
-    name: 'Music Production'
+    name: 'Music Production Overview'
     propagateEntries: true
     siteSettings:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
@@ -491,14 +507,14 @@ sections:
                     sortOrder: 3
                 name: Common
                 sortOrder: 1
-        handle: story
+        handle: teamEntry
         hasTitleField: true
-        name: Story
+        name: 'Team Entry'
         sortOrder: 1
         titleFormat: ''
         titleLabel: Titel
     handle: storyEntries
-    name: 'Story Entries'
+    name: 'Team Entries'
     propagateEntries: true
     siteSettings:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
@@ -559,4 +575,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-03-19 11:45:12'
+dateApplied: '2019-03-19 11:54:04'

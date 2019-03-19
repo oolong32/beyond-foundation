@@ -3,6 +3,7 @@
 {% extends "_layout" %}
 
 {% set entry = craft.entries().section('encouragement').one() %}
+{% set encouragements = craft.entries().section('encouragementEntries').all() %}
 
 {% block content %}
 
@@ -15,9 +16,37 @@
     </nav>
       
     <main>
+
       <h2>{{ entry.pageHeading }}</h2>
-      <h3>{{ entry.leadTitle }}</h3>
-      {{ entry.lead }}
+
+      <section class="main-lead">
+        <h3>{{ entry.leadTitle }}</h3>
+        {{ entry.lead }}
+      </section>
+
+      {% for encouragement in encouragements %}
+        <section class="">
+          <div class="accordion"> <!-- start accordion -->
+
+            <div class="visible"> <!-- start accordion visible part -->
+              <h2>{{ encouragement.title }}</h2>
+              <h3>{{ encouragement.leadTitle }}</h3>
+              {{ encouragement.visibleText }}
+              <p class="accordion-trigger" style="text-align: left;"><span>Weitere Informationen</span></p>
+            </div> <!-- end accordion visible part -->
+
+            <div class="collapsed"> <!-- start accordion invisible part -->
+              {{ encouragement.collapsedText }}
+            </div> <!-- end accordion invisible part -->
+
+          </div> <!-- end accordion -->
+
+        </section>
+      {% endfor %}
+
+      <blockquote>
+        <p>“{{ entry.quote }}”</p>
+      </blockquote>
     </main>
         
     <footer>

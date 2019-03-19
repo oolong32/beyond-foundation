@@ -16,9 +16,21 @@
     </nav>
       
     <main>
+
       <h2>{{ entry.pageHeading }}</h2>
-      <h3>{{ entry.leadTitle }}</h3>
-      {{ entry.lead }}
+
+      <section class="main-lead">
+        <h3>{{ entry.leadTitle }}</h3>
+        {{ entry.lead }}
+      </section>
+      
+      <blockquote>
+{# Das muss zwischen erste und zweite Iteration der Einträge unten (merci gäll) #}
+{# Das muss zwischen erste und zweite Iteration der Einträge unten (merci gäll) #}
+{# Das muss zwischen erste und zweite Iteration der Einträge unten (merci gäll) #}
+{# Das muss zwischen erste und zweite Iteration der Einträge unten (merci gäll) #}
+        <p>“{{ entry.quote }}”</p>
+      </blockquote>
 
       
       {% for production in productions %}

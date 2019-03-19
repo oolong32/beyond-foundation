@@ -3,6 +3,7 @@
 {% extends "_layout" %}
 
 {% set entry = craft.entries().section('events').one() %}
+{% set events = craft.entries().section('eventsEntries').all() %}
 
 {% block content %}
 
@@ -20,6 +21,17 @@
       <h3>{{ entry.leadTitle }}</h3>
       {{ entry.lead }}
       … #}
+
+      {% for event in events %}
+        <section>
+          {{ event.title }}
+        </section>
+      {% endfor %}
+
+      <blockquote>
+        <p>“{{ entry.quote }}”</p>
+      </blockquote>
+
     </main>
         
     <footer>

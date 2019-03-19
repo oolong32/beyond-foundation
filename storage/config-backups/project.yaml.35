@@ -1,4 +1,4 @@
-dateModified: 1552992664
+dateModified: 1552999440
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -50,7 +50,7 @@ fields:
       multiline: ''
       placeholder: ''
     translationKeyFormat: null
-    translationMethod: none
+    translationMethod: site
     type: craft\fields\PlainText
   63060068-23fd-4091-9e13-96d982008822:
     contentColumnType: text
@@ -68,8 +68,27 @@ fields:
       purifyHtml: '1'
       redactorConfig: Simple.json
     translationKeyFormat: null
-    translationMethod: none
+    translationMethod: site
     type: craft\redactor\Field
+  72357970-aa0e-4ab8-bc96-4899cd33dd40:
+    contentColumnType: string
+    fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
+    handle: kuenstler
+    instructions: ''
+    name: Künstler
+    searchable: true
+    settings:
+      limit: ''
+      localizeRelations: ''
+      selectionLabel: 'Künstler auswählen'
+      source: null
+      sources:
+        - 'section:08de450d-3199-4c3b-9b6c-9a900c9ab5d7'
+      targetSiteId: null
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
   78cf4c77-636b-48a0-b594-60ab78ef26a1:
     contentColumnType: text
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
@@ -86,7 +105,7 @@ fields:
       purifyHtml: '1'
       redactorConfig: SimpleListTable.json
     translationKeyFormat: null
-    translationMethod: none
+    translationMethod: site
     type: craft\redactor\Field
   8a5aa2a1-d84f-4bbf-9ea5-4c6b67c7c105:
     contentColumnType: text
@@ -104,7 +123,7 @@ fields:
       purifyHtml: '1'
       redactorConfig: SimpleListTable.json
     translationKeyFormat: null
-    translationMethod: none
+    translationMethod: site
     type: craft\redactor\Field
   b729c087-ed9f-4371-8cf0-48e6ef2d9e6a:
     contentColumnType: text
@@ -121,7 +140,7 @@ fields:
       multiline: ''
       placeholder: ''
     translationKeyFormat: null
-    translationMethod: none
+    translationMethod: site
     type: craft\fields\PlainText
   e6776d44-d3d9-442b-90aa-f01d11baa789:
     contentColumnType: string
@@ -163,7 +182,7 @@ fields:
       multiline: ''
       placeholder: ''
     translationKeyFormat: null
-    translationMethod: none
+    translationMethod: site
     type: craft\fields\PlainText
 plugins:
   redactor:
@@ -199,7 +218,7 @@ sections:
         titleLabel: Name
     handle: artitstsEntries
     name: 'Artitsts Entries'
-    propagateEntries: false
+    propagateEntries: true
     siteSettings:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
         enabledByDefault: true
@@ -229,10 +248,13 @@ sections:
                     sortOrder: 1
                   63060068-23fd-4091-9e13-96d982008822:
                     required: false
-                    sortOrder: 2
+                    sortOrder: 3
+                  72357970-aa0e-4ab8-bc96-4899cd33dd40:
+                    required: false
+                    sortOrder: 4
                   b729c087-ed9f-4371-8cf0-48e6ef2d9e6a:
                     required: false
-                    sortOrder: 3
+                    sortOrder: 2
                 name: 'Music Production'
                 sortOrder: 1
         handle: musicProductionEntries
@@ -575,4 +597,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-03-19 11:54:04'
+dateApplied: '2019-03-19 14:07:15'

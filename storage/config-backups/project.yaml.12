@@ -1,4 +1,4 @@
-dateModified: 1553002954
+dateModified: 1553006606
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -145,7 +145,7 @@ fields:
   bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
     contentColumnType: text
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
-    handle: displayedTitle
+    handle: pageHeading
     instructions: 'Überschrift der Seite, immer auf Englisch (gleiche für alle Sprachen)'
     name: 'Page Title'
     searchable: true
@@ -261,16 +261,16 @@ sections:
               -
                 fields:
                   3f013fdf-9050-4d51-b818-050c8a105e6f:
-                    required: false
+                    required: true
                     sortOrder: 1
                   63060068-23fd-4091-9e13-96d982008822:
-                    required: false
+                    required: true
                     sortOrder: 3
                   72357970-aa0e-4ab8-bc96-4899cd33dd40:
                     required: false
                     sortOrder: 4
                   b729c087-ed9f-4371-8cf0-48e6ef2d9e6a:
-                    required: false
+                    required: true
                     sortOrder: 2
                 name: 'Music Production'
                 sortOrder: 1
@@ -302,12 +302,34 @@ sections:
     enableVersioning: true
     entryTypes:
       a21833ef-5c35-41cc-91c4-4da2ccbbd2d7:
+        fieldLayouts:
+          8f968770-1bc6-4f7a-a9f8-eb7c1d3f9b2b:
+            tabs:
+              -
+                fields:
+                  597d3228-4fef-4e48-b794-3e488a088311:
+                    required: false
+                    sortOrder: 4
+                  63060068-23fd-4091-9e13-96d982008822:
+                    required: false
+                    sortOrder: 3
+                  b729c087-ed9f-4371-8cf0-48e6ef2d9e6a:
+                    required: false
+                    sortOrder: 2
+                  bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
+                    required: false
+                    sortOrder: 1
+                  f509c340-3109-4f76-a749-0569c3dd49ae:
+                    required: false
+                    sortOrder: 5
+                name: 'Tab 1'
+                sortOrder: 1
         handle: musicNetwork
         hasTitleField: false
         name: 'Music Network'
         sortOrder: 1
         titleFormat: '{section.name|raw}'
-        titleLabel: null
+        titleLabel: ''
     handle: musicNetwork
     name: 'Music Network'
     propagateEntries: true
@@ -327,13 +349,23 @@ sections:
     enableVersioning: true
     entryTypes:
       dd2dc2fc-e081-483b-af9d-d3bd8a2e18ff:
+        fieldLayouts:
+          41d47ce2-2da4-487c-9b31-51a46b231de6:
+            tabs:
+              -
+                fields:
+                  bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
+                    required: '0'
+                    sortOrder: '1'
+                name: 'Tab 1'
+                sortOrder: '1'
         handle: imprint
-        hasTitleField: true
+        hasTitleField: '0'
         name: Impressum
         sortOrder: 1
         titleFormat: '{section.name|raw}'
         titleLabel: Titel
-    handle: imprint
+    handle: impressum
     name: Impressum
     propagateEntries: true
     siteSettings:
@@ -341,12 +373,12 @@ sections:
         enabledByDefault: true
         hasUrls: true
         template: impressum
-        uriFormat: imprint
+        uriFormat: impressum
       96f6905b-bcc3-4e74-91a8-e5458eb5e532:
         enabledByDefault: true
         hasUrls: true
         template: impressum
-        uriFormat: imprint
+        uriFormat: impressum
     type: single
   a80687fd-9729-406e-ae44-7a1dc0a20692:
     enableVersioning: true
@@ -380,14 +412,30 @@ sections:
     enableVersioning: true
     entryTypes:
       d67387df-0ee1-44be-9f63-540538e502a5:
+        fieldLayouts:
+          dacc3bc3-07ce-497a-ae7b-d489af97c6bb:
+            tabs:
+              -
+                fields:
+                  597d3228-4fef-4e48-b794-3e488a088311:
+                    required: '0'
+                    sortOrder: '2'
+                  bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
+                    required: '0'
+                    sortOrder: '1'
+                  f509c340-3109-4f76-a749-0569c3dd49ae:
+                    required: '0'
+                    sortOrder: '3'
+                name: 'Tab 1'
+                sortOrder: '1'
         handle: events
         hasTitleField: '0'
-        name: 'Events Overview'
+        name: Events
         sortOrder: 1
         titleFormat: '{section.name|raw}'
-        titleLabel: null
+        titleLabel: ''
     handle: events
-    name: 'Events Overview'
+    name: Events
     propagateEntries: true
     siteSettings:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
@@ -411,18 +459,18 @@ sections:
               -
                 fields:
                   bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
-                    required: false
-                    sortOrder: 1
+                    required: '0'
+                    sortOrder: '1'
                 name: 'Tab 1'
-                sortOrder: 1
+                sortOrder: '1'
         handle: story
-        hasTitleField: false
-        name: 'Team Overview'
+        hasTitleField: '0'
+        name: Team
         sortOrder: 1
         titleFormat: '{section.name|raw}'
         titleLabel: 'Titel (Navigation)'
     handle: team
-    name: 'Team Overview'
+    name: Team
     propagateEntries: true
     siteSettings:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
@@ -446,30 +494,30 @@ sections:
               -
                 fields:
                   597d3228-4fef-4e48-b794-3e488a088311:
-                    required: false
-                    sortOrder: 4
+                    required: '0'
+                    sortOrder: '4'
                   63060068-23fd-4091-9e13-96d982008822:
-                    required: false
-                    sortOrder: 3
+                    required: '0'
+                    sortOrder: '3'
                   b729c087-ed9f-4371-8cf0-48e6ef2d9e6a:
-                    required: false
-                    sortOrder: 2
+                    required: '0'
+                    sortOrder: '2'
                   bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
-                    required: false
-                    sortOrder: 1
+                    required: '0'
+                    sortOrder: '1'
                   f509c340-3109-4f76-a749-0569c3dd49ae:
-                    required: false
-                    sortOrder: 5
+                    required: '0'
+                    sortOrder: '5'
                 name: 'Tab 1'
-                sortOrder: 1
+                sortOrder: '1'
         handle: musicProduction
-        hasTitleField: false
-        name: 'Music Production Overview'
+        hasTitleField: '0'
+        name: 'Music Production'
         sortOrder: 1
         titleFormat: '{section.name|raw}'
         titleLabel: 'Titel (Navigation)'
     handle: musicProduction
-    name: 'Music Production Overview'
+    name: 'Music Production'
     propagateEntries: true
     siteSettings:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
@@ -568,13 +616,13 @@ sections:
                     required: false
                     sortOrder: 2
                   78cf4c77-636b-48a0-b594-60ab78ef26a1:
-                    required: false
+                    required: true
                     sortOrder: 4
                   8a5aa2a1-d84f-4bbf-9ea5-4c6b67c7c105:
-                    required: false
+                    required: true
                     sortOrder: 5
                   e6776d44-d3d9-442b-90aa-f01d11baa789:
-                    required: false
+                    required: true
                     sortOrder: 1
                   f509c340-3109-4f76-a749-0569c3dd49ae:
                     required: false
@@ -586,8 +634,8 @@ sections:
         name: 'Team Entry'
         sortOrder: 1
         titleFormat: ''
-        titleLabel: Titel
-    handle: storyEntries
+        titleLabel: Name
+    handle: teamEntries
     name: 'Team Entries'
     propagateEntries: true
     siteSettings:
@@ -649,4 +697,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-03-19 14:44:16'
+dateApplied: '2019-03-19 16:18:27'
