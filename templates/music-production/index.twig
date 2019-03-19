@@ -3,6 +3,7 @@
 {% extends "_layout" %}
 
 {% set entry = craft.entries().section('musicProduction').one() %}
+{% set productions = craft.entries().section('musicProductionEntries').all() %}
 
 {% block content %}
 
@@ -18,7 +19,30 @@
       <h2>{{ entry.pageHeading }}</h2>
       <h3>{{ entry.leadTitle }}</h3>
       {{ entry.lead }}
-      {# … #}
+
+      
+      {% for production in productions %}
+      <section class="alternating-image-grid">
+        <div class="raster-bildfeld">
+          {% if production.coverImage|length %}
+          <img src="{{ production.coverImage[0].getUrl() }}" alt="{{ production.title }}">
+          {% else %}
+          <img src="/assets/_pic/placeholder.png" alt="No image for this entry.">
+          {% endif %}
+        </div>
+
+        <div class="raster-textfeld">
+            <h3>{{ production.title }}</h3>
+
+            {% if production.leadTitle|length %}
+              <h3>{{ production.leadTitle }}</h3>
+            {% endif %}
+            {{ production.lead }}
+        </div>
+
+      </section>
+      {% endfor %}
+
     </main>
         
     <footer>
