@@ -17,15 +17,16 @@
       
     <main>
       <h2>{{ entry.pageHeading }}</h2>
+      
 
       {% for member in members %}
       <section class="alternating-image-grid"> <!-- start row -->
 
         <div class="raster-bildfeld"> <!-- start image cell -->
           {% if member.portrait|length %}
-          <img src="{{ member.portrait[0].getUrl() }}" alt="{{ member.title }}">
+          <img src="{{ alias('@assetBasePath') }}/{{ member.portrait[0].getUrl() }}" alt="{{ member.title }}">
           {% else %}
-          <img src="/assets/_pic/placeholder.png" alt="No image for this entry.">
+          <img src="{{ alias('@assetBasePath') }}/assets/_pic/placeholder.png" alt="No image for this entry.">
           {% endif %}
         </div> <!-- end image cell -->
 

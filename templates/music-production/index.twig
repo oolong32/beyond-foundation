@@ -25,9 +25,9 @@
       <section class="alternating-image-grid">
         <div class="raster-bildfeld">
           {% if production.coverImage|length %}
-          <img src="{{ production.coverImage[0].getUrl() }}" alt="{{ production.title }}">
+          <img src="{{ alias('@assetBasePath') }}/{{ production.coverImage[0].getUrl() }}" alt="{{ production.title }}">
           {% else %}
-          <img src="/assets/_pic/placeholder.png" alt="No image for this entry.">
+          <img src="{{ siteUrl }}/assets/_pic/placeholder.png" alt="No image for this entry.">
           {% endif %}
         </div>
 
