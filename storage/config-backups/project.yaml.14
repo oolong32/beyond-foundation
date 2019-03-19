@@ -1,4 +1,4 @@
-dateModified: 1553002769
+dateModified: 1553002824
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -463,7 +463,7 @@ sections:
                 name: 'Tab 1'
                 sortOrder: 1
         handle: musicProduction
-        hasTitleField: true
+        hasTitleField: false
         name: 'Music Production Overview'
         sortOrder: 1
         titleFormat: '{section.name|raw}'
@@ -643,4 +643,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-03-19 14:40:24'
+dateApplied: '2019-03-19 14:40:43'

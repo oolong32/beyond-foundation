@@ -1,4 +1,4 @@
-dateModified: 1552992419
+dateModified: 1552992470
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -488,9 +488,9 @@ sections:
                     sortOrder: 3
                 name: Common
                 sortOrder: 1
-        handle: story
+        handle: teamEntry
         hasTitleField: true
-        name: Story
+        name: 'Team Entry'
         sortOrder: 1
         titleFormat: ''
         titleLabel: Titel
@@ -556,4 +556,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-03-19 11:47:50'
+dateApplied: '2019-03-19 11:48:01'
