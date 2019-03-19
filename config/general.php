@@ -37,6 +37,10 @@ return [
 
         // Dev Mode (see https://craftcms.com/support/dev-mode)
         'devMode' => true,
+        // Custom Aliases
+        'aliases' => [
+          '@assetBasePath' => 'http://localhost:8000/'
+        ],
     ],
 
     // Staging environment settings
@@ -51,5 +55,9 @@ return [
         'siteUrl' => null,
         // Disable project config changes on production
         'allowAdminChanges' => false,
+        // Custom Aliases
+        'aliases' => [
+          '@assetBasePath' => 'http://beyond-foundation.org.ryan.ch-meta.net/'
+        ],
     ],
 ];
