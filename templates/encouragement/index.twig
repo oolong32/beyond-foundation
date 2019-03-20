@@ -27,16 +27,26 @@
       {% for encouragement in encouragements %}
         <section class="single-col">
           <div class="accordion"> <!-- start accordion -->
+          {# 
+In Wirklichkeit braucht es hier kein Akkordeon sondern
+In Wirklichkeit braucht es hier kein Akkordeon sondern
+In Wirklichkeit braucht es hier kein Akkordeon sondern
+In Wirklichkeit braucht es hier kein Akkordeon sondern
+In Wirklichkeit braucht es hier kein Akkordeon sondern
+– Mail Link
+– Link zu Paypal
+#}
 
             <div class="visible"> <!-- start accordion visible part -->
               <h2>{{ encouragement.title }}</h2>
               <h3>{{ encouragement.leadTitle }}</h3>
               {{ encouragement.visibleText }}
-              <p class="accordion-trigger" style="text-align: left;"><span>Weitere Informationen</span></p>
+              <p class="accordion-trigger"><span>Weitere Informationen</span></p>
             </div> <!-- end accordion visible part -->
 
             <div class="collapsed"> <!-- start accordion invisible part -->
               {{ encouragement.collapsedText }}
+              <p class="accordion-collapse"><span>Weniger Informationen</span></p>
             </div> <!-- end accordion invisible part -->
 
           </div> <!-- end accordion -->
@@ -52,6 +62,8 @@
     <footer>
       {% include 'includes/footer' %}
     </footer>
+
+    {% include 'includes/accordion-scripts' %}
 
     <script>
       console.log('I & I is at {{ slug }}' );
