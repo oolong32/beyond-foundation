@@ -39,7 +39,7 @@ $(".accordion-trigger").click(function() {
 });
 
 $(".accordion-collapse").click(function() {
-    console.log("schluss!");
+    // console.log("schluss!");
     $(this).parent().parent().accordion({
       active: false
     });
