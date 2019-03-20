@@ -30,8 +30,17 @@
       
       <section class="single-col">
         <h3>Beyond Foundation</h3>
-        <p>Elit accusamus possimus explicabo officiis rem! Vel nam assumenda maxime cum nobis laboriosam laborum? Cupiditate esse autem magni unde quidem Adipisci laboriosam quidem tempore sed fuga in. Omnis praesentium alias.</p>
-        <button class="accordion-trigger"><span class="prefixed-plus">Mehr erfahren<span></button>
+        <div class="accordion" style="margin-top: 0;">
+          <div class="visible">
+            <p>Elit accusamus possimus explicabo officiis rem! Vel nam assumenda maxime cum nobis laboriosam laborum? Cupiditate esse autem magni unde quidem Adipisci laboriosam quidem tempore sed fuga in. Omnis praesentium alias.</p>
+            <p class="accordion-trigger"><span>Weitere Informationen</span></p>
+          </div>
+          <div class="collapsed">
+            <p>Amet expedita neque natus excepturi vitae. Labore eligendi consectetur quidem in odio perferendis Doloremque aspernatur numquam fugit magni velit animi? Soluta magni excepturi beatae reprehenderit provident ea sed Architecto impedit quo corporis laborum suscipit Nostrum exercitationem ad repellendus itaque non tenetur Explicabo eaque nam quas voluptatibus harum. Exercitationem fugit facilis.</p>
+            <p>Amet iusto aliquam odit ex fugiat quidem. Expedita debitis cumque nesciunt quisquam totam sunt id Ullam aliquid veritatis odio maiores ut Voluptate aliquam maiores porro iste sunt Explicabo quae velit vel similique quas Aspernatur doloribus culpa commodi provident quaerat, modi deleniti? Laudantium totam eius provident provident ullam suscipit? Temporibus nesciunt</p>
+            <p class="accordion-collapse"><span>Weniger Informationen</span></p>
+          </div>
+        </div>
       </section>
       
       <section class="single-col">
@@ -74,7 +83,7 @@
 
       <section>
         <blockquote>
-          <p>“Create music out of the core of being human.”</p>
+          <p>{{ craft.app.language == 'de' ? '«' : '“' }}Create music out of the core of being human.{{ craft.app.language == 'de' ? '»' : '”' }}</p>
         </blockquote>
       </section>
 
@@ -133,6 +142,8 @@
     </footer>
 
     <!-- End Footer -->
+
+    {% include 'includes/accordion-scripts' %}
 
     <script>
       console.log('I & I is at {{ slug }}' );

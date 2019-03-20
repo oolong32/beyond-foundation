@@ -39,7 +39,7 @@
 
           <h3>{{ member.title }}</h3>
           {% if member.quote|length %}
-          <p class="team-quote">{{ member.quote }}</p>
+          <p class="team-quote">{{ craft.app.language == 'de' ? '«' : '“' }}{{ member.quote }}{{ craft.app.language == 'de' ? '»' : '”' }}</p>
           {% endif %}
 
           <div class="accordion"> <!-- start accordion -->
@@ -67,9 +67,8 @@
       {% include 'includes/footer' %}
     </footer>
     
-    <script src="{{ alias('@assetBasePath') }}/assets/js/jquery.min.js"></script>
-    <script src="{{ alias('@assetBasePath') }}/assets/js/jquery-ui.min.js"></script>
-    <script src="{{ alias('@assetBasePath') }}/assets/js/accordion.js"></script>
+    {% include 'includes/accordion-scripts' %}
+
     <script>
       console.log('I & I is at {{ slug }}' );
     </script>

@@ -215,6 +215,8 @@ a.social-media-link:hover svg path {
 /* Buttons {{{1 */
 .accordion-collapse,
 .accordion-trigger {
+  justify-self: start;
+  align-self: start;
   display: inline-block;
   background: linear-gradient(20deg, #CCAF82 0%, #C6AD8C 20%, #C0AB97 100%);
   color: white;
