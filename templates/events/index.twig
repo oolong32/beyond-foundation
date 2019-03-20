@@ -17,14 +17,25 @@
       
     <main>
       <h2>{{ entry.pageHeading }}</h2>
+
       {# gibt hier nicht …
       <h3>{{ entry.leadTitle }}</h3>
       {{ entry.lead }}
       … #}
 
       {% for event in events %}
-        <section>
-          {{ event.title }}
+        <section class="alternating-grid-image-large">
+  
+          <div class="image-cell">
+            <img src="{{ alias('@assetBasePath') }}/assets/_pic/placeholder_16-9.png" alt="">
+          </div>
+
+          <div class="text-cell">
+            <h3>{{ event.title }}</h3>
+            <p>Fixed Text in Template</p>
+            <p class="teaser-link external-link"><a href="" target="_new" title="">Fixed Link in Template</a></p>
+          </div>
+
         </section>
       {% endfor %}
 

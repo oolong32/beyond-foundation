@@ -25,9 +25,9 @@
       
 
       {% for member in members %}
-      <section class="alternating-image-grid"> <!-- start row -->
+      <section class="alternating-grid-text-large"> <!-- start row -->
 
-        <div class="raster-bildfeld"> <!-- start image cell -->
+        <div class="image-cell"> <!-- start image cell -->
           {% if member.portrait|length %}
           <img src="{{ alias('@assetBasePath') }}/{{ member.portrait[0].getUrl() }}" alt="{{ member.title }}">
           {% else %}
@@ -35,14 +35,16 @@
           {% endif %}
         </div> <!-- end image cell -->
 
-        <div class="raster-textfeld"> <!-- start text cell -->
+        <div class="text-cell"> <!-- start text cell -->
+
+          <h3>{{ member.title }}</h3>
+          {% if member.quote|length %}
+          <p class="team-quote">{{ member.quote }}</p>
+          {% endif %}
+
           <div class="accordion"> <!-- start accordion -->
 
-          <div class="visible"> <!-- start accordion visible part -->
-              <h3>{{ member.title }}</h3>
-              {% if member.quote|length %}
-              <p class="team-quote">{{ member.quote }}</p>
-              {% endif %}
+            <div class="visible"> <!-- start accordion visible part -->
               {{ member.visibleText }}
               <p class="accordion-trigger" style="text-align: left;"><span>Weitere Informationen</span></p>
             </div> <!-- end accordion visible part -->
@@ -52,6 +54,7 @@
             </div> <!-- end accordion invisible part -->
 
           </div> <!-- end accordion -->
+
         </div> <!-- end text cell -->
 
       </section> <!-- end row -->

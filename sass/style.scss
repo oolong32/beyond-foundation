@@ -24,6 +24,8 @@ $bold: 700;
 
 /* Dimensions {{{2 */
 
+// das ist alles nicht so cool
+// das ziel ist ja RWD!
 $maincol-desktop: 65rem; // 1040px
 $centered-col-desktop: 42.5rem; // 680px
 $alt-vid-grid-col-prim: 42.5rem; // 680px
@@ -80,15 +82,16 @@ h3 {
 
 
 p {
-  hypens: auto;  
+  hyphens: auto;  
   line-height: 1.4;
 }
 
 p.video-caption { // Video Legende Home ganzspaltig
   font-size: 0.875rem;
+  line-height: 1.2;
 }
 
-.teaser {
+.text-cell {
   h3, p {
     font-size: 2rem;
     line-height: 1.1875;
@@ -96,6 +99,19 @@ p.video-caption { // Video Legende Home ganzspaltig
   }
   h3 { font-weight: $light; }
   p { font-weight: $medium; }
+  
+  /* Accordion-Styles {{{3 */
+  
+  .accordion .visible,
+  .accordion .collapsed {
+    * {
+      font-weight: $light;
+      font-size: 22px;
+      line-height: 1.45;
+    }
+  }
+  
+  /* End Accordion-Styles }}}3 */
 }
 
 strong, em { font-weight: $semibold; }
@@ -390,24 +406,96 @@ main {
     // margin-top: 4rem; // too much
   }
 
-  section { margin: 3.125rem auto; }
+  section { margin: 3.125rem auto; } // kann display:grid hier hinein?
 
-  section#main-lead { width: $centered-col-desktop; }
-
-  section.full-width { width: 100%; }
-
-  section.alternating-video-grid {
+  /* Main Grids {{{2 */
+  
+  /* Main Grids Single Column Grid {{{3 */
+  
+  section.single-col {
     display: grid;
-    grid-template-columns: $alt-vid-grid-col-prim $alt-vid-grid-col-sec;
-    grid-column-gap: 2rem;
-    border: none;
-    .teaser { align-self: center; }
+    grid-template-columns: 1fr 4fr 1fr;
+    * {
+      grid-column: 2/3;
+      background: PaleTurquoise;
+    }
+    .full-width {
+      grid-column: 1/-1;
+      background: LightBlue;
+    }
   }
-  section.alternating-video-grid:nth-child(2n+1) {
-    grid-template-columns: $alt-vid-grid-col-sec $alt-vid-grid-col-prim;
+  
+  /* End Main Grids Single Column Grid }}}3 */
+
+  /* Main Grids Alternatig Grid Image Large {{{3 */
+  
+  section.alternating-grid-image-large {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 0;
+    .image-cell {
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .text-cell { 
+      align-self: center;
+      background: lavender;
+      padding: 0 0 0 40px;
+    }
+  }
+
+  section.alternating-grid-image-large:nth-child(2n+1) {
+    grid-template-columns: 1fr 2fr;
     div:first-child { order: 1; }
+    .text-cell { 
+      background: palegreen;
+      padding: 0 40px 0 0;
+    }
   }
+
+  /* End Main Grids Alternatig Grid Image Large }}}3 */
+
+  /* Main Grids Alternating Grid Text Large {{{3 */
+  
+  section.alternating-grid-text-large {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-column-gap: 0;
+    .image-cell {
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .text-cell {
+      transform: translateY(-10px);
+      padding: 0 0 0 40px;
+    }
+  }
+
+  section.alternating-grid-text-large:nth-child(2n+1) {
+    grid-template-columns: 2fr 1fr;
+    div:first-child { order: 1; }
+    .text-cell { padding: 0 40px 0 0; }
+  }
+
+  /* End Main Grids Alternating Grid Text Large }}}3 */
+
+  /* End Main Grids }}}2 */
+
 }
+
+/* Main Accordions {{{2 */
+
+.accordion {
+  margin-top: 1rem;
+  .visible { color: green; }
+  .collapsed { color: red; }
+}
+
+/* End Main Accordions }}}2 */
 
 
 /* End Main }}}1 */
@@ -461,6 +549,10 @@ footer {
 
 /* End Footer }}}1 */
 
+/**********/
+/* LAPTOP */
+/**********/
+
 /* Breakpoint for smaller Header/Footer {{{1 */
 
 @media (max-width: 1440px) { // Apple 15" Laptop
@@ -486,33 +578,59 @@ footer {
 
   /* Main {{{2 */
   main {
-    // padding: 22.5rem 2rem 0;
-    width: calc(100% - 2rem);
-    padding: 0 1rem;
+    width: auto;
+    padding: 22rem 2rem 0;
 
-    // h2 { font-size: 5rem; }
+    /* Main Grids {{{3 */
+    
+    /* Main Grids Single Column Grid {{{4 */
+    
+    section.single-col {
+      grid-template-columns: 1fr minmax(550px, 680px) 1fr;
+      .full-width { grid-column: 1/-1; }
+    }
+    
+    /* End Main Grids Single Column Grid }}}4 */
 
-    section#main-lead {
-      min-width: 550px;
-      width: 60%;
+    /* Main Grids Alternating Grid Image Large {{{4 */
+    
+    section.alternating-grid-image-large {
+      .text-cell { padding: 0 0 0 20px; }
+      .image-cell { min-width: 450px; }
     }
 
-    section.alternating-video-grid {
-      grid-template-columns: 2fr 1fr;
-      grid-gap: 1rem;
-      div.fake-video { width: 100%; }
-      .teaser { 
-        // h3, p { font-size: 1.5rem; }
-      }
+    section.alternating-grid-image-large:nth-child(2n+1) {
+      .text-cell { padding: 0 20px 0 0; }
     }
-    // blockquote { font-size: 5rem; }
+    
+    /* End Main Grids Alternating Grid Image Large }}}4 */
+
+    /* Main Grids Alternating Grid Text Large {{{4 */
+    
+    section.alternating-grid-text-large {
+      .text-cell { padding: 0 0 0 20px; }
+      .image-cell { min-width: 250px; }
+    }
+
+    section.alternating-grid-text-large:nth-child(2n+1) {
+      .text-cell { padding: 0 20px 0 0; }
+    }
+    
+    /* End Main Grids Alternating Grid Text Large }}}4 */
+    
+    /* End Main Grids }}}3 */
 
   }
+
   /* End Main }}}2 */
 
 }
 
 /* End Breakpoint for smaller Header/Footer }}}1 */
+
+/**********/
+/* MOBILE */
+/**********/
 
 /* Breakpoint for Mobile {{{1 */
 
@@ -643,13 +761,20 @@ footer {
     width: 100%;
     padding: 5rem 0 1rem;
 
+    h2 { padding: 0 20px; }
+
     section,
-    section#main-lead,
-    section.alternating-video-grid {
+    section.single-col,
+    section.alternating-grid-text-large,
+    section.alternating-grid-image-large,
+    section.alternating-grid-text-large:nth-child(2n+1),
+    section.alternating-grid-image-large:nth-child(2n+1) {
       // should probably stay two-col-grid
       width: 100%;
       min-width: 100%;
       display: block;
+      .image-cell,
+      .text-cell { padding: 0 20px; }
     }
 
     /* Main Micro Typography {{{3 */

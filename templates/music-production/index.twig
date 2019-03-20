@@ -19,23 +19,22 @@
 
       <h2>{{ entry.pageHeading }}</h2>
 
-      <section class="main-lead">
+      <section class="single-col">
         <h3>{{ entry.leadTitle }}</h3>
         {{ entry.lead }}
       </section>
       
+{# Das muss zwischen erste und zweite Iteration der Einträge unten (merci gäll) #}
+{# Das muss zwischen erste und zweite Iteration der Einträge unten (merci gäll) #}
       <blockquote>
-{# Das muss zwischen erste und zweite Iteration der Einträge unten (merci gäll) #}
-{# Das muss zwischen erste und zweite Iteration der Einträge unten (merci gäll) #}
-{# Das muss zwischen erste und zweite Iteration der Einträge unten (merci gäll) #}
-{# Das muss zwischen erste und zweite Iteration der Einträge unten (merci gäll) #}
         <p>“{{ entry.quote }}”</p>
       </blockquote>
+{# Das muss zwischen erste und zweite Iteration der Einträge unten (merci gäll) #}
+{# Das muss zwischen erste und zweite Iteration der Einträge unten (merci gäll) #}
 
-      
       {% for production in productions %}
-      <section class="alternating-image-grid">
-        <div class="raster-bildfeld">
+      <section class="alternating-grid-text-large">
+        <div class="image-cell">
           {% if production.coverImage|length %}
           <img src="{{ alias('@assetBasePath') }}/{{ production.coverImage[0].getUrl() }}" alt="{{ production.title }}">
           {% else %}
@@ -43,7 +42,7 @@
           {% endif %}
         </div>
 
-        <div class="raster-textfeld">
+        <div class="text-cell">
             <h3>{{ production.title }}</h3>
 
             {% if production.leadTitle|length %}
