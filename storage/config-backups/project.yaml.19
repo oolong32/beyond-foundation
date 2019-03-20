@@ -1,4 +1,4 @@
-dateModified: 1553003594
+dateModified: 1553003743
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -350,24 +350,24 @@ sections:
     entryTypes:
       dd2dc2fc-e081-483b-af9d-d3bd8a2e18ff:
         handle: imprint
-        hasTitleField: true
-        name: Impressum
+        hasTitleField: '1'
+        name: Imprint
         sortOrder: 1
         titleFormat: '{section.name|raw}'
         titleLabel: Titel
     handle: imprint
-    name: Impressum
+    name: Imprint
     propagateEntries: true
     siteSettings:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
         enabledByDefault: true
         hasUrls: true
-        template: impressum
+        template: imprint
         uriFormat: imprint
       96f6905b-bcc3-4e74-91a8-e5458eb5e532:
         enabledByDefault: true
         hasUrls: true
-        template: impressum
+        template: imprint
         uriFormat: imprint
     type: single
   a80687fd-9729-406e-ae44-7a1dc0a20692:
@@ -687,4 +687,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-03-19 14:55:43'
+dateApplied: '2019-03-19 14:56:23'

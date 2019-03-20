@@ -81,12 +81,11 @@
         </div>
       </section>
 
-      <section>
+      {% if entry.quote|length %}
         <blockquote>
-          <p>{{ craft.app.language == 'de' ? '«' : '“' }}Create music out of the core of being human.{{ craft.app.language == 'de' ? '»' : '”' }}</p>
+          <p>{{ craft.app.language == 'de' ? '«' : '“' }}{{ entry.quote }}{{ craft.app.language == 'de' ? '»' : '”' }}</p>
         </blockquote>
-      </section>
-
+      {% endif %}
 
       <section class="alternating-grid-image-large">
         <div class="image-cell">

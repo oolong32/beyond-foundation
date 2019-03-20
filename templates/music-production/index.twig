@@ -26,9 +26,11 @@
       
 {# Das muss zwischen erste und zweite Iteration der Einträge unten (merci gäll) #}
 {# Das muss zwischen erste und zweite Iteration der Einträge unten (merci gäll) #}
+      {% if entry.quote|length %}
       <blockquote>
-        <p>“{{ entry.quote }}”</p>
+        <p>{{ craft.app.language == 'de' ? '«' : '“' }}{{ entry.quote }}{{ craft.app.language == 'de' ? '»' : '”' }}</p>
       </blockquote>
+      {% endif %}
 {# Das muss zwischen erste und zweite Iteration der Einträge unten (merci gäll) #}
 {# Das muss zwischen erste und zweite Iteration der Einträge unten (merci gäll) #}
 

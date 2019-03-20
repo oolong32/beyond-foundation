@@ -1,4 +1,4 @@
-dateModified: 1552999394
+dateModified: 1552999403
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -182,7 +182,7 @@ fields:
       multiline: ''
       placeholder: ''
     translationKeyFormat: null
-    translationMethod: none
+    translationMethod: site
     type: craft\fields\PlainText
 plugins:
   redactor:
@@ -597,4 +597,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-03-19 13:43:23'
+dateApplied: '2019-03-19 13:43:35'

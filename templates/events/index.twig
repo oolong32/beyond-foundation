@@ -39,9 +39,11 @@
         </section>
       {% endfor %}
 
+      {% if entry.quote|length %}
       <blockquote>
-        <p>“{{ entry.quote }}”</p>
+        <p>{{ craft.app.language == 'de' ? '«' : '“' }}{{ entry.quote }}{{ craft.app.language == 'de' ? '»' : '”' }}</p>
       </blockquote>
+      {% endif %}
 
     </main>
         
