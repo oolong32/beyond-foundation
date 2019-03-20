@@ -52,7 +52,11 @@ p.video-caption {
 
 .text-cell {
   /* Accordion-Styles {{{3 */
-  /* End Accordion-Styles }}}3 */ }
+  /* End Accordion-Styles }}}3 */
+  /* Music-Production Overview {{{3 */
+  /* End Music-Production Overview }}}3 */
+  /* Events {{{3 */
+  /* End Events }}}3 */ }
   .text-cell h3, .text-cell p {
     font-size: 2rem;
     line-height: 1.1875;
@@ -66,6 +70,20 @@ p.video-caption {
     font-weight: 300;
     font-size: 22px;
     line-height: 1.45; }
+  .text-cell .music-production-title {
+    font-weight: 500; }
+  .text-cell .music-production-lead-title {
+    font-weight: 300; }
+  .text-cell .music-production-lead {
+    margin-top: 1rem; }
+    .text-cell .music-production-lead * {
+      font-weight: 300;
+      font-size: 22px;
+      line-height: 1.45; }
+  .text-cell .teaser-link {
+    font-weight: 300;
+    font-size: 1.375rem;
+    line-height: 1.45rem; }
 
 strong, em {
   font-weight: 600; }
@@ -76,7 +94,8 @@ blockquote p {
   font-style: italic;
   font-size: 6.25rem;
   line-height: 1;
-  text-align: center; }
+  text-align: center;
+  hyphens: none; }
 
 /* End Body Text }}}2 */
 /* Text Header {{{2 */
@@ -309,11 +328,9 @@ main {
     display: grid;
     grid-template-columns: 1fr 4fr 1fr; }
     main section.single-col * {
-      grid-column: 2/3;
-      background: PaleTurquoise; }
+      grid-column: 2/3; }
     main section.single-col .full-width {
-      grid-column: 1/-1;
-      background: LightBlue; }
+      grid-column: 1/-1; }
   main section.alternating-grid-image-large {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -323,14 +340,14 @@ main {
       height: auto; }
     main section.alternating-grid-image-large .text-cell {
       align-self: center;
-      background: lavender;
       padding: 0 0 0 40px; }
+      main section.alternating-grid-image-large .text-cell .teaser-link {
+        margin-top: 1rem; }
   main section.alternating-grid-image-large:nth-child(2n+1) {
     grid-template-columns: 1fr 2fr; }
     main section.alternating-grid-image-large:nth-child(2n+1) div:first-child {
       order: 1; }
     main section.alternating-grid-image-large:nth-child(2n+1) .text-cell {
-      background: palegreen;
       padding: 0 40px 0 0; }
   main section.alternating-grid-text-large {
     display: grid;

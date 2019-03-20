@@ -43,12 +43,15 @@
         </div>
 
         <div class="text-cell">
-            <h3>{{ production.title }}</h3>
+            <h3 class="music-production-title">{{ production.title }}</h3>
 
             {% if production.leadTitle|length %}
-              <h3>{{ production.leadTitle }}</h3>
+              <p class="music-production-lead-title">{{ production.leadTitle }}</p>
             {% endif %}
-            {{ production.lead }}
+
+            <div class="music-production-lead">
+              {{ production.lead }}
+            </div>
         </div>
 
       </section>
