@@ -296,13 +296,15 @@ a.social-media-link:hover svg path { fill: $blue-hover; }
 
 /* Buttons {{{1 */
 
-button.accordion-trigger {
+.accordion-collapse,
+.accordion-trigger {
+  display: inline-block;
   background: $gold;
   color: white;
   padding: 1px 10px 2px 7px;
   margin: 1rem 0;
   cursor: pointer;
-  span.prefixed-plus:before { 
+  span:before { 
     content: "+";
     font-weight: $semibold;
     font-size: 1.2em;
@@ -312,7 +314,13 @@ button.accordion-trigger {
     padding-right: 0.25rem;
   }
 }
-button.accordion-trigger:hover {
+
+.accordion-collapse span:before {
+  content: "–";
+}
+
+.accordion-collapse:hover,
+.accordion-trigger:hover {
   background: $blue-hover;
 }
 
@@ -420,7 +428,7 @@ header.mini { // footer visible, see JS helpers
 
 /* End Header Shrink }}}1 */
 
-/* Main {{{1 */
+/* Main Layout {{{1 */
 
 main {
   width: $maincol-desktop;
@@ -517,18 +525,20 @@ main {
 
 }
 
-/* Main Accordions {{{2 */
+/* Main Accordions Layout {{{2 */
 
 .accordion {
   margin-top: 1rem;
-  .visible { color: green; }
+  .visible { outline: 0; }
   .collapsed { color: red; }
+  .accordion-trigger { margin-top: 1rem; }
+  .accordion-collapse { }
 }
 
-/* End Main Accordions }}}2 */
+/* End Main Accordions Layout }}}2 */
 
 
-/* End Main }}}1 */
+/* End Main Layout }}}1 */
 
 /* Footer {{{1 */
 
@@ -870,7 +880,5 @@ footer {
   to { transform: translateY(0); opacity: 1; }
 }
 /* End Keyframes Nav-Overlay }}}1 */
-
-
 
 /* The End */

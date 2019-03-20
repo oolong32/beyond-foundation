@@ -43,7 +43,6 @@ $(".accordion-collapse").click(function() {
     $(this).parent().parent().accordion({
       active: false
     });
-      // $(this).children().first().text('Weitere Informationen');
+    // $(this).children().first().text('Weitere Informationen');
     $(this).parent().parent().find('.accordion-trigger').show(300);
-    $(this).parent().parent().find('.upper-mail-link').show(300);
 });

@@ -213,13 +213,16 @@ a.social-media-link:hover svg path {
 /* End Link Styles }}}2 */
 /* End Basic Text formatting }}}1 */
 /* Buttons {{{1 */
-button.accordion-trigger {
+.accordion-collapse,
+.accordion-trigger {
+  display: inline-block;
   background: linear-gradient(20deg, #CCAF82 0%, #C6AD8C 20%, #C0AB97 100%);
   color: white;
   padding: 1px 10px 2px 7px;
   margin: 1rem 0;
   cursor: pointer; }
-  button.accordion-trigger span.prefixed-plus:before {
+  .accordion-collapse span:before,
+  .accordion-trigger span:before {
     content: "+";
     font-weight: 600;
     font-size: 1.2em;
@@ -228,7 +231,11 @@ button.accordion-trigger {
     transform: translateY(2px);
     padding-right: 0.25rem; }
 
-button.accordion-trigger:hover {
+.accordion-collapse span:before {
+  content: "–"; }
+
+.accordion-collapse:hover,
+.accordion-trigger:hover {
   background: #0028ff; }
 
 /* End Buttons }}}1 */
@@ -307,7 +314,7 @@ header.mini #masthead {
   height: 0; }
 
 /* End Header Shrink }}}1 */
-/* Main {{{1 */
+/* Main Layout {{{1 */
 main {
   width: 65rem;
   margin: 3.125rem auto;
@@ -366,16 +373,18 @@ main {
     main section.alternating-grid-text-large:nth-child(2n+1) .text-cell {
       padding: 0 40px 0 0; }
 
-/* Main Accordions {{{2 */
+/* Main Accordions Layout {{{2 */
 .accordion {
   margin-top: 1rem; }
   .accordion .visible {
-    color: green; }
+    outline: 0; }
   .accordion .collapsed {
     color: red; }
+  .accordion .accordion-trigger {
+    margin-top: 1rem; }
 
-/* End Main Accordions }}}2 */
-/* End Main }}}1 */
+/* End Main Accordions Layout }}}2 */
+/* End Main Layout }}}1 */
 /* Footer {{{1 */
 footer {
   margin-top: 4em;
