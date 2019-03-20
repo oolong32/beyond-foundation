@@ -1,4 +1,4 @@
-dateModified: 1552999371
+dateModified: 1553002577
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -40,7 +40,7 @@ fields:
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
     handle: quote
     instructions: ''
-    name: Zitat
+    name: Quote
     searchable: false
     settings:
       charLimit: ''
@@ -50,7 +50,7 @@ fields:
       multiline: ''
       placeholder: ''
     translationKeyFormat: null
-    translationMethod: none
+    translationMethod: site
     type: craft\fields\PlainText
   63060068-23fd-4091-9e13-96d982008822:
     contentColumnType: text
@@ -68,7 +68,7 @@ fields:
       purifyHtml: '1'
       redactorConfig: Simple.json
     translationKeyFormat: null
-    translationMethod: none
+    translationMethod: site
     type: craft\redactor\Field
   72357970-aa0e-4ab8-bc96-4899cd33dd40:
     contentColumnType: string
@@ -140,7 +140,24 @@ fields:
       multiline: ''
       placeholder: ''
     translationKeyFormat: null
-    translationMethod: none
+    translationMethod: site
+    type: craft\fields\PlainText
+  bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
+    contentColumnType: text
+    fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
+    handle: displayedTitle
+    instructions: 'Überschrift der Seite'
+    name: 'Page Title'
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: site
     type: craft\fields\PlainText
   e6776d44-d3d9-442b-90aa-f01d11baa789:
     contentColumnType: string
@@ -172,7 +189,7 @@ fields:
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
     handle: quoteAuthor
     instructions: ''
-    name: 'Zitat Autor'
+    name: 'Quote Autor'
     searchable: false
     settings:
       charLimit: ''
@@ -182,7 +199,7 @@ fields:
       multiline: ''
       placeholder: ''
     translationKeyFormat: null
-    translationMethod: none
+    translationMethod: site
     type: craft\fields\PlainText
 plugins:
   redactor:
@@ -388,12 +405,22 @@ sections:
     enableVersioning: true
     entryTypes:
       5711e561-155d-4f0f-964e-cde1f92e24c8:
+        fieldLayouts:
+          29ccaefe-5fa6-4cb1-82b2-01b8083558a4:
+            tabs:
+              -
+                fields:
+                  bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
+                    required: false
+                    sortOrder: 1
+                name: 'Tab 1'
+                sortOrder: 1
         handle: story
-        hasTitleField: '1'
+        hasTitleField: true
         name: 'Team Overview'
         sortOrder: 1
         titleFormat: '{section.name|raw}'
-        titleLabel: Heading
+        titleLabel: 'Titel (Navigation)'
     handle: team
     name: 'Team Overview'
     propagateEntries: true
@@ -597,4 +624,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-03-19 13:43:03'
+dateApplied: '2019-03-19 14:37:25'

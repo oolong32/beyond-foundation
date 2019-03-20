@@ -65,6 +65,11 @@ p.video-caption {
     font-weight: 300; }
   .text-cell p {
     font-weight: 500; }
+  .text-cell .normal,
+  .text-cell .normal > * {
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 1.45; }
   .text-cell .accordion .visible *,
   .text-cell .accordion .collapsed * {
     font-weight: 300;
@@ -386,6 +391,14 @@ main {
     margin-top: 1rem; }
 
 /* End Main Accordions Layout }}}2 */
+/* Audio Player {{{2 */
+.audio-player {
+  display: none; }
+
+.play-pause-button.playing {
+  background: lime; }
+
+/* End Audio Player }}}2 */
 /* End Main Layout }}}1 */
 /* Footer {{{1 */
 footer {

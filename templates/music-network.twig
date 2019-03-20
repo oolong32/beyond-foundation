@@ -23,11 +23,37 @@
         {{ entry.lead }}
       </section>
 
+      {# hier irgendwo diesen link #}
+      {# https://www.beyondmusic.org/contact #}
+      
+      <section class="single-col">
+        <div class="full-width" style="margin-bottom: 10px; width: 100%; height: 585px; background: papayawhip;"></div>
+        <p class="video-caption full-width"><strong>Foo bar baz</strong> Et consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+      </section>
+
       {% if entry.quote|length %}
       <blockquote>
         <p>{{ craft.app.language == 'de' ? '«' : '“' }}{{ entry.quote }}{{ craft.app.language == 'de' ? '»' : '”' }}</p>
       </blockquote>
       {% endif %}
+
+      <section class="alternating-grid-text-large">
+        <div class="image-cell">
+        </div>
+        <div class="text-cell">
+          <h3>Winning Song of the Second Creativity Award</h3>
+          <img class="play-pause-button" src="{{ alias('@assetBasePath') }}/assets/_pic/audio-play.svg" alt="play button">
+          <audio class="audio-player" controls="controls" paused>
+            Your browser does not support the <code>audio</code> element.
+            <source src="{{ alias('@assetBasePath') }}/{{ entry.audioTrack[0].getUrl() }}">
+          </audio>
+          <p>{{ entry.trackTitle }}</p>
+          <div class="normal">
+            {{ entry.trackInfo }}
+          </div>
+
+        </div>
+      </section>
 
     </main>
         
@@ -35,8 +61,49 @@
       {% include 'includes/footer' %}
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.1/howler.core.min.js"></script>
     <script>
       console.log('I & I is at {{ slug }}' );
+
+      // audio player
+      var sound = new Howl({
+        src: [  '{{ alias('@assetBasePath') }}/{{ entry.audioTrack[0].getUrl() }}' ]
+      });
+      
+      // pause after load
+      sound.once('load', function() {
+        sound.pause();
+      });
+      
+      // button
+      var playPause = document.querySelector('.play-pause-button');
+      playPause.addEventListener('click' || 'touchend', handlePlayPause);
+
+      // display remaining time
+      window.setInterval( function() { console.log(getRemainingTime()) }, 1000 );
+
+      // event handler
+      function handlePlayPause(e) {
+        console.log('clicked');
+        e.target.classList.toggle('playing'); 
+        if ( sound.playing() ) {
+          sound.pause();
+        } else {
+          sound.play();
+        }
+      }
+
+      function getRemainingTime() {
+        var played = sound.seek();
+        var duration = sound.duration();
+        var remaining = duration - played; 
+
+        var remainingMinutes = Math.floor(remaining/60);
+        var remainingSeconds = Math.floor(remaining%60);
+        return remainingMinutes + ':' + remainingSeconds;
+        // remaining Sconds mit vorangestelltem Null hahahahhahahhaahha
+      }
+      
     </script>
 
 {% endblock %}
