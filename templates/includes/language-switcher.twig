@@ -17,11 +17,12 @@ style="
         {% set site = craft.app.getSites.getSiteById(siteForEntry.siteId) %}
         {# check if it's the current site #}
         {% if site.id == entry.siteId %}
-          <p>active site = {{ site.id }} {{ site.language }}</p>
+          {# don’t show a thing #}
+          {# <p>active site = {{ site.id }} {{ site.language }}</p> #}
         {% else %}
           {# if it's not the current site, get the entry for this site #}
           {% set entryForOtherSite = craft.entries.id(entry.id).site(site).one() %}
-        <p>link to site with id {{ entryForOtherSite.siteId }} <a href="{{ entryForOtherSite.getUrl() }}">{{ site.language }} – {{ entryForOtherSite.title }}</a></p>
+        <p><a href="{{ entryForOtherSite.getUrl() }}" title="{{ entryForOtherSite.title }}">{{ site.language }}</a></p>
       {% endif %}
   {% endfor %}
 

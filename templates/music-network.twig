@@ -37,16 +37,17 @@
       </blockquote>
       {% endif %}
 
+      {% if entry.audioTrack|length %}
       <section class="alternating-grid-text-large">
         <div class="image-cell">
-          <img src="{{ alias('@assetBasePath') }}/{{ entry.coverImage[0].getUrl() }}" alt="{{ entry.trackArtist }}{{ entry.trackTitle }}">
+          <img src="{{ alias('@assetBasePath') }}/{{ entry.coverImage[0].getUrl() }}" alt="{#{{ entry.trackArtist }}: #}{{ entry.trackTitle }}">
         </div>
         <div class="text-cell">
           <h3>Winning Song of the Second Creativity Award</h3>
 
           <div class="custom-audio-player">
             <div class="play-pause-button">{# background gets set in stylesheet #}</div>
-            <p class="track-info">{{ entry.trackArtist }}: {{ entry.trackTitle }}</p>
+            <p class="track-info">{#{{ entry.trackArtist }}: #}{{ entry.trackTitle }}</p>
             <p class="time normal">{# gets content by javascript #}</p>
             <audio class="audio-player" controls="controls" paused> {# audio is not displayed by way of css #}
               Your browser does not support the <code>audio</code> element.
@@ -60,6 +61,7 @@
 
         </div>
       </section>
+      {% endif %}
 
     </main>
         

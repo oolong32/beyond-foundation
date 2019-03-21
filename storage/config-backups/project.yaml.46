@@ -1,4 +1,4 @@
-dateModified: 1553000846
+dateModified: 1553002458
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -131,6 +131,23 @@ fields:
     handle: leadTitle
     instructions: 'Überschrift über dem Lead'
     name: 'Lead Title'
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\PlainText
+  bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
+    contentColumnType: text
+    fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
+    handle: displayedTitle
+    instructions: 'Überschrift der Seite'
+    name: 'Page Title'
     searchable: true
     settings:
       charLimit: ''
@@ -597,4 +614,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-03-19 14:34:18'
+dateApplied: '2019-03-19 14:36:17'

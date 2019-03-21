@@ -1,4 +1,4 @@
-dateModified: 1553006018
+dateModified: 1553006606
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -261,16 +261,16 @@ sections:
               -
                 fields:
                   3f013fdf-9050-4d51-b818-050c8a105e6f:
-                    required: false
+                    required: true
                     sortOrder: 1
                   63060068-23fd-4091-9e13-96d982008822:
-                    required: false
+                    required: true
                     sortOrder: 3
                   72357970-aa0e-4ab8-bc96-4899cd33dd40:
                     required: false
                     sortOrder: 4
                   b729c087-ed9f-4371-8cf0-48e6ef2d9e6a:
-                    required: false
+                    required: true
                     sortOrder: 2
                 name: 'Music Production'
                 sortOrder: 1
@@ -697,4 +697,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-03-19 15:43:26'
+dateApplied: '2019-03-19 16:18:27'

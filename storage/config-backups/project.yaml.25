@@ -1,4 +1,4 @@
-dateModified: 1553006606
+dateModified: 1553008707
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -658,12 +658,12 @@ siteGroups:
     name: 'Beyond Foundation'
 sites:
   802d4b06-1f71-4c60-8b00-c331a21b5134:
-    baseUrl: 'http://beyond-foundation.test/en/'
+    baseUrl: null
     handle: beyondFoundation
-    hasUrls: true
+    hasUrls: false
     language: en
     name: 'Beyond Foundation English'
-    primary: true
+    primary: false
     siteGroup: be67c42e-6aa2-4656-8f77-d2b8cd57dedd
     sortOrder: 1
   96f6905b-bcc3-4e74-91a8-e5458eb5e532:
@@ -697,4 +697,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-03-19 16:18:27'
+dateApplied: '2019-03-19 16:18:51'
