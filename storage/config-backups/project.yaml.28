@@ -1,4 +1,4 @@
-dateModified: 1553003782
+dateModified: 1553005417
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -355,30 +355,30 @@ sections:
               -
                 fields:
                   bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
-                    required: false
-                    sortOrder: 1
+                    required: '0'
+                    sortOrder: '1'
                 name: 'Tab 1'
-                sortOrder: 1
+                sortOrder: '1'
         handle: imprint
-        hasTitleField: false
-        name: Imprint
+        hasTitleField: '0'
+        name: Impressum
         sortOrder: 1
         titleFormat: '{section.name|raw}'
         titleLabel: Titel
-    handle: imprint
-    name: Imprint
+    handle: impressum
+    name: Impressum
     propagateEntries: true
     siteSettings:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
         enabledByDefault: true
         hasUrls: true
-        template: imprint
-        uriFormat: imprint
+        template: impressum
+        uriFormat: impressum
       96f6905b-bcc3-4e74-91a8-e5458eb5e532:
         enabledByDefault: true
         hasUrls: true
-        template: imprint
-        uriFormat: imprint
+        template: impressum
+        uriFormat: impressum
     type: single
   a80687fd-9729-406e-ae44-7a1dc0a20692:
     enableVersioning: true
@@ -634,7 +634,7 @@ sections:
         name: 'Team Entry'
         sortOrder: 1
         titleFormat: ''
-        titleLabel: Titel
+        titleLabel: Name
     handle: storyEntries
     name: 'Team Entries'
     propagateEntries: true
@@ -697,4 +697,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-03-19 15:00:37'
+dateApplied: '2019-03-19 15:28:34'

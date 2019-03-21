@@ -39,15 +39,21 @@
 
       <section class="alternating-grid-text-large">
         <div class="image-cell">
+          <img src="{{ alias('@assetBasePath') }}/{{ entry.coverImage[0].getUrl() }}" alt="{{ entry.trackArtist }}{{ entry.trackTitle }}">
         </div>
         <div class="text-cell">
           <h3>Winning Song of the Second Creativity Award</h3>
-          <img class="play-pause-button" src="{{ alias('@assetBasePath') }}/assets/_pic/audio-play.svg" alt="play button">
-          <audio class="audio-player" controls="controls" paused>
-            Your browser does not support the <code>audio</code> element.
-            <source src="{{ alias('@assetBasePath') }}/{{ entry.audioTrack[0].getUrl() }}">
-          </audio>
-          <p>{{ entry.trackTitle }}</p>
+
+          <div class="custom-audio-player">
+            <div class="play-pause-button">{# background gets set in stylesheet #}</div>
+            <p class="track-info">{{ entry.trackArtist }}: {{ entry.trackTitle }}</p>
+            <p class="time normal">{# gets content by javascript #}</p>
+            <audio class="audio-player" controls="controls" paused> {# audio is not displayed by way of css #}
+              Your browser does not support the <code>audio</code> element.
+              <source src="{{ alias('@assetBasePath') }}/{{ entry.audioTrack[0].getUrl() }}">
+            </audio>
+          </div>
+
           <div class="normal">
             {{ entry.trackInfo }}
           </div>
@@ -63,47 +69,57 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.1/howler.core.min.js"></script>
     <script>
-      console.log('I & I is at {{ slug }}' );
+      window.addEventListener('DOMContentLoaded', (event) => {
 
-      // audio player
-      var sound = new Howl({
-        src: [  '{{ alias('@assetBasePath') }}/{{ entry.audioTrack[0].getUrl() }}' ]
-      });
-      
-      // pause after load
-      sound.once('load', function() {
-        sound.pause();
-      });
-      
-      // button
-      var playPause = document.querySelector('.play-pause-button');
-      playPause.addEventListener('click' || 'touchend', handlePlayPause);
+        console.log('I & I is at {{ slug }}' );
 
-      // display remaining time
-      window.setInterval( function() { console.log(getRemainingTime()) }, 1000 );
+        // element that will show remaining time once audio loaded
+        var showRemainingTime = document.querySelector('.time');
 
-      // event handler
-      function handlePlayPause(e) {
-        console.log('clicked');
-        e.target.classList.toggle('playing'); 
-        if ( sound.playing() ) {
+        // audio player
+        var sound = new Howl({
+          src: [  '{{ alias('@assetBasePath') }}/{{ entry.audioTrack[0].getUrl() }}' ]
+        });
+        
+        // Check for audio loaded, pause and display time
+        sound.once('load', function() {
           sound.pause();
-        } else {
-          sound.play();
+          // once loaded, time can be displayed,
+          // so set interval and do it every second
+          window.setInterval( function() { 
+            showRemainingTime.innerHTML = getRemainingTime();
+            },
+            1000 );
+        });
+        
+        // button
+        var playPause = document.querySelector('.play-pause-button');
+        playPause.addEventListener('click' || 'touchend', handlePlayPause);
+
+
+        // event handler
+        function handlePlayPause(e) {
+          console.log('clicked');
+          e.target.classList.toggle('playing'); 
+          if ( sound.playing() ) {
+            sound.pause();
+          } else {
+            sound.play();
+          }
         }
-      }
 
-      function getRemainingTime() {
-        var played = sound.seek();
-        var duration = sound.duration();
-        var remaining = duration - played; 
+        function getRemainingTime() {
+          var played = sound.seek() || 0;
+          var duration = sound.duration();
+          var remaining = duration - played; 
 
-        var remainingMinutes = Math.floor(remaining/60);
-        var remainingSeconds = Math.floor(remaining%60);
-        return remainingMinutes + ':' + remainingSeconds;
-        // remaining Sconds mit vorangestelltem Null hahahahhahahhaahha
-      }
-      
+          var remainingMinutes = Math.floor(remaining/60);
+          var remainingSeconds = Math.floor(remaining%60);
+          return remainingMinutes + ':' + remainingSeconds;
+          // remaining Sconds mit vorangestelltem Null hahahahhahahhaahha
+        }
+        
+      });
     </script>
 
 {% endblock %}
