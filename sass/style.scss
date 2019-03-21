@@ -174,6 +174,12 @@ blockquote p {
     font-style: italic;
   }
 }
+#language-switch p {
+  font-size: 0.8125rem;
+  font-weight: $bold;
+  text-transform: uppercase;
+}
+#language-switch:hover { background: $blue; }
 
 /* End Text Header }}}2 */
 
@@ -211,6 +217,12 @@ h1 a:hover {
 }
 
 /* End Masthead H1 }}}3 */
+
+/* Header Language Switch {{{3 */
+
+  #language-switch p a { border: none;}
+
+/* End Header Language Switch }}}3 */
 
 /* Header Nav Links {{{3 */
 
@@ -369,7 +381,20 @@ header {
   top: 0;
   z-index: 9999;
   box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2);
+
   #hamburger { display: none; } // no hamburger on desktop
+
+  #language-switch {
+    position: absolute;
+    right: 2rem;
+    top: 35px;
+    background: white;
+    width: 26px;
+    height: 20px;
+    cursor: pointer;
+    display: flex;
+    p { margin: auto; }
+  }
 
   /* Header Masthead Layout {{{2 */
   
@@ -411,6 +436,7 @@ header {
   }
   
   /* End Header Nav Layout }}}2 */
+
 }
 
 /* End Header }}}1 */

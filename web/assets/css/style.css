@@ -114,6 +114,14 @@ blockquote p {
     font-weight: 700;
     font-style: italic; }
 
+#language-switch p {
+  font-size: 0.8125rem;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+#language-switch:hover {
+  background: #a5b4ff; }
+
 /* End Text Header }}}2 */
 /* Link Styles {{{2 */
 /* Basic Links {{{3 */
@@ -143,6 +151,11 @@ h1 a:hover {
   border-bottom: none; }
 
 /* End Masthead H1 }}}3 */
+/* Header Language Switch {{{3 */
+#language-switch p a {
+  border: none; }
+
+/* End Header Language Switch }}}3 */
 /* Header Nav Links {{{3 */
 header nav ul li a {
   border-bottom: none; }
@@ -280,6 +293,17 @@ header {
   /* End Header Nav Layout }}}2 */ }
   header #hamburger {
     display: none; }
+  header #language-switch {
+    position: absolute;
+    right: 2rem;
+    top: 35px;
+    background: white;
+    width: 26px;
+    height: 20px;
+    cursor: pointer;
+    display: flex; }
+    header #language-switch p {
+      margin: auto; }
   header #masthead {
     transition: all 0.3s ease-out;
     flex-direction: column; }
