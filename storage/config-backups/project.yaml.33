@@ -1,4 +1,4 @@
-dateModified: 1553003743
+dateModified: 1553008756
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -261,16 +261,16 @@ sections:
               -
                 fields:
                   3f013fdf-9050-4d51-b818-050c8a105e6f:
-                    required: false
+                    required: true
                     sortOrder: 1
                   63060068-23fd-4091-9e13-96d982008822:
-                    required: false
+                    required: true
                     sortOrder: 3
                   72357970-aa0e-4ab8-bc96-4899cd33dd40:
                     required: false
                     sortOrder: 4
                   b729c087-ed9f-4371-8cf0-48e6ef2d9e6a:
-                    required: false
+                    required: true
                     sortOrder: 2
                 name: 'Music Production'
                 sortOrder: 1
@@ -349,26 +349,36 @@ sections:
     enableVersioning: true
     entryTypes:
       dd2dc2fc-e081-483b-af9d-d3bd8a2e18ff:
+        fieldLayouts:
+          41d47ce2-2da4-487c-9b31-51a46b231de6:
+            tabs:
+              -
+                fields:
+                  bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
+                    required: '0'
+                    sortOrder: '1'
+                name: 'Tab 1'
+                sortOrder: '1'
         handle: imprint
-        hasTitleField: '1'
-        name: Imprint
+        hasTitleField: '0'
+        name: Impressum
         sortOrder: 1
         titleFormat: '{section.name|raw}'
         titleLabel: Titel
-    handle: imprint
-    name: Imprint
+    handle: impressum
+    name: Impressum
     propagateEntries: true
     siteSettings:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
         enabledByDefault: true
         hasUrls: true
-        template: imprint
-        uriFormat: imprint
+        template: impressum
+        uriFormat: impressum
       96f6905b-bcc3-4e74-91a8-e5458eb5e532:
         enabledByDefault: true
         hasUrls: true
-        template: imprint
-        uriFormat: imprint
+        template: impressum
+        uriFormat: impressum
     type: single
   a80687fd-9729-406e-ae44-7a1dc0a20692:
     enableVersioning: true
@@ -606,13 +616,13 @@ sections:
                     required: false
                     sortOrder: 2
                   78cf4c77-636b-48a0-b594-60ab78ef26a1:
-                    required: false
+                    required: true
                     sortOrder: 4
                   8a5aa2a1-d84f-4bbf-9ea5-4c6b67c7c105:
-                    required: false
+                    required: true
                     sortOrder: 5
                   e6776d44-d3d9-442b-90aa-f01d11baa789:
-                    required: false
+                    required: true
                     sortOrder: 1
                   f509c340-3109-4f76-a749-0569c3dd49ae:
                     required: false
@@ -624,8 +634,8 @@ sections:
         name: 'Team Entry'
         sortOrder: 1
         titleFormat: ''
-        titleLabel: Titel
-    handle: storyEntries
+        titleLabel: Name
+    handle: teamEntries
     name: 'Team Entries'
     propagateEntries: true
     siteSettings:
@@ -648,12 +658,12 @@ siteGroups:
     name: 'Beyond Foundation'
 sites:
   802d4b06-1f71-4c60-8b00-c331a21b5134:
-    baseUrl: 'http://beyond-foundation.test/en/'
+    baseUrl: 'http://$DEFAULT_SITE_URL/en'
     handle: beyondFoundation
     hasUrls: true
     language: en
     name: 'Beyond Foundation English'
-    primary: true
+    primary: false
     siteGroup: be67c42e-6aa2-4656-8f77-d2b8cd57dedd
     sortOrder: 1
   96f6905b-bcc3-4e74-91a8-e5458eb5e532:
@@ -687,4 +697,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-03-19 14:56:23'
+dateApplied: '2019-03-19 16:21:57'

@@ -33,6 +33,13 @@ h3 {
   line-height: 1.1875;
   margin-bottom: 1.25rem; }
 
+h4 {
+  font-family: "Calibre", "Helvetica Neue", helvetica, arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.25;
+  margin-bottom: 1.25rem; }
+
 /* End Body Headings }}}3 */
 p {
   hyphens: auto;
@@ -257,6 +264,23 @@ a.social-media-link:hover svg path {
 .accordion-trigger:hover {
   background: #0028ff; }
 
+/* Share, Listen, Download Buttons {{{2 */
+.igroove img,
+.cede img,
+.exlibris img {
+  width: 50px;
+  margin: auto; }
+
+.cede img {
+  transform: translateY(-6px) scale(1.1); }
+
+.exlibris img {
+  transform: translateY(-10px) scale(1.1); }
+
+.igroove img {
+  transform: translateY(-7px) scale(1.1); }
+
+/* End Share, Listen, Download Buttons }}}2 */
 /* End Buttons }}}1 */
 /* Masthead Basic Layout {{{1 */
 #masthead {
@@ -356,7 +380,13 @@ main {
   /* End Main Grids Alternatig Grid Image Large }}}3 */
   /* Main Grids Alternating Grid Text Large {{{3 */
   /* End Main Grids Alternating Grid Text Large }}}3 */
-  /* End Main Grids }}}2 */ }
+  /* Main Grids order-download Grid {{{3 */
+  /* End Main Grids order-download Grid }}}3 */
+  /* Main Grids artist-teaser Grid {{{3 */
+  /* End Main Grids artist-teaser Grid }}}3 */
+  /* End Main Grids }}}2 */
+  /* main Music-Production-Entry {{{2 */
+  /* End main Music-Production-Entry }}}2 */ }
   main h2 {
     margin: 0 0 3.125rem; }
   main section {
@@ -413,6 +443,69 @@ main {
     main section.alternating-grid-text-large:nth-child(2n+1) .text-cell {
       order: -1;
       padding: 0 40px 0 0; }
+  main .order-download {
+    margin-top: 3.125rem;
+    display: grid;
+    grid-row-gap: 2.5rem;
+    grid-template-columns: auto auto auto; }
+    main .order-download .hear,
+    main .order-download .buy,
+    main .order-download .share {
+      display: grid;
+      grid-gap: 0;
+      grid-template-columns: repeat(auto-fill, minmax(50px, 100px)); }
+      main .order-download .hear h4,
+      main .order-download .buy h4,
+      main .order-download .share h4 {
+        grid-column: 1/-1;
+        margin: 0; }
+      main .order-download .hear div,
+      main .order-download .buy div,
+      main .order-download .share div {
+        grid-column: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-content: center; }
+        main .order-download .hear div img,
+        main .order-download .buy div img,
+        main .order-download .share div img {
+          margin: 0.75rem auto; }
+        main .order-download .hear div p,
+        main .order-download .buy div p,
+        main .order-download .share div p {
+          font-size: 0.875rem;
+          font-weight: 500;
+          text-align: center; }
+    main .order-download .hear {
+      grid-column: 1/-1; }
+    main .order-download .buy {
+      grid-column: 1/3; }
+    main .order-download .share {
+      grid-column: 3/4; }
+  main .artist-teaser-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2.375rem; }
+    main .artist-teaser-grid .artist-teaser {
+      grid-column: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-content: center; }
+      main .artist-teaser-grid .artist-teaser img {
+        width: 50%;
+        margin: 0 auto; }
+      main .artist-teaser-grid .artist-teaser h3.artist-name {
+        margin: 1rem auto; }
+      main .artist-teaser-grid .artist-teaser .artist-link {
+        margin: 1rem auto 0; }
+  main .cover-image {
+    width: 100%;
+    margin: 2.5rem 0; }
+  main h2.other-albums,
+  main h2.musicians {
+    margin-top: 6.25rem; }
 
 /* Main Accordions Layout {{{2 */
 .accordion {
@@ -513,6 +606,8 @@ footer {
     /* End Main Grids Alternating Grid Image Large }}}4 */
     /* Main Grids Alternating Grid Text Large {{{4 */
     /* End Main Grids Alternating Grid Text Large }}}4 */
+    /* Artist Teaser Grid {{{3 */
+    /* End Artist Teaser Grid }}}3 */
     /* End Main Grids }}}3 */ }
     main section.single-col {
       grid-template-columns: 1fr minmax(550px, 680px) 1fr; }
@@ -530,6 +625,10 @@ footer {
       min-width: 250px; }
     main section.alternating-grid-text-large:nth-child(2n+1) .text-cell {
       padding: 0 20px 0 0; }
+    main .artist-teaser-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1.5rem; }
   /* End Main }}}2 */ }
 
 /* End Breakpoint for smaller Header/Footer }}}1 */
@@ -649,6 +748,8 @@ footer {
     /* Mobile Main Whitespace {{{3 */
     width: 100%;
     padding: 3rem 0 1rem;
+    /* Mobile Music-Production Single Entry {{{4 */
+    /* End Mobile Music-Production Single Entry }}}4 */
     /* Mobile Main Grids {{{4 */
     /* End Mobile Main Grids }}}4 */
     /* End Mobile Main Whitespace }}}3 */
@@ -721,6 +822,35 @@ footer {
       main section.alternating-grid-image-large:nth-child(2n+1) .accordion-trigger,
       main section.alternating-grid-image-large:nth-child(2n+1) .accordion-collapse {
         margin-top: .5rem; }
+    main .cover-image {
+      margin: 1.25rem auto 0; }
+    main .order-download {
+      display: block;
+      margin: 0 auto 1.25rem; }
+      main .order-download .hear, main .order-download .buy, main .order-download .share {
+        margin-top: 2.5rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; }
+      main .order-download .share {
+        margin-bottom: 2.5rem; }
+      main .order-download h4 {
+        text-align: center;
+        width: 100%; }
+      main .order-download div {
+        margin: 0 10px; }
+      main .order-download .igroove-sms {
+        width: 100%;
+        margin: 1.5rem 0 0; }
+    main .artist-teaser-grid {
+      grid-template-columns: 1fr; }
+      main .artist-teaser-grid .artist-teaser {
+        margin-bottom: 1rem; }
+        main .artist-teaser-grid .artist-teaser h3.artist-name {
+          text-align: left;
+          margin: 0.875rem auto 0.25rem 0; }
+        main .artist-teaser-grid .artist-teaser p.artist-link {
+          margin: 0.25rem auto 0 0; }
     main blockquote {
       margin: 1.5rem auto; }
     main section,

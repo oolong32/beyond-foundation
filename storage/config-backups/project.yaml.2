@@ -1,4 +1,4 @@
-dateModified: 1553163324
+dateModified: 1553617057
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -53,6 +53,18 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Assets
+  0b039d84-1f7d-493d-8d5b-b894b6c24f75:
+    contentColumnType: string
+    fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
+    handle: artistLink
+    instructions: 'Website des Künstlers, mit `https://`'
+    name: 'Website des Künstlers'
+    searchable: true
+    settings:
+      placeholder: 'https://'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
   3f013fdf-9050-4d51-b818-050c8a105e6f:
     contentColumnType: string
     fieldGroup: 85d8c0e7-6a43-4691-8d57-0ea516983de7
@@ -117,7 +129,7 @@ fields:
   72357970-aa0e-4ab8-bc96-4899cd33dd40:
     contentColumnType: string
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
-    handle: kuenstler
+    handle: artists
     instructions: ''
     name: Künstler
     searchable: true
@@ -219,6 +231,23 @@ fields:
       multiline: ''
       placeholder: ''
     translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\PlainText
+  c40ffa69-a91b-40dc-ae41-e5f8ecfb5d5c:
+    contentColumnType: text
+    fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
+    handle: websiteDesKn
+    instructions: ''
+    name: 'Website des Kn'
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
   d8dd3348-f988-4ea0-b8db-6c4e63542924:
@@ -298,9 +327,6 @@ sections:
                   78cf4c77-636b-48a0-b594-60ab78ef26a1:
                     required: false
                     sortOrder: 2
-                  8a5aa2a1-d84f-4bbf-9ea5-4c6b67c7c105:
-                    required: false
-                    sortOrder: 3
                   e6776d44-d3d9-442b-90aa-f01d11baa789:
                     required: false
                     sortOrder: 1
@@ -848,4 +874,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-03-21 11:15:55'
+dateApplied: '2019-03-26 17:17:55'

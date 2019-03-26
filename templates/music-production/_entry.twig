@@ -2,30 +2,147 @@
 
 {% extends "_layout" %}
 
-{# hier korrekte entry query einsetzen #}
-{% set entry = craft.entries().section('musicProductionEntries') %}
-
 {% block content %}
 
-    <header>
-      {% include 'includes/header' %}
-    </header>
+  <header>
+    {% include 'includes/header' %}
+  </header>
 
-    <nav id="nav-overlay"> {# triggered by hamburger #}
-      {% include 'includes/nav' %}
-    </nav>
+	<nav id="nav-overlay"> {# triggered by hamburger #}
+		{% include 'includes/nav' %}
+	</nav>
       
-    <main>
-      <h2>{{ entry.title }}</h2>
-        {# … #}
-    </main>
-        
-    <footer>
-      {% include 'includes/footer' %}
-    </footer>
+	<main>
 
-    <script>
-      console.log('I & I is at {{ slug }}' );
-    </script>
+		<h2>{{ entry.title }}</h2>
+
+		<section class="single-col">
+      <div class="full-width" style="height: 585px; background: papayawhip;"></div>
+      <p class="video-caption full-width"><strong>Foo bar baz</strong> Et consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+		</section>
+
+		<section class="single-col">
+      <h3>{{ entry.leadTitle }}</h3>
+      {{ entry.lead }}
+
+      {% if entry.coverImage|length %}
+      <img class="cover-image" src="{{ alias('@assetBasePath') }}/{{ entry.coverImage[0].getUrl() }}" alt="{{ entry.title }}, album cover">
+      {% else %}
+      <img class="cover-image" src="{{ alias('@assetBasePath') }}/assets/_pic/placeholder.png" alt="There seems to be no image of the album cover for this entry.">
+      {% endif %}
+
+      <div class="order-download">
+
+        <div class="hear">
+          <h4>Hören</h4>
+          <div class="itunes">
+            <img src="{{ alias('@assetBasePath') }}/assets/_pic/third-party-icons/apple.svg" alt="">
+            <p>iTunes</p>
+          </div>
+          <div class="amazon">
+            <img src="{{ alias('@assetBasePath') }}/assets/_pic/third-party-icons/amazon.svg" alt="">
+            <p>Amazon</p>
+          </div>
+          <div class="googleplay">
+            <img src="{{ alias('@assetBasePath') }}/assets/_pic/third-party-icons/gplay.svg" alt="">
+            <p>Google Play</p>
+          </div>
+          <div class="spotify">
+            <img src="{{ alias('@assetBasePath') }}/assets/_pic/third-party-icons/spotify.svg" alt="">
+            <p>Spotify</p>
+          </div>
+          <div class="igroove">
+            <img src="{{ alias('@assetBasePath') }}/assets/_pic/third-party-icons/igroove.svg" alt="">
+            <p>iGroove</p>
+          </div>
+          <div class="igroove-sms" style="width: 280px; justify-content: center;">
+            <p style="font-weight: 300; text-align: left;">Sende eine SMS mit «igroove beyond4» an die Nummer 60660 (DE) oder 9000 (CH).</p>
+          </div>
+        </div>
+
+        <div class="buy">
+          <h4>Kaufen</h4>
+          <div class="amazon">
+            <img src="{{ alias('@assetBasePath') }}/assets/_pic/third-party-icons/amazon.svg" alt="">
+            <p>Amazon</p>
+          </div>
+          <div class="exlibris">
+            <img src="{{ alias('@assetBasePath') }}/assets/_pic/third-party-icons/exlibris.svg" alt="">
+            <p>ex libris</p>
+          </div>
+          <div class="cede">
+            <img src="{{ alias('@assetBasePath') }}/assets/_pic/third-party-icons/cede.svg" alt="">
+            <p>cede.ch</p>
+          </div>
+        </div>
+
+        <div class="share">
+          <h4>Teilen</h4>
+          <div class="facebook">
+            <img src="{{ alias('@assetBasePath') }}/assets/_pic/third-party-icons/facebook.svg" alt="">
+            <p>Facebook</p>
+          </div>
+          <div class="soundcloud">
+            <img src="{{ alias('@assetBasePath') }}/assets/_pic/third-party-icons/soundcloud.svg" alt="">
+            <p>SoundCloud</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Start Artists -->
+    {% if entry.artists|length %}
+
+    <h2 id="musicians">Musicians</h2>
+    
+    <section class="single-col">
+
+      <div class="artist-teaser-grid full-width">
+
+      {% for artist in entry.artists %}
+        <div class="artist-teaser">
+          {% if artist.portrait|length %}
+            <img src="{{ alias('@assetBasePath') }}/{{ artist.portrait[0].getUrl() }}" alt="{{ artist.title }}">
+          {% else %}
+            <img src="{{ alias('@assetBasePath') }}/assets/_pic/missingPortrait.png"
+          {% endif %}
+
+          <h3 class="artist-name">{{ artist.title }}</h3>
+          {{ artist.visibleText }}
+
+          {% if artist.artistLink|length %}
+            {% set niceUrl = artist.artistLink|split('/') %}
+            <p class="artist-link"><a href="{{ artist.artistLink }}" target="_blank">{{ niceUrl[2] }}</a></p>
+          {% endif %}
+        </div>
+      {% endfor %}
+
+      </div>
+      
+    </section>
+
+    {% endif %}
+    <!-- End Artists -->
+
+    <!-- Other Albums -->
+    <h2 id="other-albums">Other Albums</h2>
+    <section class="alternating-grid-text-large">
+    </section>
+
+    <!-- End Other Albums -->
+
+	</main>
+        
+  <footer>
+    {% include 'includes/footer' %}
+  </footer>
+
+  <script>
+    console.log('I & I is at {{ slug }}' );
+  </script>
 
 {% endblock %}
+

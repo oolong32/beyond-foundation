@@ -35,28 +35,30 @@
 {# Das muss zwischen erste und zweite Iteration der Einträge unten (merci gäll) #}
 
       {% for production in productions %}
-      <section class="alternating-grid-text-large">
-        <div class="image-cell">
-          {% if production.coverImage|length %}
-          <img src="{{ alias('@assetBasePath') }}/{{ production.coverImage[0].getUrl() }}" alt="{{ production.title }}">
-          {% else %}
-          <img src="{{ siteUrl }}/assets/_pic/placeholder.png" alt="No image for this entry.">
-          {% endif %}
-        </div>
-
-        <div class="text-cell">
-            <h3 class="music-production-title">{{ production.title }}</h3>
-
-            {% if production.leadTitle|length %}
-              <p class="music-production-lead-title">{{ production.leadTitle }}</p>
+      <a href="{{ production.getUrl() }}" title="{{ production.title }}">
+        <section class="alternating-grid-text-large">
+          <div class="image-cell">
+            {% if production.coverImage|length %}
+            <img src="{{ alias('@assetBasePath') }}/{{ production.coverImage[0].getUrl() }}" alt="{{ production.title }}">
+            {% else %}
+            <img src="{{ alias('@assetBasePath') }}/assets/_pic/placeholder.png" alt="No image for this entry.">
             {% endif %}
+          </div>
 
-            <div class="music-production-lead">
-              {{ production.lead }}
-            </div>
-        </div>
+          <div class="text-cell">
+              <h3 class="music-production-title">{{ production.title }}</h3>
 
-      </section>
+              {% if production.leadTitle|length %}
+                <p class="music-production-lead-title">{{ production.leadTitle }}</p>
+              {% endif %}
+
+              <div class="music-production-lead">
+                {{ production.lead }}
+              </div>
+          </div>
+
+        </section>
+      </a>
       {% endfor %}
 
     </main>

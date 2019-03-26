@@ -1,4 +1,4 @@
-dateModified: 1553011534
+dateModified: 1553093496
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -9,6 +9,50 @@ fieldGroups:
   97dfc979-5ae8-418e-9249-5b4fdebd7c80:
     name: Common
 fields:
+  013f9713-f734-4215-90dc-70fd25cf2306:
+    contentColumnType: text
+    fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
+    handle: trackTitle
+    instructions: 'Name des Tracks'
+    name: 'Titel Audio Datei'
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  07a81bf3-21ea-4fc5-bcb3-e2b3eddcc8f4:
+    contentColumnType: string
+    fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
+    handle: audioFile
+    instructions: 'Eine mp3-Datei wählen/uploaden.'
+    name: Audio-Datei
+    searchable: true
+    settings:
+      allowedKinds:
+        - audio
+      defaultUploadLocationSource: 'volume:9eb7856b-e672-4fbf-b4b5-9d00ee79c726'
+      defaultUploadLocationSubpath: /audio/
+      limit: '1'
+      localizeRelations: ''
+      restrictFiles: '1'
+      selectionLabel: 'Audio-Datei wählen'
+      singleUploadLocationSource: 'volume:9eb7856b-e672-4fbf-b4b5-9d00ee79c726'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources:
+        - 'volume:9eb7856b-e672-4fbf-b4b5-9d00ee79c726'
+      targetSiteId: null
+      useSingleFolder: ''
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
   3f013fdf-9050-4d51-b818-050c8a105e6f:
     contentColumnType: string
     fieldGroup: 85d8c0e7-6a43-4691-8d57-0ea516983de7
@@ -122,6 +166,24 @@ fields:
       purifierConfig: ''
       purifyHtml: '1'
       redactorConfig: SimpleListTable.json
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\redactor\Field
+  aac9b682-0ac3-4291-bc12-f31f73e6cad9:
+    contentColumnType: text
+    fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
+    handle: trackInfo
+    instructions: 'Ein beschreibender Text.'
+    name: 'Beschrieb Audio-Datei'
+    searchable: true
+    settings:
+      availableTransforms: '*'
+      availableVolumes: ''
+      cleanupHtml: '1'
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: Simple.json
     translationKeyFormat: null
     translationMethod: site
     type: craft\redactor\Field
@@ -307,6 +369,9 @@ sections:
             tabs:
               -
                 fields:
+                  07a81bf3-21ea-4fc5-bcb3-e2b3eddcc8f4:
+                    required: false
+                    sortOrder: 6
                   597d3228-4fef-4e48-b794-3e488a088311:
                     required: false
                     sortOrder: 4
@@ -626,8 +691,24 @@ sections:
     enableVersioning: true
     entryTypes:
       2de8227e-af0f-417f-a6ca-b95308d172d2:
+        fieldLayouts:
+          3bfcdbfc-636b-4358-862b-5d18027629d6:
+            tabs:
+              -
+                fields:
+                  597d3228-4fef-4e48-b794-3e488a088311:
+                    required: false
+                    sortOrder: 2
+                  bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
+                    required: false
+                    sortOrder: 1
+                  f509c340-3109-4f76-a749-0569c3dd49ae:
+                    required: false
+                    sortOrder: 3
+                name: 'Tab 1'
+                sortOrder: 1
         handle: home
-        hasTitleField: true
+        hasTitleField: false
         name: Home
         sortOrder: 1
         titleFormat: '{section.name|raw}'
@@ -741,4 +822,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-03-20 15:12:52'
+dateApplied: '2019-03-20 15:52:13'

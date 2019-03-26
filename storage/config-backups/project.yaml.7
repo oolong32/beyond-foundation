@@ -1,4 +1,4 @@
-dateModified: 1553093121
+dateModified: 1553603808
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -29,7 +29,7 @@ fields:
   07a81bf3-21ea-4fc5-bcb3-e2b3eddcc8f4:
     contentColumnType: string
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
-    handle: audioFile
+    handle: audioTrack
     instructions: 'Eine mp3-Datei wählen/uploaden.'
     name: Audio-Datei
     searchable: true
@@ -37,7 +37,7 @@ fields:
       allowedKinds:
         - audio
       defaultUploadLocationSource: 'volume:9eb7856b-e672-4fbf-b4b5-9d00ee79c726'
-      defaultUploadLocationSubpath: /audio
+      defaultUploadLocationSubpath: /audio/
       limit: '1'
       localizeRelations: ''
       restrictFiles: '1'
@@ -172,7 +172,7 @@ fields:
   aac9b682-0ac3-4291-bc12-f31f73e6cad9:
     contentColumnType: text
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
-    handle: beschriebAudioDatei
+    handle: trackInfo
     instructions: 'Ein beschreibender Text.'
     name: 'Beschrieb Audio-Datei'
     searchable: true
@@ -210,6 +210,23 @@ fields:
     handle: pageHeading
     instructions: 'Überschrift der Seite, immer auf Englisch (gleiche für alle Sprachen)'
     name: 'Page Title'
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\PlainText
+  d8dd3348-f988-4ea0-b8db-6c4e63542924:
+    contentColumnType: text
+    fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
+    handle: trackArtist
+    instructions: 'Name des Künstlers / der Gruppe'
+    name: 'Interpret Audio-Datei'
     searchable: true
     settings:
       charLimit: ''
@@ -350,12 +367,12 @@ sections:
         enabledByDefault: true
         hasUrls: true
         template: music-production/_entry
-        uriFormat: 'music-production/{slug}'
+        uriFormat: '{slug}'
       96f6905b-bcc3-4e74-91a8-e5458eb5e532:
         enabledByDefault: true
         hasUrls: true
         template: music-production/_entry
-        uriFormat: 'music-production/{slug}'
+        uriFormat: '{slug}'
     structure:
       maxLevels: '1'
       uid: cfc7958e-06c8-44db-b556-256f0f2a27f4
@@ -369,15 +386,24 @@ sections:
             tabs:
               -
                 fields:
+                  013f9713-f734-4215-90dc-70fd25cf2306:
+                    required: false
+                    sortOrder: 7
                   07a81bf3-21ea-4fc5-bcb3-e2b3eddcc8f4:
                     required: false
                     sortOrder: 6
+                  3f013fdf-9050-4d51-b818-050c8a105e6f:
+                    required: false
+                    sortOrder: 9
                   597d3228-4fef-4e48-b794-3e488a088311:
                     required: false
                     sortOrder: 4
                   63060068-23fd-4091-9e13-96d982008822:
                     required: false
                     sortOrder: 3
+                  aac9b682-0ac3-4291-bc12-f31f73e6cad9:
+                    required: false
+                    sortOrder: 8
                   b729c087-ed9f-4371-8cf0-48e6ef2d9e6a:
                     required: false
                     sortOrder: 2
@@ -822,4 +848,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-03-20 15:46:05'
+dateApplied: '2019-03-26 13:37:08'

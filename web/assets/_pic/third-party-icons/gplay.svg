@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Controls/Social Buttons/G-Play</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Controls/Social-Buttons/G-Play" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FFFFFF" x="0" y="0" width="30" height="30"></rect>
+        <rect id="UmrisslinieEtwasDicker" stroke="#000000" stroke-width="0.5" x="0.25" y="0.25" width="29.5" height="29.5" rx="14.75"></rect>
+        <path d="M9.38931818,22.7761096 L16.5695455,15.775443 L19.1004545,18.2427763 L10.5647727,22.8701096 C10.2402273,23.0461096 9.84272727,23.043443 9.52022727,22.8627763 L9.38931818,22.7761096 Z" id="Path" fill="#000000"></path>
+        <polygon id="Path" fill="#000000" points="15.8454545 15.069443 9 21.743443 9 8.39544295"></polygon>
+        <path d="M20.1231818,12.311443 L23.4675,14.1241096 C23.7961364,14.3027763 24,14.637443 24,15.0001096 C24,15.3627763 23.7961364,15.697443 23.4675,15.8761096 L20.0318182,17.7381096 L17.2943182,15.069443 L20.1231818,12.311443 Z" id="Path" fill="#000000"></path>
+        <path d="M9.31363636,7.28877628 C9.375,7.23077628 9.44386364,7.18010962 9.52022727,7.13744295 C9.84272727,6.95677628 10.2402273,6.95410962 10.5647727,7.13010962 L19.1918182,11.8067763 L16.5695455,14.363443 L9.31363636,7.28877628 Z" id="Path" fill="#000000"></path>
+    </g>
+</svg>
