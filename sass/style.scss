@@ -35,13 +35,6 @@ $alt-vid-grid-col-sec: 1fr;
 
 /* End Variables }}}1 */
 
-/* quick stuff {{{1 */
-
-#hamburger g rect { fill: $blue; }
-#hamburger:hover g rect { fill: $blue-hover; }
-
-/* end quick stuff }}}1 */
-
 /* Basic Text formatting {{{1 */
 //
 // no margin and padding in this section!
@@ -173,6 +166,7 @@ blockquote p {
     font-style: italic;
   }
 }
+
 #language-switch p {
   font-size: 0.8125rem;
   font-weight: $bold;
@@ -762,7 +756,8 @@ footer {
 
   /* Layout Header {{{2 */
   header {
-    nav { display: none; } // hide Navigation
+    #language-switch,
+    nav { display: none; } // hide navigation and language switch
     #masthead {
       height: 4.75rem;
       padding: 0.25rem 1rem;
@@ -780,7 +775,7 @@ footer {
       right: 1rem;
       transform: scale(0.75);
       transform-origin: top right;
-      transition: all .3s ease-in;
+      transition: all .15s ease-in;
     }
     #hamburger:hover { transform: scale(1.1); }
   }
@@ -800,11 +795,6 @@ footer {
   /* End Layout Collapsed Header }}}2 */
 
   /* Navigation Overlay {{{2 */
-
-  // html {
-  //   height  : 100%;
-  //   overflow: hidden;
-  // }
 
   body {
       height  : 100%;
@@ -843,10 +833,19 @@ footer {
       flex-direction: column;
     }
     /* End Menü Style }}}3 */
-    #social-media-buttons {
+    #social-media-buttons { // wo sind sie denn, wo?
       display: flex;
       justify-content: center;
       margin-bottom: 1rem;
+    }
+    #language-switch {
+      p  {
+        margin: 1rem 0 0 1rem;
+        display: inline-block;
+        border: 1px solid black;
+        padding: 0 .5rem;
+        font-size: 1.875rem;
+      }
     }
   }
   /*

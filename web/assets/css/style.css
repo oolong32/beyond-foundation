@@ -5,14 +5,6 @@
 /* Dimensions {{{2 */
 /* End Dimensions }}}2 */
 /* End Variables }}}1 */
-/* quick stuff {{{1 */
-#hamburger g rect {
-  fill: #a5b4ff; }
-
-#hamburger:hover g rect {
-  fill: #0028ff; }
-
-/* end quick stuff }}}1 */
 /* Basic Text formatting {{{1 */
 :root {
   color: black;
@@ -549,6 +541,7 @@ footer {
   :root {
     font-size: 16px; }
   /* Layout Header {{{2 */
+  header #language-switch,
   header nav {
     display: none; }
   header #masthead {
@@ -567,7 +560,7 @@ footer {
     right: 1rem;
     transform: scale(0.75);
     transform-origin: top right;
-    transition: all .3s ease-in; }
+    transition: all .15s ease-in; }
   header #hamburger:hover {
     transform: scale(1.1); }
   /* End Layout Header }}}2 */
@@ -616,6 +609,12 @@ footer {
       display: flex;
       justify-content: center;
       margin-bottom: 1rem; }
+    #nav-overlay #language-switch p {
+      margin: 1rem 0 0 1rem;
+      display: inline-block;
+      border: 1px solid black;
+      padding: 0 .5rem;
+      font-size: 1.875rem; }
   /*
   #nav-footer {
     div#infos {
