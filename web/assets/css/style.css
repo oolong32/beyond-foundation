@@ -489,8 +489,7 @@ footer {
     flex-direction: column-reverse; }
     footer #masthead h1, footer #masthead p {
       color: white;
-      margin: 0;
-      line-height: 1; }
+      margin: 0; }
 
 /* End Footer }}}1 */
 /**********/
@@ -530,7 +529,7 @@ footer {
     main section.alternating-grid-image-large .text-cell {
       padding: 0 0 0 20px; }
     main section.alternating-grid-image-large .image-cell {
-      min-width: 450px; }
+      min-width: 300px; }
     main section.alternating-grid-image-large:nth-child(2n+1) .text-cell {
       padding: 0 20px 0 0; }
     main section.alternating-grid-text-large .text-cell {
@@ -824,7 +823,6 @@ footer {
       footer #masthead h1,
       #overlay-footer #masthead h1 {
         font-size: 2.625rem;
-        line-height: 1;
         margin-bottom: 0; }
       footer #masthead p,
       #overlay-footer #masthead p {

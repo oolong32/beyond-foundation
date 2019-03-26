@@ -165,7 +165,7 @@ blockquote p {
 #masthead h1 {
   font-family: $antiqua;
   font-size: 6.25rem;
-  line-height: .75;
+  line-height: .75; // gilt auch für footer 🧦
   font-weight: $book;
   font-style: normal;
   strong {
@@ -653,7 +653,6 @@ footer {
     h1, p {
       color: white;
       margin: 0;
-      line-height: 1;
     }
   }
   
@@ -675,9 +674,7 @@ footer {
   header #masthead,
   footer #masthead {
     height: 19.5rem;
-    h1 {
-      font-size: 5rem;
-    }
+    h1 { font-size: 5rem; }
     p {
       font-size: 1.85rem;
       line-height: 1.3;
@@ -721,7 +718,7 @@ footer {
     
     section.alternating-grid-image-large {
       .text-cell { padding: 0 0 0 20px; }
-      .image-cell { min-width: 450px; }
+      .image-cell { min-width: 300px; }
     }
 
     section.alternating-grid-image-large:nth-child(2n+1) {
@@ -1017,7 +1014,6 @@ footer {
       h1 {
         font-size: 2.625rem;
         // font-family: $francisGradientLeft; 
-        line-height: 1;
         margin-bottom: 0;
       }
       p {
