@@ -25,9 +25,12 @@
       
 
       {% for member in members %}
-      <section class="alternating-grid-text-large"> <!-- start row -->
 
-        <div class="image-cell"> <!-- start image cell -->
+      <!-- start row -->
+      <section class="alternating-grid-text-large">
+
+        <!-- start image cell -->
+        <div class="image-cell">
           {% if member.portrait|length %}
           <img src="{{ alias('@assetBasePath') }}/{{ member.portrait[0].getUrl() }}" alt="{{ member.title }}">
           {% else %}
@@ -35,9 +38,9 @@
           {% endif %}
         </div> <!-- end image cell -->
 
-        <div class="text-cell"> <!-- start text cell -->
-
-          <h3>{{ member.title }}</h3>
+        <!-- start text cell -->
+        <div class="text-cell"> 
+          <h3 class="team-name">{{ member.title }}</h3>
           {% if member.quote|length %}
           <p class="team-quote">{{ craft.app.language == 'de' ? '«' : '“' }}{{ member.quote }}{{ craft.app.language == 'de' ? '»' : '”' }}</p>
           {% endif %}

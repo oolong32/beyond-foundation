@@ -19,10 +19,11 @@
 
       <h2>{{ entry.pageHeading }}</h2>
 
+      <!-- start row -->
       <section class="single-col">
         <h3>{{ entry.leadTitle }}</h3>
         {{ entry.lead }}
-      </section>
+      </section> <!-- end row -->
       
 {# Das muss zwischen erste und zweite Iteration der Einträge unten (merci gäll) #}
 {# Das muss zwischen erste und zweite Iteration der Einträge unten (merci gäll) #}
@@ -35,30 +36,47 @@
 {# Das muss zwischen erste und zweite Iteration der Einträge unten (merci gäll) #}
 
       {% for production in productions %}
-      <a href="{{ production.getUrl() }}" title="{{ production.title }}">
-        <section class="alternating-grid-text-large">
+      <!-- start row-->
+      <section class="alternating-grid-text-large">
+
+          <!-- start image cell -->
           <div class="image-cell">
-            {% if production.coverImage|length %}
-            <img src="{{ alias('@assetBasePath') }}/{{ production.coverImage[0].getUrl() }}" alt="{{ production.title }}">
-            {% else %}
-            <img src="{{ alias('@assetBasePath') }}/assets/_pic/placeholder.png" alt="No image for this entry.">
-            {% endif %}
-          </div>
-
-          <div class="text-cell">
-              <h3 class="music-production-title">{{ production.title }}</h3>
-
-              {% if production.leadTitle|length %}
-                <p class="music-production-lead-title">{{ production.leadTitle }}</p>
+            <a href="{{ production.getUrl() }}" title="{{ production.title }}">
+              {% if production.coverImage|length %}
+              <img src="{{ alias('@assetBasePath') }}/{{ production.coverImage[0].getUrl() }}" alt="{{ production.title }}">
+              {% else %}
+              <img src="{{ alias('@assetBasePath') }}/assets/_pic/placeholder.png" alt="No image for this entry.">
               {% endif %}
-
-              <div class="music-production-lead">
-                {{ production.lead }}
-              </div>
+            </a>
           </div>
+          <!-- end image cell -->
 
-        </section>
-      </a>
+          <!-- start text cell -->
+          <div class="text-cell">
+              <a href="{{ production.getUrl() }}" title="{{ production.title }}">
+                <h3 class="music-production-title">{{ production.title }}</h3>
+
+                {% if production.leadTitle|length %}
+                  <p class="music-production-lead-title">{{ production.leadTitle }}</p>
+                {% endif %}
+
+                <div class="music-production-lead">
+                  {{ production.lead }}
+                </div>
+              </a>
+                
+              <div class="music-production-links">
+                {#
+                <li class="button"><a href="{{ production.getUrl() }}" style="color: white;"><strong>+</strong> Mehr erfahren</a></li>
+                #}
+                <li><a href="{{ production.getUrl() }}#hear-buy-share">Hören</a></li>
+                <li><a href="{{ production.getUrl() }}#hear-buy-share">Kaufen</a></li>
+                <li><a href="{{ production.getUrl() }}#hear-buy-share">Teilen</a></li>
+              </ul>
+          </div>
+          <!-- end text cell -->
+
+      </section> <!-- end row -->
       {% endfor %}
 
     </main>

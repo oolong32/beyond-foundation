@@ -9,10 +9,9 @@ $( function() {
     collapsible: true, // panels can be closed
     active: false // collapses all
   });
-  /* mendAnchors(); */
+  mendAnchors();
 } );
 
-/* let’s not use anchors this time
 // Problem: Accordion alters height of Page and thus Position
 // of Anchor-Links: It breaks Jump-Targets for Anchor-Links.
 // However, this can be mended.
@@ -30,7 +29,6 @@ function mendAnchors() {
     }
   }
 }
-*/
 
 $(".accordion-trigger").click(function() {
     var index = $(this).parent().index() / 2;

@@ -41,7 +41,7 @@ h4 {
   margin-bottom: 1.25rem; }
 
 /* End Body Headings }}}3 */
-p {
+p, li {
   hyphens: auto;
   line-height: 1.4; }
 
@@ -89,6 +89,28 @@ p.text-column {
     line-height: 1.45; }
 
 /* End Music-Production Overview }}}3 */
+/* Alternating Grid Text Large Styles {{{3 */
+.alternating-grid-text-large {
+  /* Music-Production Album Teasers {{{4 */
+  /* End Music-Production Album Teasers }}}4 */
+  /* Team Teasers (same grid as Album Teasers) {{{4 */
+  /* End Team Teasers }}}4 */ }
+  .alternating-grid-text-large h3 {
+    margin-bottom: 0; }
+  .alternating-grid-text-large h3.music-production-title {
+    font-weight: 500; }
+  .alternating-grid-text-large p.music-production-lead-title {
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 1.1875; }
+  .alternating-grid-text-large h3.team-name {
+    font-weight: 300; }
+  .alternating-grid-text-large p.team-quote {
+    font-size: 2rem;
+    line-height: 1.1875;
+    font-weight: 500; }
+
+/* End Alternating Grid Text Large Styles }}}3 */
 /* Events {{{3 */
 .teaser-link {
   font-weight: 300;
@@ -234,6 +256,13 @@ a.social-media-link:hover svg path {
   fill: #0028ff; }
 
 /* End Social Media Links }}}3 */
+/* Teaser Links {{{3 */
+.alternating-grid-text-large .image-cell > a,
+.alternating-grid-text-large .text-cell > a {
+  border: none;
+  outline: 0; }
+
+/* End Teaser Links }}}3 */
 /* End Link Styles }}}2 */
 /* End Basic Text formatting }}}1 */
 /* Buttons {{{1 */
@@ -379,6 +408,8 @@ main {
   /* Main Grids Alternatig Grid Image Large {{{3 */
   /* End Main Grids Alternatig Grid Image Large }}}3 */
   /* Main Grids Alternating Grid Text Large {{{3 */
+  /* Hear-Buy-Share Links {{{4 */
+  /* End Hear-Buy-Share Links }}}4 */
   /* End Main Grids Alternating Grid Text Large }}}3 */
   /* Main Grids order-download Grid {{{3 */
   /* End Main Grids order-download Grid }}}3 */
@@ -443,6 +474,12 @@ main {
     main section.alternating-grid-text-large:nth-child(2n+1) .text-cell {
       order: -1;
       padding: 0 40px 0 0; }
+  main .music-production-links {
+    margin-top: 1rem;
+    list-style: none;
+    display: flex; }
+    main .music-production-links li {
+      margin-right: 1rem; }
   main .order-download {
     margin-top: 3.125rem;
     display: grid;
@@ -499,7 +536,7 @@ main {
       main .artist-teaser-grid .artist-teaser h3.artist-name {
         margin: 1rem auto; }
       main .artist-teaser-grid .artist-teaser .artist-link {
-        margin: 1rem auto 0; }
+        margin: 0.5rem auto 0 0; }
   main .cover-image {
     width: 100%;
     margin: 2.5rem 0; }
@@ -748,6 +785,8 @@ footer {
     /* Mobile Main Whitespace {{{3 */
     width: 100%;
     padding: 3rem 0 1rem;
+    /* Team/Music-Production-Teaser Texts {{{4 */
+    /* End Team/Music-Production-Teaser Texts }}}4 */
     /* Mobile Music-Production Single Entry {{{4 */
     /* End Mobile Music-Production Single Entry }}}4 */
     /* Mobile Main Grids {{{4 */
@@ -809,6 +848,13 @@ footer {
       main section.alternating-grid-text-large:nth-child(2n+1) h3,
       main section.alternating-grid-image-large:nth-child(2n+1) h3 {
         margin-bottom: 0.125rem; }
+      main section h3.encouragement-subtitle,
+      main section.single-col h3.encouragement-subtitle,
+      main section.alternating-grid-text-large h3.encouragement-subtitle,
+      main section.alternating-grid-image-large h3.encouragement-subtitle,
+      main section.alternating-grid-text-large:nth-child(2n+1) h3.encouragement-subtitle,
+      main section.alternating-grid-image-large:nth-child(2n+1) h3.encouragement-subtitle {
+        margin-bottom: 0.75rem; }
       main section .accordion-trigger,
       main section .accordion-collapse,
       main section.single-col .accordion-trigger,
@@ -822,6 +868,25 @@ footer {
       main section.alternating-grid-image-large:nth-child(2n+1) .accordion-trigger,
       main section.alternating-grid-image-large:nth-child(2n+1) .accordion-collapse {
         margin-top: .5rem; }
+      main section .music-production-links,
+      main section.single-col .music-production-links,
+      main section.alternating-grid-text-large .music-production-links,
+      main section.alternating-grid-image-large .music-production-links,
+      main section.alternating-grid-text-large:nth-child(2n+1) .music-production-links,
+      main section.alternating-grid-image-large:nth-child(2n+1) .music-production-links {
+        margin-top: .5rem; }
+    main section.alternating-grid-text-large h3.team-name,
+    main section.alternating-grid-text-large h3.music-production-title,
+    main section.alternating-grid-text-large p.team-quote,
+    main section.alternating-grid-text-large p.music-production-lead-title {
+      font-size: 1.25rem;
+      line-height: 1.15;
+      margin: 0; }
+    main section.alternating-grid-text-large h3.team-name,
+    main section.alternating-grid-text-large h3.music-production-title {
+      margin-top: 1rem; }
+    main section.alternating-grid-text-large div.accordion {
+      margin-top: 0.625rem; }
     main .cover-image {
       margin: 1.25rem auto 0; }
     main .order-download {
@@ -891,19 +956,22 @@ footer {
     main section.alternating-grid-image-large h3 {
       font-size: 1.25rem;
       line-height: 1.15; }
-    main section p, main section ul, main section table, main section .accordion .visible *, main section .accordion .collapsed *,
+    main section p, main section ul, main section li, main section table, main section .accordion .visible *, main section .accordion .collapsed *,
     main section.single-col p,
     main section.single-col ul,
+    main section.single-col li,
     main section.single-col table,
     main section.single-col .accordion .visible *,
     main section.single-col .accordion .collapsed *,
     main section.alternating-grid-text-large p,
     main section.alternating-grid-text-large ul,
+    main section.alternating-grid-text-large li,
     main section.alternating-grid-text-large table,
     main section.alternating-grid-text-large .accordion .visible *,
     main section.alternating-grid-text-large .accordion .collapsed *,
     main section.alternating-grid-image-large p,
     main section.alternating-grid-image-large ul,
+    main section.alternating-grid-image-large li,
     main section.alternating-grid-image-large table,
     main section.alternating-grid-image-large .accordion .visible *,
     main section.alternating-grid-image-large .accordion .collapsed * {
@@ -964,6 +1032,9 @@ footer {
   /* End Layout Mobile Footer }}}2*/ }
 
 /* End Breakpoint for Mobile }}}1 */
+/*************************/
+/* Nav-Overlay Animation */
+/*************************/
 /* Keyframes Nav-Overlay {{{1 */
 @keyframes overlay-animation {
   from {

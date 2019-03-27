@@ -20,12 +20,14 @@
       <h2>{{ entry.pageHeading }}</h2>
 
       <section class="single-col">
-        <h3>{{ entry.leadTitle }}</h3>
+        <h3 class="encouragement-subtitle">{{ entry.leadTitle }}</h3>
         {{ entry.lead }}
       </section>
 
       {% for encouragement in encouragements %}
+        <h2>{{ encouragement.title }}</h2>
         <section class="single-col">
+          <h3 class="encouragement-subtitle">{{ encouragement.leadTitle }}</h3>
           <div class="accordion"> <!-- start accordion -->
           {# 
 In Wirklichkeit braucht es hier kein Akkordeon sondern
@@ -38,8 +40,6 @@ In Wirklichkeit braucht es hier kein Akkordeon sondern
 #}
 
             <div class="visible"> <!-- start accordion visible part -->
-              <h2>{{ encouragement.title }}</h2>
-              <h3>{{ encouragement.leadTitle }}</h3>
               {{ encouragement.visibleText }}
               <p class="accordion-trigger"><span>Weitere Informationen</span></p>
             </div> <!-- end accordion visible part -->

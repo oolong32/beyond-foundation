@@ -31,7 +31,7 @@
       <img class="cover-image" src="{{ alias('@assetBasePath') }}/assets/_pic/placeholder.png" alt="There seems to be no image of the album cover for this entry.">
       {% endif %}
 
-      <div class="order-download">
+      <div id="hear-buy-share" class="order-download">
 
         <div class="hear">
           <h4>Hören</h4>
@@ -128,10 +128,43 @@
     <!-- End Artists -->
 
     <!-- Other Albums -->
-    <h2 id="other-albums">Other Albums</h2>
-    <section class="alternating-grid-text-large">
-    </section>
 
+    <h2 id="other-albums">Other Albums</h2>
+
+    {# load all entries in this structure except this one #}
+    {% set thisAlbum = entry.id %}
+    {% set otherAlbums = craft.entries().section('musicProductionEntries').id('not ' ~ thisAlbum ).all() %}
+
+    {% for otherAlbum in otherAlbums %}
+
+      <!-- start row -->
+      <section class="alternating-grid-text-large">
+        <!-- start image cell -->
+        <div class="image-cell">
+          <a href="{{ otherAlbum.getUrl() }}" title="{{ otherAlbum.title }}">
+          {% if otherAlbum.coverImage|length %}
+          <img src="{{ alias('@assetBasePath') }}/{{ otherAlbum.coverImage[0].getUrl() }}" alt="{{ otherAlbum.title }}">
+          {% else %}
+          <img src="{{ alias('@assetBasePath') }}/assets/_pic/placeholder.png" alt="No image for this entry.">
+          {% endif %}
+          </a>
+        </div> <!-- end image cell -->
+
+        <!-- start text cell -->
+        <div class="text-cell">
+          <a href="{{ otherAlbum.getUrl() }}" title="{{ otherAlbum.title }}">
+            <h3 class="music-production-title">{{ otherAlbum.title }}</h3>
+            {% if otherAlbum.leadTitle|length %}
+              <p class="music-production-lead-title">{{ otherAlbum.leadTitle }}</p>
+            {% endif %}
+            <div class="music-production-lead">
+              {{ otherAlbum.lead }}
+            </div>
+          </a>
+        </div> <!-- end text cell -->
+      </section> <!-- end row -->
+
+    {% endfor %}
     <!-- End Other Albums -->
 
 	</main>
@@ -140,6 +173,10 @@
     {% include 'includes/footer' %}
   </footer>
 
+  {# accordion.js nur für sprungmarkenreparatur … #}
+  <script src="{{ alias('@assetBasePath') }}/assets/js/jquery.min.js"></script>
+  <script src="{{ alias('@assetBasePath') }}/assets/js/jquery-ui.min.js"></script>
+  <script src="{{ alias('@assetBasePath') }}/assets/js/mendAnchors.js"></script>
   <script>
     console.log('I & I is at {{ slug }}' );
   </script>
