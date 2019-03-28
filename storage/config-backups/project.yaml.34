@@ -1,4 +1,4 @@
-dateModified: 1553008756
+dateModified: 1553091171
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -234,7 +234,7 @@ sections:
         titleFormat: ''
         titleLabel: Name
     handle: artitstsEntries
-    name: 'Artitsts Entries'
+    name: 'Artists Entries'
     propagateEntries: true
     siteSettings:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
@@ -345,6 +345,50 @@ sections:
         template: music-network
         uriFormat: music-network
     type: single
+  3f58999a-6ac1-4372-a7ea-ec0c2c682cbf:
+    enableVersioning: true
+    entryTypes:
+      8d683c25-7fee-4253-8f09-df2fa080e32d:
+        fieldLayouts:
+          3fd605ce-3187-40c7-81f2-88f6301173e3:
+            tabs:
+              -
+                fields:
+                  78cf4c77-636b-48a0-b594-60ab78ef26a1:
+                    required: false
+                    sortOrder: 2
+                  8a5aa2a1-d84f-4bbf-9ea5-4c6b67c7c105:
+                    required: false
+                    sortOrder: 3
+                  b729c087-ed9f-4371-8cf0-48e6ef2d9e6a:
+                    required: false
+                    sortOrder: 1
+                name: 'Tab 1'
+                sortOrder: 1
+        handle: encouragementEntries
+        hasTitleField: true
+        name: 'Encouragement Entries'
+        sortOrder: 1
+        titleFormat: ''
+        titleLabel: Titel
+    handle: encouragementEntries
+    name: 'Encouragement Entries'
+    propagateEntries: true
+    siteSettings:
+      802d4b06-1f71-4c60-8b00-c331a21b5134:
+        enabledByDefault: true
+        hasUrls: true
+        template: encouragement/_entry
+        uriFormat: 'encouragement/{slug}'
+      96f6905b-bcc3-4e74-91a8-e5458eb5e532:
+        enabledByDefault: true
+        hasUrls: true
+        template: encouragemen/_entry
+        uriFormat: 'encouragement/{slug}'
+    structure:
+      maxLevels: '1'
+      uid: 5911d41d-2ca7-403c-a53f-540d47f8d189
+    type: structure
   a7103738-e3bc-4556-8521-a66f06bd0e0a:
     enableVersioning: true
     entryTypes:
@@ -570,20 +614,36 @@ sections:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
         enabledByDefault: true
         hasUrls: true
-        template: encouragement
+        template: encouragement/index
         uriFormat: encouragement
       96f6905b-bcc3-4e74-91a8-e5458eb5e532:
         enabledByDefault: true
         hasUrls: true
-        template: encouragement
+        template: encouragement/index
         uriFormat: encouragement
     type: single
   e85ccc74-f7f6-4b02-ac82-2d4796ec8d84:
     enableVersioning: true
     entryTypes:
       2de8227e-af0f-417f-a6ca-b95308d172d2:
+        fieldLayouts:
+          3bfcdbfc-636b-4358-862b-5d18027629d6:
+            tabs:
+              -
+                fields:
+                  597d3228-4fef-4e48-b794-3e488a088311:
+                    required: false
+                    sortOrder: 2
+                  bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
+                    required: false
+                    sortOrder: 1
+                  f509c340-3109-4f76-a749-0569c3dd49ae:
+                    required: false
+                    sortOrder: 3
+                name: 'Tab 1'
+                sortOrder: 1
         handle: home
-        hasTitleField: true
+        hasTitleField: false
         name: Home
         sortOrder: 1
         titleFormat: '{section.name|raw}'
@@ -658,7 +718,7 @@ siteGroups:
     name: 'Beyond Foundation'
 sites:
   802d4b06-1f71-4c60-8b00-c331a21b5134:
-    baseUrl: 'http://$DEFAULT_SITE_URL/en'
+    baseUrl: 'http://beyond-foundation.test/en'
     handle: beyondFoundation
     hasUrls: true
     language: en
@@ -697,4 +757,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-03-19 16:21:57'
+dateApplied: '2019-03-20 15:38:36'

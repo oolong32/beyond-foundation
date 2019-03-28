@@ -1,4 +1,4 @@
-dateModified: 1553006606
+dateModified: 1553011217
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -234,7 +234,7 @@ sections:
         titleFormat: ''
         titleLabel: Name
     handle: artitstsEntries
-    name: 'Artitsts Entries'
+    name: 'Artists Entries'
     propagateEntries: true
     siteSettings:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
@@ -345,6 +345,34 @@ sections:
         template: music-network
         uriFormat: music-network
     type: single
+  3f58999a-6ac1-4372-a7ea-ec0c2c682cbf:
+    enableVersioning: true
+    entryTypes:
+      8d683c25-7fee-4253-8f09-df2fa080e32d:
+        handle: encouragementEntries
+        hasTitleField: true
+        name: 'Encouragement Entries'
+        sortOrder: 1
+        titleFormat: null
+        titleLabel: Titel
+    handle: encouragementEntries
+    name: 'Encouragement Entries'
+    propagateEntries: true
+    siteSettings:
+      802d4b06-1f71-4c60-8b00-c331a21b5134:
+        enabledByDefault: true
+        hasUrls: true
+        template: encouragement/_entry
+        uriFormat: 'encouragement/{slug}'
+      96f6905b-bcc3-4e74-91a8-e5458eb5e532:
+        enabledByDefault: true
+        hasUrls: true
+        template: encouragemen/_entry
+        uriFormat: 'encouragement/{slug}'
+    structure:
+      maxLevels: '1'
+      uid: 5911d41d-2ca7-403c-a53f-540d47f8d189
+    type: structure
   a7103738-e3bc-4556-8521-a66f06bd0e0a:
     enableVersioning: true
     entryTypes:
@@ -658,12 +686,12 @@ siteGroups:
     name: 'Beyond Foundation'
 sites:
   802d4b06-1f71-4c60-8b00-c331a21b5134:
-    baseUrl: 'http://beyond-foundation.test/en/'
+    baseUrl: 'http://beyond-foundation.test/en'
     handle: beyondFoundation
     hasUrls: true
     language: en
     name: 'Beyond Foundation English'
-    primary: true
+    primary: false
     siteGroup: be67c42e-6aa2-4656-8f77-d2b8cd57dedd
     sortOrder: 1
   96f6905b-bcc3-4e74-91a8-e5458eb5e532:
@@ -697,4 +725,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-03-19 16:18:27'
+dateApplied: '2019-03-19 17:00:40'

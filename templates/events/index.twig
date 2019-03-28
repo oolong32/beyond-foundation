@@ -31,8 +31,11 @@
           </div>
 
           <h3 class="text-column">{{ event.title }}</h3>
-          <p class="text-column">Fixed Text in Template</p>
-          <p class="text-column teaser-link external-link"><a href="" target="_new" title="">Fixed Link in Template</a></p>
+          <p class="text-column">{{ event.shortDescription }}</p>
+          {% if event.externalLink|length %}
+            {% set niceUrl = event.externalLink|split('/') %}
+          <p class="text-column teaser-link external-link"><a href="{{ event.externalLink }}" target="_new" title="{{ niceUrl[2] }}">{{ niceUrl[2] }}</a></p>
+          {% endif %}
 
         </section>
       {% endfor %}

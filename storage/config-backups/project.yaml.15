@@ -1,4 +1,4 @@
-dateModified: 1553093496
+dateModified: 1553617000
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -29,7 +29,7 @@ fields:
   07a81bf3-21ea-4fc5-bcb3-e2b3eddcc8f4:
     contentColumnType: string
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
-    handle: audioFile
+    handle: audioTrack
     instructions: 'Eine mp3-Datei wählen/uploaden.'
     name: Audio-Datei
     searchable: true
@@ -117,7 +117,7 @@ fields:
   72357970-aa0e-4ab8-bc96-4899cd33dd40:
     contentColumnType: string
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
-    handle: kuenstler
+    handle: artists
     instructions: ''
     name: Künstler
     searchable: true
@@ -219,6 +219,40 @@ fields:
       multiline: ''
       placeholder: ''
     translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\PlainText
+  c40ffa69-a91b-40dc-ae41-e5f8ecfb5d5c:
+    contentColumnType: text
+    fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
+    handle: websiteDesKn
+    instructions: ''
+    name: 'Website des Kn'
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  d8dd3348-f988-4ea0-b8db-6c4e63542924:
+    contentColumnType: text
+    fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
+    handle: trackArtist
+    instructions: 'Name des Künstlers / der Gruppe'
+    name: 'Interpret Audio-Datei'
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
   e6776d44-d3d9-442b-90aa-f01d11baa789:
@@ -281,9 +315,6 @@ sections:
                   78cf4c77-636b-48a0-b594-60ab78ef26a1:
                     required: false
                     sortOrder: 2
-                  8a5aa2a1-d84f-4bbf-9ea5-4c6b67c7c105:
-                    required: false
-                    sortOrder: 3
                   e6776d44-d3d9-442b-90aa-f01d11baa789:
                     required: false
                     sortOrder: 1
@@ -369,15 +400,24 @@ sections:
             tabs:
               -
                 fields:
+                  013f9713-f734-4215-90dc-70fd25cf2306:
+                    required: false
+                    sortOrder: 7
                   07a81bf3-21ea-4fc5-bcb3-e2b3eddcc8f4:
                     required: false
                     sortOrder: 6
+                  3f013fdf-9050-4d51-b818-050c8a105e6f:
+                    required: false
+                    sortOrder: 9
                   597d3228-4fef-4e48-b794-3e488a088311:
                     required: false
                     sortOrder: 4
                   63060068-23fd-4091-9e13-96d982008822:
                     required: false
                     sortOrder: 3
+                  aac9b682-0ac3-4291-bc12-f31f73e6cad9:
+                    required: false
+                    sortOrder: 8
                   b729c087-ed9f-4371-8cf0-48e6ef2d9e6a:
                     required: false
                     sortOrder: 2
@@ -822,4 +862,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-03-20 15:52:13'
+dateApplied: '2019-03-26 17:17:37'
