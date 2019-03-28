@@ -452,11 +452,11 @@ main {
       margin: 0; }
     main section.alternating-grid-image-large p.text-column {
       align-self: start; }
-  main section.alternating-grid-image-large:nth-child(2n+1) {
+  main section.alternating-grid-image-large:nth-of-type(2n+1) {
     grid-template-columns: 1fr 2fr; }
-    main section.alternating-grid-image-large:nth-child(2n+1) .image-cell {
+    main section.alternating-grid-image-large:nth-of-type(2n+1) .image-cell {
       grid-column: -2/-1; }
-    main section.alternating-grid-image-large:nth-child(2n+1) .text-column {
+    main section.alternating-grid-image-large:nth-of-type(2n+1) .text-column {
       grid-column: 1/2;
       padding: 0 40px 0 0; }
   main section.alternating-grid-text-large {
@@ -469,9 +469,9 @@ main {
     main section.alternating-grid-text-large .text-cell {
       transform: translateY(-10px);
       padding: 0 0 0 40px; }
-  main section.alternating-grid-text-large:nth-child(2n+1) {
+  main section.alternating-grid-text-large:nth-of-type(2n+1) {
     grid-template-columns: 2fr 1fr; }
-    main section.alternating-grid-text-large:nth-child(2n+1) .text-cell {
+    main section.alternating-grid-text-large:nth-of-type(2n+1) .text-cell {
       order: -1;
       padding: 0 40px 0 0; }
   main .music-production-links {
@@ -654,13 +654,13 @@ footer {
       padding: 0 0 0 20px; }
     main section.alternating-grid-image-large .image-cell {
       min-width: 300px; }
-    main section.alternating-grid-image-large:nth-child(2n+1) .text-cell {
+    main section.alternating-grid-image-large:nth-of-type(2n+1) .text-cell {
       padding: 0 20px 0 0; }
     main section.alternating-grid-text-large .text-cell {
       padding: 0 0 0 20px; }
     main section.alternating-grid-text-large .image-cell {
       min-width: 250px; }
-    main section.alternating-grid-text-large:nth-child(2n+1) .text-cell {
+    main section.alternating-grid-text-large:nth-of-type(2n+1) .text-cell {
       padding: 0 20px 0 0; }
     main .artist-teaser-grid {
       display: grid;
@@ -801,8 +801,8 @@ footer {
     main section.single-col,
     main section.alternating-grid-text-large,
     main section.alternating-grid-image-large,
-    main section.alternating-grid-text-large:nth-child(2n+1),
-    main section.alternating-grid-image-large:nth-child(2n+1) {
+    main section.alternating-grid-text-large:nth-of-type(2n+1),
+    main section.alternating-grid-image-large:nth-of-type(2n+1) {
       width: 100%;
       min-width: 100%;
       margin: 1.25rem auto; }
@@ -818,42 +818,42 @@ footer {
       main section.alternating-grid-image-large .image-cell,
       main section.alternating-grid-image-large .text-cell,
       main section.alternating-grid-image-large > *,
-      main section.alternating-grid-text-large:nth-child(2n+1) .image-cell,
-      main section.alternating-grid-text-large:nth-child(2n+1) .text-cell,
-      main section.alternating-grid-text-large:nth-child(2n+1) > *,
-      main section.alternating-grid-image-large:nth-child(2n+1) .image-cell,
-      main section.alternating-grid-image-large:nth-child(2n+1) .text-cell,
-      main section.alternating-grid-image-large:nth-child(2n+1) > * {
+      main section.alternating-grid-text-large:nth-of-type(2n+1) .image-cell,
+      main section.alternating-grid-text-large:nth-of-type(2n+1) .text-cell,
+      main section.alternating-grid-text-large:nth-of-type(2n+1) > *,
+      main section.alternating-grid-image-large:nth-of-type(2n+1) .image-cell,
+      main section.alternating-grid-image-large:nth-of-type(2n+1) .text-cell,
+      main section.alternating-grid-image-large:nth-of-type(2n+1) > * {
         padding: 0 20px;
         min-width: auto; }
       main section .full-width,
       main section.single-col .full-width,
       main section.alternating-grid-text-large .full-width,
       main section.alternating-grid-image-large .full-width,
-      main section.alternating-grid-text-large:nth-child(2n+1) .full-width,
-      main section.alternating-grid-image-large:nth-child(2n+1) .full-width {
+      main section.alternating-grid-text-large:nth-of-type(2n+1) .full-width,
+      main section.alternating-grid-image-large:nth-of-type(2n+1) .full-width {
         margin-bottom: 5px; }
       main section h2,
       main section.single-col h2,
       main section.alternating-grid-text-large h2,
       main section.alternating-grid-image-large h2,
-      main section.alternating-grid-text-large:nth-child(2n+1) h2,
-      main section.alternating-grid-image-large:nth-child(2n+1) h2 {
+      main section.alternating-grid-text-large:nth-of-type(2n+1) h2,
+      main section.alternating-grid-image-large:nth-of-type(2n+1) h2 {
         margin-top: 1.75rem;
         padding: 0; }
       main section h3,
       main section.single-col h3,
       main section.alternating-grid-text-large h3,
       main section.alternating-grid-image-large h3,
-      main section.alternating-grid-text-large:nth-child(2n+1) h3,
-      main section.alternating-grid-image-large:nth-child(2n+1) h3 {
+      main section.alternating-grid-text-large:nth-of-type(2n+1) h3,
+      main section.alternating-grid-image-large:nth-of-type(2n+1) h3 {
         margin-bottom: 0.125rem; }
       main section h3.encouragement-subtitle,
       main section.single-col h3.encouragement-subtitle,
       main section.alternating-grid-text-large h3.encouragement-subtitle,
       main section.alternating-grid-image-large h3.encouragement-subtitle,
-      main section.alternating-grid-text-large:nth-child(2n+1) h3.encouragement-subtitle,
-      main section.alternating-grid-image-large:nth-child(2n+1) h3.encouragement-subtitle {
+      main section.alternating-grid-text-large:nth-of-type(2n+1) h3.encouragement-subtitle,
+      main section.alternating-grid-image-large:nth-of-type(2n+1) h3.encouragement-subtitle {
         margin-bottom: 0.75rem; }
       main section .accordion-trigger,
       main section .accordion-collapse,
@@ -863,17 +863,17 @@ footer {
       main section.alternating-grid-text-large .accordion-collapse,
       main section.alternating-grid-image-large .accordion-trigger,
       main section.alternating-grid-image-large .accordion-collapse,
-      main section.alternating-grid-text-large:nth-child(2n+1) .accordion-trigger,
-      main section.alternating-grid-text-large:nth-child(2n+1) .accordion-collapse,
-      main section.alternating-grid-image-large:nth-child(2n+1) .accordion-trigger,
-      main section.alternating-grid-image-large:nth-child(2n+1) .accordion-collapse {
+      main section.alternating-grid-text-large:nth-of-type(2n+1) .accordion-trigger,
+      main section.alternating-grid-text-large:nth-of-type(2n+1) .accordion-collapse,
+      main section.alternating-grid-image-large:nth-of-type(2n+1) .accordion-trigger,
+      main section.alternating-grid-image-large:nth-of-type(2n+1) .accordion-collapse {
         margin-top: .5rem; }
       main section .music-production-links,
       main section.single-col .music-production-links,
       main section.alternating-grid-text-large .music-production-links,
       main section.alternating-grid-image-large .music-production-links,
-      main section.alternating-grid-text-large:nth-child(2n+1) .music-production-links,
-      main section.alternating-grid-image-large:nth-child(2n+1) .music-production-links {
+      main section.alternating-grid-text-large:nth-of-type(2n+1) .music-production-links,
+      main section.alternating-grid-image-large:nth-of-type(2n+1) .music-production-links {
         margin-top: .5rem; }
     main section.alternating-grid-text-large h3.team-name,
     main section.alternating-grid-text-large h3.music-production-title,
@@ -921,10 +921,10 @@ footer {
     main section,
     main section.single-col,
     main section.alternating-grid-text-large,
-    main section.alternating-grid-text-large:nth-child(2n+1) {
+    main section.alternating-grid-text-large:nth-of-type(2n+1) {
       display: block; }
     main section.alternating-grid-image-large,
-    main section.alternating-grid-image-large:nth-child(2n+1) {
+    main section.alternating-grid-image-large:nth-of-type(2n+1) {
       padding: 0 20px;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: min-content min-content 1fr;
@@ -932,18 +932,18 @@ footer {
       margin: 0.5rem auto; }
       main section.alternating-grid-image-large .image-cell,
       main section.alternating-grid-image-large .text-column,
-      main section.alternating-grid-image-large:nth-child(2n+1) .image-cell,
-      main section.alternating-grid-image-large:nth-child(2n+1) .text-column {
+      main section.alternating-grid-image-large:nth-of-type(2n+1) .image-cell,
+      main section.alternating-grid-image-large:nth-of-type(2n+1) .text-column {
         padding: 0; }
       main section.alternating-grid-image-large .image-cell,
-      main section.alternating-grid-image-large:nth-child(2n+1) .image-cell {
+      main section.alternating-grid-image-large:nth-of-type(2n+1) .image-cell {
         grid-row: 2 / span 2;
         grid-column: 1/2; }
       main section.alternating-grid-image-large .text-column,
-      main section.alternating-grid-image-large:nth-child(2n+1) .text-column {
+      main section.alternating-grid-image-large:nth-of-type(2n+1) .text-column {
         grid-column: 2/3; }
       main section.alternating-grid-image-large h3.text-column,
-      main section.alternating-grid-image-large:nth-child(2n+1) h3.text-column {
+      main section.alternating-grid-image-large:nth-of-type(2n+1) h3.text-column {
         grid-column: 1/-1;
         margin-bottom: .25rem; }
     main h2 {

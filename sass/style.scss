@@ -612,7 +612,7 @@ main {
     p.text-column { align-self: start; }
   }
 
-  section.alternating-grid-image-large:nth-child(2n+1) {
+  section.alternating-grid-image-large:nth-of-type(2n+1) {
     grid-template-columns: 1fr 2fr;
     .image-cell { grid-column: -2/-1; }
     .text-column { 
@@ -641,7 +641,7 @@ main {
     }
   }
 
-  section.alternating-grid-text-large:nth-child(2n+1) {
+  section.alternating-grid-text-large:nth-of-type(2n+1) {
     grid-template-columns: 2fr 1fr;
     .text-cell {
       order: -1;
@@ -897,7 +897,7 @@ footer {
       .image-cell { min-width: 300px; }
     }
 
-    section.alternating-grid-image-large:nth-child(2n+1) {
+    section.alternating-grid-image-large:nth-of-type(2n+1) {
       .text-cell { padding: 0 20px 0 0; }
     }
     
@@ -910,7 +910,7 @@ footer {
       .image-cell { min-width: 250px; }
     }
 
-    section.alternating-grid-text-large:nth-child(2n+1) {
+    section.alternating-grid-text-large:nth-of-type(2n+1) {
       .text-cell { padding: 0 20px 0 0; }
     }
     
@@ -1089,8 +1089,8 @@ footer {
     section.single-col,
     section.alternating-grid-text-large,
     section.alternating-grid-image-large,
-    section.alternating-grid-text-large:nth-child(2n+1),
-    section.alternating-grid-image-large:nth-child(2n+1) {
+    section.alternating-grid-text-large:nth-of-type(2n+1),
+    section.alternating-grid-image-large:nth-of-type(2n+1) {
       // should probably stay two-col-grid
       width: 100%;
       min-width: 100%;
@@ -1177,16 +1177,16 @@ footer {
     section,
     section.single-col,
     section.alternating-grid-text-large,
-    section.alternating-grid-text-large:nth-child(2n+1) { 
+    section.alternating-grid-text-large:nth-of-type(2n+1) { 
       display: block;
     }
     
     // we have to remain rasterized 😭
     section.alternating-grid-image-large,
-    section.alternating-grid-image-large:nth-child(2n+1) {
+    section.alternating-grid-image-large:nth-of-type(2n+1) {
       padding: 0 20px;
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: min-content min-content 1fr;
+      grid-template-rows: min-content min-content 1fr; // hier brauchts noch arbeit 👻 ?
       grid-column-gap: 10px;
       margin: 0.5rem auto;
       .image-cell,

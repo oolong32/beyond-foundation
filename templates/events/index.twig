@@ -24,10 +24,23 @@
       … #}
 
       {% for event in events %}
+          
+          {% if loop.index == 3 %}
+            {% if entry.quote|length %}
+            <blockquote>
+              <p>{{ craft.app.language == 'de' ? '«' : '“' }}{{ entry.quote }}{{ craft.app.language == 'de' ? '»' : '”' }}</p>
+            </blockquote>
+            {% endif %}
+          {% endif %}
+
         <section class="alternating-grid-image-large">
   
           <div class="image-cell">
-            <img src="{{ alias('@assetBasePath') }}/assets/_pic/placeholder_16-9.png" alt="">
+            {% if event.teaserImage|length %}
+            <img src="{{ alias('@assetBasePath') }}/{{ event.teaserImage[0].getUrl() }}" alt="{{ event.title }}">
+            {% else %}
+            <img src="{{ alias('@assetBasePath') }}/assets/_pic/placeholder_16-9.png" alt="{{ event.title }}, test image">
+            {% endif %}
           </div>
 
           <h3 class="text-column">{{ event.title }}</h3>
@@ -39,12 +52,6 @@
 
         </section>
       {% endfor %}
-
-      {% if entry.quote|length %}
-      <blockquote>
-        <p>{{ craft.app.language == 'de' ? '«' : '“' }}{{ entry.quote }}{{ craft.app.language == 'de' ? '»' : '”' }}</p>
-      </blockquote>
-      {% endif %}
 
     </main>
         

@@ -38,7 +38,9 @@
       {% endif %}
 
       {% if entry.audioTrack|length %}
-      <section class="alternating-grid-text-large">
+        <section class="alternating-grid-text-large">
+        </section> {# dirty trick: fix order of next section to fit mockup, 😂 #}
+        <section class="alternating-grid-text-large">
         <div class="image-cell">
           <img src="{{ alias('@assetBasePath') }}/{{ entry.coverImage[0].getUrl() }}" alt="{#{{ entry.trackArtist }}: #}{{ entry.trackTitle }}">
         </div>
