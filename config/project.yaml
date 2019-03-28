@@ -1,4 +1,4 @@
-dateModified: 1553617123
+dateModified: 1553763950
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -839,7 +839,7 @@ sites:
     siteGroup: be67c42e-6aa2-4656-8f77-d2b8cd57dedd
     sortOrder: 1
 system:
-  edition: solo
+  edition: pro
   live: true
   name: 'Beyond Foundation'
   schemaVersion: 3.1.19

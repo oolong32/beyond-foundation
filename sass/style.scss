@@ -175,7 +175,7 @@ p.text-column { font-weight: $medium; }
 
   /* Events {{{3 */
   
-  .teaser-link { // comment
+  p.teaser-link {
     font-weight: $light;
     font-size: 1.375rem; 
     line-height: 1.45rem;
@@ -603,8 +603,8 @@ main {
       grid-column: -2/-1;
       display: inline-block;
       padding: 0 0 0 40px;
-      .teaser-link { margin-top: 1rem; }
     }
+    .teaser-link { margin-top: 0.25rem; } // events
     h3.text-column {
       align-self: end;
       margin: 0;
@@ -1186,7 +1186,7 @@ footer {
     section.alternating-grid-image-large:nth-child(2n+1) {
       padding: 0 20px;
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: min-content min-content min-content; // hier brauchts noch arbeit 👻 ?
+      grid-template-rows: min-content min-content 1fr;
       grid-column-gap: 10px;
       margin: 0.5rem auto;
       .image-cell,
