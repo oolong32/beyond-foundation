@@ -1,4 +1,4 @@
-dateModified: 1553784564
+dateModified: 1553785234
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -641,7 +641,7 @@ sections:
         name: 'Home Teaser Entries'
         sortOrder: 1
         titleFormat: ''
-        titleLabel: Titel
+        titleLabel: 'Titel (wird nicht angezeigt)'
     handle: homeTeasers
     name: 'Home Teaser Entries'
     propagateEntries: true
@@ -1038,4 +1038,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-03-28 16:00:34'
+dateApplied: '2019-03-28 16:00:49'
