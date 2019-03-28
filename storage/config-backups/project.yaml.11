@@ -1,4 +1,4 @@
-dateModified: 1553769913
+dateModified: 1553784514
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -108,6 +108,16 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Assets
+  417b399c-4166-4897-a491-00dff2058bd5:
+    contentColumnType: string
+    fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
+    handle: videoTest
+    instructions: ''
+    name: 'video test'
+    searchable: true
+    translationKeyFormat: null
+    translationMethod: none
+    type: dukt\videos\fields\Video
   597d3228-4fef-4e48-b794-3e488a088311:
     contentColumnType: text
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
@@ -162,6 +172,24 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Entries
+  752ed5fb-e81b-4651-8eed-3bb3f4c358f9:
+    contentColumnType: text
+    fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
+    handle: text
+    instructions: ''
+    name: Text
+    searchable: true
+    settings:
+      availableTransforms: ''
+      availableVolumes: ''
+      cleanupHtml: '1'
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: Simple.json
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\redactor\Field
   78cf4c77-636b-48a0-b594-60ab78ef26a1:
     contentColumnType: text
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
@@ -250,6 +278,32 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\PlainText
+  bfe0f040-f095-416d-b4cf-39c83419018b:
+    contentColumnType: string
+    fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
+    handle: teaserImage
+    instructions: 'Bild im Format 16:9'
+    name: Teaser-Bild
+    searchable: true
+    settings:
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:9eb7856b-e672-4fbf-b4b5-9d00ee79c726'
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: ''
+      restrictFiles: '1'
+      selectionLabel: ''
+      singleUploadLocationSource: 'volume:9eb7856b-e672-4fbf-b4b5-9d00ee79c726'
+      singleUploadLocationSubpath: images/teaser-images
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: '1'
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
   d8dd3348-f988-4ea0-b8db-6c4e63542924:
     contentColumnType: text
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
@@ -267,6 +321,25 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
+  dd3b36a3-d68e-4857-b2c2-59bfc760dc64:
+    contentColumnType: string
+    fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
+    handle: associatedEntry
+    instructions: 'Eintrag in Beyond-Foundation.org, der mit diesem Teaser verknüpft sein soll.'
+    name: 'Verknüpfter Eintrag'
+    searchable: true
+    settings:
+      limit: '1'
+      localizeRelations: ''
+      selectionLabel: 'Eintrag wählen'
+      source: null
+      sources:
+        - singles
+      targetSiteId: null
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
   e6776d44-d3d9-442b-90aa-f01d11baa789:
     contentColumnType: string
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
@@ -321,6 +394,17 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\PlainText
+imageTransforms:
+  2b5e3b27-8e0b-48e4-a280-8d1460f59282:
+    format: null
+    handle: sixteen2nine
+    height: '585'
+    interlace: none
+    mode: crop
+    name: '16 zu 9'
+    position: center-center
+    quality: '82'
+    width: '1040'
 plugins:
   redactor:
     edition: standard
@@ -329,7 +413,17 @@ plugins:
   videos:
     edition: standard
     enabled: true
+    licenseKey: TW3885HAN1T9S5DV0RMU3HUM
     schemaVersion: 1.0.1
+    settings:
+      cacheDuration: PT15M
+      enableCache: true
+      oauthProviderOptions:
+        youtube:
+          clientId: 345445948018-dit38vfsfjbd9k5r50tffb686p14rnsb.apps.googleusercontent.com
+          clientSecret: _kv9cJp92kw4kfjUXD50VOsf
+      tokens: null
+      videosPerPage: 30
 sections:
   08de450d-3199-4c3b-9b6c-9a900c9ab5d7:
     enableVersioning: true
@@ -433,13 +527,13 @@ sections:
                 fields:
                   013f9713-f734-4215-90dc-70fd25cf2306:
                     required: false
-                    sortOrder: 7
+                    sortOrder: 6
                   07a81bf3-21ea-4fc5-bcb3-e2b3eddcc8f4:
                     required: false
-                    sortOrder: 6
+                    sortOrder: 5
                   3f013fdf-9050-4d51-b818-050c8a105e6f:
                     required: false
-                    sortOrder: 9
+                    sortOrder: 8
                   597d3228-4fef-4e48-b794-3e488a088311:
                     required: false
                     sortOrder: 4
@@ -448,16 +542,13 @@ sections:
                     sortOrder: 3
                   aac9b682-0ac3-4291-bc12-f31f73e6cad9:
                     required: false
-                    sortOrder: 8
+                    sortOrder: 7
                   b729c087-ed9f-4371-8cf0-48e6ef2d9e6a:
                     required: false
                     sortOrder: 2
                   bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
                     required: false
                     sortOrder: 1
-                  f509c340-3109-4f76-a749-0569c3dd49ae:
-                    required: false
-                    sortOrder: 5
                 name: 'Tab 1'
                 sortOrder: 1
         handle: musicNetwork
@@ -525,6 +616,47 @@ sections:
       maxLevels: '1'
       uid: 5911d41d-2ca7-403c-a53f-540d47f8d189
     type: structure
+  68355b2e-f364-4ba8-9e82-0cd80670448e:
+    enableVersioning: true
+    entryTypes:
+      5c28ca9f-56a4-4b46-ac8e-b4102925f236:
+        fieldLayouts:
+          13b56cb8-8309-473c-a0ad-84884d5236ac:
+            tabs:
+              -
+                fields:
+                  387a6e57-35e5-47bd-9182-119d7ccccf16:
+                    required: true
+                    sortOrder: 2
+                  bfe0f040-f095-416d-b4cf-39c83419018b:
+                    required: true
+                    sortOrder: 1
+                name: 'Tab 1'
+                sortOrder: 1
+        handle: homeTeaserEntries
+        hasTitleField: true
+        name: 'Home Teaser Entries'
+        sortOrder: 1
+        titleFormat: ''
+        titleLabel: Titel
+    handle: homeTeasers
+    name: 'Home Teaser Entries'
+    propagateEntries: true
+    siteSettings:
+      802d4b06-1f71-4c60-8b00-c331a21b5134:
+        enabledByDefault: true
+        hasUrls: true
+        template: ''
+        uriFormat: 'home-teaser/{slug}'
+      96f6905b-bcc3-4e74-91a8-e5458eb5e532:
+        enabledByDefault: true
+        hasUrls: true
+        template: ''
+        uriFormat: 'home-teaser/{slug}'
+    structure:
+      maxLevels: '1'
+      uid: ce59bcc3-cded-4cfd-b5f5-9fb32e9c4fe2
+    type: structure
   a7103738-e3bc-4556-8521-a66f06bd0e0a:
     enableVersioning: true
     entryTypes:
@@ -534,13 +666,16 @@ sections:
             tabs:
               -
                 fields:
+                  752ed5fb-e81b-4651-8eed-3bb3f4c358f9:
+                    required: false
+                    sortOrder: 2
                   bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
-                    required: '0'
-                    sortOrder: '1'
+                    required: false
+                    sortOrder: 1
                 name: 'Tab 1'
-                sortOrder: '1'
+                sortOrder: 1
         handle: imprint
-        hasTitleField: '0'
+        hasTitleField: false
         name: Impressum
         sortOrder: 1
         titleFormat: '{section.name|raw}'
@@ -571,10 +706,13 @@ sections:
                 fields:
                   387a6e57-35e5-47bd-9182-119d7ccccf16:
                     required: true
+                    sortOrder: 2
+                  bfe0f040-f095-416d-b4cf-39c83419018b:
+                    required: false
                     sortOrder: 1
                   e90e60b4-237c-4aab-839f-30f73a14fea3:
                     required: false
-                    sortOrder: 2
+                    sortOrder: 3
                 name: Events
                 sortOrder: 1
         handle: eventsEntries
@@ -583,8 +721,8 @@ sections:
         sortOrder: 1
         titleFormat: ''
         titleLabel: Titel
-    handle: eventsEntries
-    name: 'Events Entries'
+    handle: eventsTeasers
+    name: 'Events Teaser Entries'
     propagateEntries: true
     siteSettings:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
@@ -687,24 +825,21 @@ sections:
               -
                 fields:
                   597d3228-4fef-4e48-b794-3e488a088311:
-                    required: '0'
-                    sortOrder: '4'
+                    required: false
+                    sortOrder: 4
                   63060068-23fd-4091-9e13-96d982008822:
-                    required: '0'
-                    sortOrder: '3'
+                    required: false
+                    sortOrder: 3
                   b729c087-ed9f-4371-8cf0-48e6ef2d9e6a:
-                    required: '0'
-                    sortOrder: '2'
+                    required: false
+                    sortOrder: 2
                   bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
-                    required: '0'
-                    sortOrder: '1'
-                  f509c340-3109-4f76-a749-0569c3dd49ae:
-                    required: '0'
-                    sortOrder: '5'
+                    required: false
+                    sortOrder: 1
                 name: 'Tab 1'
-                sortOrder: '1'
+                sortOrder: 1
         handle: musicProduction
-        hasTitleField: '0'
+        hasTitleField: false
         name: 'Music Production'
         sortOrder: 1
         titleFormat: '{section.name|raw}'
@@ -745,9 +880,6 @@ sections:
                   bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
                     required: false
                     sortOrder: 1
-                  f509c340-3109-4f76-a749-0569c3dd49ae:
-                    required: false
-                    sortOrder: 5
                 name: 'Tab 1'
                 sortOrder: 1
         handle: encouragement
@@ -786,9 +918,6 @@ sections:
                   bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
                     required: false
                     sortOrder: 1
-                  f509c340-3109-4f76-a749-0569c3dd49ae:
-                    required: false
-                    sortOrder: 3
                 name: 'Tab 1'
                 sortOrder: 1
         handle: home
@@ -906,4 +1035,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-03-28 12:01:43'
+dateApplied: '2019-03-28 15:49:24'

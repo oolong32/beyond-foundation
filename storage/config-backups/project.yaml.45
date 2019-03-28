@@ -1,4 +1,4 @@
-dateModified: 1553092787
+dateModified: 1553768417
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -8,11 +8,30 @@ fieldGroups:
     name: 'Music Production Entries'
   97dfc979-5ae8-418e-9249-5b4fdebd7c80:
     name: Common
+  9ff248e4-bf56-4c2e-bd97-e05389e39cda:
+    name: Events
 fields:
+  013f9713-f734-4215-90dc-70fd25cf2306:
+    contentColumnType: text
+    fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
+    handle: trackTitle
+    instructions: 'Name des Tracks'
+    name: 'Titel Audio Datei'
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
   07a81bf3-21ea-4fc5-bcb3-e2b3eddcc8f4:
     contentColumnType: string
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
-    handle: audioFile
+    handle: audioTrack
     instructions: 'Eine mp3-Datei wählen/uploaden.'
     name: Audio-Datei
     searchable: true
@@ -20,11 +39,11 @@ fields:
       allowedKinds:
         - audio
       defaultUploadLocationSource: 'volume:9eb7856b-e672-4fbf-b4b5-9d00ee79c726'
-      defaultUploadLocationSubpath: /audio
+      defaultUploadLocationSubpath: /audio/
       limit: '1'
       localizeRelations: ''
       restrictFiles: '1'
-      selectionLabel: 'Audio-Date wählen'
+      selectionLabel: 'Audio-Datei wählen'
       singleUploadLocationSource: 'volume:9eb7856b-e672-4fbf-b4b5-9d00ee79c726'
       singleUploadLocationSubpath: ''
       source: null
@@ -36,6 +55,35 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Assets
+  0b039d84-1f7d-493d-8d5b-b894b6c24f75:
+    contentColumnType: string
+    fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
+    handle: artistLink
+    instructions: 'Website des Künstlers, mit `https://`'
+    name: 'Website des Künstlers'
+    searchable: true
+    settings:
+      placeholder: 'https://'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
+  387a6e57-35e5-47bd-9182-119d7ccccf16:
+    contentColumnType: text
+    fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
+    handle: shortDescription
+    instructions: 'Maximal 60 Zeichen'
+    name: Kurzbeschrieb
+    searchable: true
+    settings:
+      charLimit: '60'
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
   3f013fdf-9050-4d51-b818-050c8a105e6f:
     contentColumnType: string
     fieldGroup: 85d8c0e7-6a43-4691-8d57-0ea516983de7
@@ -100,7 +148,7 @@ fields:
   72357970-aa0e-4ab8-bc96-4899cd33dd40:
     contentColumnType: string
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
-    handle: kuenstler
+    handle: artists
     instructions: ''
     name: Künstler
     searchable: true
@@ -152,6 +200,24 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\redactor\Field
+  aac9b682-0ac3-4291-bc12-f31f73e6cad9:
+    contentColumnType: text
+    fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
+    handle: trackInfo
+    instructions: 'Ein beschreibender Text.'
+    name: 'Beschrieb Audio-Datei'
+    searchable: true
+    settings:
+      availableTransforms: '*'
+      availableVolumes: ''
+      cleanupHtml: '1'
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: Simple.json
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\redactor\Field
   b729c087-ed9f-4371-8cf0-48e6ef2d9e6a:
     contentColumnType: text
     fieldGroup: 85d8c0e7-6a43-4691-8d57-0ea516983de7
@@ -175,6 +241,23 @@ fields:
     handle: pageHeading
     instructions: 'Überschrift der Seite, immer auf Englisch (gleiche für alle Sprachen)'
     name: 'Page Title'
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\PlainText
+  d8dd3348-f988-4ea0-b8db-6c4e63542924:
+    contentColumnType: text
+    fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
+    handle: trackArtist
+    instructions: 'Name des Künstlers / der Gruppe'
+    name: 'Interpret Audio-Datei'
     searchable: true
     settings:
       charLimit: ''
@@ -211,6 +294,18 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Assets
+  e90e60b4-237c-4aab-839f-30f73a14fea3:
+    contentColumnType: string
+    fieldGroup: 9ff248e4-bf56-4c2e-bd97-e05389e39cda
+    handle: eventLink
+    instructions: 'URL zu externer Seite'
+    name: Link
+    searchable: true
+    settings:
+      placeholder: 'https://…'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
   f509c340-3109-4f76-a749-0569c3dd49ae:
     contentColumnType: text
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
@@ -243,12 +338,12 @@ sections:
             tabs:
               -
                 fields:
+                  0b039d84-1f7d-493d-8d5b-b894b6c24f75:
+                    required: false
+                    sortOrder: 3
                   78cf4c77-636b-48a0-b594-60ab78ef26a1:
                     required: false
                     sortOrder: 2
-                  8a5aa2a1-d84f-4bbf-9ea5-4c6b67c7c105:
-                    required: false
-                    sortOrder: 3
                   e6776d44-d3d9-442b-90aa-f01d11baa789:
                     required: false
                     sortOrder: 1
@@ -334,15 +429,24 @@ sections:
             tabs:
               -
                 fields:
+                  013f9713-f734-4215-90dc-70fd25cf2306:
+                    required: false
+                    sortOrder: 7
                   07a81bf3-21ea-4fc5-bcb3-e2b3eddcc8f4:
                     required: false
                     sortOrder: 6
+                  3f013fdf-9050-4d51-b818-050c8a105e6f:
+                    required: false
+                    sortOrder: 9
                   597d3228-4fef-4e48-b794-3e488a088311:
                     required: false
                     sortOrder: 4
                   63060068-23fd-4091-9e13-96d982008822:
                     required: false
                     sortOrder: 3
+                  aac9b682-0ac3-4291-bc12-f31f73e6cad9:
+                    required: false
+                    sortOrder: 8
                   b729c087-ed9f-4371-8cf0-48e6ef2d9e6a:
                     required: false
                     sortOrder: 2
@@ -766,7 +870,7 @@ sites:
     siteGroup: be67c42e-6aa2-4656-8f77-d2b8cd57dedd
     sortOrder: 1
 system:
-  edition: solo
+  edition: pro
   live: true
   name: 'Beyond Foundation'
   schemaVersion: 3.1.19
@@ -787,4 +891,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-03-20 15:40:17'
+dateApplied: '2019-03-28 11:20:42'

@@ -396,6 +396,9 @@ header.shrink {
 header.mini #masthead {
   height: 0; }
 
+header.mini #language-switch {
+  display: none; }
+
 /* End Header Shrink }}}1 */
 /* Main Layout {{{1 */
 main {
@@ -430,6 +433,10 @@ main {
     main section.single-col .full-width {
       grid-column: 1/-1;
       margin-bottom: 0.625rem; }
+    main section.single-col p {
+      margin-bottom: 0.875rem; }
+    main section.single-col p:last-child {
+      margin-bottom: 0; }
   main section.alternating-grid-image-large {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -785,6 +792,8 @@ footer {
     /* Mobile Main Whitespace {{{3 */
     width: 100%;
     padding: 3rem 0 1rem;
+    /* Mobile Main Single-Col Full-Width {{{4 */
+    /* End Mobile Main Single-Col Full-Width }}}4 */
     /* Team/Music-Production-Teaser Texts {{{4 */
     /* End Team/Music-Production-Teaser Texts }}}4 */
     /* Mobile Music-Production Single Entry {{{4 */
@@ -875,6 +884,12 @@ footer {
       main section.alternating-grid-text-large:nth-of-type(2n+1) .music-production-links,
       main section.alternating-grid-image-large:nth-of-type(2n+1) .music-production-links {
         margin-top: .5rem; }
+    main section.single-col img.full-width {
+      margin: 0; }
+    main section.single-col p.video-caption {
+      font-size: 0.875rem;
+      margin-top: 0;
+      color: red; }
     main section.alternating-grid-text-large h3.team-name,
     main section.alternating-grid-text-large h3.music-production-title,
     main section.alternating-grid-text-large p.team-quote,

@@ -545,6 +545,7 @@ header.shrink { /* collapsed header */
 
 header.mini { // footer visible, see JS helpers
   #masthead { height: 0; } 
+  #language-switch { display: none; }
 }
 
 /* End Header Shrink }}}1 */
@@ -578,8 +579,10 @@ main {
     .full-width {
       grid-column: 1/-1;
       margin-bottom: 0.625rem;
-      // background: LightBlue;
     }
+    // img.full-width { width: 100%; height: auto;}
+    p { margin-bottom: 0.875rem; }
+    p:last-child { margin-bottom: 0;}
   }
   
   /* End Main Grids Single Column Grid }}}3 */
@@ -1112,6 +1115,16 @@ footer {
       .accordion-collapse { margin-top: .5rem; }
       .music-production-links { margin-top: .5rem; }
     }
+
+    /* Mobile Main Single-Col Full-Width {{{4 */
+    section.single-col {
+      img.full-width { margin: 0; }
+      p.video-caption { font-size: 0.875rem; margin-top: 0; color: red; } // index-page, top teaser
+    }
+    
+    
+    
+    /* End Mobile Main Single-Col Full-Width }}}4 */
 
     /* Team/Music-Production-Teaser Texts {{{4 */
     

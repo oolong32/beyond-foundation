@@ -3,7 +3,7 @@
 {% extends "_layout" %}
 
 {% set entry = craft.entries().section('events').one() %}
-{% set events = craft.entries().section('eventsEntries').all() %}
+{% set events = craft.entries().section('eventsTeasers').all() %}
 
 {% block content %}
 
@@ -37,7 +37,7 @@
   
           <div class="image-cell">
             {% if event.teaserImage|length %}
-            <img src="{{ alias('@assetBasePath') }}/{{ event.teaserImage[0].getUrl() }}" alt="{{ event.title }}">
+            <img src="{{ alias('@assetBasePath') }}/{{ event.teaserImage[0].getUrl('sixteen2nine') }}" alt="{{ event.title }}">
             {% else %}
             <img src="{{ alias('@assetBasePath') }}/assets/_pic/placeholder_16-9.png" alt="{{ event.title }}, test image">
             {% endif %}
