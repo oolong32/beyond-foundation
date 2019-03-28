@@ -1,4 +1,4 @@
-dateModified: 1553770903
+dateModified: 1553772015
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -108,6 +108,16 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Assets
+  417b399c-4166-4897-a491-00dff2058bd5:
+    contentColumnType: string
+    fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
+    handle: videoTest
+    instructions: ''
+    name: 'video test'
+    searchable: true
+    translationKeyFormat: null
+    translationMethod: none
+    type: dukt\videos\fields\Video
   597d3228-4fef-4e48-b794-3e488a088311:
     contentColumnType: text
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
@@ -335,8 +345,8 @@ plugins:
       enableCache: true
       oauthProviderOptions:
         youtube:
-          clientId: 'http://beyond-foundation.org.ryan.ch-meta.net/'
-          clientSecret: ''
+          clientId: ' 345445948018-dit38vfsfjbd9k5r50tffb686p14rnsb.apps.googleusercontent.com'
+          clientSecret: _kv9cJp92kw4kfjUXD50VOsf
       tokens: null
       videosPerPage: 30
 sections:
@@ -580,10 +590,13 @@ sections:
                 fields:
                   387a6e57-35e5-47bd-9182-119d7ccccf16:
                     required: true
+                    sortOrder: 2
+                  417b399c-4166-4897-a491-00dff2058bd5:
+                    required: false
                     sortOrder: 1
                   e90e60b4-237c-4aab-839f-30f73a14fea3:
                     required: false
-                    sortOrder: 2
+                    sortOrder: 3
                 name: Events
                 sortOrder: 1
         handle: eventsEntries
@@ -915,4 +928,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-03-28 12:09:09'
+dateApplied: '2019-03-28 12:20:51'

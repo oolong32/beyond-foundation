@@ -1,4 +1,4 @@
-dateModified: 1553617057
+dateModified: 1553767872
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -8,6 +8,8 @@ fieldGroups:
     name: 'Music Production Entries'
   97dfc979-5ae8-418e-9249-5b4fdebd7c80:
     name: Common
+  9ff248e4-bf56-4c2e-bd97-e05389e39cda:
+    name: Events
 fields:
   013f9713-f734-4215-90dc-70fd25cf2306:
     contentColumnType: text
@@ -233,23 +235,6 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\PlainText
-  c40ffa69-a91b-40dc-ae41-e5f8ecfb5d5c:
-    contentColumnType: text
-    fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
-    handle: websiteDesKn
-    instructions: ''
-    name: 'Website des Kn'
-    searchable: true
-    settings:
-      charLimit: ''
-      code: ''
-      columnType: text
-      initialRows: '4'
-      multiline: ''
-      placeholder: ''
-    translationKeyFormat: null
-    translationMethod: none
-    type: craft\fields\PlainText
   d8dd3348-f988-4ea0-b8db-6c4e63542924:
     contentColumnType: text
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
@@ -324,6 +309,9 @@ sections:
             tabs:
               -
                 fields:
+                  0b039d84-1f7d-493d-8d5b-b894b6c24f75:
+                    required: false
+                    sortOrder: 3
                   78cf4c77-636b-48a0-b594-60ab78ef26a1:
                     required: false
                     sortOrder: 2
@@ -853,7 +841,7 @@ sites:
     siteGroup: be67c42e-6aa2-4656-8f77-d2b8cd57dedd
     sortOrder: 1
 system:
-  edition: solo
+  edition: pro
   live: true
   name: 'Beyond Foundation'
   schemaVersion: 3.1.19
@@ -874,4 +862,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-03-26 17:17:55'
+dateApplied: '2019-03-28 11:18:38'
