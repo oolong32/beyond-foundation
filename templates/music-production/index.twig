@@ -25,17 +25,17 @@
         {{ entry.lead }}
       </section> <!-- end row -->
       
-{# Das muss zwischen erste und zweite Iteration der Einträge unten (merci gäll) #}
-{# Das muss zwischen erste und zweite Iteration der Einträge unten (merci gäll) #}
-      {% if entry.quote|length %}
-      <blockquote>
-        <p>{{ craft.app.language == 'de' ? '«' : '“' }}{{ entry.quote }}{{ craft.app.language == 'de' ? '»' : '”' }}</p>
-      </blockquote>
-      {% endif %}
-{# Das muss zwischen erste und zweite Iteration der Einträge unten (merci gäll) #}
-{# Das muss zwischen erste und zweite Iteration der Einträge unten (merci gäll) #}
-
       {% for production in productions %}
+      
+      {% if loop.index == 3 %}
+        {% if entry.quote|length %}
+        <blockquote>
+          <p>{{ craft.app.language == 'de' ? '«' : '“' }}{{ entry.quote }}{{ craft.app.language == 'de' ? '»' : '”' }}</p>
+        </blockquote>
+        {% endif %}
+      {% endif %}
+
+
       <!-- start row-->
       <section class="alternating-grid-text-large">
 
@@ -69,9 +69,9 @@
                 {#
                 <li class="button"><a href="{{ production.getUrl() }}" style="color: white;"><strong>+</strong> Mehr erfahren</a></li>
                 #}
-                <li><a href="{{ production.getUrl() }}#hear-buy-share">Hören</a></li>
-                <li><a href="{{ production.getUrl() }}#hear-buy-share">Kaufen</a></li>
-                <li><a href="{{ production.getUrl() }}#hear-buy-share">Teilen</a></li>
+                <li><a href="{{ production.getUrl() }}#hear-buy-share">{{ 'Hören'|t }}</a></li>
+                <li><a href="{{ production.getUrl() }}#hear-buy-share">{{ 'Kaufen'|t }}</a></li>
+                <li><a href="{{ production.getUrl() }}#hear-buy-share">{{ 'Teilen'|t }}</a></li>
               </ul>
           </div>
           <!-- end text cell -->

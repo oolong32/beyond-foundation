@@ -16,10 +16,12 @@
 
 		<h2>{{ entry.title }}</h2>
 
+    {% if entry.heroImage|length %}
 		<section class="single-col">
-      <div class="full-width" style="height: 585px; background: papayawhip;"></div>
-      <p class="video-caption full-width"><strong>Foo bar baz</strong> Et consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+      <img class="full-width" src="{{ entry.heroImage[0].getUrl('sixteen2nine') }}" alt="{{ entry.title }}, hero image">
+      <p class="video-caption full-width">{{ entry.shortDescription }}</p>
 		</section>
+    {% endif %}
 
 		<section class="single-col">
       <h3>{{ entry.leadTitle }}</h3>
@@ -34,7 +36,7 @@
       <div id="hear-buy-share" class="order-download">
 
         <div class="hear">
-          <h4>Hören</h4>
+          <h4>{{ 'Hören'|t }}</h4>
           <div class="itunes">
             <img src="{{ alias('@assetBasePath') }}/assets/_pic/third-party-icons/apple.svg" alt="">
             <p>iTunes</p>
@@ -61,7 +63,7 @@
         </div>
 
         <div class="buy">
-          <h4>Kaufen</h4>
+          <h4>{{ 'Kaufen'|t }}</h4>
           <div class="amazon">
             <img src="{{ alias('@assetBasePath') }}/assets/_pic/third-party-icons/amazon.svg" alt="">
             <p>Amazon</p>
@@ -77,7 +79,7 @@
         </div>
 
         <div class="share">
-          <h4>Teilen</h4>
+          <h4>{{ 'Teilen'|t }}</h4>
           <div class="facebook">
             <img src="{{ alias('@assetBasePath') }}/assets/_pic/third-party-icons/facebook.svg" alt="">
             <p>Facebook</p>

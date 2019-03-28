@@ -1,4 +1,4 @@
-dateModified: 1553772015
+dateModified: 1553780486
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -260,6 +260,32 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\PlainText
+  bfe0f040-f095-416d-b4cf-39c83419018b:
+    contentColumnType: string
+    fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
+    handle: teaserImage
+    instructions: 'Bild im Format 16:9'
+    name: Teaser-Bild
+    searchable: true
+    settings:
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:9eb7856b-e672-4fbf-b4b5-9d00ee79c726'
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: ''
+      restrictFiles: '1'
+      selectionLabel: ''
+      singleUploadLocationSource: 'volume:9eb7856b-e672-4fbf-b4b5-9d00ee79c726'
+      singleUploadLocationSubpath: images/teaser-images
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: '1'
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
   d8dd3348-f988-4ea0-b8db-6c4e63542924:
     contentColumnType: text
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
@@ -339,13 +365,14 @@ plugins:
   videos:
     edition: standard
     enabled: true
+    licenseKey: TW3885HAN1T9S5DV0RMU3HUM
     schemaVersion: 1.0.1
     settings:
       cacheDuration: PT15M
       enableCache: true
       oauthProviderOptions:
         youtube:
-          clientId: ' 345445948018-dit38vfsfjbd9k5r50tffb686p14rnsb.apps.googleusercontent.com'
+          clientId: 345445948018-dit38vfsfjbd9k5r50tffb686p14rnsb.apps.googleusercontent.com
           clientSecret: _kv9cJp92kw4kfjUXD50VOsf
       tokens: null
       videosPerPage: 30
@@ -591,7 +618,7 @@ sections:
                   387a6e57-35e5-47bd-9182-119d7ccccf16:
                     required: true
                     sortOrder: 2
-                  417b399c-4166-4897-a491-00dff2058bd5:
+                  bfe0f040-f095-416d-b4cf-39c83419018b:
                     required: false
                     sortOrder: 1
                   e90e60b4-237c-4aab-839f-30f73a14fea3:
@@ -928,4 +955,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-03-28 12:20:51'
+dateApplied: '2019-03-28 15:00:33'

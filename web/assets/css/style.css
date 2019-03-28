@@ -556,8 +556,6 @@ main {
   margin-top: 1rem; }
   .accordion .visible {
     outline: 0; }
-  .accordion .collapsed {
-    color: red; }
   .accordion .accordion-trigger {
     margin-top: 1rem; }
 
@@ -888,8 +886,7 @@ footer {
       margin: 0; }
     main section.single-col p.video-caption {
       font-size: 0.875rem;
-      margin-top: 0;
-      color: red; }
+      margin-top: 0; }
     main section.alternating-grid-text-large h3.team-name,
     main section.alternating-grid-text-large h3.music-production-title,
     main section.alternating-grid-text-large p.team-quote,

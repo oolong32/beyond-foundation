@@ -49,12 +49,12 @@
 
             <div class="visible"> <!-- start accordion visible part -->
               {{ member.visibleText }}
-              <p class="accordion-trigger" style="text-align: left;"><span>Weitere Informationen</span></p>
+              <p class="accordion-trigger" style="text-align: left;"><span>{{ 'Weitere Informationen'|t }}</span></p>
             </div> <!-- end accordion visible part -->
 
             <div class="collapsed"> <!-- start accordion invisible part -->
               {{ member.collapsedText }}
-              <p class="accordion-collapse"><span>Weniger Informationen</span></p>
+              <p class="accordion-collapse"><span>{{ 'Weniger Informationen'|t }}</span></p>
             </div> <!-- end accordion invisible part -->
 
           </div> <!-- end accordion -->

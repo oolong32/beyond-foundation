@@ -1,4 +1,4 @@
-dateModified: 1553777464
+dateModified: 1553782406
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -172,6 +172,24 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Entries
+  752ed5fb-e81b-4651-8eed-3bb3f4c358f9:
+    contentColumnType: text
+    fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
+    handle: text
+    instructions: ''
+    name: Text
+    searchable: true
+    settings:
+      availableTransforms: ''
+      availableVolumes: ''
+      cleanupHtml: '1'
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: Simple.json
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\redactor\Field
   78cf4c77-636b-48a0-b594-60ab78ef26a1:
     contentColumnType: text
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
@@ -260,6 +278,32 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\PlainText
+  bfe0f040-f095-416d-b4cf-39c83419018b:
+    contentColumnType: string
+    fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
+    handle: teaserImage
+    instructions: 'Bild im Format 16:9'
+    name: Teaser-Bild
+    searchable: true
+    settings:
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:9eb7856b-e672-4fbf-b4b5-9d00ee79c726'
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: ''
+      restrictFiles: '1'
+      selectionLabel: ''
+      singleUploadLocationSource: 'volume:9eb7856b-e672-4fbf-b4b5-9d00ee79c726'
+      singleUploadLocationSubpath: images/teaser-images
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: '1'
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
   d8dd3348-f988-4ea0-b8db-6c4e63542924:
     contentColumnType: text
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
@@ -331,6 +375,17 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\PlainText
+imageTransforms:
+  2b5e3b27-8e0b-48e4-a280-8d1460f59282:
+    format: null
+    handle: sixteen2nine
+    height: '585'
+    interlace: none
+    mode: crop
+    name: '16 zu 9'
+    position: center-center
+    quality: '82'
+    width: '1040'
 plugins:
   redactor:
     edition: standard
@@ -346,7 +401,7 @@ plugins:
       enableCache: true
       oauthProviderOptions:
         youtube:
-          clientId: ' 345445948018-dit38vfsfjbd9k5r50tffb686p14rnsb.apps.googleusercontent.com'
+          clientId: 345445948018-dit38vfsfjbd9k5r50tffb686p14rnsb.apps.googleusercontent.com
           clientSecret: _kv9cJp92kw4kfjUXD50VOsf
       tokens: null
       videosPerPage: 30
@@ -554,13 +609,16 @@ sections:
             tabs:
               -
                 fields:
+                  752ed5fb-e81b-4651-8eed-3bb3f4c358f9:
+                    required: false
+                    sortOrder: 2
                   bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
-                    required: '0'
-                    sortOrder: '1'
+                    required: false
+                    sortOrder: 1
                 name: 'Tab 1'
-                sortOrder: '1'
+                sortOrder: 1
         handle: imprint
-        hasTitleField: '0'
+        hasTitleField: false
         name: Impressum
         sortOrder: 1
         titleFormat: '{section.name|raw}'
@@ -592,7 +650,7 @@ sections:
                   387a6e57-35e5-47bd-9182-119d7ccccf16:
                     required: true
                     sortOrder: 2
-                  417b399c-4166-4897-a491-00dff2058bd5:
+                  bfe0f040-f095-416d-b4cf-39c83419018b:
                     required: false
                     sortOrder: 1
                   e90e60b4-237c-4aab-839f-30f73a14fea3:
@@ -929,4 +987,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-03-28 13:51:50'
+dateApplied: '2019-03-28 15:25:04'

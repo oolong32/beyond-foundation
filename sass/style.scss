@@ -752,7 +752,7 @@ main {
 .accordion {
   margin-top: 1rem;
   .visible { outline: 0; }
-  .collapsed { color: red; }
+  // .collapsed { color: red; }
   .accordion-trigger { margin-top: 1rem; }
   .accordion-collapse { }
 }
@@ -1119,7 +1119,7 @@ footer {
     /* Mobile Main Single-Col Full-Width {{{4 */
     section.single-col {
       img.full-width { margin: 0; }
-      p.video-caption { font-size: 0.875rem; margin-top: 0; color: red; } // index-page, top teaser
+      p.video-caption { font-size: 0.875rem; margin-top: 0; } // index-page, top teaser
     }
     
     
