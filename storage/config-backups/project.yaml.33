@@ -1,4 +1,4 @@
-dateModified: 1553092787
+dateModified: 1553092846
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -24,7 +24,7 @@ fields:
       limit: '1'
       localizeRelations: ''
       restrictFiles: '1'
-      selectionLabel: 'Audio-Date wählen'
+      selectionLabel: 'Audio-Datei wählen'
       singleUploadLocationSource: 'volume:9eb7856b-e672-4fbf-b4b5-9d00ee79c726'
       singleUploadLocationSubpath: ''
       source: null
@@ -787,4 +787,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-03-20 15:40:17'
+dateApplied: '2019-03-20 15:44:04'

@@ -1,4 +1,4 @@
-dateModified: 1553617000
+dateModified: 1553617075
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -53,6 +53,18 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Assets
+  0b039d84-1f7d-493d-8d5b-b894b6c24f75:
+    contentColumnType: string
+    fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
+    handle: artistLink
+    instructions: 'Website des Künstlers, mit `https://`'
+    name: 'Website des Künstlers'
+    searchable: true
+    settings:
+      placeholder: 'https://'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
   3f013fdf-9050-4d51-b818-050c8a105e6f:
     contentColumnType: string
     fieldGroup: 85d8c0e7-6a43-4691-8d57-0ea516983de7
@@ -315,6 +327,9 @@ sections:
                   78cf4c77-636b-48a0-b594-60ab78ef26a1:
                     required: false
                     sortOrder: 2
+                  c40ffa69-a91b-40dc-ae41-e5f8ecfb5d5c:
+                    required: false
+                    sortOrder: 3
                   e6776d44-d3d9-442b-90aa-f01d11baa789:
                     required: false
                     sortOrder: 1
@@ -862,4 +877,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-03-26 17:17:37'
+dateApplied: '2019-03-26 17:18:32'
