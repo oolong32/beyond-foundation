@@ -1,4 +1,4 @@
-dateModified: 1553763950
+dateModified: 1553767872
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -8,6 +8,8 @@ fieldGroups:
     name: 'Music Production Entries'
   97dfc979-5ae8-418e-9249-5b4fdebd7c80:
     name: Common
+  9ff248e4-bf56-4c2e-bd97-e05389e39cda:
+    name: Events
 fields:
   013f9713-f734-4215-90dc-70fd25cf2306:
     contentColumnType: text
@@ -860,4 +862,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-03-28 11:11:12'
+dateApplied: '2019-03-28 11:18:38'

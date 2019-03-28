@@ -2,7 +2,8 @@
   "require": {
     "craftcms/cms": "^3.0.0",
     "vlucas/phpdotenv": "^2.4.0",
-    "craftcms/redactor": "2.3.2"
+    "craftcms/redactor": "2.3.2",
+    "dukt/videos": "2.0.5"
   },
   "autoload": {
     "psr-4": {
