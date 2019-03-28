@@ -1,4 +1,4 @@
-dateModified: 1553011217
+dateModified: 1553011240
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -598,12 +598,12 @@ sections:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
         enabledByDefault: true
         hasUrls: true
-        template: encouragement
+        template: encouragement/index
         uriFormat: encouragement
       96f6905b-bcc3-4e74-91a8-e5458eb5e532:
         enabledByDefault: true
         hasUrls: true
-        template: encouragement
+        template: encouragement/index
         uriFormat: encouragement
     type: single
   e85ccc74-f7f6-4b02-ac82-2d4796ec8d84:
@@ -725,4 +725,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-03-19 17:00:40'
+dateApplied: '2019-03-19 17:05:35'
