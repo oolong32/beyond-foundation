@@ -1,4 +1,4 @@
-dateModified: 1553092716
+dateModified: 1553093044
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -9,6 +9,23 @@ fieldGroups:
   97dfc979-5ae8-418e-9249-5b4fdebd7c80:
     name: Common
 fields:
+  013f9713-f734-4215-90dc-70fd25cf2306:
+    contentColumnType: text
+    fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
+    handle: trackTitle
+    instructions: 'Name des Tracks'
+    name: 'Titel Audio Datei'
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
   07a81bf3-21ea-4fc5-bcb3-e2b3eddcc8f4:
     contentColumnType: string
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
@@ -24,7 +41,7 @@ fields:
       limit: '1'
       localizeRelations: ''
       restrictFiles: '1'
-      selectionLabel: 'Audio-Date wählen'
+      selectionLabel: 'Audio-Datei wählen'
       singleUploadLocationSource: 'volume:9eb7856b-e672-4fbf-b4b5-9d00ee79c726'
       singleUploadLocationSubpath: ''
       source: null
@@ -334,6 +351,9 @@ sections:
             tabs:
               -
                 fields:
+                  07a81bf3-21ea-4fc5-bcb3-e2b3eddcc8f4:
+                    required: false
+                    sortOrder: 6
                   597d3228-4fef-4e48-b794-3e488a088311:
                     required: false
                     sortOrder: 4
@@ -784,4 +804,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-03-20 15:39:47'
+dateApplied: '2019-03-20 15:45:22'

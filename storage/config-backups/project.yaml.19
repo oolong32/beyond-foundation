@@ -1,4 +1,4 @@
-dateModified: 1553763950
+dateModified: 1553768372
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -8,6 +8,8 @@ fieldGroups:
     name: 'Music Production Entries'
   97dfc979-5ae8-418e-9249-5b4fdebd7c80:
     name: Common
+  9ff248e4-bf56-4c2e-bd97-e05389e39cda:
+    name: Events
 fields:
   013f9713-f734-4215-90dc-70fd25cf2306:
     contentColumnType: text
@@ -65,6 +67,23 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Url
+  387a6e57-35e5-47bd-9182-119d7ccccf16:
+    contentColumnType: text
+    fieldGroup: 9ff248e4-bf56-4c2e-bd97-e05389e39cda
+    handle: eventDescription
+    instructions: 'Maximal 60 Zeichen'
+    name: Kurzbeschrieb
+    searchable: true
+    settings:
+      charLimit: '60'
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
   3f013fdf-9050-4d51-b818-050c8a105e6f:
     contentColumnType: string
     fieldGroup: 85d8c0e7-6a43-4691-8d57-0ea516983de7
@@ -275,6 +294,18 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Assets
+  e90e60b4-237c-4aab-839f-30f73a14fea3:
+    contentColumnType: string
+    fieldGroup: 9ff248e4-bf56-4c2e-bd97-e05389e39cda
+    handle: eventLink
+    instructions: 'URL zu externer Seite'
+    name: Link
+    searchable: true
+    settings:
+      placeholder: 'https://…'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
   f509c340-3109-4f76-a749-0569c3dd49ae:
     contentColumnType: text
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
@@ -860,4 +891,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-03-28 11:11:12'
+dateApplied: '2019-03-28 11:20:17'

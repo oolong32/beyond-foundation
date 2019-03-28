@@ -1,4 +1,4 @@
-dateModified: 1553092846
+dateModified: 1553093496
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -9,6 +9,23 @@ fieldGroups:
   97dfc979-5ae8-418e-9249-5b4fdebd7c80:
     name: Common
 fields:
+  013f9713-f734-4215-90dc-70fd25cf2306:
+    contentColumnType: text
+    fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
+    handle: trackTitle
+    instructions: 'Name des Tracks'
+    name: 'Titel Audio Datei'
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
   07a81bf3-21ea-4fc5-bcb3-e2b3eddcc8f4:
     contentColumnType: string
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
@@ -20,7 +37,7 @@ fields:
       allowedKinds:
         - audio
       defaultUploadLocationSource: 'volume:9eb7856b-e672-4fbf-b4b5-9d00ee79c726'
-      defaultUploadLocationSubpath: /audio
+      defaultUploadLocationSubpath: /audio/
       limit: '1'
       localizeRelations: ''
       restrictFiles: '1'
@@ -149,6 +166,24 @@ fields:
       purifierConfig: ''
       purifyHtml: '1'
       redactorConfig: SimpleListTable.json
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\redactor\Field
+  aac9b682-0ac3-4291-bc12-f31f73e6cad9:
+    contentColumnType: text
+    fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
+    handle: trackInfo
+    instructions: 'Ein beschreibender Text.'
+    name: 'Beschrieb Audio-Datei'
+    searchable: true
+    settings:
+      availableTransforms: '*'
+      availableVolumes: ''
+      cleanupHtml: '1'
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: Simple.json
     translationKeyFormat: null
     translationMethod: site
     type: craft\redactor\Field
@@ -787,4 +822,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-03-20 15:44:04'
+dateApplied: '2019-03-20 15:52:13'

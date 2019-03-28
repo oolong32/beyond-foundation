@@ -1,4 +1,4 @@
-dateModified: 1553094063
+dateModified: 1553165492
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -210,6 +210,23 @@ fields:
     handle: pageHeading
     instructions: 'Überschrift der Seite, immer auf Englisch (gleiche für alle Sprachen)'
     name: 'Page Title'
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\PlainText
+  d8dd3348-f988-4ea0-b8db-6c4e63542924:
+    contentColumnType: text
+    fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
+    handle: trackArtist
+    instructions: 'Name des Künstlers / der Gruppe'
+    name: 'Interpret Audio-Datei'
     searchable: true
     settings:
       charLimit: ''
@@ -831,4 +848,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-03-21 11:15:25'
+dateApplied: '2019-03-26 13:36:48'
