@@ -6,6 +6,8 @@ return [
   'Hören' => 'Listen',
   'Kaufen' => 'Buy',
   'Teilen' => 'Share',
+  'Spenden' => 'Donate',
+  'Gesuch einreichen' => 'Apply for Funding',
 ]
 
 ?>

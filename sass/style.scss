@@ -218,7 +218,7 @@ blockquote p {
   font-weight: $bold;
   text-transform: uppercase;
 }
-#language-switch:hover { background: $blue; }
+#language-switch:hover { background: $blue-hover; }
 
 /* End Text Header }}}2 */
 
@@ -366,6 +366,7 @@ a.social-media-link:hover svg path { fill: $blue-hover; }
 
 /* Buttons {{{1 */
 
+.other-button,
 .accordion-collapse,
 .accordion-trigger {
   justify-self: start;
@@ -377,7 +378,6 @@ a.social-media-link:hover svg path { fill: $blue-hover; }
   margin: 1rem 0;
   cursor: pointer;
   span:before { 
-    content: "+";
     font-weight: $semibold;
     font-size: 1.2em;
     line-height: 0.8;
@@ -387,6 +387,23 @@ a.social-media-link:hover svg path { fill: $blue-hover; }
   }
 }
 
+.other-button { margin: 0; color: red;}
+.other-button a {
+  border: none;
+  color: white;
+}
+.other-button span:before {}
+
+.applybefore,
+.submit:before {
+  content: none;
+  // background: url('/assets/_pic/arrow.svg');
+  width: 31px; height: 10px;
+}
+
+.accordion-trigger span:before {
+  content: "+";
+}
 .accordion-collapse span:before {
   content: "–";
 }
@@ -447,8 +464,14 @@ a.social-media-link:hover svg path { fill: $blue-hover; }
   background-position: bottom right;
   background-size: cover;
   /* End Masthead Backgrounds }}}2 */
-
 }
+
+.team #masthead { background-image: url("../_pic/masthead_backgrounds/team_back.png"); }
+.music-network #masthead { background-image: url("../_pic/masthead_backgrounds/music-network_back.png"); }
+.music-production #masthead { background-image: url("../_pic/masthead_backgrounds/music-production_back.png"); }
+.encouragement #masthead { background-image: url("../_pic/masthead_backgrounds/encouragement_back.png"); }
+.events #masthead { background-image: url("../_pic/masthead_backgrounds/events_back.png"); }
+
 
 /* End Masthead Basic Layout }}}1 */
 

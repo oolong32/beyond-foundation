@@ -163,7 +163,15 @@
               {{ otherAlbum.lead }}
             </div>
           </a>
+          <ul class="music-production-links">
+            <li class="other-button"><a href="{{ otherAlbum.getUrl() }}" style="color: white;"><strong>+</strong> Mehr erfahren</a></li>
+            <li><a href="{{ otherAlbum.getUrl() }}#hear-buy-share">{{ 'Hören'|t }}</a></li>
+            <li><a href="{{ otherAlbum.getUrl() }}#hear-buy-share">{{ 'Kaufen'|t }}</a></li>
+            <li><a href="{{ otherAlbum.getUrl() }}#hear-buy-share">{{ 'Teilen'|t }}</a></li>
+          </ul>
         </div> <!-- end text cell -->
+
+
       </section> <!-- end row -->
 
     {% endfor %}
