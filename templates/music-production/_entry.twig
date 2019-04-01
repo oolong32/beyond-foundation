@@ -18,7 +18,7 @@
 
     {% if entry.heroImage|length %}
 		<section class="single-col">
-      <img class="full-width" src="{{ entry.heroImage[0].getUrl('sixteen2nine') }}" alt="{{ entry.title }}, hero image">
+      <img class="full-width" src="{{ alias('@assetBasePath') }}/{{ entry.heroImage[0].getUrl('sixteen2nine') }}" alt="{{ entry.title }}, hero image">
       <p class="video-caption full-width">{{ entry.shortDescription }}</p>
 		</section>
     {% endif %}
