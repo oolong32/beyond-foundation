@@ -148,7 +148,7 @@ blockquote p {
   text-transform: uppercase; }
 
 #language-switch:hover {
-  background: #a5b4ff; }
+  background: linear-gradient(20deg, #CCAF82 0%, #C6AD8C 20%, #C0AB97 100%); }
 
 /* End Text Header }}}2 */
 /* Link Styles {{{2 */
@@ -156,7 +156,7 @@ blockquote p {
 a {
   text-decoration: none;
   color: black;
-  border-bottom: solid #a5b4ff 0.1875rem; }
+  border-bottom: solid linear-gradient(20deg, #CCAF82 0%, #C6AD8C 20%, #C0AB97 100%) 0.1875rem; }
 
 a:link,
 a:visited {
@@ -225,7 +225,7 @@ a.arrow-right-after:after {
 /* End Arrow Links }}}3 */
 /* Button Links {{{3 */
 .button a {
-  background: #a5b4ff;
+  background: linear-gradient(20deg, #CCAF82 0%, #C6AD8C 20%, #C0AB97 100%);
   display: inline-block;
   padding: 0 0.25rem;
   border: none; }
@@ -250,7 +250,7 @@ a.social-media-link {
   outline: 0; }
 
 a.social-media-link svg path {
-  fill: #a5b4ff; }
+  fill: linear-gradient(20deg, #CCAF82 0%, #C6AD8C 20%, #C0AB97 100%); }
 
 a.social-media-link:hover svg path {
   fill: #0028ff; }
