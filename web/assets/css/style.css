@@ -466,6 +466,9 @@ main {
     main section.single-col .full-width {
       grid-column: 1/-1;
       margin-bottom: 0.625rem; }
+    main section.single-col img.full-width {
+      width: 100%;
+      height: auto; }
     main section.single-col p {
       margin-bottom: 0.875rem; }
     main section.single-col p:last-child {
