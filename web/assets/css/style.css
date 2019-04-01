@@ -156,7 +156,7 @@ blockquote p {
 a {
   text-decoration: none;
   color: black;
-  border-bottom: solid #a5b4ff 0.1875rem; }
+  border-bottom: solid #C9AF87 0.1875rem; }
 
 a:link,
 a:visited {
@@ -225,7 +225,7 @@ a.arrow-right-after:after {
 /* End Arrow Links }}}3 */
 /* Button Links {{{3 */
 .button a {
-  background: #a5b4ff;
+  background: #C9AF87;
   display: inline-block;
   padding: 0 0.25rem;
   border: none; }
@@ -250,7 +250,7 @@ a.social-media-link {
   outline: 0; }
 
 a.social-media-link svg path {
-  fill: #a5b4ff; }
+  fill: #C9AF87; }
 
 a.social-media-link:hover svg path {
   fill: linear-gradient(45deg, #A69382 0%, #A59074 81%, #9B8562 100%); }
