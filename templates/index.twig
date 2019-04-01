@@ -34,11 +34,11 @@
 
         <div class="accordion" style="margin-top: 0;">
           <div class="visible">
-            <p>fixed text</p>
+            {{ entry.visibleText }}
             <p class="accordion-trigger"><span>{{ 'Weitere Informationen'|t }}</span></p>
           </div>
           <div class="collapsed">
-            <p>fixed text as well</p>
+            {{ entry.collapsedText }}
             <p class="accordion-collapse"><span>{{ 'Weniger Informationen'|t }}</span></p>
           </div>
         </div>
