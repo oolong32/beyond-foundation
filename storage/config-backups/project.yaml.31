@@ -1,4 +1,4 @@
-dateModified: 1553783103
+dateModified: 1553783477
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -508,13 +508,13 @@ sections:
                 fields:
                   013f9713-f734-4215-90dc-70fd25cf2306:
                     required: false
-                    sortOrder: 7
+                    sortOrder: 6
                   07a81bf3-21ea-4fc5-bcb3-e2b3eddcc8f4:
                     required: false
-                    sortOrder: 6
+                    sortOrder: 5
                   3f013fdf-9050-4d51-b818-050c8a105e6f:
                     required: false
-                    sortOrder: 9
+                    sortOrder: 8
                   597d3228-4fef-4e48-b794-3e488a088311:
                     required: false
                     sortOrder: 4
@@ -523,16 +523,13 @@ sections:
                     sortOrder: 3
                   aac9b682-0ac3-4291-bc12-f31f73e6cad9:
                     required: false
-                    sortOrder: 8
+                    sortOrder: 7
                   b729c087-ed9f-4371-8cf0-48e6ef2d9e6a:
                     required: false
                     sortOrder: 2
                   bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
                     required: false
                     sortOrder: 1
-                  f509c340-3109-4f76-a749-0569c3dd49ae:
-                    required: false
-                    sortOrder: 5
                 name: 'Tab 1'
                 sortOrder: 1
         handle: musicNetwork
@@ -600,6 +597,31 @@ sections:
       maxLevels: '1'
       uid: 5911d41d-2ca7-403c-a53f-540d47f8d189
     type: structure
+  68355b2e-f364-4ba8-9e82-0cd80670448e:
+    enableVersioning: true
+    entryTypes:
+      5c28ca9f-56a4-4b46-ac8e-b4102925f236:
+        handle: homeTeaserEntries
+        hasTitleField: true
+        name: 'Home Teaser Entries'
+        sortOrder: 1
+        titleFormat: null
+        titleLabel: Titel
+    handle: homeTeaserEntries
+    name: 'Home Teaser Entries'
+    propagateEntries: true
+    siteSettings:
+      802d4b06-1f71-4c60-8b00-c331a21b5134:
+        enabledByDefault: true
+        hasUrls: true
+        template: ''
+        uriFormat: 'home-teaser-entries/{slug}'
+      96f6905b-bcc3-4e74-91a8-e5458eb5e532:
+        enabledByDefault: true
+        hasUrls: true
+        template: ''
+        uriFormat: 'home-teaser-entries/{slug}'
+    type: channel
   a7103738-e3bc-4556-8521-a66f06bd0e0a:
     enableVersioning: true
     entryTypes:
@@ -768,24 +790,21 @@ sections:
               -
                 fields:
                   597d3228-4fef-4e48-b794-3e488a088311:
-                    required: '0'
-                    sortOrder: '4'
+                    required: false
+                    sortOrder: 4
                   63060068-23fd-4091-9e13-96d982008822:
-                    required: '0'
-                    sortOrder: '3'
+                    required: false
+                    sortOrder: 3
                   b729c087-ed9f-4371-8cf0-48e6ef2d9e6a:
-                    required: '0'
-                    sortOrder: '2'
+                    required: false
+                    sortOrder: 2
                   bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
-                    required: '0'
-                    sortOrder: '1'
-                  f509c340-3109-4f76-a749-0569c3dd49ae:
-                    required: '0'
-                    sortOrder: '5'
+                    required: false
+                    sortOrder: 1
                 name: 'Tab 1'
-                sortOrder: '1'
+                sortOrder: 1
         handle: musicProduction
-        hasTitleField: '0'
+        hasTitleField: false
         name: 'Music Production'
         sortOrder: 1
         titleFormat: '{section.name|raw}'
@@ -826,9 +845,6 @@ sections:
                   bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
                     required: false
                     sortOrder: 1
-                  f509c340-3109-4f76-a749-0569c3dd49ae:
-                    required: false
-                    sortOrder: 5
                 name: 'Tab 1'
                 sortOrder: 1
         handle: encouragement
@@ -984,4 +1000,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-03-28 15:25:12'
+dateApplied: '2019-03-28 15:33:05'
