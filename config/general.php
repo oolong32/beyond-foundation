@@ -54,10 +54,10 @@ return [
         // Base site URL
         'siteUrl' => null,
         // Disable project config changes on production
-        'allowAdminChanges' => false,
+        'allowAdminChanges' => true,
         // Custom Aliases
         'aliases' => [
-          '@assetBasePath' => 'http://beyond-foundation.org.ryan.ch-meta.net/'
+          '@assetBasePath' => 'http://new.beyond-foundation.org/'
         ],
     ],
 ];
