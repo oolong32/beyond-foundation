@@ -1,0 +1,58 @@
+{# Beyond Foundation, Home #}
+
+{% extends "_layout" %}
+
+{% set entry = craft.entries().section('videoTest').one() %}
+
+{% block content %}
+
+    <!-- Start Header -->
+
+    <header>
+      {% include 'includes/header' %}
+    </header>
+
+    <!-- End Header -->
+
+    <!-- Start Navigation -->
+
+    <nav id="nav-overlay"> {# triggered by hamburger #}
+      {% include 'includes/nav' %}
+    </nav>
+      
+    <!-- End Navigation -->
+
+    <!-- Start Main -->
+
+    <main>
+
+      <h2>Video Test</h2>
+      
+      <section class="single-col">
+        {% set myvideo = entry.videoTest %}
+        {% if myvideo|length %}
+        {{ myvideo.getEmbed({ width: 1040, height: 585 }) }}
+        </video>
+        {% endif %}
+
+      </section>
+
+    </main>
+        
+    <!-- End Main -->
+
+    <!-- Start Footer -->
+
+    <footer>
+      {% include 'includes/footer' %}
+    </footer>
+
+    <!-- End Footer -->
+
+    {% include 'includes/accordion-scripts' %}
+
+    <script>
+      console.log('I & I is at {{ slug }}' );
+    </script>
+
+{% endblock %}

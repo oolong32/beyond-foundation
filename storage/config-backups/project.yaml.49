@@ -1,4 +1,4 @@
-dateModified: 1553772050
+dateModified: 1553777510
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -339,13 +339,14 @@ plugins:
   videos:
     edition: standard
     enabled: true
+    licenseKey: TW3885HAN1T9S5DV0RMU3HUM
     schemaVersion: 1.0.1
     settings:
       cacheDuration: PT15M
       enableCache: true
       oauthProviderOptions:
         youtube:
-          clientId: ' 345445948018-dit38vfsfjbd9k5r50tffb686p14rnsb.apps.googleusercontent.com'
+          clientId: 345445948018-dit38vfsfjbd9k5r50tffb686p14rnsb.apps.googleusercontent.com
           clientSecret: _kv9cJp92kw4kfjUXD50VOsf
       tokens: null
       videosPerPage: 30
@@ -928,4 +929,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-03-28 13:35:09'
+dateApplied: '2019-03-28 14:40:42'
