@@ -1068,4 +1068,8 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
+<<<<<<< Updated upstream
 dateApplied: '2019-04-02 11:11:53'
+=======
+dateApplied: '2019-04-01 17:24:45'
+>>>>>>> Stashed changes
