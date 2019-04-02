@@ -1,4 +1,4 @@
-dateModified: 1553785314
+dateModified: 1553785402
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -599,7 +599,7 @@ sections:
         titleFormat: ''
         titleLabel: Titel
     handle: encouragementEntries
-    name: 'Encouragement Entries'
+    name: '6 Encouragement Entries'
     propagateEntries: true
     siteSettings:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
@@ -725,7 +725,7 @@ sections:
         titleFormat: ''
         titleLabel: Titel
     handle: eventsTeasers
-    name: 'Events Teaser Entries'
+    name: '5 Events Teaser Entries'
     propagateEntries: true
     siteSettings:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
@@ -1038,4 +1038,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-03-28 16:02:05'
+dateApplied: '2019-03-28 16:09:02'

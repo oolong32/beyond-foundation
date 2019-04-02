@@ -1,4 +1,4 @@
-dateModified: 1554130649
+dateModified: 1554197381
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -448,7 +448,7 @@ plugins:
       oauthProviderOptions:
         youtube:
           clientId: 345445948018-dit38vfsfjbd9k5r50tffb686p14rnsb.apps.googleusercontent.com
-          clientSecret: _kv9cJp92kw4kfjUXD50VOsf
+          clientSecret: ZDbkvT6LUyLWlz-svwqEDKs4
       tokens: null
       videosPerPage: 30
 sections:
@@ -1068,8 +1068,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-<<<<<<< Updated upstream
-dateApplied: '2019-04-02 11:11:53'
-=======
-dateApplied: '2019-04-01 17:24:45'
->>>>>>> Stashed changes
+dateApplied: '2019-04-02 11:31:16'
