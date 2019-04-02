@@ -219,7 +219,6 @@ blockquote p {
   font-weight: $bold;
   text-transform: uppercase;
 }
-#language-switch:hover { background: $blue-hover; }
 
 /* End Text Header }}}2 */
 
@@ -885,6 +884,7 @@ footer {
       letter-spacing: 0.45rem;
     }
   }
+  header.mini #masthead { height: 4.75rem; }
   /* End Header & Footer }}}2 */
 
   :root {
@@ -1066,6 +1066,9 @@ footer {
         padding: 0 .5rem;
         font-size: 1.875rem;
       }
+    }
+    #language-switch:hover {
+      p { background: $gold; }
     }
   }
   /*
