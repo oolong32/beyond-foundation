@@ -1,4 +1,4 @@
-dateModified: 1553784514
+dateModified: 1553784564
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -627,10 +627,13 @@ sections:
                 fields:
                   387a6e57-35e5-47bd-9182-119d7ccccf16:
                     required: true
-                    sortOrder: 2
+                    sortOrder: 3
                   bfe0f040-f095-416d-b4cf-39c83419018b:
                     required: true
                     sortOrder: 1
+                  dd3b36a3-d68e-4857-b2c2-59bfc760dc64:
+                    required: true
+                    sortOrder: 2
                 name: 'Tab 1'
                 sortOrder: 1
         handle: homeTeaserEntries
@@ -1035,4 +1038,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-03-28 15:49:24'
+dateApplied: '2019-03-28 16:00:34'

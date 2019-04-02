@@ -1,4 +1,4 @@
-dateModified: 1553780486
+dateModified: 1553781633
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -357,6 +357,17 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\PlainText
+imageTransforms:
+  2b5e3b27-8e0b-48e4-a280-8d1460f59282:
+    format: null
+    handle: sixteen2nine
+    height: '585'
+    interlace: none
+    mode: crop
+    name: '16 zu 9'
+    position: center-center
+    quality: '82'
+    width: '1040'
 plugins:
   redactor:
     edition: standard
@@ -955,4 +966,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-03-28 15:00:33'
+dateApplied: '2019-03-28 15:13:06'
