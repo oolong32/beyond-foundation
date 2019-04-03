@@ -1196,6 +1196,7 @@ footer {
   .index #slogan h1 {
     font-size: 50px;
     line-height: 0.9;
+    transform: translateY(-1rem);
   } 
   
   /* End Mobile Slide Show }}}2 */
@@ -1451,11 +1452,11 @@ footer {
 }
 /* End Keyframes Nav-Overlay }}}1 */
 
-/* Keyframes Slide Show {{{level */
+/* Keyframes Slide Show {{{2 */
 @keyframes slideshow-animation {
   from { transform: scale(1); }
   to { transform: scale(1.1); }
 }
-/* End Keyframes Slide Show }}}level */
+/* End Keyframes Slide Show }}}2 */
 
 /* The End */
