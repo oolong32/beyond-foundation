@@ -435,26 +435,42 @@ header.mini #language-switch {
   height: 100vh;
   overflow: hidden; }
   .index #slogan {
-    border: none;
-    z-index: 100;
     position: fixed;
+    z-index: 200;
     top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    background: rgba(50, 50, 50, 0.1); }
-    .index #slogan h1 {
-      margin: auto;
-      font-size: 6.25rem;
-      text-align: center;
-      font-family: "Freight Display";
-      font-weight: 400;
-      color: white;
-      line-height: 1; }
-      .index #slogan h1 strong {
-        font-weight: 700;
-        font-style: italic; }
+    width: 100%;
+    height: 100vh;
+    background: rgba(50, 50, 50, 0.1);
+    border: none; }
+    .index #slogan .flickity-viewport {
+      height: 100vh !important; }
+      .index #slogan .flickity-viewport .flickity-slider {
+        display: flex; }
+        .index #slogan .flickity-viewport .flickity-slider .carousel-cell {
+          border: none;
+          z-index: 100 !important;
+          position: fixed;
+          width: 100%;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 100%;
+          display: flex;
+          flex-wrap: wrap; }
+          .index #slogan .flickity-viewport .flickity-slider .carousel-cell h1 {
+            transform: translateY(-10px);
+            display: inline-block;
+            margin: auto;
+            font-size: 6.25rem;
+            text-align: center;
+            font-family: "Freight Display";
+            font-weight: 400;
+            color: white;
+            line-height: 0.9; }
+            .index #slogan .flickity-viewport .flickity-slider .carousel-cell h1 strong {
+              font-weight: 700;
+              font-style: italic; }
   .index #carousel {
     z-index: 0;
     /* Flickity Fade {{{2 */
@@ -882,7 +898,7 @@ footer {
   /* Mobile Slide Show {{{2 */
   .index #slogan h1 {
     font-size: 50px;
-    line-height: 1.1; }
+    line-height: 0.9; }
   /* End Mobile Slide Show }}}2 */
   /* Mobile Main {{{2 */
   main {

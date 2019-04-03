@@ -8,7 +8,16 @@
 {% block content %}
 
   <a href="/about" id="slogan">
-    <h1 style="hyphens: manual;">{{ '<strong>Beyond</strong> right and&nbsp;wrong&nbsp;…'|raw }}</h1>
+    <div class="carousel-cell">
+      <h1 style="hyphens: manual;">{{ '<strong>Beyond</strong> right and&nbsp;wrong'|raw }}</h1>
+    </div>
+    <div class="carousel-cell">
+      <h1 style="hyphens: manual;">{{ 'there&nbsp;is a&nbsp;field'|raw }}</h1>
+    </div>
+    <div class="carousel-cell">
+      <h1 style="hyphens: manual;">{{ 'I&nbsp;meet you&nbsp;there.'|raw }}</h1>
+    </div>
+{# <h1 class="carousel-cell" style="hyphens: manual;">{{ '<strong>Beyond</strong> Foundation'|raw }}</h1> #}
   </a>
    
     <div id="carousel">
@@ -35,6 +44,16 @@
       window.addEventListener('DOMContentLoaded', (event) => {
         var carousel = document.querySelector('#carousel');
         var flkty = new Flickity(carousel, {
+          // options
+          fade: true,
+          draggable: false,
+          wrapAround: true,
+          autoPlay: 7000,
+          prevNextButtons: false,
+          pageDots: false,
+        });
+        var sloganCarousel = document.querySelector('#slogan');
+        var sloganFlkty = new Flickity(sloganCarousel, {
           // options
           fade: true,
           draggable: false,
