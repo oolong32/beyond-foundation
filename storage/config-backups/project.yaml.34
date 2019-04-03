@@ -1,4 +1,4 @@
-dateModified: 1553783812
+dateModified: 1553785276
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -321,6 +321,25 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
+  dd3b36a3-d68e-4857-b2c2-59bfc760dc64:
+    contentColumnType: string
+    fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
+    handle: associatedEntry
+    instructions: 'Eintrag in Beyond-Foundation.org, der mit diesem Teaser verknüpft sein soll.'
+    name: 'Verknüpfter Eintrag'
+    searchable: true
+    settings:
+      limit: '1'
+      localizeRelations: ''
+      selectionLabel: 'Eintrag wählen'
+      source: null
+      sources:
+        - singles
+      targetSiteId: null
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
   e6776d44-d3d9-442b-90aa-f01d11baa789:
     contentColumnType: string
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
@@ -480,7 +499,7 @@ sections:
         titleFormat: ''
         titleLabel: 'Album Title'
     handle: musicProductionEntries
-    name: 'Music Production Entries'
+    name: '2 Music Production Entries'
     propagateEntries: true
     siteSettings:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
@@ -601,14 +620,30 @@ sections:
     enableVersioning: true
     entryTypes:
       5c28ca9f-56a4-4b46-ac8e-b4102925f236:
+        fieldLayouts:
+          13b56cb8-8309-473c-a0ad-84884d5236ac:
+            tabs:
+              -
+                fields:
+                  387a6e57-35e5-47bd-9182-119d7ccccf16:
+                    required: true
+                    sortOrder: 3
+                  bfe0f040-f095-416d-b4cf-39c83419018b:
+                    required: true
+                    sortOrder: 1
+                  dd3b36a3-d68e-4857-b2c2-59bfc760dc64:
+                    required: true
+                    sortOrder: 2
+                name: 'Tab 1'
+                sortOrder: 1
         handle: homeTeaserEntries
         hasTitleField: true
         name: 'Home Teaser Entries'
         sortOrder: 1
-        titleFormat: null
-        titleLabel: Titel
+        titleFormat: ''
+        titleLabel: 'Titel (wird nicht angezeigt)'
     handle: homeTeasers
-    name: 'Home Teaser Entries'
+    name: '1 Home Teaser Entries'
     propagateEntries: true
     siteSettings:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
@@ -1003,4 +1038,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-03-28 15:43:05'
+dateApplied: '2019-03-28 16:01:41'

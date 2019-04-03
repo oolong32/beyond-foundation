@@ -1,4 +1,4 @@
-dateModified: 1553790399
+dateModified: 1554119073
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -265,7 +265,7 @@ fields:
     contentColumnType: text
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
     handle: pageHeading
-    instructions: 'Überschrift der Seite, immer auf Englisch (gleiche für alle Sprachen)'
+    instructions: 'Überschrift der Seite'
     name: 'Page Title'
     searchable: true
     settings:
@@ -504,18 +504,24 @@ sections:
             tabs:
               -
                 fields:
+                  387a6e57-35e5-47bd-9182-119d7ccccf16:
+                    required: false
+                    sortOrder: 2
                   3f013fdf-9050-4d51-b818-050c8a105e6f:
                     required: true
-                    sortOrder: 1
+                    sortOrder: 3
                   63060068-23fd-4091-9e13-96d982008822:
                     required: true
-                    sortOrder: 3
+                    sortOrder: 5
                   72357970-aa0e-4ab8-bc96-4899cd33dd40:
                     required: false
-                    sortOrder: 4
+                    sortOrder: 6
                   b729c087-ed9f-4371-8cf0-48e6ef2d9e6a:
                     required: true
-                    sortOrder: 2
+                    sortOrder: 4
+                  f01db52f-6f1f-4abd-aa2c-4a8b40100e97:
+                    required: false
+                    sortOrder: 1
                 name: 'Music Production'
                 sortOrder: 1
         handle: musicProductionEntries
@@ -778,18 +784,15 @@ sections:
               -
                 fields:
                   597d3228-4fef-4e48-b794-3e488a088311:
-                    required: '0'
-                    sortOrder: '2'
+                    required: false
+                    sortOrder: 2
                   bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
-                    required: '0'
-                    sortOrder: '1'
-                  f509c340-3109-4f76-a749-0569c3dd49ae:
-                    required: '0'
-                    sortOrder: '3'
+                    required: false
+                    sortOrder: 1
                 name: 'Tab 1'
-                sortOrder: '1'
+                sortOrder: 1
         handle: events
-        hasTitleField: '0'
+        hasTitleField: false
         name: Events
         sortOrder: 1
         titleFormat: '{section.name|raw}'
@@ -853,24 +856,18 @@ sections:
             tabs:
               -
                 fields:
-                  387a6e57-35e5-47bd-9182-119d7ccccf16:
-                    required: false
-                    sortOrder: 3
                   597d3228-4fef-4e48-b794-3e488a088311:
                     required: false
-                    sortOrder: 6
+                    sortOrder: 4
                   63060068-23fd-4091-9e13-96d982008822:
                     required: false
-                    sortOrder: 5
+                    sortOrder: 3
                   b729c087-ed9f-4371-8cf0-48e6ef2d9e6a:
                     required: false
-                    sortOrder: 4
+                    sortOrder: 2
                   bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
                     required: false
                     sortOrder: 1
-                  f01db52f-6f1f-4abd-aa2c-4a8b40100e97:
-                    required: false
-                    sortOrder: 2
                 name: 'Tab 1'
                 sortOrder: 1
         handle: musicProduction
@@ -949,7 +946,13 @@ sections:
                 fields:
                   597d3228-4fef-4e48-b794-3e488a088311:
                     required: false
+                    sortOrder: 4
+                  78cf4c77-636b-48a0-b594-60ab78ef26a1:
+                    required: false
                     sortOrder: 2
+                  8a5aa2a1-d84f-4bbf-9ea5-4c6b67c7c105:
+                    required: false
+                    sortOrder: 3
                   bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
                     required: false
                     sortOrder: 1
@@ -990,16 +993,13 @@ sections:
                     sortOrder: 2
                   78cf4c77-636b-48a0-b594-60ab78ef26a1:
                     required: true
-                    sortOrder: 4
+                    sortOrder: 3
                   8a5aa2a1-d84f-4bbf-9ea5-4c6b67c7c105:
                     required: true
-                    sortOrder: 5
+                    sortOrder: 4
                   e6776d44-d3d9-442b-90aa-f01d11baa789:
                     required: true
                     sortOrder: 1
-                  f509c340-3109-4f76-a749-0569c3dd49ae:
-                    required: false
-                    sortOrder: 3
                 name: Common
                 sortOrder: 1
         handle: teamEntry
@@ -1070,4 +1070,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-03-28 17:33:55'
+dateApplied: '2019-04-01 13:59:36'

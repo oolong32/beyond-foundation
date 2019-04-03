@@ -1,4 +1,12 @@
-dateModified: 1553791516
+<<<<<<< Updated upstream
+dateModified: 1554122324
+=======
+<<<<<<< Updated upstream
+dateModified: 1554122324
+=======
+dateModified: 1554117713
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -784,18 +792,15 @@ sections:
               -
                 fields:
                   597d3228-4fef-4e48-b794-3e488a088311:
-                    required: '0'
-                    sortOrder: '2'
+                    required: false
+                    sortOrder: 2
                   bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
-                    required: '0'
-                    sortOrder: '1'
-                  f509c340-3109-4f76-a749-0569c3dd49ae:
-                    required: '0'
-                    sortOrder: '3'
+                    required: false
+                    sortOrder: 1
                 name: 'Tab 1'
-                sortOrder: '1'
+                sortOrder: 1
         handle: events
-        hasTitleField: '0'
+        hasTitleField: false
         name: Events
         sortOrder: 1
         titleFormat: '{section.name|raw}'
@@ -949,7 +954,13 @@ sections:
                 fields:
                   597d3228-4fef-4e48-b794-3e488a088311:
                     required: false
+                    sortOrder: 4
+                  78cf4c77-636b-48a0-b594-60ab78ef26a1:
+                    required: false
                     sortOrder: 2
+                  8a5aa2a1-d84f-4bbf-9ea5-4c6b67c7c105:
+                    required: false
+                    sortOrder: 3
                   bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
                     required: false
                     sortOrder: 1
@@ -1031,7 +1042,15 @@ siteGroups:
     name: 'Beyond Foundation'
 sites:
   802d4b06-1f71-4c60-8b00-c331a21b5134:
+<<<<<<< Updated upstream
+    baseUrl: 'http://new.beyond-foundation.org/en'
+=======
+<<<<<<< Updated upstream
+    baseUrl: 'http://new.beyond-foundation.org/en'
+=======
     baseUrl: 'http://beyond-foundation.test/en'
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
     handle: beyondFoundation
     hasUrls: true
     language: en
@@ -1070,4 +1089,12 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-03-28 17:46:54'
+<<<<<<< Updated upstream
+dateApplied: '2019-04-01 16:57:29'
+=======
+<<<<<<< Updated upstream
+dateApplied: '2019-04-01 16:57:29'
+=======
+dateApplied: '2019-04-01 14:39:59'
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes

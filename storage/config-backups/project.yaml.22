@@ -1,4 +1,4 @@
-dateModified: 1553785402
+dateModified: 1553790399
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -377,6 +377,32 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Url
+  f01db52f-6f1f-4abd-aa2c-4a8b40100e97:
+    contentColumnType: string
+    fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
+    handle: heroImage
+    instructions: 'Ein grosses Bild, Format 16:9 (wird beschnitten)'
+    name: 'Hero Image'
+    searchable: false
+    settings:
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:9eb7856b-e672-4fbf-b4b5-9d00ee79c726'
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: ''
+      restrictFiles: '1'
+      selectionLabel: ''
+      singleUploadLocationSource: 'volume:9eb7856b-e672-4fbf-b4b5-9d00ee79c726'
+      singleUploadLocationSubpath: images/teaser-images/
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: '1'
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
   f509c340-3109-4f76-a749-0569c3dd49ae:
     contentColumnType: text
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
@@ -799,12 +825,12 @@ sections:
                 sortOrder: '1'
         handle: story
         hasTitleField: '0'
-        name: '2 Team'
+        name: Team
         sortOrder: 1
         titleFormat: '{section.name|raw}'
         titleLabel: 'Titel (Navigation)'
     handle: team
-    name: '2 Team'
+    name: Team
     propagateEntries: true
     siteSettings:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
@@ -827,18 +853,24 @@ sections:
             tabs:
               -
                 fields:
-                  597d3228-4fef-4e48-b794-3e488a088311:
-                    required: false
-                    sortOrder: 4
-                  63060068-23fd-4091-9e13-96d982008822:
+                  387a6e57-35e5-47bd-9182-119d7ccccf16:
                     required: false
                     sortOrder: 3
+                  597d3228-4fef-4e48-b794-3e488a088311:
+                    required: false
+                    sortOrder: 6
+                  63060068-23fd-4091-9e13-96d982008822:
+                    required: false
+                    sortOrder: 5
                   b729c087-ed9f-4371-8cf0-48e6ef2d9e6a:
                     required: false
-                    sortOrder: 2
+                    sortOrder: 4
                   bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
                     required: false
                     sortOrder: 1
+                  f01db52f-6f1f-4abd-aa2c-4a8b40100e97:
+                    required: false
+                    sortOrder: 2
                 name: 'Tab 1'
                 sortOrder: 1
         handle: musicProduction
@@ -977,7 +1009,7 @@ sections:
         titleFormat: ''
         titleLabel: Name
     handle: teamEntries
-    name: 'Team Entries'
+    name: '2 Team Entries'
     propagateEntries: true
     siteSettings:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
@@ -1038,4 +1070,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-03-28 16:09:02'
+dateApplied: '2019-03-28 17:33:55'
