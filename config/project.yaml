@@ -1,4 +1,4 @@
-dateModified: 1554275994
+dateModified: 1554282323
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -799,20 +799,20 @@ sections:
         sortOrder: 1
         titleFormat: ''
         titleLabel: Titel
-    handle: eventsTeasers
-    name: '5 Events Teaser Entries'
+    handle: projectsTeaser
+    name: '5 Projects Teaser Entries'
     propagateEntries: true
     siteSettings:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
         enabledByDefault: true
         hasUrls: true
-        template: events/_entry
-        uriFormat: 'events-entries/{slug}'
+        template: projects/_entry
+        uriFormat: 'projects-entries/{slug}'
       96f6905b-bcc3-4e74-91a8-e5458eb5e532:
         enabledByDefault: true
         hasUrls: true
-        template: events/_entry
-        uriFormat: 'events-entries/{slug}'
+        template: projects/_entry
+        uriFormat: 'projects-entries/{slug}'
     structure:
       maxLevels: '1'
       uid: 26e929d4-65b6-44a0-8512-3c6e6353b6c5
@@ -827,33 +827,33 @@ sections:
               -
                 fields:
                   597d3228-4fef-4e48-b794-3e488a088311:
-                    required: false
-                    sortOrder: 2
+                    required: '0'
+                    sortOrder: '2'
                   bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
-                    required: false
-                    sortOrder: 1
+                    required: '0'
+                    sortOrder: '1'
                 name: 'Tab 1'
-                sortOrder: 1
-        handle: events
-        hasTitleField: false
-        name: Events
+                sortOrder: '1'
+        handle: projects
+        hasTitleField: '0'
+        name: Projects
         sortOrder: 1
         titleFormat: '{section.name|raw}'
         titleLabel: ''
-    handle: events
-    name: Events
+    handle: projects
+    name: Projects
     propagateEntries: true
     siteSettings:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
         enabledByDefault: true
         hasUrls: true
-        template: events
-        uriFormat: events
+        template: projects/index
+        uriFormat: projects
       96f6905b-bcc3-4e74-91a8-e5458eb5e532:
         enabledByDefault: true
         hasUrls: true
-        template: events
-        uriFormat: events
+        template: projects/index
+        uriFormat: projects
     type: single
   bdcc5b99-d47c-4d7f-a59c-2535c42dc0da:
     enableVersioning: true

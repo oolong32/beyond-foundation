@@ -2,8 +2,8 @@
 
 {% extends "_layout" %}
 
-{% set entry = craft.entries().section('events').one() %}
-{% set events = craft.entries().section('eventsTeasers').all() %}
+{% set entry = craft.entries().section('projects').one() %}
+{% set projects = craft.entries().section('projectsTeaser').all() %}
 
 {% block content %}
 
@@ -23,7 +23,7 @@
       {{ entry.lead }}
       … #}
 
-      {% for event in events %}
+      {% for project in projects %}
           
           {% if loop.index == 3 %}
             {% if entry.quote|length %}
@@ -36,18 +36,18 @@
         <section class="alternating-grid-image-large">
   
           <div class="image-cell">
-            {% if event.teaserImage|length %}
-            <img src="{{ alias('@assetBasePath') }}/{{ event.teaserImage[0].getUrl('sixteen2nine') }}" alt="{{ event.title }}">
+            {% if project.teaserImage|length %}
+            <img src="{{ alias('@assetBasePath') }}/{{ project.teaserImage[0].getUrl('sixteen2nine') }}" alt="{{ project.title }}">
             {% else %}
-            <img src="{{ alias('@assetBasePath') }}/assets/_pic/placeholder_16-9.png" alt="{{ event.title }}, test image">
+            <img src="{{ alias('@assetBasePath') }}/assets/_pic/placeholder_16-9.png" alt="{{ project.title }}, test image">
             {% endif %}
           </div>
 
-          <h3 class="text-column">{{ event.title }}</h3>
-          <p class="text-column">{{ event.shortDescription }}</p>
-          {% if event.externalLink|length %}
-            {% set niceUrl = event.externalLink|split('/') %}
-          <p class="text-column teaser-link external-link"><a href="{{ event.externalLink }}" target="_new" title="{{ niceUrl[2] }}">{{ niceUrl[2] }}</a></p>
+          <h3 class="text-column">{{ project.title }}</h3>
+          <p class="text-column">{{ project.shortDescription }}</p>
+          {% if project.externalLink|length %}
+            {% set niceUrl = project.externalLink|split('/') %}
+          <p class="text-column teaser-link external-link"><a href="{{ project.externalLink }}" target="_new" title="{{ niceUrl[2] }}">{{ niceUrl[2] }}</a></p>
           {% endif %}
 
         </section>

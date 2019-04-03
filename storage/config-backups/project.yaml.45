@@ -1,4 +1,4 @@
-dateModified: 1553783477
+dateModified: 1553783812
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -607,7 +607,7 @@ sections:
         sortOrder: 1
         titleFormat: null
         titleLabel: Titel
-    handle: homeTeaserEntries
+    handle: homeTeasers
     name: 'Home Teaser Entries'
     propagateEntries: true
     siteSettings:
@@ -615,13 +615,16 @@ sections:
         enabledByDefault: true
         hasUrls: true
         template: ''
-        uriFormat: 'home-teaser-entries/{slug}'
+        uriFormat: 'home-teaser/{slug}'
       96f6905b-bcc3-4e74-91a8-e5458eb5e532:
         enabledByDefault: true
         hasUrls: true
         template: ''
-        uriFormat: 'home-teaser-entries/{slug}'
-    type: channel
+        uriFormat: 'home-teaser/{slug}'
+    structure:
+      maxLevels: '1'
+      uid: ce59bcc3-cded-4cfd-b5f5-9fb32e9c4fe2
+    type: structure
   a7103738-e3bc-4556-8521-a66f06bd0e0a:
     enableVersioning: true
     entryTypes:
@@ -686,8 +689,8 @@ sections:
         sortOrder: 1
         titleFormat: ''
         titleLabel: Titel
-    handle: eventsEntries
-    name: 'Events Entries'
+    handle: eventsTeasers
+    name: 'Events Teaser Entries'
     propagateEntries: true
     siteSettings:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
@@ -1000,4 +1003,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-03-28 15:33:05'
+dateApplied: '2019-03-28 15:43:05'
