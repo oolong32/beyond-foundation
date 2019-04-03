@@ -896,9 +896,9 @@ footer {
     justify-content: space-between; }
   /* Navigation Overlay }}}2 */
   /* Mobile Slide Show {{{2 */
-  .index #slogan h1 {
-    font-size: 40px;
-    line-height: 0.8;
+  .index #slogan .flickity-viewport .flickity-slider .carousel-cell h1 {
+    font-size: 50px;
+    line-height: 0.9;
     transform: translateY(-3rem); }
   /* End Mobile Slide Show }}}2 */
   /* Mobile Main {{{2 */
