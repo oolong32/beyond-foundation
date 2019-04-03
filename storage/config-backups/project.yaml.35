@@ -1,4 +1,8 @@
-dateModified: 1553790312
+<<<<<<< Updated upstream
+dateModified: 1553790345
+=======
+dateModified: 1553785402
+>>>>>>> Stashed changes
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -419,6 +423,23 @@ fields:
       placeholder: ''
     translationKeyFormat: null
     translationMethod: site
+    type: craft\fields\PlainText
+  f6548108-90f5-44ed-a556-c434e6b9778f:
+    contentColumnType: text
+    fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
+    handle: bildlegende
+    instructions: ''
+    name: Bildlegende
+    searchable: true
+    settings:
+      charLimit: '60'
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
     type: craft\fields\PlainText
 imageTransforms:
   2b5e3b27-8e0b-48e4-a280-8d1460f59282:
@@ -1064,4 +1085,8 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-03-28 17:25:46'
+<<<<<<< Updated upstream
+dateApplied: '2019-03-28 17:25:57'
+=======
+dateApplied: '2019-03-28 16:09:02'
+>>>>>>> Stashed changes

@@ -1,4 +1,4 @@
-dateModified: 1554197476
+dateModified: 1554197870
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -699,6 +699,31 @@ sections:
       maxLevels: '1'
       uid: ce59bcc3-cded-4cfd-b5f5-9fb32e9c4fe2
     type: structure
+  68c53e01-154e-4e20-9424-8aee60fdae4a:
+    enableVersioning: true
+    entryTypes:
+      c88bd234-9793-4d88-b074-4621b6878f33:
+        handle: videoTest
+        hasTitleField: false
+        name: video-test
+        sortOrder: 1
+        titleFormat: '{section.name|raw}'
+        titleLabel: null
+    handle: videoTest
+    name: video-test
+    propagateEntries: true
+    siteSettings:
+      802d4b06-1f71-4c60-8b00-c331a21b5134:
+        enabledByDefault: true
+        hasUrls: true
+        template: videotest
+        uriFormat: video-test
+      96f6905b-bcc3-4e74-91a8-e5458eb5e532:
+        enabledByDefault: true
+        hasUrls: true
+        template: videotest
+        uriFormat: video-test
+    type: single
   a7103738-e3bc-4556-8521-a66f06bd0e0a:
     enableVersioning: true
     entryTypes:
@@ -1077,4 +1102,8 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-04-02 11:37:50'
+<<<<<<< Updated upstream
+dateApplied: '2019-04-02 11:39:00'
+=======
+dateApplied: '2019-04-02 11:27:59'
+>>>>>>> Stashed changes
