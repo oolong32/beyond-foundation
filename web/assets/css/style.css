@@ -338,14 +338,14 @@ a.social-media-link:hover svg path {
   background-size: cover;
   /* End Masthead Backgrounds }}}2 */ }
 
-.team #masthead {
-  background-image: url("../_pic/masthead_backgrounds/team_back.png"); }
+.about #masthead {
+  background-image: url("../_pic/masthead_backgrounds/about.png"); }
 
 .music-network #masthead {
   background-image: url("../_pic/masthead_backgrounds/music-network_back.png"); }
 
 .music-production #masthead {
-  background-image: url("../_pic/masthead_backgrounds/music-production_back.png"); }
+  background-image: url("../_pic/masthead_backgrounds/music-production_back.jpg"); }
 
 .encouragement #masthead {
   background-image: url("../_pic/masthead_backgrounds/encouragement_back.png"); }
