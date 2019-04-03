@@ -339,7 +339,11 @@ a.social-media-link:hover svg path {
   /* End Masthead Backgrounds }}}2 */ }
 
 .about #masthead {
+<<<<<<< HEAD
   background-image: url("../_pic/masthead_backgrounds/about_back.png"); }
+=======
+  background-image: url("../_pic/masthead_backgrounds/about.png"); }
+>>>>>>> 254b3f95438801e6d3a25205094a461c6a29432b
 
 .music-network #masthead {
   background-image: url("../_pic/masthead_backgrounds/music-network_back.png"); }

@@ -1,4 +1,8 @@
-dateModified: 1553784185
+<<<<<<< Updated upstream
+dateModified: 1553784514
+=======
+dateModified: 1553783770
+>>>>>>> Stashed changes
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -321,6 +325,25 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
+  dd3b36a3-d68e-4857-b2c2-59bfc760dc64:
+    contentColumnType: string
+    fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
+    handle: associatedEntry
+    instructions: 'Eintrag in Beyond-Foundation.org, der mit diesem Teaser verknüpft sein soll.'
+    name: 'Verknüpfter Eintrag'
+    searchable: true
+    settings:
+      limit: '1'
+      localizeRelations: ''
+      selectionLabel: 'Eintrag wählen'
+      source: null
+      sources:
+        - singles
+      targetSiteId: null
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
   e6776d44-d3d9-442b-90aa-f01d11baa789:
     contentColumnType: string
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
@@ -1016,4 +1039,8 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-03-28 15:48:35'
+<<<<<<< Updated upstream
+dateApplied: '2019-03-28 15:49:24'
+=======
+dateApplied: '2019-03-28 15:36:39'
+>>>>>>> Stashed changes

@@ -1,4 +1,8 @@
-dateModified: 1553785755
+<<<<<<< Updated upstream
+dateModified: 1553790312
+=======
+dateModified: 1553785331
+>>>>>>> Stashed changes
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -377,6 +381,32 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Url
+  f01db52f-6f1f-4abd-aa2c-4a8b40100e97:
+    contentColumnType: string
+    fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
+    handle: heroImage
+    instructions: 'Ein grosses Bild, Format 16:9 (wird beschnitten)'
+    name: 'Hero Image'
+    searchable: false
+    settings:
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:9eb7856b-e672-4fbf-b4b5-9d00ee79c726'
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: ''
+      restrictFiles: '1'
+      selectionLabel: ''
+      singleUploadLocationSource: 'volume:9eb7856b-e672-4fbf-b4b5-9d00ee79c726'
+      singleUploadLocationSubpath: images/teaser-images/
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: '1'
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
   f509c340-3109-4f76-a749-0569c3dd49ae:
     contentColumnType: text
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
@@ -1038,4 +1068,8 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-03-28 17:25:12'
+<<<<<<< Updated upstream
+dateApplied: '2019-03-28 17:25:46'
+=======
+dateApplied: '2019-03-28 16:03:22'
+>>>>>>> Stashed changes

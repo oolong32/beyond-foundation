@@ -1,4 +1,8 @@
-dateModified: 1553785331
+<<<<<<< Updated upstream
+dateModified: 1553785402
+=======
+dateModified: 1553785308
+>>>>>>> Stashed changes
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -1038,4 +1042,8 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-03-28 16:03:22'
+<<<<<<< Updated upstream
+dateApplied: '2019-03-28 16:09:02'
+=======
+dateApplied: '2019-03-28 16:01:54'
+>>>>>>> Stashed changes
