@@ -1,4 +1,8 @@
-dateModified: 1554209350
+<<<<<<< Updated upstream
+dateModified: 1554209501
+=======
+dateModified: 1554197870
+>>>>>>> Stashed changes
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -448,7 +452,7 @@ plugins:
       oauthProviderOptions:
         youtube:
           clientId: 345445948018-dit38vfsfjbd9k5r50tffb686p14rnsb.apps.googleusercontent.com
-          clientSecret: ZDbkvT6LUyLWlz-svwqEDKs4
+          clientSecret: 0uCV3T2WxPjmoee3_7h91Xra
       videosPerPage: 30
 sections:
   08de450d-3199-4c3b-9b6c-9a900c9ab5d7:
@@ -693,6 +697,7 @@ sections:
     enableVersioning: true
     entryTypes:
       c88bd234-9793-4d88-b074-4621b6878f33:
+<<<<<<< Updated upstream
         fieldLayouts:
           0097244a-ed6d-4663-a995-c956fa6dd0d0:
             tabs:
@@ -703,12 +708,18 @@ sections:
                     sortOrder: 1
                 name: 'Tab 1'
                 sortOrder: 1
+=======
+>>>>>>> Stashed changes
         handle: videoTest
         hasTitleField: false
         name: video-test
         sortOrder: 1
         titleFormat: '{section.name|raw}'
+<<<<<<< Updated upstream
         titleLabel: ''
+=======
+        titleLabel: null
+>>>>>>> Stashed changes
     handle: videoTest
     name: video-test
     propagateEntries: true
@@ -1102,4 +1113,8 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-04-02 14:51:41'
+<<<<<<< Updated upstream
+dateApplied: '2019-04-02 14:52:57'
+=======
+dateApplied: '2019-04-02 11:39:00'
+>>>>>>> Stashed changes

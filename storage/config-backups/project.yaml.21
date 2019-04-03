@@ -1,4 +1,8 @@
-dateModified: 1554130649
+<<<<<<< Updated upstream
+dateModified: 1554197279
+=======
+dateModified: 1554122292
+>>>>>>> Stashed changes
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -448,7 +452,7 @@ plugins:
       oauthProviderOptions:
         youtube:
           clientId: 345445948018-dit38vfsfjbd9k5r50tffb686p14rnsb.apps.googleusercontent.com
-          clientSecret: _kv9cJp92kw4kfjUXD50VOsf
+          clientSecret: ZDbkvT6LUyLWlz-svwqEDKs4
       tokens: null
       videosPerPage: 30
 sections:
@@ -1029,7 +1033,11 @@ siteGroups:
     name: 'Beyond Foundation'
 sites:
   802d4b06-1f71-4c60-8b00-c331a21b5134:
+<<<<<<< Updated upstream
     baseUrl: 'http://new.beyond-foundation.org/en'
+=======
+    baseUrl: 'http://$DEFAULT_SITE_URL/en'
+>>>>>>> Stashed changes
     handle: beyondFoundation
     hasUrls: true
     language: en
@@ -1068,4 +1076,8 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-04-02 11:27:59'
+<<<<<<< Updated upstream
+dateApplied: '2019-04-02 11:29:41'
+=======
+dateApplied: '2019-04-01 14:38:44'
+>>>>>>> Stashed changes

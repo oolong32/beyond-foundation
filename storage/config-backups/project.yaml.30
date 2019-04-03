@@ -1,4 +1,8 @@
-dateModified: 1553790852
+<<<<<<< Updated upstream
+dateModified: 1553791516
+=======
+dateModified: 1553790357
+>>>>>>> Stashed changes
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -265,7 +269,7 @@ fields:
     contentColumnType: text
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
     handle: pageHeading
-    instructions: 'Überschrift der Seite, immer auf Englisch (gleiche für alle Sprachen)'
+    instructions: 'Überschrift der Seite'
     name: 'Page Title'
     searchable: true
     settings:
@@ -1070,4 +1074,8 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-03-28 17:45:16'
+<<<<<<< Updated upstream
+dateApplied: '2019-03-28 17:46:54'
+=======
+dateApplied: '2019-03-28 17:26:39'
+>>>>>>> Stashed changes

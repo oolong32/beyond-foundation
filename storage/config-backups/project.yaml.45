@@ -1,4 +1,8 @@
-dateModified: 1553785249
+<<<<<<< Updated upstream
+dateModified: 1553785276
+=======
+dateModified: 1553784514
+>>>>>>> Stashed changes
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -499,7 +503,7 @@ sections:
         titleFormat: ''
         titleLabel: 'Album Title'
     handle: musicProductionEntries
-    name: 'Music Production Entries'
+    name: '2 Music Production Entries'
     propagateEntries: true
     siteSettings:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
@@ -1038,4 +1042,8 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-03-28 16:01:16'
+<<<<<<< Updated upstream
+dateApplied: '2019-03-28 16:01:41'
+=======
+dateApplied: '2019-03-28 15:49:24'
+>>>>>>> Stashed changes
