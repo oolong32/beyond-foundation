@@ -435,6 +435,7 @@ header.mini #language-switch {
   height: 100vh;
   overflow: hidden; }
   .index #slogan {
+    border: none;
     z-index: 100;
     position: fixed;
     top: 0;
@@ -462,15 +463,13 @@ header.mini #language-switch {
     .index #carousel .flickity-viewport {
       height: 100vh !important; }
     .index #carousel .carousel-cell {
+      display: block;
       height: 100%;
       width: 100%;
       display: flex;
       align-items: center;
-      justify-content: center; }
-      .index #carousel .carousel-cell img {
-        display: block;
-        max-height: 100%;
-        object-fit: cover; }
+      justify-content: center;
+      object-fit: cover; }
 
 /* End Index Slide Show }}}1 */
 /* Main Layout {{{1 */
@@ -1164,4 +1163,12 @@ footer {
     opacity: 1; } }
 
 /* End Keyframes Nav-Overlay }}}1 */
+/* Keyframes Slide Show {{{level */
+@keyframes slideshow-animation {
+  from {
+    transform: scale(1); }
+  to {
+    transform: scale(1.1); } }
+
+/* End Keyframes Slide Show }}}level */
 /* The End */

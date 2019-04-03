@@ -580,6 +580,7 @@ header.mini { // footer visible, see JS helpers
   height: 100vh;
   overflow: hidden;
   #slogan {
+    border: none; // remove link border
     z-index: 100;
     position: fixed;
     top: 0; bottom: 0;
@@ -614,16 +615,14 @@ header.mini { // footer visible, see JS helpers
 
     .flickity-viewport { height: 100vh !important; }
     .carousel-cell {
+      display: block;
       height: 100%;
       width: 100%;
       display: flex;
       align-items: center;
       justify-content: center;
-      img {
-        display: block;
-        max-height: 100%;
-        object-fit: cover;
-      }
+      object-fit: cover;
+      // animation: slideshow-animation 4s ease-in infinite; // bringts nicht so, weil nur in eine Richtung möglich
     }
   }
 }
@@ -1426,5 +1425,12 @@ footer {
   to { transform: translateY(0); opacity: 1; }
 }
 /* End Keyframes Nav-Overlay }}}1 */
+
+/* Keyframes Slide Show {{{level */
+@keyframes slideshow-animation {
+  from { transform: scale(1); }
+  to { transform: scale(1.1); }
+}
+/* End Keyframes Slide Show }}}level */
 
 /* The End */
