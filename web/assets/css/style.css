@@ -430,6 +430,49 @@ header.mini #language-switch {
   display: none; }
 
 /* End Header Shrink }}}1 */
+/* Index Slide Show {{{1 */
+.index {
+  height: 100vh;
+  overflow: hidden; }
+  .index #slogan {
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex; }
+    .index #slogan h1 {
+      margin: auto;
+      font-size: 6.25rem;
+      text-align: center;
+      font-family: "Freight Display";
+      font-weight: 500;
+      color: white; }
+  .index #carousel {
+    z-index: 0;
+    /* Flickity Fade {{{2 */
+    /* End Flickity Fade }}}2 */ }
+    .index #carousel .flickity-enabled.is-fade .flickity-slider > * {
+      pointer-events: none;
+      z-index: 0; }
+    .index #carousel .flickity-enabled.is-fade .flickity-slider > .is-selected {
+      pointer-events: auto;
+      z-index: 1; }
+    .index #carousel .flickity-viewport {
+      height: 100vh !important; }
+    .index #carousel .carousel-cell {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .index #carousel .carousel-cell img {
+        display: block;
+        max-height: 100%;
+        object-fit: cover; }
+
+/* End Index Slide Show }}}1 */
 /* Main Layout {{{1 */
 main {
   width: 65rem;
@@ -831,6 +874,11 @@ footer {
     flex-direction: column;
     justify-content: space-between; }
   /* Navigation Overlay }}}2 */
+  /* Mobile Slide Show {{{2 */
+  .index #slogan h1 {
+    font-size: 50px;
+    line-height: 1.1; }
+  /* End Mobile Slide Show }}}2 */
   /* Mobile Main {{{2 */
   main {
     /* Mobile Main Whitespace {{{3 */
