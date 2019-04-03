@@ -7,16 +7,22 @@
 
 {% block content %}
 
-  <a href="/team" id="slogan">
+  <a href="/about" id="slogan">
     <h1 style="hyphens: manual;">{{ 'Beyond&nbsp;right&shy; and&nbsp;wrong&nbsp;…'|raw }}</h1>
   </a>
    
     <div id="carousel">
+    {% if entry.slideshowImages|length %}
+      {% for slideshowImage in entry.slideshowImages %}
+      <img class="carousel-cell" src="{{ alias('@assetBasePath') }}/{{ slideshowImage.getUrl() }}" alt="">
+      {% endfor %}
+    {% else %}
       <img class="carousel-cell" src="{{ alias('@assetBasePath') }}/assets/_pic/slideshow/test1.jpg" alt="">
       <img class="carousel-cell" src="{{ alias('@assetBasePath') }}/assets/_pic/slideshow/test2.jpg" alt="">
       <img class="carousel-cell" src="{{ alias('@assetBasePath') }}/assets/_pic/slideshow/test3.jpg" alt="">
       <img class="carousel-cell" src="{{ alias('@assetBasePath') }}/assets/_pic/slideshow/test4.jpg" alt="">
       <img class="carousel-cell" src="{{ alias('@assetBasePath') }}/assets/_pic/slideshow/test5.jpg" alt="">
+    {% endif %}
     </div>
   </a>
 

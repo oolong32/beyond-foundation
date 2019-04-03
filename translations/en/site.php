@@ -8,6 +8,7 @@ return [
   'Teilen' => 'Share',
   'Spenden' => 'Donate',
   'Gesuch einreichen' => 'Apply for Funding',
+  'Willkommen' => 'Welcome',
 ]
 
 ?>
