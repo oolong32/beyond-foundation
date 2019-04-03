@@ -345,13 +345,13 @@ a.social-media-link:hover svg path {
   background-image: url("../_pic/masthead_backgrounds/music-network_back.png"); }
 
 .music-production #masthead {
-  background-image: url("../_pic/masthead_backgrounds/music-production_back.jpg"); }
+  background-image: url("../_pic/masthead_backgrounds/music-production_back_ret.jpg"); }
+
+.projects #masthead {
+  background-image: url("../_pic/masthead_backgrounds/projects_back.png"); }
 
 .encouragement #masthead {
-  background-image: url("../_pic/masthead_backgrounds/encouragement_back.png"); }
-
-.events #masthead {
-  background-image: url("../_pic/masthead_backgrounds/events_back.png"); }
+  background-image: url("../_pic/masthead_backgrounds/encouragement_back2.jpg"); }
 
 /* End Masthead Basic Layout }}}1 */
 /* Overlay Default Settings {{{1 */
@@ -442,14 +442,19 @@ header.mini #language-switch {
     bottom: 0;
     left: 0;
     right: 0;
-    display: flex; }
+    display: flex;
+    background: rgba(50, 50, 50, 0.1); }
     .index #slogan h1 {
       margin: auto;
       font-size: 6.25rem;
       text-align: center;
       font-family: "Freight Display";
-      font-weight: 500;
-      color: white; }
+      font-weight: 400;
+      color: white;
+      line-height: 1; }
+      .index #slogan h1 strong {
+        font-weight: 700;
+        font-style: italic; }
   .index #carousel {
     z-index: 0;
     /* Flickity Fade {{{2 */
@@ -469,7 +474,8 @@ header.mini #language-switch {
       display: flex;
       align-items: center;
       justify-content: center;
-      object-fit: cover; }
+      object-fit: cover;
+      animation: slideshow-animation 16s ease-in alternate infinite; }
 
 /* End Index Slide Show }}}1 */
 /* Main Layout {{{1 */

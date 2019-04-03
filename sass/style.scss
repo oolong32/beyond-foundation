@@ -468,9 +468,9 @@ a.social-media-link:hover svg path { fill: $blue-hover; }
 
 .about #masthead { background-image: url("../_pic/masthead_backgrounds/about_back.jpg"); }
 .music-network #masthead { background-image: url("../_pic/masthead_backgrounds/music-network_back.png"); }
-.music-production #masthead { background-image: url("../_pic/masthead_backgrounds/music-production_back.jpg"); }
-.encouragement #masthead { background-image: url("../_pic/masthead_backgrounds/encouragement_back.png"); }
-.events #masthead { background-image: url("../_pic/masthead_backgrounds/events_back.png"); }
+.music-production #masthead { background-image: url("../_pic/masthead_backgrounds/music-production_back_ret.jpg"); }
+.projects #masthead { background-image: url("../_pic/masthead_backgrounds/projects_back.png"); }
+.encouragement #masthead { background-image: url("../_pic/masthead_backgrounds/encouragement_back2.jpg"); }
 
 
 /* End Masthead Basic Layout }}}1 */
@@ -586,13 +586,19 @@ header.mini { // footer visible, see JS helpers
     top: 0; bottom: 0;
     left: 0; right: 0;
     display: flex;
+    background: rgba(50, 50, 50, 0.1);
     h1 {
       margin: auto;
       font-size: 6.25rem;
       text-align: center;
       font-family: $antiqua;
-      font-weight: $medium;
+      font-weight: $book;
       color: white;
+      line-height: 1;
+      strong {
+      font-weight: $bold;
+      font-style: italic;
+      }
     }
   }
 
@@ -622,7 +628,7 @@ header.mini { // footer visible, see JS helpers
       align-items: center;
       justify-content: center;
       object-fit: cover;
-      // animation: slideshow-animation 4s ease-in infinite; // bringts nicht so, weil nur in eine Richtung möglich
+      animation: slideshow-animation 16s ease-in alternate infinite; // bringts nicht so, weil nur in eine Richtung möglich
     }
   }
 }

@@ -8,7 +8,7 @@
 {% block content %}
 
   <a href="/about" id="slogan">
-    <h1 style="hyphens: manual;">{{ 'Beyond&nbsp;right&shy; and&nbsp;wrong&nbsp;…'|raw }}</h1>
+    <h1 style="hyphens: manual;">{{ '<strong>Beyond</strong> right and&nbsp;wrong&nbsp;…'|raw }}</h1>
   </a>
    
     <div id="carousel">
@@ -24,7 +24,6 @@
       <img class="carousel-cell" src="{{ alias('@assetBasePath') }}/assets/_pic/slideshow/test5.jpg" alt="">
     {% endif %}
     </div>
-  </a>
 
     <script src="{{ alias('@assetBasePath') }}/assets/js/flickity.js"></script>
     <script src="{{ alias('@assetBasePath') }}/assets/js/flickity-fade.js"></script>
@@ -40,7 +39,7 @@
           fade: true,
           draggable: false,
           wrapAround: true,
-          autoPlay: 3000,
+          autoPlay: 4000,
           prevNextButtons: false,
           pageDots: false,
         });
