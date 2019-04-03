@@ -669,6 +669,15 @@ footer {
       font-size: 1.85rem;
       line-height: 1.3;
       letter-spacing: 0.45rem; }
+  footer #infos {
+    margin: 0 auto;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: auto auto;
+    grid-template-columns: max-content max-content max-content;
+    grid-gap: 0 1.125rem; }
+    footer #infos p {
+      margin: 0; }
   header.mini #masthead {
     height: 4.75rem; }
   /* End Header & Footer }}}2 */
@@ -919,6 +928,14 @@ footer {
       main section.alternating-grid-text-large:nth-of-type(2n+1) .music-production-links,
       main section.alternating-grid-image-large:nth-of-type(2n+1) .music-production-links {
         margin-top: .5rem; }
+    main section.alternating-grid-image-large p.text-column {
+      transform: translateY(-5px); }
+    main section.alternating-grid-text-large h3.player-track-title {
+      margin: 10px auto; }
+    main section.single-col p.other-button {
+      margin-left: 20px;
+      padding-top: 1px;
+      padding-bottom: 3px; }
     main section.single-col img.full-width {
       margin: 0; }
     main section.single-col p.video-caption {
@@ -1055,13 +1072,18 @@ footer {
     margin-top: 1rem; }
     footer div#infos,
     #overlay-footer div#infos {
-      margin: 1rem 1rem 0;
+      margin: 0 auto;
       display: grid;
       grid-template-columns: 1fr 1fr;
-      grid-gap: 0 2rem;
-      grid-template-rows: repeat(4, 2rem);
+      grid-gap: 0 0.5rem;
+      grid-template-rows: repeat(3, 2rem);
       grid-auto-flow: column;
       font-size: 15px; }
+      footer div#infos p,
+      #overlay-footer div#infos p {
+        margin: 0;
+        padding: 0;
+        line-height: 1.1; }
     footer #masthead,
     #overlay-footer #masthead {
       height: 4.75rem;

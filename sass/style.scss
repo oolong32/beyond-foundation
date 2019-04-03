@@ -884,6 +884,15 @@ footer {
       letter-spacing: 0.45rem;
     }
   }
+  footer #infos {
+    margin: 0 auto;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: auto auto;
+    grid-template-columns: max-content max-content max-content;
+    grid-gap: 0 1.125rem;
+    p { margin: 0; }
+  }
   header.mini #masthead { height: 4.75rem; }
   /* End Header & Footer }}}2 */
 
@@ -1143,6 +1152,19 @@ footer {
       .accordion-collapse { margin-top: .5rem; }
       .music-production-links { margin-top: .5rem; }
     }
+    section.alternating-grid-image-large {
+      p.text-column {
+        transform: translateY(-5px);
+      }
+    }
+    section.alternating-grid-text-large {
+      h3.player-track-title { margin: 10px auto; }
+    }
+    section.single-col p.other-button { 
+      margin-left: 20px;
+      padding-top: 1px;
+      padding-bottom: 3px;
+    }
 
     /* Mobile Main Single-Col Full-Width {{{4 */
     section.single-col {
@@ -1289,13 +1311,18 @@ footer {
     width: 100%;
     margin-top: 1rem;
     div#infos {
-      margin: 1rem 1rem 0;
+      margin: 0 auto;
       display: grid;
       grid-template-columns: 1fr 1fr;
-      grid-gap: 0 2rem;
-      grid-template-rows: repeat(4, 2rem);
+      grid-gap: 0 0.5rem;
+      grid-template-rows: repeat(3, 2rem);
       grid-auto-flow: column;
       font-size: 15px;
+      p {
+        margin: 0;
+        padding: 0;
+        line-height: 1.1;
+      }
     }
     #masthead { // alles prüfen!
       height: 4.75rem;
