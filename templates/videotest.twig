@@ -31,7 +31,7 @@
       <section class="single-col">
         {% set myvideo = entry.videoTest %}
         {% if myvideo|length %}
-        {{ myvideo.getEmbed({ width: 1040, height: 585 }) }}
+        {{ myvideo.getEmbed() }}
         </video>
         {% endif %}
 
