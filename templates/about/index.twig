@@ -2,7 +2,7 @@
 
 {% extends "_layout" %}
 
-{% set entry = craft.entries().section('team').one() %}
+{% set entry = craft.entries().section('about').one() %}
 {% set members = craft.entries().section('teamEntries').all() %}
 
 {% block content %}
@@ -18,11 +18,22 @@
     <main>
       <h2>{{ entry.pageHeading }}</h2>
 
-      {# kein lead in Founders/Team/Story
-      <section class="main-lead">
+      {% if entry.visibleText|length and entry.collapsedText|length %}
+      <section class="single-col">
+        <h3>Beyond Foundation</h3>
+
+        <div class="accordion" style="margin-top: 0;">
+          <div class="visible">
+            {{ entry.visibleText }}
+            <p class="accordion-trigger"><span>{{ 'Weitere Informationen'|t }}</span></p>
+          </div>
+          <div class="collapsed">
+            {{ entry.collapsedText }}
+            <p class="accordion-collapse"><span>{{ 'Weniger Informationen'|t }}</span></p>
+          </div>
+        </div>
       </section>
-      #}
-      
+      {% endif %}
 
       {% for member in members %}
 

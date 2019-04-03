@@ -7,17 +7,18 @@
 
 {% block content %}
 
-  <div id="slogan">
+  <a href="/team" id="slogan">
     <h1 style="hyphens: manual;">{{ 'Beyond&nbsp;right&shy; and&nbsp;wrong&nbsp;…'|raw }}</h1>
-  </div>
+  </a>
    
-  <div id="carousel">
-    <img class="carousel-cell" src="{{ alias('@assetBasePath') }}/assets/_pic/slideshow/test1.jpg" alt="">
-    <img class="carousel-cell" src="{{ alias('@assetBasePath') }}/assets/_pic/slideshow/test2.jpg" alt="">
-    <img class="carousel-cell" src="{{ alias('@assetBasePath') }}/assets/_pic/slideshow/test3.jpg" alt="">
-    <img class="carousel-cell" src="{{ alias('@assetBasePath') }}/assets/_pic/slideshow/test4.jpg" alt="">
-    <img class="carousel-cell" src="{{ alias('@assetBasePath') }}/assets/_pic/slideshow/test5.jpg" alt="">
-  </div>
+    <div id="carousel">
+      <img class="carousel-cell" src="{{ alias('@assetBasePath') }}/assets/_pic/slideshow/test1.jpg" alt="">
+      <img class="carousel-cell" src="{{ alias('@assetBasePath') }}/assets/_pic/slideshow/test2.jpg" alt="">
+      <img class="carousel-cell" src="{{ alias('@assetBasePath') }}/assets/_pic/slideshow/test3.jpg" alt="">
+      <img class="carousel-cell" src="{{ alias('@assetBasePath') }}/assets/_pic/slideshow/test4.jpg" alt="">
+      <img class="carousel-cell" src="{{ alias('@assetBasePath') }}/assets/_pic/slideshow/test5.jpg" alt="">
+    </div>
+  </a>
 
     <script src="{{ alias('@assetBasePath') }}/assets/js/flickity.js"></script>
     <script src="{{ alias('@assetBasePath') }}/assets/js/flickity-fade.js"></script>
