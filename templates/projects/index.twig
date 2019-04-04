@@ -35,13 +35,18 @@
 
         <section class="alternating-grid-image-large">
   
-          <div class="image-cell">
-            {% if project.teaserImage|length %}
-            <img src="{{ alias('@assetBasePath') }}/{{ project.teaserImage[0].getUrl('sixteen2nine') }}" alt="{{ project.title }}">
-            {% else %}
-            <img src="{{ alias('@assetBasePath') }}/assets/_pic/placeholder_16-9.png" alt="{{ project.title }}, test image">
-            {% endif %}
-          </div>
+	<div class="image-cell">
+	{% if project.video|length %}
+		{% set video = project.video %}
+		{{ video.getEmbed() }}
+	{% else %} {# there’s no video #}
+		{% if project.teaserImage|length %}
+			<img src="{{ alias('@assetBasePath') }}/{{ project.teaserImage[0].getUrl('sixteen2nine') }}" alt="{{ project.title }}">
+		{% else %}
+			<img src="{{ alias('@assetBasePath') }}/assets/_pic/placeholder_16-9.png" alt="{{ project.title }}, test image">
+		{% endif %}
+	{% endif %}
+	</div>
 
           <h3 class="text-column">{{ project.title }}</h3>
           <p class="text-column">{{ project.shortDescription }}</p>
