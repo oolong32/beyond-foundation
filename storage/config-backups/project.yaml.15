@@ -1,7 +1,7 @@
 <<<<<<< Updated upstream
-dateModified: 1554209350
+dateModified: 1554282296
 =======
-dateModified: 1554197476
+dateModified: 1554205954
 >>>>>>> Stashed changes
 email:
   fromEmail: renner@belingthoenen.com
@@ -453,19 +453,28 @@ plugins:
         youtube:
           clientId: 345445948018-dit38vfsfjbd9k5r50tffb686p14rnsb.apps.googleusercontent.com
           clientSecret: ZDbkvT6LUyLWlz-svwqEDKs4
-<<<<<<< Updated upstream
-=======
       tokens:
         youtube:
-          accessToken: ya29.GlvfBsxmutF3cmQjpT3MIStLziAB6MOxIHOv2bmKEa2XsEB02LgWd74d4S86TtI7ItJ_HhT6fJhFBWrSS4rRuwVSl3kaNGfmryHMdmIe5FC1TiuQZGxwvGxJlerO
-          expires: 1554201076
+<<<<<<< Updated upstream
+          accessToken: ya29.GlzgBqUpPxWvFU-W0k5G5YfLOXJJrGrUgGSeQS1kyPM1FsFgCJ1TtbfDgxQUMfzRrI6VwgXZH0nbaYuqYn4eORybp1gg-IGAaGTp63v4tkTT5nmsmigQXVAaIAAyqw
+          expires: 1554279594
+          refreshToken: 1/h_aaH-zGnHYJCo5IJxtfkrdl09zaCcnwd20rF1paffZJ-qin2ZCXBzCqbn4gpn5A
+          resourceOwnerId: null
+          values:
+            values:
+              id_token: eyJhbGciOiJSUzI1NiIsImtpZCI6ImE0MzEzZTdmZDFlOWUyYTRkZWQzYjI5MmQyYTdmNGU1MTk1NzQzMDgiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTU5MjQ2NDUyNTc5OTAyMzQ3NDYiLCJlbWFpbCI6ImJleW9uZHNpbmdpbmdjb21AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJZLW9FSW1NaDJwS21MUFhvRjc2UjdnIiwibmFtZSI6IkJleW9uZCBTaW5naW5nIiwicGljdHVyZSI6Imh0dHBzOi8vbGg1Lmdvb2dsZXVzZXJjb250ZW50LmNvbS8tQnJZdUI5d1JDN0UvQUFBQUFBQUFBQUkvQUFBQUFBQUFBQWsvZVNWWTVhamtmRVUvczk2LWMvcGhvdG8uanBnIiwiZ2l2ZW5fbmFtZSI6IkJleW9uZCIsImZhbWlseV9uYW1lIjoiU2luZ2luZyIsImxvY2FsZSI6ImRlIiwiaWF0IjoxNTU0Mjc1OTk0LCJleHAiOjE1NTQyNzk1OTR9.FwfvtUP1ZbW1F90nD0p0uLvGlq56710mJ74nR2LYZ-WNQaTvRx4V5TE7gUmUvWdRiEoB8fdV6XRwLJyZnoyBF_QbGdKgj4TUmws58lDksW0MsDRe-GDaa6q7dtsyiUk26jzdtLgq8UzeiQaoq8zHBe-ZxbZtFQtBGO1y-x6DYW6DZpFyq51wsmnZTA8NZ4m8SNZWQmmXF4tgGC1j18R4m3tdlkd1uORG6rMkmVqho9Zpg24c-HplvwrvlTCsuMo5BgKeAw4jnX5NaOYlqdjVnfUq3C82pEn0LYVs08fkZA-fl0Mbvxhkt4Gm5fesNRRtvu8lR-bO0n1D1-KkK1d57A
+              scope: 'https://www.googleapis.com/auth/youtube.readonly https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/youtube https://www.googleapis.com/auth/userinfo.profile'
+=======
+          accessToken: ya29.GlvfBgjubT1U4n3j-Zuxfllepx9Pw4hhiydnmX2pCwe5FCUSt17La-90uQsQczpzv20MvV_eBRx6NpLnwR-vUYxRpJvLWFkVFE3Zl9QW9xAxaIaxK_t_hUVxyMIy
+          expires: 1554209554
           refreshToken: 1/s4GrnaNj9uVqHviSVHswq8hO8i272AXYHlAm4jfxUKc
           resourceOwnerId: null
           values:
-            id_token: eyJhbGciOiJSUzI1NiIsImtpZCI6ImE0MzEzZTdmZDFlOWUyYTRkZWQzYjI5MmQyYTdmNGU1MTk1NzQzMDgiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTU5MjQ2NDUyNTc5OTAyMzQ3NDYiLCJlbWFpbCI6ImJleW9uZHNpbmdpbmdjb21AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiIzWnlweXdCTFJnOUhxcmt2N1pTRW9BIiwibmFtZSI6IkJleW9uZCBTaW5naW5nIiwicGljdHVyZSI6Imh0dHBzOi8vbGg1Lmdvb2dsZXVzZXJjb250ZW50LmNvbS8tQnJZdUI5d1JDN0UvQUFBQUFBQUFBQUkvQUFBQUFBQUFBQWsvZVNWWTVhamtmRVUvczk2LWMvcGhvdG8uanBnIiwiZ2l2ZW5fbmFtZSI6IkJleW9uZCIsImZhbWlseV9uYW1lIjoiU2luZ2luZyIsImxvY2FsZSI6ImRlIiwiaWF0IjoxNTU0MTk3NDc2LCJleHAiOjE1NTQyMDEwNzZ9.aZA_bltZvzcLmA_DmjDDiCGb5mxxqS53vuv8TqqHWA1IoJ44E4WEbhUCfNUfijMkOJ38KccpF07tIM0gKWQdu3PzgYAew9bKogpfjACgkMdYIobZw9Y3qccxU2_vjNSa9O2oHHKPY_PSGK1T8xUKf9IngEOK76Wolr1BnLG1QOPK6YlDhia19-7VrDser1VGVhDWIZgcNvc5KQE1T5Avu8S1EaE4BRJJ4XutEr12ALzwB6kVGHUaQd9bJrdXUHdUKltC6i1rOlBmXEkHBqw5Oy0FZnrFfXZJ2tYqcElNJBMyzoWnUjofK9t-iz7j09GIDCrCDsclvGNvKzzr1GbD4w
-            scope: 'https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/youtube.readonly https://www.googleapis.com/auth/youtube'
-            token_type: Bearer
+            values:
+              id_token: eyJhbGciOiJSUzI1NiIsImtpZCI6ImE0MzEzZTdmZDFlOWUyYTRkZWQzYjI5MmQyYTdmNGU1MTk1NzQzMDgiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTU5MjQ2NDUyNTc5OTAyMzQ3NDYiLCJlbWFpbCI6ImJleW9uZHNpbmdpbmdjb21AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJobWZVMm5SRWVKcFVrX1d4WldNX05BIiwiaWF0IjoxNTU0MjA1OTU0LCJleHAiOjE1NTQyMDk1NTR9.A2Olz7LOa8djhKJADHmCiJWBuZ8cN2McM8czpNqo6S2D4yQxP6hyRFp7fDb058BxYCmRo8rPPrZ4xVsW-FnMJ-3x4CSWX2Nb_8iQ8r7c26necP9B0otDShpqrt3yCuOzf8C94xEp5CKq2m-al4dIclmCJCpu14vdJKGVfDtk0MxJypZVF2GqtRjI7MlvZBwRWTnf4lafL52NvViZeTpwxyyEyleTO0zGwTkLv6GUnQ59rtpnSJVcLvKUREsIaBoHBiMlLCr_sp4w0WOXoTMagbshNVh86mJEmu275yXbI794slBHrF4mIpY0im3LNtimGl3X-yZXnd9JI836UuC6xg
+              scope: 'https://www.googleapis.com/auth/youtube.readonly https://www.googleapis.com/auth/youtube https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email'
 >>>>>>> Stashed changes
+              token_type: Bearer
       videosPerPage: 30
 sections:
   08de450d-3199-4c3b-9b6c-9a900c9ab5d7:
@@ -805,20 +814,20 @@ sections:
         sortOrder: 1
         titleFormat: ''
         titleLabel: Titel
-    handle: eventsTeasers
-    name: '5 Events Teaser Entries'
+    handle: projectsTeaser
+    name: '5 Projects Teaser Entries'
     propagateEntries: true
     siteSettings:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
         enabledByDefault: true
         hasUrls: true
-        template: events/_entry
-        uriFormat: 'events-entries/{slug}'
+        template: projects/_entry
+        uriFormat: 'projects-entries/{slug}'
       96f6905b-bcc3-4e74-91a8-e5458eb5e532:
         enabledByDefault: true
         hasUrls: true
-        template: events/_entry
-        uriFormat: 'events-entries/{slug}'
+        template: projects/_entry
+        uriFormat: 'projects-entries/{slug}'
     structure:
       maxLevels: '1'
       uid: 26e929d4-65b6-44a0-8512-3c6e6353b6c5
@@ -842,12 +851,12 @@ sections:
                 sortOrder: 1
         handle: events
         hasTitleField: false
-        name: Events
+        name: Projects
         sortOrder: 1
         titleFormat: '{section.name|raw}'
         titleLabel: ''
-    handle: events
-    name: Events
+    handle: projects
+    name: Projects
     propagateEntries: true
     siteSettings:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
@@ -1120,7 +1129,7 @@ volumes:
     type: craft\volumes\Local
     url: assets/uploads
 <<<<<<< Updated upstream
-dateApplied: '2019-04-02 14:51:41'
+dateApplied: '2019-04-03 11:05:23'
 =======
-dateApplied: '2019-04-02 11:37:50'
+dateApplied: '2019-04-03 11:00:48'
 >>>>>>> Stashed changes

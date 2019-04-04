@@ -1,7 +1,7 @@
 <<<<<<< Updated upstream
-dateModified: 1553790852
+dateModified: 1554130649
 =======
-dateModified: 1553790345
+dateModified: 1554119976
 >>>>>>> Stashed changes
 email:
   fromEmail: renner@belingthoenen.com
@@ -97,7 +97,7 @@ fields:
       allowedKinds:
         - image
       defaultUploadLocationSource: 'volume:9eb7856b-e672-4fbf-b4b5-9d00ee79c726'
-      defaultUploadLocationSubpath: ''
+      defaultUploadLocationSubpath: /images/cover-images
       limit: '1'
       localizeRelations: ''
       restrictFiles: '1'
@@ -105,9 +105,10 @@ fields:
       singleUploadLocationSource: 'volume:9eb7856b-e672-4fbf-b4b5-9d00ee79c726'
       singleUploadLocationSubpath: images/music-production/cover-images
       source: null
-      sources: '*'
+      sources:
+        - 'volume:9eb7856b-e672-4fbf-b4b5-9d00ee79c726'
       targetSiteId: null
-      useSingleFolder: '1'
+      useSingleFolder: ''
       viewMode: list
     translationKeyFormat: null
     translationMethod: site
@@ -269,7 +270,7 @@ fields:
     contentColumnType: text
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
     handle: pageHeading
-    instructions: 'Überschrift der Seite, immer auf Englisch (gleiche für alle Sprachen)'
+    instructions: 'Überschrift der Seite'
     name: 'Page Title'
     searchable: true
     settings:
@@ -423,23 +424,6 @@ fields:
       placeholder: ''
     translationKeyFormat: null
     translationMethod: site
-    type: craft\fields\PlainText
-  f6548108-90f5-44ed-a556-c434e6b9778f:
-    contentColumnType: text
-    fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
-    handle: bildlegende
-    instructions: ''
-    name: Bildlegende
-    searchable: true
-    settings:
-      charLimit: '60'
-      code: ''
-      columnType: text
-      initialRows: '4'
-      multiline: ''
-      placeholder: ''
-    translationKeyFormat: null
-    translationMethod: none
     type: craft\fields\PlainText
 imageTransforms:
   2b5e3b27-8e0b-48e4-a280-8d1460f59282:
@@ -637,9 +621,6 @@ sections:
                   78cf4c77-636b-48a0-b594-60ab78ef26a1:
                     required: false
                     sortOrder: 2
-                  8a5aa2a1-d84f-4bbf-9ea5-4c6b67c7c105:
-                    required: false
-                    sortOrder: 3
                   b729c087-ed9f-4371-8cf0-48e6ef2d9e6a:
                     required: false
                     sortOrder: 1
@@ -805,18 +786,15 @@ sections:
               -
                 fields:
                   597d3228-4fef-4e48-b794-3e488a088311:
-                    required: '0'
-                    sortOrder: '2'
+                    required: false
+                    sortOrder: 2
                   bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
-                    required: '0'
-                    sortOrder: '1'
-                  f509c340-3109-4f76-a749-0569c3dd49ae:
-                    required: '0'
-                    sortOrder: '3'
+                    required: false
+                    sortOrder: 1
                 name: 'Tab 1'
-                sortOrder: '1'
+                sortOrder: 1
         handle: events
-        hasTitleField: '0'
+        hasTitleField: false
         name: Events
         sortOrder: 1
         titleFormat: '{section.name|raw}'
@@ -970,7 +948,13 @@ sections:
                 fields:
                   597d3228-4fef-4e48-b794-3e488a088311:
                     required: false
+                    sortOrder: 4
+                  78cf4c77-636b-48a0-b594-60ab78ef26a1:
+                    required: false
                     sortOrder: 2
+                  8a5aa2a1-d84f-4bbf-9ea5-4c6b67c7c105:
+                    required: false
+                    sortOrder: 3
                   bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
                     required: false
                     sortOrder: 1
@@ -1011,16 +995,13 @@ sections:
                     sortOrder: 2
                   78cf4c77-636b-48a0-b594-60ab78ef26a1:
                     required: true
-                    sortOrder: 4
+                    sortOrder: 3
                   8a5aa2a1-d84f-4bbf-9ea5-4c6b67c7c105:
                     required: true
-                    sortOrder: 5
+                    sortOrder: 4
                   e6776d44-d3d9-442b-90aa-f01d11baa789:
                     required: true
                     sortOrder: 1
-                  f509c340-3109-4f76-a749-0569c3dd49ae:
-                    required: false
-                    sortOrder: 3
                 name: Common
                 sortOrder: 1
         handle: teamEntry
@@ -1052,7 +1033,7 @@ siteGroups:
     name: 'Beyond Foundation'
 sites:
   802d4b06-1f71-4c60-8b00-c331a21b5134:
-    baseUrl: 'http://beyond-foundation.test/en'
+    baseUrl: 'http://new.beyond-foundation.org/en'
     handle: beyondFoundation
     hasUrls: true
     language: en
@@ -1092,7 +1073,7 @@ volumes:
     type: craft\volumes\Local
     url: assets/uploads
 <<<<<<< Updated upstream
-dateApplied: '2019-03-28 17:45:16'
+dateApplied: '2019-04-02 11:27:59'
 =======
-dateApplied: '2019-03-28 17:25:57'
+dateApplied: '2019-04-01 14:38:12'
 >>>>>>> Stashed changes

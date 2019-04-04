@@ -29,12 +29,10 @@
       <h2>Video Test</h2>
       
       <section class="single-col">
-        {% set myvideo = entry.videoTest %}
-        {% if myvideo|length %}
+        {% if entry.video|length %}
+        {% set myvideo = entry.video %}
         {{ myvideo.getEmbed() }}
-        </video>
         {% endif %}
-
       </section>
 
     </main>
