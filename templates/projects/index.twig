@@ -38,7 +38,9 @@
 	<div class="image-cell">
 	{% if project.video|length %}
 		{% set video = project.video %}
+		<div class="video-content">
 		{{ video.getEmbed() }}
+		</div>
 	{% else %} {# there’s no video #}
 		{# ev. sollte das hier ein «HeroImage» sein, wie in anderen Einträgen, wo es entw. Video oder Bild gibt?  #}
 		{% if project.teaserImage|length %}
