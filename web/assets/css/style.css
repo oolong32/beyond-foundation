@@ -541,6 +541,16 @@ main {
       margin-bottom: 0.875rem; }
     main section.single-col p:last-child {
       margin-bottom: 0; }
+    main section.single-col .video-container {
+      grid-column: 1/-1;
+      position: relative;
+      padding-bottom: 56.25%; }
+      main section.single-col .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%; }
   main section.alternating-grid-image-large {
     display: grid;
     grid-template-columns: 2fr 1fr;
