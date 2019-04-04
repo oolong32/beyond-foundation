@@ -38,7 +38,7 @@
 	<div class="image-cell">
 	{% if project.video|length %}
 		{% set video = project.video %}
-		<div class="video-content">
+		<div class="video-container">
 		{{ video.getEmbed() }}
 		</div>
 	{% else %} {# there’s no video #}
