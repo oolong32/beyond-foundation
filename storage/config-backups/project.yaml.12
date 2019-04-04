@@ -1,8 +1,4 @@
-<<<<<<< Updated upstream
-dateModified: 1554289663
-=======
-dateModified: 1554282128
->>>>>>> Stashed changes
+dateModified: 1554378094
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -116,9 +112,9 @@ fields:
   417b399c-4166-4897-a491-00dff2058bd5:
     contentColumnType: string
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
-    handle: videoTest
-    instructions: ''
-    name: 'video test'
+    handle: video
+    instructions: "Share-Link zu einem Beyond-Singing Video, wird als eingebettetes Youtube-Video in die Website eingefügt.\r\nWenn es ein Video gibt, wird das Bild (siehe unten) nicht angezeigt."
+    name: Video
     searchable: true
     translationKeyFormat: null
     translationMethod: none
@@ -288,7 +284,7 @@ fields:
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
     handle: teaserImage
     instructions: 'Bild im Format 16:9'
-    name: Teaser-Bild
+    name: 'Bild (16:9)'
     searchable: true
     settings:
       allowedKinds:
@@ -547,22 +543,25 @@ sections:
                 fields:
                   387a6e57-35e5-47bd-9182-119d7ccccf16:
                     required: false
-                    sortOrder: 2
+                    sortOrder: 3
                   3f013fdf-9050-4d51-b818-050c8a105e6f:
                     required: true
-                    sortOrder: 3
-                  63060068-23fd-4091-9e13-96d982008822:
-                    required: true
-                    sortOrder: 5
-                  72357970-aa0e-4ab8-bc96-4899cd33dd40:
-                    required: false
-                    sortOrder: 6
-                  b729c087-ed9f-4371-8cf0-48e6ef2d9e6a:
-                    required: true
                     sortOrder: 4
-                  f01db52f-6f1f-4abd-aa2c-4a8b40100e97:
+                  417b399c-4166-4897-a491-00dff2058bd5:
                     required: false
                     sortOrder: 1
+                  63060068-23fd-4091-9e13-96d982008822:
+                    required: true
+                    sortOrder: 6
+                  72357970-aa0e-4ab8-bc96-4899cd33dd40:
+                    required: false
+                    sortOrder: 7
+                  b729c087-ed9f-4371-8cf0-48e6ef2d9e6a:
+                    required: true
+                    sortOrder: 5
+                  f01db52f-6f1f-4abd-aa2c-4a8b40100e97:
+                    required: false
+                    sortOrder: 2
                 name: 'Music Production'
                 sortOrder: 1
         handle: musicProductionEntries
@@ -801,13 +800,16 @@ sections:
                 fields:
                   387a6e57-35e5-47bd-9182-119d7ccccf16:
                     required: true
-                    sortOrder: 2
-                  bfe0f040-f095-416d-b4cf-39c83419018b:
+                    sortOrder: 3
+                  417b399c-4166-4897-a491-00dff2058bd5:
                     required: false
                     sortOrder: 1
+                  bfe0f040-f095-416d-b4cf-39c83419018b:
+                    required: false
+                    sortOrder: 2
                   e90e60b4-237c-4aab-839f-30f73a14fea3:
                     required: false
-                    sortOrder: 3
+                    sortOrder: 4
                 name: Events
                 sortOrder: 1
         handle: eventsEntries
@@ -844,21 +846,15 @@ sections:
               -
                 fields:
                   597d3228-4fef-4e48-b794-3e488a088311:
-                    required: false
-                    sortOrder: 2
+                    required: '0'
+                    sortOrder: '2'
                   bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
-                    required: false
-                    sortOrder: 1
+                    required: '0'
+                    sortOrder: '1'
                 name: 'Tab 1'
-<<<<<<< Updated upstream
                 sortOrder: '1'
         handle: projects
         hasTitleField: '0'
-=======
-                sortOrder: 1
-        handle: events
-        hasTitleField: false
->>>>>>> Stashed changes
         name: Projects
         sortOrder: 1
         titleFormat: '{section.name|raw}'
@@ -887,6 +883,15 @@ sections:
             tabs:
               -
                 fields:
+                  597d3228-4fef-4e48-b794-3e488a088311:
+                    required: '0'
+                    sortOrder: '4'
+                  78cf4c77-636b-48a0-b594-60ab78ef26a1:
+                    required: '0'
+                    sortOrder: '2'
+                  8a5aa2a1-d84f-4bbf-9ea5-4c6b67c7c105:
+                    required: '0'
+                    sortOrder: '3'
                   bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
                     required: '0'
                     sortOrder: '1'
@@ -894,24 +899,24 @@ sections:
                 sortOrder: '1'
         handle: story
         hasTitleField: '0'
-        name: Team
+        name: About
         sortOrder: 1
         titleFormat: '{section.name|raw}'
         titleLabel: 'Titel (Navigation)'
-    handle: team
-    name: Team
+    handle: about
+    name: About
     propagateEntries: true
     siteSettings:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
         enabledByDefault: true
         hasUrls: true
-        template: team/index
-        uriFormat: team
+        template: about/index
+        uriFormat: about
       96f6905b-bcc3-4e74-91a8-e5458eb5e532:
         enabledByDefault: true
         hasUrls: true
-        template: team/index
-        uriFormat: team
+        template: about/index
+        uriFormat: about
     type: single
   d1b65841-7b36-47c5-8ff8-7adc6fc614c0:
     enableVersioning: true
@@ -1010,16 +1015,7 @@ sections:
             tabs:
               -
                 fields:
-                  597d3228-4fef-4e48-b794-3e488a088311:
-                    required: false
-                    sortOrder: 4
-                  78cf4c77-636b-48a0-b594-60ab78ef26a1:
-                    required: false
-                    sortOrder: 2
-                  8a5aa2a1-d84f-4bbf-9ea5-4c6b67c7c105:
-                    required: false
-                    sortOrder: 3
-                  bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
+                  d175683d-6e5d-484f-9fc1-5678f4b88c32:
                     required: false
                     sortOrder: 1
                 name: 'Tab 1'
@@ -1136,8 +1132,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-<<<<<<< Updated upstream
-dateApplied: '2019-04-03 13:12:11'
-=======
-dateApplied: '2019-04-03 11:04:56'
->>>>>>> Stashed changes
+dateApplied: '2019-04-04 13:42:05'

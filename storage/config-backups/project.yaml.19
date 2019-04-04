@@ -1,7 +1,7 @@
 <<<<<<< Updated upstream
-dateModified: 1554205954
+dateModified: 1554289956
 =======
-dateModified: 1554209501
+dateModified: 1554275994
 >>>>>>> Stashed changes
 email:
   fromEmail: renner@belingthoenen.com
@@ -309,6 +309,32 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Assets
+  d175683d-6e5d-484f-9fc1-5678f4b88c32:
+    contentColumnType: string
+    fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
+    handle: slideshowImages
+    instructions: "Bilder für die Slideshow auf der Home Page.\r\n– Breite min. 2000px\r\n–\_Dateigrösse < 1MB"
+    name: 'Slideshow Bilder'
+    searchable: true
+    settings:
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:9eb7856b-e672-4fbf-b4b5-9d00ee79c726'
+      defaultUploadLocationSubpath: images/slideshow
+      limit: ''
+      localizeRelations: ''
+      restrictFiles: '1'
+      selectionLabel: ''
+      singleUploadLocationSource: 'volume:9eb7856b-e672-4fbf-b4b5-9d00ee79c726'
+      singleUploadLocationSubpath: images/slideshow
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: '1'
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
   d8dd3348-f988-4ea0-b8db-6c4e63542924:
     contentColumnType: text
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
@@ -452,22 +478,18 @@ plugins:
       oauthProviderOptions:
         youtube:
           clientId: 345445948018-dit38vfsfjbd9k5r50tffb686p14rnsb.apps.googleusercontent.com
-<<<<<<< Updated upstream
-          clientSecret: ZDbkvT6LUyLWlz-svwqEDKs4
+          clientSecret: 0uCV3T2WxPjmoee3_7h91Xra
       tokens:
         youtube:
-          accessToken: ya29.GlvfBgjubT1U4n3j-Zuxfllepx9Pw4hhiydnmX2pCwe5FCUSt17La-90uQsQczpzv20MvV_eBRx6NpLnwR-vUYxRpJvLWFkVFE3Zl9QW9xAxaIaxK_t_hUVxyMIy
-          expires: 1554209554
-          refreshToken: 1/s4GrnaNj9uVqHviSVHswq8hO8i272AXYHlAm4jfxUKc
+          accessToken: ya29.GlzgBqUpPxWvFU-W0k5G5YfLOXJJrGrUgGSeQS1kyPM1FsFgCJ1TtbfDgxQUMfzRrI6VwgXZH0nbaYuqYn4eORybp1gg-IGAaGTp63v4tkTT5nmsmigQXVAaIAAyqw
+          expires: 1554279594
+          refreshToken: 1/h_aaH-zGnHYJCo5IJxtfkrdl09zaCcnwd20rF1paffZJ-qin2ZCXBzCqbn4gpn5A
           resourceOwnerId: null
           values:
             values:
-              id_token: eyJhbGciOiJSUzI1NiIsImtpZCI6ImE0MzEzZTdmZDFlOWUyYTRkZWQzYjI5MmQyYTdmNGU1MTk1NzQzMDgiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTU5MjQ2NDUyNTc5OTAyMzQ3NDYiLCJlbWFpbCI6ImJleW9uZHNpbmdpbmdjb21AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJobWZVMm5SRWVKcFVrX1d4WldNX05BIiwiaWF0IjoxNTU0MjA1OTU0LCJleHAiOjE1NTQyMDk1NTR9.A2Olz7LOa8djhKJADHmCiJWBuZ8cN2McM8czpNqo6S2D4yQxP6hyRFp7fDb058BxYCmRo8rPPrZ4xVsW-FnMJ-3x4CSWX2Nb_8iQ8r7c26necP9B0otDShpqrt3yCuOzf8C94xEp5CKq2m-al4dIclmCJCpu14vdJKGVfDtk0MxJypZVF2GqtRjI7MlvZBwRWTnf4lafL52NvViZeTpwxyyEyleTO0zGwTkLv6GUnQ59rtpnSJVcLvKUREsIaBoHBiMlLCr_sp4w0WOXoTMagbshNVh86mJEmu275yXbI794slBHrF4mIpY0im3LNtimGl3X-yZXnd9JI836UuC6xg
-              scope: 'https://www.googleapis.com/auth/youtube.readonly https://www.googleapis.com/auth/youtube https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email'
+              id_token: eyJhbGciOiJSUzI1NiIsImtpZCI6ImE0MzEzZTdmZDFlOWUyYTRkZWQzYjI5MmQyYTdmNGU1MTk1NzQzMDgiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTU5MjQ2NDUyNTc5OTAyMzQ3NDYiLCJlbWFpbCI6ImJleW9uZHNpbmdpbmdjb21AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJZLW9FSW1NaDJwS21MUFhvRjc2UjdnIiwibmFtZSI6IkJleW9uZCBTaW5naW5nIiwicGljdHVyZSI6Imh0dHBzOi8vbGg1Lmdvb2dsZXVzZXJjb250ZW50LmNvbS8tQnJZdUI5d1JDN0UvQUFBQUFBQUFBQUkvQUFBQUFBQUFBQWsvZVNWWTVhamtmRVUvczk2LWMvcGhvdG8uanBnIiwiZ2l2ZW5fbmFtZSI6IkJleW9uZCIsImZhbWlseV9uYW1lIjoiU2luZ2luZyIsImxvY2FsZSI6ImRlIiwiaWF0IjoxNTU0Mjc1OTk0LCJleHAiOjE1NTQyNzk1OTR9.FwfvtUP1ZbW1F90nD0p0uLvGlq56710mJ74nR2LYZ-WNQaTvRx4V5TE7gUmUvWdRiEoB8fdV6XRwLJyZnoyBF_QbGdKgj4TUmws58lDksW0MsDRe-GDaa6q7dtsyiUk26jzdtLgq8UzeiQaoq8zHBe-ZxbZtFQtBGO1y-x6DYW6DZpFyq51wsmnZTA8NZ4m8SNZWQmmXF4tgGC1j18R4m3tdlkd1uORG6rMkmVqho9Zpg24c-HplvwrvlTCsuMo5BgKeAw4jnX5NaOYlqdjVnfUq3C82pEn0LYVs08fkZA-fl0Mbvxhkt4Gm5fesNRRtvu8lR-bO0n1D1-KkK1d57A
+              scope: 'https://www.googleapis.com/auth/youtube.readonly https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/youtube https://www.googleapis.com/auth/userinfo.profile'
               token_type: Bearer
-=======
-          clientSecret: 0uCV3T2WxPjmoee3_7h91Xra
->>>>>>> Stashed changes
       videosPerPage: 30
 sections:
   08de450d-3199-4c3b-9b6c-9a900c9ab5d7:
@@ -747,19 +769,6 @@ sections:
     enableVersioning: true
     entryTypes:
       dd2dc2fc-e081-483b-af9d-d3bd8a2e18ff:
-        fieldLayouts:
-          41d47ce2-2da4-487c-9b31-51a46b231de6:
-            tabs:
-              -
-                fields:
-                  752ed5fb-e81b-4651-8eed-3bb3f4c358f9:
-                    required: false
-                    sortOrder: 2
-                  bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
-                    required: false
-                    sortOrder: 1
-                name: 'Tab 1'
-                sortOrder: 1
         handle: imprint
         hasTitleField: false
         name: Impressum
@@ -835,16 +844,23 @@ sections:
               -
                 fields:
                   597d3228-4fef-4e48-b794-3e488a088311:
-                    required: false
-                    sortOrder: 2
+                    required: '0'
+                    sortOrder: '2'
                   bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
-                    required: false
-                    sortOrder: 1
+                    required: '0'
+                    sortOrder: '1'
                 name: 'Tab 1'
+<<<<<<< Updated upstream
+                sortOrder: '1'
+        handle: projects
+        hasTitleField: '0'
+        name: Projects
+=======
                 sortOrder: 1
         handle: events
         hasTitleField: false
         name: Events
+>>>>>>> Stashed changes
         sortOrder: 1
         titleFormat: '{section.name|raw}'
         titleLabel: ''
@@ -855,13 +871,13 @@ sections:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
         enabledByDefault: true
         hasUrls: true
-        template: events
-        uriFormat: events
+        template: projects/index
+        uriFormat: projects
       96f6905b-bcc3-4e74-91a8-e5458eb5e532:
         enabledByDefault: true
         hasUrls: true
-        template: events
-        uriFormat: events
+        template: projects/index
+        uriFormat: projects
     type: single
   bdcc5b99-d47c-4d7f-a59c-2535c42dc0da:
     enableVersioning: true
@@ -872,13 +888,22 @@ sections:
             tabs:
               -
                 fields:
+                  597d3228-4fef-4e48-b794-3e488a088311:
+                    required: false
+                    sortOrder: 4
+                  78cf4c77-636b-48a0-b594-60ab78ef26a1:
+                    required: false
+                    sortOrder: 2
+                  8a5aa2a1-d84f-4bbf-9ea5-4c6b67c7c105:
+                    required: false
+                    sortOrder: 3
                   bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
-                    required: '0'
-                    sortOrder: '1'
+                    required: false
+                    sortOrder: 1
                 name: 'Tab 1'
-                sortOrder: '1'
+                sortOrder: 1
         handle: story
-        hasTitleField: '0'
+        hasTitleField: false
         name: Team
         sortOrder: 1
         titleFormat: '{section.name|raw}'
@@ -995,16 +1020,7 @@ sections:
             tabs:
               -
                 fields:
-                  597d3228-4fef-4e48-b794-3e488a088311:
-                    required: false
-                    sortOrder: 4
-                  78cf4c77-636b-48a0-b594-60ab78ef26a1:
-                    required: false
-                    sortOrder: 2
-                  8a5aa2a1-d84f-4bbf-9ea5-4c6b67c7c105:
-                    required: false
-                    sortOrder: 3
-                  bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
+                  d175683d-6e5d-484f-9fc1-5678f4b88c32:
                     required: false
                     sortOrder: 1
                 name: 'Tab 1'
@@ -1122,7 +1138,7 @@ volumes:
     type: craft\volumes\Local
     url: assets/uploads
 <<<<<<< Updated upstream
-dateApplied: '2019-04-03 11:00:48'
+dateApplied: '2019-04-03 13:20:29'
 =======
-dateApplied: '2019-04-02 14:52:57'
+dateApplied: '2019-04-03 11:10:56'
 >>>>>>> Stashed changes

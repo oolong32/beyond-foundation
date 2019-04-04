@@ -1,4 +1,4 @@
-dateModified: 1554290428
+dateModified: 1554381085
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -112,9 +112,9 @@ fields:
   417b399c-4166-4897-a491-00dff2058bd5:
     contentColumnType: string
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
-    handle: videoTest
-    instructions: ''
-    name: 'video test'
+    handle: video
+    instructions: "Share-Link zu einem Beyond-Singing Video, wird als eingebettetes Youtube-Video in die Website eingefügt.\r\nWenn es ein Video gibt, wird das Bild (siehe unten) nicht angezeigt."
+    name: Video
     searchable: true
     translationKeyFormat: null
     translationMethod: none
@@ -284,7 +284,7 @@ fields:
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
     handle: teaserImage
     instructions: 'Bild im Format 16:9'
-    name: Teaser-Bild
+    name: 'Bild (16:9)'
     searchable: true
     settings:
       allowedKinds:
@@ -301,6 +301,32 @@ fields:
       sources: '*'
       targetSiteId: null
       useSingleFolder: '1'
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  c5dbaf87-1fca-4ec0-9285-f73a2ec10ab3:
+    contentColumnType: string
+    fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
+    handle: slideshowImagesMobile
+    instructions: "Bilder für die Slideshow auf der Mobile Page.\r\n– Breite min. 750px\r\n– Höhe ~ 2000px\r\n– Dateigrösse < 1MB"
+    name: 'Slideshow Bilder (Mobile)'
+    searchable: true
+    settings:
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:9eb7856b-e672-4fbf-b4b5-9d00ee79c726'
+      defaultUploadLocationSubpath: images/slideshow/mobile
+      limit: '5'
+      localizeRelations: ''
+      restrictFiles: '1'
+      selectionLabel: ''
+      singleUploadLocationSource: 'volume:9eb7856b-e672-4fbf-b4b5-9d00ee79c726'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: ''
       viewMode: list
     translationKeyFormat: null
     translationMethod: site
@@ -409,7 +435,7 @@ fields:
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
     handle: heroImage
     instructions: 'Ein grosses Bild, Format 16:9 (wird beschnitten)'
-    name: 'Hero Image'
+    name: 'Bild (statt Video)'
     searchable: false
     settings:
       allowedKinds:
@@ -543,22 +569,25 @@ sections:
                 fields:
                   387a6e57-35e5-47bd-9182-119d7ccccf16:
                     required: false
-                    sortOrder: 2
+                    sortOrder: 3
                   3f013fdf-9050-4d51-b818-050c8a105e6f:
                     required: true
-                    sortOrder: 3
-                  63060068-23fd-4091-9e13-96d982008822:
-                    required: true
-                    sortOrder: 5
-                  72357970-aa0e-4ab8-bc96-4899cd33dd40:
-                    required: false
-                    sortOrder: 6
-                  b729c087-ed9f-4371-8cf0-48e6ef2d9e6a:
-                    required: true
                     sortOrder: 4
-                  f01db52f-6f1f-4abd-aa2c-4a8b40100e97:
+                  417b399c-4166-4897-a491-00dff2058bd5:
                     required: false
                     sortOrder: 1
+                  63060068-23fd-4091-9e13-96d982008822:
+                    required: true
+                    sortOrder: 6
+                  72357970-aa0e-4ab8-bc96-4899cd33dd40:
+                    required: false
+                    sortOrder: 7
+                  b729c087-ed9f-4371-8cf0-48e6ef2d9e6a:
+                    required: true
+                    sortOrder: 5
+                  f01db52f-6f1f-4abd-aa2c-4a8b40100e97:
+                    required: false
+                    sortOrder: 2
                 name: 'Music Production'
                 sortOrder: 1
         handle: musicProductionEntries
@@ -596,28 +625,37 @@ sections:
                 fields:
                   013f9713-f734-4215-90dc-70fd25cf2306:
                     required: false
-                    sortOrder: 6
+                    sortOrder: 9
                   07a81bf3-21ea-4fc5-bcb3-e2b3eddcc8f4:
                     required: false
-                    sortOrder: 5
+                    sortOrder: 8
+                  387a6e57-35e5-47bd-9182-119d7ccccf16:
+                    required: false
+                    sortOrder: 6
                   3f013fdf-9050-4d51-b818-050c8a105e6f:
                     required: false
-                    sortOrder: 8
-                  597d3228-4fef-4e48-b794-3e488a088311:
+                    sortOrder: 11
+                  417b399c-4166-4897-a491-00dff2058bd5:
                     required: false
                     sortOrder: 4
+                  597d3228-4fef-4e48-b794-3e488a088311:
+                    required: false
+                    sortOrder: 7
                   63060068-23fd-4091-9e13-96d982008822:
                     required: false
                     sortOrder: 3
                   aac9b682-0ac3-4291-bc12-f31f73e6cad9:
                     required: false
-                    sortOrder: 7
+                    sortOrder: 10
                   b729c087-ed9f-4371-8cf0-48e6ef2d9e6a:
                     required: false
                     sortOrder: 2
                   bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
                     required: false
                     sortOrder: 1
+                  f01db52f-6f1f-4abd-aa2c-4a8b40100e97:
+                    required: false
+                    sortOrder: 5
                 name: 'Tab 1'
                 sortOrder: 1
         handle: musicNetwork
@@ -797,13 +835,16 @@ sections:
                 fields:
                   387a6e57-35e5-47bd-9182-119d7ccccf16:
                     required: true
-                    sortOrder: 2
-                  bfe0f040-f095-416d-b4cf-39c83419018b:
+                    sortOrder: 3
+                  417b399c-4166-4897-a491-00dff2058bd5:
                     required: false
                     sortOrder: 1
+                  bfe0f040-f095-416d-b4cf-39c83419018b:
+                    required: false
+                    sortOrder: 2
                   e90e60b4-237c-4aab-839f-30f73a14fea3:
                     required: false
-                    sortOrder: 3
+                    sortOrder: 4
                 name: Events
                 sortOrder: 1
         handle: eventsEntries
@@ -877,22 +918,31 @@ sections:
             tabs:
               -
                 fields:
+                  387a6e57-35e5-47bd-9182-119d7ccccf16:
+                    required: false
+                    sortOrder: 6
+                  417b399c-4166-4897-a491-00dff2058bd5:
+                    required: false
+                    sortOrder: 4
                   597d3228-4fef-4e48-b794-3e488a088311:
-                    required: '0'
-                    sortOrder: '4'
+                    required: false
+                    sortOrder: 7
                   78cf4c77-636b-48a0-b594-60ab78ef26a1:
-                    required: '0'
-                    sortOrder: '2'
+                    required: false
+                    sortOrder: 2
                   8a5aa2a1-d84f-4bbf-9ea5-4c6b67c7c105:
-                    required: '0'
-                    sortOrder: '3'
+                    required: false
+                    sortOrder: 3
                   bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
-                    required: '0'
-                    sortOrder: '1'
+                    required: false
+                    sortOrder: 1
+                  f01db52f-6f1f-4abd-aa2c-4a8b40100e97:
+                    required: false
+                    sortOrder: 5
                 name: 'Tab 1'
-                sortOrder: '1'
+                sortOrder: 1
         handle: story
-        hasTitleField: '0'
+        hasTitleField: false
         name: About
         sortOrder: 1
         titleFormat: '{section.name|raw}'
@@ -921,9 +971,15 @@ sections:
             tabs:
               -
                 fields:
-                  597d3228-4fef-4e48-b794-3e488a088311:
+                  387a6e57-35e5-47bd-9182-119d7ccccf16:
+                    required: false
+                    sortOrder: 5
+                  417b399c-4166-4897-a491-00dff2058bd5:
                     required: false
                     sortOrder: 4
+                  597d3228-4fef-4e48-b794-3e488a088311:
+                    required: false
+                    sortOrder: 6
                   63060068-23fd-4091-9e13-96d982008822:
                     required: false
                     sortOrder: 3
@@ -1126,4 +1182,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-04-04 10:33:37'
+dateApplied: '2019-04-04 14:31:57'

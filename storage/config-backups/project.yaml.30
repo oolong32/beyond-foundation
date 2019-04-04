@@ -1,7 +1,7 @@
 <<<<<<< Updated upstream
-dateModified: 1554197279
+dateModified: 1554209590
 =======
-dateModified: 1554122292
+dateModified: 1554205954
 >>>>>>> Stashed changes
 email:
   fromEmail: renner@belingthoenen.com
@@ -452,8 +452,29 @@ plugins:
       oauthProviderOptions:
         youtube:
           clientId: 345445948018-dit38vfsfjbd9k5r50tffb686p14rnsb.apps.googleusercontent.com
-          clientSecret: ZDbkvT6LUyLWlz-svwqEDKs4
-      tokens: null
+          clientSecret: 0uCV3T2WxPjmoee3_7h91Xra
+      tokens:
+        youtube:
+<<<<<<< Updated upstream
+          accessToken: ya29.GlvfBqJT-ZamAxXLsJrK3YqD4nNeeV9-EiFtlCnEcWOzviI4wlitXwD_I5lkF0Eostnnhks96_rJyDi_zq34MUkqCRHH_zYDL_qudHDPg9RxgnViTWpMVVJOi3c1
+          expires: 1554213190
+          refreshToken: 1/h_aaH-zGnHYJCo5IJxtfkrdl09zaCcnwd20rF1paffZJ-qin2ZCXBzCqbn4gpn5A
+          resourceOwnerId: null
+          values:
+            id_token: eyJhbGciOiJSUzI1NiIsImtpZCI6ImE0MzEzZTdmZDFlOWUyYTRkZWQzYjI5MmQyYTdmNGU1MTk1NzQzMDgiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTU5MjQ2NDUyNTc5OTAyMzQ3NDYiLCJlbWFpbCI6ImJleW9uZHNpbmdpbmdjb21AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJQUk9YakV2bXBsdm9ET2dxOVc5eDl3IiwibmFtZSI6IkJleW9uZCBTaW5naW5nIiwicGljdHVyZSI6Imh0dHBzOi8vbGg1Lmdvb2dsZXVzZXJjb250ZW50LmNvbS8tQnJZdUI5d1JDN0UvQUFBQUFBQUFBQUkvQUFBQUFBQUFBQWsvZVNWWTVhamtmRVUvczk2LWMvcGhvdG8uanBnIiwiZ2l2ZW5fbmFtZSI6IkJleW9uZCIsImZhbWlseV9uYW1lIjoiU2luZ2luZyIsImxvY2FsZSI6ImRlIiwiaWF0IjoxNTU0MjA5NTkwLCJleHAiOjE1NTQyMTMxOTB9.Dm96IXPAOVDiRrSbln4fkz1W7UaHaX_hks8SnecfLs_fo9DiCxb3hrtQbYpfCusN3feV0GQtsX7poXoTNdVjTpsNSaKdFFNEMMC1c72ZxP0pQihxhmBBmulec4K1Rrm3RjO2l7mw4j-u9VVCB4a7NpeAPIGC-_dHSYinT_eDEuhTvP5icEFIw9uTIMoqg-k-ue3miEVmWNdxZhygusqq6m8EgOMGdJbuTXGWfK6Q-7E8tHZssbVU-9FipwItuJoiDZ9awL5O_51mMPYI7HdUji4ojK0bKtLQp-uVmuRbMkJJvAZ_ygCW4eSCL-Ay4rfGnQeNcjBYGBzDAi29I2Xsng
+            scope: 'https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/youtube.readonly https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/youtube'
+            token_type: Bearer
+=======
+          accessToken: ya29.GlvfBgjubT1U4n3j-Zuxfllepx9Pw4hhiydnmX2pCwe5FCUSt17La-90uQsQczpzv20MvV_eBRx6NpLnwR-vUYxRpJvLWFkVFE3Zl9QW9xAxaIaxK_t_hUVxyMIy
+          expires: 1554209554
+          refreshToken: 1/s4GrnaNj9uVqHviSVHswq8hO8i272AXYHlAm4jfxUKc
+          resourceOwnerId: null
+          values:
+            values:
+              id_token: eyJhbGciOiJSUzI1NiIsImtpZCI6ImE0MzEzZTdmZDFlOWUyYTRkZWQzYjI5MmQyYTdmNGU1MTk1NzQzMDgiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTU5MjQ2NDUyNTc5OTAyMzQ3NDYiLCJlbWFpbCI6ImJleW9uZHNpbmdpbmdjb21AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJobWZVMm5SRWVKcFVrX1d4WldNX05BIiwiaWF0IjoxNTU0MjA1OTU0LCJleHAiOjE1NTQyMDk1NTR9.A2Olz7LOa8djhKJADHmCiJWBuZ8cN2McM8czpNqo6S2D4yQxP6hyRFp7fDb058BxYCmRo8rPPrZ4xVsW-FnMJ-3x4CSWX2Nb_8iQ8r7c26necP9B0otDShpqrt3yCuOzf8C94xEp5CKq2m-al4dIclmCJCpu14vdJKGVfDtk0MxJypZVF2GqtRjI7MlvZBwRWTnf4lafL52NvViZeTpwxyyEyleTO0zGwTkLv6GUnQ59rtpnSJVcLvKUREsIaBoHBiMlLCr_sp4w0WOXoTMagbshNVh86mJEmu275yXbI794slBHrF4mIpY0im3LNtimGl3X-yZXnd9JI836UuC6xg
+              scope: 'https://www.googleapis.com/auth/youtube.readonly https://www.googleapis.com/auth/youtube https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email'
+              token_type: Bearer
+>>>>>>> Stashed changes
       videosPerPage: 30
 sections:
   08de450d-3199-4c3b-9b6c-9a900c9ab5d7:
@@ -694,6 +715,41 @@ sections:
       maxLevels: '1'
       uid: ce59bcc3-cded-4cfd-b5f5-9fb32e9c4fe2
     type: structure
+  68c53e01-154e-4e20-9424-8aee60fdae4a:
+    enableVersioning: true
+    entryTypes:
+      c88bd234-9793-4d88-b074-4621b6878f33:
+        fieldLayouts:
+          0097244a-ed6d-4663-a995-c956fa6dd0d0:
+            tabs:
+              -
+                fields:
+                  417b399c-4166-4897-a491-00dff2058bd5:
+                    required: false
+                    sortOrder: 1
+                name: 'Tab 1'
+                sortOrder: 1
+        handle: videoTest
+        hasTitleField: false
+        name: video-test
+        sortOrder: 1
+        titleFormat: '{section.name|raw}'
+        titleLabel: ''
+    handle: videoTest
+    name: video-test
+    propagateEntries: true
+    siteSettings:
+      802d4b06-1f71-4c60-8b00-c331a21b5134:
+        enabledByDefault: true
+        hasUrls: true
+        template: videotest
+        uriFormat: video-test
+      96f6905b-bcc3-4e74-91a8-e5458eb5e532:
+        enabledByDefault: true
+        hasUrls: true
+        template: videotest
+        uriFormat: video-test
+    type: single
   a7103738-e3bc-4556-8521-a66f06bd0e0a:
     enableVersioning: true
     entryTypes:
@@ -1033,11 +1089,7 @@ siteGroups:
     name: 'Beyond Foundation'
 sites:
   802d4b06-1f71-4c60-8b00-c331a21b5134:
-<<<<<<< Updated upstream
     baseUrl: 'http://new.beyond-foundation.org/en'
-=======
-    baseUrl: 'http://$DEFAULT_SITE_URL/en'
->>>>>>> Stashed changes
     handle: beyondFoundation
     hasUrls: true
     language: en
@@ -1077,7 +1129,7 @@ volumes:
     type: craft\volumes\Local
     url: assets/uploads
 <<<<<<< Updated upstream
-dateApplied: '2019-04-02 11:29:41'
+dateApplied: '2019-04-02 17:13:35'
 =======
-dateApplied: '2019-04-01 14:38:44'
+dateApplied: '2019-04-02 14:49:10'
 >>>>>>> Stashed changes
