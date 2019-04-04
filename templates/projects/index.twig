@@ -40,6 +40,7 @@
 		{% set video = project.video %}
 		{{ video.getEmbed() }}
 	{% else %} {# there’s no video #}
+		{# ev. sollte das hier ein «HeroImage» sein, wie in anderen Einträgen, wo es entw. Video oder Bild gibt?  #}
 		{% if project.teaserImage|length %}
 			<img src="{{ alias('@assetBasePath') }}/{{ project.teaserImage[0].getUrl('sixteen2nine') }}" alt="{{ project.title }}">
 		{% else %}
