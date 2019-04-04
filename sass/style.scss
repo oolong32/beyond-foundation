@@ -621,6 +621,7 @@ header.mini { // footer visible, see JS helpers
       }
     }
 
+  #mobile-carousel,
   #carousel {
     z-index: 0;
 
@@ -650,6 +651,7 @@ header.mini { // footer visible, see JS helpers
       animation: slideshow-animation 16s ease-in alternate infinite; // bringts nicht so, weil nur in eine Richtung möglich
     }
   }
+  #mobile-carousel { display: none; }
 }
 
 /* End Index Slide Show }}}1 */
@@ -1198,6 +1200,14 @@ footer {
     line-height: 0.9;
     transform: translateY(-3rem);
   } 
+
+  .index #carousel {
+    display: none;
+  }
+
+  .index #mobile-carousel {
+    display: block;
+  }
   
   /* End Mobile Slide Show }}}2 */
 

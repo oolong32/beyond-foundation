@@ -31,18 +31,43 @@
       <img class="carousel-cell" src="{{ alias('@assetBasePath') }}/assets/_pic/slideshow/test4.jpg" alt="">
       <img class="carousel-cell" src="{{ alias('@assetBasePath') }}/assets/_pic/slideshow/test5.jpg" alt="">
     {% endif %}
+
+    </div>
+
+    <div id="mobile-carousel">
+      {% if entry.slideshowImagesMobile|length %}
+      {% for slideshowImageMobile in entry.slideshowImagesMobile %}
+      <img class="carousel-cell" src="{{ alias('@assetBasePath') }}/{{ slideshowImageMobile.getUrl() }}" alt="">
+      {% endfor %}
+    {% else %}
+      <img class="carousel-cell" src="{{ alias('@assetBasePath') }}/assets/_pic/slideshow/test1.jpg" alt="">
+      <img class="carousel-cell" src="{{ alias('@assetBasePath') }}/assets/_pic/slideshow/test2.jpg" alt="">
+      <img class="carousel-cell" src="{{ alias('@assetBasePath') }}/assets/_pic/slideshow/test3.jpg" alt="">
+      <img class="carousel-cell" src="{{ alias('@assetBasePath') }}/assets/_pic/slideshow/test4.jpg" alt="">
+      <img class="carousel-cell" src="{{ alias('@assetBasePath') }}/assets/_pic/slideshow/test5.jpg" alt="">
+    {% endif %}
     </div>
 
     <script src="{{ alias('@assetBasePath') }}/assets/js/flickity.js"></script>
     <script src="{{ alias('@assetBasePath') }}/assets/js/flickity-fade.js"></script>
     <script>
-      console.log('I & I is at {{ slug }}' );
+      console.log('I & I is at {{ slug }}, what' );
 
       // initialize slider aka. «carousel»
     
       window.addEventListener('DOMContentLoaded', (event) => {
         var carousel = document.querySelector('#carousel');
         var flkty = new Flickity(carousel, {
+          // options
+          fade: true,
+          draggable: false,
+          wrapAround: true,
+          autoPlay: 7000,
+          prevNextButtons: false,
+          pageDots: false,
+        });
+        var mobileCarousel = document.querySelector('#mobile-carousel');
+        var mobileFlkty = new Flickity(mobileCarousel, {
           // options
           fade: true,
           draggable: false,

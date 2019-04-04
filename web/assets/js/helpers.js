@@ -1,4 +1,4 @@
-console.clear();
+//console.clear();
 
 var hamburger = document.querySelector('#hamburger');
 var header = document.querySelector('header');
