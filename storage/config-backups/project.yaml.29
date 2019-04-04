@@ -1,7 +1,15 @@
 <<<<<<< Updated upstream
-dateModified: 1553791614
+dateModified: 1554197381
 =======
-dateModified: 1553790399
+<<<<<<< Updated upstream
+dateModified: 1554122324
+=======
+<<<<<<< Updated upstream
+dateModified: 1554122324
+=======
+dateModified: 1554117713
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 >>>>>>> Stashed changes
 email:
   fromEmail: renner@belingthoenen.com
@@ -451,7 +459,7 @@ plugins:
       oauthProviderOptions:
         youtube:
           clientId: 345445948018-dit38vfsfjbd9k5r50tffb686p14rnsb.apps.googleusercontent.com
-          clientSecret: _kv9cJp92kw4kfjUXD50VOsf
+          clientSecret: ZDbkvT6LUyLWlz-svwqEDKs4
       tokens: null
       videosPerPage: 30
 sections:
@@ -620,9 +628,6 @@ sections:
                   78cf4c77-636b-48a0-b594-60ab78ef26a1:
                     required: false
                     sortOrder: 2
-                  8a5aa2a1-d84f-4bbf-9ea5-4c6b67c7c105:
-                    required: false
-                    sortOrder: 3
                   b729c087-ed9f-4371-8cf0-48e6ef2d9e6a:
                     required: false
                     sortOrder: 1
@@ -860,24 +865,18 @@ sections:
             tabs:
               -
                 fields:
-                  387a6e57-35e5-47bd-9182-119d7ccccf16:
-                    required: false
-                    sortOrder: 3
                   597d3228-4fef-4e48-b794-3e488a088311:
                     required: false
-                    sortOrder: 6
+                    sortOrder: 4
                   63060068-23fd-4091-9e13-96d982008822:
                     required: false
-                    sortOrder: 5
+                    sortOrder: 3
                   b729c087-ed9f-4371-8cf0-48e6ef2d9e6a:
                     required: false
-                    sortOrder: 4
+                    sortOrder: 2
                   bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
                     required: false
                     sortOrder: 1
-                  f01db52f-6f1f-4abd-aa2c-4a8b40100e97:
-                    required: false
-                    sortOrder: 2
                 name: 'Tab 1'
                 sortOrder: 1
         handle: musicProduction
@@ -956,7 +955,13 @@ sections:
                 fields:
                   597d3228-4fef-4e48-b794-3e488a088311:
                     required: false
+                    sortOrder: 4
+                  78cf4c77-636b-48a0-b594-60ab78ef26a1:
+                    required: false
                     sortOrder: 2
+                  8a5aa2a1-d84f-4bbf-9ea5-4c6b67c7c105:
+                    required: false
+                    sortOrder: 3
                   bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
                     required: false
                     sortOrder: 1
@@ -1038,7 +1043,19 @@ siteGroups:
     name: 'Beyond Foundation'
 sites:
   802d4b06-1f71-4c60-8b00-c331a21b5134:
+<<<<<<< Updated upstream
+    baseUrl: 'http://new.beyond-foundation.org/en'
+=======
+<<<<<<< Updated upstream
+    baseUrl: 'http://new.beyond-foundation.org/en'
+=======
+<<<<<<< Updated upstream
+    baseUrl: 'http://new.beyond-foundation.org/en'
+=======
     baseUrl: 'http://beyond-foundation.test/en'
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
     handle: beyondFoundation
     hasUrls: true
     language: en
@@ -1078,7 +1095,15 @@ volumes:
     type: craft\volumes\Local
     url: assets/uploads
 <<<<<<< Updated upstream
-dateApplied: '2019-04-01 13:21:54'
+dateApplied: '2019-04-02 11:31:16'
 =======
-dateApplied: '2019-03-28 17:33:55'
+<<<<<<< Updated upstream
+dateApplied: '2019-04-01 16:57:29'
+=======
+<<<<<<< Updated upstream
+dateApplied: '2019-04-01 16:57:29'
+=======
+dateApplied: '2019-04-01 14:39:59'
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 >>>>>>> Stashed changes

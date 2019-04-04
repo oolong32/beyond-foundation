@@ -1,7 +1,7 @@
 <<<<<<< Updated upstream
-dateModified: 1553785234
+dateModified: 1553785742
 =======
-dateModified: 1553783812
+dateModified: 1553785314
 >>>>>>> Stashed changes
 email:
   fromEmail: renner@belingthoenen.com
@@ -456,7 +456,7 @@ sections:
         titleFormat: ''
         titleLabel: Name
     handle: artitstsEntries
-    name: 'Artists Entries'
+    name: '4 Artists Entries'
     propagateEntries: true
     siteSettings:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
@@ -503,7 +503,7 @@ sections:
         titleFormat: ''
         titleLabel: 'Album Title'
     handle: musicProductionEntries
-    name: 'Music Production Entries'
+    name: '3 Music Production Entries'
     propagateEntries: true
     siteSettings:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
@@ -603,7 +603,7 @@ sections:
         titleFormat: ''
         titleLabel: Titel
     handle: encouragementEntries
-    name: 'Encouragement Entries'
+    name: '6 Encouragement Entries'
     propagateEntries: true
     siteSettings:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
@@ -647,7 +647,7 @@ sections:
         titleFormat: ''
         titleLabel: 'Titel (wird nicht angezeigt)'
     handle: homeTeasers
-    name: 'Home Teaser Entries'
+    name: '1 Home Teaser Entries'
     propagateEntries: true
     siteSettings:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
@@ -729,7 +729,7 @@ sections:
         titleFormat: ''
         titleLabel: Titel
     handle: eventsTeasers
-    name: 'Events Teaser Entries'
+    name: '5 Events Teaser Entries'
     propagateEntries: true
     siteSettings:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
@@ -1043,7 +1043,7 @@ volumes:
     type: craft\volumes\Local
     url: assets/uploads
 <<<<<<< Updated upstream
-dateApplied: '2019-03-28 16:00:49'
+dateApplied: '2019-03-28 16:09:15'
 =======
-dateApplied: '2019-03-28 15:43:05'
+dateApplied: '2019-03-28 16:02:05'
 >>>>>>> Stashed changes

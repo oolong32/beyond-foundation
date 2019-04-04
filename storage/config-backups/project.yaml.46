@@ -1,7 +1,7 @@
 <<<<<<< Updated upstream
-dateModified: 1553785249
+dateModified: 1553785755
 =======
-dateModified: 1553784185
+dateModified: 1553785325
 >>>>>>> Stashed changes
 email:
   fromEmail: renner@belingthoenen.com
@@ -456,7 +456,7 @@ sections:
         titleFormat: ''
         titleLabel: Name
     handle: artitstsEntries
-    name: 'Artists Entries'
+    name: '4 Artists Entries'
     propagateEntries: true
     siteSettings:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
@@ -503,7 +503,7 @@ sections:
         titleFormat: ''
         titleLabel: 'Album Title'
     handle: musicProductionEntries
-    name: 'Music Production Entries'
+    name: '3 Music Production Entries'
     propagateEntries: true
     siteSettings:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
@@ -603,7 +603,7 @@ sections:
         titleFormat: ''
         titleLabel: Titel
     handle: encouragementEntries
-    name: 'Encouragement Entries'
+    name: '6 Encouragement Entries'
     propagateEntries: true
     siteSettings:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
@@ -631,7 +631,6 @@ sections:
                 fields:
                   387a6e57-35e5-47bd-9182-119d7ccccf16:
                     required: true
-<<<<<<< Updated upstream
                     sortOrder: 3
                   bfe0f040-f095-416d-b4cf-39c83419018b:
                     required: true
@@ -639,12 +638,6 @@ sections:
                   dd3b36a3-d68e-4857-b2c2-59bfc760dc64:
                     required: true
                     sortOrder: 2
-=======
-                    sortOrder: 2
-                  bfe0f040-f095-416d-b4cf-39c83419018b:
-                    required: true
-                    sortOrder: 1
->>>>>>> Stashed changes
                 name: 'Tab 1'
                 sortOrder: 1
         handle: homeTeaserEntries
@@ -652,11 +645,7 @@ sections:
         name: 'Home Teaser Entries'
         sortOrder: 1
         titleFormat: ''
-<<<<<<< Updated upstream
         titleLabel: 'Titel (wird nicht angezeigt)'
-=======
-        titleLabel: Titel
->>>>>>> Stashed changes
     handle: homeTeasers
     name: '1 Home Teaser Entries'
     propagateEntries: true
@@ -740,7 +729,7 @@ sections:
         titleFormat: ''
         titleLabel: Titel
     handle: eventsTeasers
-    name: 'Events Teaser Entries'
+    name: '5 Events Teaser Entries'
     propagateEntries: true
     siteSettings:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
@@ -992,7 +981,7 @@ sections:
         titleFormat: ''
         titleLabel: Name
     handle: teamEntries
-    name: 'Team Entries'
+    name: '2 Team Entries'
     propagateEntries: true
     siteSettings:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
@@ -1054,7 +1043,7 @@ volumes:
     type: craft\volumes\Local
     url: assets/uploads
 <<<<<<< Updated upstream
-dateApplied: '2019-03-28 16:01:16'
+dateApplied: '2019-03-28 17:25:12'
 =======
-dateApplied: '2019-03-28 15:48:35'
+dateApplied: '2019-03-28 16:02:11'
 >>>>>>> Stashed changes

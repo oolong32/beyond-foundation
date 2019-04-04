@@ -1,7 +1,7 @@
 <<<<<<< Updated upstream
-dateModified: 1553785331
+dateModified: 1553790852
 =======
-dateModified: 1553785300
+dateModified: 1553790345
 >>>>>>> Stashed changes
 email:
   fromEmail: renner@belingthoenen.com
@@ -381,6 +381,32 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Url
+  f01db52f-6f1f-4abd-aa2c-4a8b40100e97:
+    contentColumnType: string
+    fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
+    handle: heroImage
+    instructions: 'Ein grosses Bild, Format 16:9 (wird beschnitten)'
+    name: 'Hero Image'
+    searchable: false
+    settings:
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:9eb7856b-e672-4fbf-b4b5-9d00ee79c726'
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: ''
+      restrictFiles: '1'
+      selectionLabel: ''
+      singleUploadLocationSource: 'volume:9eb7856b-e672-4fbf-b4b5-9d00ee79c726'
+      singleUploadLocationSubpath: images/teaser-images/
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: '1'
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
   f509c340-3109-4f76-a749-0569c3dd49ae:
     contentColumnType: text
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
@@ -397,6 +423,23 @@ fields:
       placeholder: ''
     translationKeyFormat: null
     translationMethod: site
+    type: craft\fields\PlainText
+  f6548108-90f5-44ed-a556-c434e6b9778f:
+    contentColumnType: text
+    fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
+    handle: bildlegende
+    instructions: ''
+    name: Bildlegende
+    searchable: true
+    settings:
+      charLimit: '60'
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
     type: craft\fields\PlainText
 imageTransforms:
   2b5e3b27-8e0b-48e4-a280-8d1460f59282:
@@ -482,18 +525,24 @@ sections:
             tabs:
               -
                 fields:
+                  387a6e57-35e5-47bd-9182-119d7ccccf16:
+                    required: false
+                    sortOrder: 2
                   3f013fdf-9050-4d51-b818-050c8a105e6f:
                     required: true
-                    sortOrder: 1
+                    sortOrder: 3
                   63060068-23fd-4091-9e13-96d982008822:
                     required: true
-                    sortOrder: 3
+                    sortOrder: 5
                   72357970-aa0e-4ab8-bc96-4899cd33dd40:
                     required: false
-                    sortOrder: 4
+                    sortOrder: 6
                   b729c087-ed9f-4371-8cf0-48e6ef2d9e6a:
                     required: true
-                    sortOrder: 2
+                    sortOrder: 4
+                  f01db52f-6f1f-4abd-aa2c-4a8b40100e97:
+                    required: false
+                    sortOrder: 1
                 name: 'Music Production'
                 sortOrder: 1
         handle: musicProductionEntries
@@ -803,12 +852,12 @@ sections:
                 sortOrder: '1'
         handle: story
         hasTitleField: '0'
-        name: '2 Team'
+        name: Team
         sortOrder: 1
         titleFormat: '{section.name|raw}'
         titleLabel: 'Titel (Navigation)'
     handle: team
-    name: '2 Team'
+    name: Team
     propagateEntries: true
     siteSettings:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
@@ -981,7 +1030,7 @@ sections:
         titleFormat: ''
         titleLabel: Name
     handle: teamEntries
-    name: 'Team Entries'
+    name: '2 Team Entries'
     propagateEntries: true
     siteSettings:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
@@ -1043,7 +1092,7 @@ volumes:
     type: craft\volumes\Local
     url: assets/uploads
 <<<<<<< Updated upstream
-dateApplied: '2019-03-28 16:03:22'
+dateApplied: '2019-03-28 17:45:16'
 =======
-dateApplied: '2019-03-28 16:01:49'
+dateApplied: '2019-03-28 17:25:57'
 >>>>>>> Stashed changes
