@@ -562,6 +562,15 @@ main {
       main section.alternating-grid-image-large .image-cell img {
         width: 100%;
         height: auto; }
+      main section.alternating-grid-image-large .image-cell .video-container {
+        position: relative;
+        padding-bottom: 56.25%; }
+        main section.alternating-grid-image-large .image-cell .video-container iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%; }
     main section.alternating-grid-image-large .text-column {
       grid-column: -2/-1;
       display: inline-block;
