@@ -38,7 +38,7 @@
       <section class="single-col">
       {% if entry.video|length %}
         {% set video = entry.video %}
-	<div class=".video-container">
+	<div class="video-container">
         {{  video.getEmbed() }}
 	</div>
       {% elseif entry.heroImage|length %}
