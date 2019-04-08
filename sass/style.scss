@@ -365,6 +365,14 @@ a.social-media-link:hover svg path { fill: $blue-hover; }
 
 /* End Link Styles }}}2 */
 
+/* Small Stuff {{{2 */
+
+.igroove-sms { 
+  font-size: 1rem;
+}
+
+/* End Small Stuff }}}2 */
+
 /* End Basic Text formatting }}}1 */
 
 /* Buttons {{{1 */
@@ -822,6 +830,7 @@ main {
         div {
           display: flex;
           flex-direction: column;
+          height: 100%;
           justify-content: flex-end;
           align-content: center;
           img {
@@ -838,6 +847,14 @@ main {
     .hear { grid-column: 1/-1; }
     .buy { grid-column: 1/3; }
     .share { grid-column: 3/4; }
+    .igroove-sms { 
+      grid-column: -2/-1;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      p { margin: 0;}
+    }
  }
   
   /* End Main Grids order-download Grid }}}3 */
@@ -1347,6 +1364,7 @@ footer {
       .igroove-sms {
         width: 100%;
         margin: 1.5rem 0 0;
+        text-align: left;
       }
     }
 

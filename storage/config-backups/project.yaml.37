@@ -1,4 +1,4 @@
-dateModified: 1554378125
+dateModified: 1554378883
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -599,28 +599,37 @@ sections:
                 fields:
                   013f9713-f734-4215-90dc-70fd25cf2306:
                     required: false
-                    sortOrder: 6
+                    sortOrder: 9
                   07a81bf3-21ea-4fc5-bcb3-e2b3eddcc8f4:
                     required: false
-                    sortOrder: 5
+                    sortOrder: 8
+                  387a6e57-35e5-47bd-9182-119d7ccccf16:
+                    required: false
+                    sortOrder: 6
                   3f013fdf-9050-4d51-b818-050c8a105e6f:
                     required: false
-                    sortOrder: 8
-                  597d3228-4fef-4e48-b794-3e488a088311:
+                    sortOrder: 11
+                  417b399c-4166-4897-a491-00dff2058bd5:
                     required: false
                     sortOrder: 4
+                  597d3228-4fef-4e48-b794-3e488a088311:
+                    required: false
+                    sortOrder: 7
                   63060068-23fd-4091-9e13-96d982008822:
                     required: false
                     sortOrder: 3
                   aac9b682-0ac3-4291-bc12-f31f73e6cad9:
                     required: false
-                    sortOrder: 7
+                    sortOrder: 10
                   b729c087-ed9f-4371-8cf0-48e6ef2d9e6a:
                     required: false
                     sortOrder: 2
                   bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
                     required: false
                     sortOrder: 1
+                  f01db52f-6f1f-4abd-aa2c-4a8b40100e97:
+                    required: false
+                    sortOrder: 5
                 name: 'Tab 1'
                 sortOrder: 1
         handle: musicNetwork
@@ -883,22 +892,31 @@ sections:
             tabs:
               -
                 fields:
+                  387a6e57-35e5-47bd-9182-119d7ccccf16:
+                    required: false
+                    sortOrder: 6
+                  417b399c-4166-4897-a491-00dff2058bd5:
+                    required: false
+                    sortOrder: 4
                   597d3228-4fef-4e48-b794-3e488a088311:
-                    required: '0'
-                    sortOrder: '4'
+                    required: false
+                    sortOrder: 7
                   78cf4c77-636b-48a0-b594-60ab78ef26a1:
-                    required: '0'
-                    sortOrder: '2'
+                    required: false
+                    sortOrder: 2
                   8a5aa2a1-d84f-4bbf-9ea5-4c6b67c7c105:
-                    required: '0'
-                    sortOrder: '3'
+                    required: false
+                    sortOrder: 3
                   bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
-                    required: '0'
-                    sortOrder: '1'
+                    required: false
+                    sortOrder: 1
+                  f01db52f-6f1f-4abd-aa2c-4a8b40100e97:
+                    required: false
+                    sortOrder: 5
                 name: 'Tab 1'
-                sortOrder: '1'
+                sortOrder: 1
         handle: story
-        hasTitleField: '0'
+        hasTitleField: false
         name: About
         sortOrder: 1
         titleFormat: '{section.name|raw}'
@@ -927,9 +945,15 @@ sections:
             tabs:
               -
                 fields:
-                  597d3228-4fef-4e48-b794-3e488a088311:
+                  387a6e57-35e5-47bd-9182-119d7ccccf16:
+                    required: false
+                    sortOrder: 5
+                  417b399c-4166-4897-a491-00dff2058bd5:
                     required: false
                     sortOrder: 4
+                  597d3228-4fef-4e48-b794-3e488a088311:
+                    required: false
+                    sortOrder: 6
                   63060068-23fd-4091-9e13-96d982008822:
                     required: false
                     sortOrder: 3
@@ -1132,4 +1156,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-04-04 13:48:55'
+dateApplied: '2019-04-04 14:31:25'

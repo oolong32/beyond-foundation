@@ -262,6 +262,11 @@ a.social-media-link:hover svg path {
 
 /* End Teaser Links }}}3 */
 /* End Link Styles }}}2 */
+/* Small Stuff {{{2 */
+.igroove-sms {
+  font-size: 1rem; }
+
+/* End Small Stuff }}}2 */
 /* End Basic Text formatting }}}1 */
 /* Buttons {{{1 */
 .other-button,
@@ -639,6 +644,7 @@ main {
         main .order-download .share a div {
           display: flex;
           flex-direction: column;
+          height: 100%;
           justify-content: flex-end;
           align-content: center; }
           main .order-download .hear a div img,
@@ -657,6 +663,14 @@ main {
       grid-column: 1/3; }
     main .order-download .share {
       grid-column: 3/4; }
+    main .order-download .igroove-sms {
+      grid-column: -2/-1;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      main .order-download .igroove-sms p {
+        margin: 0; }
   main .artist-teaser-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -1079,7 +1093,8 @@ footer {
         margin: 0 10px; }
       main .order-download .igroove-sms {
         width: 100%;
-        margin: 1.5rem 0 0; }
+        margin: 1.5rem 0 0;
+        text-align: left; }
     main .artist-teaser-grid {
       grid-template-columns: 1fr; }
       main .artist-teaser-grid .artist-teaser {

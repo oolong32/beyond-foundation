@@ -1,7 +1,7 @@
 <<<<<<< Updated upstream
-dateModified: 1554282323
+dateModified: 1554289931
 =======
-dateModified: 1554275994
+dateModified: 1554282296
 >>>>>>> Stashed changes
 email:
   fromEmail: renner@belingthoenen.com
@@ -301,6 +301,32 @@ fields:
       selectionLabel: ''
       singleUploadLocationSource: 'volume:9eb7856b-e672-4fbf-b4b5-9d00ee79c726'
       singleUploadLocationSubpath: images/teaser-images
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: '1'
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  d175683d-6e5d-484f-9fc1-5678f4b88c32:
+    contentColumnType: string
+    fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
+    handle: slideshowImages
+    instructions: "Bilder für die Slideshow auf der Home Page.\r\n– Breite min. 2000px\r\n–\_Dateigrösse < 1MB"
+    name: 'Slideshow Bilder'
+    searchable: true
+    settings:
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:9eb7856b-e672-4fbf-b4b5-9d00ee79c726'
+      defaultUploadLocationSubpath: images/slideshow
+      limit: ''
+      localizeRelations: ''
+      restrictFiles: '1'
+      selectionLabel: ''
+      singleUploadLocationSource: 'volume:9eb7856b-e672-4fbf-b4b5-9d00ee79c726'
+      singleUploadLocationSubpath: images/slideshow
       source: null
       sources: '*'
       targetSiteId: null
@@ -743,19 +769,6 @@ sections:
     enableVersioning: true
     entryTypes:
       dd2dc2fc-e081-483b-af9d-d3bd8a2e18ff:
-        fieldLayouts:
-          41d47ce2-2da4-487c-9b31-51a46b231de6:
-            tabs:
-              -
-                fields:
-                  752ed5fb-e81b-4651-8eed-3bb3f4c358f9:
-                    required: false
-                    sortOrder: 2
-                  bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
-                    required: false
-                    sortOrder: 1
-                name: 'Tab 1'
-                sortOrder: 1
         handle: imprint
         hasTitleField: false
         name: Impressum
@@ -991,16 +1004,7 @@ sections:
             tabs:
               -
                 fields:
-                  597d3228-4fef-4e48-b794-3e488a088311:
-                    required: false
-                    sortOrder: 4
-                  78cf4c77-636b-48a0-b594-60ab78ef26a1:
-                    required: false
-                    sortOrder: 2
-                  8a5aa2a1-d84f-4bbf-9ea5-4c6b67c7c105:
-                    required: false
-                    sortOrder: 3
-                  bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
+                  d175683d-6e5d-484f-9fc1-5678f4b88c32:
                     required: false
                     sortOrder: 1
                 name: 'Tab 1'
@@ -1118,7 +1122,7 @@ volumes:
     type: craft\volumes\Local
     url: assets/uploads
 <<<<<<< Updated upstream
-dateApplied: '2019-04-03 13:02:48'
+dateApplied: '2019-04-03 13:12:37'
 =======
-dateApplied: '2019-04-03 11:01:57'
+dateApplied: '2019-04-03 11:05:23'
 >>>>>>> Stashed changes

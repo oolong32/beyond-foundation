@@ -84,17 +84,11 @@
               </div>
             </a>
           {% endif %}
-          <div class="igroove-sms" style="width: 280px; justify-content: center;">
-            {# Todo #}
-            {# Todo #}
-            {# Todo #}
-            {# Todo #}
-            {# Todo #}
-            {# Todo #}
-            {# Todo #}
-            {# Todo #}
-            <p style="font-weight: 300; text-align: left;">Sende eine SMS mit «igroove beyond4» an die Nummer 60660 (DE) oder 9000 (CH).</p>
-          </div>
+          {% if entry.iGrooveSmsText|length %}
+            <div class="igroove-sms" style="width: 280px; justify-content: center;">
+              <p>{{ entry.iGrooveSmsText }}</p>
+            </div>
+          {% endif %}
         </div>
 
         <div class="buy">
