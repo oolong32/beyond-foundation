@@ -629,24 +629,28 @@ main {
       main .order-download .share h4 {
         grid-column: 1/-1;
         margin: 0; }
-      main .order-download .hear div,
-      main .order-download .buy div,
-      main .order-download .share div {
+      main .order-download .hear a,
+      main .order-download .buy a,
+      main .order-download .share a {
         grid-column: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-content: center; }
-        main .order-download .hear div img,
-        main .order-download .buy div img,
-        main .order-download .share div img {
-          margin: 0.75rem auto; }
-        main .order-download .hear div p,
-        main .order-download .buy div p,
-        main .order-download .share div p {
-          font-size: 0.875rem;
-          font-weight: 500;
-          text-align: center; }
+        border: none; }
+        main .order-download .hear a div,
+        main .order-download .buy a div,
+        main .order-download .share a div {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          align-content: center; }
+          main .order-download .hear a div img,
+          main .order-download .buy a div img,
+          main .order-download .share a div img {
+            margin: 0.75rem auto; }
+          main .order-download .hear a div p,
+          main .order-download .buy a div p,
+          main .order-download .share a div p {
+            font-size: 0.875rem;
+            font-weight: 500;
+            text-align: center; }
     main .order-download .hear {
       grid-column: 1/-1; }
     main .order-download .buy {

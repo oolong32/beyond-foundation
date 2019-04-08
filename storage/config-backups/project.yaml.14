@@ -1,9 +1,11 @@
-dateModified: 1554378535
+dateModified: 1554717465
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
   transportType: craft\mail\transportadapters\Sendmail
 fieldGroups:
+  2d31e491-87da-48b8-85d6-72aba43f554c:
+    name: 'Share Links'
   85d8c0e7-6a43-4691-8d57-0ea516983de7:
     name: 'Music Production Entries'
   97dfc979-5ae8-418e-9249-5b4fdebd7c80:
@@ -62,6 +64,30 @@ fields:
     searchable: true
     settings:
       placeholder: 'https://'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
+  12774cd1-bd04-43d7-ab20-3391917cdf53:
+    contentColumnType: string
+    fieldGroup: 85d8c0e7-6a43-4691-8d57-0ea516983de7
+    handle: amazonLinkHear
+    instructions: 'URL zu diesem Angebot auf Amazon'
+    name: 'Amazon-Link (Hören)'
+    searchable: true
+    settings:
+      placeholder: 'https://…'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
+  265f2e45-2db1-4395-ab69-942f48810f66:
+    contentColumnType: string
+    fieldGroup: 85d8c0e7-6a43-4691-8d57-0ea516983de7
+    handle: spotifyLink
+    instructions: 'URL zu diesem Angebot auf Spotify'
+    name: 'Spotify Link'
+    searchable: true
+    settings:
+      placeholder: 'https://…'
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Url
@@ -305,12 +331,62 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Assets
+  c5dbaf87-1fca-4ec0-9285-f73a2ec10ab3:
+    contentColumnType: string
+    fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
+    handle: slideshowImagesMobile
+    instructions: 'Bilder für die Slideshow auf der Mobile Page (max. 5 Bilder): Hochformat, Breite ~ 750px, Dateigrösse < 1MB'
+    name: 'Slideshow Bilder (Mobile)'
+    searchable: true
+    settings:
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:9eb7856b-e672-4fbf-b4b5-9d00ee79c726'
+      defaultUploadLocationSubpath: images/slideshow/mobile
+      limit: '5'
+      localizeRelations: ''
+      restrictFiles: '1'
+      selectionLabel: ''
+      singleUploadLocationSource: 'volume:9eb7856b-e672-4fbf-b4b5-9d00ee79c726'
+      singleUploadLocationSubpath: images/slideshow/mobile
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: '1'
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  cab30499-6a6d-4965-ba7a-ed405ffc77ee:
+    contentColumnType: string
+    fieldGroup: 85d8c0e7-6a43-4691-8d57-0ea516983de7
+    handle: itunesLink
+    instructions: 'Die URL zu diesem Angebot auf iTunes'
+    name: iTunes-Link
+    searchable: true
+    settings:
+      placeholder: 'https://…'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
+  cf6d51c0-4331-4c58-b92c-8621eae977fd:
+    contentColumnType: string
+    fieldGroup: 85d8c0e7-6a43-4691-8d57-0ea516983de7
+    handle: googlePlayLink
+    instructions: 'URL zu diesem Angebot auf Google Play'
+    name: 'Google Play Link'
+    searchable: true
+    settings:
+      placeholder: 'https://…'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
   d175683d-6e5d-484f-9fc1-5678f4b88c32:
     contentColumnType: string
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
     handle: slideshowImages
-    instructions: "Bilder für die Slideshow auf der Home Page.\r\n– Breite min. 2000px\r\n–\_Dateigrösse < 1MB"
-    name: 'Slideshow Bilder'
+    instructions: "Slideshow auf der Home Page, max. 10 Bilder: (Breite ~ 2000px,\_Dateigrösse < 1MB)"
+    name: 'Slideshow Bilder (Desktop)'
     searchable: true
     settings:
       allowedKinds:
@@ -477,14 +553,14 @@ plugins:
           clientSecret: 0uCV3T2WxPjmoee3_7h91Xra
       tokens:
         youtube:
-          accessToken: ya29.GlzgBqUpPxWvFU-W0k5G5YfLOXJJrGrUgGSeQS1kyPM1FsFgCJ1TtbfDgxQUMfzRrI6VwgXZH0nbaYuqYn4eORybp1gg-IGAaGTp63v4tkTT5nmsmigQXVAaIAAyqw
-          expires: 1554279594
+          accessToken: ya29.GlzlBhRLqYWGdGOm7RORlkPCJOt9oI1cl69iBsvWwNZLoBpQDZGE2KU_TdmzNYwd8vbdUxdr6q-vGptRYaeKKkW8B33MI5jKybagoum5TSiOz-zsS9lWRZN8WodNXA
+          expires: 1554719501
           refreshToken: 1/h_aaH-zGnHYJCo5IJxtfkrdl09zaCcnwd20rF1paffZJ-qin2ZCXBzCqbn4gpn5A
           resourceOwnerId: null
           values:
             values:
-              id_token: eyJhbGciOiJSUzI1NiIsImtpZCI6ImE0MzEzZTdmZDFlOWUyYTRkZWQzYjI5MmQyYTdmNGU1MTk1NzQzMDgiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTU5MjQ2NDUyNTc5OTAyMzQ3NDYiLCJlbWFpbCI6ImJleW9uZHNpbmdpbmdjb21AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJZLW9FSW1NaDJwS21MUFhvRjc2UjdnIiwibmFtZSI6IkJleW9uZCBTaW5naW5nIiwicGljdHVyZSI6Imh0dHBzOi8vbGg1Lmdvb2dsZXVzZXJjb250ZW50LmNvbS8tQnJZdUI5d1JDN0UvQUFBQUFBQUFBQUkvQUFBQUFBQUFBQWsvZVNWWTVhamtmRVUvczk2LWMvcGhvdG8uanBnIiwiZ2l2ZW5fbmFtZSI6IkJleW9uZCIsImZhbWlseV9uYW1lIjoiU2luZ2luZyIsImxvY2FsZSI6ImRlIiwiaWF0IjoxNTU0Mjc1OTk0LCJleHAiOjE1NTQyNzk1OTR9.FwfvtUP1ZbW1F90nD0p0uLvGlq56710mJ74nR2LYZ-WNQaTvRx4V5TE7gUmUvWdRiEoB8fdV6XRwLJyZnoyBF_QbGdKgj4TUmws58lDksW0MsDRe-GDaa6q7dtsyiUk26jzdtLgq8UzeiQaoq8zHBe-ZxbZtFQtBGO1y-x6DYW6DZpFyq51wsmnZTA8NZ4m8SNZWQmmXF4tgGC1j18R4m3tdlkd1uORG6rMkmVqho9Zpg24c-HplvwrvlTCsuMo5BgKeAw4jnX5NaOYlqdjVnfUq3C82pEn0LYVs08fkZA-fl0Mbvxhkt4Gm5fesNRRtvu8lR-bO0n1D1-KkK1d57A
-              scope: 'https://www.googleapis.com/auth/youtube.readonly https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/youtube https://www.googleapis.com/auth/userinfo.profile'
+              id_token: eyJhbGciOiJSUzI1NiIsImtpZCI6IjZmNjc4MWJhNzExOTlhNjU4ZTc2MGFhNWFhOTNlNWZjM2RjNzUyYjUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTU5MjQ2NDUyNTc5OTAyMzQ3NDYiLCJlbWFpbCI6ImJleW9uZHNpbmdpbmdjb21AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJHdXlST1Z1a04yMndXcDVIckdmT0lBIiwibmFtZSI6IkJleW9uZCBTaW5naW5nIiwicGljdHVyZSI6Imh0dHBzOi8vbGg1Lmdvb2dsZXVzZXJjb250ZW50LmNvbS8tQnJZdUI5d1JDN0UvQUFBQUFBQUFBQUkvQUFBQUFBQUFBQWsvZVNWWTVhamtmRVUvczk2LWMvcGhvdG8uanBnIiwiZ2l2ZW5fbmFtZSI6IkJleW9uZCIsImZhbWlseV9uYW1lIjoiU2luZ2luZyIsImxvY2FsZSI6ImRlIiwiaWF0IjoxNTU0NzE1OTAxLCJleHAiOjE1NTQ3MTk1MDF9.ZZkA6rjn3WtM2pLRug5220KzZHNn8lFb29Q3aCYWEytzCln2xHXMWem_HBfx1UBEjEYM51jv7aIOiFnfYmGbov6SdBoV8cBpC2-S7Z2abNwLZegnZxcdatFWcPapGKYINx0Qupag_fzF2GHDwB2ATOeRP-JdXlwjzlmr1LgeaeegiSkQ6c7ROPqK8okA8ONYxhxTHgNeB0lCaV7TJsiisDYYcw9-WH5FLnU8uYouoqtHrcClMSc2UzVd6JoIHNqn3nXClOxnDg2DRW_plJlmnfZt2inv8Npt11-OJKYN__UQ9QIoaxYPFTKofEJvDp8B3toUlmMTSzdpREonE1FRJg
+              scope: 'https://www.googleapis.com/auth/youtube https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/youtube.readonly https://www.googleapis.com/auth/userinfo.email'
               token_type: Bearer
       videosPerPage: 30
 sections:
@@ -599,28 +675,37 @@ sections:
                 fields:
                   013f9713-f734-4215-90dc-70fd25cf2306:
                     required: false
-                    sortOrder: 6
+                    sortOrder: 9
                   07a81bf3-21ea-4fc5-bcb3-e2b3eddcc8f4:
                     required: false
-                    sortOrder: 5
+                    sortOrder: 8
+                  387a6e57-35e5-47bd-9182-119d7ccccf16:
+                    required: false
+                    sortOrder: 6
                   3f013fdf-9050-4d51-b818-050c8a105e6f:
                     required: false
-                    sortOrder: 8
-                  597d3228-4fef-4e48-b794-3e488a088311:
+                    sortOrder: 11
+                  417b399c-4166-4897-a491-00dff2058bd5:
                     required: false
                     sortOrder: 4
+                  597d3228-4fef-4e48-b794-3e488a088311:
+                    required: false
+                    sortOrder: 7
                   63060068-23fd-4091-9e13-96d982008822:
                     required: false
                     sortOrder: 3
                   aac9b682-0ac3-4291-bc12-f31f73e6cad9:
                     required: false
-                    sortOrder: 7
+                    sortOrder: 10
                   b729c087-ed9f-4371-8cf0-48e6ef2d9e6a:
                     required: false
                     sortOrder: 2
                   bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
                     required: false
                     sortOrder: 1
+                  f01db52f-6f1f-4abd-aa2c-4a8b40100e97:
+                    required: false
+                    sortOrder: 5
                 name: 'Tab 1'
                 sortOrder: 1
         handle: musicNetwork
@@ -883,22 +968,31 @@ sections:
             tabs:
               -
                 fields:
+                  387a6e57-35e5-47bd-9182-119d7ccccf16:
+                    required: false
+                    sortOrder: 6
+                  417b399c-4166-4897-a491-00dff2058bd5:
+                    required: false
+                    sortOrder: 4
                   597d3228-4fef-4e48-b794-3e488a088311:
-                    required: '0'
-                    sortOrder: '4'
+                    required: false
+                    sortOrder: 7
                   78cf4c77-636b-48a0-b594-60ab78ef26a1:
-                    required: '0'
-                    sortOrder: '2'
+                    required: false
+                    sortOrder: 2
                   8a5aa2a1-d84f-4bbf-9ea5-4c6b67c7c105:
-                    required: '0'
-                    sortOrder: '3'
+                    required: false
+                    sortOrder: 3
                   bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
-                    required: '0'
-                    sortOrder: '1'
+                    required: false
+                    sortOrder: 1
+                  f01db52f-6f1f-4abd-aa2c-4a8b40100e97:
+                    required: false
+                    sortOrder: 5
                 name: 'Tab 1'
-                sortOrder: '1'
+                sortOrder: 1
         handle: story
-        hasTitleField: '0'
+        hasTitleField: false
         name: About
         sortOrder: 1
         titleFormat: '{section.name|raw}'
@@ -1021,6 +1115,9 @@ sections:
             tabs:
               -
                 fields:
+                  c5dbaf87-1fca-4ec0-9285-f73a2ec10ab3:
+                    required: false
+                    sortOrder: 2
                   d175683d-6e5d-484f-9fc1-5678f4b88c32:
                     required: false
                     sortOrder: 1
@@ -1138,4 +1235,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-04-04 13:51:28'
+dateApplied: '2019-04-08 11:57:56'

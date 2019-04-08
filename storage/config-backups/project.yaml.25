@@ -1,8 +1,4 @@
-<<<<<<< Updated upstream
-dateModified: 1554289663
-=======
-dateModified: 1554282128
->>>>>>> Stashed changes
+dateModified: 1554290428
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -844,21 +840,15 @@ sections:
               -
                 fields:
                   597d3228-4fef-4e48-b794-3e488a088311:
-                    required: false
-                    sortOrder: 2
+                    required: '0'
+                    sortOrder: '2'
                   bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
-                    required: false
-                    sortOrder: 1
+                    required: '0'
+                    sortOrder: '1'
                 name: 'Tab 1'
-<<<<<<< Updated upstream
                 sortOrder: '1'
         handle: projects
         hasTitleField: '0'
-=======
-                sortOrder: 1
-        handle: events
-        hasTitleField: false
->>>>>>> Stashed changes
         name: Projects
         sortOrder: 1
         titleFormat: '{section.name|raw}'
@@ -887,6 +877,15 @@ sections:
             tabs:
               -
                 fields:
+                  597d3228-4fef-4e48-b794-3e488a088311:
+                    required: '0'
+                    sortOrder: '4'
+                  78cf4c77-636b-48a0-b594-60ab78ef26a1:
+                    required: '0'
+                    sortOrder: '2'
+                  8a5aa2a1-d84f-4bbf-9ea5-4c6b67c7c105:
+                    required: '0'
+                    sortOrder: '3'
                   bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
                     required: '0'
                     sortOrder: '1'
@@ -894,24 +893,24 @@ sections:
                 sortOrder: '1'
         handle: story
         hasTitleField: '0'
-        name: Team
+        name: About
         sortOrder: 1
         titleFormat: '{section.name|raw}'
         titleLabel: 'Titel (Navigation)'
-    handle: team
-    name: Team
+    handle: about
+    name: About
     propagateEntries: true
     siteSettings:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
         enabledByDefault: true
         hasUrls: true
-        template: team/index
-        uriFormat: team
+        template: about/index
+        uriFormat: about
       96f6905b-bcc3-4e74-91a8-e5458eb5e532:
         enabledByDefault: true
         hasUrls: true
-        template: team/index
-        uriFormat: team
+        template: about/index
+        uriFormat: about
     type: single
   d1b65841-7b36-47c5-8ff8-7adc6fc614c0:
     enableVersioning: true
@@ -1010,16 +1009,7 @@ sections:
             tabs:
               -
                 fields:
-                  597d3228-4fef-4e48-b794-3e488a088311:
-                    required: false
-                    sortOrder: 4
-                  78cf4c77-636b-48a0-b594-60ab78ef26a1:
-                    required: false
-                    sortOrder: 2
-                  8a5aa2a1-d84f-4bbf-9ea5-4c6b67c7c105:
-                    required: false
-                    sortOrder: 3
-                  bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
+                  d175683d-6e5d-484f-9fc1-5678f4b88c32:
                     required: false
                     sortOrder: 1
                 name: 'Tab 1'
@@ -1136,8 +1126,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-<<<<<<< Updated upstream
-dateApplied: '2019-04-03 13:12:11'
-=======
-dateApplied: '2019-04-03 11:04:56'
->>>>>>> Stashed changes
+dateApplied: '2019-04-04 15:28:24'

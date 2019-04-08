@@ -44,57 +44,105 @@
 
         <div class="hear">
           <h4>{{ 'Hören'|t }}</h4>
-          <div class="itunes">
-            <img src="{{ alias('@assetBasePath') }}/assets/_pic/third-party-icons/apple.svg" alt="">
-            <p>iTunes</p>
-          </div>
-          <div class="amazon">
-            <img src="{{ alias('@assetBasePath') }}/assets/_pic/third-party-icons/amazon.svg" alt="">
-            <p>Amazon</p>
-          </div>
-          <div class="googleplay">
-            <img src="{{ alias('@assetBasePath') }}/assets/_pic/third-party-icons/gplay.svg" alt="">
-            <p>Google Play</p>
-          </div>
-          <div class="spotify">
-            <img src="{{ alias('@assetBasePath') }}/assets/_pic/third-party-icons/spotify.svg" alt="">
-            <p>Spotify</p>
-          </div>
-          <div class="igroove">
-            <img src="{{ alias('@assetBasePath') }}/assets/_pic/third-party-icons/igroove.svg" alt="">
-            <p>iGroove</p>
-          </div>
+          {% if entry.itunesLink|length %}
+            <a href="{{ entry.itunesLink }}" target="_blank">
+              <div class="itunes">
+                <img src="{{ alias('@assetBasePath') }}/assets/_pic/third-party-icons/apple.svg" alt="">
+                <p>iTunes</p>
+              </div>
+            </a>
+          {% endif %}
+          {% if entry.amazonLinkHear|length %}
+            <a href="{{ entry.amazonLinkHear }}" target="_blank">
+              <div class="amazon">
+                <img src="{{ alias('@assetBasePath') }}/assets/_pic/third-party-icons/amazon.svg" alt="">
+                <p>Amazon</p>
+              </div>
+            </a>
+          {% endif %}
+          {% if entry.googlePlayLink|length %}
+            <a href="{{ entry.googlePlayLink }}" target="_blank">
+              <div class="googleplay">
+                <img src="{{ alias('@assetBasePath') }}/assets/_pic/third-party-icons/gplay.svg" alt="">
+                <p>Google Play</p>
+              </div>
+            </a>
+          {% endif %}
+          {% if entry.spotifyLink|length %}
+            <a href="{{ entry.spotifyLink }}" target="_blank">
+              <div class="spotify">
+                <img src="{{ alias('@assetBasePath') }}/assets/_pic/third-party-icons/spotify.svg" alt="">
+                <p>Spotify</p>
+              </div>
+            </a>
+          {% endif %}
+          {% if entry.iGrooveLink|length %}
+            <a href="{{ entry.iGrooveLink }}" target="_blank">
+              <div class="igroove">
+                <img src="{{ alias('@assetBasePath') }}/assets/_pic/third-party-icons/igroove.svg" alt="">
+                <p>iGroove</p>
+              </div>
+            </a>
+          {% endif %}
           <div class="igroove-sms" style="width: 280px; justify-content: center;">
+            {# Todo #}
+            {# Todo #}
+            {# Todo #}
+            {# Todo #}
+            {# Todo #}
+            {# Todo #}
+            {# Todo #}
+            {# Todo #}
             <p style="font-weight: 300; text-align: left;">Sende eine SMS mit «igroove beyond4» an die Nummer 60660 (DE) oder 9000 (CH).</p>
           </div>
         </div>
 
         <div class="buy">
           <h4>{{ 'Kaufen'|t }}</h4>
-          <div class="amazon">
-            <img src="{{ alias('@assetBasePath') }}/assets/_pic/third-party-icons/amazon.svg" alt="">
-            <p>Amazon</p>
-          </div>
-          <div class="exlibris">
-            <img src="{{ alias('@assetBasePath') }}/assets/_pic/third-party-icons/exlibris.svg" alt="">
-            <p>ex libris</p>
-          </div>
-          <div class="cede">
-            <img src="{{ alias('@assetBasePath') }}/assets/_pic/third-party-icons/cede.svg" alt="">
-            <p>cede.ch</p>
-          </div>
+          {% if entry.amazonLinkBuy|length %}
+            <a href="{{ entry.amazonLinkBuy }}" target="_blank">
+              <div class="amazon">
+                <img src="{{ alias('@assetBasePath') }}/assets/_pic/third-party-icons/amazon.svg" alt="">
+                <p>Amazon</p>
+              </div>
+            </a>
+          {% endif %}
+          {% if entry.exLibrisLink|length %}
+            <a href="{{ entry.exLibrisLink }}" target="_blank">
+              <div class="exlibris">
+                <img src="{{ alias('@assetBasePath') }}/assets/_pic/third-party-icons/exlibris.svg" alt="">
+                <p>ex libris</p>
+              </div>
+            </a>
+          {% endif %}
+          {% if entry.cedeLink|length %}
+            <a href="{{ entry.cedeLink }}" target="_blank">
+              <div class="cede">
+                <img src="{{ alias('@assetBasePath') }}/assets/_pic/third-party-icons/cede.svg" alt="">
+                <p>cede.ch</p>
+              </div>
+            </a>
+          {% endif %}
         </div>
 
         <div class="share">
           <h4>{{ 'Teilen'|t }}</h4>
-          <div class="facebook">
-            <img src="{{ alias('@assetBasePath') }}/assets/_pic/third-party-icons/facebook.svg" alt="">
-            <p>Facebook</p>
-          </div>
-          <div class="soundcloud">
-            <img src="{{ alias('@assetBasePath') }}/assets/_pic/third-party-icons/soundcloud.svg" alt="">
-            <p>SoundCloud</p>
-          </div>
+          {% if entry.facebookLink|length %}
+            <a href="{{ entry.facebookLink }}" target="_blank">
+              <div class="facebook">
+                <img src="{{ alias('@assetBasePath') }}/assets/_pic/third-party-icons/facebook.svg" alt="">
+                <p>Facebook</p>
+              </div>
+            </a>
+          {% endif %}
+          {% if entry.soundcloudLink|length %}
+            <a href="{{ entry.soundcloudLink }}" _target="blank">
+              <div class="soundcloud">
+                <img src="{{ alias('@assetBasePath') }}/assets/_pic/third-party-icons/soundcloud.svg" alt="">
+                <p>SoundCloud</p>
+              </div>
+            </a>
+          {% endif %}
 
         </div>
 

@@ -816,19 +816,22 @@ main {
         grid-column: 1/-1;
         margin: 0;
       }
-      div { // Icon + Beschriftung Dienste
+      a { // Icon + Beschriftung Dienste
         grid-column: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-content: center;
-        img {
-          margin: 0.75rem auto;
-        }
-        p { // Beschriftung der Dienste
-          font-size: 0.875rem;
-          font-weight: $medium;
-          text-align: center;
+        border: none;
+        div {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          align-content: center;
+          img {
+            margin: 0.75rem auto;
+          }
+          p { // Beschriftung der Dienste
+            font-size: 0.875rem;
+            font-weight: $medium;
+            text-align: center;
+          }
         }
       }
     }

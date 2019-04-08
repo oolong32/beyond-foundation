@@ -1,8 +1,4 @@
-<<<<<<< Updated upstream
-dateModified: 1554275994
-=======
-dateModified: 1554209577
->>>>>>> Stashed changes
+dateModified: 1554381120
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -116,9 +112,9 @@ fields:
   417b399c-4166-4897-a491-00dff2058bd5:
     contentColumnType: string
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
-    handle: videoTest
-    instructions: ''
-    name: 'video test'
+    handle: video
+    instructions: "Share-Link zu einem Beyond-Singing Video, wird als eingebettetes Youtube-Video in die Website eingefügt.\r\nWenn es ein Video gibt, wird das Bild (siehe unten) nicht angezeigt."
+    name: Video
     searchable: true
     translationKeyFormat: null
     translationMethod: none
@@ -288,7 +284,7 @@ fields:
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
     handle: teaserImage
     instructions: 'Bild im Format 16:9'
-    name: Teaser-Bild
+    name: 'Bild (16:9)'
     searchable: true
     settings:
       allowedKinds:
@@ -301,6 +297,58 @@ fields:
       selectionLabel: ''
       singleUploadLocationSource: 'volume:9eb7856b-e672-4fbf-b4b5-9d00ee79c726'
       singleUploadLocationSubpath: images/teaser-images
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: '1'
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  c5dbaf87-1fca-4ec0-9285-f73a2ec10ab3:
+    contentColumnType: string
+    fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
+    handle: slideshowImagesMobile
+    instructions: "Bilder für die Slideshow auf der Mobile Page.\r\n– Breite min. 750px\r\n– Höhe ~ 2000px\r\n– Dateigrösse < 1MB"
+    name: 'Slideshow Bilder (Mobile)'
+    searchable: true
+    settings:
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:9eb7856b-e672-4fbf-b4b5-9d00ee79c726'
+      defaultUploadLocationSubpath: images/slideshow/mobile
+      limit: '5'
+      localizeRelations: ''
+      restrictFiles: '1'
+      selectionLabel: ''
+      singleUploadLocationSource: 'volume:9eb7856b-e672-4fbf-b4b5-9d00ee79c726'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: ''
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  d175683d-6e5d-484f-9fc1-5678f4b88c32:
+    contentColumnType: string
+    fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
+    handle: slideshowImages
+    instructions: "Bilder für die Slideshow auf der Home Page.\r\n– Breite min. 2000px\r\n–\_Dateigrösse < 1MB"
+    name: 'Slideshow Bilder (Desktop)'
+    searchable: true
+    settings:
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:9eb7856b-e672-4fbf-b4b5-9d00ee79c726'
+      defaultUploadLocationSubpath: images/slideshow
+      limit: ''
+      localizeRelations: ''
+      restrictFiles: '1'
+      selectionLabel: ''
+      singleUploadLocationSource: 'volume:9eb7856b-e672-4fbf-b4b5-9d00ee79c726'
+      singleUploadLocationSubpath: images/slideshow
       source: null
       sources: '*'
       targetSiteId: null
@@ -387,7 +435,7 @@ fields:
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
     handle: heroImage
     instructions: 'Ein grosses Bild, Format 16:9 (wird beschnitten)'
-    name: 'Hero Image'
+    name: 'Bild (statt Video)'
     searchable: false
     settings:
       allowedKinds:
@@ -521,22 +569,25 @@ sections:
                 fields:
                   387a6e57-35e5-47bd-9182-119d7ccccf16:
                     required: false
-                    sortOrder: 2
+                    sortOrder: 3
                   3f013fdf-9050-4d51-b818-050c8a105e6f:
                     required: true
-                    sortOrder: 3
-                  63060068-23fd-4091-9e13-96d982008822:
-                    required: true
-                    sortOrder: 5
-                  72357970-aa0e-4ab8-bc96-4899cd33dd40:
-                    required: false
-                    sortOrder: 6
-                  b729c087-ed9f-4371-8cf0-48e6ef2d9e6a:
-                    required: true
                     sortOrder: 4
-                  f01db52f-6f1f-4abd-aa2c-4a8b40100e97:
+                  417b399c-4166-4897-a491-00dff2058bd5:
                     required: false
                     sortOrder: 1
+                  63060068-23fd-4091-9e13-96d982008822:
+                    required: true
+                    sortOrder: 6
+                  72357970-aa0e-4ab8-bc96-4899cd33dd40:
+                    required: false
+                    sortOrder: 7
+                  b729c087-ed9f-4371-8cf0-48e6ef2d9e6a:
+                    required: true
+                    sortOrder: 5
+                  f01db52f-6f1f-4abd-aa2c-4a8b40100e97:
+                    required: false
+                    sortOrder: 2
                 name: 'Music Production'
                 sortOrder: 1
         handle: musicProductionEntries
@@ -574,28 +625,37 @@ sections:
                 fields:
                   013f9713-f734-4215-90dc-70fd25cf2306:
                     required: false
-                    sortOrder: 6
+                    sortOrder: 9
                   07a81bf3-21ea-4fc5-bcb3-e2b3eddcc8f4:
                     required: false
-                    sortOrder: 5
+                    sortOrder: 8
+                  387a6e57-35e5-47bd-9182-119d7ccccf16:
+                    required: false
+                    sortOrder: 6
                   3f013fdf-9050-4d51-b818-050c8a105e6f:
                     required: false
-                    sortOrder: 8
-                  597d3228-4fef-4e48-b794-3e488a088311:
+                    sortOrder: 11
+                  417b399c-4166-4897-a491-00dff2058bd5:
                     required: false
                     sortOrder: 4
+                  597d3228-4fef-4e48-b794-3e488a088311:
+                    required: false
+                    sortOrder: 7
                   63060068-23fd-4091-9e13-96d982008822:
                     required: false
                     sortOrder: 3
                   aac9b682-0ac3-4291-bc12-f31f73e6cad9:
                     required: false
-                    sortOrder: 7
+                    sortOrder: 10
                   b729c087-ed9f-4371-8cf0-48e6ef2d9e6a:
                     required: false
                     sortOrder: 2
                   bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
                     required: false
                     sortOrder: 1
+                  f01db52f-6f1f-4abd-aa2c-4a8b40100e97:
+                    required: false
+                    sortOrder: 5
                 name: 'Tab 1'
                 sortOrder: 1
         handle: musicNetwork
@@ -743,19 +803,6 @@ sections:
     enableVersioning: true
     entryTypes:
       dd2dc2fc-e081-483b-af9d-d3bd8a2e18ff:
-        fieldLayouts:
-          41d47ce2-2da4-487c-9b31-51a46b231de6:
-            tabs:
-              -
-                fields:
-                  752ed5fb-e81b-4651-8eed-3bb3f4c358f9:
-                    required: false
-                    sortOrder: 2
-                  bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
-                    required: false
-                    sortOrder: 1
-                name: 'Tab 1'
-                sortOrder: 1
         handle: imprint
         hasTitleField: false
         name: Impressum
@@ -788,13 +835,16 @@ sections:
                 fields:
                   387a6e57-35e5-47bd-9182-119d7ccccf16:
                     required: true
-                    sortOrder: 2
-                  bfe0f040-f095-416d-b4cf-39c83419018b:
+                    sortOrder: 3
+                  417b399c-4166-4897-a491-00dff2058bd5:
                     required: false
                     sortOrder: 1
+                  bfe0f040-f095-416d-b4cf-39c83419018b:
+                    required: false
+                    sortOrder: 2
                   e90e60b4-237c-4aab-839f-30f73a14fea3:
                     required: false
-                    sortOrder: 3
+                    sortOrder: 4
                 name: Events
                 sortOrder: 1
         handle: eventsEntries
@@ -803,20 +853,20 @@ sections:
         sortOrder: 1
         titleFormat: ''
         titleLabel: Titel
-    handle: eventsTeasers
-    name: '5 Events Teaser Entries'
+    handle: projectsTeaser
+    name: '5 Projects Teaser Entries'
     propagateEntries: true
     siteSettings:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
         enabledByDefault: true
         hasUrls: true
-        template: events/_entry
-        uriFormat: 'events-entries/{slug}'
+        template: projects/_entry
+        uriFormat: 'projects-entries/{slug}'
       96f6905b-bcc3-4e74-91a8-e5458eb5e532:
         enabledByDefault: true
         hasUrls: true
-        template: events/_entry
-        uriFormat: 'events-entries/{slug}'
+        template: projects/_entry
+        uriFormat: 'projects-entries/{slug}'
     structure:
       maxLevels: '1'
       uid: 26e929d4-65b6-44a0-8512-3c6e6353b6c5
@@ -831,33 +881,33 @@ sections:
               -
                 fields:
                   597d3228-4fef-4e48-b794-3e488a088311:
-                    required: false
-                    sortOrder: 2
+                    required: '0'
+                    sortOrder: '2'
                   bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
-                    required: false
-                    sortOrder: 1
+                    required: '0'
+                    sortOrder: '1'
                 name: 'Tab 1'
-                sortOrder: 1
-        handle: events
-        hasTitleField: false
-        name: Events
+                sortOrder: '1'
+        handle: projects
+        hasTitleField: '0'
+        name: Projects
         sortOrder: 1
         titleFormat: '{section.name|raw}'
         titleLabel: ''
-    handle: events
-    name: Events
+    handle: projects
+    name: Projects
     propagateEntries: true
     siteSettings:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
         enabledByDefault: true
         hasUrls: true
-        template: events
-        uriFormat: events
+        template: projects/index
+        uriFormat: projects
       96f6905b-bcc3-4e74-91a8-e5458eb5e532:
         enabledByDefault: true
         hasUrls: true
-        template: events
-        uriFormat: events
+        template: projects/index
+        uriFormat: projects
     type: single
   bdcc5b99-d47c-4d7f-a59c-2535c42dc0da:
     enableVersioning: true
@@ -868,31 +918,49 @@ sections:
             tabs:
               -
                 fields:
+                  387a6e57-35e5-47bd-9182-119d7ccccf16:
+                    required: false
+                    sortOrder: 6
+                  417b399c-4166-4897-a491-00dff2058bd5:
+                    required: false
+                    sortOrder: 4
+                  597d3228-4fef-4e48-b794-3e488a088311:
+                    required: false
+                    sortOrder: 7
+                  78cf4c77-636b-48a0-b594-60ab78ef26a1:
+                    required: false
+                    sortOrder: 2
+                  8a5aa2a1-d84f-4bbf-9ea5-4c6b67c7c105:
+                    required: false
+                    sortOrder: 3
                   bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
-                    required: '0'
-                    sortOrder: '1'
+                    required: false
+                    sortOrder: 1
+                  f01db52f-6f1f-4abd-aa2c-4a8b40100e97:
+                    required: false
+                    sortOrder: 5
                 name: 'Tab 1'
-                sortOrder: '1'
+                sortOrder: 1
         handle: story
-        hasTitleField: '0'
-        name: Team
+        hasTitleField: false
+        name: About
         sortOrder: 1
         titleFormat: '{section.name|raw}'
         titleLabel: 'Titel (Navigation)'
-    handle: team
-    name: Team
+    handle: about
+    name: About
     propagateEntries: true
     siteSettings:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
         enabledByDefault: true
         hasUrls: true
-        template: team/index
-        uriFormat: team
+        template: about/index
+        uriFormat: about
       96f6905b-bcc3-4e74-91a8-e5458eb5e532:
         enabledByDefault: true
         hasUrls: true
-        template: team/index
-        uriFormat: team
+        template: about/index
+        uriFormat: about
     type: single
   d1b65841-7b36-47c5-8ff8-7adc6fc614c0:
     enableVersioning: true
@@ -903,9 +971,15 @@ sections:
             tabs:
               -
                 fields:
-                  597d3228-4fef-4e48-b794-3e488a088311:
+                  387a6e57-35e5-47bd-9182-119d7ccccf16:
+                    required: false
+                    sortOrder: 5
+                  417b399c-4166-4897-a491-00dff2058bd5:
                     required: false
                     sortOrder: 4
+                  597d3228-4fef-4e48-b794-3e488a088311:
+                    required: false
+                    sortOrder: 6
                   63060068-23fd-4091-9e13-96d982008822:
                     required: false
                     sortOrder: 3
@@ -991,16 +1065,10 @@ sections:
             tabs:
               -
                 fields:
-                  597d3228-4fef-4e48-b794-3e488a088311:
-                    required: false
-                    sortOrder: 4
-                  78cf4c77-636b-48a0-b594-60ab78ef26a1:
+                  c5dbaf87-1fca-4ec0-9285-f73a2ec10ab3:
                     required: false
                     sortOrder: 2
-                  8a5aa2a1-d84f-4bbf-9ea5-4c6b67c7c105:
-                    required: false
-                    sortOrder: 3
-                  bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
+                  d175683d-6e5d-484f-9fc1-5678f4b88c32:
                     required: false
                     sortOrder: 1
                 name: 'Tab 1'
@@ -1117,8 +1185,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-<<<<<<< Updated upstream
-dateApplied: '2019-04-03 11:01:57'
-=======
-dateApplied: '2019-04-02 14:53:10'
->>>>>>> Stashed changes
+dateApplied: '2019-04-04 14:33:46'
