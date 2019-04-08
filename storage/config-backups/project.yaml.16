@@ -1,4 +1,4 @@
-dateModified: 1554290428
+dateModified: 1554378094
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -112,9 +112,9 @@ fields:
   417b399c-4166-4897-a491-00dff2058bd5:
     contentColumnType: string
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
-    handle: videoTest
-    instructions: ''
-    name: 'video test'
+    handle: video
+    instructions: "Share-Link zu einem Beyond-Singing Video, wird als eingebettetes Youtube-Video in die Website eingefügt.\r\nWenn es ein Video gibt, wird das Bild (siehe unten) nicht angezeigt."
+    name: Video
     searchable: true
     translationKeyFormat: null
     translationMethod: none
@@ -284,7 +284,7 @@ fields:
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
     handle: teaserImage
     instructions: 'Bild im Format 16:9'
-    name: Teaser-Bild
+    name: 'Bild (16:9)'
     searchable: true
     settings:
       allowedKinds:
@@ -543,22 +543,25 @@ sections:
                 fields:
                   387a6e57-35e5-47bd-9182-119d7ccccf16:
                     required: false
-                    sortOrder: 2
+                    sortOrder: 3
                   3f013fdf-9050-4d51-b818-050c8a105e6f:
                     required: true
-                    sortOrder: 3
-                  63060068-23fd-4091-9e13-96d982008822:
-                    required: true
-                    sortOrder: 5
-                  72357970-aa0e-4ab8-bc96-4899cd33dd40:
-                    required: false
-                    sortOrder: 6
-                  b729c087-ed9f-4371-8cf0-48e6ef2d9e6a:
-                    required: true
                     sortOrder: 4
-                  f01db52f-6f1f-4abd-aa2c-4a8b40100e97:
+                  417b399c-4166-4897-a491-00dff2058bd5:
                     required: false
                     sortOrder: 1
+                  63060068-23fd-4091-9e13-96d982008822:
+                    required: true
+                    sortOrder: 6
+                  72357970-aa0e-4ab8-bc96-4899cd33dd40:
+                    required: false
+                    sortOrder: 7
+                  b729c087-ed9f-4371-8cf0-48e6ef2d9e6a:
+                    required: true
+                    sortOrder: 5
+                  f01db52f-6f1f-4abd-aa2c-4a8b40100e97:
+                    required: false
+                    sortOrder: 2
                 name: 'Music Production'
                 sortOrder: 1
         handle: musicProductionEntries
@@ -797,13 +800,16 @@ sections:
                 fields:
                   387a6e57-35e5-47bd-9182-119d7ccccf16:
                     required: true
-                    sortOrder: 2
-                  bfe0f040-f095-416d-b4cf-39c83419018b:
+                    sortOrder: 3
+                  417b399c-4166-4897-a491-00dff2058bd5:
                     required: false
                     sortOrder: 1
+                  bfe0f040-f095-416d-b4cf-39c83419018b:
+                    required: false
+                    sortOrder: 2
                   e90e60b4-237c-4aab-839f-30f73a14fea3:
                     required: false
-                    sortOrder: 3
+                    sortOrder: 4
                 name: Events
                 sortOrder: 1
         handle: eventsEntries
@@ -1126,4 +1132,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-04-04 10:33:37'
+dateApplied: '2019-04-04 13:42:05'

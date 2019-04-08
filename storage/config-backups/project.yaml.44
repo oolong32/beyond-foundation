@@ -1,7 +1,7 @@
 <<<<<<< Updated upstream
-dateModified: 1554119976
+dateModified: 1554130649
 =======
-dateModified: 1553791516
+dateModified: 1554119976
 >>>>>>> Stashed changes
 email:
   fromEmail: renner@belingthoenen.com
@@ -621,9 +621,6 @@ sections:
                   78cf4c77-636b-48a0-b594-60ab78ef26a1:
                     required: false
                     sortOrder: 2
-                  8a5aa2a1-d84f-4bbf-9ea5-4c6b67c7c105:
-                    required: false
-                    sortOrder: 3
                   b729c087-ed9f-4371-8cf0-48e6ef2d9e6a:
                     required: false
                     sortOrder: 1
@@ -1036,7 +1033,7 @@ siteGroups:
     name: 'Beyond Foundation'
 sites:
   802d4b06-1f71-4c60-8b00-c331a21b5134:
-    baseUrl: 'http://beyond-foundation.test/en'
+    baseUrl: 'http://new.beyond-foundation.org/en'
     handle: beyondFoundation
     hasUrls: true
     language: en
@@ -1076,7 +1073,7 @@ volumes:
     type: craft\volumes\Local
     url: assets/uploads
 <<<<<<< Updated upstream
-dateApplied: '2019-04-01 14:38:12'
+dateApplied: '2019-04-02 11:27:59'
 =======
-dateApplied: '2019-03-28 17:46:54'
+dateApplied: '2019-04-01 14:38:12'
 >>>>>>> Stashed changes

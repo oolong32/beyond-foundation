@@ -1,7 +1,15 @@
 <<<<<<< Updated upstream
-dateModified: 1554117713
+<<<<<<< Updated upstream
+dateModified: 1554122324
 =======
-dateModified: 1553790835
+<<<<<<< Updated upstream
+dateModified: 1554122324
+=======
+dateModified: 1554117713
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
+=======
+dateModified: 1554117713
 >>>>>>> Stashed changes
 email:
   fromEmail: renner@belingthoenen.com
@@ -1038,7 +1046,15 @@ siteGroups:
     name: 'Beyond Foundation'
 sites:
   802d4b06-1f71-4c60-8b00-c331a21b5134:
+<<<<<<< Updated upstream
+    baseUrl: 'http://new.beyond-foundation.org/en'
+=======
+<<<<<<< Updated upstream
+    baseUrl: 'http://new.beyond-foundation.org/en'
+=======
     baseUrl: 'http://beyond-foundation.test/en'
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
     handle: beyondFoundation
     hasUrls: true
     language: en
@@ -1078,7 +1094,15 @@ volumes:
     type: craft\volumes\Local
     url: assets/uploads
 <<<<<<< Updated upstream
-dateApplied: '2019-04-01 13:44:33'
+<<<<<<< Updated upstream
+dateApplied: '2019-04-01 16:57:29'
 =======
-dateApplied: '2019-03-28 17:34:12'
+<<<<<<< Updated upstream
+dateApplied: '2019-04-01 16:57:29'
+=======
+dateApplied: '2019-04-01 14:39:59'
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
+=======
+dateApplied: '2019-04-01 13:44:33'
 >>>>>>> Stashed changes

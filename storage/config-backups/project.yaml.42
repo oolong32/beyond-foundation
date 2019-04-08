@@ -1,4 +1,6 @@
 <<<<<<< Updated upstream
+dateModified: 1554197381
+=======
 <<<<<<< Updated upstream
 dateModified: 1554122324
 =======
@@ -8,8 +10,6 @@ dateModified: 1554122324
 dateModified: 1554117713
 >>>>>>> Stashed changes
 >>>>>>> Stashed changes
-=======
-dateModified: 1554117713
 >>>>>>> Stashed changes
 email:
   fromEmail: renner@belingthoenen.com
@@ -459,7 +459,7 @@ plugins:
       oauthProviderOptions:
         youtube:
           clientId: 345445948018-dit38vfsfjbd9k5r50tffb686p14rnsb.apps.googleusercontent.com
-          clientSecret: _kv9cJp92kw4kfjUXD50VOsf
+          clientSecret: ZDbkvT6LUyLWlz-svwqEDKs4
       tokens: null
       videosPerPage: 30
 sections:
@@ -628,9 +628,6 @@ sections:
                   78cf4c77-636b-48a0-b594-60ab78ef26a1:
                     required: false
                     sortOrder: 2
-                  8a5aa2a1-d84f-4bbf-9ea5-4c6b67c7c105:
-                    required: false
-                    sortOrder: 3
                   b729c087-ed9f-4371-8cf0-48e6ef2d9e6a:
                     required: false
                     sortOrder: 1
@@ -1052,7 +1049,11 @@ sites:
 <<<<<<< Updated upstream
     baseUrl: 'http://new.beyond-foundation.org/en'
 =======
+<<<<<<< Updated upstream
+    baseUrl: 'http://new.beyond-foundation.org/en'
+=======
     baseUrl: 'http://beyond-foundation.test/en'
+>>>>>>> Stashed changes
 >>>>>>> Stashed changes
 >>>>>>> Stashed changes
     handle: beyondFoundation
@@ -1094,6 +1095,8 @@ volumes:
     type: craft\volumes\Local
     url: assets/uploads
 <<<<<<< Updated upstream
+dateApplied: '2019-04-02 11:31:16'
+=======
 <<<<<<< Updated upstream
 dateApplied: '2019-04-01 16:57:29'
 =======
@@ -1103,6 +1106,4 @@ dateApplied: '2019-04-01 16:57:29'
 dateApplied: '2019-04-01 14:39:59'
 >>>>>>> Stashed changes
 >>>>>>> Stashed changes
-=======
-dateApplied: '2019-04-01 13:44:33'
 >>>>>>> Stashed changes

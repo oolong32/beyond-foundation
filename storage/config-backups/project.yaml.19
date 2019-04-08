@@ -1,8 +1,4 @@
-<<<<<<< Updated upstream
-dateModified: 1554289956
-=======
-dateModified: 1554275994
->>>>>>> Stashed changes
+dateModified: 1554366817
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -288,7 +284,7 @@ fields:
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
     handle: teaserImage
     instructions: 'Bild im Format 16:9'
-    name: Teaser-Bild
+    name: 'Bild (16:9)'
     searchable: true
     settings:
       allowedKinds:
@@ -816,20 +812,20 @@ sections:
         sortOrder: 1
         titleFormat: ''
         titleLabel: Titel
-    handle: eventsTeasers
-    name: '5 Events Teaser Entries'
+    handle: projectsTeaser
+    name: '5 Projects Teaser Entries'
     propagateEntries: true
     siteSettings:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
         enabledByDefault: true
         hasUrls: true
-        template: events/_entry
-        uriFormat: 'events-entries/{slug}'
+        template: projects/_entry
+        uriFormat: 'projects-entries/{slug}'
       96f6905b-bcc3-4e74-91a8-e5458eb5e532:
         enabledByDefault: true
         hasUrls: true
-        template: events/_entry
-        uriFormat: 'events-entries/{slug}'
+        template: projects/_entry
+        uriFormat: 'projects-entries/{slug}'
     structure:
       maxLevels: '1'
       uid: 26e929d4-65b6-44a0-8512-3c6e6353b6c5
@@ -850,22 +846,15 @@ sections:
                     required: '0'
                     sortOrder: '1'
                 name: 'Tab 1'
-<<<<<<< Updated upstream
                 sortOrder: '1'
         handle: projects
         hasTitleField: '0'
         name: Projects
-=======
-                sortOrder: 1
-        handle: events
-        hasTitleField: false
-        name: Events
->>>>>>> Stashed changes
         sortOrder: 1
         titleFormat: '{section.name|raw}'
         titleLabel: ''
-    handle: events
-    name: Events
+    handle: projects
+    name: Projects
     propagateEntries: true
     siteSettings:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
@@ -889,39 +878,39 @@ sections:
               -
                 fields:
                   597d3228-4fef-4e48-b794-3e488a088311:
-                    required: false
-                    sortOrder: 4
+                    required: '0'
+                    sortOrder: '4'
                   78cf4c77-636b-48a0-b594-60ab78ef26a1:
-                    required: false
-                    sortOrder: 2
+                    required: '0'
+                    sortOrder: '2'
                   8a5aa2a1-d84f-4bbf-9ea5-4c6b67c7c105:
-                    required: false
-                    sortOrder: 3
+                    required: '0'
+                    sortOrder: '3'
                   bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
-                    required: false
-                    sortOrder: 1
+                    required: '0'
+                    sortOrder: '1'
                 name: 'Tab 1'
-                sortOrder: 1
+                sortOrder: '1'
         handle: story
-        hasTitleField: false
-        name: Team
+        hasTitleField: '0'
+        name: About
         sortOrder: 1
         titleFormat: '{section.name|raw}'
         titleLabel: 'Titel (Navigation)'
-    handle: team
-    name: Team
+    handle: about
+    name: About
     propagateEntries: true
     siteSettings:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
         enabledByDefault: true
         hasUrls: true
-        template: team/index
-        uriFormat: team
+        template: about/index
+        uriFormat: about
       96f6905b-bcc3-4e74-91a8-e5458eb5e532:
         enabledByDefault: true
         hasUrls: true
-        template: team/index
-        uriFormat: team
+        template: about/index
+        uriFormat: about
     type: single
   d1b65841-7b36-47c5-8ff8-7adc6fc614c0:
     enableVersioning: true
@@ -1137,8 +1126,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-<<<<<<< Updated upstream
-dateApplied: '2019-04-03 13:20:29'
-=======
-dateApplied: '2019-04-03 11:10:56'
->>>>>>> Stashed changes
+dateApplied: '2019-04-04 10:33:54'
