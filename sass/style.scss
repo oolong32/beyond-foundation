@@ -265,7 +265,10 @@ h1 a:hover {
 
 /* Header Nav Links {{{3 */
 
-header nav ul li a { border-bottom: none; }
+header nav ul li a {
+  border-bottom: none;
+  hyphens: manual;
+}
 
 header nav ul li a:hover {
   font-weight: $bold;
@@ -526,6 +529,8 @@ header {
     ul {
       display: flex;
       flex-direction: row;
+      flex-wrap: nowrap;
+      white-space: nowrap;
       justify-content: space-between;
       li a {
         // display: inline-block;
