@@ -9,6 +9,8 @@ return [
   'Spenden' => 'Donate',
   'Gesuch einreichen' => 'Apply for Funding',
   'Willkommen' => 'Welcome',
+  'Impressum' => 'Disclaimer',
+  'Datenschutz' => 'Privacy',
 ]
 
 ?>
