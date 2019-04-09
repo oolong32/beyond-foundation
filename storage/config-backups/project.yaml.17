@@ -1,4 +1,4 @@
-dateModified: 1554717465
+dateModified: 1554717476
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -371,7 +371,7 @@ fields:
     type: craft\fields\Url
   cf6d51c0-4331-4c58-b92c-8621eae977fd:
     contentColumnType: string
-    fieldGroup: 85d8c0e7-6a43-4691-8d57-0ea516983de7
+    fieldGroup: 2d31e491-87da-48b8-85d6-72aba43f554c
     handle: googlePlayLink
     instructions: 'URL zu diesem Angebot auf Google Play'
     name: 'Google Play Link'
@@ -1235,4 +1235,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-04-08 11:57:56'
+dateApplied: '2019-04-08 11:58:01'

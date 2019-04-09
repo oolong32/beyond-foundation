@@ -1,4 +1,4 @@
-dateModified: 1554719727
+dateModified: 1554719785
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -213,7 +213,7 @@ fields:
   5d482f8a-8e95-43c2-b2d1-beac7424d6bf:
     contentColumnType: text
     fieldGroup: 2d31e491-87da-48b8-85d6-72aba43f554c
-    handle: igrooveSmsText
+    handle: iGrooveSmsText
     instructions: 'Text, mit Stichwort und Telefonnummer für iGroove.'
     name: 'iGroove SMS Text'
     searchable: true
@@ -1361,4 +1361,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-04-08 12:36:25'
+dateApplied: '2019-04-09 09:11:16'

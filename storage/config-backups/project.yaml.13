@@ -1,4 +1,4 @@
-dateModified: 1554717512
+dateModified: 1554717591
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -85,6 +85,18 @@ fields:
     handle: spotifyLink
     instructions: 'URL zu diesem Angebot auf Spotify'
     name: 'Spotify Link'
+    searchable: true
+    settings:
+      placeholder: 'https://…'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
+  28f5f6ca-2091-4f1e-86ed-32ea3b8f56ae:
+    contentColumnType: string
+    fieldGroup: 2d31e491-87da-48b8-85d6-72aba43f554c
+    handle: iGrooveLinks
+    instructions: 'URL zu diesem Angebot auf iGroove'
+    name: 'iGroove Links'
     searchable: true
     settings:
       placeholder: 'https://…'
@@ -1235,4 +1247,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-04-08 11:59:51'
+dateApplied: '2019-04-08 12:00:38'

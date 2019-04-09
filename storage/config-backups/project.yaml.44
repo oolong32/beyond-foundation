@@ -1,4 +1,4 @@
-dateModified: 1554366817
+dateModified: 1554366833
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -112,9 +112,9 @@ fields:
   417b399c-4166-4897-a491-00dff2058bd5:
     contentColumnType: string
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
-    handle: videoTest
-    instructions: ''
-    name: 'video test'
+    handle: video
+    instructions: "Share-Link zu einem Beyond-Singing Video, wird als eingebettetes Youtube-Video in die Website eingefügt.\r\nWenn es ein Video gibt, wird das Bild (siehe unten) nicht angezeigt."
+    name: Video
     searchable: true
     translationKeyFormat: null
     translationMethod: none
@@ -1126,4 +1126,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-04-04 10:33:54'
+dateApplied: '2019-04-04 10:56:53'
