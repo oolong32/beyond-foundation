@@ -13,11 +13,17 @@
 
 <ul>
 	{# TODO: wie muss das aussehen für de/en? #}
-	<li class="{{ slug == 'about' ? 'active' : '' }}"><a title="About" href="{{ en ? '/en' : '' }}/about">About</a></li>
-	<li class="{{ slug == 'music-network' ? 'active' : '' }}"><a title="Music Network" href="{{ en ? '/en' : '' }}/music-network">Music Network</a></li>
-	<li class="{{ slug == 'music-production' ? 'active' : '' }}"><a title="Music Production" href="{{ en ? '/en' : '' }}/music-production">Music Production</a></li>
-	<li class="{{ slug == 'projects' ? 'active' : '' }}"><a title="Projects" href="{{ en ? '/en' : '' }}/projects">Funding Projects</a></li>
-	<li class="{{ slug == 'encouragement' ? 'active' : '' }}"><a title="Encouragement" href="{{ en ? '/en' : '' }}/encouragement">Encouragement</a></li>
+	<li class="{{ slug == 'about' ? 'active' : '' }}"><a title="About" href="{{ en ? '/en' : '' }}/about">{{ 'Über uns'|t }}</a></li>
+	<li class="{{ slug == 'music-network' ? 'active' : '' }}"><a title="Music Network" href="{{ en ? '/en' : '' }}/music-network">{{ 'Musikplattform'|t }}</a></li>
+	<li class="{{ slug == 'music-production' ? 'active' : '' }}"><a title="Music Production" href="{{ en ? '/en' : '' }}/music-production">{{ 'Musikproduktionen'|t }}</a></li>
+	<li class="{{ slug == 'projects' ? 'active' : '' }}"><a title="Projects" href="{{ en ? '/en' : '' }}/projects">{{ 'Förderprojekte'|t }}</a></li>
+	<li class="{{ slug == 'encouragement' ? 'active' : '' }}"><a title="Encouragement" href="{{ en ? '/en' : '' }}/encouragement">{{ 'Gesuche/Spenden'|t }}</a></li>
 </ul>
 
 {% include 'includes/language-switcher' %}
+'Über uns' => 'About',
+  'Team' => 'Team',
+  'Musikplattform' => 'Music Network',
+  'Förderprojekte' => 'Funding Projects',
+  'Gesuche/Spenden' => 'Encouragement',
+]

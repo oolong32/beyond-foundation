@@ -11,6 +11,11 @@ return [
   'Willkommen' => 'Welcome',
   'Impressum' => 'Disclaimer',
   'Datenschutz' => 'Privacy',
+  'Über uns' => 'About',
+  'Team' => 'Team',
+  'Musikplattform' => 'Music Network',
+  'Förderprojekte' => 'Funding Projects',
+  'Gesuche/Spenden' => 'Encouragement',
 ]
 
 ?>
