@@ -1,4 +1,4 @@
-dateModified: 1554717476
+dateModified: 1554717502
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -69,7 +69,7 @@ fields:
     type: craft\fields\Url
   12774cd1-bd04-43d7-ab20-3391917cdf53:
     contentColumnType: string
-    fieldGroup: 85d8c0e7-6a43-4691-8d57-0ea516983de7
+    fieldGroup: 2d31e491-87da-48b8-85d6-72aba43f554c
     handle: amazonLinkHear
     instructions: 'URL zu diesem Angebot auf Amazon'
     name: 'Amazon-Link (Hören)'
@@ -359,7 +359,7 @@ fields:
     type: craft\fields\Assets
   cab30499-6a6d-4965-ba7a-ed405ffc77ee:
     contentColumnType: string
-    fieldGroup: 85d8c0e7-6a43-4691-8d57-0ea516983de7
+    fieldGroup: 2d31e491-87da-48b8-85d6-72aba43f554c
     handle: itunesLink
     instructions: 'Die URL zu diesem Angebot auf iTunes'
     name: iTunes-Link
@@ -1235,4 +1235,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-04-08 11:58:01'
+dateApplied: '2019-04-08 11:58:32'

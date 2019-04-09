@@ -1,4 +1,4 @@
-dateModified: 1554717512
+dateModified: 1554717637
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -91,6 +91,18 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Url
+  28f5f6ca-2091-4f1e-86ed-32ea3b8f56ae:
+    contentColumnType: string
+    fieldGroup: 2d31e491-87da-48b8-85d6-72aba43f554c
+    handle: iGrooveLinks
+    instructions: 'URL zu diesem Angebot auf iGroove'
+    name: 'iGroove Links'
+    searchable: true
+    settings:
+      placeholder: 'https://…'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
   387a6e57-35e5-47bd-9182-119d7ccccf16:
     contentColumnType: text
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
@@ -162,6 +174,18 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\PlainText
+  5b74422b-6b7b-4d5b-ad20-c087fc20d254:
+    contentColumnType: string
+    fieldGroup: 2d31e491-87da-48b8-85d6-72aba43f554c
+    handle: amazonLinkBuy
+    instructions: 'URL zu diesem Angebot auf Amazon'
+    name: 'Amazon Link (Kaufen)'
+    searchable: true
+    settings:
+      placeholder: 'https://…'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
   63060068-23fd-4091-9e13-96d982008822:
     contentColumnType: text
     fieldGroup: 85d8c0e7-6a43-4691-8d57-0ea516983de7
@@ -1235,4 +1259,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-04-08 11:59:51'
+dateApplied: '2019-04-08 12:01:25'

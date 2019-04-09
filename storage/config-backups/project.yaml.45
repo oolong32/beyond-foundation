@@ -1,4 +1,4 @@
-dateModified: 1554378094
+dateModified: 1554378535
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -409,7 +409,7 @@ fields:
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
     handle: heroImage
     instructions: 'Ein grosses Bild, Format 16:9 (wird beschnitten)'
-    name: 'Hero Image'
+    name: 'Bild (statt Video)'
     searchable: false
     settings:
       allowedKinds:
@@ -927,9 +927,15 @@ sections:
             tabs:
               -
                 fields:
-                  597d3228-4fef-4e48-b794-3e488a088311:
+                  387a6e57-35e5-47bd-9182-119d7ccccf16:
+                    required: false
+                    sortOrder: 5
+                  417b399c-4166-4897-a491-00dff2058bd5:
                     required: false
                     sortOrder: 4
+                  597d3228-4fef-4e48-b794-3e488a088311:
+                    required: false
+                    sortOrder: 6
                   63060068-23fd-4091-9e13-96d982008822:
                     required: false
                     sortOrder: 3
@@ -1132,4 +1138,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-04-04 13:42:05'
+dateApplied: '2019-04-04 13:51:28'

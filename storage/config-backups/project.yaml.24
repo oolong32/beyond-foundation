@@ -1,4 +1,4 @@
-dateModified: 1554717383
+dateModified: 1554717450
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -71,6 +71,18 @@ fields:
     handle: amazonLinkHear
     instructions: 'URL zu diesem Angebot auf Amazon'
     name: 'Amazon-Link (Hören)'
+    searchable: true
+    settings:
+      placeholder: 'https://…'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
+  265f2e45-2db1-4395-ab69-942f48810f66:
+    contentColumnType: string
+    fieldGroup: 85d8c0e7-6a43-4691-8d57-0ea516983de7
+    handle: spotifyLink
+    instructions: 'URL zu diesem Angebot auf Spotify'
+    name: 'Spotify Link'
     searchable: true
     settings:
       placeholder: 'https://…'
@@ -356,22 +368,17 @@ fields:
     translationMethod: none
     type: craft\fields\Url
   cf6d51c0-4331-4c58-b92c-8621eae977fd:
-    contentColumnType: text
+    contentColumnType: string
     fieldGroup: 85d8c0e7-6a43-4691-8d57-0ea516983de7
-    handle: g
-    instructions: ''
-    name: g
+    handle: googlePlayLink
+    instructions: 'URL zu diesem Angebot auf Google Play'
+    name: 'Google Play Link'
     searchable: true
     settings:
-      charLimit: ''
-      code: ''
-      columnType: text
-      initialRows: '4'
-      multiline: ''
-      placeholder: ''
+      placeholder: 'https://…'
     translationKeyFormat: null
     translationMethod: none
-    type: craft\fields\PlainText
+    type: craft\fields\Url
   d175683d-6e5d-484f-9fc1-5678f4b88c32:
     contentColumnType: string
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
@@ -1226,4 +1233,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-04-08 11:56:59'
+dateApplied: '2019-04-08 11:57:45'

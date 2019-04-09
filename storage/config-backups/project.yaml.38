@@ -1,4 +1,4 @@
-dateModified: 1554381120
+dateModified: 1554381251
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -309,7 +309,7 @@ fields:
     contentColumnType: string
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
     handle: slideshowImagesMobile
-    instructions: "Bilder für die Slideshow auf der Mobile Page.\r\n– Breite min. 750px\r\n– Höhe ~ 2000px\r\n– Dateigrösse < 1MB"
+    instructions: "Bilder für die Slideshow auf der Mobile Page (max. 5 Bilder)\r\n– Breite min. 750px\r\n– Höhe ~ 2000px\r\n– Dateigrösse < 1MB"
     name: 'Slideshow Bilder (Mobile)'
     searchable: true
     settings:
@@ -335,7 +335,7 @@ fields:
     contentColumnType: string
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
     handle: slideshowImages
-    instructions: "Bilder für die Slideshow auf der Home Page.\r\n– Breite min. 2000px\r\n–\_Dateigrösse < 1MB"
+    instructions: "Bilder für die Slideshow auf der Home Page, (max. 10 Bilder).\r\n– Breite min. 2000px\r\n–\_Dateigrösse < 1MB"
     name: 'Slideshow Bilder (Desktop)'
     searchable: true
     settings:
@@ -1185,4 +1185,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-04-04 14:33:46'
+dateApplied: '2019-04-04 14:35:22'
