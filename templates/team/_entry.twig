@@ -1,0 +1,31 @@
+{# Beyond Foundation, Story Single Entry #}
+
+{% extends "_layout" %}
+
+{# hier korrkete entry query einsetzen #}
+{% set entry = craft.entries().section('').one() %}
+
+{% block content %}
+
+    <header>
+      {% include 'includes/header' %}
+    </header>
+
+    <nav id="nav-overlay"> {# triggered by hamburger #}
+      {% include 'includes/nav' %}
+    </nav>
+      
+    <main>
+      <h2>{{ entry.title }}</h2>
+      {# … #}
+    </main>
+        
+    <footer>
+      {% include 'includes/footer' %}
+    </footer>
+
+    <script>
+      console.log('I & I is at {{ slug }}' );
+    </script>
+
+{% endblock %}

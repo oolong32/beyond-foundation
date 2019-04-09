@@ -3,7 +3,7 @@
 {% extends "_layout" %}
 
 {% set entry = craft.entries().section('about').one() %}
-{% set members = craft.entries().section('teamEntries').all() %}
+{% set teasers = craft.entries().section('homeTeasers').all() %}
 
 {% block content %}
 
@@ -49,51 +49,49 @@
         <p class="video-caption full-width">{{ entry.shortDescription }}</p>
       </section>
 
-      <h2>Founders</h2>
+      <h2>News</h2>
 
-      {% for member in members %}
+      {% for teaser in teasers %}
+
+	{% if loop.index == 3 %}
+		{% if entry.quote|length %}
+			<blockquote>
+				<p>{{ craft.app.language == 'de' ? '«' : '“' }}{{ entry.quote }}{{ craft.app.language == 'de' ? '»' : '”' }}</p>
+			</blockquote>
+		{% endif %}
+	{% endif %}
+
+	{% set associatedEntry = teaser.associatedEntry.one() %}
 
       <!-- start row -->
-      <section class="alternating-grid-text-large">
+      <section class="alternating-grid-image-large">
 
         <!-- start image cell -->
         <div class="image-cell">
-          {% if member.portrait|length %}
-          <img src="{{ alias('@assetBasePath') }}/{{ member.portrait[0].getUrl() }}" alt="{{ member.title }}">
-          {% else %}
-          <img src="{{ alias('@assetBasePath') }}/assets/_pic/placeholder.png" alt="No image for this entry.">
-          {% endif %}
+	{% if teaser.video|length %}
+		{% set video = teaser.video %}
+		<div class="video-container">
+		{{ video.getEmbed() }}
+		</div>
+	{% else %} {# there’s no video #}
+		{# ev. sollte das hier ein «HeroImage» sein, wie in anderen Einträgen, wo es entw. Video oder Bild gibt?  #}
+		<a class="full-width;" href="{{ associatedEntry.getUrl() }}" style="margin: 0; padding: 0; grid-column: 1/-1; border: none; outline: 0">
+		{% if teaser.teaserImage|length %}
+			<img src="{{ alias('@assetBasePath') }}/{{ teaser.teaserImage[0].getUrl('sixteen2nine') }}" alt="{{ teaser.title }}">
+		{% else %}
+			<img src="{{ alias('@assetBasePath') }}/assets/_pic/placeholder_16-9.png" alt="{{ teaser.title }}, test image">
+		{% endif %}
+		</a>
+	{% endif %}
         </div> <!-- end image cell -->
 
-        <!-- start text cell -->
-        <div class="text-cell"> 
-          <h3 class="team-name">{{ member.title }}</h3>
-          {% if member.quote|length %}
-          <p class="team-quote">{{ craft.app.language == 'de' ? '«' : '“' }}{{ member.quote }}{{ craft.app.language == 'de' ? '»' : '”' }}</p>
-          {% endif %}
-
-          <div class="accordion"> <!-- start accordion -->
-
-            <div class="visible"> <!-- start accordion visible part -->
-              {{ member.visibleText }}
-              <p class="accordion-trigger" style="text-align: left;"><span>{{ 'Weitere Informationen'|t }}</span></p>
-            </div> <!-- end accordion visible part -->
-
-            <div class="collapsed"> <!-- start accordion invisible part -->
-              {{ member.collapsedText }}
-              <p class="accordion-collapse"><span>{{ 'Weniger Informationen'|t }}</span></p>
-            </div> <!-- end accordion invisible part -->
-
-          </div> <!-- end accordion -->
-
-        </div> <!-- end text cell -->
+        <!-- start text column -->
+          <h3 class="text-column">{{ associatedEntry.title }}</h3>
+          <p class="text-column">{{ teaser.shortDescription }}</p>
+	 <!-- end text column -->
 
       </section> <!-- end row -->
       {% endfor %}
-
-	<blockquote>
-		<p>{{ entry.quote }}</p>
-	</blockquote>
 
     </main>
         

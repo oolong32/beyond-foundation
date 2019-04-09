@@ -1,0 +1,77 @@
+{# Beyond Foundation, Story #}
+
+{% extends "_layout" %}
+
+{% set entry = craft.entries().section('team').one() %}
+{% set members = craft.entries().section('teamEntries').all() %}
+
+{% block content %}
+
+    <header>
+      {% include 'includes/header' %}
+    </header>
+
+    <nav id="nav-overlay"> {# triggered by hamburger #}
+      {% include 'includes/nav' %}
+    </nav>
+      
+    <main>
+      <h2>{{ entry.title }}</h2>
+
+      {% for member in members %}
+
+      <!-- start row -->
+      <section class="alternating-grid-text-large">
+
+        <!-- start image cell -->
+        <div class="image-cell">
+          {% if member.portrait|length %}
+          <img src="{{ alias('@assetBasePath') }}/{{ member.portrait[0].getUrl() }}" alt="{{ member.title }}">
+          {% else %}
+          <img src="{{ alias('@assetBasePath') }}/assets/_pic/placeholder.png" alt="No image for this entry.">
+          {% endif %}
+        </div> <!-- end image cell -->
+
+        <!-- start text cell -->
+        <div class="text-cell"> 
+          <h3 class="team-name">{{ member.title }}</h3>
+          {% if member.quote|length %}
+          <p class="team-quote">{{ craft.app.language == 'de' ? '«' : '“' }}{{ member.quote }}{{ craft.app.language == 'de' ? '»' : '”' }}</p>
+          {% endif %}
+
+          <div class="accordion"> <!-- start accordion -->
+
+            <div class="visible"> <!-- start accordion visible part -->
+              {{ member.visibleText }}
+              <p class="accordion-trigger" style="text-align: left;"><span>{{ 'Weitere Informationen'|t }}</span></p>
+            </div> <!-- end accordion visible part -->
+
+            <div class="collapsed"> <!-- start accordion invisible part -->
+              {{ member.collapsedText }}
+              <p class="accordion-collapse"><span>{{ 'Weniger Informationen'|t }}</span></p>
+            </div> <!-- end accordion invisible part -->
+
+          </div> <!-- end accordion -->
+
+        </div> <!-- end text cell -->
+
+      </section> <!-- end row -->
+      {% endfor %}
+
+	<blockquote>
+		<p>{{ entry.quote }}</p>
+	</blockquote>
+
+    </main>
+        
+    <footer>
+      {% include 'includes/footer' %}
+    </footer>
+    
+    {% include 'includes/accordion-scripts' %}
+
+    <script>
+      console.log('I & I is at {{ slug }}' );
+    </script>
+
+{% endblock %}
