@@ -906,13 +906,19 @@ footer {
       justify-content: center;
       margin-bottom: 1rem; }
     #nav-overlay #language-switch p {
-      margin: 1rem 0 0 1rem;
+      margin: .5rem 0 0 1rem;
       display: inline-block;
-      border: 1px solid black;
       padding: 0 .5rem;
-      font-size: 1.875rem; }
-    #nav-overlay #language-switch:hover p {
+      font-size: 1.875rem;
+      font-weight: 300;
       background: linear-gradient(20deg, #CCAF82 0%, #C6AD8C 20%, #C0AB97 100%); }
+    #nav-overlay #language-switch p:before {
+      padding-right: 0.25rem;
+      content: url("/assets/_pic/arrow_right.svg");
+      position: relative;
+      top: -4px; }
+    #nav-overlay #language-switch:hover p {
+      color: linear-gradient(20deg, #CCAF82 0%, #C6AD8C 20%, #C0AB97 100%); }
   /*
   #nav-footer {
     div#infos {
