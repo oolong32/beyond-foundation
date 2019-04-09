@@ -1,4 +1,4 @@
-dateModified: 1554381322
+dateModified: 1554381394
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -309,7 +309,7 @@ fields:
     contentColumnType: string
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
     handle: slideshowImagesMobile
-    instructions: "Bilder für die Slideshow auf der Mobile Page (max. 5 Bilder)\r\n– Breite min. 750px\r\n– Höhe ~ 2000px\r\n– Dateigrösse < 1MB"
+    instructions: 'Bilder für die Slideshow auf der Mobile Page (max. 5 Bilder): Hochformat, Breite ~ 750px, Dateigrösse < 1MB'
     name: 'Slideshow Bilder (Mobile)'
     searchable: true
     settings:
@@ -1185,4 +1185,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-04-04 14:36:34'
+dateApplied: '2019-04-04 14:47:22'
