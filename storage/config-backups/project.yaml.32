@@ -1,4 +1,4 @@
-dateModified: 1554551368
+dateModified: 1554717383
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -62,6 +62,18 @@ fields:
     searchable: true
     settings:
       placeholder: 'https://'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
+  12774cd1-bd04-43d7-ab20-3391917cdf53:
+    contentColumnType: string
+    fieldGroup: 85d8c0e7-6a43-4691-8d57-0ea516983de7
+    handle: amazonLinkHear
+    instructions: 'URL zu diesem Angebot auf Amazon'
+    name: 'Amazon-Link (Hören)'
+    searchable: true
+    settings:
+      placeholder: 'https://…'
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Url
@@ -331,6 +343,35 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Assets
+  cab30499-6a6d-4965-ba7a-ed405ffc77ee:
+    contentColumnType: string
+    fieldGroup: 85d8c0e7-6a43-4691-8d57-0ea516983de7
+    handle: itunesLink
+    instructions: 'Die URL zu diesem Angebot auf iTunes'
+    name: iTunes-Link
+    searchable: true
+    settings:
+      placeholder: 'https://…'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
+  cf6d51c0-4331-4c58-b92c-8621eae977fd:
+    contentColumnType: text
+    fieldGroup: 85d8c0e7-6a43-4691-8d57-0ea516983de7
+    handle: g
+    instructions: ''
+    name: g
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
   d175683d-6e5d-484f-9fc1-5678f4b88c32:
     contentColumnType: string
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
@@ -503,14 +544,14 @@ plugins:
           clientSecret: 0uCV3T2WxPjmoee3_7h91Xra
       tokens:
         youtube:
-          accessToken: ya29.GlzjBqGZK1qOgH9-zmcIKwFvOVT01Wy5Ci5UaKvca6ueUYBSz1HDikraXkvzF-Js1s0Nz_eJWq4i4k1jseQ1oRstC0ZHOsWp3gPNksLnWnzyMLchQ4KvCNGL09Yswg
-          expires: 1554554968
+          accessToken: ya29.GlzlBhRLqYWGdGOm7RORlkPCJOt9oI1cl69iBsvWwNZLoBpQDZGE2KU_TdmzNYwd8vbdUxdr6q-vGptRYaeKKkW8B33MI5jKybagoum5TSiOz-zsS9lWRZN8WodNXA
+          expires: 1554719501
           refreshToken: 1/h_aaH-zGnHYJCo5IJxtfkrdl09zaCcnwd20rF1paffZJ-qin2ZCXBzCqbn4gpn5A
           resourceOwnerId: null
           values:
             values:
-              id_token: eyJhbGciOiJSUzI1NiIsImtpZCI6IjZmNjc4MWJhNzExOTlhNjU4ZTc2MGFhNWFhOTNlNWZjM2RjNzUyYjUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTU5MjQ2NDUyNTc5OTAyMzQ3NDYiLCJlbWFpbCI6ImJleW9uZHNpbmdpbmdjb21AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJzb1AzNkpVcTdrSWpkR1ZVVERJd253IiwibmFtZSI6IkJleW9uZCBTaW5naW5nIiwicGljdHVyZSI6Imh0dHBzOi8vbGg1Lmdvb2dsZXVzZXJjb250ZW50LmNvbS8tQnJZdUI5d1JDN0UvQUFBQUFBQUFBQUkvQUFBQUFBQUFBQWsvZVNWWTVhamtmRVUvczk2LWMvcGhvdG8uanBnIiwiZ2l2ZW5fbmFtZSI6IkJleW9uZCIsImZhbWlseV9uYW1lIjoiU2luZ2luZyIsImxvY2FsZSI6ImRlIiwiaWF0IjoxNTU0NTUxMzY4LCJleHAiOjE1NTQ1NTQ5Njh9.dszPhPJepmtxXFDXh6aQLk-sQxbpRpPD_akk51kDtGyq7JY_H2i6OgguU1F-4-JQalC58NkKy6v3qF7n_d_xhFTIe8dxz6X755VT6tWMTGnAKZy1itBQS367uDiMojEUK7EdG2wPVTleBIm69oRXKYWlc18ZXSdc3rBmpczNrJu3PjMwXz9FzL6EOZ21wfTZ0GxiEfu_TR2eOBbkpMmyqWmwEtdEyXq3yeeb_sAOcg_W6IdrEUPzf_V8-t4tiT7DUfW5StA_9vg0veA0igN-paw4kEa-XDSXKH1ethvvMZKKUDJ6kXS-VlzQIlv1o7i9BgL6b-f7z4ryHoFjUbrTFA
-              scope: 'https://www.googleapis.com/auth/youtube.readonly https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/youtube https://www.googleapis.com/auth/userinfo.profile'
+              id_token: eyJhbGciOiJSUzI1NiIsImtpZCI6IjZmNjc4MWJhNzExOTlhNjU4ZTc2MGFhNWFhOTNlNWZjM2RjNzUyYjUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTU5MjQ2NDUyNTc5OTAyMzQ3NDYiLCJlbWFpbCI6ImJleW9uZHNpbmdpbmdjb21AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJHdXlST1Z1a04yMndXcDVIckdmT0lBIiwibmFtZSI6IkJleW9uZCBTaW5naW5nIiwicGljdHVyZSI6Imh0dHBzOi8vbGg1Lmdvb2dsZXVzZXJjb250ZW50LmNvbS8tQnJZdUI5d1JDN0UvQUFBQUFBQUFBQUkvQUFBQUFBQUFBQWsvZVNWWTVhamtmRVUvczk2LWMvcGhvdG8uanBnIiwiZ2l2ZW5fbmFtZSI6IkJleW9uZCIsImZhbWlseV9uYW1lIjoiU2luZ2luZyIsImxvY2FsZSI6ImRlIiwiaWF0IjoxNTU0NzE1OTAxLCJleHAiOjE1NTQ3MTk1MDF9.ZZkA6rjn3WtM2pLRug5220KzZHNn8lFb29Q3aCYWEytzCln2xHXMWem_HBfx1UBEjEYM51jv7aIOiFnfYmGbov6SdBoV8cBpC2-S7Z2abNwLZegnZxcdatFWcPapGKYINx0Qupag_fzF2GHDwB2ATOeRP-JdXlwjzlmr1LgeaeegiSkQ6c7ROPqK8okA8ONYxhxTHgNeB0lCaV7TJsiisDYYcw9-WH5FLnU8uYouoqtHrcClMSc2UzVd6JoIHNqn3nXClOxnDg2DRW_plJlmnfZt2inv8Npt11-OJKYN__UQ9QIoaxYPFTKofEJvDp8B3toUlmMTSzdpREonE1FRJg
+              scope: 'https://www.googleapis.com/auth/youtube https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/youtube.readonly https://www.googleapis.com/auth/userinfo.email'
               token_type: Bearer
       videosPerPage: 30
 sections:
@@ -1185,4 +1226,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-04-08 11:31:41'
+dateApplied: '2019-04-08 11:56:59'
