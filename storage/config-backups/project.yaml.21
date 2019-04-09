@@ -1,4 +1,4 @@
-dateModified: 1554717767
+dateModified: 1554717808
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -169,6 +169,18 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: dukt\videos\fields\Video
+  4db49ed0-b581-456a-bc13-2450963319b9:
+    contentColumnType: string
+    fieldGroup: 2d31e491-87da-48b8-85d6-72aba43f554c
+    handle: soundcloudLink
+    instructions: 'URL zu diesem Angebot auf SoundCloud'
+    name: 'SoundCloud Link'
+    searchable: true
+    settings:
+      placeholder: 'https://…'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
   597d3228-4fef-4e48-b794-3e488a088311:
     contentColumnType: text
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
@@ -1295,4 +1307,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-04-08 12:03:28'
+dateApplied: '2019-04-08 12:04:06'
