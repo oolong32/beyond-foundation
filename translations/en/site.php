@@ -15,7 +15,7 @@ return [
   'Team' => 'Team',
   'Musikplattform' => 'Music Network',
   'Förderprojekte' => 'Funding Projects',
-  'Gesuche\/Spenden' => 'Encouragement',
+  'Gesuche/Spenden' => 'Encouragement',
 ]
 
 ?>
