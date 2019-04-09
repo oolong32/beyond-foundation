@@ -18,10 +18,15 @@
     <main>
       <h2>{{ entry.pageHeading }}</h2>
 
-      {# gibt hier nicht …
-      <h3>{{ entry.leadTitle }}</h3>
-      {{ entry.lead }}
-      … #}
+      <section class="single-col">
+	      {% if entry.leadTitle|length %}
+	      <h3>{{ entry.leadTitle }}</h3>
+	      {% endif %}
+	      {% if entry.lead|length %}
+	      {{ entry.lead }}
+	      {% endif %}
+      </section>
+
 
       {% for project in projects %}
           
