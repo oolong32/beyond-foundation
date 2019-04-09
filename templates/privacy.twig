@@ -1,0 +1,32 @@
+{# Beyond Foundation, Impressum #}
+
+{% extends "_layout" %}
+
+{% set entry = craft.entries().section('privacy').one() %}
+
+{% block content %}
+
+    <header>
+      {% include 'includes/header' %}
+    </header>
+
+    <nav id="nav-overlay"> {# triggered by hamburger #}
+      {% include 'includes/nav' %}
+    </nav>
+      
+    <main>
+      <h2>{{ entry.pageHeading }}</h2>
+      <section class="single-col">
+        {{ entry.text }}
+      </section>
+    </main>
+        
+    <footer>
+      {% include 'includes/footer' %}
+    </footer>
+
+    <script>
+      console.log('I & I is at {{ slug }}' );
+    </script>
+
+{% endblock %}
