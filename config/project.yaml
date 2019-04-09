@@ -1,4 +1,4 @@
-dateModified: 1554793876
+dateModified: 1554795175
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -278,7 +278,7 @@ fields:
       columnType: text
       purifierConfig: ''
       purifyHtml: '1'
-      redactorConfig: Simple.json
+      redactorConfig: SimpleListTable.json
     translationKeyFormat: null
     translationMethod: site
     type: craft\redactor\Field

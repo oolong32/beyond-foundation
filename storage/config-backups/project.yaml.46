@@ -1,4 +1,4 @@
-dateModified: 1554290428
+dateModified: 1554366817
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -284,7 +284,7 @@ fields:
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
     handle: teaserImage
     instructions: 'Bild im Format 16:9'
-    name: Teaser-Bild
+    name: 'Bild (16:9)'
     searchable: true
     settings:
       allowedKinds:
@@ -1126,4 +1126,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-04-04 10:33:37'
+dateApplied: '2019-04-04 10:33:54'
