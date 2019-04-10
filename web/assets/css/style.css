@@ -908,17 +908,17 @@ footer {
     #nav-overlay #language-switch p {
       margin: .5rem 0 0 1rem;
       display: inline-block;
-      padding: 0 .5rem;
+      padding: 0 .75rem;
       font-size: 1.875rem;
       font-weight: 300;
       background: linear-gradient(20deg, #CCAF82 0%, #C6AD8C 20%, #C0AB97 100%); }
+      #nav-overlay #language-switch p a {
+        color: white; }
     #nav-overlay #language-switch p:before {
-      padding-right: 0.25rem;
-      content: url("/assets/_pic/arrow_right.svg");
+      padding-right: 0.5rem;
+      content: url("/assets/_pic/arrow_right_white.svg");
       position: relative;
       top: -4px; }
-    #nav-overlay #language-switch:hover p {
-      color: linear-gradient(20deg, #CCAF82 0%, #C6AD8C 20%, #C0AB97 100%); }
   /*
   #nav-footer {
     div#infos {

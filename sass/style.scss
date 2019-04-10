@@ -1201,14 +1201,17 @@ footer {
       p  {
         margin: .5rem 0 0 1rem;
         display: inline-block;
-        padding: 0 .5rem;
+        padding: 0 .75rem;
         font-size: 1.875rem;
         font-weight: $light;
         background: $gold;
+        a {
+          color: white;
+        }
       }
       p:before {
-        padding-right: 0.25rem;
-        content: url("/assets/_pic/arrow_right.svg");
+        padding-right: 0.5rem;
+        content: url("/assets/_pic/arrow_right_white.svg");
         position: relative;
         top: -4px;
 
@@ -1216,7 +1219,7 @@ footer {
     }
     #language-switch:hover {
       p { 
-        color: $gold;
+        // no styles: it’s touch, baby!
       }
     }
   }
