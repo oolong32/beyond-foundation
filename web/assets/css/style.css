@@ -396,7 +396,6 @@ header {
     header #language-switch p {
       margin: auto; }
   header #masthead {
-    transition: all 0.3s ease-out;
     flex-direction: column; }
     header #masthead h1, header #masthead p {
       margin: 0;
@@ -839,19 +838,25 @@ footer {
 @media (max-width: 600px) {
   :root {
     font-size: 16px; }
+  /* Layout Header/Footer Masthead {{{2 */
+  header #masthead, header.shrink #masthead, header.mini #masthead,
+  footer #masthead {
+    height: 6.875rem;
+    padding: 0; }
+    header #masthead h1, header.shrink #masthead h1, header.mini #masthead h1,
+    footer #masthead h1 {
+      display: inline-block;
+      margin: 0.9375rem 0 auto 1.25rem;
+      font-size: 2.625rem;
+      opacity: 1;
+      transform: translateY(0); }
+  /* End Layout Header/Footer Masthead }}}2 */
   /* Layout Header {{{2 */
+  .overlay-header #masthead {
+    background: linear-gradient(20deg, #CCAF82 0%, #C6AD8C 20%, #C0AB97 100%); }
   header #language-switch,
   header nav {
     display: none; }
-  header #masthead {
-    height: 4.75rem;
-    padding: 0.25rem 1rem; }
-    header #masthead h1 {
-      font-size: 2.45rem; }
-    header #masthead p {
-      font-size: 1rem;
-      line-height: 1.35;
-      letter-spacing: 0.175rem; }
   header #hamburger {
     position: absolute;
     display: block;
@@ -863,14 +868,6 @@ footer {
   header #hamburger:hover {
     transform: scale(1.1); }
   /* End Layout Header }}}2 */
-  /* Layout Collapsed Header {{{2 */
-  header.shrink #masthead {
-    height: 4.75rem;
-    padding: 0.25rem 1rem; }
-  header.shrink h1, header.shrink p {
-    opacity: 1;
-    transform: translateY(0); }
-  /* End Layout Collapsed Header }}}2 */
   /* Navigation Overlay {{{2 */
   body {
     height: 100%;
@@ -899,7 +896,7 @@ footer {
     /* Menü Style {{{3 */
     /* End Menü Style }}}3 */ }
     #nav-overlay ul {
-      margin: 6rem 0 0;
+      margin: 8rem 0 0;
       padding: 0 1rem 0 1rem;
       display: flex;
       justify-content: flex-start;
@@ -976,7 +973,7 @@ footer {
   main {
     /* Mobile Main Whitespace {{{3 */
     width: 100%;
-    padding: 3rem 0 1rem;
+    padding: 5.25rem 0 1rem;
     /* Mobile Main Single-Col Full-Width {{{4 */
     /* End Mobile Main Single-Col Full-Width }}}4 */
     /* Team/Music-Production-Teaser Texts {{{4 */
@@ -1208,12 +1205,10 @@ footer {
       font-size: 2.625rem; }
   /* End Mobile Main }}}2 */
   /* Layout Mobile Footer {{{2 */
-  footer,
-  #overlay-footer {
+  footer {
     width: 100%;
-    margin-top: 1rem; }
-    footer div.infos,
-    #overlay-footer div.infos {
+    margin-top: 0; }
+    footer div.infos {
       margin: 0 auto;
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -1221,24 +1216,10 @@ footer {
       grid-template-rows: repeat(3, 2rem);
       grid-auto-flow: column;
       font-size: 15px; }
-      footer div.infos p,
-      #overlay-footer div.infos p {
+      footer div.infos p {
         margin: 0;
         padding: 0;
         line-height: 1.1; }
-    footer #masthead,
-    #overlay-footer #masthead {
-      height: 4.75rem;
-      padding: 0.25rem 0.5rem; }
-      footer #masthead h1,
-      #overlay-footer #masthead h1 {
-        font-size: 2.625rem;
-        margin-bottom: 0; }
-      footer #masthead p,
-      #overlay-footer #masthead p {
-        color: white;
-        font-size: 0.8125rem;
-        letter-spacing: 0.125rem; }
   /* positioning of #overlay-footer in overlay-styles */
   #social-media-icons svg:first-of-type {
     margin-right: 0.5rem; }

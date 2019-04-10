@@ -521,7 +521,8 @@ header {
   /* Header Masthead Layout {{{2 */
   
   #masthead {
-    transition: all 0.3s ease-out;
+    // transition: all 0.3s ease-out; // animierte transition passt nicht, wenn header overlay header gold
+    // hoffentlich das richtige abgeschaltet hier, war ein quickie haha
     flex-direction: column;
     h1, p {
       margin: 0;
@@ -1114,20 +1115,31 @@ footer {
 
   :root { font-size: 16px; }
 
+
+  /* Layout Header/Footer Masthead {{{2 */
+  header, header.shrink, header.mini,
+  footer {
+    #masthead {
+      height: 6.875rem;
+      padding: 0;
+      h1 {
+        display: inline-block;
+        margin: 0.9375rem 0 auto 1.25rem;
+        font-size: 2.625rem;
+        // no changes on shrink
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }
+
+  /* End Layout Header/Footer Masthead }}}2 */
+
   /* Layout Header {{{2 */
+  .overlay-header #masthead { background: $gold; }
   header {
     #language-switch,
     nav { display: none; } // hide navigation and language switch
-    #masthead {
-      height: 4.75rem;
-      padding: 0.25rem 1rem;
-      h1 { font-size: 2.45rem; }
-      p {
-        font-size: 1rem;
-        line-height: 1.35;
-        letter-spacing: 0.175rem;
-      }
-    }
     #hamburger {
       position: absolute;
       display: block;
@@ -1140,19 +1152,6 @@ footer {
     #hamburger:hover { transform: scale(1.1); }
   }
   /* End Layout Header }}}2 */
-
-  /* Layout Collapsed Header {{{2 */
-  header.shrink { // keine Änderung bei Scroll
-    #masthead {
-      height: 4.75rem;
-      padding: 0.25rem 1rem;
-    }
-    h1, p {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  /* End Layout Collapsed Header }}}2 */
 
   /* Navigation Overlay {{{2 */
 
@@ -1186,7 +1185,7 @@ footer {
 
     /* Menü Style {{{3 */
     ul {
-      margin: 6rem 0 0;
+      margin: 8rem 0 0;
       padding: 0 1rem 0 1rem;
       display: flex; 
       justify-content: flex-start; 
@@ -1297,7 +1296,7 @@ footer {
   /* Mobile Main Whitespace {{{3 */
 
     width: 100%;
-    padding: 3rem 0 1rem;
+    padding: 5.25rem 0 1rem;
 
     h2 {
       padding: 0 20px; 
@@ -1486,11 +1485,10 @@ footer {
   /* End Mobile Main }}}2 */
 
   /* Layout Mobile Footer {{{2 */
-  footer,
-  #overlay-footer {
+  footer {
     width: 100%;
-    margin-top: 1rem;
-    div.infos {
+    margin-top: 0;
+    div.infos { // achtung das ist nicht overlay info!!!
       margin: 0 auto;
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -1502,20 +1500,6 @@ footer {
         margin: 0;
         padding: 0;
         line-height: 1.1;
-      }
-    }
-    #masthead { // alles prüfen!
-      height: 4.75rem;
-      padding: 0.25rem 0.5rem;
-      h1 {
-        font-size: 2.625rem;
-        // font-family: $francisGradientLeft; 
-        margin-bottom: 0;
-      }
-      p {
-        color: white;
-        font-size: 0.8125rem;
-        letter-spacing: 0.125rem;
       }
     }
   }

@@ -52,6 +52,7 @@ window.addEventListener('scroll', e => {
 hamburger.addEventListener('click', e => {
   navOver.classList.toggle('visible');
   main.classList.toggle('noScroll');
+  header.classList.toggle('overlay-header');
   footer.classList.toggle('noScroll');
   if (navOver.classList.contains('visible')) {
     window.scrollTo(0, 0);
