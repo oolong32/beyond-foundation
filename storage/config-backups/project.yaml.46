@@ -1,4 +1,4 @@
-dateModified: 1554382042
+dateModified: 1554382151
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -322,11 +322,11 @@ fields:
       restrictFiles: '1'
       selectionLabel: ''
       singleUploadLocationSource: 'volume:9eb7856b-e672-4fbf-b4b5-9d00ee79c726'
-      singleUploadLocationSubpath: ''
+      singleUploadLocationSubpath: images/slideshow/mobile
       source: null
       sources: '*'
       targetSiteId: null
-      useSingleFolder: ''
+      useSingleFolder: '1'
       viewMode: list
     translationKeyFormat: null
     translationMethod: site
@@ -1185,4 +1185,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-04-04 14:49:11'
+dateApplied: '2019-04-08 11:48:59'
