@@ -1,4 +1,4 @@
-dateModified: 1554810519
+dateModified: 1554816360
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -940,41 +940,6 @@ sections:
       maxLevels: '1'
       uid: ce59bcc3-cded-4cfd-b5f5-9fb32e9c4fe2
     type: structure
-  68c53e01-154e-4e20-9424-8aee60fdae4a:
-    enableVersioning: true
-    entryTypes:
-      c88bd234-9793-4d88-b074-4621b6878f33:
-        fieldLayouts:
-          0097244a-ed6d-4663-a995-c956fa6dd0d0:
-            tabs:
-              -
-                fields:
-                  417b399c-4166-4897-a491-00dff2058bd5:
-                    required: false
-                    sortOrder: 1
-                name: 'Tab 1'
-                sortOrder: 1
-        handle: videoTest
-        hasTitleField: false
-        name: video-test
-        sortOrder: 1
-        titleFormat: '{section.name|raw}'
-        titleLabel: ''
-    handle: videoTest
-    name: video-test
-    propagateEntries: true
-    siteSettings:
-      802d4b06-1f71-4c60-8b00-c331a21b5134:
-        enabledByDefault: true
-        hasUrls: true
-        template: videotest
-        uriFormat: video-test
-      96f6905b-bcc3-4e74-91a8-e5458eb5e532:
-        enabledByDefault: true
-        hasUrls: true
-        template: videotest
-        uriFormat: video-test
-    type: single
   a7103738-e3bc-4556-8521-a66f06bd0e0a:
     enableVersioning: true
     entryTypes:
@@ -1070,15 +1035,21 @@ sections:
               -
                 fields:
                   597d3228-4fef-4e48-b794-3e488a088311:
-                    required: '0'
-                    sortOrder: '2'
+                    required: false
+                    sortOrder: 4
+                  63060068-23fd-4091-9e13-96d982008822:
+                    required: false
+                    sortOrder: 3
+                  b729c087-ed9f-4371-8cf0-48e6ef2d9e6a:
+                    required: false
+                    sortOrder: 2
                   bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
-                    required: '0'
-                    sortOrder: '1'
+                    required: false
+                    sortOrder: 1
                 name: 'Tab 1'
-                sortOrder: '1'
+                sortOrder: 1
         handle: projects
-        hasTitleField: '0'
+        hasTitleField: false
         name: Projects
         sortOrder: 1
         titleFormat: '{section.name|raw}'
@@ -1412,4 +1383,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-04-09 13:53:45'
+dateApplied: '2019-04-09 16:02:10'

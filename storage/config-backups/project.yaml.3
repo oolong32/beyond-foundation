@@ -1,4 +1,4 @@
-dateModified: 1554979713
+dateModified: 1554982508
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -657,15 +657,18 @@ matrixBlockTypes:
               b8bdf3dd-49dc-430d-adaf-15b66594978f:
                 required: true
                 sortOrder: 1
+              d68a5011-9c54-4af7-a14c-256a968654ef:
+                required: true
+                sortOrder: 4
             name: Content
             sortOrder: 1
     fields:
       3a789234-95c4-4ef8-bf4d-c95010fba8e8:
         contentColumnType: text
         fieldGroup: null
-        handle: trackTitel
+        handle: trackTitle
         instructions: 'Der Name des Stücks.'
-        name: Track-Titel
+        name: Track-Title
         searchable: true
         settings:
           charLimit: ''
@@ -680,7 +683,7 @@ matrixBlockTypes:
       4a857b31-9212-4fde-99c6-923a2993ea5a:
         contentColumnType: text
         fieldGroup: null
-        handle: beschrieb
+        handle: trackDescription
         instructions: 'Ein kurzer Beschrieb, ca. 500 Zeichen'
         name: Beschrieb
         searchable: true
@@ -698,7 +701,7 @@ matrixBlockTypes:
       b8bdf3dd-49dc-430d-adaf-15b66594978f:
         contentColumnType: string
         fieldGroup: null
-        handle: audioFile
+        handle: trackAudio
         instructions: 'Eine mp3 Datei'
         name: Audio-Datei
         searchable: true
@@ -713,6 +716,32 @@ matrixBlockTypes:
           selectionLabel: ''
           singleUploadLocationSource: 'volume:9eb7856b-e672-4fbf-b4b5-9d00ee79c726'
           singleUploadLocationSubpath: audio
+          source: null
+          sources: '*'
+          targetSiteId: null
+          useSingleFolder: '1'
+          viewMode: list
+        translationKeyFormat: null
+        translationMethod: site
+        type: craft\fields\Assets
+      d68a5011-9c54-4af7-a14c-256a968654ef:
+        contentColumnType: string
+        fieldGroup: null
+        handle: trackImage
+        instructions: 'Quadratisches Bild (wird beschnitten).'
+        name: Bild
+        searchable: true
+        settings:
+          allowedKinds:
+            - image
+          defaultUploadLocationSource: 'volume:9eb7856b-e672-4fbf-b4b5-9d00ee79c726'
+          defaultUploadLocationSubpath: ''
+          limit: '1'
+          localizeRelations: ''
+          restrictFiles: '1'
+          selectionLabel: ''
+          singleUploadLocationSource: 'volume:9eb7856b-e672-4fbf-b4b5-9d00ee79c726'
+          singleUploadLocationSubpath: images/music-production/cover-images
           source: null
           sources: '*'
           targetSiteId: null
@@ -935,6 +964,13 @@ sections:
                     sortOrder: 5
                 name: 'Music-Network Intro'
                 sortOrder: 1
+              -
+                fields:
+                  eccd9fc9-950c-40aa-bcf0-ff9c5de05da8:
+                    required: false
+                    sortOrder: 1
+                name: 'Music-Network Awards'
+                sortOrder: 2
         handle: musicNetwork
         hasTitleField: false
         name: 'Music Network'
@@ -1509,4 +1545,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-04-11 12:55:54'
+dateApplied: '2019-04-11 13:43:21'
