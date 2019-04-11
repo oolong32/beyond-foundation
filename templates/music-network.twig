@@ -4,6 +4,7 @@
 
 {% set entry = craft.entries().section('musicNetwork').one() %}
 
+{# Template Markup Upper Part {{{1 #}
 {% block content %}
 
     <header>
@@ -16,6 +17,9 @@
       
     <main>
       <h2>{{ entry.pageHeading }}</h2>
+{# Template Markup Upper Part }}}1 #}
+
+{# Music Network Intro {{{1 #}
 
       <section class="single-col">
         <h3>{{ entry.leadTitle }}</h3>
@@ -45,9 +49,14 @@
       </blockquote>
       {% endif %}
 
+{# Music Network Intro }}}1 #}
+
+{# Music Network Audio Player Teasers {{{1 #}
+
       {% if entry.audioTrack|length %}
 
-      <!-- end music player teaser -->
+      <!-- music player teaser -->
+
       <section class="alternating-grid-text-large"> <!-- empty container, because 🐒 -->
       </section> {# dirty trick: fix order of next section to fit mockup, 😂 #}
 
@@ -78,13 +87,19 @@
 
       {% endif %}
 
+{# Music Network Audio Player Teasers }}}1 #}
+
     </main>
         
+{# Template Markup Lower Part {{{1 #}
     <footer>
       {% include 'includes/footer' %}
     </footer>
+{# Template Markup Lower Part }}}1 #}
 
-    <script src="{{ alias('@assetBasePath') }}/assets/howler.core.min.js"></script>
+{# Music Netowrk Javascript {{{1 #}
+
+    <script src="{{ alias('@assetBasePath') }}/assets/js/howler.core.min.js"></script>
     <script>
       console.log('audio player loaded')
 
@@ -140,5 +155,7 @@
         
       });
     </script>
+
+{# Music Netowrk Javascript }}}1 #}
 
 {% endblock %}
