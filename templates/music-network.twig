@@ -53,6 +53,8 @@
 
 {# Music Network Audio Player Teasers {{{1 #}
 
+  {# old markup {{{2 #}
+
       {% if entry.audioTrack|length %}
 
       <!-- music player teaser -->
@@ -87,11 +89,25 @@
 
       {% endif %}
 
+{# end old markup }}}2 #}
+
+{% if entry.awardTeaser|length %}
+  <p>there are teasers</p>
+  {% set awardTeasers = entry.awardTeaser.all() %}
+  {% for teaser in awardTeasers %}
+    <h3>{{ teaser.trackTitle }}</h3>
+{#{{ teaser.trackDescription }}#}
+{#
+    <img src="{{ teaser.trackImage[0].getUrl() }}" alt="{{ teaser.trackTitle }}">
+#}
+  {% endfor %}
+{% endif %}
+
 {# Music Network Audio Player Teasers }}}1 #}
 
-    </main>
-        
 {# Template Markup Lower Part {{{1 #}
+    </main>
+
     <footer>
       {% include 'includes/footer' %}
     </footer>
