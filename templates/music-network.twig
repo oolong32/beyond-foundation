@@ -150,6 +150,7 @@
         // audio player
         var sound = new Howl({
           src: [  '{{ alias('@assetBasePath') }}/{{ entry.audioTrack[0].getUrl() }}' ]
+          // hier wird es etwas php-js zauberei brauchen: mit for-loop javascript array pushen?
         });
         
         // Check for audio loaded, pause and display time
