@@ -92,16 +92,16 @@
   {# end old markup }}}2 #}
 
   {# new markup {{{2 #}
-    {% if entry.awardTeaser|length %}
+    {% if entry.awardTeasers|length %}
       <section class="alternating-grid-text-large"> <!-- empty container, because 🐒 -->
       </section> {# dirty trick: fix order of next section to fit mockup, 😂 #}
 
 
-      {% set awardTeasers = entry.awardTeaser.all() %}
+      {% set awardTeasers = entry.awardTeasers.all() %}
       {% for teaser in awardTeasers %}
       <section class="alternating-grid-text-large">
       <div class="image-cell">
-        <img src="{{ alias('@assetBasePath') }}/{{ teaser.trackImage[0].getUrl() }}" alt="{#{{ teaser.trackArtist }}: #}{{ teaser.trackTitle }}">
+        <img src="{{ alias('@assetBasePath') }}/{{ teaser.trackImage[0].getUrl('square') }}" alt="{#{{ teaser.trackArtist }}: #}{{ teaser.trackTitle }}">
       </div>
       <div class="text-cell">
         <h3 class="player-track-title">{{ teaser.teaserHeading }}</h3>
