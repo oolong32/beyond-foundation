@@ -89,19 +89,40 @@
 
       {% endif %}
 
-{# end old markup }}}2 #}
+  {# end old markup }}}2 #}
 
-{% if entry.awardTeaser|length %}
-  <p>there are teasers</p>
-  {% set awardTeasers = entry.awardTeaser.all() %}
-  {% for teaser in awardTeasers %}
-    <h3>{{ teaser.trackTitle }}</h3>
-{#{{ teaser.trackDescription }}#}
-{#
-    <img src="{{ teaser.trackImage[0].getUrl() }}" alt="{{ teaser.trackTitle }}">
-#}
-  {% endfor %}
-{% endif %}
+  {# new markup {{{2 #}
+    {% if entry.awardTeaser|length %}
+      <section class="alternating-grid-text-large"> <!-- empty container, because 🐒 -->
+      </section> {# dirty trick: fix order of next section to fit mockup, 😂 #}
+
+
+      {% set awardTeasers = entry.awardTeaser.all() %}
+      {% for teaser in awardTeasers %}
+      <section class="alternating-grid-text-large">
+      <div class="image-cell">
+        <img src="{{ alias('@assetBasePath') }}/{{ teaser.trackImage[0].getUrl() }}" alt="{#{{ teaser.trackArtist }}: #}{{ teaser.trackTitle }}">
+      </div>
+      <div class="text-cell">
+        <h3 class="player-track-title">{{ teaser.teaserHeading }}</h3>
+        <div class="custom-audio-player">
+          <div class="play-pause-button">{# background gets set in stylesheet #}</div>
+          <p class="track-info">{#{{ entry.trackArtist }}: #}{{ teaser.trackTitle }}</p>
+          <p class="time normal">{# gets content by javascript #}</p>
+          <audio class="audio-player" controls="controls" paused> {# audio is not displayed by way of css #}
+            Your browser does not support the <code>audio</code> element.
+            <source src="{{ alias('@assetBasePath') }}/{{ teaser.trackAudio[0].getUrl() }}">
+          </audio>
+        </div>
+
+        <div class="normal">
+          {{ teaser.trackDescription }}
+        </div>
+      </div>
+      </section>
+      {% endfor %}
+    {% endif %}
+  {# end new markup }}}2 #}
 
 {# Music Network Audio Player Teasers }}}1 #}
 
