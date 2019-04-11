@@ -4,6 +4,7 @@
 
 {% set entry = craft.entries().section('musicNetwork').one() %}
 
+{# Template Markup Upper Part {{{1 #}
 {% block content %}
 
     <header>
@@ -16,6 +17,9 @@
       
     <main>
       <h2>{{ entry.pageHeading }}</h2>
+{# Template Markup Upper Part }}}1 #}
+
+{# Music Network Intro {{{1 #}
 
       <section class="single-col">
         <h3>{{ entry.leadTitle }}</h3>
@@ -45,42 +49,60 @@
       </blockquote>
       {% endif %}
 
+{# Music Network Intro }}}1 #}
+
+{# Music Network Audio Player Teasers {{{1 #}
+
       {% if entry.audioTrack|length %}
-        <section class="alternating-grid-text-large">
-        </section> {# dirty trick: fix order of next section to fit mockup, 😂 #}
-        <section class="alternating-grid-text-large">
-        <div class="image-cell">
-          <img src="{{ alias('@assetBasePath') }}/{{ entry.coverImage[0].getUrl() }}" alt="{#{{ entry.trackArtist }}: #}{{ entry.trackTitle }}">
+
+      <!-- music player teaser -->
+
+      <section class="alternating-grid-text-large"> <!-- empty container, because 🐒 -->
+      </section> {# dirty trick: fix order of next section to fit mockup, 😂 #}
+
+      <section class="alternating-grid-text-large">
+      <div class="image-cell">
+        <img src="{{ alias('@assetBasePath') }}/{{ entry.coverImage[0].getUrl() }}" alt="{#{{ entry.trackArtist }}: #}{{ entry.trackTitle }}">
+      </div>
+      <div class="text-cell">
+        <h3 class="player-track-title">Winning Song of the Second Creativity Award</h3>
+
+        <div class="custom-audio-player">
+          <div class="play-pause-button">{# background gets set in stylesheet #}</div>
+          <p class="track-info">{#{{ entry.trackArtist }}: #}{{ entry.trackTitle }}</p>
+          <p class="time normal">{# gets content by javascript #}</p>
+          <audio class="audio-player" controls="controls" paused> {# audio is not displayed by way of css #}
+            Your browser does not support the <code>audio</code> element.
+            <source src="{{ alias('@assetBasePath') }}/{{ entry.audioTrack[0].getUrl() }}">
+          </audio>
         </div>
-        <div class="text-cell">
-          <h3 class="player-track-title">Winning Song of the Second Creativity Award</h3>
 
-          <div class="custom-audio-player">
-            <div class="play-pause-button">{# background gets set in stylesheet #}</div>
-            <p class="track-info">{#{{ entry.trackArtist }}: #}{{ entry.trackTitle }}</p>
-            <p class="time normal">{# gets content by javascript #}</p>
-            <audio class="audio-player" controls="controls" paused> {# audio is not displayed by way of css #}
-              Your browser does not support the <code>audio</code> element.
-              <source src="{{ alias('@assetBasePath') }}/{{ entry.audioTrack[0].getUrl() }}">
-            </audio>
-          </div>
-
-          <div class="normal">
-            {{ entry.trackInfo }}
-          </div>
-
+        <div class="normal">
+          {{ entry.trackInfo }}
         </div>
+
+      </div>
       </section>
+      <!-- end music player teaser -->
+
       {% endif %}
+
+{# Music Network Audio Player Teasers }}}1 #}
 
     </main>
         
+{# Template Markup Lower Part {{{1 #}
     <footer>
       {% include 'includes/footer' %}
     </footer>
+{# Template Markup Lower Part }}}1 #}
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.1/howler.core.min.js"></script>
+{# Music Netowrk Javascript {{{1 #}
+
+    <script src="{{ alias('@assetBasePath') }}/assets/js/howler.core.min.js"></script>
     <script>
+      console.log('audio player loaded')
+
       window.addEventListener('DOMContentLoaded', (event) => {
 
         console.log('I & I is at {{ slug }}' );
@@ -133,5 +155,7 @@
         
       });
     </script>
+
+{# Music Netowrk Javascript }}}1 #}
 
 {% endblock %}

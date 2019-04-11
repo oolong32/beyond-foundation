@@ -8,3 +8,4 @@
 gulpfile.js
 web/assets/fonts
 /uploads
+.tern-project
