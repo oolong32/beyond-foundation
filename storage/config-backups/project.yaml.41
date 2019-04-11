@@ -1,4 +1,4 @@
-dateModified: 1554717481
+dateModified: 1554717730
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -69,7 +69,7 @@ fields:
     type: craft\fields\Url
   12774cd1-bd04-43d7-ab20-3391917cdf53:
     contentColumnType: string
-    fieldGroup: 85d8c0e7-6a43-4691-8d57-0ea516983de7
+    fieldGroup: 2d31e491-87da-48b8-85d6-72aba43f554c
     handle: amazonLinkHear
     instructions: 'URL zu diesem Angebot auf Amazon'
     name: 'Amazon-Link (Hören)'
@@ -81,10 +81,22 @@ fields:
     type: craft\fields\Url
   265f2e45-2db1-4395-ab69-942f48810f66:
     contentColumnType: string
-    fieldGroup: 85d8c0e7-6a43-4691-8d57-0ea516983de7
+    fieldGroup: 2d31e491-87da-48b8-85d6-72aba43f554c
     handle: spotifyLink
     instructions: 'URL zu diesem Angebot auf Spotify'
     name: 'Spotify Link'
+    searchable: true
+    settings:
+      placeholder: 'https://…'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
+  28f5f6ca-2091-4f1e-86ed-32ea3b8f56ae:
+    contentColumnType: string
+    fieldGroup: 2d31e491-87da-48b8-85d6-72aba43f554c
+    handle: iGrooveLinks
+    instructions: 'URL zu diesem Angebot auf iGroove'
+    name: 'iGroove Links'
     searchable: true
     settings:
       placeholder: 'https://…'
@@ -108,6 +120,18 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\PlainText
+  3c3a2347-0342-47bb-a471-b72ccbee7c06:
+    contentColumnType: string
+    fieldGroup: 2d31e491-87da-48b8-85d6-72aba43f554c
+    handle: exLibris
+    instructions: 'URL zu diesem Angebot auf ex libris'
+    name: 'ex libris'
+    searchable: true
+    settings:
+      placeholder: 'https://…'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
   3f013fdf-9050-4d51-b818-050c8a105e6f:
     contentColumnType: string
     fieldGroup: 85d8c0e7-6a43-4691-8d57-0ea516983de7
@@ -162,6 +186,18 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\PlainText
+  5b74422b-6b7b-4d5b-ad20-c087fc20d254:
+    contentColumnType: string
+    fieldGroup: 2d31e491-87da-48b8-85d6-72aba43f554c
+    handle: amazonLinkBuy
+    instructions: 'URL zu diesem Angebot auf Amazon'
+    name: 'Amazon Link (Kaufen)'
+    searchable: true
+    settings:
+      placeholder: 'https://…'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
   63060068-23fd-4091-9e13-96d982008822:
     contentColumnType: text
     fieldGroup: 85d8c0e7-6a43-4691-8d57-0ea516983de7
@@ -253,6 +289,18 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\redactor\Field
+  9748cdf8-1320-4cd4-989e-2dc8ce373279:
+    contentColumnType: string
+    fieldGroup: 2d31e491-87da-48b8-85d6-72aba43f554c
+    handle: cedeLink
+    instructions: 'URL zu diesem Angebot auf cede.ch'
+    name: 'cede.ch Link'
+    searchable: true
+    settings:
+      placeholder: 'https://…'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
   aac9b682-0ac3-4291-bc12-f31f73e6cad9:
     contentColumnType: text
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
@@ -1235,4 +1283,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-04-08 11:58:23'
+dateApplied: '2019-04-08 12:02:47'

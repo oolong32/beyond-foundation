@@ -1,9 +1,11 @@
-dateModified: 1554717450
+dateModified: 1554717591
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
   transportType: craft\mail\transportadapters\Sendmail
 fieldGroups:
+  2d31e491-87da-48b8-85d6-72aba43f554c:
+    name: 'Share Links'
   85d8c0e7-6a43-4691-8d57-0ea516983de7:
     name: 'Music Production Entries'
   97dfc979-5ae8-418e-9249-5b4fdebd7c80:
@@ -67,7 +69,7 @@ fields:
     type: craft\fields\Url
   12774cd1-bd04-43d7-ab20-3391917cdf53:
     contentColumnType: string
-    fieldGroup: 85d8c0e7-6a43-4691-8d57-0ea516983de7
+    fieldGroup: 2d31e491-87da-48b8-85d6-72aba43f554c
     handle: amazonLinkHear
     instructions: 'URL zu diesem Angebot auf Amazon'
     name: 'Amazon-Link (Hören)'
@@ -79,10 +81,22 @@ fields:
     type: craft\fields\Url
   265f2e45-2db1-4395-ab69-942f48810f66:
     contentColumnType: string
-    fieldGroup: 85d8c0e7-6a43-4691-8d57-0ea516983de7
+    fieldGroup: 2d31e491-87da-48b8-85d6-72aba43f554c
     handle: spotifyLink
     instructions: 'URL zu diesem Angebot auf Spotify'
     name: 'Spotify Link'
+    searchable: true
+    settings:
+      placeholder: 'https://…'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
+  28f5f6ca-2091-4f1e-86ed-32ea3b8f56ae:
+    contentColumnType: string
+    fieldGroup: 2d31e491-87da-48b8-85d6-72aba43f554c
+    handle: iGrooveLinks
+    instructions: 'URL zu diesem Angebot auf iGroove'
+    name: 'iGroove Links'
     searchable: true
     settings:
       placeholder: 'https://…'
@@ -357,7 +371,7 @@ fields:
     type: craft\fields\Assets
   cab30499-6a6d-4965-ba7a-ed405ffc77ee:
     contentColumnType: string
-    fieldGroup: 85d8c0e7-6a43-4691-8d57-0ea516983de7
+    fieldGroup: 2d31e491-87da-48b8-85d6-72aba43f554c
     handle: itunesLink
     instructions: 'Die URL zu diesem Angebot auf iTunes'
     name: iTunes-Link
@@ -369,7 +383,7 @@ fields:
     type: craft\fields\Url
   cf6d51c0-4331-4c58-b92c-8621eae977fd:
     contentColumnType: string
-    fieldGroup: 85d8c0e7-6a43-4691-8d57-0ea516983de7
+    fieldGroup: 2d31e491-87da-48b8-85d6-72aba43f554c
     handle: googlePlayLink
     instructions: 'URL zu diesem Angebot auf Google Play'
     name: 'Google Play Link'
@@ -1233,4 +1247,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-04-08 11:57:45'
+dateApplied: '2019-04-08 12:00:38'

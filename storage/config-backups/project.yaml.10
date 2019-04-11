@@ -1,4 +1,4 @@
-dateModified: 1554818529
+dateModified: 1554875444
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -107,7 +107,7 @@ fields:
     contentColumnType: text
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
     handle: shortDescription
-    instructions: 'Maximal 60 Zeichen'
+    instructions: 'Ein möglichst kurzer Text.'
     name: Kurzbeschrieb
     searchable: true
     settings:
@@ -642,14 +642,14 @@ plugins:
           clientSecret: 0uCV3T2WxPjmoee3_7h91Xra
       tokens:
         youtube:
-          accessToken: ya29.GlzmBsPe9yXH-QjGX3t0HgyBXsiYulz7-3X5w-wE_QId-UOx_bcPUb8vdz2z4GScRKkJfVETrmgYE_5S9_ufGp-RJj7Dmx0g9VgBkApfGvYetNs9amLlTETHMIeCGw
-          expires: 1554822129
+          accessToken: ya29.GlzmBnaAZwwu5UJplKfa8YELQSBnxUMfjtV3jiVpgYFlPujl1u1yDO69IT6ZDVjQsIl9Q4UQTbYdKYqo35dZ5c3JNanA-nsMjH6SuF1kRXOr0jHQWiheNKOcRLQbog
+          expires: 1554879044
           refreshToken: 1/h_aaH-zGnHYJCo5IJxtfkrdl09zaCcnwd20rF1paffZJ-qin2ZCXBzCqbn4gpn5A
           resourceOwnerId: null
           values:
             values:
-              id_token: eyJhbGciOiJSUzI1NiIsImtpZCI6IjZmNjc4MWJhNzExOTlhNjU4ZTc2MGFhNWFhOTNlNWZjM2RjNzUyYjUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTU5MjQ2NDUyNTc5OTAyMzQ3NDYiLCJlbWFpbCI6ImJleW9uZHNpbmdpbmdjb21AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJYdTlJdXFXWEdad0RvM2FWaC13NnVnIiwiaWF0IjoxNTU0ODE4NTI5LCJleHAiOjE1NTQ4MjIxMjl9.dplUBhTW4bDAQdCuCxV2JRJ7zt4t4VU3BBkdR1WN8eDQRClh_xl978IGzLyJmhghqmNaALiTV_i66FJ6F01LixctfOGDFd66Wopuq2qh_llNATKL7JhD1KWrLW4rdtqH1uDtC8FfeBzfhbS_MU9-emZaXoxuqmqdsOJbSPfmC3zDl7S1rlkHJsNz6IWbDla44hql88RrnzeTR6P7sah63lot34YMoVGGMeUU1kQQ5so5ypEzQBJk8zpNfaDJeF_Ug6LCdpdyHzeQwtnU_XQ7QZNjdVWGOFHPaAq3EK7BDKGb0Q9GtdEp38VTZbgPCxIHuZbXMQ-UQIHUIwAvi9aZdQ
-              scope: 'https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/youtube https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/youtube.readonly'
+              id_token: eyJhbGciOiJSUzI1NiIsImtpZCI6IjZmNjc4MWJhNzExOTlhNjU4ZTc2MGFhNWFhOTNlNWZjM2RjNzUyYjUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTU5MjQ2NDUyNTc5OTAyMzQ3NDYiLCJlbWFpbCI6ImJleW9uZHNpbmdpbmdjb21AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJkNm9JeW96Z0hhNUJJendubXNVYzFBIiwibmFtZSI6IkJleW9uZCBTaW5naW5nIiwicGljdHVyZSI6Imh0dHBzOi8vbGg1Lmdvb2dsZXVzZXJjb250ZW50LmNvbS8tQnJZdUI5d1JDN0UvQUFBQUFBQUFBQUkvQUFBQUFBQUFBQWsvZVNWWTVhamtmRVUvczk2LWMvcGhvdG8uanBnIiwiZ2l2ZW5fbmFtZSI6IkJleW9uZCIsImZhbWlseV9uYW1lIjoiU2luZ2luZyIsImxvY2FsZSI6ImRlIiwiaWF0IjoxNTU0ODc1NDQ0LCJleHAiOjE1NTQ4NzkwNDR9.VKzW4vDEsJdyQCUk4Yoye-ARrhakSL1io6l0miyhaPYdH7fJ6ZBHPQMiqg80UxOic5uyielEmz0FTVj-veCofgxRzoNHWSUCLPteS-dg1A7WY7C-wCbaUGrLpdapWxaytX0bLK6u_3S78yE8L3S4xuReXLyz0WGq9Ld-mwWeGwRjEccMlV95j-ITv7anbkUKW-ymH4CG-_j5uQzlmI3GDAeeN7DgvaNRNFUcnlvuoIoH569P55wkzZsEg2JuI3ji1XMGxBL2Bf-0eRPb8PeIY4KmMe_ZfVGmRvjHc8ksLuEs99RVfxdNVAvS6sgABV-36f7ZWVzNh4l0LtDsPDrv7A
+              scope: 'https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/youtube.readonly https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/youtube'
               token_type: Bearer
       videosPerPage: 30
 sections:
@@ -854,6 +854,31 @@ sections:
         hasUrls: true
         template: music-network
         uriFormat: music-network
+    type: single
+  1ab8381d-237e-4bb1-bbc4-db58df866896:
+    enableVersioning: true
+    entryTypes:
+      efcc7ddb-fd64-43fe-9e62-c5b54765684f:
+        handle: team
+        hasTitleField: true
+        name: Team
+        sortOrder: 1
+        titleFormat: '{section.name|raw}'
+        titleLabel: Überschrift
+    handle: team
+    name: Team
+    propagateEntries: true
+    siteSettings:
+      802d4b06-1f71-4c60-8b00-c331a21b5134:
+        enabledByDefault: true
+        hasUrls: true
+        template: team/index
+        uriFormat: team
+      96f6905b-bcc3-4e74-91a8-e5458eb5e532:
+        enabledByDefault: true
+        hasUrls: true
+        template: team/index
+        uriFormat: team
     type: single
   3f58999a-6ac1-4372-a7ea-ec0c2c682cbf:
     enableVersioning: true
@@ -1383,4 +1408,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-04-09 16:05:00'
+dateApplied: '2019-04-10 09:24:09'

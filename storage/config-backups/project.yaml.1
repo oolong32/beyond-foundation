@@ -1,9 +1,11 @@
-dateModified: 1554905473
+dateModified: 1554979713
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
   transportType: craft\mail\transportadapters\Sendmail
 fieldGroups:
+  02ecc909-a8ca-4329-abc5-f055c7de039e:
+    name: 'Music-Network Awards'
   2d31e491-87da-48b8-85d6-72aba43f554c:
     name: 'Share Links'
   85d8c0e7-6a43-4691-8d57-0ea516983de7:
@@ -569,6 +571,21 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Url
+  eccd9fc9-950c-40aa-bcf0-ff9c5de05da8:
+    contentColumnType: string
+    fieldGroup: 02ecc909-a8ca-4329-abc5-f055c7de039e
+    handle: awardTeaser
+    instructions: 'Ein Teaser mit Audio-Player, Bild und Text.'
+    name: 'Award Teaser'
+    searchable: true
+    settings:
+      contentTable: '{{%matrixcontent_awardteaser}}'
+      localizeBlocks: ''
+      maxBlocks: ''
+      minBlocks: ''
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Matrix
   f01db52f-6f1f-4abd-aa2c-4a8b40100e97:
     contentColumnType: string
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
@@ -623,6 +640,90 @@ imageTransforms:
     position: center-center
     quality: '82'
     width: '1040'
+matrixBlockTypes:
+  d8f9a676-666d-4ff3-bc2c-4d09756020ae:
+    field: eccd9fc9-950c-40aa-bcf0-ff9c5de05da8
+    fieldLayouts:
+      c9334a83-c204-4de1-8878-1c6c21428e59:
+        tabs:
+          -
+            fields:
+              3a789234-95c4-4ef8-bf4d-c95010fba8e8:
+                required: true
+                sortOrder: 2
+              4a857b31-9212-4fde-99c6-923a2993ea5a:
+                required: true
+                sortOrder: 3
+              b8bdf3dd-49dc-430d-adaf-15b66594978f:
+                required: true
+                sortOrder: 1
+            name: Content
+            sortOrder: 1
+    fields:
+      3a789234-95c4-4ef8-bf4d-c95010fba8e8:
+        contentColumnType: text
+        fieldGroup: null
+        handle: trackTitel
+        instructions: 'Der Name des Stücks.'
+        name: Track-Titel
+        searchable: true
+        settings:
+          charLimit: ''
+          code: ''
+          columnType: text
+          initialRows: '4'
+          multiline: ''
+          placeholder: ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\PlainText
+      4a857b31-9212-4fde-99c6-923a2993ea5a:
+        contentColumnType: text
+        fieldGroup: null
+        handle: beschrieb
+        instructions: 'Ein kurzer Beschrieb, ca. 500 Zeichen'
+        name: Beschrieb
+        searchable: true
+        settings:
+          availableTransforms: ''
+          availableVolumes: ''
+          cleanupHtml: '1'
+          columnType: text
+          purifierConfig: ''
+          purifyHtml: '1'
+          redactorConfig: Simple.json
+        translationKeyFormat: null
+        translationMethod: site
+        type: craft\redactor\Field
+      b8bdf3dd-49dc-430d-adaf-15b66594978f:
+        contentColumnType: string
+        fieldGroup: null
+        handle: audioFile
+        instructions: 'Eine mp3 Datei'
+        name: Audio-Datei
+        searchable: true
+        settings:
+          allowedKinds:
+            - audio
+          defaultUploadLocationSource: 'volume:9eb7856b-e672-4fbf-b4b5-9d00ee79c726'
+          defaultUploadLocationSubpath: ''
+          limit: '1'
+          localizeRelations: ''
+          restrictFiles: '1'
+          selectionLabel: ''
+          singleUploadLocationSource: 'volume:9eb7856b-e672-4fbf-b4b5-9d00ee79c726'
+          singleUploadLocationSubpath: audio
+          source: null
+          sources: '*'
+          targetSiteId: null
+          useSingleFolder: '1'
+          viewMode: list
+        translationKeyFormat: null
+        translationMethod: site
+        type: craft\fields\Assets
+    handle: teaser
+    name: Teaser
+    sortOrder: 1
 plugins:
   redactor:
     edition: standard
@@ -642,14 +743,14 @@ plugins:
           clientSecret: 0uCV3T2WxPjmoee3_7h91Xra
       tokens:
         youtube:
-          accessToken: ya29.GlzmBtJ5e-uCRh6O_2XZTH_xlkuEvy8AsUnEyFghOyvYvdUVT6b0LwqEQeJcDnILdMyyu09kDaPns-CKVtoSyYwIIn244_0DAxPQU37AdChKGyjaWnJD2jksQ6H73w
-          expires: 1554909073
+          accessToken: ya29.GlzoBrRxW1DeVlsp12OoCy6-zeuuHWwcViZ6a31QcYeOQd5Zs_wlY4D1wZyPwT67wqzgPE4AUCv3C38nyHIdh6W_mvhkFmDm7_eCPBh-FgACmQP6dkf7MHsr0MEdOg
+          expires: 1554982469
           refreshToken: 1/h_aaH-zGnHYJCo5IJxtfkrdl09zaCcnwd20rF1paffZJ-qin2ZCXBzCqbn4gpn5A
           resourceOwnerId: null
           values:
             values:
-              id_token: eyJhbGciOiJSUzI1NiIsImtpZCI6IjZmNjc4MWJhNzExOTlhNjU4ZTc2MGFhNWFhOTNlNWZjM2RjNzUyYjUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTU5MjQ2NDUyNTc5OTAyMzQ3NDYiLCJlbWFpbCI6ImJleW9uZHNpbmdpbmdjb21AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJhWk1FUXAtVG84djhLRFdoWER1XzFRIiwibmFtZSI6IkJleW9uZCBTaW5naW5nIiwicGljdHVyZSI6Imh0dHBzOi8vbGg1Lmdvb2dsZXVzZXJjb250ZW50LmNvbS8tQnJZdUI5d1JDN0UvQUFBQUFBQUFBQUkvQUFBQUFBQUFBQWsvZVNWWTVhamtmRVUvczk2LWMvcGhvdG8uanBnIiwiZ2l2ZW5fbmFtZSI6IkJleW9uZCIsImZhbWlseV9uYW1lIjoiU2luZ2luZyIsImxvY2FsZSI6ImRlIiwiaWF0IjoxNTU0OTA1NDczLCJleHAiOjE1NTQ5MDkwNzN9.UycEQBmqVak9ZjGLwkSCCc8YpFGb1-VSlkLc9BnYp05w6TA2AePPpnWEw9wPIbe1D3Vh8xf2ch7IbaS1pdMs41hvBEfiqNhczJgJ97ZA9wz-aUVg2F1-qPlUw9ZPVlEIUWgRRW_uCfFNz8fjXKtinyMwEtsSihx5ym86_yCbvSseYRd7DYL0s0iiCUPB5eVOxcqKJCINfzQoF6Km9SKSqd0qExgLDAsdR0MjaMMOVidMCV-NJktjSHqNA6f5UogP9K5EtnzcdbdzyK35QQq27O3VeOG3WqfkC0Uh7W39k9WXvi7GObpKuk8nfJjezHtSBG-tX8SGyV2gu4vS5l9NMA
-              scope: 'https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/youtube.readonly https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/youtube'
+              id_token: eyJhbGciOiJSUzI1NiIsImtpZCI6IjM3ODJkM2YwYmM4OTAwOGQ5ZDJjMDE3MzBmNzY1Y2ZiMTlkM2I3MGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTU5MjQ2NDUyNTc5OTAyMzQ3NDYiLCJlbWFpbCI6ImJleW9uZHNpbmdpbmdjb21AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJFblZBb05lcHlFSTBYNVZQcnVrak9RIiwibmFtZSI6IkJleW9uZCBTaW5naW5nIiwicGljdHVyZSI6Imh0dHBzOi8vbGg1Lmdvb2dsZXVzZXJjb250ZW50LmNvbS8tQnJZdUI5d1JDN0UvQUFBQUFBQUFBQUkvQUFBQUFBQUFBQWsvZVNWWTVhamtmRVUvczk2LWMvcGhvdG8uanBnIiwiZ2l2ZW5fbmFtZSI6IkJleW9uZCIsImZhbWlseV9uYW1lIjoiU2luZ2luZyIsImxvY2FsZSI6ImRlIiwiaWF0IjoxNTU0OTc4ODY5LCJleHAiOjE1NTQ5ODI0Njl9.ectDYwF0C6N2uO1PiR4SwUX8LlYG5bF1hlu6xuo8v1sWbDaXBlBlBSwHU1P4hLCuRZkJ9YRWZJL8DXN_xnYcX35Xd0pd-3k4o0mb2NMLuFBG-Nb5yIn4iQeyh5niFsJzTXMHsp_k9EA3Uo9G4-LtzRBDUjuKoGlfLmy15IyqnVWoZW61PhNnxXw7__lyODTnJ9vu5wEKlBGfsmWyzMOGd51DvsmTFOjdxxxMlIriBTXLAr1DR5IcHxHwlT1EEZComxk7VuKcRDK32MxNoktHdrK1DSH7wFw4zX06ulBe4lVJUg4sWjvtsQ48k7uMjuVYazdYYWtS5FCps6-g2BBw1w
+              scope: 'https://www.googleapis.com/auth/youtube.readonly https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/youtube https://www.googleapis.com/auth/userinfo.profile'
               token_type: Bearer
       videosPerPage: 30
 sections:
@@ -832,7 +933,7 @@ sections:
                   f01db52f-6f1f-4abd-aa2c-4a8b40100e97:
                     required: false
                     sortOrder: 5
-                name: 'Tab 1'
+                name: 'Music-Network Intro'
                 sortOrder: 1
         handle: musicNetwork
         hasTitleField: false
@@ -1408,4 +1509,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-04-11 09:26:09'
+dateApplied: '2019-04-11 12:55:54'

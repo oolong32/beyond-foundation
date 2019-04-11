@@ -1,4 +1,4 @@
-dateModified: 1554717859
+dateModified: 1554719785
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -94,9 +94,9 @@ fields:
   28f5f6ca-2091-4f1e-86ed-32ea3b8f56ae:
     contentColumnType: string
     fieldGroup: 2d31e491-87da-48b8-85d6-72aba43f554c
-    handle: iGrooveLinks
+    handle: iGrooveLink
     instructions: 'URL zu diesem Angebot auf iGroove'
-    name: 'iGroove Links'
+    name: 'iGroove Link'
     searchable: true
     settings:
       placeholder: 'https://…'
@@ -210,6 +210,23 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Url
+  5d482f8a-8e95-43c2-b2d1-beac7424d6bf:
+    contentColumnType: text
+    fieldGroup: 2d31e491-87da-48b8-85d6-72aba43f554c
+    handle: iGrooveSmsText
+    instructions: 'Text, mit Stichwort und Telefonnummer für iGroove.'
+    name: 'iGroove SMS Text'
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: 'Sende eine SMS mit «…» an die Nummer 60660 (DE) oder 9000 (CH).'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
   63060068-23fd-4091-9e13-96d982008822:
     contentColumnType: text
     fieldGroup: 85d8c0e7-6a43-4691-8d57-0ea516983de7
@@ -434,7 +451,7 @@ fields:
     fieldGroup: 2d31e491-87da-48b8-85d6-72aba43f554c
     handle: itunesLink
     instructions: 'Die URL zu diesem Angebot auf iTunes'
-    name: iTunes-Link
+    name: 'iTunes Link'
     searchable: true
     settings:
       placeholder: 'https://…'
@@ -712,6 +729,43 @@ sections:
                     sortOrder: 2
                 name: 'Music Production'
                 sortOrder: 1
+              -
+                fields:
+                  12774cd1-bd04-43d7-ab20-3391917cdf53:
+                    required: false
+                    sortOrder: 1
+                  265f2e45-2db1-4395-ab69-942f48810f66:
+                    required: false
+                    sortOrder: 11
+                  28f5f6ca-2091-4f1e-86ed-32ea3b8f56ae:
+                    required: false
+                    sortOrder: 7
+                  3c3a2347-0342-47bb-a471-b72ccbee7c06:
+                    required: false
+                    sortOrder: 4
+                  4db49ed0-b581-456a-bc13-2450963319b9:
+                    required: false
+                    sortOrder: 10
+                  5b74422b-6b7b-4d5b-ad20-c087fc20d254:
+                    required: false
+                    sortOrder: 2
+                  5d482f8a-8e95-43c2-b2d1-beac7424d6bf:
+                    required: false
+                    sortOrder: 8
+                  9748cdf8-1320-4cd4-989e-2dc8ce373279:
+                    required: false
+                    sortOrder: 3
+                  bcedc8fd-2988-4117-9d9e-84ebecec86bc:
+                    required: false
+                    sortOrder: 5
+                  cab30499-6a6d-4965-ba7a-ed405ffc77ee:
+                    required: false
+                    sortOrder: 9
+                  cf6d51c0-4331-4c58-b92c-8621eae977fd:
+                    required: false
+                    sortOrder: 6
+                name: 'Share Links'
+                sortOrder: 2
         handle: musicProductionEntries
         hasTitleField: true
         name: 'Music Production Entries'
@@ -1307,4 +1361,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-04-08 12:04:35'
+dateApplied: '2019-04-09 09:11:16'
