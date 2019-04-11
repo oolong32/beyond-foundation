@@ -1,4 +1,4 @@
-dateModified: 1554818529
+dateModified: 1554818700
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -855,6 +855,31 @@ sections:
         template: music-network
         uriFormat: music-network
     type: single
+  1ab8381d-237e-4bb1-bbc4-db58df866896:
+    enableVersioning: true
+    entryTypes:
+      efcc7ddb-fd64-43fe-9e62-c5b54765684f:
+        handle: team
+        hasTitleField: false
+        name: Team
+        sortOrder: 1
+        titleFormat: '{section.name|raw}'
+        titleLabel: null
+    handle: team
+    name: Team
+    propagateEntries: true
+    siteSettings:
+      802d4b06-1f71-4c60-8b00-c331a21b5134:
+        enabledByDefault: true
+        hasUrls: true
+        template: team/index
+        uriFormat: team
+      96f6905b-bcc3-4e74-91a8-e5458eb5e532:
+        enabledByDefault: true
+        hasUrls: true
+        template: team/index
+        uriFormat: team
+    type: single
   3f58999a-6ac1-4372-a7ea-ec0c2c682cbf:
     enableVersioning: true
     entryTypes:
@@ -1383,4 +1408,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-04-09 16:05:00'
+dateApplied: '2019-04-09 16:06:02'

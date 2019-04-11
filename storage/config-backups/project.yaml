@@ -1,4 +1,4 @@
-dateModified: 1554980153
+dateModified: 1554980209
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -649,16 +649,16 @@ matrixBlockTypes:
           -
             fields:
               3a789234-95c4-4ef8-bf4d-c95010fba8e8:
-                required: true
+                required: '1'
                 sortOrder: 2
               4a857b31-9212-4fde-99c6-923a2993ea5a:
-                required: true
+                required: '1'
                 sortOrder: 3
               b8bdf3dd-49dc-430d-adaf-15b66594978f:
-                required: true
+                required: '1'
                 sortOrder: 1
               d68a5011-9c54-4af7-a14c-256a968654ef:
-                required: true
+                required: '1'
                 sortOrder: 4
             name: Content
             sortOrder: 1
@@ -669,7 +669,7 @@ matrixBlockTypes:
         handle: trackTitel
         instructions: 'Der Name des Stücks.'
         name: Track-Titel
-        searchable: true
+        searchable: '1'
         settings:
           charLimit: ''
           code: ''
@@ -686,7 +686,7 @@ matrixBlockTypes:
         handle: beschrieb
         instructions: 'Ein kurzer Beschrieb, ca. 500 Zeichen'
         name: Beschrieb
-        searchable: true
+        searchable: '1'
         settings:
           availableTransforms: ''
           availableVolumes: ''
@@ -704,7 +704,7 @@ matrixBlockTypes:
         handle: audioFile
         instructions: 'Eine mp3 Datei'
         name: Audio-Datei
-        searchable: true
+        searchable: '1'
         settings:
           allowedKinds:
             - audio
@@ -730,7 +730,7 @@ matrixBlockTypes:
         handle: image
         instructions: 'Quadratisches Bild (wird beschnitten).'
         name: Bild
-        searchable: true
+        searchable: '1'
         settings:
           allowedKinds:
             - image
@@ -964,6 +964,13 @@ sections:
                     sortOrder: 5
                 name: 'Music-Network Intro'
                 sortOrder: 1
+              -
+                fields:
+                  eccd9fc9-950c-40aa-bcf0-ff9c5de05da8:
+                    required: false
+                    sortOrder: 1
+                name: 'Music-Network Awards'
+                sortOrder: 2
         handle: musicNetwork
         hasTitleField: false
         name: 'Music Network'
@@ -1538,4 +1545,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-04-11 12:56:49'
+dateApplied: '2019-04-11 13:18:47'

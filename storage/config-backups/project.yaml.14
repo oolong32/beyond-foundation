@@ -1,4 +1,4 @@
-dateModified: 1554818762
+dateModified: 1554821523
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -107,7 +107,7 @@ fields:
     contentColumnType: text
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
     handle: shortDescription
-    instructions: 'Maximal 60 Zeichen'
+    instructions: 'Ein möglichst kurzer Text.'
     name: Kurzbeschrieb
     searchable: true
     settings:
@@ -1408,4 +1408,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-04-09 16:52:03'
+dateApplied: '2019-04-09 17:11:26'
