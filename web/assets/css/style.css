@@ -260,6 +260,10 @@ a.social-media-link:hover svg path {
   border: none;
   outline: 0; }
 
+.alternating-grid-image-large .teaser-textlink {
+  border: none;
+  outline: 0; }
+
 /* End Teaser Links }}}3 */
 /* End Link Styles }}}2 */
 /* Small Stuff {{{2 */
