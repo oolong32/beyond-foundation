@@ -1,4 +1,4 @@
-dateModified: 1554802685
+dateModified: 1554802711
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -1102,12 +1102,25 @@ sections:
     enableVersioning: true
     entryTypes:
       bedaf90b-96c4-4ef7-b1ae-e466637de73c:
+        fieldLayouts:
+          4a5e88c5-c128-40c8-8b18-9a4f5388769d:
+            tabs:
+              -
+                fields:
+                  752ed5fb-e81b-4651-8eed-3bb3f4c358f9:
+                    required: false
+                    sortOrder: 2
+                  bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
+                    required: false
+                    sortOrder: 1
+                name: 'Tab 1'
+                sortOrder: 1
         handle: privacy
         hasTitleField: false
         name: Datenschutz
         sortOrder: 1
         titleFormat: '{section.name|raw}'
-        titleLabel: null
+        titleLabel: ''
     handle: privacy
     name: Datenschutz
     propagateEntries: true
@@ -1399,4 +1412,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-04-09 11:38:31'
+dateApplied: '2019-04-09 11:46:00'
