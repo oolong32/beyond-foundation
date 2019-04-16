@@ -1,4 +1,4 @@
-dateModified: 1554984245
+dateModified: 1554984381
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -574,12 +574,12 @@ fields:
   eccd9fc9-950c-40aa-bcf0-ff9c5de05da8:
     contentColumnType: string
     fieldGroup: 02ecc909-a8ca-4329-abc5-f055c7de039e
-    handle: awardTeaser
+    handle: awardTeasers
     instructions: 'Ein Teaser mit Audio-Player, Bild und Text.'
-    name: 'Award Teaser'
+    name: Awards
     searchable: true
     settings:
-      contentTable: '{{%matrixcontent_awardteaser}}'
+      contentTable: '{{%matrixcontent_awardteasers}}'
       localizeBlocks: ''
       maxBlocks: ''
       minBlocks: ''
@@ -660,16 +660,19 @@ matrixBlockTypes:
             fields:
               3a789234-95c4-4ef8-bf4d-c95010fba8e8:
                 required: true
-                sortOrder: 2
+                sortOrder: 3
               4a857b31-9212-4fde-99c6-923a2993ea5a:
                 required: true
-                sortOrder: 3
+                sortOrder: 4
               b8bdf3dd-49dc-430d-adaf-15b66594978f:
                 required: true
-                sortOrder: 1
+                sortOrder: 2
               d68a5011-9c54-4af7-a14c-256a968654ef:
                 required: true
-                sortOrder: 4
+                sortOrder: 5
+              dd90962f-8b62-43a3-a93f-340b9f8567ae:
+                required: true
+                sortOrder: 1
             name: Content
             sortOrder: 1
     fields:
@@ -760,6 +763,23 @@ matrixBlockTypes:
         translationKeyFormat: null
         translationMethod: site
         type: craft\fields\Assets
+      dd90962f-8b62-43a3-a93f-340b9f8567ae:
+        contentColumnType: text
+        fieldGroup: null
+        handle: teaserHeading
+        instructions: 'Teaser-Titel, Bezug auf Award'
+        name: Überschrift
+        searchable: true
+        settings:
+          charLimit: ''
+          code: ''
+          columnType: text
+          initialRows: '4'
+          multiline: ''
+          placeholder: ''
+        translationKeyFormat: null
+        translationMethod: site
+        type: craft\fields\PlainText
     handle: teaser
     name: Teaser
     sortOrder: 1
@@ -1555,4 +1575,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-04-11 14:06:21'
+dateApplied: '2019-04-11 14:06:46'

@@ -1,4 +1,4 @@
-dateModified: 1554980209
+dateModified: 1554981527
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -649,16 +649,16 @@ matrixBlockTypes:
           -
             fields:
               3a789234-95c4-4ef8-bf4d-c95010fba8e8:
-                required: '1'
+                required: true
                 sortOrder: 2
               4a857b31-9212-4fde-99c6-923a2993ea5a:
-                required: '1'
+                required: true
                 sortOrder: 3
               b8bdf3dd-49dc-430d-adaf-15b66594978f:
-                required: '1'
+                required: true
                 sortOrder: 1
               d68a5011-9c54-4af7-a14c-256a968654ef:
-                required: '1'
+                required: true
                 sortOrder: 4
             name: Content
             sortOrder: 1
@@ -666,10 +666,10 @@ matrixBlockTypes:
       3a789234-95c4-4ef8-bf4d-c95010fba8e8:
         contentColumnType: text
         fieldGroup: null
-        handle: trackTitel
+        handle: trackTitle
         instructions: 'Der Name des Stücks.'
-        name: Track-Titel
-        searchable: '1'
+        name: Track-Title
+        searchable: true
         settings:
           charLimit: ''
           code: ''
@@ -683,10 +683,10 @@ matrixBlockTypes:
       4a857b31-9212-4fde-99c6-923a2993ea5a:
         contentColumnType: text
         fieldGroup: null
-        handle: beschrieb
+        handle: trackDescription
         instructions: 'Ein kurzer Beschrieb, ca. 500 Zeichen'
         name: Beschrieb
-        searchable: '1'
+        searchable: true
         settings:
           availableTransforms: ''
           availableVolumes: ''
@@ -701,10 +701,10 @@ matrixBlockTypes:
       b8bdf3dd-49dc-430d-adaf-15b66594978f:
         contentColumnType: string
         fieldGroup: null
-        handle: audioFile
+        handle: trackAudio
         instructions: 'Eine mp3 Datei'
         name: Audio-Datei
-        searchable: '1'
+        searchable: true
         settings:
           allowedKinds:
             - audio
@@ -727,10 +727,10 @@ matrixBlockTypes:
       d68a5011-9c54-4af7-a14c-256a968654ef:
         contentColumnType: string
         fieldGroup: null
-        handle: image
+        handle: trackImage
         instructions: 'Quadratisches Bild (wird beschnitten).'
         name: Bild
-        searchable: '1'
+        searchable: true
         settings:
           allowedKinds:
             - image
@@ -1545,4 +1545,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-04-11 13:18:47'
+dateApplied: '2019-04-11 13:35:08'
