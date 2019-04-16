@@ -53,7 +53,7 @@
 
 {# Music Network Audio Player Teasers {{{1 #}
 
-  {# old markup {{{2 #}
+  {# Music Player {{{2 #}
 
       {% if entry.audioTrack|length %}
 
@@ -89,40 +89,7 @@
 
       {% endif %}
 
-  {# end old markup }}}2 #}
-
-  {# new markup {{{2 #}
-    {% if entry.awardTeasers|length %}
-      <section class="alternating-grid-text-large"> <!-- empty container, because 🐒 -->
-      </section> {# dirty trick: fix order of next section to fit mockup, 😂 #}
-
-
-      {% set awardTeasers = entry.awardTeasers.all() %}
-      {% for teaser in awardTeasers %}
-      <section class="alternating-grid-text-large">
-      <div class="image-cell">
-        <img src="{{ alias('@assetBasePath') }}/{{ teaser.trackImage[0].getUrl('square') }}" alt="{#{{ teaser.trackArtist }}: #}{{ teaser.trackTitle }}">
-      </div>
-      <div class="text-cell">
-        <h3 class="player-track-title">{{ teaser.teaserHeading }}</h3>
-        <div class="custom-audio-player">
-          <div class="play-pause-button">{# background gets set in stylesheet #}</div>
-          <p class="track-info">{#{{ entry.trackArtist }}: #}{{ teaser.trackTitle }}</p>
-          <p class="time normal">{# gets content by javascript #}</p>
-          <audio class="audio-player" controls="controls" paused> {# audio is not displayed by way of css #}
-            Your browser does not support the <code>audio</code> element.
-            <source src="{{ alias('@assetBasePath') }}/{{ teaser.trackAudio[0].getUrl() }}">
-          </audio>
-        </div>
-
-        <div class="normal">
-          {{ teaser.trackDescription }}
-        </div>
-      </div>
-      </section>
-      {% endfor %}
-    {% endif %}
-  {# end new markup }}}2 #}
+  {# End Music Player }}}2 #}
 
 {# Music Network Audio Player Teasers }}}1 #}
 
@@ -138,6 +105,7 @@
 
     <script src="{{ alias('@assetBasePath') }}/assets/js/howler.core.min.js"></script>
     <script>
+      
       console.log('audio player loaded')
 
       window.addEventListener('DOMContentLoaded', (event) => {
@@ -150,7 +118,6 @@
         // audio player
         var sound = new Howl({
           src: [  '{{ alias('@assetBasePath') }}/{{ entry.audioTrack[0].getUrl() }}' ]
-          // hier wird es etwas php-js zauberei brauchen: mit for-loop javascript array pushen?
         });
         
         // Check for audio loaded, pause and display time
@@ -187,8 +154,8 @@
 
           var remainingMinutes = Math.floor(remaining/60);
           var remainingSeconds = Math.floor(remaining%60);
-          return remainingMinutes + ':' + remainingSeconds;
-          // remaining Sconds mit vorangestelltem Null hahahahhahahhaahha
+          return remainingMinutes + ':' + (remainingSeconds < 10 ? '0' : '' ) + remainingSeconds;
+          // remaining Sconds mit vorangestelltem Null
         }
         
       });
