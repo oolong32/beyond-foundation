@@ -12,13 +12,31 @@
 {% endif %}
 
 <ul>
-	{# TODO: wie muss das aussehen für de/en? #}
-	<li class="{{ slug == 'about' ? 'active' : '' }}"><a title="About" href="{{ en ? '/en' : '' }}/about">{{ 'Über uns'|t }}</a></li>
-	<li class="{{ slug == 'team' ? 'active' : '' }}"><a title="Team" href="{{ en ? '/en' : '' }}/team">Team</a></li>
-	<li class="{{ slug == 'music-network' ? 'active' : '' }}"><a title="Music Network" href="{{ en ? '/en' : '' }}/music-network">{{ 'Musikplattform'|t }}</a></li>
-	<li class="{{ slug == 'music-production' ? 'active' : '' }}"><a title="Music Production" href="{{ en ? '/en' : '' }}/music-production">{{ 'Musikproduktionen'|t }}</a></li>
-	<li class="{{ slug == 'projects' ? 'active' : '' }}"><a title="Projects" href="{{ en ? '/en' : '' }}/projects">{{ 'Förderprojekte'|t }}</a></li>
-	<li class="{{ slug == 'encouragement' ? 'active' : '' }}"><a title="Encouragement" href="{{ en ? '/en' : '' }}/encouragement">{{ 'Gesuche/Spenden'|t }}</a></li>
+
+	<li class="{{ slug == 'about' ? 'active' : '' }}">
+    <a title="{{ 'Über uns'|t }}" href="{{ en ? '/en' : '' }}/about">{{ 'Über uns'|t }}</a>
+  </li>
+
+	<li class="{{ slug == 'team' ? 'active' : '' }}">
+    <a title="Team" href="{{ en ? '/en' : '' }}/team">Team</a>
+  </li>
+
+	<li class="{{ slug == 'music-network' ? 'active' : '' }}">
+    <a title="{{ 'Musikplattform'|t }}" href="{{ en ? '/en' : '' }}/music-network">{{ 'Musikplattform'|t }}</a>
+  </li>
+
+	<li class="{{ slug == 'music-production' ? 'active' : '' }}">
+    <a title="{{ 'Musikproduktionen'|t }}" href="{{ en ? '/en' : '' }}/music-production">{{ 'Musikproduktionen'|t }}</a>
+  </li>
+
+	<li class="{{ slug == 'projects' ? 'active' : '' }}">
+    <a title="{{ 'Förderprojekte'|t }}" href="{{ en ? '/en' : '' }}/projects">{{ 'Förderprojekte'|t }}</a>
+  </li>
+
+	<li class="{{ slug == 'encouragement' ? 'active' : '' }}">
+    <a title="{{ 'Gesuche/Spenden'|t }}" href="{{ en ? '/en' : '' }}/encouragement">{{ 'Gesuche/Spenden'|t }}</a>
+  </li>
+
 </ul>
 
 {% include 'includes/language-switcher' %}
