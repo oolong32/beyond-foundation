@@ -1,9 +1,11 @@
-dateModified: 1554793514
+dateModified: 1554881049
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
   transportType: craft\mail\transportadapters\Sendmail
 fieldGroups:
+  2d31e491-87da-48b8-85d6-72aba43f554c:
+    name: 'Share Links'
   85d8c0e7-6a43-4691-8d57-0ea516983de7:
     name: 'Music Production Entries'
   97dfc979-5ae8-418e-9249-5b4fdebd7c80:
@@ -65,15 +67,51 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Url
+  12774cd1-bd04-43d7-ab20-3391917cdf53:
+    contentColumnType: string
+    fieldGroup: 2d31e491-87da-48b8-85d6-72aba43f554c
+    handle: amazonLinkHear
+    instructions: 'URL zu diesem Angebot auf Amazon'
+    name: 'Amazon Link (Hören)'
+    searchable: true
+    settings:
+      placeholder: 'https://…'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
+  265f2e45-2db1-4395-ab69-942f48810f66:
+    contentColumnType: string
+    fieldGroup: 2d31e491-87da-48b8-85d6-72aba43f554c
+    handle: spotifyLink
+    instructions: 'URL zu diesem Angebot auf Spotify'
+    name: 'Spotify Link'
+    searchable: true
+    settings:
+      placeholder: 'https://…'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
+  28f5f6ca-2091-4f1e-86ed-32ea3b8f56ae:
+    contentColumnType: string
+    fieldGroup: 2d31e491-87da-48b8-85d6-72aba43f554c
+    handle: iGrooveLink
+    instructions: 'URL zu diesem Angebot auf iGroove'
+    name: 'iGroove Link'
+    searchable: true
+    settings:
+      placeholder: 'https://…'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
   387a6e57-35e5-47bd-9182-119d7ccccf16:
     contentColumnType: text
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
     handle: shortDescription
-    instructions: 'Maximal 60 Zeichen'
+    instructions: 'Ein möglichst kurzer Text.'
     name: Kurzbeschrieb
     searchable: true
     settings:
-      charLimit: '60'
+      charLimit: ''
       code: ''
       columnType: text
       initialRows: '4'
@@ -82,6 +120,18 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\PlainText
+  3c3a2347-0342-47bb-a471-b72ccbee7c06:
+    contentColumnType: string
+    fieldGroup: 2d31e491-87da-48b8-85d6-72aba43f554c
+    handle: exLibrisLink
+    instructions: 'URL zu diesem Angebot auf ex libris'
+    name: 'ex libris Link'
+    searchable: true
+    settings:
+      placeholder: 'https://…'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
   3f013fdf-9050-4d51-b818-050c8a105e6f:
     contentColumnType: string
     fieldGroup: 85d8c0e7-6a43-4691-8d57-0ea516983de7
@@ -119,6 +169,18 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: dukt\videos\fields\Video
+  4db49ed0-b581-456a-bc13-2450963319b9:
+    contentColumnType: string
+    fieldGroup: 2d31e491-87da-48b8-85d6-72aba43f554c
+    handle: soundcloudLink
+    instructions: 'URL zu diesem Angebot auf SoundCloud'
+    name: 'SoundCloud Link'
+    searchable: true
+    settings:
+      placeholder: 'https://…'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
   597d3228-4fef-4e48-b794-3e488a088311:
     contentColumnType: text
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
@@ -135,6 +197,35 @@ fields:
       placeholder: ''
     translationKeyFormat: null
     translationMethod: site
+    type: craft\fields\PlainText
+  5b74422b-6b7b-4d5b-ad20-c087fc20d254:
+    contentColumnType: string
+    fieldGroup: 2d31e491-87da-48b8-85d6-72aba43f554c
+    handle: amazonLinkBuy
+    instructions: 'URL zu diesem Angebot auf Amazon'
+    name: 'Amazon Link (Kaufen)'
+    searchable: true
+    settings:
+      placeholder: 'https://…'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
+  5d482f8a-8e95-43c2-b2d1-beac7424d6bf:
+    contentColumnType: text
+    fieldGroup: 2d31e491-87da-48b8-85d6-72aba43f554c
+    handle: iGrooveSmsText
+    instructions: 'Text, mit Stichwort und Telefonnummer für iGroove.'
+    name: 'iGroove SMS Text'
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: 'Sende eine SMS mit «…» an die Nummer 60660 (DE) oder 9000 (CH).'
+    translationKeyFormat: null
+    translationMethod: none
     type: craft\fields\PlainText
   63060068-23fd-4091-9e13-96d982008822:
     contentColumnType: text
@@ -187,7 +278,7 @@ fields:
       columnType: text
       purifierConfig: ''
       purifyHtml: '1'
-      redactorConfig: Simple.json
+      redactorConfig: SimpleListTable.json
     translationKeyFormat: null
     translationMethod: site
     type: craft\redactor\Field
@@ -227,6 +318,18 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\redactor\Field
+  9748cdf8-1320-4cd4-989e-2dc8ce373279:
+    contentColumnType: string
+    fieldGroup: 2d31e491-87da-48b8-85d6-72aba43f554c
+    handle: cedeLink
+    instructions: 'URL zu diesem Angebot auf cede.ch'
+    name: 'cede.ch Link'
+    searchable: true
+    settings:
+      placeholder: 'https://…'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
   aac9b682-0ac3-4291-bc12-f31f73e6cad9:
     contentColumnType: text
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
@@ -262,6 +365,18 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\PlainText
+  bcedc8fd-2988-4117-9d9e-84ebecec86bc:
+    contentColumnType: string
+    fieldGroup: 2d31e491-87da-48b8-85d6-72aba43f554c
+    handle: facebookLink
+    instructions: 'URL zu diesem Angebot auf Facebook'
+    name: 'Facebook Link'
+    searchable: true
+    settings:
+      placeholder: 'https://…'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
   bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
     contentColumnType: text
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
@@ -331,6 +446,30 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Assets
+  cab30499-6a6d-4965-ba7a-ed405ffc77ee:
+    contentColumnType: string
+    fieldGroup: 2d31e491-87da-48b8-85d6-72aba43f554c
+    handle: itunesLink
+    instructions: 'Die URL zu diesem Angebot auf iTunes'
+    name: 'iTunes Link'
+    searchable: true
+    settings:
+      placeholder: 'https://…'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
+  cf6d51c0-4331-4c58-b92c-8621eae977fd:
+    contentColumnType: string
+    fieldGroup: 2d31e491-87da-48b8-85d6-72aba43f554c
+    handle: googlePlayLink
+    instructions: 'URL zu diesem Angebot auf Google Play'
+    name: 'Google Play Link'
+    searchable: true
+    settings:
+      placeholder: 'https://…'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
   d175683d-6e5d-484f-9fc1-5678f4b88c32:
     contentColumnType: string
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
@@ -503,14 +642,14 @@ plugins:
           clientSecret: 0uCV3T2WxPjmoee3_7h91Xra
       tokens:
         youtube:
-          accessToken: ya29.GlzmBiTud2iHiYpGGO4cH-FT_Y8fVFo-MWaKLCyOvG-6VC2f7m43XpmqMUAnmehhSfLaNLi75RG5nTqoQOjVdYw4AEGEu2DQnTTMFbB6ApadHtU2A0VzT6NZJ9RHsw
-          expires: 1554797114
+          accessToken: ya29.GlzmBqRYxQZqCwRzQpTYYyWnqMhaBRdi7rmAs2G0J0w5gcBrjw71d00qilnUyA93C0v9zGMD5h6UNDNBljNZNSRWUmUj8u2AeB2mtWfnZ7-vQhiDzuy563DO2GVQMg
+          expires: 1554884649
           refreshToken: 1/h_aaH-zGnHYJCo5IJxtfkrdl09zaCcnwd20rF1paffZJ-qin2ZCXBzCqbn4gpn5A
           resourceOwnerId: null
           values:
             values:
-              id_token: eyJhbGciOiJSUzI1NiIsImtpZCI6IjZmNjc4MWJhNzExOTlhNjU4ZTc2MGFhNWFhOTNlNWZjM2RjNzUyYjUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTU5MjQ2NDUyNTc5OTAyMzQ3NDYiLCJlbWFpbCI6ImJleW9uZHNpbmdpbmdjb21AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJ3NDRoWmpEaFBhVjBPd2MtVV81YUt3IiwibmFtZSI6IkJleW9uZCBTaW5naW5nIiwicGljdHVyZSI6Imh0dHBzOi8vbGg1Lmdvb2dsZXVzZXJjb250ZW50LmNvbS8tQnJZdUI5d1JDN0UvQUFBQUFBQUFBQUkvQUFBQUFBQUFBQWsvZVNWWTVhamtmRVUvczk2LWMvcGhvdG8uanBnIiwiZ2l2ZW5fbmFtZSI6IkJleW9uZCIsImZhbWlseV9uYW1lIjoiU2luZ2luZyIsImxvY2FsZSI6ImRlIiwiaWF0IjoxNTU0NzkzNTE0LCJleHAiOjE1NTQ3OTcxMTR9.QV_osFXQ8_j6oTF-3wgxuoc3G1H8M5ZvXHkjb7O4XUYHNEQvxbiIsknObk95_j4YtoFAXJTDiDL2GcfXU87TjQqrHTIT6V7tBA_BRP9sTlRWgTNzQ3T8hCf3nTpVgMvRl4yuy-vQkRSVksEQoX3Eh1hTCtxd1A7hrKMa7DVdrtuhfALDOrMeyZYm2ycF0f8cHO_ZIqmL6WwEPWDQcHAvuc45QCl0ENE_FFj8o1zWgIp5J3aoYz5XI1PeIh2lprNffYa6sXIiL-rgc00vTmsxZ1ieuziIPX_xKmtAKcHAb3kb3Sm2GCddFNhgDyMOXpOq_MjX_Am-TLSFJoogQxHJHA
-              scope: 'https://www.googleapis.com/auth/youtube https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/youtube.readonly'
+              id_token: eyJhbGciOiJSUzI1NiIsImtpZCI6IjZmNjc4MWJhNzExOTlhNjU4ZTc2MGFhNWFhOTNlNWZjM2RjNzUyYjUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTU5MjQ2NDUyNTc5OTAyMzQ3NDYiLCJlbWFpbCI6ImJleW9uZHNpbmdpbmdjb21AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJKdjV5aXVhMU0xaVdHajJmVElBVkdBIiwiaWF0IjoxNTU0ODgxMDQ5LCJleHAiOjE1NTQ4ODQ2NDl9.u1uYp9Sy8Fl5HqWMrRHuno2yhDgTZ47Q1CLF5iZyN8pYlxitaSEN5J2qEAZ4kV1beaOpNzT8FSO0lWUJrYnaHKUbIYcFXDoDJ9pNk0B9nHkT6glQ_Tc5xRrWTcN2olNAa0dIiJR1P0xbCSpokrhM2XXcCVO2el11WVCCdcT9uSNPw1NJpu7N8AevXOEx9tGcPLRjMaviXswiYzE1g4tUEBMymJbhGFvOMJHxfYUjhi_4KmqaZ7vkWFvA_R03z7VH2CgQZlRwCh_x2yZWjQtRc-lucbYvxZoVvXK2v3yEZx8bkiX_-Bzztn3wAsIJ_ezYYVqoBXtA8CZLZFLcg94O3g
+              scope: 'https://www.googleapis.com/auth/youtube https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/youtube.readonly https://www.googleapis.com/auth/userinfo.email'
               token_type: Bearer
       videosPerPage: 30
 sections:
@@ -590,6 +729,43 @@ sections:
                     sortOrder: 2
                 name: 'Music Production'
                 sortOrder: 1
+              -
+                fields:
+                  12774cd1-bd04-43d7-ab20-3391917cdf53:
+                    required: false
+                    sortOrder: 1
+                  265f2e45-2db1-4395-ab69-942f48810f66:
+                    required: false
+                    sortOrder: 11
+                  28f5f6ca-2091-4f1e-86ed-32ea3b8f56ae:
+                    required: false
+                    sortOrder: 7
+                  3c3a2347-0342-47bb-a471-b72ccbee7c06:
+                    required: false
+                    sortOrder: 4
+                  4db49ed0-b581-456a-bc13-2450963319b9:
+                    required: false
+                    sortOrder: 10
+                  5b74422b-6b7b-4d5b-ad20-c087fc20d254:
+                    required: false
+                    sortOrder: 2
+                  5d482f8a-8e95-43c2-b2d1-beac7424d6bf:
+                    required: false
+                    sortOrder: 8
+                  9748cdf8-1320-4cd4-989e-2dc8ce373279:
+                    required: false
+                    sortOrder: 3
+                  bcedc8fd-2988-4117-9d9e-84ebecec86bc:
+                    required: false
+                    sortOrder: 5
+                  cab30499-6a6d-4965-ba7a-ed405ffc77ee:
+                    required: false
+                    sortOrder: 9
+                  cf6d51c0-4331-4c58-b92c-8621eae977fd:
+                    required: false
+                    sortOrder: 6
+                name: 'Share Links'
+                sortOrder: 2
         handle: musicProductionEntries
         hasTitleField: true
         name: 'Music Production Entries'
@@ -679,6 +855,31 @@ sections:
         template: music-network
         uriFormat: music-network
     type: single
+  1ab8381d-237e-4bb1-bbc4-db58df866896:
+    enableVersioning: true
+    entryTypes:
+      efcc7ddb-fd64-43fe-9e62-c5b54765684f:
+        handle: team
+        hasTitleField: true
+        name: Team
+        sortOrder: 1
+        titleFormat: '{section.name|raw}'
+        titleLabel: Überschrift
+    handle: team
+    name: Team
+    propagateEntries: true
+    siteSettings:
+      802d4b06-1f71-4c60-8b00-c331a21b5134:
+        enabledByDefault: true
+        hasUrls: true
+        template: team/index
+        uriFormat: team
+      96f6905b-bcc3-4e74-91a8-e5458eb5e532:
+        enabledByDefault: true
+        hasUrls: true
+        template: team/index
+        uriFormat: team
+    type: single
   3f58999a-6ac1-4372-a7ea-ec0c2c682cbf:
     enableVersioning: true
     entryTypes:
@@ -764,45 +965,23 @@ sections:
       maxLevels: '1'
       uid: ce59bcc3-cded-4cfd-b5f5-9fb32e9c4fe2
     type: structure
-  68c53e01-154e-4e20-9424-8aee60fdae4a:
-    enableVersioning: true
-    entryTypes:
-      c88bd234-9793-4d88-b074-4621b6878f33:
-        fieldLayouts:
-          0097244a-ed6d-4663-a995-c956fa6dd0d0:
-            tabs:
-              -
-                fields:
-                  417b399c-4166-4897-a491-00dff2058bd5:
-                    required: false
-                    sortOrder: 1
-                name: 'Tab 1'
-                sortOrder: 1
-        handle: videoTest
-        hasTitleField: false
-        name: video-test
-        sortOrder: 1
-        titleFormat: '{section.name|raw}'
-        titleLabel: ''
-    handle: videoTest
-    name: video-test
-    propagateEntries: true
-    siteSettings:
-      802d4b06-1f71-4c60-8b00-c331a21b5134:
-        enabledByDefault: true
-        hasUrls: true
-        template: videotest
-        uriFormat: video-test
-      96f6905b-bcc3-4e74-91a8-e5458eb5e532:
-        enabledByDefault: true
-        hasUrls: true
-        template: videotest
-        uriFormat: video-test
-    type: single
   a7103738-e3bc-4556-8521-a66f06bd0e0a:
     enableVersioning: true
     entryTypes:
       dd2dc2fc-e081-483b-af9d-d3bd8a2e18ff:
+        fieldLayouts:
+          2eb98ecc-7e40-4199-984c-f2fba5650da0:
+            tabs:
+              -
+                fields:
+                  752ed5fb-e81b-4651-8eed-3bb3f4c358f9:
+                    required: false
+                    sortOrder: 2
+                  bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
+                    required: false
+                    sortOrder: 1
+                name: 'Tab 1'
+                sortOrder: 1
         handle: imprint
         hasTitleField: false
         name: Impressum
@@ -881,15 +1060,21 @@ sections:
               -
                 fields:
                   597d3228-4fef-4e48-b794-3e488a088311:
-                    required: '0'
-                    sortOrder: '2'
+                    required: false
+                    sortOrder: 4
+                  63060068-23fd-4091-9e13-96d982008822:
+                    required: false
+                    sortOrder: 3
+                  b729c087-ed9f-4371-8cf0-48e6ef2d9e6a:
+                    required: false
+                    sortOrder: 2
                   bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
-                    required: '0'
-                    sortOrder: '1'
+                    required: false
+                    sortOrder: 1
                 name: 'Tab 1'
-                sortOrder: '1'
+                sortOrder: 1
         handle: projects
-        hasTitleField: '0'
+        hasTitleField: false
         name: Projects
         sortOrder: 1
         titleFormat: '{section.name|raw}'
@@ -908,6 +1093,44 @@ sections:
         hasUrls: true
         template: projects/index
         uriFormat: projects
+    type: single
+  af493835-61b1-4172-9e67-a548ac40bded:
+    enableVersioning: true
+    entryTypes:
+      bedaf90b-96c4-4ef7-b1ae-e466637de73c:
+        fieldLayouts:
+          4a5e88c5-c128-40c8-8b18-9a4f5388769d:
+            tabs:
+              -
+                fields:
+                  752ed5fb-e81b-4651-8eed-3bb3f4c358f9:
+                    required: false
+                    sortOrder: 2
+                  bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
+                    required: false
+                    sortOrder: 1
+                name: 'Tab 1'
+                sortOrder: 1
+        handle: privacy
+        hasTitleField: false
+        name: Datenschutz
+        sortOrder: 1
+        titleFormat: '{section.name|raw}'
+        titleLabel: ''
+    handle: privacy
+    name: Datenschutz
+    propagateEntries: true
+    siteSettings:
+      802d4b06-1f71-4c60-8b00-c331a21b5134:
+        enabledByDefault: true
+        hasUrls: true
+        template: privacy
+        uriFormat: privacy
+      96f6905b-bcc3-4e74-91a8-e5458eb5e532:
+        enabledByDefault: true
+        hasUrls: true
+        template: privacy
+        uriFormat: privacy
     type: single
   bdcc5b99-d47c-4d7f-a59c-2535c42dc0da:
     enableVersioning: true
@@ -1185,4 +1408,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-04-09 09:48:54'
+dateApplied: '2019-04-10 14:38:43'
