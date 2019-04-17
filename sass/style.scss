@@ -186,7 +186,7 @@ p.text-column { font-weight: $medium; }
   /* End Events }}}3 */
 
 
-strong, em { font-weight: $semibold; }
+main * strong, main * em { font-weight: $medium !important; }
 
 blockquote p {
   font-family: $antiqua;

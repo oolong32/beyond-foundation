@@ -114,8 +114,8 @@ p.teaser-link {
   line-height: 1.45rem; }
 
 /* End Events }}}3 */
-strong, em {
-  font-weight: 600; }
+main * strong, main * em {
+  font-weight: 500 !important; }
 
 blockquote p {
   font-family: "Freight Display";
