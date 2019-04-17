@@ -1,4 +1,4 @@
-dateModified: 1554810519
+dateModified: 1554905473
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -107,7 +107,7 @@ fields:
     contentColumnType: text
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
     handle: shortDescription
-    instructions: 'Maximal 60 Zeichen'
+    instructions: 'Ein möglichst kurzer Text.'
     name: Kurzbeschrieb
     searchable: true
     settings:
@@ -642,14 +642,14 @@ plugins:
           clientSecret: 0uCV3T2WxPjmoee3_7h91Xra
       tokens:
         youtube:
-          accessToken: ya29.GlzmBprEjUWjS0d8EK7s0mFYu9IuY60XjxEvGB22e5Wi44MlhdymFHWi-Y06dTJ1J02383XotWPSncv0moXhgX9Ao5JrmgPgnsM6MmDI7U3TNUHjVjrjQd72z9T6xQ
-          expires: 1554814119
+          accessToken: ya29.GlzmBtJ5e-uCRh6O_2XZTH_xlkuEvy8AsUnEyFghOyvYvdUVT6b0LwqEQeJcDnILdMyyu09kDaPns-CKVtoSyYwIIn244_0DAxPQU37AdChKGyjaWnJD2jksQ6H73w
+          expires: 1554909073
           refreshToken: 1/h_aaH-zGnHYJCo5IJxtfkrdl09zaCcnwd20rF1paffZJ-qin2ZCXBzCqbn4gpn5A
           resourceOwnerId: null
           values:
             values:
-              id_token: eyJhbGciOiJSUzI1NiIsImtpZCI6IjZmNjc4MWJhNzExOTlhNjU4ZTc2MGFhNWFhOTNlNWZjM2RjNzUyYjUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTU5MjQ2NDUyNTc5OTAyMzQ3NDYiLCJlbWFpbCI6ImJleW9uZHNpbmdpbmdjb21AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJLRW12WThNTmpuT19GZGFoZGtMdlV3IiwiaWF0IjoxNTU0ODEwNTE5LCJleHAiOjE1NTQ4MTQxMTl9.u1SBYl8tdMxuaq5t6svLtZKqgQxbkeY8zPXvP0CjPhn_LPhpsLRu3JPO9wJdXL0DAT0BVZBnn_QPiwtCnK9_W8kvOUuepusuTsSmcbwcv7lU08EVSL__Vt7vJsYUvQAzK0peqj6bV8oqtBTtCeg1KQP9y0Mf8gH_H89a2hHc5Ba8rM_FlKWMtqBEIPhtexueGWPzwdxI6KCBL2F7mu2lUthYsIc8JwV92tuvH94DQ82VRUByHUMqRzJvtQMKYwMiWrGeUrxDFAWRXtrGNYBVLbyUV6EpwzcT5dZ7D5opkK9-pBCUwf_u1CpKAxqyleiKE_ePAXuXvi6uPnI-gypS0g
-              scope: 'https://www.googleapis.com/auth/youtube https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/youtube.readonly https://www.googleapis.com/auth/userinfo.email'
+              id_token: eyJhbGciOiJSUzI1NiIsImtpZCI6IjZmNjc4MWJhNzExOTlhNjU4ZTc2MGFhNWFhOTNlNWZjM2RjNzUyYjUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTU5MjQ2NDUyNTc5OTAyMzQ3NDYiLCJlbWFpbCI6ImJleW9uZHNpbmdpbmdjb21AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJhWk1FUXAtVG84djhLRFdoWER1XzFRIiwibmFtZSI6IkJleW9uZCBTaW5naW5nIiwicGljdHVyZSI6Imh0dHBzOi8vbGg1Lmdvb2dsZXVzZXJjb250ZW50LmNvbS8tQnJZdUI5d1JDN0UvQUFBQUFBQUFBQUkvQUFBQUFBQUFBQWsvZVNWWTVhamtmRVUvczk2LWMvcGhvdG8uanBnIiwiZ2l2ZW5fbmFtZSI6IkJleW9uZCIsImZhbWlseV9uYW1lIjoiU2luZ2luZyIsImxvY2FsZSI6ImRlIiwiaWF0IjoxNTU0OTA1NDczLCJleHAiOjE1NTQ5MDkwNzN9.UycEQBmqVak9ZjGLwkSCCc8YpFGb1-VSlkLc9BnYp05w6TA2AePPpnWEw9wPIbe1D3Vh8xf2ch7IbaS1pdMs41hvBEfiqNhczJgJ97ZA9wz-aUVg2F1-qPlUw9ZPVlEIUWgRRW_uCfFNz8fjXKtinyMwEtsSihx5ym86_yCbvSseYRd7DYL0s0iiCUPB5eVOxcqKJCINfzQoF6Km9SKSqd0qExgLDAsdR0MjaMMOVidMCV-NJktjSHqNA6f5UogP9K5EtnzcdbdzyK35QQq27O3VeOG3WqfkC0Uh7W39k9WXvi7GObpKuk8nfJjezHtSBG-tX8SGyV2gu4vS5l9NMA
+              scope: 'https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/youtube.readonly https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/youtube'
               token_type: Bearer
       videosPerPage: 30
 sections:
@@ -855,6 +855,31 @@ sections:
         template: music-network
         uriFormat: music-network
     type: single
+  1ab8381d-237e-4bb1-bbc4-db58df866896:
+    enableVersioning: true
+    entryTypes:
+      efcc7ddb-fd64-43fe-9e62-c5b54765684f:
+        handle: team
+        hasTitleField: true
+        name: Team
+        sortOrder: 1
+        titleFormat: '{section.name|raw}'
+        titleLabel: Überschrift
+    handle: team
+    name: Team
+    propagateEntries: true
+    siteSettings:
+      802d4b06-1f71-4c60-8b00-c331a21b5134:
+        enabledByDefault: true
+        hasUrls: true
+        template: team/index
+        uriFormat: team
+      96f6905b-bcc3-4e74-91a8-e5458eb5e532:
+        enabledByDefault: true
+        hasUrls: true
+        template: team/index
+        uriFormat: team
+    type: single
   3f58999a-6ac1-4372-a7ea-ec0c2c682cbf:
     enableVersioning: true
     entryTypes:
@@ -940,41 +965,6 @@ sections:
       maxLevels: '1'
       uid: ce59bcc3-cded-4cfd-b5f5-9fb32e9c4fe2
     type: structure
-  68c53e01-154e-4e20-9424-8aee60fdae4a:
-    enableVersioning: true
-    entryTypes:
-      c88bd234-9793-4d88-b074-4621b6878f33:
-        fieldLayouts:
-          0097244a-ed6d-4663-a995-c956fa6dd0d0:
-            tabs:
-              -
-                fields:
-                  417b399c-4166-4897-a491-00dff2058bd5:
-                    required: false
-                    sortOrder: 1
-                name: 'Tab 1'
-                sortOrder: 1
-        handle: videoTest
-        hasTitleField: false
-        name: video-test
-        sortOrder: 1
-        titleFormat: '{section.name|raw}'
-        titleLabel: ''
-    handle: videoTest
-    name: video-test
-    propagateEntries: true
-    siteSettings:
-      802d4b06-1f71-4c60-8b00-c331a21b5134:
-        enabledByDefault: true
-        hasUrls: true
-        template: videotest
-        uriFormat: video-test
-      96f6905b-bcc3-4e74-91a8-e5458eb5e532:
-        enabledByDefault: true
-        hasUrls: true
-        template: videotest
-        uriFormat: video-test
-    type: single
   a7103738-e3bc-4556-8521-a66f06bd0e0a:
     enableVersioning: true
     entryTypes:
@@ -1070,15 +1060,21 @@ sections:
               -
                 fields:
                   597d3228-4fef-4e48-b794-3e488a088311:
-                    required: '0'
-                    sortOrder: '2'
+                    required: false
+                    sortOrder: 4
+                  63060068-23fd-4091-9e13-96d982008822:
+                    required: false
+                    sortOrder: 3
+                  b729c087-ed9f-4371-8cf0-48e6ef2d9e6a:
+                    required: false
+                    sortOrder: 2
                   bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
-                    required: '0'
-                    sortOrder: '1'
+                    required: false
+                    sortOrder: 1
                 name: 'Tab 1'
-                sortOrder: '1'
+                sortOrder: 1
         handle: projects
-        hasTitleField: '0'
+        hasTitleField: false
         name: Projects
         sortOrder: 1
         titleFormat: '{section.name|raw}'
@@ -1412,4 +1408,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-04-09 13:53:45'
+dateApplied: '2019-04-11 09:26:09'
