@@ -1,4 +1,4 @@
-dateModified: 1555488310
+dateModified: 1555497797
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -8,6 +8,8 @@ fieldGroups:
     name: 'Music-Network Awards'
   2d31e491-87da-48b8-85d6-72aba43f554c:
     name: 'Share Links'
+  6e35b058-585c-4737-a314-09ba0b44576a:
+    name: News-Items
   85d8c0e7-6a43-4691-8d57-0ea516983de7:
     name: 'Music Production Entries'
   97dfc979-5ae8-418e-9249-5b4fdebd7c80:
@@ -498,6 +500,33 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Assets
+  d3bdccc1-7526-4804-bd85-6ea3ef871776:
+    contentColumnType: string
+    fieldGroup: 6e35b058-585c-4737-a314-09ba0b44576a
+    handle: newsMedia
+    instructions: ''
+    name: 'News-Bild oder -Video'
+    searchable: true
+    settings:
+      allowedKinds:
+        - image
+        - video
+      defaultUploadLocationSource: 'volume:9eb7856b-e672-4fbf-b4b5-9d00ee79c726'
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: ''
+      restrictFiles: '1'
+      selectionLabel: ''
+      singleUploadLocationSource: 'volume:9eb7856b-e672-4fbf-b4b5-9d00ee79c726'
+      singleUploadLocationSubpath: /news
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: '1'
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
   d8dd3348-f988-4ea0-b8db-6c4e63542924:
     contentColumnType: text
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
@@ -534,6 +563,24 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Entries
+  dfad3cfa-d66d-4ab0-8ac1-aa461b5659f9:
+    contentColumnType: text
+    fieldGroup: 6e35b058-585c-4737-a314-09ba0b44576a
+    handle: newsText
+    instructions: ''
+    name: 'News Text'
+    searchable: true
+    settings:
+      availableTransforms: ''
+      availableVolumes: ''
+      cleanupHtml: '1'
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: SimpleListTable.json
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\redactor\Field
   e6776d44-d3d9-442b-90aa-f01d11baa789:
     contentColumnType: string
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
@@ -960,26 +1007,26 @@ sections:
                     sortOrder: 2
                 name: 'Tab 1'
                 sortOrder: 1
-        handle: homeTeaserEntries
+        handle: newsItem
         hasTitleField: true
-        name: 'Home Teaser Entries'
+        name: 'News Entry'
         sortOrder: 1
         titleFormat: ''
-        titleLabel: 'Titel (wird nicht angezeigt)'
-    handle: homeTeasers
-    name: '1 Home Teaser Entries'
+        titleLabel: Titel
+    handle: news
+    name: '1 News Entries'
     propagateEntries: true
     siteSettings:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
         enabledByDefault: true
         hasUrls: true
-        template: ''
-        uriFormat: 'home-teaser/{slug}'
+        template: about/_entry
+        uriFormat: 'news/{slug}'
       96f6905b-bcc3-4e74-91a8-e5458eb5e532:
         enabledByDefault: true
         hasUrls: true
-        template: ''
-        uriFormat: 'home-teaser/{slug}'
+        template: about/_entry
+        uriFormat: 'news/{slug}'
     structure:
       maxLevels: '1'
       uid: ce59bcc3-cded-4cfd-b5f5-9fb32e9c4fe2
@@ -1427,4 +1474,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-04-17 12:30:43'
+dateApplied: '2019-04-17 12:44:05'
