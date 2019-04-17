@@ -691,7 +691,8 @@ main {
       align-content: center; }
       main .artist-teaser-grid .artist-teaser img {
         width: 50%;
-        margin: 0 auto; }
+        margin: 0 auto;
+        border-radius: 100%; }
       main .artist-teaser-grid .artist-teaser h3.artist-name {
         margin: 1rem auto; }
       main .artist-teaser-grid .artist-teaser .artist-link {
