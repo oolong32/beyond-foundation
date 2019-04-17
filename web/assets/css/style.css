@@ -140,7 +140,7 @@ blockquote p {
 
 #language-switch p {
   font-size: 0.8125rem;
-  font-weight: 700;
+  font-weight: 600;
   text-transform: uppercase; }
 
 /* End Text Header }}}2 */
@@ -389,12 +389,28 @@ header {
     right: 2rem;
     top: 35px;
     background: white;
-    width: 26px;
-    height: 20px;
     cursor: pointer;
-    display: flex; }
+    display: flex;
+    padding: 3px 5px; }
     header #language-switch p {
-      margin: auto; }
+      font-size: 1.125rem;
+      margin: auto;
+      line-height: .9; }
+    header #language-switch p:before {
+      padding-right: 0.25rem;
+      content: url("/assets/_pic/arrow_right.svg");
+      transform: scale(0.9);
+      position: relative;
+      display: inline-block;
+      top: -1px;
+      transition: transform 0.2s ease-in; }
+  header #language-switch:hover {
+    background: linear-gradient(20deg, #CCAF82 0%, #C6AD8C 20%, #C0AB97 100%); }
+    header #language-switch:hover p a {
+      color: white; }
+    header #language-switch:hover p:before {
+      content: url("/assets/_pic/arrow_right_white.svg");
+      transform: translateX(3px) scale(1, 0.9); }
   header #masthead {
     flex-direction: column; }
     header #masthead h1, header #masthead p {
@@ -915,7 +931,7 @@ footer {
         margin: .5rem 0 0 1rem;
         display: inline-block;
         padding: 0 .75rem;
-        font-size: 1.875rem;
+        font-size: 1.5rem;
         font-weight: 300;
         background: linear-gradient(20deg, #CCAF82 0%, #C6AD8C 20%, #C0AB97 100%); }
         #nav-overlay #language-switch p a {

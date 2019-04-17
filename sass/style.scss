@@ -216,7 +216,7 @@ blockquote p {
 
 #language-switch p {
   font-size: 0.8125rem;
-  font-weight: $bold;
+  font-weight: $semibold;
   text-transform: uppercase;
 }
 
@@ -519,11 +519,33 @@ header {
     right: 2rem;
     top: 35px;
     background: white;
-    width: 26px;
-    height: 20px;
     cursor: pointer;
     display: flex;
-    p { margin: auto; }
+    padding: 3px 5px;
+    p {
+      font-size: 1.125rem;
+      margin: auto;
+      line-height: .9;
+    }
+    p:before {
+      padding-right: 0.25rem;
+      content: url("/assets/_pic/arrow_right.svg");
+      transform: scale(0.9);
+      position: relative;
+      display: inline-block;
+      top: -1px;
+      transition: transform 0.2s ease-in;
+    }
+  }
+  #language-switch:hover {
+    background: $gold;
+    p a { 
+      color: white;
+    } 
+    p:before {
+      content: url("/assets/_pic/arrow_right_white.svg");
+      transform: translateX(3px) scale(1, 0.9);
+    }
   }
 
   /* Header Masthead Layout {{{2 */
@@ -1215,7 +1237,7 @@ footer {
         margin: .5rem 0 0 1rem;
         display: inline-block;
         padding: 0 .75rem;
-        font-size: 1.875rem;
+        font-size: 1.5rem; // lil’ bit smaller 💅
         font-weight: $light;
         background: $gold;
         a {
