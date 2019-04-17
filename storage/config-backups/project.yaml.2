@@ -1,4 +1,4 @@
-dateModified: 1555497662
+dateModified: 1555497844
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -503,13 +503,14 @@ fields:
   d3bdccc1-7526-4804-bd85-6ea3ef871776:
     contentColumnType: string
     fieldGroup: 6e35b058-585c-4737-a314-09ba0b44576a
-    handle: newsImage
-    instructions: 'Wird quadratisch beschnitten.'
-    name: 'News Bild'
+    handle: newsMedia
+    instructions: ''
+    name: 'News-Bild oder -Video'
     searchable: true
     settings:
       allowedKinds:
         - image
+        - video
       defaultUploadLocationSource: 'volume:9eb7856b-e672-4fbf-b4b5-9d00ee79c726'
       defaultUploadLocationSubpath: ''
       limit: '1'
@@ -517,7 +518,7 @@ fields:
       restrictFiles: '1'
       selectionLabel: ''
       singleUploadLocationSource: 'volume:9eb7856b-e672-4fbf-b4b5-9d00ee79c726'
-      singleUploadLocationSubpath: /images/news
+      singleUploadLocationSubpath: /news
       source: null
       sources: '*'
       targetSiteId: null
@@ -995,16 +996,13 @@ sections:
             tabs:
               -
                 fields:
-                  387a6e57-35e5-47bd-9182-119d7ccccf16:
-                    required: true
-                    sortOrder: 3
-                  bfe0f040-f095-416d-b4cf-39c83419018b:
-                    required: true
+                  d3bdccc1-7526-4804-bd85-6ea3ef871776:
+                    required: false
                     sortOrder: 1
-                  dd3b36a3-d68e-4857-b2c2-59bfc760dc64:
-                    required: true
+                  dfad3cfa-d66d-4ab0-8ac1-aa461b5659f9:
+                    required: false
                     sortOrder: 2
-                name: 'Tab 1'
+                name: News-Items
                 sortOrder: 1
         handle: newsItem
         hasTitleField: true
@@ -1473,4 +1471,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-04-17 12:43:17'
+dateApplied: '2019-04-17 12:53:06'
