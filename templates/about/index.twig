@@ -3,7 +3,7 @@
 {% extends "_layout" %}
 
 {% set entry = craft.entries().section('about').one() %}
-{% set teasers = craft.entries().section('homeTeasers').all() %}
+{% set news= craft.entries().section('news').all() %}
 
 {% block content %}
 
@@ -37,7 +37,7 @@
 	<!-- End Intro Text -->
       {% endif %}
 
-	<!-- Hero Video / Image -->
+{# Hero Video / Image {{{ #}
       <section class="single-col">
       {% if entry.video|length %}
         {% set video = entry.video %}
@@ -52,11 +52,13 @@
         <p class="video-caption full-width">{{ entry.shortDescription }}</p>
       </section>
 	<!-- Hero Video / Image -->
+{# End Hero Video / Image }}} #}
 
       <h2>News</h2>
 
-      {% for teaser in teasers %}
+      {% for news in newsItems %}
 
+	      {# Quote {{{ #}
 	{% if loop.index == 3 %}
 		{% if entry.quote|length %}
 			<blockquote>
@@ -64,37 +66,30 @@
 			</blockquote>
 		{% endif %}
 	{% endif %}
+	      {# End Quote }}} #}
 
-	{% set associatedEntry = teaser.associatedEntry.one() %}
+	{# News-Item {{{ #}
+	<section class="news-item">
 
-      <!-- start news-section row -->
-      <section class="alternating-grid-image-large">
-
-        <!-- start image cell -->
-        <div class="image-cell">
-	{% if teaser.video|length %}
-		{% set video = teaser.video %}
+	{% if newsItem.video|length %} {# neues Feld nötig: uploadedVideo #}
 		<div class="video-container">
-		{{ video.getEmbed() }}
+			<p>hier wäre das schöne Video</p>
 		</div>
-	{% else %} {# there’s no video #}
-		{# ev. sollte das hier ein «HeroImage» sein, wie in anderen Einträgen, wo es entw. Video oder Bild gibt?  #}
-		<a class="full-width;" href="{{ associatedEntry.getUrl() }}" style="margin: 0; padding: 0; grid-column: 1/-1; border: none; outline: 0">
-		{% if teaser.teaserImage|length %}
-			<img src="{{ alias('@assetBasePath') }}/{{ teaser.teaserImage[0].getUrl('sixteen2nine') }}" alt="{{ teaser.title }}">
+	{% else %}
+		{% if newsItem.teaserImage|length %}
+			<img src="{{ alias('@assetBasePath') }}/{{ newsItem.newsImage[0].getUrl('square') }}" alt="{{ newsItem.title }}">
 		{% else %}
-			<img src="{{ alias('@assetBasePath') }}/assets/_pic/placeholder_16-9.png" alt="{{ teaser.title }}, test image">
+			<img src="{{ alias('@assetBasePath') }}/assets/_pic/placeholder.png" alt="{{ newsItem.title }}, test image">
 		{% endif %}
-		</a>
+			
 	{% endif %}
-        </div> <!-- end image cell -->
 
-        <!-- start text column -->
-          <h3 class="text-column"><a class="teaser-textlink" href="{{ associatedEntry.getUrl() }}">{{ associatedEntry.title }}</a></h3>
-          <p class="text-column"><a class="teaser-textlink" href="{{ associatedEntry.getUrl() }}">{{ teaser.shortDescription }}</a></p>
-	 <!-- end text column -->
+          <h3>{{ newsItem.title }}</h3>
+          <p>{{ newsItem.newsText }}</p>
 
-      </section> <!-- end news-section row -->
+	</section>
+	{# End News-Item }}} #}
+
       {% endfor %}
 
     </main>
