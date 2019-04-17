@@ -75,7 +75,7 @@
 		
 		{% if newsItem.newsMedia[0].kind == 'video' %}
 			{% set video = newsItem.newsMedia[0]  %}
-			<video src="{{ video.getUrl }}" controls>
+			<video src="{{ alias('@assetBasePath') }}/{{ video.getUrl() }}" controls>
 				{% if craft.app.language == 'en' %}
 					<p>We are sorry, but it seems that your browser can’t play embedded videos. How about a visit to the <a href="https://www.youtube.com/user/beyondsingingcom" target="_blank">beyond singing youtube channel</a>.</p>
 				{% else %}
