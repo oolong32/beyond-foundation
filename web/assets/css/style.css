@@ -768,6 +768,30 @@ footer {
     margin-bottom: 1.5rem; }
     footer #social-media-buttons svg:first-child {
       margin-right: 0.5rem; }
+  footer #social-media-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center; }
+    footer #social-media-buttons ul.share-icons {
+      margin: 0 0 1.25rem;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
+      footer #social-media-buttons ul.share-icons li {
+        padding: 0;
+        margin: 0 0.5rem;
+        line-height: 0; }
+        footer #social-media-buttons ul.share-icons li a {
+          border: none;
+          outline: 0; }
+          footer #social-media-buttons ul.share-icons li a img {
+            padding: 0;
+            margin: 0;
+            transition: 0.2s transform ease-in-out; }
+        footer #social-media-buttons ul.share-icons li a:hover img {
+          transform: scale(1.1); }
   footer .infos {
     display: flex;
     flex-wrap: wrap;

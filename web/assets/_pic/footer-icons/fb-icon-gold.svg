@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>fb-icon-gold</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="100%" x2="0%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#C0AB97" offset="0%"></stop>
+            <stop stop-color="#C6AD8C" offset="81.1563038%"></stop>
+            <stop stop-color="#CCAF82" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="fb-icon-gold" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M15,0 C23.2842712,-1.52179594e-15 30,6.71572875 30,15 C30,23.2842712 23.2842712,30 15,30 C6.71572875,30 1.01453063e-15,23.2842712 0,15 C-1.01453063e-15,6.71572875 6.71572875,1.52179594e-15 15,0 Z M18,12.2460266 L15.5647212,12.2460266 L15.5647212,11.0846941 C15.5647212,10.5384716 15.9036518,10.4110603 16.1421585,10.4110603 L17.8470818,10.4110603 L17.8470818,8.0079251 L15.3769971,8 C13.1368601,8 12.7117705,9.791683 12.7117705,10.9383845 L12.7117705,12.2460266 L11,12.2460266 L11,14.6845199 L12.7117705,14.6845199 L12.7117705,22 L15.5647212,22 L15.5647212,14.6845199 L17.7620639,14.6845199 L18,12.2460266 Z" id="Combined-Shape" fill="url(#linearGradient-1)"></path>
+    </g>
+</svg>
