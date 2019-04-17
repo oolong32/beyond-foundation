@@ -561,6 +561,12 @@ main {
         left: 0;
         width: 100%;
         height: 100%; }
+  main .news-item {
+    padding-bottom: 1rem; }
+    main .news-item img, main .news-item video {
+      width: 100%; }
+    main .news-item h3 {
+      margin: 1rem 0 0; }
   main section.alternating-grid-image-large {
     display: grid;
     grid-template-columns: 2fr 1fr;

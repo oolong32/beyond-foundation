@@ -725,6 +725,12 @@ main {
       }
     }
   }
+
+  .news-item {
+    padding-bottom: 1rem;
+    img, video { width: 100%; }
+    h3 { margin: 1rem 0 0; }
+  }
   
   /* End Main Grids Single Column Grid }}}3 */
 
