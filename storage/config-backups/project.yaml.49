@@ -1,4 +1,4 @@
-dateModified: 1554983001
+dateModified: 1554984245
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -640,6 +640,16 @@ imageTransforms:
     position: center-center
     quality: '82'
     width: '1040'
+  8d72efc7-16ad-40a9-9d71-eb18c6e369e3:
+    format: jpg
+    handle: square
+    height: '750'
+    interlace: none
+    mode: crop
+    name: Quadrat
+    position: center-center
+    quality: '82'
+    width: '750'
 matrixBlockTypes:
   d8f9a676-666d-4ff3-bc2c-4d09756020ae:
     field: eccd9fc9-950c-40aa-bcf0-ff9c5de05da8
@@ -1545,4 +1555,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-04-11 14:04:05'
+dateApplied: '2019-04-11 14:06:21'
