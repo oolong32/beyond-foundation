@@ -163,14 +163,15 @@ blockquote p {
 a {
   text-decoration: none;
   color: black;
-  border-bottom: solid #C9AF87 0.1875rem; }
+  border-bottom: solid #B89867 .1875rem;
+  transition: all 0.2s; }
 
 a:link,
 a:visited {
   color: black; }
 
 a:hover {
-  border-bottom: solid linear-gradient(20deg, #CCAF82 0%, #C6AD8C 20%, #C0AB97 100%) 0.1875rem; }
+  border-bottom: solid #D9B070 .375rem; }
 
 /* End Basic Links }}}3 */
 /* Masthead H1 {{{3 */
@@ -241,7 +242,7 @@ a.arrow-right-after:after {
 .button a:hover,
 .button a:active,
 .button a:focus {
-  background: #0028ff; }
+  background: linear-gradient(-45deg, #A69382 0%, #A59074 81%, #9B8562 100%); }
 
 /* End Button Links }}}3 */
 /* Overlay Nav Links {{{3 */
@@ -261,7 +262,7 @@ a.social-media-link svg path {
   fill: #C9AF87; }
 
 a.social-media-link:hover svg path {
-  fill: #0028ff; }
+  fill: linear-gradient(-45deg, #A69382 0%, #A59074 81%, #9B8562 100%); }
 
 /* End Social Media Links }}}3 */
 /* Teaser Links {{{3 */
@@ -289,7 +290,7 @@ a.social-media-link:hover svg path {
   justify-self: start;
   align-self: start;
   display: inline-block;
-  background: linear-gradient(20deg, #CCAF82 0%, #C6AD8C 20%, #C0AB97 100%);
+  background: linear-gradient(-45deg, #C0AB97 0%, #C6AD8C 81%, #CCAF82 100%);
   color: white;
   padding: 1px 10px 2px 7px;
   margin: 1rem 0;
@@ -324,9 +325,10 @@ a.social-media-link:hover svg path {
 .accordion-collapse span:before {
   content: "–"; }
 
+.other-button:hover,
 .accordion-collapse:hover,
 .accordion-trigger:hover {
-  background: #0028ff; }
+  background: linear-gradient(-45deg, #A69382 0%, #A59074 81%, #9B8562 100%); }
 
 /* Share, Listen, Download Buttons {{{2 */
 .igroove img,
@@ -419,7 +421,7 @@ header {
       top: -1px;
       transition: transform 0.2s ease-in; }
   header #language-switch:hover {
-    background: linear-gradient(20deg, #CCAF82 0%, #C6AD8C 20%, #C0AB97 100%); }
+    background: linear-gradient(-45deg, #C0AB97 0%, #C6AD8C 81%, #CCAF82 100%); }
     header #language-switch:hover p a {
       color: white; }
     header #language-switch:hover p:before {
@@ -916,7 +918,7 @@ footer {
   /* End Layout Header/Footer Masthead }}}2 */
   /* Layout Header {{{2 */
   .overlay-header #masthead {
-    background: linear-gradient(20deg, #CCAF82 0%, #C6AD8C 20%, #C0AB97 100%); }
+    background: linear-gradient(-45deg, #C0AB97 0%, #C6AD8C 81%, #CCAF82 100%); }
   header #language-switch,
   header nav {
     display: none; }
@@ -970,20 +972,21 @@ footer {
       #nav-overlay #language-switch p {
         margin: .5rem 0 0 1rem;
         display: inline-block;
-        padding: 0 .75rem;
-        font-size: 1.5rem;
+        padding: 0 .5rem;
+        font-size: 1.25rem;
+        line-height: 1.3;
         font-weight: 300;
-        background: linear-gradient(20deg, #CCAF82 0%, #C6AD8C 20%, #C0AB97 100%); }
+        background: linear-gradient(-45deg, #C0AB97 0%, #C6AD8C 81%, #CCAF82 100%); }
         #nav-overlay #language-switch p a {
           color: white; }
       #nav-overlay #language-switch p:before {
         padding-right: 0.5rem;
         content: url("/assets/_pic/arrow_right_white.svg");
         position: relative;
-        top: -4px; }
+        top: -2px; }
     #nav-overlay #nav-overlay-footer {
       display: block;
-      background: linear-gradient(20deg, #CCAF82 0%, #C6AD8C 20%, #C0AB97 100%);
+      background: linear-gradient(-45deg, #C0AB97 0%, #C6AD8C 81%, #CCAF82 100%);
       margin: auto 0 0;
       padding: 1.5rem 1rem; }
       #nav-overlay #nav-overlay-footer ul.share-icons {

@@ -6,7 +6,8 @@ $text-color: rgb(0, 0, 0);
 $white: rgb(255, 255, 255);
 // $blue: rgb(165, 180, 255);
 $blue: #C9AF87;
-$gold: linear-gradient(20deg, #CCAF82 0%, #C6AD8C 20%, #C0AB97 100%);
+$gold: linear-gradient(-45deg, #C0AB97 0%, #C6AD8C 81%, #CCAF82 100%);
+$gold-hover: linear-gradient(-45deg, #A69382 0%, #A59074 81%, #9B8562 100%);
 $blue-hover: rgb(0, 40, 255);
 $gray: rgb(125, 215, 215);
 $antiqua: 'Freight Display';
@@ -248,12 +249,13 @@ blockquote p {
 a {
   text-decoration: none;
   color: $text-color;
-  border-bottom: solid $blue .1875rem;
+  border-bottom: solid #B89867 .1875rem;
+  transition: all 0.2s;
 }
 
 a:link,
 a:visited { color: black; }
-a:hover { border-bottom: solid $gold .1875rem; }
+a:hover { border-bottom: solid #D9B070 .375rem; }
 
 /* End Basic Links }}}3 */
 
@@ -344,7 +346,7 @@ a.arrow-right-after:after {
 }
 .button a:hover,
 .button a:active,
-.button a:focus { background: $blue-hover; }
+.button a:focus { background: $gold-hover; }
 
 /* End Button Links }}}3 */
 
@@ -366,7 +368,7 @@ a.social-media-link {
 
 // a.social-media-link:hover svg use { fill: $blue-hover; }
 a.social-media-link svg path { fill: $blue; }
-a.social-media-link:hover svg path { fill: $blue-hover; }
+a.social-media-link:hover svg path { fill: $gold-hover; }
 
 /* End Social Media Links }}}3 */
 
@@ -446,9 +448,10 @@ a.social-media-link:hover svg path { fill: $blue-hover; }
   content: "–";
 }
 
+.other-button:hover,
 .accordion-collapse:hover,
 .accordion-trigger:hover {
-  background: $blue-hover;
+  background: $gold-hover;
 }
 
 /* Share, Listen, Download Buttons {{{2 */
@@ -1289,8 +1292,9 @@ body {
     p  {
       margin: .5rem 0 0 1rem;
       display: inline-block;
-      padding: 0 .75rem;
-      font-size: 1.5rem; // lil’ bit smaller 💅
+      padding: 0 .5rem;
+      font-size: 1.25rem; // lil’ bit smaller 💅
+      line-height: 1.3;
       font-weight: $light;
       background: $gold;
       a {
@@ -1301,7 +1305,7 @@ body {
       padding-right: 0.5rem;
       content: url("/assets/_pic/arrow_right_white.svg");
       position: relative;
-      top: -4px;
+      top: -2px;
     }
   }
   #language-switch:hover {
