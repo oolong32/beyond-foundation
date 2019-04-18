@@ -62,12 +62,12 @@ p.text-column {
   font-size: 22px;
   line-height: 1.45; }
 
-main ul li:before {
+main ul:not(.music-production-links) li:before {
   content: '· ';
   padding-right: 0.2rem;
   text-indent: 0; }
 
-main ul li {
+main ul:not(.music-production-links) li {
   margin-left: 0.8rem;
   text-indent: -0.8rem; }
 
@@ -170,7 +170,7 @@ a:visited {
   color: black; }
 
 a:hover {
-  border-bottom: solid linear-gradient(45deg, #A69382 0%, #A59074 81%, #9B8562 100%) 0.1875rem; }
+  border-bottom: solid linear-gradient(20deg, #CCAF82 0%, #C6AD8C 20%, #C0AB97 100%) 0.1875rem; }
 
 /* End Basic Links }}}3 */
 /* Masthead H1 {{{3 */
@@ -241,7 +241,7 @@ a.arrow-right-after:after {
 .button a:hover,
 .button a:active,
 .button a:focus {
-  background: linear-gradient(45deg, #A69382 0%, #A59074 81%, #9B8562 100%); }
+  background: #0028ff; }
 
 /* End Button Links }}}3 */
 /* Overlay Nav Links {{{3 */
@@ -261,7 +261,7 @@ a.social-media-link svg path {
   fill: #C9AF87; }
 
 a.social-media-link:hover svg path {
-  fill: linear-gradient(45deg, #A69382 0%, #A59074 81%, #9B8562 100%); }
+  fill: #0028ff; }
 
 /* End Social Media Links }}}3 */
 /* Teaser Links {{{3 */
@@ -326,7 +326,7 @@ a.social-media-link:hover svg path {
 
 .accordion-collapse:hover,
 .accordion-trigger:hover {
-  background: linear-gradient(45deg, #A69382 0%, #A59074 81%, #9B8562 100%); }
+  background: #0028ff; }
 
 /* Share, Listen, Download Buttons {{{2 */
 .igroove img,

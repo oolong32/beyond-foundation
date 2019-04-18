@@ -7,8 +7,7 @@ $white: rgb(255, 255, 255);
 // $blue: rgb(165, 180, 255);
 $blue: #C9AF87;
 $gold: linear-gradient(20deg, #CCAF82 0%, #C6AD8C 20%, #C0AB97 100%);
-// $blue-hover: rgb(0, 40, 255);
-$blue-hover: linear-gradient(45deg, #A69382 0%, #A59074 81%, #9B8562 100%);
+$blue-hover: rgb(0, 40, 255);
 $gray: rgb(125, 215, 215);
 $antiqua: 'Freight Display';
 $grotesk: 'Calibre', 'Helvetica Neue', helvetica, arial, sans-serif;
@@ -110,12 +109,12 @@ p.text-column { font-weight: $medium; }
   line-height: 1.45;
 }
 
-main ul li:before {
+main ul:not(.music-production-links) li:before {
   content: '· ';
   padding-right: 0.2rem;
   text-indent: 0;
 }
-main ul li {
+main ul:not(.music-production-links) li {
   margin-left: 0.8rem;
   text-indent: -0.8rem;
 }
@@ -254,7 +253,7 @@ a {
 
 a:link,
 a:visited { color: black; }
-a:hover { border-bottom: solid $blue-hover .1875rem; }
+a:hover { border-bottom: solid $gold .1875rem; }
 
 /* End Basic Links }}}3 */
 
@@ -858,7 +857,9 @@ main {
     margin-top: 1rem;
     list-style: none;
     display: flex;
-    li { margin-right: 1rem;}
+    li {
+      margin-right: 1rem;
+    }
   }
   
   /* End Hear-Buy-Share Links }}}4 */
