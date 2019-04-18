@@ -62,13 +62,18 @@ p.text-column {
   font-size: 22px;
   line-height: 1.45; }
 
+main ul li:before {
+  content: '· ';
+  padding-right: 0.2rem;
+  text-indent: 0; }
+
+main ul li {
+  margin-left: 0.8rem;
+  text-indent: -0.8rem; }
+
 /* 404 styles {{{3 */
 #error404 #language-switch {
   display: none; }
-
-#error404 ul li:before {
-  content: '· ';
-  padding-right: 0.2rem; }
 
 /* End 404 styles }}}3 */
 /* Accordion-Styles {{{3 */
