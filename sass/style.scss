@@ -962,6 +962,7 @@ main {
   // .collapsed { color: red; }
   .accordion-trigger { margin-top: 1rem; }
   .accordion-collapse { }
+  p { margin-bottom: 0.875rem; }
 }
 
 /* End Main Accordions Layout }}}2 */
@@ -1395,14 +1396,23 @@ main {
     // should probably stay two-col-grid
     width: 100%;
     min-width: 100%;
-    margin: 1.25rem auto;
+    margin: 1.25rem auto 2rem;
     .image-cell,
     .text-cell,
     > * {
       padding: 0 20px;
       min-width: auto; // ok?
     }
-    .full-width { margin-bottom: 5px; }
+    .full-width {
+      margin-bottom: 5px;
+    }
+    img.full-width,
+    video.full-width {
+      display: block;
+      width: 100%;
+      margin: 2rem 0;
+      padding-bottom: 0.875rem;
+    }
     h2 {
       margin-top: 1.75rem;
       padding: 0;
@@ -1412,6 +1422,7 @@ main {
     .accordion-trigger,
     .accordion-collapse { margin-top: .5rem; }
     .music-production-links { margin-top: .5rem; }
+    .accordion { margin-bottom: 2rem; }
   }
   section.alternating-grid-image-large {
     p.text-column {

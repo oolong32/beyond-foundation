@@ -736,6 +736,8 @@ main {
     outline: 0; }
   .accordion .accordion-trigger {
     margin-top: 1rem; }
+  .accordion p {
+    margin-bottom: 0.875rem; }
 
 /* End Main Accordions Layout }}}2 */
 /* Audio Player {{{2 */
@@ -1053,7 +1055,7 @@ footer {
     main section.alternating-grid-image-large:nth-of-type(2n+1) {
       width: 100%;
       min-width: 100%;
-      margin: 1.25rem auto; }
+      margin: 1.25rem auto 2rem; }
       main section .image-cell,
       main section .text-cell,
       main section > *,
@@ -1081,6 +1083,22 @@ footer {
       main section.alternating-grid-text-large:nth-of-type(2n+1) .full-width,
       main section.alternating-grid-image-large:nth-of-type(2n+1) .full-width {
         margin-bottom: 5px; }
+      main section img.full-width,
+      main section video.full-width,
+      main section.single-col img.full-width,
+      main section.single-col video.full-width,
+      main section.alternating-grid-text-large img.full-width,
+      main section.alternating-grid-text-large video.full-width,
+      main section.alternating-grid-image-large img.full-width,
+      main section.alternating-grid-image-large video.full-width,
+      main section.alternating-grid-text-large:nth-of-type(2n+1) img.full-width,
+      main section.alternating-grid-text-large:nth-of-type(2n+1) video.full-width,
+      main section.alternating-grid-image-large:nth-of-type(2n+1) img.full-width,
+      main section.alternating-grid-image-large:nth-of-type(2n+1) video.full-width {
+        display: block;
+        width: 100%;
+        margin: 2rem 0;
+        padding-bottom: 0.875rem; }
       main section h2,
       main section.single-col h2,
       main section.alternating-grid-text-large h2,
@@ -1123,6 +1141,13 @@ footer {
       main section.alternating-grid-text-large:nth-of-type(2n+1) .music-production-links,
       main section.alternating-grid-image-large:nth-of-type(2n+1) .music-production-links {
         margin-top: .5rem; }
+      main section .accordion,
+      main section.single-col .accordion,
+      main section.alternating-grid-text-large .accordion,
+      main section.alternating-grid-image-large .accordion,
+      main section.alternating-grid-text-large:nth-of-type(2n+1) .accordion,
+      main section.alternating-grid-image-large:nth-of-type(2n+1) .accordion {
+        margin-bottom: 2rem; }
     main section.alternating-grid-image-large p.text-column {
       transform: translateY(-5px); }
     main section.alternating-grid-text-large h3.player-track-title {
