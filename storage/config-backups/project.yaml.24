@@ -1,4 +1,4 @@
-dateModified: 1555487501
+dateModified: 1555510130
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -8,6 +8,8 @@ fieldGroups:
     name: 'Music-Network Awards'
   2d31e491-87da-48b8-85d6-72aba43f554c:
     name: 'Share Links'
+  6e35b058-585c-4737-a314-09ba0b44576a:
+    name: News-Items
   85d8c0e7-6a43-4691-8d57-0ea516983de7:
     name: 'Music Production Entries'
   97dfc979-5ae8-418e-9249-5b4fdebd7c80:
@@ -113,11 +115,11 @@ fields:
     name: Kurzbeschrieb
     searchable: true
     settings:
-      charLimit: ''
+      charLimit: '300'
       code: ''
       columnType: text
       initialRows: '4'
-      multiline: ''
+      multiline: '1'
       placeholder: ''
     translationKeyFormat: null
     translationMethod: site
@@ -243,7 +245,7 @@ fields:
       columnType: text
       purifierConfig: ''
       purifyHtml: '1'
-      redactorConfig: Simple.json
+      redactorConfig: SimpleListTable.json
     translationKeyFormat: null
     translationMethod: site
     type: craft\redactor\Field
@@ -320,6 +322,24 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\redactor\Field
+  92480c84-40d6-46c9-9a07-013329517956:
+    contentColumnType: text
+    fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
+    handle: videoImageDescription
+    instructions: 'Kurzer Beschrieb ~ 300 Zeichen.'
+    name: 'Beschrieb Video/Bild'
+    searchable: true
+    settings:
+      availableTransforms: ''
+      availableVolumes: ''
+      cleanupHtml: '1'
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: SimpleListTable.json
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\redactor\Field
   9748cdf8-1320-4cd4-989e-2dc8ce373279:
     contentColumnType: string
     fieldGroup: 2d31e491-87da-48b8-85d6-72aba43f554c
@@ -354,11 +374,11 @@ fields:
     contentColumnType: text
     fieldGroup: 85d8c0e7-6a43-4691-8d57-0ea516983de7
     handle: leadTitle
-    instructions: 'Überschrift über dem Lead'
+    instructions: 'Überschrift über dem Lead, max. 100 Zeichen.'
     name: 'Lead Title'
     searchable: true
     settings:
-      charLimit: ''
+      charLimit: '100'
       code: ''
       columnType: text
       initialRows: '4'
@@ -498,6 +518,33 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Assets
+  d3bdccc1-7526-4804-bd85-6ea3ef871776:
+    contentColumnType: string
+    fieldGroup: 6e35b058-585c-4737-a314-09ba0b44576a
+    handle: newsMedia
+    instructions: ''
+    name: 'News-Bild oder -Video'
+    searchable: false
+    settings:
+      allowedKinds:
+        - image
+        - video
+      defaultUploadLocationSource: 'volume:9eb7856b-e672-4fbf-b4b5-9d00ee79c726'
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: ''
+      restrictFiles: '1'
+      selectionLabel: ''
+      singleUploadLocationSource: 'volume:9eb7856b-e672-4fbf-b4b5-9d00ee79c726'
+      singleUploadLocationSubpath: /news
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: '1'
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
   d8dd3348-f988-4ea0-b8db-6c4e63542924:
     contentColumnType: text
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
@@ -534,6 +581,24 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Entries
+  dfad3cfa-d66d-4ab0-8ac1-aa461b5659f9:
+    contentColumnType: text
+    fieldGroup: 6e35b058-585c-4737-a314-09ba0b44576a
+    handle: newsText
+    instructions: ''
+    name: 'News Text'
+    searchable: true
+    settings:
+      availableTransforms: ''
+      availableVolumes: ''
+      cleanupHtml: '1'
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: SimpleListTable.json
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\redactor\Field
   e6776d44-d3d9-442b-90aa-f01d11baa789:
     contentColumnType: string
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
@@ -571,21 +636,6 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Url
-  eccd9fc9-950c-40aa-bcf0-ff9c5de05da8:
-    contentColumnType: string
-    fieldGroup: 02ecc909-a8ca-4329-abc5-f055c7de039e
-    handle: awardTeasers
-    instructions: 'Ein Teaser mit Audio-Player, Bild und Text.'
-    name: Awards
-    searchable: true
-    settings:
-      contentTable: '{{%matrixcontent_awardteasers}}'
-      localizeBlocks: ''
-      maxBlocks: ''
-      minBlocks: ''
-    translationKeyFormat: null
-    translationMethod: site
-    type: craft\fields\Matrix
   f01db52f-6f1f-4abd-aa2c-4a8b40100e97:
     contentColumnType: string
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
@@ -650,139 +700,6 @@ imageTransforms:
     position: center-center
     quality: '82'
     width: '750'
-matrixBlockTypes:
-  d8f9a676-666d-4ff3-bc2c-4d09756020ae:
-    field: eccd9fc9-950c-40aa-bcf0-ff9c5de05da8
-    fieldLayouts:
-      c9334a83-c204-4de1-8878-1c6c21428e59:
-        tabs:
-          -
-            fields:
-              3a789234-95c4-4ef8-bf4d-c95010fba8e8:
-                required: true
-                sortOrder: 3
-              4a857b31-9212-4fde-99c6-923a2993ea5a:
-                required: true
-                sortOrder: 4
-              b8bdf3dd-49dc-430d-adaf-15b66594978f:
-                required: true
-                sortOrder: 2
-              d68a5011-9c54-4af7-a14c-256a968654ef:
-                required: true
-                sortOrder: 5
-              dd90962f-8b62-43a3-a93f-340b9f8567ae:
-                required: true
-                sortOrder: 1
-            name: Content
-            sortOrder: 1
-    fields:
-      3a789234-95c4-4ef8-bf4d-c95010fba8e8:
-        contentColumnType: text
-        fieldGroup: null
-        handle: trackTitle
-        instructions: 'Der Name des Stücks.'
-        name: Track-Title
-        searchable: true
-        settings:
-          charLimit: ''
-          code: ''
-          columnType: text
-          initialRows: '4'
-          multiline: ''
-          placeholder: ''
-        translationKeyFormat: null
-        translationMethod: none
-        type: craft\fields\PlainText
-      4a857b31-9212-4fde-99c6-923a2993ea5a:
-        contentColumnType: text
-        fieldGroup: null
-        handle: trackDescription
-        instructions: 'Ein kurzer Beschrieb, ca. 500 Zeichen'
-        name: Beschrieb
-        searchable: true
-        settings:
-          availableTransforms: ''
-          availableVolumes: ''
-          cleanupHtml: '1'
-          columnType: text
-          purifierConfig: ''
-          purifyHtml: '1'
-          redactorConfig: Simple.json
-        translationKeyFormat: null
-        translationMethod: site
-        type: craft\redactor\Field
-      b8bdf3dd-49dc-430d-adaf-15b66594978f:
-        contentColumnType: string
-        fieldGroup: null
-        handle: trackAudio
-        instructions: 'Eine mp3 Datei'
-        name: Audio-Datei
-        searchable: true
-        settings:
-          allowedKinds:
-            - audio
-          defaultUploadLocationSource: 'volume:9eb7856b-e672-4fbf-b4b5-9d00ee79c726'
-          defaultUploadLocationSubpath: ''
-          limit: '1'
-          localizeRelations: ''
-          restrictFiles: '1'
-          selectionLabel: ''
-          singleUploadLocationSource: 'volume:9eb7856b-e672-4fbf-b4b5-9d00ee79c726'
-          singleUploadLocationSubpath: audio
-          source: null
-          sources: '*'
-          targetSiteId: null
-          useSingleFolder: '1'
-          viewMode: list
-        translationKeyFormat: null
-        translationMethod: site
-        type: craft\fields\Assets
-      d68a5011-9c54-4af7-a14c-256a968654ef:
-        contentColumnType: string
-        fieldGroup: null
-        handle: trackImage
-        instructions: 'Quadratisches Bild (wird beschnitten).'
-        name: Bild
-        searchable: true
-        settings:
-          allowedKinds:
-            - image
-          defaultUploadLocationSource: 'volume:9eb7856b-e672-4fbf-b4b5-9d00ee79c726'
-          defaultUploadLocationSubpath: ''
-          limit: '1'
-          localizeRelations: ''
-          restrictFiles: '1'
-          selectionLabel: ''
-          singleUploadLocationSource: 'volume:9eb7856b-e672-4fbf-b4b5-9d00ee79c726'
-          singleUploadLocationSubpath: images/music-production/cover-images
-          source: null
-          sources: '*'
-          targetSiteId: null
-          useSingleFolder: '1'
-          viewMode: list
-        translationKeyFormat: null
-        translationMethod: site
-        type: craft\fields\Assets
-      dd90962f-8b62-43a3-a93f-340b9f8567ae:
-        contentColumnType: text
-        fieldGroup: null
-        handle: teaserHeading
-        instructions: 'Teaser-Titel, Bezug auf Award'
-        name: Überschrift
-        searchable: true
-        settings:
-          charLimit: ''
-          code: ''
-          columnType: text
-          initialRows: '4'
-          multiline: ''
-          placeholder: ''
-        translationKeyFormat: null
-        translationMethod: site
-        type: craft\fields\PlainText
-    handle: teaser
-    name: Teaser
-    sortOrder: 1
 plugins:
   redactor:
     edition: standard
@@ -802,13 +719,13 @@ plugins:
           clientSecret: 0uCV3T2WxPjmoee3_7h91Xra
       tokens:
         youtube:
-          accessToken: ya29.GlzuBnqn5p5v3bg9QaGZndp2CbSpEUr-JA-_ytpbx63QhJz5tphMZ6E6Y8QrFGUACgPiRvKRW2CxFRCC6XOQBl-E3kzfIhTnlFTDqNPh6y2pP4gSAWf-MtCuhtZIzg
-          expires: 1555491101
+          accessToken: ya29.GlzuBvgbiWbw97HUZBiTfW6t2KzwvdVHE6xtGzlOEZRo5-Bfym5op46GUqd51qbXno8sjThBDEwB3qEjTlChBToJaeTrV5mTHzPWE9GfzvdwTsawKC4SPWQbNX-5iA
+          expires: 1555511808
           refreshToken: 1/h_aaH-zGnHYJCo5IJxtfkrdl09zaCcnwd20rF1paffZJ-qin2ZCXBzCqbn4gpn5A
           resourceOwnerId: null
           values:
             values:
-              id_token: eyJhbGciOiJSUzI1NiIsImtpZCI6IjM3ODJkM2YwYmM4OTAwOGQ5ZDJjMDE3MzBmNzY1Y2ZiMTlkM2I3MGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTU5MjQ2NDUyNTc5OTAyMzQ3NDYiLCJlbWFpbCI6ImJleW9uZHNpbmdpbmdjb21AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiI0MDY2ZXRVMzNkMjNnZFBaVURVOUt3IiwibmFtZSI6IkJleW9uZCBTaW5naW5nIiwicGljdHVyZSI6Imh0dHBzOi8vbGg1Lmdvb2dsZXVzZXJjb250ZW50LmNvbS8tQnJZdUI5d1JDN0UvQUFBQUFBQUFBQUkvQUFBQUFBQUFBQWsvZVNWWTVhamtmRVUvczk2LWMvcGhvdG8uanBnIiwiZ2l2ZW5fbmFtZSI6IkJleW9uZCIsImZhbWlseV9uYW1lIjoiU2luZ2luZyIsImxvY2FsZSI6ImRlIiwiaWF0IjoxNTU1NDg3NTAxLCJleHAiOjE1NTU0OTExMDF9.AZRTbzBBIRpDSKBP6HmC7zwdezEnGBY_hcVdVcDzUaFhh9crmjlCrYSjKWYz3WlyRbt-C70LLSgG7KWhQca_d6cosiz-qSu_Q67t0sfaAWwyBVE4i4Fk7BgDTEahshCz-Rr-wjvpQj3ZzumhlMHgorD52yZwmtISe0obrzYfkVbLo9JH3DT0GLMO2S_qxxFrvfB-wPUYFHi-_FXtskuiKANP4Ql1BA1kRr-5hKsTik9mh-iizGu5ZnHvsYTffMmnNvtjdcOFah0LIsyAbTv5gy_SSov851fSYRryeVj7S0hm3t2Be3EVmB8n8yTimaDLPi1Zwaa3iUn1HPzE71XlYQ
+              id_token: eyJhbGciOiJSUzI1NiIsImtpZCI6IjM3ODJkM2YwYmM4OTAwOGQ5ZDJjMDE3MzBmNzY1Y2ZiMTlkM2I3MGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTU5MjQ2NDUyNTc5OTAyMzQ3NDYiLCJlbWFpbCI6ImJleW9uZHNpbmdpbmdjb21AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiI1RGhGWUlwYTh4cmlsaGFaREZ0WktRIiwiaWF0IjoxNTU1NTA4MjA4LCJleHAiOjE1NTU1MTE4MDh9.ct13Y_S9IRip4VGbGEG8sOZOh4ZO_6mOezaGShSXJJJfjKTKwj3OTYhONfJy_DPFZ0GvCYwWOe-3JlOMZI4_RbQIzU6a2UNOOagviePEnwIYNGo-DdxSJ9DbNMTelZbRi8U9E0H92NpzSVIazFHysTAtK29aKrT99KcDS9wv-W5_ei7jTufAFC99FDBZisp_nc1pjWJHvbU8-gz3wc1PeRTVRz8TJ8StISQHdq5KPW5SnlwsM_RCdAT5BMeQpiuE-HTEfyxTEL-yNuK5_AU3AWfdNzhve3dQbjE__jNkJelm48up39JcHnu4Zh4-rK6GeKDW4U0GucVg7O_Wx_eHoA
               scope: 'https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/youtube https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/youtube.readonly'
               token_type: Bearer
       videosPerPage: 30
@@ -1097,37 +1014,34 @@ sections:
             tabs:
               -
                 fields:
-                  387a6e57-35e5-47bd-9182-119d7ccccf16:
-                    required: true
-                    sortOrder: 3
-                  bfe0f040-f095-416d-b4cf-39c83419018b:
-                    required: true
+                  d3bdccc1-7526-4804-bd85-6ea3ef871776:
+                    required: false
                     sortOrder: 1
-                  dd3b36a3-d68e-4857-b2c2-59bfc760dc64:
-                    required: true
+                  dfad3cfa-d66d-4ab0-8ac1-aa461b5659f9:
+                    required: false
                     sortOrder: 2
-                name: 'Tab 1'
+                name: News-Items
                 sortOrder: 1
-        handle: homeTeaserEntries
+        handle: newsItem
         hasTitleField: true
-        name: 'Home Teaser Entries'
+        name: 'News Entry'
         sortOrder: 1
         titleFormat: ''
-        titleLabel: 'Titel (wird nicht angezeigt)'
-    handle: homeTeasers
-    name: '1 Home Teaser Entries'
+        titleLabel: Titel
+    handle: news
+    name: '1 News Entries'
     propagateEntries: true
     siteSettings:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
         enabledByDefault: true
         hasUrls: true
-        template: ''
-        uriFormat: 'home-teaser/{slug}'
+        template: about/_entry
+        uriFormat: 'news/{slug}'
       96f6905b-bcc3-4e74-91a8-e5458eb5e532:
         enabledByDefault: true
         hasUrls: true
-        template: ''
-        uriFormat: 'home-teaser/{slug}'
+        template: about/_entry
+        uriFormat: 'news/{slug}'
     structure:
       maxLevels: '1'
       uid: ce59bcc3-cded-4cfd-b5f5-9fb32e9c4fe2
@@ -1308,9 +1222,6 @@ sections:
             tabs:
               -
                 fields:
-                  387a6e57-35e5-47bd-9182-119d7ccccf16:
-                    required: false
-                    sortOrder: 6
                   417b399c-4166-4897-a491-00dff2058bd5:
                     required: false
                     sortOrder: 4
@@ -1323,6 +1234,9 @@ sections:
                   8a5aa2a1-d84f-4bbf-9ea5-4c6b67c7c105:
                     required: false
                     sortOrder: 3
+                  92480c84-40d6-46c9-9a07-013329517956:
+                    required: false
+                    sortOrder: 6
                   bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
                     required: false
                     sortOrder: 1
@@ -1456,21 +1370,21 @@ sections:
               -
                 fields:
                   c5dbaf87-1fca-4ec0-9285-f73a2ec10ab3:
-                    required: false
-                    sortOrder: 2
+                    required: '0'
+                    sortOrder: '2'
                   d175683d-6e5d-484f-9fc1-5678f4b88c32:
-                    required: false
-                    sortOrder: 1
+                    required: '0'
+                    sortOrder: '1'
                 name: 'Tab 1'
-                sortOrder: 1
+                sortOrder: '1'
         handle: home
-        hasTitleField: false
-        name: Home
+        hasTitleField: '0'
+        name: 'Home (Slider)'
         sortOrder: 1
         titleFormat: '{section.name|raw}'
         titleLabel: Heading
     handle: home
-    name: Home
+    name: 'Home (Slider)'
     propagateEntries: true
     siteSettings:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
@@ -1575,4 +1489,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-04-17 09:56:03'
+dateApplied: '2019-04-17 16:45:07'

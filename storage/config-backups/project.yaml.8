@@ -1,4 +1,4 @@
-dateModified: 1555508208
+dateModified: 1555581806
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -313,6 +313,24 @@ fields:
     searchable: true
     settings:
       availableTransforms: '*'
+      availableVolumes: ''
+      cleanupHtml: '1'
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: SimpleListTable.json
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\redactor\Field
+  92480c84-40d6-46c9-9a07-013329517956:
+    contentColumnType: text
+    fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
+    handle: videoImageDescription
+    instructions: 'Kurzer Beschrieb ~ 300 Zeichen.'
+    name: 'Beschrieb Video/Bild'
+    searchable: true
+    settings:
+      availableTransforms: ''
       availableVolumes: ''
       cleanupHtml: '1'
       columnType: text
@@ -701,16 +719,57 @@ plugins:
           clientSecret: 0uCV3T2WxPjmoee3_7h91Xra
       tokens:
         youtube:
-          accessToken: ya29.GlzuBvgbiWbw97HUZBiTfW6t2KzwvdVHE6xtGzlOEZRo5-Bfym5op46GUqd51qbXno8sjThBDEwB3qEjTlChBToJaeTrV5mTHzPWE9GfzvdwTsawKC4SPWQbNX-5iA
-          expires: 1555511808
+          accessToken: ya29.GlzvBlw2T7zyUr4Uj85ZVcm1vogC1GPpZpeH3TB82Mi1Nlq1dB43LRd0dKPwZFNRIqiosu_iBbX5-w9P7WBlOPNkn4t9yioqH3z-3IXAP755olbVeng6TzkoUaHLsA
+          expires: 1555585350
           refreshToken: 1/h_aaH-zGnHYJCo5IJxtfkrdl09zaCcnwd20rF1paffZJ-qin2ZCXBzCqbn4gpn5A
           resourceOwnerId: null
           values:
             values:
-              id_token: eyJhbGciOiJSUzI1NiIsImtpZCI6IjM3ODJkM2YwYmM4OTAwOGQ5ZDJjMDE3MzBmNzY1Y2ZiMTlkM2I3MGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTU5MjQ2NDUyNTc5OTAyMzQ3NDYiLCJlbWFpbCI6ImJleW9uZHNpbmdpbmdjb21AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiI1RGhGWUlwYTh4cmlsaGFaREZ0WktRIiwiaWF0IjoxNTU1NTA4MjA4LCJleHAiOjE1NTU1MTE4MDh9.ct13Y_S9IRip4VGbGEG8sOZOh4ZO_6mOezaGShSXJJJfjKTKwj3OTYhONfJy_DPFZ0GvCYwWOe-3JlOMZI4_RbQIzU6a2UNOOagviePEnwIYNGo-DdxSJ9DbNMTelZbRi8U9E0H92NpzSVIazFHysTAtK29aKrT99KcDS9wv-W5_ei7jTufAFC99FDBZisp_nc1pjWJHvbU8-gz3wc1PeRTVRz8TJ8StISQHdq5KPW5SnlwsM_RCdAT5BMeQpiuE-HTEfyxTEL-yNuK5_AU3AWfdNzhve3dQbjE__jNkJelm48up39JcHnu4Zh4-rK6GeKDW4U0GucVg7O_Wx_eHoA
-              scope: 'https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/youtube https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/youtube.readonly'
+              id_token: eyJhbGciOiJSUzI1NiIsImtpZCI6IjM3ODJkM2YwYmM4OTAwOGQ5ZDJjMDE3MzBmNzY1Y2ZiMTlkM2I3MGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTU5MjQ2NDUyNTc5OTAyMzQ3NDYiLCJlbWFpbCI6ImJleW9uZHNpbmdpbmdjb21AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiI4NmpyblNXTHlQeW8teDBUaEg1c0V3IiwiaWF0IjoxNTU1NTgxNzUwLCJleHAiOjE1NTU1ODUzNTB9.jKsDcU576ph_vTz9_xgHS_rH9HWXo4t9n93F15_nSz1MFeNGdAAB4awH1rVMmUk96y5AHTyt8vNzFOwJQERdMbJREl-UQAZU9NWecPXGdV-ie9xRhLeTQ57z071wxk_bJN6bxTLRxwUer5SuQtp6As2Zcrq6T8nbBA4aLmCiR0jSkRLjFMY-S2vzKWke9jnvG0W8zBoSK4k9miVXlkVsocrq39Zx5adCIdmX-C1xGv4PJfhP-fn0vnz7W2tOrjj2s3yitBXGcPPkPUDw2EXBqPTOFKXzjtryqgbfIRIzpdsR8LFimwlbF959jsnEl19Aipijvm3bA2CrjIbpqaxi-w
+              scope: 'https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/youtube.readonly https://www.googleapis.com/auth/youtube https://www.googleapis.com/auth/userinfo.profile'
               token_type: Bearer
       videosPerPage: 30
+routes:
+  8ff3137c-1fbd-4d8a-86df-729b6301cc28:
+    siteUid: null
+    sortOrder: 1
+    template: about/index.twig
+    uriParts:
+      - index.
+      -
+        - '*'
+        - '[^\/]+'
+    uriPattern: 'index.<any:[^\/]+>'
+  a8d30871-c6b5-4c58-82ca-79ffd0c2abed:
+    siteUid: null
+    sortOrder: 4
+    template: music-production/index.twig
+    uriParts:
+      - children.
+      -
+        - '*'
+        - '[^\/]+'
+    uriPattern: 'children.<any:[^\/]+>'
+  c164290a-b161-4bac-b8dd-6805b0f6add0:
+    siteUid: null
+    sortOrder: 2
+    template: music-production/index.twig
+    uriParts:
+      - music/
+      -
+        - '*'
+        - '[^\/]+'
+    uriPattern: 'music/<any:[^\/]+>'
+  c50d11be-41e1-41cf-b607-f8d69abf2f8d:
+    siteUid: null
+    sortOrder: 3
+    template: about/index.twig
+    uriParts:
+      - beyond.
+      -
+        - '*'
+        - '[^\/]+'
+    uriPattern: 'beyond.<any:[^\/]+>'
 sections:
   08de450d-3199-4c3b-9b6c-9a900c9ab5d7:
     enableVersioning: true
@@ -1195,6 +1254,44 @@ sections:
         template: privacy
         uriFormat: privacy
     type: single
+  b4b612d6-fe0e-408a-92a8-8d6321e2e397:
+    enableVersioning: true
+    entryTypes:
+      2c7d53e6-6d40-434c-a513-e000097c634d:
+        fieldLayouts:
+          75a3ec37-44ee-4bf3-9299-ab387e7018e3:
+            tabs:
+              -
+                fields:
+                  387a6e57-35e5-47bd-9182-119d7ccccf16:
+                    required: false
+                    sortOrder: 2
+                  b729c087-ed9f-4371-8cf0-48e6ef2d9e6a:
+                    required: false
+                    sortOrder: 1
+                name: Fehlermeldung
+                sortOrder: 1
+        handle: error404
+        hasTitleField: false
+        name: 'Fehler 404'
+        sortOrder: 1
+        titleFormat: '{section.name|raw}'
+        titleLabel: ''
+    handle: error404
+    name: 'Fehler 404'
+    propagateEntries: true
+    siteSettings:
+      802d4b06-1f71-4c60-8b00-c331a21b5134:
+        enabledByDefault: true
+        hasUrls: true
+        template: '404'
+        uriFormat: error-404
+      96f6905b-bcc3-4e74-91a8-e5458eb5e532:
+        enabledByDefault: true
+        hasUrls: true
+        template: '404'
+        uriFormat: fehler-404
+    type: single
   bdcc5b99-d47c-4d7f-a59c-2535c42dc0da:
     enableVersioning: true
     entryTypes:
@@ -1204,9 +1301,6 @@ sections:
             tabs:
               -
                 fields:
-                  387a6e57-35e5-47bd-9182-119d7ccccf16:
-                    required: false
-                    sortOrder: 6
                   417b399c-4166-4897-a491-00dff2058bd5:
                     required: false
                     sortOrder: 4
@@ -1219,6 +1313,9 @@ sections:
                   8a5aa2a1-d84f-4bbf-9ea5-4c6b67c7c105:
                     required: false
                     sortOrder: 3
+                  92480c84-40d6-46c9-9a07-013329517956:
+                    required: false
+                    sortOrder: 6
                   bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
                     required: false
                     sortOrder: 1
@@ -1352,21 +1449,21 @@ sections:
               -
                 fields:
                   c5dbaf87-1fca-4ec0-9285-f73a2ec10ab3:
-                    required: false
-                    sortOrder: 2
+                    required: '0'
+                    sortOrder: '2'
                   d175683d-6e5d-484f-9fc1-5678f4b88c32:
-                    required: false
-                    sortOrder: 1
+                    required: '0'
+                    sortOrder: '1'
                 name: 'Tab 1'
-                sortOrder: 1
+                sortOrder: '1'
         handle: home
-        hasTitleField: false
-        name: Home
+        hasTitleField: '0'
+        name: 'Home (Slider)'
         sortOrder: 1
         titleFormat: '{section.name|raw}'
         titleLabel: Heading
     handle: home
-    name: Home
+    name: 'Home (Slider)'
     propagateEntries: true
     siteSettings:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
@@ -1471,4 +1568,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-04-17 15:54:25'
+dateApplied: '2019-04-18 12:04:11'
