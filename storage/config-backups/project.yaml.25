@@ -1,4 +1,4 @@
-dateModified: 1555424928
+dateModified: 1555427576
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -959,18 +959,9 @@ sections:
             tabs:
               -
                 fields:
-                  013f9713-f734-4215-90dc-70fd25cf2306:
-                    required: false
-                    sortOrder: 9
-                  07a81bf3-21ea-4fc5-bcb3-e2b3eddcc8f4:
-                    required: false
-                    sortOrder: 8
                   387a6e57-35e5-47bd-9182-119d7ccccf16:
                     required: false
                     sortOrder: 6
-                  3f013fdf-9050-4d51-b818-050c8a105e6f:
-                    required: false
-                    sortOrder: 11
                   417b399c-4166-4897-a491-00dff2058bd5:
                     required: false
                     sortOrder: 4
@@ -980,9 +971,6 @@ sections:
                   63060068-23fd-4091-9e13-96d982008822:
                     required: false
                     sortOrder: 3
-                  aac9b682-0ac3-4291-bc12-f31f73e6cad9:
-                    required: false
-                    sortOrder: 10
                   b729c087-ed9f-4371-8cf0-48e6ef2d9e6a:
                     required: false
                     sortOrder: 2
@@ -996,10 +984,22 @@ sections:
                 sortOrder: 1
               -
                 fields:
-                  eccd9fc9-950c-40aa-bcf0-ff9c5de05da8:
+                  013f9713-f734-4215-90dc-70fd25cf2306:
+                    required: false
+                    sortOrder: 2
+                  07a81bf3-21ea-4fc5-bcb3-e2b3eddcc8f4:
                     required: false
                     sortOrder: 1
-                name: 'Music-Network Awards'
+                  3f013fdf-9050-4d51-b818-050c8a105e6f:
+                    required: false
+                    sortOrder: 4
+                  aac9b682-0ac3-4291-bc12-f31f73e6cad9:
+                    required: false
+                    sortOrder: 3
+                  e90e60b4-237c-4aab-839f-30f73a14fea3:
+                    required: false
+                    sortOrder: 5
+                name: 'Beyond Music Award'
                 sortOrder: 2
         handle: musicNetwork
         hasTitleField: false
@@ -1575,4 +1575,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-04-16 16:31:27'
+dateApplied: '2019-04-16 17:35:36'
