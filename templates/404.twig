@@ -15,13 +15,14 @@
       {% include 'includes/nav' %}
     </nav>
       
-    <main>
+    <main id="error404">
 
       <h2>{{ entry.title }}</h2>
 
       <section class="single-col">
         <h3 class="encouragement-subtitle">{{ entry.leadTitle }}</h3>
-        {{ entry.shortDescription }}
+        <p>{{ entry.shortDescription }}</p>
+	{% include 'includes/nav' %}
       </section>
 
     </main>

@@ -103,12 +103,26 @@ h3.text-column { font-weight: $light; }
 
 p.text-column { font-weight: $medium; }
   
-  .normal,
-  .normal > * { // davon gibts langsam etwas viel …
-    font-weight: $light;
-    font-size: 22px;
-    line-height: 1.45;
+.normal,
+.normal > * { // davon gibts langsam etwas viel …
+  font-weight: $light;
+  font-size: 22px;
+  line-height: 1.45;
+}
+
+/* 404 styles {{{3 */
+  
+#error404 {
+  #language-switch {
+    display: none;
   }
+  ul li:before {
+    content: '· ';
+    padding-right: 0.2rem;
+  }
+}
+
+/* End 404 styles }}}3 */
 
   /* Accordion-Styles {{{3 */
   
