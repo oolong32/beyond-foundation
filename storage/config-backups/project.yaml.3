@@ -1,4 +1,4 @@
-dateModified: 1555508208
+dateModified: 1555510016
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -319,6 +319,24 @@ fields:
       purifierConfig: ''
       purifyHtml: '1'
       redactorConfig: SimpleListTable.json
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\redactor\Field
+  92480c84-40d6-46c9-9a07-013329517956:
+    contentColumnType: text
+    fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
+    handle: videoImageDescription
+    instructions: 'Kurzer Beschrieb ~ 300 Zeichen.'
+    name: 'Beschrieb Video/Bild'
+    searchable: true
+    settings:
+      availableTransforms: ''
+      availableVolumes: ''
+      cleanupHtml: '1'
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: Simple.json
     translationKeyFormat: null
     translationMethod: site
     type: craft\redactor\Field
@@ -1352,21 +1370,21 @@ sections:
               -
                 fields:
                   c5dbaf87-1fca-4ec0-9285-f73a2ec10ab3:
-                    required: false
-                    sortOrder: 2
+                    required: '0'
+                    sortOrder: '2'
                   d175683d-6e5d-484f-9fc1-5678f4b88c32:
-                    required: false
-                    sortOrder: 1
+                    required: '0'
+                    sortOrder: '1'
                 name: 'Tab 1'
-                sortOrder: 1
+                sortOrder: '1'
         handle: home
-        hasTitleField: false
-        name: Home
+        hasTitleField: '0'
+        name: 'Home (Slider)'
         sortOrder: 1
         titleFormat: '{section.name|raw}'
         titleLabel: Heading
     handle: home
-    name: Home
+    name: 'Home (Slider)'
     propagateEntries: true
     siteSettings:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
@@ -1471,4 +1489,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-04-17 15:54:25'
+dateApplied: '2019-04-17 16:07:27'
