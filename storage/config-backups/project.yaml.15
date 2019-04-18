@@ -1,4 +1,4 @@
-dateModified: 1555497572
+dateModified: 1555497662
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -492,6 +492,32 @@ fields:
       selectionLabel: ''
       singleUploadLocationSource: 'volume:9eb7856b-e672-4fbf-b4b5-9d00ee79c726'
       singleUploadLocationSubpath: images/slideshow
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: '1'
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  d3bdccc1-7526-4804-bd85-6ea3ef871776:
+    contentColumnType: string
+    fieldGroup: 6e35b058-585c-4737-a314-09ba0b44576a
+    handle: newsImage
+    instructions: 'Wird quadratisch beschnitten.'
+    name: 'News Bild'
+    searchable: true
+    settings:
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:9eb7856b-e672-4fbf-b4b5-9d00ee79c726'
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: ''
+      restrictFiles: '1'
+      selectionLabel: ''
+      singleUploadLocationSource: 'volume:9eb7856b-e672-4fbf-b4b5-9d00ee79c726'
+      singleUploadLocationSubpath: /images/news
       source: null
       sources: '*'
       targetSiteId: null
@@ -1447,4 +1473,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-04-17 12:41:02'
+dateApplied: '2019-04-17 12:43:17'

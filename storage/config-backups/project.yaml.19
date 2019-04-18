@@ -1,4 +1,4 @@
-dateModified: 1555488310
+dateModified: 1555497042
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -966,20 +966,20 @@ sections:
         sortOrder: 1
         titleFormat: ''
         titleLabel: 'Titel (wird nicht angezeigt)'
-    handle: homeTeasers
-    name: '1 Home Teaser Entries'
+    handle: news
+    name: '1 News Entries'
     propagateEntries: true
     siteSettings:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
         enabledByDefault: true
         hasUrls: true
-        template: ''
-        uriFormat: 'home-teaser/{slug}'
+        template: about/_entry
+        uriFormat: 'news/{slug}'
       96f6905b-bcc3-4e74-91a8-e5458eb5e532:
         enabledByDefault: true
         hasUrls: true
-        template: ''
-        uriFormat: 'home-teaser/{slug}'
+        template: about/_entry
+        uriFormat: 'news/{slug}'
     structure:
       maxLevels: '1'
       uid: ce59bcc3-cded-4cfd-b5f5-9fb32e9c4fe2
@@ -1427,4 +1427,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-04-17 12:30:43'
+dateApplied: '2019-04-17 12:35:21'
