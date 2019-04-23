@@ -1,4 +1,4 @@
-dateModified: 1555427576
+dateModified: 1555487763
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -113,11 +113,11 @@ fields:
     name: Kurzbeschrieb
     searchable: true
     settings:
-      charLimit: ''
+      charLimit: '200'
       code: ''
       columnType: text
       initialRows: '4'
-      multiline: ''
+      multiline: '1'
       placeholder: ''
     translationKeyFormat: null
     translationMethod: site
@@ -802,14 +802,14 @@ plugins:
           clientSecret: 0uCV3T2WxPjmoee3_7h91Xra
       tokens:
         youtube:
-          accessToken: ya29.GlztBnpLRZQSSRY_-EA066NWZ6v00w-fph_MqUx4eiN691Kd5NNO7RaEmXMYZDDeeLZGrUo47oOoxRz6_9maJjqQnRSVcasvs9W4X5Vb7b2UPjD_WrXQOmjTf0pGOw
-          expires: 1555428528
+          accessToken: ya29.GlzuBnqn5p5v3bg9QaGZndp2CbSpEUr-JA-_ytpbx63QhJz5tphMZ6E6Y8QrFGUACgPiRvKRW2CxFRCC6XOQBl-E3kzfIhTnlFTDqNPh6y2pP4gSAWf-MtCuhtZIzg
+          expires: 1555491101
           refreshToken: 1/h_aaH-zGnHYJCo5IJxtfkrdl09zaCcnwd20rF1paffZJ-qin2ZCXBzCqbn4gpn5A
           resourceOwnerId: null
           values:
             values:
-              id_token: eyJhbGciOiJSUzI1NiIsImtpZCI6IjM3ODJkM2YwYmM4OTAwOGQ5ZDJjMDE3MzBmNzY1Y2ZiMTlkM2I3MGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTU5MjQ2NDUyNTc5OTAyMzQ3NDYiLCJlbWFpbCI6ImJleW9uZHNpbmdpbmdjb21AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJFZzJCQ0J5Z0YyVlZmcWphSzRTSlB3IiwibmFtZSI6IkJleW9uZCBTaW5naW5nIiwicGljdHVyZSI6Imh0dHBzOi8vbGg1Lmdvb2dsZXVzZXJjb250ZW50LmNvbS8tQnJZdUI5d1JDN0UvQUFBQUFBQUFBQUkvQUFBQUFBQUFBQWsvZVNWWTVhamtmRVUvczk2LWMvcGhvdG8uanBnIiwiZ2l2ZW5fbmFtZSI6IkJleW9uZCIsImZhbWlseV9uYW1lIjoiU2luZ2luZyIsImxvY2FsZSI6ImRlIiwiaWF0IjoxNTU1NDI0OTI4LCJleHAiOjE1NTU0Mjg1Mjh9.pSXg8npCL20wQXQ4XRU0P5VhxJ_E8OIDtVmsYJrVpEZwETXDGOXEYFhj-1JkoL3W2uL8tMwV369udTpJ3H0EuWaIKHceR7DwG9xtTpnvTczmffkYZRk8mxDcSSccX8lLTc2EMyDQFVmYRHdNXSCMUCzIHyW5txv57WzirOLk7QiRmzZgnUTla-TftSuMpyLasHjYQVyw6UDgzZg3mxTbJ9-bpTKOU8j7j__SGbgRu_iPUEpHQo8sD_CoSH38ZPSYDzA1UYbSO_kI9U8X-YL5lY4tAlRllUTX12Vt4Ulxy-RR6ZAyCgZf6jpX-OuvkarkNU1Ka9SNWLZOmv5CZMLWkQ
-              scope: 'https://www.googleapis.com/auth/youtube https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/youtube.readonly'
+              id_token: eyJhbGciOiJSUzI1NiIsImtpZCI6IjM3ODJkM2YwYmM4OTAwOGQ5ZDJjMDE3MzBmNzY1Y2ZiMTlkM2I3MGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTU5MjQ2NDUyNTc5OTAyMzQ3NDYiLCJlbWFpbCI6ImJleW9uZHNpbmdpbmdjb21AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiI0MDY2ZXRVMzNkMjNnZFBaVURVOUt3IiwibmFtZSI6IkJleW9uZCBTaW5naW5nIiwicGljdHVyZSI6Imh0dHBzOi8vbGg1Lmdvb2dsZXVzZXJjb250ZW50LmNvbS8tQnJZdUI5d1JDN0UvQUFBQUFBQUFBQUkvQUFBQUFBQUFBQWsvZVNWWTVhamtmRVUvczk2LWMvcGhvdG8uanBnIiwiZ2l2ZW5fbmFtZSI6IkJleW9uZCIsImZhbWlseV9uYW1lIjoiU2luZ2luZyIsImxvY2FsZSI6ImRlIiwiaWF0IjoxNTU1NDg3NTAxLCJleHAiOjE1NTU0OTExMDF9.AZRTbzBBIRpDSKBP6HmC7zwdezEnGBY_hcVdVcDzUaFhh9crmjlCrYSjKWYz3WlyRbt-C70LLSgG7KWhQca_d6cosiz-qSu_Q67t0sfaAWwyBVE4i4Fk7BgDTEahshCz-Rr-wjvpQj3ZzumhlMHgorD52yZwmtISe0obrzYfkVbLo9JH3DT0GLMO2S_qxxFrvfB-wPUYFHi-_FXtskuiKANP4Ql1BA1kRr-5hKsTik9mh-iizGu5ZnHvsYTffMmnNvtjdcOFah0LIsyAbTv5gy_SSov851fSYRryeVj7S0hm3t2Be3EVmB8n8yTimaDLPi1Zwaa3iUn1HPzE71XlYQ
+              scope: 'https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/youtube https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/youtube.readonly'
               token_type: Bearer
       videosPerPage: 30
 sections:
@@ -1575,4 +1575,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-04-16 17:35:36'
+dateApplied: '2019-04-17 09:59:55'
