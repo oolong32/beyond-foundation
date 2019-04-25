@@ -596,9 +596,10 @@ main {
   main .project-teaser,
   main .news-item {
     padding-bottom: 1rem; }
-    main .project-teaser img, main .project-teaser video,
+    main .project-teaser img, main .project-teaser video, main .project-teaser .video-container,
     main .news-item img,
-    main .news-item video {
+    main .news-item video,
+    main .news-item .video-container {
       width: 100%; }
     main .project-teaser h3,
     main .news-item h3 {
