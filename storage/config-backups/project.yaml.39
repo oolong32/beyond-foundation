@@ -1,4 +1,4 @@
-dateModified: 1555575971
+dateModified: 1555576102
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -1217,12 +1217,25 @@ sections:
     enableVersioning: true
     entryTypes:
       2c7d53e6-6d40-434c-a513-e000097c634d:
+        fieldLayouts:
+          75a3ec37-44ee-4bf3-9299-ab387e7018e3:
+            tabs:
+              -
+                fields:
+                  387a6e57-35e5-47bd-9182-119d7ccccf16:
+                    required: false
+                    sortOrder: 2
+                  b729c087-ed9f-4371-8cf0-48e6ef2d9e6a:
+                    required: false
+                    sortOrder: 1
+                name: Fehlermeldung
+                sortOrder: 1
         handle: error404
         hasTitleField: false
         name: 'Fehler 404'
         sortOrder: 1
         titleFormat: '{section.name|raw}'
-        titleLabel: null
+        titleLabel: ''
     handle: error404
     name: 'Fehler 404'
     propagateEntries: true
@@ -1514,4 +1527,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-04-18 10:28:22'
+dateApplied: '2019-04-18 11:01:06'

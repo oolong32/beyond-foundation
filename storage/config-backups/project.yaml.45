@@ -1,4 +1,4 @@
-dateModified: 1555509265
+dateModified: 1555510016
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -319,6 +319,24 @@ fields:
       purifierConfig: ''
       purifyHtml: '1'
       redactorConfig: SimpleListTable.json
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\redactor\Field
+  92480c84-40d6-46c9-9a07-013329517956:
+    contentColumnType: text
+    fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
+    handle: videoImageDescription
+    instructions: 'Kurzer Beschrieb ~ 300 Zeichen.'
+    name: 'Beschrieb Video/Bild'
+    searchable: true
+    settings:
+      availableTransforms: ''
+      availableVolumes: ''
+      cleanupHtml: '1'
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: Simple.json
     translationKeyFormat: null
     translationMethod: site
     type: craft\redactor\Field
@@ -1471,4 +1489,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-04-17 16:06:56'
+dateApplied: '2019-04-17 16:07:27'

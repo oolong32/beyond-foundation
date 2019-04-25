@@ -1,4 +1,4 @@
-dateModified: 1555581851
+dateModified: 1555581978
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -750,6 +750,16 @@ routes:
         - '*'
         - '[^\/]+'
     uriPattern: 'children.<any:[^\/]+>'
+  b5a82f97-512a-4039-9a62-9876999fea7e:
+    siteUid: null
+    sortOrder: 6
+    template: about/index.twig
+    uriParts:
+      - self.
+      -
+        - '*'
+        - '[^\/]+'
+    uriPattern: 'self.<any:[^\/]+>'
   c164290a-b161-4bac-b8dd-6805b0f6add0:
     siteUid: null
     sortOrder: 2
@@ -1578,4 +1588,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-04-18 12:06:18'
+dateApplied: '2019-04-18 12:06:36'

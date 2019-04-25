@@ -1,4 +1,4 @@
-dateModified: 1555503828
+dateModified: 1555504011
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -506,7 +506,7 @@ fields:
     handle: newsMedia
     instructions: ''
     name: 'News-Bild oder -Video'
-    searchable: true
+    searchable: false
     settings:
       allowedKinds:
         - image
@@ -1471,4 +1471,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-04-17 14:26:52'
+dateApplied: '2019-04-17 15:25:13'
