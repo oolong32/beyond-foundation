@@ -772,8 +772,9 @@ main {
 
   .project-teaser,
   .news-item {
+    grid-column: 2/3;
     padding-bottom: 1rem;
-    img, video, .video-container { width: 100% !important; }
+    img, video, .video-container { width: 100%; }
     h3 { margin: 1rem 0 0; }
   }
   
