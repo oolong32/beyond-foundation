@@ -28,19 +28,18 @@
       </section>
 
 
-      {% for project in projects %}
+	{% for project in projects %}
           
-          {% if loop.index == 3 %}
-            {% if entry.quote|length %}
-            <blockquote>
-              <p>{{ craft.app.language == 'de' ? '«' : '“' }}{{ entry.quote }}{{ craft.app.language == 'de' ? '»' : '”' }}</p>
-            </blockquote>
-            {% endif %}
-          {% endif %}
+	{% if loop.index == 3 %}
+		{% if entry.quote|length %}
+			<blockquote>
+				<p>{{ craft.app.language == 'de' ? '«' : '“' }}{{ entry.quote }}{{ craft.app.language == 'de' ? '»' : '”' }}</p>
+			</blockquote>
+		{% endif %}
+	{% endif %}
 
-        <section class="alternating-grid-image-large">
+        <section class="project-teaser single-col">
   
-	<div class="image-cell">
 	{% if project.video|length %}
 		{% set video = project.video %}
 		<div class="video-container">
@@ -54,17 +53,20 @@
 			<img src="{{ alias('@assetBasePath') }}/assets/_pic/placeholder_16-9.png" alt="{{ project.title }}, test image">
 		{% endif %}
 	{% endif %}
-	</div>
 
-          <h3 class="text-column">{{ project.title }}</h3>
-          <p class="text-column">{{ project.shortDescription }}</p>
-          {% if project.externalLink|length %}
-            {% set niceUrl = project.externalLink|split('/') %}
-          <p class="text-column teaser-link external-link"><a href="{{ project.externalLink }}" target="_new" title="{{ niceUrl[2] }}">{{ niceUrl[2] }}</a></p>
-          {% endif %}
+	<h3 class="text-column">{{ project.title }}</h3>
+
+	{% if project.projectDescription|length  %}
+		{{ project.projectDescription }}
+	{% endif %}
+
+	{% if project.externalLink|length %}
+		{% set niceUrl = project.externalLink|split('/') %}
+		<p class="text-column teaser-link external-link"><a href="{{ project.externalLink }}" target="_new" title="{{ niceUrl[2] }}">{{ niceUrl[2] }}</a></p>
+	{% endif %}
 
         </section>
-      {% endfor %}
+	{% endfor %}
 
     </main>
         
