@@ -865,6 +865,8 @@ footer {
   header.mini #masthead {
     height: 4.75rem; }
   /* End Header & Footer }}}2 */
+  header nav {
+    padding: 0.5rem; }
   /* Main {{{2 */
   main {
     width: auto;
