@@ -21,10 +21,24 @@
 
 {# Music Network Intro {{{1 #}
 
+      {% if entry.visibleText|length and entry.collapsedText|length %}
+	<!-- Intro Text -->
       <section class="single-col">
         <h3>{{ entry.leadTitle }}</h3>
-        {{ entry.lead }}
+
+        <div class="accordion" style="margin-top: 0;">
+          <div class="visible">
+            {{ entry.visibleText }}
+            <p class="accordion-trigger"><span>{{ 'Weitere Informationen'|t }}</span></p>
+          </div>
+          <div class="collapsed">
+            {{ entry.collapsedText }}
+            <p class="accordion-collapse"><span>{{ 'Weniger Informationen'|t }}</span></p>
+          </div>
+        </div>
       </section>
+	<!-- End Intro Text -->
+      {% endif %}
 
       {# hier irgendwo diesen link #}
       {# https://www.beyondmusic.org/contact #}
