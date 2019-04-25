@@ -773,7 +773,7 @@ main {
   .project-teaser,
   .news-item {
     padding-bottom: 1rem;
-    img, video, .video-container { width: 100%; }
+    img, video, .video-container { width: 100% !important; }
     h3 { margin: 1rem 0 0; }
   }
   

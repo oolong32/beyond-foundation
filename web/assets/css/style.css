@@ -600,7 +600,7 @@ main {
     main .news-item img,
     main .news-item video,
     main .news-item .video-container {
-      width: 100%; }
+      width: 100% !important; }
     main .project-teaser h3,
     main .news-item h3 {
       margin: 1rem 0 0; }
