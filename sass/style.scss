@@ -756,7 +756,7 @@ main {
     img.full-width { width: 100%; height: auto;}
     p { margin-bottom: 0.875rem; }
     p:last-child { margin-bottom: 0;}
-    .video-container:not(.project-teaser) {
+    .video-container:not(.project-teaser .video-container) {
       grid-column: 1/-1;
       position: relative;
       padding-bottom: 56.25%;
