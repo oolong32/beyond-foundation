@@ -1,4 +1,4 @@
-dateModified: 1555509265
+dateModified: 1555576102
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -313,6 +313,24 @@ fields:
     searchable: true
     settings:
       availableTransforms: '*'
+      availableVolumes: ''
+      cleanupHtml: '1'
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: SimpleListTable.json
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\redactor\Field
+  92480c84-40d6-46c9-9a07-013329517956:
+    contentColumnType: text
+    fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
+    handle: videoImageDescription
+    instructions: 'Kurzer Beschrieb ~ 300 Zeichen.'
+    name: 'Beschrieb Video/Bild'
+    searchable: true
+    settings:
+      availableTransforms: ''
       availableVolumes: ''
       cleanupHtml: '1'
       columnType: text
@@ -701,14 +719,14 @@ plugins:
           clientSecret: 0uCV3T2WxPjmoee3_7h91Xra
       tokens:
         youtube:
-          accessToken: ya29.GlzuBvgbiWbw97HUZBiTfW6t2KzwvdVHE6xtGzlOEZRo5-Bfym5op46GUqd51qbXno8sjThBDEwB3qEjTlChBToJaeTrV5mTHzPWE9GfzvdwTsawKC4SPWQbNX-5iA
-          expires: 1555511808
+          accessToken: ya29.GlzvBjxoVK_Z_kgfL9IR8G8_zB3332jEp43hLMyFpIhU6__6rur2WA-2DJPHAtE9H-mFNOfX7i3V8dm84p_dT9JEiwT-e-MJmvxxXasGET7MgCcZoYZeRc_duthmLQ
+          expires: 1555577183
           refreshToken: 1/h_aaH-zGnHYJCo5IJxtfkrdl09zaCcnwd20rF1paffZJ-qin2ZCXBzCqbn4gpn5A
           resourceOwnerId: null
           values:
             values:
-              id_token: eyJhbGciOiJSUzI1NiIsImtpZCI6IjM3ODJkM2YwYmM4OTAwOGQ5ZDJjMDE3MzBmNzY1Y2ZiMTlkM2I3MGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTU5MjQ2NDUyNTc5OTAyMzQ3NDYiLCJlbWFpbCI6ImJleW9uZHNpbmdpbmdjb21AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiI1RGhGWUlwYTh4cmlsaGFaREZ0WktRIiwiaWF0IjoxNTU1NTA4MjA4LCJleHAiOjE1NTU1MTE4MDh9.ct13Y_S9IRip4VGbGEG8sOZOh4ZO_6mOezaGShSXJJJfjKTKwj3OTYhONfJy_DPFZ0GvCYwWOe-3JlOMZI4_RbQIzU6a2UNOOagviePEnwIYNGo-DdxSJ9DbNMTelZbRi8U9E0H92NpzSVIazFHysTAtK29aKrT99KcDS9wv-W5_ei7jTufAFC99FDBZisp_nc1pjWJHvbU8-gz3wc1PeRTVRz8TJ8StISQHdq5KPW5SnlwsM_RCdAT5BMeQpiuE-HTEfyxTEL-yNuK5_AU3AWfdNzhve3dQbjE__jNkJelm48up39JcHnu4Zh4-rK6GeKDW4U0GucVg7O_Wx_eHoA
-              scope: 'https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/youtube https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/youtube.readonly'
+              id_token: eyJhbGciOiJSUzI1NiIsImtpZCI6IjM3ODJkM2YwYmM4OTAwOGQ5ZDJjMDE3MzBmNzY1Y2ZiMTlkM2I3MGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTU5MjQ2NDUyNTc5OTAyMzQ3NDYiLCJlbWFpbCI6ImJleW9uZHNpbmdpbmdjb21AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJibnk3YnpOektHR3ZyN1pCNlNUdl9nIiwibmFtZSI6IkJleW9uZCBTaW5naW5nIiwicGljdHVyZSI6Imh0dHBzOi8vbGg1Lmdvb2dsZXVzZXJjb250ZW50LmNvbS8tQnJZdUI5d1JDN0UvQUFBQUFBQUFBQUkvQUFBQUFBQUFBQWsvZVNWWTVhamtmRVUvczk2LWMvcGhvdG8uanBnIiwiZ2l2ZW5fbmFtZSI6IkJleW9uZCIsImZhbWlseV9uYW1lIjoiU2luZ2luZyIsImxvY2FsZSI6ImRlIiwiaWF0IjoxNTU1NTczNTgzLCJleHAiOjE1NTU1NzcxODN9.YGTS4yA6YW1hSwFekR4-91MGC89YUVwApGj7WaXb9oGud2kd4I6gthe5MTgxZZg6B5TjzLOqrzREdQd90FuvnYEmMXQXK8l9UP9-lD34kVNbX4zJFyNJsGfpjpMbHh0V9LOEBeM8WktKyqhDiWvtLP2xq7nT1TgbdBaMFFzPpU18jX2bHyH2CysIq-GJehjVgOS1NGSH_fHVHckNka-sGaHBxSuWQ6CM6tgnUHuUyEobGJB7m60NyEMctffm1ocLLppfKGZlIrRuwpcmpFfgbRJ4-W9BMO3eXS6vbhJOmhTpFshFh_fW_qKXoiM79-1iY8tHt5op-Khl0lsKEoQMNQ
+              scope: 'https://www.googleapis.com/auth/youtube.readonly https://www.googleapis.com/auth/youtube https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email'
               token_type: Bearer
       videosPerPage: 30
 sections:
@@ -1195,6 +1213,44 @@ sections:
         template: privacy
         uriFormat: privacy
     type: single
+  b4b612d6-fe0e-408a-92a8-8d6321e2e397:
+    enableVersioning: true
+    entryTypes:
+      2c7d53e6-6d40-434c-a513-e000097c634d:
+        fieldLayouts:
+          75a3ec37-44ee-4bf3-9299-ab387e7018e3:
+            tabs:
+              -
+                fields:
+                  387a6e57-35e5-47bd-9182-119d7ccccf16:
+                    required: false
+                    sortOrder: 2
+                  b729c087-ed9f-4371-8cf0-48e6ef2d9e6a:
+                    required: false
+                    sortOrder: 1
+                name: Fehlermeldung
+                sortOrder: 1
+        handle: error404
+        hasTitleField: false
+        name: 'Fehler 404'
+        sortOrder: 1
+        titleFormat: '{section.name|raw}'
+        titleLabel: ''
+    handle: error404
+    name: 'Fehler 404'
+    propagateEntries: true
+    siteSettings:
+      802d4b06-1f71-4c60-8b00-c331a21b5134:
+        enabledByDefault: true
+        hasUrls: true
+        template: '404'
+        uriFormat: error-404
+      96f6905b-bcc3-4e74-91a8-e5458eb5e532:
+        enabledByDefault: true
+        hasUrls: true
+        template: '404'
+        uriFormat: fehler-404
+    type: single
   bdcc5b99-d47c-4d7f-a59c-2535c42dc0da:
     enableVersioning: true
     entryTypes:
@@ -1204,9 +1260,6 @@ sections:
             tabs:
               -
                 fields:
-                  387a6e57-35e5-47bd-9182-119d7ccccf16:
-                    required: false
-                    sortOrder: 6
                   417b399c-4166-4897-a491-00dff2058bd5:
                     required: false
                     sortOrder: 4
@@ -1219,6 +1272,9 @@ sections:
                   8a5aa2a1-d84f-4bbf-9ea5-4c6b67c7c105:
                     required: false
                     sortOrder: 3
+                  92480c84-40d6-46c9-9a07-013329517956:
+                    required: false
+                    sortOrder: 6
                   bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
                     required: false
                     sortOrder: 1
@@ -1471,4 +1527,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-04-17 16:06:56'
+dateApplied: '2019-04-18 11:01:06'

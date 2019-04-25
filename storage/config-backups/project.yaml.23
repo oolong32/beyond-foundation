@@ -1,4 +1,4 @@
-dateModified: 1555581323
+dateModified: 1555581996
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -719,17 +719,27 @@ plugins:
           clientSecret: 0uCV3T2WxPjmoee3_7h91Xra
       tokens:
         youtube:
-          accessToken: ya29.GlzvBh79rEoI04yFhFKRsXpgkDyDbjWOJckTvbRGY2GfkKqUW6UEIKy78QJTw0zZOX6acx-SLM0ZOwWUyxCpu_bOz5G6xctv-q0UlgZ6biJUcaN9Fnlv9gOrpIjSnA
-          expires: 1555581666
+          accessToken: ya29.GlzvBlw2T7zyUr4Uj85ZVcm1vogC1GPpZpeH3TB82Mi1Nlq1dB43LRd0dKPwZFNRIqiosu_iBbX5-w9P7WBlOPNkn4t9yioqH3z-3IXAP755olbVeng6TzkoUaHLsA
+          expires: 1555585350
           refreshToken: 1/h_aaH-zGnHYJCo5IJxtfkrdl09zaCcnwd20rF1paffZJ-qin2ZCXBzCqbn4gpn5A
           resourceOwnerId: null
           values:
             values:
-              id_token: eyJhbGciOiJSUzI1NiIsImtpZCI6IjM3ODJkM2YwYmM4OTAwOGQ5ZDJjMDE3MzBmNzY1Y2ZiMTlkM2I3MGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTU5MjQ2NDUyNTc5OTAyMzQ3NDYiLCJlbWFpbCI6ImJleW9uZHNpbmdpbmdjb21AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJvX25PMWM3UFlaaG1iSUxkMHJmZGFBIiwiaWF0IjoxNTU1NTc4MDY2LCJleHAiOjE1NTU1ODE2NjZ9.TafZg_ZyNHwp3-JNoejs06uiMhEV0nsf7krKdFIhIg4fxZNhrD-sux7spOwrNKzc9Y5gAb4R1TRdecE1443XezhGLrLBF0bZ2AHgvOXYplJJV4mTMKUMHty2vwaDJH3nBHq-s2iw-WHSAqq-3-py6KGEFts1tJyL9BthodvEVf7TGJ16iSzheU6Jp044JYAcJvte6uigX1y8qQKkaKMRayfRPej7VY1drSq6AeHg2W3jFwFsTiV1hEgRChLd-48qyv2HAYPkeFLOyXbMHB8W5wOhX6sRGRkKkuj_hrkuCKiZpO6_5H1kbmQ2TO89HiCUaoqdzRPzKtfKIygnsM6gKQ
-              scope: 'https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/youtube https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/youtube.readonly'
+              id_token: eyJhbGciOiJSUzI1NiIsImtpZCI6IjM3ODJkM2YwYmM4OTAwOGQ5ZDJjMDE3MzBmNzY1Y2ZiMTlkM2I3MGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTU5MjQ2NDUyNTc5OTAyMzQ3NDYiLCJlbWFpbCI6ImJleW9uZHNpbmdpbmdjb21AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiI4NmpyblNXTHlQeW8teDBUaEg1c0V3IiwiaWF0IjoxNTU1NTgxNzUwLCJleHAiOjE1NTU1ODUzNTB9.jKsDcU576ph_vTz9_xgHS_rH9HWXo4t9n93F15_nSz1MFeNGdAAB4awH1rVMmUk96y5AHTyt8vNzFOwJQERdMbJREl-UQAZU9NWecPXGdV-ie9xRhLeTQ57z071wxk_bJN6bxTLRxwUer5SuQtp6As2Zcrq6T8nbBA4aLmCiR0jSkRLjFMY-S2vzKWke9jnvG0W8zBoSK4k9miVXlkVsocrq39Zx5adCIdmX-C1xGv4PJfhP-fn0vnz7W2tOrjj2s3yitBXGcPPkPUDw2EXBqPTOFKXzjtryqgbfIRIzpdsR8LFimwlbF959jsnEl19Aipijvm3bA2CrjIbpqaxi-w
+              scope: 'https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/youtube.readonly https://www.googleapis.com/auth/youtube https://www.googleapis.com/auth/userinfo.profile'
               token_type: Bearer
       videosPerPage: 30
 routes:
+  1ac7a506-d06b-4c1d-bd6a-78f93d549607:
+    siteUid: null
+    sortOrder: 7
+    template: music-production/index.twig
+    uriParts:
+      - music.
+      -
+        - '*'
+        - '[^\/]+'
+    uriPattern: 'music.<any:[^\/]+>'
   8ff3137c-1fbd-4d8a-86df-729b6301cc28:
     siteUid: null
     sortOrder: 1
@@ -740,6 +750,26 @@ routes:
         - '*'
         - '[^\/]+'
     uriPattern: 'index.<any:[^\/]+>'
+  a8d30871-c6b5-4c58-82ca-79ffd0c2abed:
+    siteUid: null
+    sortOrder: 4
+    template: music-production/index.twig
+    uriParts:
+      - children.
+      -
+        - '*'
+        - '[^\/]+'
+    uriPattern: 'children.<any:[^\/]+>'
+  b5a82f97-512a-4039-9a62-9876999fea7e:
+    siteUid: null
+    sortOrder: 6
+    template: about/index.twig
+    uriParts:
+      - self.
+      -
+        - '*'
+        - '[^\/]+'
+    uriPattern: 'self.<any:[^\/]+>'
   c164290a-b161-4bac-b8dd-6805b0f6add0:
     siteUid: null
     sortOrder: 2
@@ -760,6 +790,16 @@ routes:
         - '*'
         - '[^\/]+'
     uriPattern: 'beyond.<any:[^\/]+>'
+  ea525bea-be65-4cf4-af04-14f60d888acc:
+    siteUid: null
+    sortOrder: 5
+    template: about/index.twig
+    uriParts:
+      1:
+        - '*'
+        - '[^\/]+'
+      2: /fr
+    uriPattern: '<any:[^\/]+>/fr'
 sections:
   08de450d-3199-4c3b-9b6c-9a900c9ab5d7:
     enableVersioning: true
@@ -1558,4 +1598,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-04-18 11:56:34'
+dateApplied: '2019-04-18 12:06:54'

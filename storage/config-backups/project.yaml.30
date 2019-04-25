@@ -1,4 +1,4 @@
-dateModified: 1555578066
+dateModified: 1555581323
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -729,6 +729,37 @@ plugins:
               scope: 'https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/youtube https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/youtube.readonly'
               token_type: Bearer
       videosPerPage: 30
+routes:
+  8ff3137c-1fbd-4d8a-86df-729b6301cc28:
+    siteUid: null
+    sortOrder: 1
+    template: about/index.twig
+    uriParts:
+      - index.
+      -
+        - '*'
+        - '[^\/]+'
+    uriPattern: 'index.<any:[^\/]+>'
+  c164290a-b161-4bac-b8dd-6805b0f6add0:
+    siteUid: null
+    sortOrder: 2
+    template: music-production/index.twig
+    uriParts:
+      - music/
+      -
+        - '*'
+        - '[^\/]+'
+    uriPattern: 'music/<any:[^\/]+>'
+  c50d11be-41e1-41cf-b607-f8d69abf2f8d:
+    siteUid: null
+    sortOrder: 3
+    template: about/index.twig
+    uriParts:
+      - beyond.
+      -
+        - '*'
+        - '[^\/]+'
+    uriPattern: 'beyond.<any:[^\/]+>'
 sections:
   08de450d-3199-4c3b-9b6c-9a900c9ab5d7:
     enableVersioning: true
@@ -1527,4 +1558,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-04-18 11:50:02'
+dateApplied: '2019-04-18 11:56:34'

@@ -1,4 +1,4 @@
-dateModified: 1555581750
+dateModified: 1555582051
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -730,6 +730,26 @@ plugins:
               token_type: Bearer
       videosPerPage: 30
 routes:
+  1ac7a506-d06b-4c1d-bd6a-78f93d549607:
+    siteUid: null
+    sortOrder: 7
+    template: music-production/index.twig
+    uriParts:
+      - music.
+      -
+        - '*'
+        - '[^\/]+'
+    uriPattern: 'music.<any:[^\/]+>'
+  65ebfa7f-c6ba-4b80-8149-e63f5301cfaf:
+    siteUid: null
+    sortOrder: 9
+    template: encouragement/index.twig
+    uriParts:
+      - tradition.
+      -
+        - '*'
+        - '[^\/]+'
+    uriPattern: 'tradition.<any:[^\/]+>'
   8ff3137c-1fbd-4d8a-86df-729b6301cc28:
     siteUid: null
     sortOrder: 1
@@ -750,6 +770,16 @@ routes:
         - '*'
         - '[^\/]+'
     uriPattern: 'children.<any:[^\/]+>'
+  b5a82f97-512a-4039-9a62-9876999fea7e:
+    siteUid: null
+    sortOrder: 6
+    template: about/index.twig
+    uriParts:
+      - self.
+      -
+        - '*'
+        - '[^\/]+'
+    uriPattern: 'self.<any:[^\/]+>'
   c164290a-b161-4bac-b8dd-6805b0f6add0:
     siteUid: null
     sortOrder: 2
@@ -770,6 +800,26 @@ routes:
         - '*'
         - '[^\/]+'
     uriPattern: 'beyond.<any:[^\/]+>'
+  defde3ed-fd8e-4ec1-9889-7076a211bd79:
+    siteUid: null
+    sortOrder: 8
+    template: projects/index.twig
+    uriParts:
+      - culture.
+      -
+        - '*'
+        - '[^\/]+'
+    uriPattern: 'culture.<any:[^\/]+>'
+  ea525bea-be65-4cf4-af04-14f60d888acc:
+    siteUid: null
+    sortOrder: 5
+    template: about/index.twig
+    uriParts:
+      1:
+        - '*'
+        - '[^\/]+'
+      2: /fr
+    uriPattern: '<any:[^\/]+>/fr'
 sections:
   08de450d-3199-4c3b-9b6c-9a900c9ab5d7:
     enableVersioning: true
@@ -1568,4 +1618,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-04-18 12:03:04'
+dateApplied: '2019-04-18 12:08:08'
