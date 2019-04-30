@@ -3,7 +3,6 @@
 {% extends "_layout" %}
 
 {# hier korrkete entry query einsetzen #}
-{% set entry = craft.entries().section('').one() %}
 
 {% block content %}
 
@@ -16,16 +15,41 @@
     </nav>
       
     <main>
-      <h2>{{ entry.title }}</h2>
-      {# … #}
-    </main>
-        
-    <footer>
-      {% include 'includes/footer' %}
-    </footer>
+	<h2>News</h2>
 
-    <script>
-      console.log('I & I is at {{ slug }}' );
-    </script>
+	<section class="news-item single-col">
+	{# News-Item {{{ #}
+
+	{% if entry.newsMedia|length %}
+		{% if entry.newsMedia[0].kind == 'video' %}
+			{% set video = entry.newsMedia[0]  %}
+			<video src="{{ alias('@assetBasePath') }}/{{ video.getUrl() }}" controls>
+				{% if craft.app.language == 'en' %}
+					<p>We are sorry, but it seems that your browser can’t play embedded videos. How about a visit to the <a href="https://www.youtube.com/user/beyondsingingcom" target="_blank">beyond singing youtube channel</a>.</p>
+				{% else %}
+					<p>Ihr Browser scheint eingebettete Videos nicht abspielen zu können. Besuchen Sie doch den <a href="https://www.youtube.com/user/beyondsingingcom" target="_blank">Beyond Singing Youtube-Kanal</a>.</p>
+				{% endif %}
+			</video>
+		{% else %}
+			{% set image = entry.newsMedia[0]  %}
+			<img src="{{ alias('@assetBasePath') }}/{{ image.getUrl('square') }}" alt="{{ entry.title }}">
+		{% endif %}
+	{% endif %}
+
+	<h3>{{ entry.title }}</h3>
+	{{ entry.newsText }}
+
+	</section>
+	{# End News-Item }}} #}
+
+	</main>
+
+	<footer>
+		{% include 'includes/footer' %}
+	</footer>
+
+	<script>
+		console.log('I & I is at {{ slug }}' );
+	</script>
 
 {% endblock %}
