@@ -1,4 +1,4 @@
-dateModified: 1555512307
+dateModified: 1555581013
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -719,16 +719,24 @@ plugins:
           clientSecret: 0uCV3T2WxPjmoee3_7h91Xra
       tokens:
         youtube:
-          accessToken: ya29.GlzuBuPVzd-2-Tg3ElimLivXQRGFkY1_9sQ-JeV1rNfYo6N8IxnKK_PnW1-YNkBBe1j4YsmBW1VwwyKCWOsvr5G6KLxcEQyVhujoN0NZjaSlmrLZcUF8o7UzgETHQA
-          expires: 1555515907
+          accessToken: ya29.GlzvBh79rEoI04yFhFKRsXpgkDyDbjWOJckTvbRGY2GfkKqUW6UEIKy78QJTw0zZOX6acx-SLM0ZOwWUyxCpu_bOz5G6xctv-q0UlgZ6biJUcaN9Fnlv9gOrpIjSnA
+          expires: 1555581666
           refreshToken: 1/h_aaH-zGnHYJCo5IJxtfkrdl09zaCcnwd20rF1paffZJ-qin2ZCXBzCqbn4gpn5A
           resourceOwnerId: null
           values:
             values:
-              id_token: eyJhbGciOiJSUzI1NiIsImtpZCI6IjM3ODJkM2YwYmM4OTAwOGQ5ZDJjMDE3MzBmNzY1Y2ZiMTlkM2I3MGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTU5MjQ2NDUyNTc5OTAyMzQ3NDYiLCJlbWFpbCI6ImJleW9uZHNpbmdpbmdjb21AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJXejlNNEJnX0J2eXdkc0pxUzhDemZnIiwibmFtZSI6IkJleW9uZCBTaW5naW5nIiwicGljdHVyZSI6Imh0dHBzOi8vbGg1Lmdvb2dsZXVzZXJjb250ZW50LmNvbS8tQnJZdUI5d1JDN0UvQUFBQUFBQUFBQUkvQUFBQUFBQUFBQWsvZVNWWTVhamtmRVUvczk2LWMvcGhvdG8uanBnIiwiZ2l2ZW5fbmFtZSI6IkJleW9uZCIsImZhbWlseV9uYW1lIjoiU2luZ2luZyIsImxvY2FsZSI6ImRlIiwiaWF0IjoxNTU1NTEyMzA3LCJleHAiOjE1NTU1MTU5MDd9.ArtqKCwsrYR6I44MdaDol6wYRCk0vaiUx3EoygCZ6dVkEtTaWxtjgdneE0qxVQb7sURAGGBqvDVCrGw1axVTkqUJyhByxtIyq0v2YLqchFL1WyC9TOK_rskEyr_6XRpLnlNZ3Qb4oEjfWNfUdlKEsyfICj2NsTBK1tKgICRJvCZilO-egJGM0BhAskXs1fIXaXZmiuz07NpF76XSWSTsu3pXk4qpzIAWB92egxu6nd7PhlbcbbbtoS7kyXlw1Vf5fup4T1ppOWzn6P4USyt7FyHkpsp6yD7yq8UTYzmxHbnDwlmP8aTswMNNS357kEMoa2242vWCTWMcKY6yTYE5Dw
-              scope: 'https://www.googleapis.com/auth/youtube https://www.googleapis.com/auth/youtube.readonly https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email'
+              id_token: eyJhbGciOiJSUzI1NiIsImtpZCI6IjM3ODJkM2YwYmM4OTAwOGQ5ZDJjMDE3MzBmNzY1Y2ZiMTlkM2I3MGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTU5MjQ2NDUyNTc5OTAyMzQ3NDYiLCJlbWFpbCI6ImJleW9uZHNpbmdpbmdjb21AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJvX25PMWM3UFlaaG1iSUxkMHJmZGFBIiwiaWF0IjoxNTU1NTc4MDY2LCJleHAiOjE1NTU1ODE2NjZ9.TafZg_ZyNHwp3-JNoejs06uiMhEV0nsf7krKdFIhIg4fxZNhrD-sux7spOwrNKzc9Y5gAb4R1TRdecE1443XezhGLrLBF0bZ2AHgvOXYplJJV4mTMKUMHty2vwaDJH3nBHq-s2iw-WHSAqq-3-py6KGEFts1tJyL9BthodvEVf7TGJ16iSzheU6Jp044JYAcJvte6uigX1y8qQKkaKMRayfRPej7VY1drSq6AeHg2W3jFwFsTiV1hEgRChLd-48qyv2HAYPkeFLOyXbMHB8W5wOhX6sRGRkKkuj_hrkuCKiZpO6_5H1kbmQ2TO89HiCUaoqdzRPzKtfKIygnsM6gKQ
+              scope: 'https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/youtube https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/youtube.readonly'
               token_type: Bearer
       videosPerPage: 30
+routes:
+  8ff3137c-1fbd-4d8a-86df-729b6301cc28:
+    siteUid: null
+    sortOrder: 1
+    template: about/index.twig
+    uriParts:
+      - www.beyond-foundation.org/index.php
+    uriPattern: www.beyond-foundation.org/index.php
 sections:
   08de450d-3199-4c3b-9b6c-9a900c9ab5d7:
     enableVersioning: true
@@ -1213,6 +1221,44 @@ sections:
         template: privacy
         uriFormat: privacy
     type: single
+  b4b612d6-fe0e-408a-92a8-8d6321e2e397:
+    enableVersioning: true
+    entryTypes:
+      2c7d53e6-6d40-434c-a513-e000097c634d:
+        fieldLayouts:
+          75a3ec37-44ee-4bf3-9299-ab387e7018e3:
+            tabs:
+              -
+                fields:
+                  387a6e57-35e5-47bd-9182-119d7ccccf16:
+                    required: false
+                    sortOrder: 2
+                  b729c087-ed9f-4371-8cf0-48e6ef2d9e6a:
+                    required: false
+                    sortOrder: 1
+                name: Fehlermeldung
+                sortOrder: 1
+        handle: error404
+        hasTitleField: false
+        name: 'Fehler 404'
+        sortOrder: 1
+        titleFormat: '{section.name|raw}'
+        titleLabel: ''
+    handle: error404
+    name: 'Fehler 404'
+    propagateEntries: true
+    siteSettings:
+      802d4b06-1f71-4c60-8b00-c331a21b5134:
+        enabledByDefault: true
+        hasUrls: true
+        template: '404'
+        uriFormat: error-404
+      96f6905b-bcc3-4e74-91a8-e5458eb5e532:
+        enabledByDefault: true
+        hasUrls: true
+        template: '404'
+        uriFormat: fehler-404
+    type: single
   bdcc5b99-d47c-4d7f-a59c-2535c42dc0da:
     enableVersioning: true
     entryTypes:
@@ -1489,4 +1535,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-04-18 09:46:23'
+dateApplied: '2019-04-18 11:50:31'
