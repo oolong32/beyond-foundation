@@ -1,4 +1,4 @@
-dateModified: 1556177078
+dateModified: 1556177300
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -679,6 +679,24 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\PlainText
+  fa45b805-ee92-4b79-8d93-95aaa162c6eb:
+    contentColumnType: text
+    fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
+    handle: projectDescription
+    instructions: ''
+    name: Projektbeschrieb
+    searchable: true
+    settings:
+      availableTransforms: ''
+      availableVolumes: ''
+      cleanupHtml: '1'
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: SimpleListTable.json
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\redactor\Field
 imageTransforms:
   2b5e3b27-8e0b-48e4-a280-8d1460f59282:
     format: null
@@ -1224,7 +1242,7 @@ sections:
                 sortOrder: 1
         handle: projectTeaser
         hasTitleField: true
-        name: 'Projects Teaser'
+        name: 'Project Teaser'
         sortOrder: 1
         titleFormat: ''
         titleLabel: Titel
@@ -1642,4 +1660,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-04-25 09:24:46'
+dateApplied: '2019-04-25 09:36:53'
