@@ -17,7 +17,41 @@
       
     <main>
       <h2>{{ entry.title }}</h2>
-      {# … #}
+      <section class="alternating-grid-text-large">
+
+        <!-- start image cell -->
+        <div class="image-cell">
+          {% if entry.portrait|length %}
+          <img src="{{ alias('@assetBasePath') }}/{{ entry.portrait[0].getUrl() }}" alt="{{ entry.title }}">
+          {% else %}
+          <img src="{{ alias('@assetBasePath') }}/assets/_pic/placeholder.png" alt="No image for this entry.">
+          {% endif %}
+        </div> <!-- end image cell -->
+
+        <!-- start text cell -->
+        <div class="text-cell"> 
+          <h3 class="team-name">{{ entry.title }}</h3>
+          {% if entry.quote|length %}
+          <p class="team-quote">{{ craft.app.language == 'de' ? '«' : '“' }}{{ entry.quote }}{{ craft.app.language == 'de' ? '»' : '”' }}</p>
+          {% endif %}
+
+          <div class="accordion"> <!-- start accordion -->
+
+            <div class="visible"> <!-- start accordion visible part -->
+              {{ entry.visibleText }}
+              <p class="accordion-trigger" style="text-align: left;"><span>{{ 'Weitere Informationen'|t }}</span></p>
+            </div> <!-- end accordion visible part -->
+
+            <div class="collapsed"> <!-- start accordion invisible part -->
+              {{ entry.collapsedText }}
+              <p class="accordion-collapse"><span>{{ 'Weniger Informationen'|t }}</span></p>
+            </div> <!-- end accordion invisible part -->
+
+          </div> <!-- end accordion -->
+
+        </div> <!-- end text cell -->
+
+      </section> <!-- end row -->
     </main>
         
     <footer>
