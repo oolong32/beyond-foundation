@@ -2,31 +2,57 @@
 {% extends "_layout" %}
 
 {# hier korrkete entry query einsetzen #}
-{% set entry = craft.entries().section('eventEntries').one() %}
+{% set title = craft.entries().section('projects').one().title %}
 
 {% block content %}
 
-    <header>
-      {% include 'includes/header' %}
-    </header>
+	<header>
+		{% include 'includes/header' %}
+	</header>
 
-    <nav id="nav-overlay"> {# triggered by hamburger #}
-      {% include 'includes/nav' %}
-    </nav>
+	<nav id="nav-overlay"> {# triggered by hamburger #}
+		{% include 'includes/nav' %}
+	</nav>
       
-    <main>
-      <h2>{{ entry.title }}</h2>
-      <section>
-        {# … #}
-      </section>
-    </main>
-        
-    <footer>
-      {% include 'includes/footer' %}
-    </footer>
+	<main>
+		<h2>{{ title }}</h2>
 
-    <script>
-      console.log('I & I is at {{ slug }}' );
-    </script>
+		<section class="project-teaser single-col">
+	  
+		{% if entry.video|length %}
+			{% set video = entry.video %}
+			<div class="video-container">
+			{{ video.getEmbed() }}
+			</div>
+		{% else %} {# there’s no video #}
+			{# ev. sollte das hier ein «HeroImage» sein, wie in anderen Einträgen, wo es entw. Video oder Bild gibt?  #}
+			{% if entry.teaserImage|length %}
+				<img src="{{ alias('@assetBasePath') }}/{{ entry.teaserImage[0].getUrl('sixteen2nine') }}" alt="{{ entry.title }}">
+			{% else %}
+				<img src="{{ alias('@assetBasePath') }}/assets/_pic/placeholder_16-9.png" alt="{{ entry.title }}, test image">
+			{% endif %}
+		{% endif %}
+
+		<h3>{{ entry.title }}</h3>
+
+		{% if entry.projectDescription|length  %}
+			{{ entry.projectDescription }}
+		{% endif %}
+
+		{% if entry.externalLink|length %}
+			{% set niceUrl = entry.externalLink|split('/') %}
+			<p class="text-column teaser-link external-link"><a href="{{ entry.externalLink }}" target="_new" title="{{ niceUrl[2] }}">{{ niceUrl[2] }}</a></p>
+		{% endif %}
+
+		</section>
+	</main>
+        
+	<footer>
+		{% include 'includes/footer' %}
+	</footer>
+
+	<script>
+		console.log('I & I is at {{ slug }}' );
+	</script>
 
 {% endblock %}
