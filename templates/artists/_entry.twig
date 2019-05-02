@@ -1,0 +1,49 @@
+{# Beyond Foundation, Artists Single Entry #}
+
+{% extends "_layout" %}
+
+{% block content %}
+
+<header>
+	{% include 'includes/header' %}
+</header>
+
+<nav id="nav-overlay"> {# triggered by hamburger #}
+{% include 'includes/nav' %}
+</nav>
+
+<main>
+
+<h2>Musicians</h2>
+
+	<section class="single-col">
+
+		<div class="artist-teaser-grid full-width">
+
+			<div class="artist-teaser">
+			{% if entry.portrait|length %}
+				<img src="{{ alias('@assetBasePath') }}/{{ entry.portrait[0].getUrl() }}" alt="{{ entry.title }}">
+			{% else %}
+				<img src="{{ alias('@assetBasePath') }}/assets/_pic/missingPortrait.png"
+			{% endif %}
+
+			<h3 class="artist-name">{{ entry.title }}</h3>
+			{{ entry.visibleText }}
+
+			{% if entry.artistLink|length %}
+				{% set niceUrl = entry.artistLink|split('/') %}
+				<p class="artist-link"><a href="{{ entry.artistLink }}" target="_blank">{{ niceUrl[2] }}</a></p>
+			{% endif %}
+			</div>
+
+		</div>
+
+	</section>
+
+</main>
+
+<footer>
+{% include 'includes/footer' %}
+</footer>
+
+{% endblock %}
