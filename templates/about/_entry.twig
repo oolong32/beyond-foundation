@@ -20,6 +20,7 @@
 	<section class="news-item single-col">
 	{# News-Item {{{ #}
 
+{#
 	{% if entry.newsMedia|length %}
 		{% if entry.newsMedia[0].kind == 'video' %}
 			{% set video = entry.newsMedia[0]  %}
@@ -35,9 +36,25 @@
 			<img src="{{ alias('@assetBasePath') }}/{{ image.getUrl('square') }}" alt="{{ entry.title }}">
 		{% endif %}
 	{% endif %}
+#}
+
+	{# 2. Mai 2019: ab hier neu. Gewünscht werden Youtube-Embeds anstatt Video-Uploads #}
+	{% if entry.video|length %}
+		{% set video = entry.video %}
+		<div class="video-container">
+			{{  video.getEmbed() }}
+		</div>
+	{% elseif entry.newsImg[0]|length %}
+		<img src="{{ alias('@assetBasePath') }}/{{ entry.newsImg[0].getUrl('square') }}" alt="{{ entry.title }}">
+	{% else %}
+		<!-- no image for this news item -->
+	{% endif %}
+	{# bis hier neu #}
 
 	<h3>{{ entry.title }}</h3>
-	{{ entry.newsText }}
+	{% if entry.newsText|length %}
+		{{ entry.newsText }}
+	{% endif %}
 
 	</section>
 	{# End News-Item }}} #}
