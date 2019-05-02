@@ -74,43 +74,24 @@
 	{# News-Item {{{ #}
 	<section class="news-item single-col">
 
-	{# 2. Mai 2019: ab hier obsolet
-	{% if newsItem.newsMedia|length %} {# neues Feld nötig: uploadedVideo #}
-		
-		{% if newsItem.newsMedia[0].kind == 'video' %}
-			{% set video = newsItem.newsMedia[0]  %}
-			<video src="{{ alias('@assetBasePath') }}/{{ video.getUrl() }}" controls>
-				{% if craft.app.language == 'en' %}
-					<p>We are sorry, but it seems that your browser can’t play embedded videos. How about a visit to the <a href="https://www.youtube.com/user/beyondsingingcom" target="_blank">beyond singing youtube channel</a>.</p>
-				{% else %}
-					<p>Ihr Browser scheint eingebettete Videos nicht abspielen zu können. Besuchen Sie doch den <a href="https://www.youtube.com/user/beyondsingingcom" target="_blank">Beyond Singing Youtube-Kanal</a>.</p>
-				{% endif %}
-				
-			</video>
-		{% else %}
-			{% set image = newsItem.newsMedia[0]  %}
-			<img src="{{ alias('@assetBasePath') }}/{{ image.getUrl('square') }}" alt="{{ newsItem.title }}">
-		{% endif %}
-		
-			
-	{% endif %}
-	#}
-
 	{# 2. Mai 2019: ab hier neu. Gewünscht werden Youtube-Embeds anstatt Video-Uploads #}
 	{% if newsItem.video|length %}
 		{% set video = newsItem.video %}
 		<div class="video-container">
 			{{  video.getEmbed() }}
 		</div>
-	{% elseif newsItem.newsImg[0]|length %}
+	{% elseif newsItem.newsImg|length %}
 		<img src="{{ alias('@assetBasePath') }}/{{ newsItem.newsImg[0].getUrl('square') }}" alt="{{ newsItem.title }}">
 	{% else %}
 		<!-- no image for this news item -->
 	{% endif %}
 	{# bis hier neu #}
 
-          <h3>{{ newsItem.title }}</h3>
-          {{ newsItem.newsText }}
+	<h3>{{ newsItem.title }}</h3>
+
+	{% if newsItem.newsText|length %}
+		{{ newsItem.newsText }}
+	{% endif %}
 
 	</section>
 	{# End News-Item }}} #}

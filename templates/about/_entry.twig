@@ -44,7 +44,7 @@
 		<div class="video-container">
 			{{  video.getEmbed() }}
 		</div>
-	{% elseif entry.newsImg[0]|length %}
+	{% elseif entry.newsImg|length %}
 		<img src="{{ alias('@assetBasePath') }}/{{ entry.newsImg[0].getUrl('square') }}" alt="{{ entry.title }}">
 	{% else %}
 		<!-- no image for this news item -->
