@@ -1,4 +1,4 @@
-dateModified: 1556108871
+dateModified: 1556177078
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -719,14 +719,14 @@ plugins:
           clientSecret: 0uCV3T2WxPjmoee3_7h91Xra
       tokens:
         youtube:
-          accessToken: ya29.Glz1BqN8K_sEAjPhv_aUXQaz3LOq6-RbryQI7WuH1VCvoGW_TPbIKCCXflRFVUnZnRIeGYJWrpdIavHbu20Iru-I6oGv-ETwhFts4x60OkKCJsJHG89SMPvkXemkTQ
-          expires: 1556112471
+          accessToken: ya29.Glz2BrT5Wx5-3J57b4rypf7yC_0yclodrxKV6-UigBxAkLButnVfoSnv_R0B7_eHRIXd9QOz3n-4Bf0wnf-ECm5vujjMOnjYbA4BIgz116vVXXHax1UiznaHCmi97A
+          expires: 1556179084
           refreshToken: 1/h_aaH-zGnHYJCo5IJxtfkrdl09zaCcnwd20rF1paffZJ-qin2ZCXBzCqbn4gpn5A
           resourceOwnerId: null
           values:
             values:
-              id_token: eyJhbGciOiJSUzI1NiIsImtpZCI6IjI2ZmM0Y2QyM2QzODdjYmM0OTBmNjBkYjU0YTk0YTZkZDE2NTM5OTgiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTU5MjQ2NDUyNTc5OTAyMzQ3NDYiLCJlbWFpbCI6ImJleW9uZHNpbmdpbmdjb21AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJlNHhjYUZzalBhNTItQ2pQNllXcVpnIiwibmFtZSI6IkJleW9uZCBTaW5naW5nIiwicGljdHVyZSI6Imh0dHBzOi8vbGg1Lmdvb2dsZXVzZXJjb250ZW50LmNvbS8tQnJZdUI5d1JDN0UvQUFBQUFBQUFBQUkvQUFBQUFBQUFBQWsvZVNWWTVhamtmRVUvczk2LWMvcGhvdG8uanBnIiwiZ2l2ZW5fbmFtZSI6IkJleW9uZCIsImZhbWlseV9uYW1lIjoiU2luZ2luZyIsImxvY2FsZSI6ImRlIiwiaWF0IjoxNTU2MTA4ODcxLCJleHAiOjE1NTYxMTI0NzF9.tTVgJuOfCVOst0mYIWLwh5e4RNvnT0KOvuXOJxgBJlZs0-RwXiW-v4_EUqPh_Y0bup8Vwh-xauGE6oj1nndzbRCLUcfaVtTyPkcb4aU6gxkfVR2SiuXGv7WYFPv-2t1dvPWftGNl_ZIyLoMZc9v3z6mezepW5_T6i93fHk4qufwK3t06yF_ScKwAgTcEMiNDPf99sQ0PWGrsnVqXJModcY09Z35jL5Fe0_GmrzfcMTmu1wilgYpGrM3D-dHllEL1dGXZF45p7MoABRmKMznKfihTFeKpI4A98WUEQeB3o6x2w38mfcI_mQLrElSi5n8N51-T0E3vCiJvSa0jFDLCjw
-              scope: 'https://www.googleapis.com/auth/youtube https://www.googleapis.com/auth/youtube.readonly https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email'
+              id_token: eyJhbGciOiJSUzI1NiIsImtpZCI6IjI2ZmM0Y2QyM2QzODdjYmM0OTBmNjBkYjU0YTk0YTZkZDE2NTM5OTgiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTU5MjQ2NDUyNTc5OTAyMzQ3NDYiLCJlbWFpbCI6ImJleW9uZHNpbmdpbmdjb21AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJrOGlQWXozLVRBbXZXVGE2QjVzWHFRIiwibmFtZSI6IkJleW9uZCBTaW5naW5nIiwicGljdHVyZSI6Imh0dHBzOi8vbGg1Lmdvb2dsZXVzZXJjb250ZW50LmNvbS8tQnJZdUI5d1JDN0UvQUFBQUFBQUFBQUkvQUFBQUFBQUFBQWsvZVNWWTVhamtmRVUvczk2LWMvcGhvdG8uanBnIiwiZ2l2ZW5fbmFtZSI6IkJleW9uZCIsImZhbWlseV9uYW1lIjoiU2luZ2luZyIsImxvY2FsZSI6ImRlIiwiaWF0IjoxNTU2MTc1NDg0LCJleHAiOjE1NTYxNzkwODR9.r6k0Fn0DfBswjv9f0UUHydDRn_nDn3nguNsYDaf1bFVRabWh9mqD7sFbm3-ox5wmDWp2zf1xWT6eZL8FbcBPz2LGlY3ibwcMju2pYMuyvsCAdEzANwLoZ3bSVh2o9btUaxkA7GLGlOKn4--nakd1JdLbJoUKZZ7GBR7RUpMSz-1sYA3tRse1xcI_QlQppiwdqq8avh9tH2MdkzwA1MI3_4mxa4K9vbRt31GmGTqfwHJCKnNZi52FuhWzYFriWVmL6HRI3fxql6hR2PwLx68zAvcG4ARZKdbRbdwZgsvFVuVxXg2j9STF8nXgyH2M-ntCTr36C5fDyJ2NBPvlMI2Xew
+              scope: 'https://www.googleapis.com/auth/youtube.readonly https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/youtube'
               token_type: Bearer
       videosPerPage: 30
 routes:
@@ -990,16 +990,19 @@ sections:
                 fields:
                   387a6e57-35e5-47bd-9182-119d7ccccf16:
                     required: false
-                    sortOrder: 6
+                    sortOrder: 7
                   417b399c-4166-4897-a491-00dff2058bd5:
                     required: false
-                    sortOrder: 4
+                    sortOrder: 5
                   597d3228-4fef-4e48-b794-3e488a088311:
                     required: false
-                    sortOrder: 7
-                  63060068-23fd-4091-9e13-96d982008822:
+                    sortOrder: 8
+                  78cf4c77-636b-48a0-b594-60ab78ef26a1:
                     required: false
                     sortOrder: 3
+                  8a5aa2a1-d84f-4bbf-9ea5-4c6b67c7c105:
+                    required: false
+                    sortOrder: 4
                   b729c087-ed9f-4371-8cf0-48e6ef2d9e6a:
                     required: false
                     sortOrder: 2
@@ -1008,7 +1011,7 @@ sections:
                     sortOrder: 1
                   f01db52f-6f1f-4abd-aa2c-4a8b40100e97:
                     required: false
-                    sortOrder: 5
+                    sortOrder: 6
                 name: 'Music-Network Intro'
                 sortOrder: 1
               -
@@ -1219,9 +1222,9 @@ sections:
                     sortOrder: 4
                 name: Events
                 sortOrder: 1
-        handle: eventsEntries
+        handle: projectTeaser
         hasTitleField: true
-        name: 'Events Entries'
+        name: 'Projects Teaser'
         sortOrder: 1
         titleFormat: ''
         titleLabel: Titel
@@ -1639,4 +1642,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-04-24 16:49:11'
+dateApplied: '2019-04-25 09:24:46'
