@@ -1,4 +1,4 @@
-dateModified: 1556805637
+dateModified: 1556806436
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -891,14 +891,14 @@ sections:
     siteSettings:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
         enabledByDefault: true
-        hasUrls: false
-        template: null
-        uriFormat: null
+        hasUrls: true
+        template: artists/_entry
+        uriFormat: 'music-production/artists/{slug}'
       96f6905b-bcc3-4e74-91a8-e5458eb5e532:
         enabledByDefault: true
-        hasUrls: false
-        template: null
-        uriFormat: null
+        hasUrls: true
+        template: artists/_entry
+        uriFormat: 'music-production/artists/{slug}'
     structure:
       maxLevels: '1'
       uid: 26a3cb7a-6849-4b74-afb6-aaa515e3d2cd
