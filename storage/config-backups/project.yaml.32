@@ -1,4 +1,4 @@
-dateModified: 1556803303
+dateModified: 1556805637
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -1131,7 +1131,7 @@ sections:
       96f6905b-bcc3-4e74-91a8-e5458eb5e532:
         enabledByDefault: true
         hasUrls: true
-        template: encouragemen/_entry
+        template: encouragement/_entry
         uriFormat: 'encouragement/{slug}'
     structure:
       maxLevels: '1'
@@ -1662,4 +1662,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-05-02 16:00:37'
+dateApplied: '2019-05-02 16:13:56'
