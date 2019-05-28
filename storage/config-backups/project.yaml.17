@@ -1,4 +1,4 @@
-dateModified: 1556180178
+dateModified: 1557323263
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -167,7 +167,7 @@ fields:
     contentColumnType: string
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
     handle: video
-    instructions: "Share-Link zu einem Beyond-Singing Video, wird als eingebettetes Youtube-Video in die Website eingefügt.\r\nWenn es ein Video gibt, wird das Bild (siehe unten) nicht angezeigt."
+    instructions: "Share-Link zu einem Youtube-Video. Dieses wird in die Website eingebettet.\r\nWenn es ein Video gibt, wird das Bild (siehe unten) nicht angezeigt."
     name: Video
     searchable: true
     translationKeyFormat: null
@@ -521,14 +521,13 @@ fields:
   d3bdccc1-7526-4804-bd85-6ea3ef871776:
     contentColumnType: string
     fieldGroup: 6e35b058-585c-4737-a314-09ba0b44576a
-    handle: newsMedia
-    instructions: ''
-    name: 'News-Bild oder -Video'
+    handle: newsImg
+    instructions: 'Das Bild wird eingemittet und quadratisch beschnitten.'
+    name: News-Bild
     searchable: false
     settings:
       allowedKinds:
         - image
-        - video
       defaultUploadLocationSource: 'volume:9eb7856b-e672-4fbf-b4b5-9d00ee79c726'
       defaultUploadLocationSubpath: ''
       limit: '1'
@@ -737,14 +736,14 @@ plugins:
           clientSecret: 0uCV3T2WxPjmoee3_7h91Xra
       tokens:
         youtube:
-          accessToken: ya29.Glz2BoRtF1RHhI2bDoe7MiBD6fAEkKTo4VLeKx7fyOHDgf8W9r5_YZOpWlyiA4kwFUoJPxSdEZvA14U8c4Y9BtpEDNiZ23kqZUJtEg8_1x_eSiDDfPhbSZ05T60Jaw
-          expires: 1556183778
+          accessToken: ya29.Gl0DBw2-k1qrzrV55aQpshVdfk7wx3MrRjJsnmcvy0alG5nnoBjqoqN08s84IOkPvjxYteWnSUirxOQBSB9XLpALZ9AbzUriRth4ZTY0_VZ5jKOWTaDgDZF2Y_NCE7Y
+          expires: 1557326863
           refreshToken: 1/h_aaH-zGnHYJCo5IJxtfkrdl09zaCcnwd20rF1paffZJ-qin2ZCXBzCqbn4gpn5A
           resourceOwnerId: null
           values:
             values:
-              id_token: eyJhbGciOiJSUzI1NiIsImtpZCI6IjI2ZmM0Y2QyM2QzODdjYmM0OTBmNjBkYjU0YTk0YTZkZDE2NTM5OTgiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTU5MjQ2NDUyNTc5OTAyMzQ3NDYiLCJlbWFpbCI6ImJleW9uZHNpbmdpbmdjb21AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJQc1RfcTJkZUc4WC03eU5GamZoMDNRIiwiaWF0IjoxNTU2MTgwMTc4LCJleHAiOjE1NTYxODM3Nzh9.SE4AMJbTZE9LcOjYhGSzx0SCjnD_CPw6uTTQB1uNepmzXzfZe2yP-JsR8-ZO_I6vc4j-q3ZTTl7GmWYlLVzY_moaq4IaqnwG9eTWBmLCMUctWT3bY0cEO1-BpZfKa_BBXzItKZ4ofKPRmft8Bjkg_oph_EdPk0M7RzGSbZre6XIQljkfG_LNSFYvXNTBGFhjS-rqc72kuyyPsUIRCzjJ-yGrwiZ-1a3a_E1Lc1lMYp5yBQjNVKZNgcKO9F6-C5mbLXKSaIg5crD2h0tLyGHjtOstXTDWqedLO1JHWZ_K8sSkRWWgMueNBqB7NjDj8sPfAOylsR8AwiKLrrd2pu-qAg
-              scope: 'https://www.googleapis.com/auth/youtube.readonly https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/youtube https://www.googleapis.com/auth/userinfo.profile'
+              id_token: eyJhbGciOiJSUzI1NiIsImtpZCI6IjI4ZjU4MTNlMzI3YWQxNGNhYWYxYmYyYTEyMzY4NTg3ZTg4MmI2MDQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTU5MjQ2NDUyNTc5OTAyMzQ3NDYiLCJlbWFpbCI6ImJleW9uZHNpbmdpbmdjb21AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJ1TkRlRmJOdlhnZlRaeEdRY0Y0QTl3IiwibmFtZSI6IkJleW9uZCBTaW5naW5nIiwicGljdHVyZSI6Imh0dHBzOi8vbGg1Lmdvb2dsZXVzZXJjb250ZW50LmNvbS8tQnJZdUI5d1JDN0UvQUFBQUFBQUFBQUkvQUFBQUFBQUFBQWsvZVNWWTVhamtmRVUvczk2LWMvcGhvdG8uanBnIiwiZ2l2ZW5fbmFtZSI6IkJleW9uZCIsImZhbWlseV9uYW1lIjoiU2luZ2luZyIsImxvY2FsZSI6ImRlIiwiaWF0IjoxNTU3MzIzMjYzLCJleHAiOjE1NTczMjY4NjN9.bse89e3XpBNXFHDJafylxnwyeY1eQofT6WTBzsCUvwymZeSsDTfjHv7VzuNb2hyAcaopraNwhJQDsy7ZeZFAu77zTK7-zHUdZu70IvRsoBckzafhZd00lw0MougpG8r4VPxcdyCb_VBM_KWaAm6MP6n_ZeZwweNUjWqfQmW45pU4ASGJ1HVhfV5r8C7YKNCPv_t9Lai5p6qnqwZ3SILKgTMcx41Uw15rLPEjEsmxqWluK1xMyD2sD6BoSsvBGECGDza7fGBzvA1Lv3VkPmrJeBKYizMb_njmjk14N7ws7ko0Qy5NV074mgKIAJHQ4dT4lYxm_B5J5QD_Bj6jdj6nFA
+              scope: 'https://www.googleapis.com/auth/youtube https://www.googleapis.com/auth/youtube.readonly https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email'
               token_type: Bearer
       videosPerPage: 30
 routes:
@@ -892,14 +891,14 @@ sections:
     siteSettings:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
         enabledByDefault: true
-        hasUrls: false
-        template: null
-        uriFormat: null
+        hasUrls: true
+        template: artists/_entry
+        uriFormat: 'music-production/artists/{slug}'
       96f6905b-bcc3-4e74-91a8-e5458eb5e532:
         enabledByDefault: true
-        hasUrls: false
-        template: null
-        uriFormat: null
+        hasUrls: true
+        template: artists/_entry
+        uriFormat: 'music-production/artists/{slug}'
     structure:
       maxLevels: '1'
       uid: 26a3cb7a-6849-4b74-afb6-aaa515e3d2cd
@@ -1132,7 +1131,7 @@ sections:
       96f6905b-bcc3-4e74-91a8-e5458eb5e532:
         enabledByDefault: true
         hasUrls: true
-        template: encouragemen/_entry
+        template: encouragement/_entry
         uriFormat: 'encouragement/{slug}'
     structure:
       maxLevels: '1'
@@ -1147,12 +1146,15 @@ sections:
             tabs:
               -
                 fields:
-                  d3bdccc1-7526-4804-bd85-6ea3ef871776:
+                  417b399c-4166-4897-a491-00dff2058bd5:
                     required: false
                     sortOrder: 1
-                  dfad3cfa-d66d-4ab0-8ac1-aa461b5659f9:
+                  d3bdccc1-7526-4804-bd85-6ea3ef871776:
                     required: false
                     sortOrder: 2
+                  dfad3cfa-d66d-4ab0-8ac1-aa461b5659f9:
+                    required: false
+                    sortOrder: 3
                 name: News-Items
                 sortOrder: 1
         handle: newsItem
@@ -1605,13 +1607,13 @@ sections:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
         enabledByDefault: true
         hasUrls: true
-        template: story/_entry
-        uriFormat: 'story/{slug}'
+        template: team/_entry
+        uriFormat: 'team/{slug}'
       96f6905b-bcc3-4e74-91a8-e5458eb5e532:
         enabledByDefault: true
         hasUrls: true
-        template: story/_entry
-        uriFormat: 'story/{slug}'
+        template: team/_entry
+        uriFormat: 'team/{slug}'
     structure:
       maxLevels: '1'
       uid: f0f8d6c6-cb64-44e5-bd17-078762727ffb
@@ -1660,4 +1662,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-04-25 11:16:33'
+dateApplied: '2019-05-09 10:31:28'

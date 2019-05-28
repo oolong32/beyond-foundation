@@ -1,4 +1,4 @@
-dateModified: 1555581806
+dateModified: 1556177078
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -719,17 +719,44 @@ plugins:
           clientSecret: 0uCV3T2WxPjmoee3_7h91Xra
       tokens:
         youtube:
-          accessToken: ya29.GlzvBlw2T7zyUr4Uj85ZVcm1vogC1GPpZpeH3TB82Mi1Nlq1dB43LRd0dKPwZFNRIqiosu_iBbX5-w9P7WBlOPNkn4t9yioqH3z-3IXAP755olbVeng6TzkoUaHLsA
-          expires: 1555585350
+          accessToken: ya29.Glz2BrT5Wx5-3J57b4rypf7yC_0yclodrxKV6-UigBxAkLButnVfoSnv_R0B7_eHRIXd9QOz3n-4Bf0wnf-ECm5vujjMOnjYbA4BIgz116vVXXHax1UiznaHCmi97A
+          expires: 1556179084
           refreshToken: 1/h_aaH-zGnHYJCo5IJxtfkrdl09zaCcnwd20rF1paffZJ-qin2ZCXBzCqbn4gpn5A
           resourceOwnerId: null
           values:
             values:
-              id_token: eyJhbGciOiJSUzI1NiIsImtpZCI6IjM3ODJkM2YwYmM4OTAwOGQ5ZDJjMDE3MzBmNzY1Y2ZiMTlkM2I3MGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTU5MjQ2NDUyNTc5OTAyMzQ3NDYiLCJlbWFpbCI6ImJleW9uZHNpbmdpbmdjb21AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiI4NmpyblNXTHlQeW8teDBUaEg1c0V3IiwiaWF0IjoxNTU1NTgxNzUwLCJleHAiOjE1NTU1ODUzNTB9.jKsDcU576ph_vTz9_xgHS_rH9HWXo4t9n93F15_nSz1MFeNGdAAB4awH1rVMmUk96y5AHTyt8vNzFOwJQERdMbJREl-UQAZU9NWecPXGdV-ie9xRhLeTQ57z071wxk_bJN6bxTLRxwUer5SuQtp6As2Zcrq6T8nbBA4aLmCiR0jSkRLjFMY-S2vzKWke9jnvG0W8zBoSK4k9miVXlkVsocrq39Zx5adCIdmX-C1xGv4PJfhP-fn0vnz7W2tOrjj2s3yitBXGcPPkPUDw2EXBqPTOFKXzjtryqgbfIRIzpdsR8LFimwlbF959jsnEl19Aipijvm3bA2CrjIbpqaxi-w
-              scope: 'https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/youtube.readonly https://www.googleapis.com/auth/youtube https://www.googleapis.com/auth/userinfo.profile'
+              id_token: eyJhbGciOiJSUzI1NiIsImtpZCI6IjI2ZmM0Y2QyM2QzODdjYmM0OTBmNjBkYjU0YTk0YTZkZDE2NTM5OTgiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTU5MjQ2NDUyNTc5OTAyMzQ3NDYiLCJlbWFpbCI6ImJleW9uZHNpbmdpbmdjb21AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJrOGlQWXozLVRBbXZXVGE2QjVzWHFRIiwibmFtZSI6IkJleW9uZCBTaW5naW5nIiwicGljdHVyZSI6Imh0dHBzOi8vbGg1Lmdvb2dsZXVzZXJjb250ZW50LmNvbS8tQnJZdUI5d1JDN0UvQUFBQUFBQUFBQUkvQUFBQUFBQUFBQWsvZVNWWTVhamtmRVUvczk2LWMvcGhvdG8uanBnIiwiZ2l2ZW5fbmFtZSI6IkJleW9uZCIsImZhbWlseV9uYW1lIjoiU2luZ2luZyIsImxvY2FsZSI6ImRlIiwiaWF0IjoxNTU2MTc1NDg0LCJleHAiOjE1NTYxNzkwODR9.r6k0Fn0DfBswjv9f0UUHydDRn_nDn3nguNsYDaf1bFVRabWh9mqD7sFbm3-ox5wmDWp2zf1xWT6eZL8FbcBPz2LGlY3ibwcMju2pYMuyvsCAdEzANwLoZ3bSVh2o9btUaxkA7GLGlOKn4--nakd1JdLbJoUKZZ7GBR7RUpMSz-1sYA3tRse1xcI_QlQppiwdqq8avh9tH2MdkzwA1MI3_4mxa4K9vbRt31GmGTqfwHJCKnNZi52FuhWzYFriWVmL6HRI3fxql6hR2PwLx68zAvcG4ARZKdbRbdwZgsvFVuVxXg2j9STF8nXgyH2M-ntCTr36C5fDyJ2NBPvlMI2Xew
+              scope: 'https://www.googleapis.com/auth/youtube.readonly https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/youtube'
               token_type: Bearer
       videosPerPage: 30
 routes:
+  1ac7a506-d06b-4c1d-bd6a-78f93d549607:
+    siteUid: null
+    sortOrder: 7
+    template: music-production/index.twig
+    uriParts:
+      - music.
+      -
+        - '*'
+        - '[^\/]+'
+    uriPattern: 'music.<any:[^\/]+>'
+  4482ae23-2676-4129-9d04-fa846a4c890b:
+    siteUid: null
+    sortOrder: 12
+    template: encouragement/index.twig
+    uriParts:
+      - toobad
+    uriPattern: toobad
+  65ebfa7f-c6ba-4b80-8149-e63f5301cfaf:
+    siteUid: null
+    sortOrder: 9
+    template: encouragement/index.twig
+    uriParts:
+      - tradition.
+      -
+        - '*'
+        - '[^\/]+'
+    uriPattern: 'tradition.<any:[^\/]+>'
   8ff3137c-1fbd-4d8a-86df-729b6301cc28:
     siteUid: null
     sortOrder: 1
@@ -750,6 +777,16 @@ routes:
         - '*'
         - '[^\/]+'
     uriPattern: 'children.<any:[^\/]+>'
+  b5a82f97-512a-4039-9a62-9876999fea7e:
+    siteUid: null
+    sortOrder: 6
+    template: about/index.twig
+    uriParts:
+      - self.
+      -
+        - '*'
+        - '[^\/]+'
+    uriPattern: 'self.<any:[^\/]+>'
   c164290a-b161-4bac-b8dd-6805b0f6add0:
     siteUid: null
     sortOrder: 2
@@ -770,6 +807,40 @@ routes:
         - '*'
         - '[^\/]+'
     uriPattern: 'beyond.<any:[^\/]+>'
+  defde3ed-fd8e-4ec1-9889-7076a211bd79:
+    siteUid: null
+    sortOrder: 8
+    template: projects/index.twig
+    uriParts:
+      - culture.
+      -
+        - '*'
+        - '[^\/]+'
+    uriPattern: 'culture.<any:[^\/]+>'
+  ea525bea-be65-4cf4-af04-14f60d888acc:
+    siteUid: null
+    sortOrder: 5
+    template: about/index.twig
+    uriParts:
+      1:
+        - '*'
+        - '[^\/]+'
+      2: /fr
+    uriPattern: '<any:[^\/]+>/fr'
+  efba2453-4b7e-478e-a27f-4a9a1387e866:
+    siteUid: null
+    sortOrder: 10
+    template: encouragement/index.twig
+    uriParts:
+      - thankyou
+    uriPattern: thankyou
+  fb72c635-335b-4040-bb47-1e25c652dc1f:
+    siteUid: null
+    sortOrder: 11
+    template: encouragement/index.twig
+    uriParts:
+      - thank-you
+    uriPattern: thank-you
 sections:
   08de450d-3199-4c3b-9b6c-9a900c9ab5d7:
     enableVersioning: true
@@ -919,16 +990,19 @@ sections:
                 fields:
                   387a6e57-35e5-47bd-9182-119d7ccccf16:
                     required: false
-                    sortOrder: 6
+                    sortOrder: 7
                   417b399c-4166-4897-a491-00dff2058bd5:
                     required: false
-                    sortOrder: 4
+                    sortOrder: 5
                   597d3228-4fef-4e48-b794-3e488a088311:
                     required: false
-                    sortOrder: 7
-                  63060068-23fd-4091-9e13-96d982008822:
+                    sortOrder: 8
+                  78cf4c77-636b-48a0-b594-60ab78ef26a1:
                     required: false
                     sortOrder: 3
+                  8a5aa2a1-d84f-4bbf-9ea5-4c6b67c7c105:
+                    required: false
+                    sortOrder: 4
                   b729c087-ed9f-4371-8cf0-48e6ef2d9e6a:
                     required: false
                     sortOrder: 2
@@ -937,7 +1011,7 @@ sections:
                     sortOrder: 1
                   f01db52f-6f1f-4abd-aa2c-4a8b40100e97:
                     required: false
-                    sortOrder: 5
+                    sortOrder: 6
                 name: 'Music-Network Intro'
                 sortOrder: 1
               -
@@ -1148,9 +1222,9 @@ sections:
                     sortOrder: 4
                 name: Events
                 sortOrder: 1
-        handle: eventsEntries
+        handle: projectTeaser
         hasTitleField: true
-        name: 'Events Entries'
+        name: 'Projects Teaser'
         sortOrder: 1
         titleFormat: ''
         titleLabel: Titel
@@ -1568,4 +1642,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-04-18 12:04:11'
+dateApplied: '2019-04-25 09:24:46'
