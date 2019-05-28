@@ -1,4 +1,4 @@
-dateModified: 1556783391
+dateModified: 1556783424
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -1146,12 +1146,15 @@ sections:
             tabs:
               -
                 fields:
-                  d3bdccc1-7526-4804-bd85-6ea3ef871776:
+                  417b399c-4166-4897-a491-00dff2058bd5:
                     required: false
                     sortOrder: 1
-                  dfad3cfa-d66d-4ab0-8ac1-aa461b5659f9:
+                  d3bdccc1-7526-4804-bd85-6ea3ef871776:
                     required: false
                     sortOrder: 2
+                  dfad3cfa-d66d-4ab0-8ac1-aa461b5659f9:
+                    required: false
+                    sortOrder: 3
                 name: News-Items
                 sortOrder: 1
         handle: newsItem
@@ -1659,4 +1662,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-05-02 09:50:24'
+dateApplied: '2019-05-02 10:48:01'
