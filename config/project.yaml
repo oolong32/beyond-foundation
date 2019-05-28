@@ -1,11 +1,9 @@
-dateModified: 1559043718
+dateModified: 1559044387
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
   transportType: craft\mail\transportadapters\Sendmail
 fieldGroups:
-  02ecc909-a8ca-4329-abc5-f055c7de039e:
-    name: 'Music-Network Awards'
   2d31e491-87da-48b8-85d6-72aba43f554c:
     name: 'Share Links'
   6e35b058-585c-4737-a314-09ba0b44576a:
@@ -322,6 +320,21 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\redactor\Field
+  90d7cea2-3611-46c2-80f1-af5e53a3a745:
+    contentColumnType: string
+    fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
+    handle: linklist
+    instructions: ''
+    name: Linkliste
+    searchable: true
+    settings:
+      contentTable: '{{%matrixcontent_linklist}}'
+      localizeBlocks: ''
+      maxBlocks: ''
+      minBlocks: ''
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Matrix
   92480c84-40d6-46c9-9a07-013329517956:
     contentColumnType: text
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
@@ -717,6 +730,55 @@ imageTransforms:
     position: center-center
     quality: '82'
     width: '750'
+matrixBlockTypes:
+  ab653c53-5d26-43c0-83ae-e610a6f61a94:
+    field: 90d7cea2-3611-46c2-80f1-af5e53a3a745
+    fieldLayouts:
+      c88bae56-0fd8-4ea6-8bb4-1ebd18e2a2df:
+        tabs:
+          -
+            fields:
+              146ae9c9-850a-4e62-94be-863549fdc8dd:
+                required: true
+                sortOrder: 2
+              ff3ea7a1-1be7-41de-aa15-10c588035c22:
+                required: true
+                sortOrder: 1
+            name: Content
+            sortOrder: 1
+    fields:
+      146ae9c9-850a-4e62-94be-863549fdc8dd:
+        contentColumnType: text
+        fieldGroup: null
+        handle: linkText
+        instructions: 'Der Text, der verlinkt wird.'
+        name: Link-Text
+        searchable: true
+        settings:
+          charLimit: ''
+          code: ''
+          columnType: text
+          initialRows: '4'
+          multiline: ''
+          placeholder: ''
+        translationKeyFormat: null
+        translationMethod: site
+        type: craft\fields\PlainText
+      ff3ea7a1-1be7-41de-aa15-10c588035c22:
+        contentColumnType: string
+        fieldGroup: null
+        handle: linkUrl
+        instructions: 'URL «https://…»'
+        name: 'Link-Adresse (URL)'
+        searchable: true
+        settings:
+          placeholder: 'https://'
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\Url
+    handle: link
+    name: Link
+    sortOrder: 1
 plugins:
   redactor:
     edition: standard
