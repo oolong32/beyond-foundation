@@ -1,4 +1,4 @@
-dateModified: 1556783391
+dateModified: 1556803303
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -736,14 +736,14 @@ plugins:
           clientSecret: 0uCV3T2WxPjmoee3_7h91Xra
       tokens:
         youtube:
-          accessToken: ya29.Gl39BqEzA4NNU-MymWBQZUUbiCkAWnzI2Smi-zus61WCqjzS3dPneWD7pvLcqXOFJ2_yHziWweNiFz7xIZnFwTPJxIwiKP8P_sdmj49pSh54r6gYysnYDt-hIyIPFfY
-          expires: 1556786396
+          accessToken: ya29.Gl39Bv2p6lw6sv7MJFyXR1Fj8D3IjHzp8Gp8Hu2AsCsqpKYC53MApD1t4gtnMiGU3R0yopHaJ37acJs0HDIT6s7MpaDNluanxZJ7AulPawus2A9fchW3IxqG9YmQdMo
+          expires: 1556806903
           refreshToken: 1/h_aaH-zGnHYJCo5IJxtfkrdl09zaCcnwd20rF1paffZJ-qin2ZCXBzCqbn4gpn5A
           resourceOwnerId: null
           values:
             values:
-              id_token: eyJhbGciOiJSUzI1NiIsImtpZCI6IjVkODg3ZjI2Y2UzMjU3N2M0YjVhOGExZTFhNTJlMTlkMzAxZjgxODEiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTU5MjQ2NDUyNTc5OTAyMzQ3NDYiLCJlbWFpbCI6ImJleW9uZHNpbmdpbmdjb21AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJCNlMzb2pvUGFWTmFsRmNzNlR4Qkl3IiwibmFtZSI6IkJleW9uZCBTaW5naW5nIiwicGljdHVyZSI6Imh0dHBzOi8vbGg1Lmdvb2dsZXVzZXJjb250ZW50LmNvbS8tQnJZdUI5d1JDN0UvQUFBQUFBQUFBQUkvQUFBQUFBQUFBQWsvZVNWWTVhamtmRVUvczk2LWMvcGhvdG8uanBnIiwiZ2l2ZW5fbmFtZSI6IkJleW9uZCIsImZhbWlseV9uYW1lIjoiU2luZ2luZyIsImxvY2FsZSI6ImRlIiwiaWF0IjoxNTU2NzgyNzk2LCJleHAiOjE1NTY3ODYzOTZ9.Fyj0IdDaySNKJ9wW9oZs9Nhm5EqN-mLRdUPe6rzWJqXMyw3EDONu5VXhw8z58Tz_pb7xRdTuxj92-YsrsykFlNgWbw0UgVFcQl_LVLeCa1bBOeOEmBNoeYsdivWT6A9zvJxmIIl9adY6zhDnk_zkf3ibm8JyWajGlISGbiIYsu_VbKdNxmg2zQ1TP5uH_ctgJp-lR9tbOmzC6X_ESoqHlGxSVdUjrwDINV-EwdECrIvXNUp4qR-cYyC39rCrpPQz09EAwYlpXabnCE3pArXfnvfTM8-BvR_-0M6H68y2P4qTAcvUinNnhhwvsbrx_F6bkDpz-TPCT96P8EEDG_1hTw
-              scope: 'https://www.googleapis.com/auth/youtube https://www.googleapis.com/auth/youtube.readonly https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email'
+              id_token: eyJhbGciOiJSUzI1NiIsImtpZCI6IjVkODg3ZjI2Y2UzMjU3N2M0YjVhOGExZTFhNTJlMTlkMzAxZjgxODEiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTU5MjQ2NDUyNTc5OTAyMzQ3NDYiLCJlbWFpbCI6ImJleW9uZHNpbmdpbmdjb21AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJuNlpOTFVfX1M3N0F2R05XVUlic0p3IiwiaWF0IjoxNTU2ODAzMzAzLCJleHAiOjE1NTY4MDY5MDN9.A9Nqs3JlKHaJFldM9tf3BkCa2GHAbM55tRT20NIvgj9NJH-d9Rta3uMWtAFpuy36vFL48ZcKzvmLQHhEi1mHJENDML-wDT5EB-N2maSqsSECNMQlIE4bL0NcupZhqNJVdqNZd7wKpjyHSvVp1Fa0UiuwIe5dDI3zg4RJuc18xuKDlzYy58zjuDQfmWnM9jj3ez5VDzl-klziJ_12ShaWDZantEUKyAqkcQdDDoUPpQf14148IOYCbm8kvwKKx286EdFHEOAxopuSClz2KOvhQgi6pJBZ45Rz1dt9Ltz_9XG50bQUk0yBSroFf8dU6qDHcibI5cXkwp3getqoNbis1g
+              scope: 'https://www.googleapis.com/auth/youtube https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/youtube.readonly'
               token_type: Bearer
       videosPerPage: 30
 routes:
@@ -1146,12 +1146,15 @@ sections:
             tabs:
               -
                 fields:
-                  d3bdccc1-7526-4804-bd85-6ea3ef871776:
+                  417b399c-4166-4897-a491-00dff2058bd5:
                     required: false
                     sortOrder: 1
-                  dfad3cfa-d66d-4ab0-8ac1-aa461b5659f9:
+                  d3bdccc1-7526-4804-bd85-6ea3ef871776:
                     required: false
                     sortOrder: 2
+                  dfad3cfa-d66d-4ab0-8ac1-aa461b5659f9:
+                    required: false
+                    sortOrder: 3
                 name: News-Items
                 sortOrder: 1
         handle: newsItem
@@ -1659,4 +1662,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-05-02 09:50:24'
+dateApplied: '2019-05-02 16:00:37'

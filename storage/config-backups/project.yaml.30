@@ -1,4 +1,4 @@
-dateModified: 1556786880
+dateModified: 1556806436
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -736,13 +736,13 @@ plugins:
           clientSecret: 0uCV3T2WxPjmoee3_7h91Xra
       tokens:
         youtube:
-          accessToken: ya29.Gl39Bhk0gcN-vx41c8DK7EEPcaTHLkGgzdm4DEZS0gKWtRgxdv4LYD2xQfYJ-XXzQZHv2q9hN4DGTTsUwMJUlL-C96fgbvm_--hiO7Xj5sgY8ZRIaZSl8GIWAqvrkEY
-          expires: 1556790480
+          accessToken: ya29.Gl39Bv2p6lw6sv7MJFyXR1Fj8D3IjHzp8Gp8Hu2AsCsqpKYC53MApD1t4gtnMiGU3R0yopHaJ37acJs0HDIT6s7MpaDNluanxZJ7AulPawus2A9fchW3IxqG9YmQdMo
+          expires: 1556806903
           refreshToken: 1/h_aaH-zGnHYJCo5IJxtfkrdl09zaCcnwd20rF1paffZJ-qin2ZCXBzCqbn4gpn5A
           resourceOwnerId: null
           values:
             values:
-              id_token: eyJhbGciOiJSUzI1NiIsImtpZCI6IjVkODg3ZjI2Y2UzMjU3N2M0YjVhOGExZTFhNTJlMTlkMzAxZjgxODEiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTU5MjQ2NDUyNTc5OTAyMzQ3NDYiLCJlbWFpbCI6ImJleW9uZHNpbmdpbmdjb21AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJDbDJiVW5GNVpWX3c0UDJKbjZoc1ZRIiwibmFtZSI6IkJleW9uZCBTaW5naW5nIiwicGljdHVyZSI6Imh0dHBzOi8vbGg1Lmdvb2dsZXVzZXJjb250ZW50LmNvbS8tQnJZdUI5d1JDN0UvQUFBQUFBQUFBQUkvQUFBQUFBQUFBQWsvZVNWWTVhamtmRVUvczk2LWMvcGhvdG8uanBnIiwiZ2l2ZW5fbmFtZSI6IkJleW9uZCIsImZhbWlseV9uYW1lIjoiU2luZ2luZyIsImxvY2FsZSI6ImRlIiwiaWF0IjoxNTU2Nzg2ODgwLCJleHAiOjE1NTY3OTA0ODB9.aaCX9M5DGAqM7Nhp50NMXHRIOxhr9z-YcVlWqbmjzxrMj4MUwaPkPAkNyQD9af54mR0zHXvz08DqEFVEtVXg_stLmsYvbYD6Rchc3vWVghgnDO0-siJZs4SsbFr58je5TyqQnlmbtjv9lxV8RRmRmVkOu_MefRgJKSY-hV9iFNhMwUQdFsx6fqlYk1-88Tnzf4K1trDDBLvxVISN4KPXfwtz_SHYeP1XAOvOXXskyM8OOV7kP5gkNJrVHCESxPZO7bHgs9hQC6aOFo0sfvud5_QFeOcxOSduUvS06O8k6yRZJueOOdHb22X5c27j4JGplJ6y0RdsnDccBtfcmPzUXw
+              id_token: eyJhbGciOiJSUzI1NiIsImtpZCI6IjVkODg3ZjI2Y2UzMjU3N2M0YjVhOGExZTFhNTJlMTlkMzAxZjgxODEiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTU5MjQ2NDUyNTc5OTAyMzQ3NDYiLCJlbWFpbCI6ImJleW9uZHNpbmdpbmdjb21AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJuNlpOTFVfX1M3N0F2R05XVUlic0p3IiwiaWF0IjoxNTU2ODAzMzAzLCJleHAiOjE1NTY4MDY5MDN9.A9Nqs3JlKHaJFldM9tf3BkCa2GHAbM55tRT20NIvgj9NJH-d9Rta3uMWtAFpuy36vFL48ZcKzvmLQHhEi1mHJENDML-wDT5EB-N2maSqsSECNMQlIE4bL0NcupZhqNJVdqNZd7wKpjyHSvVp1Fa0UiuwIe5dDI3zg4RJuc18xuKDlzYy58zjuDQfmWnM9jj3ez5VDzl-klziJ_12ShaWDZantEUKyAqkcQdDDoUPpQf14148IOYCbm8kvwKKx286EdFHEOAxopuSClz2KOvhQgi6pJBZ45Rz1dt9Ltz_9XG50bQUk0yBSroFf8dU6qDHcibI5cXkwp3getqoNbis1g
               scope: 'https://www.googleapis.com/auth/youtube https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/youtube.readonly'
               token_type: Bearer
       videosPerPage: 30
@@ -891,14 +891,14 @@ sections:
     siteSettings:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
         enabledByDefault: true
-        hasUrls: false
-        template: null
-        uriFormat: null
+        hasUrls: true
+        template: artists/_entry
+        uriFormat: 'music-production/artists/{slug}'
       96f6905b-bcc3-4e74-91a8-e5458eb5e532:
         enabledByDefault: true
-        hasUrls: false
-        template: null
-        uriFormat: null
+        hasUrls: true
+        template: artists/_entry
+        uriFormat: 'music-production/artists/{slug}'
     structure:
       maxLevels: '1'
       uid: 26a3cb7a-6849-4b74-afb6-aaa515e3d2cd
@@ -1131,7 +1131,7 @@ sections:
       96f6905b-bcc3-4e74-91a8-e5458eb5e532:
         enabledByDefault: true
         hasUrls: true
-        template: encouragemen/_entry
+        template: encouragement/_entry
         uriFormat: 'encouragement/{slug}'
     structure:
       maxLevels: '1'
@@ -1662,4 +1662,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-05-02 11:57:17'
+dateApplied: '2019-05-02 16:42:52'
