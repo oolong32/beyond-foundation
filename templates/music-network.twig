@@ -96,7 +96,17 @@
         <div class="normal">
           {{ entry.trackInfo }}
         </div>
-        <p style="margin-top: 1rem;"><a href="{{ entry.externalLink }}" target="_blank">The Beyond Creativity Award</a></p>
+
+        {% if entry.linklist|length %}
+          <ul style="margin-top: 1rem;">
+          {% set linklist = entry.linklist %}
+          {% for link in linklist %}
+            <li><a href="{{ link.linkUrl }}" target="_blank">{{ link.linkText }}</a></li>
+          {% endfor %}
+          </ul>
+        {% else %}
+          <!-- no links -->
+        {% endif %}
 
       </div>
       </section>
