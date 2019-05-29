@@ -1,4 +1,4 @@
-dateModified: 1556782796
+dateModified: 1556786880
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -167,7 +167,7 @@ fields:
     contentColumnType: string
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
     handle: video
-    instructions: "Share-Link zu einem Beyond-Singing Video, wird als eingebettetes Youtube-Video in die Website eingefügt.\r\nWenn es ein Video gibt, wird das Bild (siehe unten) nicht angezeigt."
+    instructions: "Share-Link zu einem Youtube-Video. Dieses wird in die Website eingebettet.\r\nWenn es ein Video gibt, wird das Bild (siehe unten) nicht angezeigt."
     name: Video
     searchable: true
     translationKeyFormat: null
@@ -521,14 +521,13 @@ fields:
   d3bdccc1-7526-4804-bd85-6ea3ef871776:
     contentColumnType: string
     fieldGroup: 6e35b058-585c-4737-a314-09ba0b44576a
-    handle: newsMedia
-    instructions: ''
-    name: 'News-Bild oder -Video'
+    handle: newsImg
+    instructions: 'Das Bild wird eingemittet und quadratisch beschnitten.'
+    name: News-Bild
     searchable: false
     settings:
       allowedKinds:
         - image
-        - video
       defaultUploadLocationSource: 'volume:9eb7856b-e672-4fbf-b4b5-9d00ee79c726'
       defaultUploadLocationSubpath: ''
       limit: '1'
@@ -737,14 +736,14 @@ plugins:
           clientSecret: 0uCV3T2WxPjmoee3_7h91Xra
       tokens:
         youtube:
-          accessToken: ya29.Gl39BqEzA4NNU-MymWBQZUUbiCkAWnzI2Smi-zus61WCqjzS3dPneWD7pvLcqXOFJ2_yHziWweNiFz7xIZnFwTPJxIwiKP8P_sdmj49pSh54r6gYysnYDt-hIyIPFfY
-          expires: 1556786396
+          accessToken: ya29.Gl39Bhk0gcN-vx41c8DK7EEPcaTHLkGgzdm4DEZS0gKWtRgxdv4LYD2xQfYJ-XXzQZHv2q9hN4DGTTsUwMJUlL-C96fgbvm_--hiO7Xj5sgY8ZRIaZSl8GIWAqvrkEY
+          expires: 1556790480
           refreshToken: 1/h_aaH-zGnHYJCo5IJxtfkrdl09zaCcnwd20rF1paffZJ-qin2ZCXBzCqbn4gpn5A
           resourceOwnerId: null
           values:
             values:
-              id_token: eyJhbGciOiJSUzI1NiIsImtpZCI6IjVkODg3ZjI2Y2UzMjU3N2M0YjVhOGExZTFhNTJlMTlkMzAxZjgxODEiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTU5MjQ2NDUyNTc5OTAyMzQ3NDYiLCJlbWFpbCI6ImJleW9uZHNpbmdpbmdjb21AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJCNlMzb2pvUGFWTmFsRmNzNlR4Qkl3IiwibmFtZSI6IkJleW9uZCBTaW5naW5nIiwicGljdHVyZSI6Imh0dHBzOi8vbGg1Lmdvb2dsZXVzZXJjb250ZW50LmNvbS8tQnJZdUI5d1JDN0UvQUFBQUFBQUFBQUkvQUFBQUFBQUFBQWsvZVNWWTVhamtmRVUvczk2LWMvcGhvdG8uanBnIiwiZ2l2ZW5fbmFtZSI6IkJleW9uZCIsImZhbWlseV9uYW1lIjoiU2luZ2luZyIsImxvY2FsZSI6ImRlIiwiaWF0IjoxNTU2NzgyNzk2LCJleHAiOjE1NTY3ODYzOTZ9.Fyj0IdDaySNKJ9wW9oZs9Nhm5EqN-mLRdUPe6rzWJqXMyw3EDONu5VXhw8z58Tz_pb7xRdTuxj92-YsrsykFlNgWbw0UgVFcQl_LVLeCa1bBOeOEmBNoeYsdivWT6A9zvJxmIIl9adY6zhDnk_zkf3ibm8JyWajGlISGbiIYsu_VbKdNxmg2zQ1TP5uH_ctgJp-lR9tbOmzC6X_ESoqHlGxSVdUjrwDINV-EwdECrIvXNUp4qR-cYyC39rCrpPQz09EAwYlpXabnCE3pArXfnvfTM8-BvR_-0M6H68y2P4qTAcvUinNnhhwvsbrx_F6bkDpz-TPCT96P8EEDG_1hTw
-              scope: 'https://www.googleapis.com/auth/youtube https://www.googleapis.com/auth/youtube.readonly https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email'
+              id_token: eyJhbGciOiJSUzI1NiIsImtpZCI6IjVkODg3ZjI2Y2UzMjU3N2M0YjVhOGExZTFhNTJlMTlkMzAxZjgxODEiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTU5MjQ2NDUyNTc5OTAyMzQ3NDYiLCJlbWFpbCI6ImJleW9uZHNpbmdpbmdjb21AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJDbDJiVW5GNVpWX3c0UDJKbjZoc1ZRIiwibmFtZSI6IkJleW9uZCBTaW5naW5nIiwicGljdHVyZSI6Imh0dHBzOi8vbGg1Lmdvb2dsZXVzZXJjb250ZW50LmNvbS8tQnJZdUI5d1JDN0UvQUFBQUFBQUFBQUkvQUFBQUFBQUFBQWsvZVNWWTVhamtmRVUvczk2LWMvcGhvdG8uanBnIiwiZ2l2ZW5fbmFtZSI6IkJleW9uZCIsImZhbWlseV9uYW1lIjoiU2luZ2luZyIsImxvY2FsZSI6ImRlIiwiaWF0IjoxNTU2Nzg2ODgwLCJleHAiOjE1NTY3OTA0ODB9.aaCX9M5DGAqM7Nhp50NMXHRIOxhr9z-YcVlWqbmjzxrMj4MUwaPkPAkNyQD9af54mR0zHXvz08DqEFVEtVXg_stLmsYvbYD6Rchc3vWVghgnDO0-siJZs4SsbFr58je5TyqQnlmbtjv9lxV8RRmRmVkOu_MefRgJKSY-hV9iFNhMwUQdFsx6fqlYk1-88Tnzf4K1trDDBLvxVISN4KPXfwtz_SHYeP1XAOvOXXskyM8OOV7kP5gkNJrVHCESxPZO7bHgs9hQC6aOFo0sfvud5_QFeOcxOSduUvS06O8k6yRZJueOOdHb22X5c27j4JGplJ6y0RdsnDccBtfcmPzUXw
+              scope: 'https://www.googleapis.com/auth/youtube https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/youtube.readonly'
               token_type: Bearer
       videosPerPage: 30
 routes:
@@ -1147,12 +1146,15 @@ sections:
             tabs:
               -
                 fields:
-                  d3bdccc1-7526-4804-bd85-6ea3ef871776:
+                  417b399c-4166-4897-a491-00dff2058bd5:
                     required: false
                     sortOrder: 1
-                  dfad3cfa-d66d-4ab0-8ac1-aa461b5659f9:
+                  d3bdccc1-7526-4804-bd85-6ea3ef871776:
                     required: false
                     sortOrder: 2
+                  dfad3cfa-d66d-4ab0-8ac1-aa461b5659f9:
+                    required: false
+                    sortOrder: 3
                 name: News-Items
                 sortOrder: 1
         handle: newsItem
@@ -1660,4 +1662,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-05-02 09:47:31'
+dateApplied: '2019-05-02 11:57:17'
