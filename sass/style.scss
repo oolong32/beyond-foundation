@@ -510,7 +510,11 @@ a.social-media-link:hover svg path { fill: $gold-hover; }
 .about #masthead { background-image: url("../_pic/masthead_backgrounds/about_back.jpg"); }
 //.music-network #masthead { background-image: url("../_pic/masthead_backgrounds/music-network_back.png"); }
 .music-network #masthead { background-image: url("../_pic/masthead_backgrounds/studioWork_1.jpg"); }
-.music-production #masthead { background-image: url("../_pic/masthead_backgrounds/music-production_back_ret.jpg"); }
+//.music-production #masthead { background-image: url("../_pic/masthead_backgrounds/music-production_back_ret.jpg"); }
+.music-production #masthead { 
+  background-image: url("../_pic/masthead_backgrounds/beyondSinging.jpg");
+  background-position: 50% 20%;
+}
 //.projects #masthead { background-image: url("../_pic/masthead_backgrounds/projects_back.png"); }
 .projects #masthead { background-image: url("../_pic/masthead_backgrounds/studioWork_3.jpg"); }
 .encouragement #masthead { background-image: url("../_pic/masthead_backgrounds/encouragement_back2.jpg"); }
