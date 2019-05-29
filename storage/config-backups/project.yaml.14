@@ -1,11 +1,9 @@
-dateModified: 1559043718
+dateModified: 1559044134
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
   transportType: craft\mail\transportadapters\Sendmail
 fieldGroups:
-  02ecc909-a8ca-4329-abc5-f055c7de039e:
-    name: 'Music-Network Awards'
   2d31e491-87da-48b8-85d6-72aba43f554c:
     name: 'Share Links'
   6e35b058-585c-4737-a314-09ba0b44576a:
@@ -1662,4 +1660,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-05-28 13:48:54'
+dateApplied: '2019-05-28 13:53:08'
