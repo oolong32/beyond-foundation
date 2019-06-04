@@ -1,4 +1,4 @@
-dateModified: 1556798404
+dateModified: 1557758907
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -736,14 +736,14 @@ plugins:
           clientSecret: 0uCV3T2WxPjmoee3_7h91Xra
       tokens:
         youtube:
-          accessToken: ya29.Gl39Bgdmn2kyPfmp76S_P6j0pN85ZAPkRmt8wLQ8Mnzf1KlSFS31Z27o9nipM3aO3GBQt38dwG5KEkGjWeOEmjrigwRB5BfBlD37jeONeLQ_437bfPUXPjYd_fDTdtI
-          expires: 1556802004
+          accessToken: ya29.Gl0IB_lV5P5Tg-_BtNT3D-arZF3qTZCQOCggMRg11YyaN_be-ucSP-E4wloVYmMsOMbZf2Jv0HAzS9zpbFTwx_aXl4nkm0jw-mXobBGBednwTwbzJhWjbuv4LzEySy0
+          expires: 1557762507
           refreshToken: 1/h_aaH-zGnHYJCo5IJxtfkrdl09zaCcnwd20rF1paffZJ-qin2ZCXBzCqbn4gpn5A
           resourceOwnerId: null
           values:
             values:
-              id_token: eyJhbGciOiJSUzI1NiIsImtpZCI6IjVkODg3ZjI2Y2UzMjU3N2M0YjVhOGExZTFhNTJlMTlkMzAxZjgxODEiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTU5MjQ2NDUyNTc5OTAyMzQ3NDYiLCJlbWFpbCI6ImJleW9uZHNpbmdpbmdjb21AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJid1U4bWlfY25HczlOdURmdmZIWHZ3IiwiaWF0IjoxNTU2Nzk4NDA0LCJleHAiOjE1NTY4MDIwMDR9.FQ3n4Y_VdeiGKeqoLPMJLPnJVpffrN9y56lTh8aSeKOw-OcdO51AUjpYH_L_FzRonKI6otNvFtk82dPR4s0haOnvM8wxTwkCm100Tg6Yw8QuDXYKhvdwj8l4ImLWTwisK7BqxA6VJqJFKFs2wrx4rLFEWPJUCkDY2TpWzv5nN5ScTABUzTlAReR0CvaTCbiFhEH2CoSyyAjFlJNjlppYNDo-MWVqlIYcxWVkZAoeB2g8ZgfFmUNlezCPTwUAwhDhpIMz1DmutwKrN4wogfda2yO_34wmuU-SAOnsrCDfyJaudhr3APW7mM0P63AayXgWWsuwgAGdcKwAASJgKdonmA
-              scope: 'https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/youtube https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/youtube.readonly'
+              id_token: eyJhbGciOiJSUzI1NiIsImtpZCI6IjI4ZjU4MTNlMzI3YWQxNGNhYWYxYmYyYTEyMzY4NTg3ZTg4MmI2MDQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTU5MjQ2NDUyNTc5OTAyMzQ3NDYiLCJlbWFpbCI6ImJleW9uZHNpbmdpbmdjb21AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJ6TG1fSlk1N3FpdHJXRTY2RFRWX1lBIiwibmFtZSI6IkJleW9uZCBTaW5naW5nIiwicGljdHVyZSI6Imh0dHBzOi8vbGg1Lmdvb2dsZXVzZXJjb250ZW50LmNvbS8tQnJZdUI5d1JDN0UvQUFBQUFBQUFBQUkvQUFBQUFBQUFBQWsvZVNWWTVhamtmRVUvczk2LWMvcGhvdG8uanBnIiwiZ2l2ZW5fbmFtZSI6IkJleW9uZCIsImZhbWlseV9uYW1lIjoiU2luZ2luZyIsImxvY2FsZSI6ImRlIiwiaWF0IjoxNTU3NzU4OTA3LCJleHAiOjE1NTc3NjI1MDd9.Dmpec9iQ-R40ftfQ3EU-bISYNcUt_ee27X97QhDlHh7EXvJE-ZJUGvE7iQWM6PAEv1umNHXbff1IXUP8DXV6Kn3DKR5ChRnitZTIHWxSXLm1QUtpIA0kw38gO6bcQRR3n6dZ4kNoDQq7sXihdh-nI40GYKMTTolfhvaMZed_gh5eLRcic2JN0PiUdly0O2MOb467VlbUxMbwIcCQ3ZZHq-nHNFpV_n6He_JlWJPZ8gjO0FwsmGafJYrwfviIvI9P0xbnRv0ZLwi31GQieV9HvVTS1rp9BUfAQ_5cki62H14HDDSt3YtoI3UFUhArXKzLZe9BfIDx6Z4uBiFpmA1aig
+              scope: 'https://www.googleapis.com/auth/youtube https://www.googleapis.com/auth/youtube.readonly https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email'
               token_type: Bearer
       videosPerPage: 30
 routes:
@@ -891,14 +891,14 @@ sections:
     siteSettings:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
         enabledByDefault: true
-        hasUrls: false
-        template: null
-        uriFormat: null
+        hasUrls: true
+        template: artists/_entry
+        uriFormat: 'music-production/artists/{slug}'
       96f6905b-bcc3-4e74-91a8-e5458eb5e532:
         enabledByDefault: true
-        hasUrls: false
-        template: null
-        uriFormat: null
+        hasUrls: true
+        template: artists/_entry
+        uriFormat: 'music-production/artists/{slug}'
     structure:
       maxLevels: '1'
       uid: 26a3cb7a-6849-4b74-afb6-aaa515e3d2cd
@@ -1131,7 +1131,7 @@ sections:
       96f6905b-bcc3-4e74-91a8-e5458eb5e532:
         enabledByDefault: true
         hasUrls: true
-        template: encouragemen/_entry
+        template: encouragement/_entry
         uriFormat: 'encouragement/{slug}'
     structure:
       maxLevels: '1'
@@ -1662,4 +1662,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-05-02 15:21:43'
+dateApplied: '2019-05-16 11:04:57'
