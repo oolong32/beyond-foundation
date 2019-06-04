@@ -1,4 +1,4 @@
-dateModified: 1559044838
+dateModified: 1559046316
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -1182,7 +1182,7 @@ sections:
         titleFormat: ''
         titleLabel: Titel
     handle: encouragementEntries
-    name: '6 Encouragement Entries'
+    name: '6 Förder-Projekte'
     propagateEntries: true
     siteSettings:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
@@ -1724,4 +1724,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-05-28 14:25:16'
+dateApplied: '2019-05-28 14:25:44'
