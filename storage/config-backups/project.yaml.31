@@ -1,4 +1,4 @@
-dateModified: 1559044387
+dateModified: 1559046344
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -739,10 +739,10 @@ matrixBlockTypes:
           -
             fields:
               146ae9c9-850a-4e62-94be-863549fdc8dd:
-                required: true
+                required: '1'
                 sortOrder: 2
               ff3ea7a1-1be7-41de-aa15-10c588035c22:
-                required: true
+                required: '1'
                 sortOrder: 1
             name: Content
             sortOrder: 1
@@ -753,7 +753,7 @@ matrixBlockTypes:
         handle: linkText
         instructions: 'Der Text, der verlinkt wird.'
         name: Link-Text
-        searchable: true
+        searchable: '1'
         settings:
           charLimit: ''
           code: ''
@@ -770,7 +770,7 @@ matrixBlockTypes:
         handle: linkUrl
         instructions: 'URL «https://…»'
         name: 'Link-Adresse (URL)'
-        searchable: true
+        searchable: '1'
         settings:
           placeholder: 'https://'
         translationKeyFormat: null
@@ -1104,12 +1104,12 @@ sections:
                   3f013fdf-9050-4d51-b818-050c8a105e6f:
                     required: false
                     sortOrder: 4
+                  90d7cea2-3611-46c2-80f1-af5e53a3a745:
+                    required: false
+                    sortOrder: 5
                   aac9b682-0ac3-4291-bc12-f31f73e6cad9:
                     required: false
                     sortOrder: 3
-                  e90e60b4-237c-4aab-839f-30f73a14fea3:
-                    required: false
-                    sortOrder: 5
                 name: 'Beyond Music Award'
                 sortOrder: 2
         handle: musicNetwork
@@ -1182,7 +1182,7 @@ sections:
         titleFormat: ''
         titleLabel: Titel
     handle: encouragementEntries
-    name: '6 Encouragement Entries'
+    name: '6 Förder-Projekte'
     propagateEntries: true
     siteSettings:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
@@ -1561,27 +1561,27 @@ sections:
               -
                 fields:
                   597d3228-4fef-4e48-b794-3e488a088311:
-                    required: false
-                    sortOrder: 4
+                    required: '0'
+                    sortOrder: '4'
                   63060068-23fd-4091-9e13-96d982008822:
-                    required: false
-                    sortOrder: 3
+                    required: '0'
+                    sortOrder: '3'
                   b729c087-ed9f-4371-8cf0-48e6ef2d9e6a:
-                    required: false
-                    sortOrder: 2
+                    required: '0'
+                    sortOrder: '2'
                   bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
-                    required: false
-                    sortOrder: 1
+                    required: '0'
+                    sortOrder: '1'
                 name: 'Tab 1'
-                sortOrder: 1
+                sortOrder: '1'
         handle: encouragement
-        hasTitleField: false
-        name: Encouragement
+        hasTitleField: '0'
+        name: Förder-Projekte
         sortOrder: 1
         titleFormat: '{section.name|raw}'
         titleLabel: ''
     handle: encouragement
-    name: Encouragement
+    name: Förder-Projekte
     propagateEntries: true
     siteSettings:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
@@ -1724,4 +1724,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-05-28 14:00:38'
+dateApplied: '2019-05-28 14:26:04'

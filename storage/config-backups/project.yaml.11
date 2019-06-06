@@ -1,4 +1,4 @@
-dateModified: 1559656206
+dateModified: 1559656227
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -132,7 +132,7 @@ fields:
     settings:
       placeholder: 'https://…'
     translationKeyFormat: null
-    translationMethod: site
+    translationMethod: none
     type: craft\fields\Url
   3f013fdf-9050-4d51-b818-050c8a105e6f:
     contentColumnType: string
@@ -363,7 +363,7 @@ fields:
     settings:
       placeholder: 'https://…'
     translationKeyFormat: null
-    translationMethod: site
+    translationMethod: none
     type: craft\fields\Url
   aac9b682-0ac3-4291-bc12-f31f73e6cad9:
     contentColumnType: text
@@ -1724,4 +1724,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-06-04 15:50:17'
+dateApplied: '2019-06-04 15:50:35'
