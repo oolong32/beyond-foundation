@@ -1,11 +1,9 @@
-dateModified: 1559032412
+dateModified: 1559056821
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
   transportType: craft\mail\transportadapters\Sendmail
 fieldGroups:
-  02ecc909-a8ca-4329-abc5-f055c7de039e:
-    name: 'Music-Network Awards'
   2d31e491-87da-48b8-85d6-72aba43f554c:
     name: 'Share Links'
   6e35b058-585c-4737-a314-09ba0b44576a:
@@ -322,6 +320,21 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\redactor\Field
+  90d7cea2-3611-46c2-80f1-af5e53a3a745:
+    contentColumnType: string
+    fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
+    handle: linklist
+    instructions: ''
+    name: Linkliste
+    searchable: true
+    settings:
+      contentTable: '{{%matrixcontent_linklist}}'
+      localizeBlocks: ''
+      maxBlocks: ''
+      minBlocks: ''
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Matrix
   92480c84-40d6-46c9-9a07-013329517956:
     contentColumnType: text
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
@@ -717,6 +730,55 @@ imageTransforms:
     position: center-center
     quality: '82'
     width: '750'
+matrixBlockTypes:
+  ab653c53-5d26-43c0-83ae-e610a6f61a94:
+    field: 90d7cea2-3611-46c2-80f1-af5e53a3a745
+    fieldLayouts:
+      c88bae56-0fd8-4ea6-8bb4-1ebd18e2a2df:
+        tabs:
+          -
+            fields:
+              146ae9c9-850a-4e62-94be-863549fdc8dd:
+                required: '1'
+                sortOrder: 2
+              ff3ea7a1-1be7-41de-aa15-10c588035c22:
+                required: '1'
+                sortOrder: 1
+            name: Content
+            sortOrder: 1
+    fields:
+      146ae9c9-850a-4e62-94be-863549fdc8dd:
+        contentColumnType: text
+        fieldGroup: null
+        handle: linkText
+        instructions: 'Der Text, der verlinkt wird.'
+        name: Link-Text
+        searchable: '1'
+        settings:
+          charLimit: ''
+          code: ''
+          columnType: text
+          initialRows: '4'
+          multiline: ''
+          placeholder: ''
+        translationKeyFormat: null
+        translationMethod: site
+        type: craft\fields\PlainText
+      ff3ea7a1-1be7-41de-aa15-10c588035c22:
+        contentColumnType: string
+        fieldGroup: null
+        handle: linkUrl
+        instructions: 'URL «https://…»'
+        name: 'Link-Adresse (URL)'
+        searchable: '1'
+        settings:
+          placeholder: 'https://'
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\Url
+    handle: link
+    name: Link
+    sortOrder: 1
 plugins:
   redactor:
     edition: standard
@@ -736,14 +798,14 @@ plugins:
           clientSecret: 0uCV3T2WxPjmoee3_7h91Xra
       tokens:
         youtube:
-          accessToken: ya29.Gl0XB6gspaLvbyH1tg9bIxEf0KoTADIddKWju5reb-Tto6iqB9MhbmQOUc8pvj0nFsWyJJH1tUw75L3IK7kbv4JTmFPDAH-VLeLiNBFulGqSC6Z_waub1KllGYro2Ow
-          expires: 1559036012
+          accessToken: ya29.Gl0XB1CeIY0CQp5bZ7MhTMWJvfj2-laVK9qRepNTq-Ah6yg1N0YzRvj-tJ_5TS9Zyxj-w416VVpL6H4IPh2WRk1bHZ7UXRUX15giHxLwjbY0H7ISUE_TgFk75bXohh0
+          expires: 1559060421
           refreshToken: 1/h_aaH-zGnHYJCo5IJxtfkrdl09zaCcnwd20rF1paffZJ-qin2ZCXBzCqbn4gpn5A
           resourceOwnerId: null
           values:
             values:
-              id_token: eyJhbGciOiJSUzI1NiIsImtpZCI6IjA3YTA4MjgzOWYyZTcxYTliZjZjNTk2OTk2Yjk0NzM5Nzg1YWZkYzMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTU5MjQ2NDUyNTc5OTAyMzQ3NDYiLCJlbWFpbCI6ImJleW9uZHNpbmdpbmdjb21AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiIzVU5xcW85NnpqLVhnSzVYYnhNU1JnIiwibmFtZSI6IkJleW9uZCBTaW5naW5nIiwicGljdHVyZSI6Imh0dHBzOi8vbGg1Lmdvb2dsZXVzZXJjb250ZW50LmNvbS8tQnJZdUI5d1JDN0UvQUFBQUFBQUFBQUkvQUFBQUFBQUFBQWsvZVNWWTVhamtmRVUvczk2LWMvcGhvdG8uanBnIiwiZ2l2ZW5fbmFtZSI6IkJleW9uZCIsImZhbWlseV9uYW1lIjoiU2luZ2luZyIsImxvY2FsZSI6ImRlIiwiaWF0IjoxNTU5MDMyNDEyLCJleHAiOjE1NTkwMzYwMTJ9.HhcD9sUgPtybfuV1A5iN1uKWCD_3r6e7r5jRohrC_ZmLbRxU_0DO15Do0Qc3wUfNOa70odyLTTG-LAiAkozBzLGYuH0KKuHW_2HKVOWafo12kkSdDv9baHxzH5Y-68Foect0Z2xIpQJWf8JMaber2nxI1MU-8KrwrLjYwWK6CxB-dHCiHa19wVeqp2wLf7LC-ZAuHt3xf3tO6WIRP3rhHPdpd2wyGq9b28dagLVqLdZ7CEhw48tsUD2m2Q9jFdTLulcUTcC9h1insx_n-g95Jcfy_lvij7WBUSLQjzFZiSSvD6Ojdq4BhFNqze0f_Kv9-vYajfXtuarQk0EVCdXJqw
-              scope: 'https://www.googleapis.com/auth/youtube.readonly https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/youtube https://www.googleapis.com/auth/userinfo.email'
+              id_token: eyJhbGciOiJSUzI1NiIsImtpZCI6IjA3YTA4MjgzOWYyZTcxYTliZjZjNTk2OTk2Yjk0NzM5Nzg1YWZkYzMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTU5MjQ2NDUyNTc5OTAyMzQ3NDYiLCJlbWFpbCI6ImJleW9uZHNpbmdpbmdjb21AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJ5aXU0a0tvZmdMT3c5eVU5d0c2Ym53IiwiaWF0IjoxNTU5MDU2ODIxLCJleHAiOjE1NTkwNjA0MjF9.f7QfbKy8mqGTjew4mRJpldlcrRCThXZkJs1-OgtEPue_tnPdRu1EQ8-kERD4vaTSVkkmziSFxpp_azakeHzJ0d-wz9uX-8cCI1JBaiShXs-5B-dD34UXqj8aa29K7wtcGR6xRcOfU4QY2ZTtKMU5-Nwvi8P-M-jqvYCUEa5yK-MwpzPb95lhsPpAPpMgRYwHJrmSV9qtmT6B6feFRwzXEWSdBHAVHc5f7uX6B1WQW_l4R99nZt1FfPKY9ISxLjcZXhnKtpOM-d1SugpKoWfuFT4RQqWNjBIXGBKQpEEE3EWhjRDyOszEqXDetcIERhd-78G4cbi3SvDHf9IZHNzdCg
+              scope: 'https://www.googleapis.com/auth/youtube.readonly https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/youtube https://www.googleapis.com/auth/userinfo.profile'
               token_type: Bearer
       videosPerPage: 30
 routes:
@@ -1042,12 +1104,12 @@ sections:
                   3f013fdf-9050-4d51-b818-050c8a105e6f:
                     required: false
                     sortOrder: 4
+                  90d7cea2-3611-46c2-80f1-af5e53a3a745:
+                    required: false
+                    sortOrder: 5
                   aac9b682-0ac3-4291-bc12-f31f73e6cad9:
                     required: false
                     sortOrder: 3
-                  e90e60b4-237c-4aab-839f-30f73a14fea3:
-                    required: false
-                    sortOrder: 5
                 name: 'Beyond Music Award'
                 sortOrder: 2
         handle: musicNetwork
@@ -1120,7 +1182,7 @@ sections:
         titleFormat: ''
         titleLabel: Titel
     handle: encouragementEntries
-    name: '6 Encouragement Entries'
+    name: '6 Förder-Projekte'
     propagateEntries: true
     siteSettings:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
@@ -1499,27 +1561,27 @@ sections:
               -
                 fields:
                   597d3228-4fef-4e48-b794-3e488a088311:
-                    required: false
-                    sortOrder: 4
+                    required: '0'
+                    sortOrder: '4'
                   63060068-23fd-4091-9e13-96d982008822:
-                    required: false
-                    sortOrder: 3
+                    required: '0'
+                    sortOrder: '3'
                   b729c087-ed9f-4371-8cf0-48e6ef2d9e6a:
-                    required: false
-                    sortOrder: 2
+                    required: '0'
+                    sortOrder: '2'
                   bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
-                    required: false
-                    sortOrder: 1
+                    required: '0'
+                    sortOrder: '1'
                 name: 'Tab 1'
-                sortOrder: 1
+                sortOrder: '1'
         handle: encouragement
-        hasTitleField: false
-        name: Encouragement
+        hasTitleField: '0'
+        name: Förderung
         sortOrder: 1
         titleFormat: '{section.name|raw}'
         titleLabel: ''
     handle: encouragement
-    name: Encouragement
+    name: Förderung
     propagateEntries: true
     siteSettings:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
@@ -1662,4 +1724,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-05-28 11:34:01'
+dateApplied: '2019-05-28 23:55:44'
