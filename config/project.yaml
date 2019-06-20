@@ -1,4 +1,4 @@
-dateModified: 1561015528
+dateModified: 1561015690
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -1402,12 +1402,12 @@ sections:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
         enabledByDefault: true
         hasUrls: true
-        template: disclaimer
+        template: privacy
         uriFormat: disclaimer
       96f6905b-bcc3-4e74-91a8-e5458eb5e532:
         enabledByDefault: true
         hasUrls: true
-        template: disclaimer
+        template: privacy
         uriFormat: disclaimer
     type: single
   b4b612d6-fe0e-408a-92a8-8d6321e2e397:
