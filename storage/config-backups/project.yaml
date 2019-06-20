@@ -1,4 +1,4 @@
-dateModified: 1561015528
+dateModified: 1561019044
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -798,13 +798,13 @@ plugins:
           clientSecret: 0uCV3T2WxPjmoee3_7h91Xra
       tokens:
         youtube:
-          accessToken: ya29.Gl0tB0mynuDvD1yRyxHls1QOEFfqWpeLKyLlC8npy-sIay4DYs3LJdgpTexbmvo_rfkJ99bNDSvc_E-lvSisV9xOzH5fNDUvRRa5uYNjcB5-bUUT1hwIuR97yRqoH_g
-          expires: 1561018971
+          accessToken: ya29.Gl0tBxHMc7ZlBA-eVOjO5IacQeMVF4Jk6f_deGkDvSvvTWySU9970wgXd04wWWPHG2xPzM7H_-l-w4d7Aso_24OKCDfi4Hy_tZDirZ3moEO8F85OYmUSnIxzI9iiJa0
+          expires: 1561022644
           refreshToken: 1/h_aaH-zGnHYJCo5IJxtfkrdl09zaCcnwd20rF1paffZJ-qin2ZCXBzCqbn4gpn5A
           resourceOwnerId: null
           values:
             values:
-              id_token: eyJhbGciOiJSUzI1NiIsImtpZCI6IjY4NjQyODlmZmE1MWU0ZTE3ZjE0ZWRmYWFmNTEzMGRmNDBkODllN2QiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTU5MjQ2NDUyNTc5OTAyMzQ3NDYiLCJlbWFpbCI6ImJleW9uZHNpbmdpbmdjb21AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJwLVVsRjU3NmhGTUxvSHJ2d2NCZURnIiwibmFtZSI6IkJleW9uZCBTaW5naW5nIiwicGljdHVyZSI6Imh0dHBzOi8vbGg1Lmdvb2dsZXVzZXJjb250ZW50LmNvbS8tQnJZdUI5d1JDN0UvQUFBQUFBQUFBQUkvQUFBQUFBQUFBQWsvZVNWWTVhamtmRVUvczk2LWMvcGhvdG8uanBnIiwiZ2l2ZW5fbmFtZSI6IkJleW9uZCIsImZhbWlseV9uYW1lIjoiU2luZ2luZyIsImxvY2FsZSI6ImRlIiwiaWF0IjoxNTYxMDE1MzcxLCJleHAiOjE1NjEwMTg5NzF9.df22RnlhC5BfolN7a96eeBkqno6NUiX8tmHBf5cUBV0eLvtavNTt6FhoRtQJvjLN3dkAwxYTVrgPpe_OAY3S7F_CCQWvkHHObbSa8_4SyC_knO5laX2Z3bEX9cXXlcypl-CB0W_DCktyk-xD5sn8bKKFYXIcb9aRnoA7Q7kC3RLXBibn_lcul953c7OhTFYkFoHCCLEolbac9WM1h4iVHBwUK4LkNQi4bV7Xf7qla6sUEbg-FRG0rr-6Rs1D_Glol7fU2BZBK4o2I-zmLmWwzyX7KmynSa1GwNfR8HWWD7X6SiDBo3DfmD0lkgVcYeSRmw_lEYwognOLH1X5bN3GWQ
+              id_token: eyJhbGciOiJSUzI1NiIsImtpZCI6IjY4NjQyODlmZmE1MWU0ZTE3ZjE0ZWRmYWFmNTEzMGRmNDBkODllN2QiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTU5MjQ2NDUyNTc5OTAyMzQ3NDYiLCJlbWFpbCI6ImJleW9uZHNpbmdpbmdjb21AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiI4dm41Yks2QV9wUnBjUWFzZFl0amxnIiwibmFtZSI6IkJleW9uZCBTaW5naW5nIiwicGljdHVyZSI6Imh0dHBzOi8vbGg1Lmdvb2dsZXVzZXJjb250ZW50LmNvbS8tQnJZdUI5d1JDN0UvQUFBQUFBQUFBQUkvQUFBQUFBQUFBQWsvZVNWWTVhamtmRVUvczk2LWMvcGhvdG8uanBnIiwiZ2l2ZW5fbmFtZSI6IkJleW9uZCIsImZhbWlseV9uYW1lIjoiU2luZ2luZyIsImxvY2FsZSI6ImRlIiwiaWF0IjoxNTYxMDE5MDQ0LCJleHAiOjE1NjEwMjI2NDR9.VLDPq17vxXqwE06NsvZ5K5oPGHpnTKlKnYFo-htyBf3S0nBITS9D8IoIsSylZMSaCDf6lSCIGhJPHQj34IxVuoGGs25urdb7p43cNrpynNKm0JGZpAPYuvHn2BAwgBdpOAl1fqECulK0ZowGjE3B3Rk9jjRwwO0-IrceurJrQkU_2Dm-WC68iDRohUtClGMivuSmrEr4CkGq7njJSOYp8DxciB6jIyBesP75nenYXKwalKtmjrNQqERqnftaiH9l2oNIsVPt1B9N25_IYnk_7mA6mvtqN9hy5spR79lj8lnnEelIpdFOBCPpfEySNH9W4jVa0DUnaRhyKd_Es7pn4w
               scope: 'https://www.googleapis.com/auth/youtube https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/youtube.readonly https://www.googleapis.com/auth/userinfo.email'
               token_type: Bearer
       videosPerPage: 30
@@ -1402,12 +1402,12 @@ sections:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
         enabledByDefault: true
         hasUrls: true
-        template: disclaimer
+        template: privacy
         uriFormat: disclaimer
       96f6905b-bcc3-4e74-91a8-e5458eb5e532:
         enabledByDefault: true
         hasUrls: true
-        template: disclaimer
+        template: privacy
         uriFormat: disclaimer
     type: single
   b4b612d6-fe0e-408a-92a8-8d6321e2e397:
@@ -1724,4 +1724,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-06-20 09:28:10'
+dateApplied: '2019-06-20 13:56:24'

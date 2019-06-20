@@ -9,3 +9,4 @@ gulpfile.js
 web/assets/fonts
 /uploads
 .tern-project
+web/.well-known/
