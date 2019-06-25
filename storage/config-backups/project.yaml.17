@@ -1,4 +1,4 @@
-dateModified: 1559810835
+dateModified: 1561322819
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -798,14 +798,14 @@ plugins:
           clientSecret: 0uCV3T2WxPjmoee3_7h91Xra
       tokens:
         youtube:
-          accessToken: ya29.Gl0gBz6xi80RsTuPzoK_o1N_9g88oxydWxK8dQ0FBM8casHfLj-ydDcTJLKln3AGUa3PTKRXZoCSbV0f6xZpj8O9PkdlE7Yg8at3HrjMxCdaK7lqbu91V9K8yV2hOww
-          expires: 1559814435
+          accessToken: ya29.Gl0xB9RqoeHxokvAD7DcqMW9xC2-65d-eSKWSW84VYZR_hGnkB6LVrxLOBBPJnRUqdeA1Qvs848TiwFZ-DwJ9rlBCwSrezTZTrjYp6ZDDcUy-htYEi7vH0NsVMTGylA
+          expires: 1561326419
           refreshToken: 1/h_aaH-zGnHYJCo5IJxtfkrdl09zaCcnwd20rF1paffZJ-qin2ZCXBzCqbn4gpn5A
           resourceOwnerId: null
           values:
             values:
-              id_token: eyJhbGciOiJSUzI1NiIsImtpZCI6ImM3ZjUyMmQwMzIyODRkMjUyYmVlNGZkODA1NjBjZWZhMGZiNjBjMzkiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTU5MjQ2NDUyNTc5OTAyMzQ3NDYiLCJlbWFpbCI6ImJleW9uZHNpbmdpbmdjb21AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiIzMmxma21MOXd4M29kTXJ1SEtHdTRBIiwibmFtZSI6IkJleW9uZCBTaW5naW5nIiwicGljdHVyZSI6Imh0dHBzOi8vbGg1Lmdvb2dsZXVzZXJjb250ZW50LmNvbS8tQnJZdUI5d1JDN0UvQUFBQUFBQUFBQUkvQUFBQUFBQUFBQWsvZVNWWTVhamtmRVUvczk2LWMvcGhvdG8uanBnIiwiZ2l2ZW5fbmFtZSI6IkJleW9uZCIsImZhbWlseV9uYW1lIjoiU2luZ2luZyIsImxvY2FsZSI6ImRlIiwiaWF0IjoxNTU5ODEwODM1LCJleHAiOjE1NTk4MTQ0MzV9.SiP2WBnjMs-AuMrkJiDU6gk2AevMz0sVSuJpOBua-lNVFQI8Q3uqs8BWtrHBTHpOUZZuNn-pFaRc0OIFtLZpEF4QgBhhd405RNzU0_h4n34mfhkqHc1Ez0i1Dq-K14UeVB-Nq1uwYGaLR_VcPwZNUUn4loJFTxXxd6KgeRbpSwTH3Pol2oTyl_wgA_rDkWL6IGKuCfs7LlmEQlSpchWmoQTIhOs4LBNgbxyY8yk5tGbALk9Y89NcQaJIkwCZOMVhA7bDUQHaQXQYEIHAeEUEKbJpP6X_uwxfjOcguzVnVUQ3sWL9EBleBROZ6ZZM_IHI7KQIsFmUgfQj1xidpfRAwQ
-              scope: 'https://www.googleapis.com/auth/youtube.readonly https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/youtube'
+              id_token: eyJhbGciOiJSUzI1NiIsImtpZCI6IjY4NjQyODlmZmE1MWU0ZTE3ZjE0ZWRmYWFmNTEzMGRmNDBkODllN2QiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTU5MjQ2NDUyNTc5OTAyMzQ3NDYiLCJlbWFpbCI6ImJleW9uZHNpbmdpbmdjb21AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJwUDl5cUxKLWFpRTFvYWdYd1hLT1JBIiwiaWF0IjoxNTYxMzIyODE5LCJleHAiOjE1NjEzMjY0MTl9.iUtA99Hr_8YELp0q2T5A0sTW7kv1BGZ3QTEQkSQvpHtBQuzGgwvX1wn_8Y35rHCjoMg-gWCjX-_SZi0gvhrPLURkLtUqG4m4fniyoKI0-OpVx3h_1w19O1JtSKbjk8odXO-WX6gZnim4SmUNN73ZQuFeBzXVw446rJKDvfRBAK8-JUIea9CeTu5MnLD1xrYwKLSNe06cpbye_JVXYIVTt-R7XqdCtIJhXHXwEmfcTH5Z-IxFIP3LdjlzEOCuFrhzhX3qnQN_GoKGlv30AoaFJoiJp_bG6fI9_RlT2Dhr4VpUMjeJaNGfiDgyJMj5gH89riZ4o8k9BnMWYx73JWvggQ
+              scope: 'https://www.googleapis.com/auth/youtube https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/youtube.readonly https://www.googleapis.com/auth/userinfo.email'
               token_type: Bearer
       videosPerPage: 30
 routes:
@@ -1382,20 +1382,20 @@ sections:
               -
                 fields:
                   752ed5fb-e81b-4651-8eed-3bb3f4c358f9:
-                    required: false
-                    sortOrder: 2
+                    required: '0'
+                    sortOrder: '2'
                   bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
-                    required: false
-                    sortOrder: 1
+                    required: '0'
+                    sortOrder: '1'
                 name: 'Tab 1'
-                sortOrder: 1
-        handle: privacy
-        hasTitleField: false
+                sortOrder: '1'
+        handle: disclaimer
+        hasTitleField: '0'
         name: Datenschutz
         sortOrder: 1
         titleFormat: '{section.name|raw}'
         titleLabel: ''
-    handle: privacy
+    handle: disclaimer
     name: Datenschutz
     propagateEntries: true
     siteSettings:
@@ -1403,12 +1403,12 @@ sections:
         enabledByDefault: true
         hasUrls: true
         template: privacy
-        uriFormat: privacy
+        uriFormat: disclaimer
       96f6905b-bcc3-4e74-91a8-e5458eb5e532:
         enabledByDefault: true
         hasUrls: true
         template: privacy
-        uriFormat: privacy
+        uriFormat: disclaimer
     type: single
   b4b612d6-fe0e-408a-92a8-8d6321e2e397:
     enableVersioning: true
@@ -1724,4 +1724,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-06-11 09:32:34'
+dateApplied: '2019-06-24 02:25:29'

@@ -1,4 +1,4 @@
-dateModified: 1560247934
+dateModified: 1561344941
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -798,14 +798,14 @@ plugins:
           clientSecret: 0uCV3T2WxPjmoee3_7h91Xra
       tokens:
         youtube:
-          accessToken: ya29.Gl0lB6qOJ5eCD3tyeu0AQ6PJoQC_p7KvrGc5-kQLLmL_Y8QPEHf_ZwdzcfsKl2a0qumcxJtsfYidON7JNmdRp3WEaf9UMWM15S_YNv2ZBgVE8-t9Z53C_gHmgmehHJI
-          expires: 1560251534
+          accessToken: ya29.Gl0xB5Qkpz5MDJL_rjzbbrJxjFPYWgYbOqGJk8FclF0gUwkaf3k-fdb5plDy7q8Wo5qCoYG1FLt6wqIaWIO2fh4GyO4ecBrzcGuPiscAK_G-2vu_eYupwWwOKP78J9o
+          expires: 1561348541
           refreshToken: 1/h_aaH-zGnHYJCo5IJxtfkrdl09zaCcnwd20rF1paffZJ-qin2ZCXBzCqbn4gpn5A
           resourceOwnerId: null
           values:
             values:
-              id_token: eyJhbGciOiJSUzI1NiIsImtpZCI6Ijg0NmRkYWY4OGNjMTkyMzUyMjFjOGVlMGRmYTNiYjQ2YWUyN2JmZmMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTU5MjQ2NDUyNTc5OTAyMzQ3NDYiLCJlbWFpbCI6ImJleW9uZHNpbmdpbmdjb21AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJtY1YwTUhPZHVUY2VhdEdVcHNQZEp3IiwiaWF0IjoxNTYwMjQ3OTM0LCJleHAiOjE1NjAyNTE1MzR9.hJiDh5G1Bl26jaZarAZF6NqfVxNJVMADrxcBKdK_Mnhd1ht3cb9hqtrmT7yHJA_MNW1jZ_nNpS8xxj_nvEyLIyFdv7gDg_YBQanrHg4tWvkd8miDwt1DEvZJTuZvRsagpEf3jNlfw2qCWY4GbwP-qitBZS4SkzoEjL6UnylUxewqRYhGjUDt1YeXXxez47xebZZ-epWpDL4rc-4g39GQ1Pov3p44SvzH8-YolSQEkTWnxZM-M_ZH5z_a2oD2Zwqc2s96pKsvQxLKvJcqMYfUsKwYknq8Aq44f3aKUgCoscvX60TkGnrQLxSbeK1TbrbHhKTlawRNOEhoLc-muQDnCA
-              scope: 'https://www.googleapis.com/auth/youtube.readonly https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/youtube'
+              id_token: eyJhbGciOiJSUzI1NiIsImtpZCI6IjExOGRmMjU0YjgzNzE4OWQxYmMyYmU5NjUwYTgyMTEyYzAwZGY1YTQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTU5MjQ2NDUyNTc5OTAyMzQ3NDYiLCJlbWFpbCI6ImJleW9uZHNpbmdpbmdjb21AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJ4NzlLd3RicVVIWXU3TEhpdHRQOXJBIiwiaWF0IjoxNTYxMzQ0OTQxLCJleHAiOjE1NjEzNDg1NDF9.a3QEe0eI_SlGsgtzIaCK8MQCIw5ZLDiYw_hh6lfPlFS5CC9g_miEnjw7vN2oOSTq72jSVYY2m_Ak8HUsLm_4Q0Lno7WfqY1UH7_wPdxuwsCl8Qsg2YhtaSdsxjv7JoLkQYbU4zMA4de0bYeHe1hE7kwiJt-XX5Nb3K01qPV9cgFM3nnRXgcSMibw6ATygDhgWYFrSnHPP7bJuRLLowtT7KuA2ptg-UQgafJRD4u4wrUbAvJoqxqWLyxZMSKC6QqFKSBnh9pWc9wa3dCTT-NN4PIId4Z2zyFts5uq2tPHI7AXP4RVRryttW7UfLc-nJGaWB7z3RSgYHRnrKQlhZRPTQ
+              scope: 'https://www.googleapis.com/auth/youtube.readonly https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/youtube https://www.googleapis.com/auth/userinfo.profile'
               token_type: Bearer
       videosPerPage: 30
 routes:
@@ -1382,20 +1382,20 @@ sections:
               -
                 fields:
                   752ed5fb-e81b-4651-8eed-3bb3f4c358f9:
-                    required: false
-                    sortOrder: 2
+                    required: '0'
+                    sortOrder: '2'
                   bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
-                    required: false
-                    sortOrder: 1
+                    required: '0'
+                    sortOrder: '1'
                 name: 'Tab 1'
-                sortOrder: 1
-        handle: privacy
-        hasTitleField: false
+                sortOrder: '1'
+        handle: disclaimer
+        hasTitleField: '0'
         name: Datenschutz
         sortOrder: 1
         titleFormat: '{section.name|raw}'
         titleLabel: ''
-    handle: privacy
+    handle: disclaimer
     name: Datenschutz
     propagateEntries: true
     siteSettings:
@@ -1403,12 +1403,12 @@ sections:
         enabledByDefault: true
         hasUrls: true
         template: privacy
-        uriFormat: privacy
+        uriFormat: disclaimer
       96f6905b-bcc3-4e74-91a8-e5458eb5e532:
         enabledByDefault: true
         hasUrls: true
         template: privacy
-        uriFormat: privacy
+        uriFormat: disclaimer
     type: single
   b4b612d6-fe0e-408a-92a8-8d6321e2e397:
     enableVersioning: true
@@ -1724,4 +1724,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-06-12 01:17:45'
+dateApplied: '2019-06-24 07:34:29'

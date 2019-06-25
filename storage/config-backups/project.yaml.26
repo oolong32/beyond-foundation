@@ -1,4 +1,4 @@
-dateModified: 1559656267
+dateModified: 1561261972
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -91,7 +91,7 @@ fields:
     settings:
       placeholder: 'https://…'
     translationKeyFormat: null
-    translationMethod: site
+    translationMethod: none
     type: craft\fields\Url
   28f5f6ca-2091-4f1e-86ed-32ea3b8f56ae:
     contentColumnType: string
@@ -181,7 +181,7 @@ fields:
     settings:
       placeholder: 'https://…'
     translationKeyFormat: null
-    translationMethod: site
+    translationMethod: none
     type: craft\fields\Url
   597d3228-4fef-4e48-b794-3e488a088311:
     contentColumnType: text
@@ -227,7 +227,7 @@ fields:
       multiline: ''
       placeholder: 'Sende eine SMS mit «…» an die Nummer 60660 (DE) oder 9000 (CH).'
     translationKeyFormat: null
-    translationMethod: none
+    translationMethod: site
     type: craft\fields\PlainText
   63060068-23fd-4091-9e13-96d982008822:
     contentColumnType: text
@@ -798,14 +798,14 @@ plugins:
           clientSecret: 0uCV3T2WxPjmoee3_7h91Xra
       tokens:
         youtube:
-          accessToken: ya29.Gl0cB3tMeLIhebACziV3dnQr3Wn913va0hl99Tz56fCIGsIXoflOO_Y65JechRBWh4EfDiA6-A0nDUgoC3lb16pNqDfCbvCxUXi3_A251dtIf0Bsc8C9Mhb800Oy1Qo
-          expires: 1559658041
+          accessToken: ya29.Gl0wB28B88kI_3Veke82t9_TDc8s8Gj4xPmE6NFTFMMiPD3P3DewVqqEFZcQLoGjgH5rCAH5t4-7_TNVIWjzkPVrnjriJPGTW8CJRC4OZL0VvNCkppJbtIBf9iCZbew
+          expires: 1561265572
           refreshToken: 1/h_aaH-zGnHYJCo5IJxtfkrdl09zaCcnwd20rF1paffZJ-qin2ZCXBzCqbn4gpn5A
           resourceOwnerId: null
           values:
             values:
-              id_token: eyJhbGciOiJSUzI1NiIsImtpZCI6ImM3ZjUyMmQwMzIyODRkMjUyYmVlNGZkODA1NjBjZWZhMGZiNjBjMzkiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTU5MjQ2NDUyNTc5OTAyMzQ3NDYiLCJlbWFpbCI6ImJleW9uZHNpbmdpbmdjb21AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiIwajg5Q2JpSUsxMnhtT3ItX3FQb0VnIiwiaWF0IjoxNTU5NjU0NDQxLCJleHAiOjE1NTk2NTgwNDF9.BCbQGQLTCB0cRq55K50MVnZ1DsPC2nkqwkVYV6ToAKepQGG7QyKjtuxQjeQnvxyi6LbEJ61-ZtwEbGI-5fnj7SeOejAtkO1p8F1XApacQBuN9iD8AtD_QJNlERB274ZhUzbF8CisSyMxlVHKxc2BQSYKJjCktIwrr8Sn7hiIs6QLZMcMwThYOs6h7YRQeNI0u4Ri6eyxcyPCwNOsQeA1WIQw1vmq9ExW4jwpumXWbVTN1zB-Vnuj_KyneMHh58kmoMAp5ebcpb8PyQDFb1i2-PFBUz_qHd5p0HhMSuWgz9xrLGNCIJV3LOirbPfHzlQiix0BWTYoK6ZbkkUlszSZsQ
-              scope: 'https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/youtube.readonly https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/youtube'
+              id_token: eyJhbGciOiJSUzI1NiIsImtpZCI6IjY4NjQyODlmZmE1MWU0ZTE3ZjE0ZWRmYWFmNTEzMGRmNDBkODllN2QiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTU5MjQ2NDUyNTc5OTAyMzQ3NDYiLCJlbWFpbCI6ImJleW9uZHNpbmdpbmdjb21AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJkX0xLcm5UeHU1aXVQMm1xbUh0Rnh3IiwibmFtZSI6IkJleW9uZCBTaW5naW5nIiwicGljdHVyZSI6Imh0dHBzOi8vbGg1Lmdvb2dsZXVzZXJjb250ZW50LmNvbS8tQnJZdUI5d1JDN0UvQUFBQUFBQUFBQUkvQUFBQUFBQUFBQWsvZVNWWTVhamtmRVUvczk2LWMvcGhvdG8uanBnIiwiZ2l2ZW5fbmFtZSI6IkJleW9uZCIsImZhbWlseV9uYW1lIjoiU2luZ2luZyIsImxvY2FsZSI6ImRlIiwiaWF0IjoxNTYxMjYxOTcxLCJleHAiOjE1NjEyNjU1NzF9.J2mubQNtjgeKhNn-DTiaCOOyBQY4HnMLsWvdn84mxxgJkcnBU-cOWghYGooMGr_OjperF7IGCfpjRFgkUVkQMOiK82tQa4suQuWOsX6RrKV9DZolKDGR44eHrnqpZhT1Ss0HhGrcLZAHg6gj-78OzjKHyB5LoLHm89iRkAS64dLufzq9qEPkpkHVG2BWkdFc_5if-EN7ijvaIJFv6gV_htf-Ehj2KUcWrVVbn6C93D0aatX9mbCiCqVEVGwOYt8aBYiEozrJjkYqoJuZdH_y1Ah0O8SIqT3oIHxDJWKuVbbHhAQcb87PjLEEQth8R2Pcd6p1hrous-dsssuM6GpUPg
+              scope: 'https://www.googleapis.com/auth/youtube.readonly https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/youtube https://www.googleapis.com/auth/userinfo.profile'
               token_type: Bearer
       videosPerPage: 30
 routes:
@@ -1382,20 +1382,20 @@ sections:
               -
                 fields:
                   752ed5fb-e81b-4651-8eed-3bb3f4c358f9:
-                    required: false
-                    sortOrder: 2
+                    required: '0'
+                    sortOrder: '2'
                   bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
-                    required: false
-                    sortOrder: 1
+                    required: '0'
+                    sortOrder: '1'
                 name: 'Tab 1'
-                sortOrder: 1
-        handle: privacy
-        hasTitleField: false
+                sortOrder: '1'
+        handle: disclaimer
+        hasTitleField: '0'
         name: Datenschutz
         sortOrder: 1
         titleFormat: '{section.name|raw}'
         titleLabel: ''
-    handle: privacy
+    handle: disclaimer
     name: Datenschutz
     propagateEntries: true
     siteSettings:
@@ -1403,12 +1403,12 @@ sections:
         enabledByDefault: true
         hasUrls: true
         template: privacy
-        uriFormat: privacy
+        uriFormat: disclaimer
       96f6905b-bcc3-4e74-91a8-e5458eb5e532:
         enabledByDefault: true
         hasUrls: true
         template: privacy
-        uriFormat: privacy
+        uriFormat: disclaimer
     type: single
   b4b612d6-fe0e-408a-92a8-8d6321e2e397:
     enableVersioning: true
@@ -1724,4 +1724,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-06-04 15:51:15'
+dateApplied: '2019-06-23 08:50:06'

@@ -1,4 +1,4 @@
-dateModified: 1559046364
+dateModified: 1561118987
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -79,7 +79,7 @@ fields:
     settings:
       placeholder: 'https://…'
     translationKeyFormat: null
-    translationMethod: site
+    translationMethod: none
     type: craft\fields\Url
   265f2e45-2db1-4395-ab69-942f48810f66:
     contentColumnType: string
@@ -91,7 +91,7 @@ fields:
     settings:
       placeholder: 'https://…'
     translationKeyFormat: null
-    translationMethod: site
+    translationMethod: none
     type: craft\fields\Url
   28f5f6ca-2091-4f1e-86ed-32ea3b8f56ae:
     contentColumnType: string
@@ -103,7 +103,7 @@ fields:
     settings:
       placeholder: 'https://…'
     translationKeyFormat: null
-    translationMethod: site
+    translationMethod: none
     type: craft\fields\Url
   387a6e57-35e5-47bd-9182-119d7ccccf16:
     contentColumnType: text
@@ -132,7 +132,7 @@ fields:
     settings:
       placeholder: 'https://…'
     translationKeyFormat: null
-    translationMethod: site
+    translationMethod: none
     type: craft\fields\Url
   3f013fdf-9050-4d51-b818-050c8a105e6f:
     contentColumnType: string
@@ -181,7 +181,7 @@ fields:
     settings:
       placeholder: 'https://…'
     translationKeyFormat: null
-    translationMethod: site
+    translationMethod: none
     type: craft\fields\Url
   597d3228-4fef-4e48-b794-3e488a088311:
     contentColumnType: text
@@ -210,7 +210,7 @@ fields:
     settings:
       placeholder: 'https://…'
     translationKeyFormat: null
-    translationMethod: site
+    translationMethod: none
     type: craft\fields\Url
   5d482f8a-8e95-43c2-b2d1-beac7424d6bf:
     contentColumnType: text
@@ -227,7 +227,7 @@ fields:
       multiline: ''
       placeholder: 'Sende eine SMS mit «…» an die Nummer 60660 (DE) oder 9000 (CH).'
     translationKeyFormat: null
-    translationMethod: none
+    translationMethod: site
     type: craft\fields\PlainText
   63060068-23fd-4091-9e13-96d982008822:
     contentColumnType: text
@@ -363,7 +363,7 @@ fields:
     settings:
       placeholder: 'https://…'
     translationKeyFormat: null
-    translationMethod: site
+    translationMethod: none
     type: craft\fields\Url
   aac9b682-0ac3-4291-bc12-f31f73e6cad9:
     contentColumnType: text
@@ -410,7 +410,7 @@ fields:
     settings:
       placeholder: 'https://…'
     translationKeyFormat: null
-    translationMethod: site
+    translationMethod: none
     type: craft\fields\Url
   bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
     contentColumnType: text
@@ -467,7 +467,7 @@ fields:
         - image
       defaultUploadLocationSource: 'volume:9eb7856b-e672-4fbf-b4b5-9d00ee79c726'
       defaultUploadLocationSubpath: images/slideshow/mobile
-      limit: '5'
+      limit: '6'
       localizeRelations: ''
       restrictFiles: '1'
       selectionLabel: ''
@@ -491,7 +491,7 @@ fields:
     settings:
       placeholder: 'https://…'
     translationKeyFormat: null
-    translationMethod: site
+    translationMethod: none
     type: craft\fields\Url
   cf6d51c0-4331-4c58-b92c-8621eae977fd:
     contentColumnType: string
@@ -503,7 +503,7 @@ fields:
     settings:
       placeholder: 'https://…'
     translationKeyFormat: null
-    translationMethod: site
+    translationMethod: none
     type: craft\fields\Url
   d175683d-6e5d-484f-9fc1-5678f4b88c32:
     contentColumnType: string
@@ -798,14 +798,14 @@ plugins:
           clientSecret: 0uCV3T2WxPjmoee3_7h91Xra
       tokens:
         youtube:
-          accessToken: ya29.Gl0XB1rZyf4w9gP0j9DQ6l6DQW0uW8qJ36TBO8ktm2I_JUX846FNqIt7tUgEAJniX9ODvkHK9PC-dytIdjZK3Z0G-DkM1ulGlWTnxrMNvWVFxACBGQxK9ur-9gBeFgg
-          expires: 1559047318
+          accessToken: ya29.Gl0uB0scuCjA3aE0sI5dLKSoosLvezvi-CzruToGDWZP6sJLG0IB7zu9g9KY0MzsnsWknrwi375XXZxwxU6CX-OVlp6aRp6-Hv7NZFNfSUfbI1rG5x80KgbRgZgsN00
+          expires: 1561122587
           refreshToken: 1/h_aaH-zGnHYJCo5IJxtfkrdl09zaCcnwd20rF1paffZJ-qin2ZCXBzCqbn4gpn5A
           resourceOwnerId: null
           values:
             values:
-              id_token: eyJhbGciOiJSUzI1NiIsImtpZCI6IjA3YTA4MjgzOWYyZTcxYTliZjZjNTk2OTk2Yjk0NzM5Nzg1YWZkYzMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTU5MjQ2NDUyNTc5OTAyMzQ3NDYiLCJlbWFpbCI6ImJleW9uZHNpbmdpbmdjb21AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJIVHEzd2tDYW52RDN2a242VDlJa0lRIiwiaWF0IjoxNTU5MDQzNzE4LCJleHAiOjE1NTkwNDczMTh9.W_O0dguSevt-ZLIFKaB1KpwZX5MOGpWocrnP30XjskP9UVsodFEiqmNc-ENjR3QQkPESbCyvTJzpmO764g68YrF6us-sOFNDrF6AP7ATn5jFQyh6VdYEhuzTSlfH9OhsvIakY_D8jcXoSJqBKRI6oOJwAGgvg-wqDHnYvP8G2Ik-f_-FHDzY78uyDZ5oq4qqqT5sSgOcR1P0miWem98uzKy1YjLhKnHZ8hQ0HMg7MqDTP1ow16KOWMM1R8uxL7adlgZ5f-jjHE8FElxdYjVOuyx-vwteLkPV7WpmDcX5t3gI_fL0xPiI-Rk7gARqnaHc6Qo40wDV604cpI15VHdkhA
-              scope: 'https://www.googleapis.com/auth/youtube https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/youtube.readonly'
+              id_token: eyJhbGciOiJSUzI1NiIsImtpZCI6IjY4NjQyODlmZmE1MWU0ZTE3ZjE0ZWRmYWFmNTEzMGRmNDBkODllN2QiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTU5MjQ2NDUyNTc5OTAyMzQ3NDYiLCJlbWFpbCI6ImJleW9uZHNpbmdpbmdjb21AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJpVkM3c0Y4d0tHZkxrQlR5NElnU1JRIiwiaWF0IjoxNTYxMTE4OTg3LCJleHAiOjE1NjExMjI1ODd9.lJYvQYX-27UtD1BqSLCUj_wJ7zUBrVMuiWjywWlUXuNca9ou2JgDyd8oUjHkFuRdU21qyID00LbIOfzp1Vtr2GUiQaBECh-deiuCdLt7-0iqvPYDcYFWW63czO3BXw72KePUMRA63RV8EFMBOKWort-g_E3nPv96ViLTauYHLnh_vfpAlr98YdncSfrxVp-CZMBNfFE6VW-U3sE5Gb_tnXbcx7zU9LLV-Iel7phVHGyLa_eIrJTMq9nU1mA1QXWVIMIGORF3o87nPy8Zaz-yjhNWqtSmSF3iHtmA4eBPotdQkMrl0jtOFORx-Wf9paegzywiZJZmQoV0U5_Z2M0ywg
+              scope: 'https://www.googleapis.com/auth/youtube.readonly https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/youtube'
               token_type: Bearer
       videosPerPage: 30
 routes:
@@ -1382,20 +1382,20 @@ sections:
               -
                 fields:
                   752ed5fb-e81b-4651-8eed-3bb3f4c358f9:
-                    required: false
-                    sortOrder: 2
+                    required: '0'
+                    sortOrder: '2'
                   bec4dbb5-283d-411c-8cf4-c1f560d0b80f:
-                    required: false
-                    sortOrder: 1
+                    required: '0'
+                    sortOrder: '1'
                 name: 'Tab 1'
-                sortOrder: 1
-        handle: privacy
-        hasTitleField: false
+                sortOrder: '1'
+        handle: disclaimer
+        hasTitleField: '0'
         name: Datenschutz
         sortOrder: 1
         titleFormat: '{section.name|raw}'
         titleLabel: ''
-    handle: privacy
+    handle: disclaimer
     name: Datenschutz
     propagateEntries: true
     siteSettings:
@@ -1403,12 +1403,12 @@ sections:
         enabledByDefault: true
         hasUrls: true
         template: privacy
-        uriFormat: privacy
+        uriFormat: disclaimer
       96f6905b-bcc3-4e74-91a8-e5458eb5e532:
         enabledByDefault: true
         hasUrls: true
         template: privacy
-        uriFormat: privacy
+        uriFormat: disclaimer
     type: single
   b4b612d6-fe0e-408a-92a8-8d6321e2e397:
     enableVersioning: true
@@ -1576,12 +1576,12 @@ sections:
                 sortOrder: '1'
         handle: encouragement
         hasTitleField: '0'
-        name: Förder-Projekte
+        name: Förderung
         sortOrder: 1
         titleFormat: '{section.name|raw}'
         titleLabel: ''
     handle: encouragement
-    name: Förder-Projekte
+    name: Förderung
     propagateEntries: true
     siteSettings:
       802d4b06-1f71-4c60-8b00-c331a21b5134:
@@ -1724,4 +1724,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-05-28 14:26:22'
+dateApplied: '2019-06-21 15:19:22'
