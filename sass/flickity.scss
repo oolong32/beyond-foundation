@@ -49,6 +49,12 @@ https://flickity.metafizzy.co
   background: hsla(0, 0%, 100%, 0.75);
   border: none;
   color: #333;
+  opacity: 0;
+}
+
+// nicht so subtil …
+.video-slider-section:hover .flickity-button {
+  opacity: 1;
 }
 
 .flickity-button:hover {
