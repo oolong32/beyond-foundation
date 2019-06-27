@@ -57,7 +57,7 @@ return [
         'allowAdminChanges' => true,
         // Custom Aliases
         'aliases' => [
-          '@assetBasePath' => 'http://new.beyond-foundation.org/'
+          '@assetBasePath' => 'http://beyond-foundation.org/'
         ],
     ],
 ];

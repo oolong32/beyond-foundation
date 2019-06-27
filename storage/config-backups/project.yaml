@@ -1,4 +1,4 @@
-dateModified: 1561637101
+dateModified: 1561646190
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -186,12 +186,12 @@ fields:
   4e99f4f0-5ab6-49e7-b5b8-9f0b28c97b24:
     contentColumnType: string
     fieldGroup: 85d8c0e7-6a43-4691-8d57-0ea516983de7
-    handle: videoKarusellEintrag
+    handle: videoSlider
     instructions: 'Mehrere Videos mit Text-Legende.'
-    name: Video-Karusell-Eintrag
+    name: Video-Karusell
     searchable: true
     settings:
-      contentTable: '{{%matrixcontent_videokaruselleintrag}}'
+      contentTable: '{{%matrixcontent_videoslider}}'
       localizeBlocks: ''
       maxBlocks: ''
       minBlocks: ''
@@ -820,13 +820,13 @@ matrixBlockTypes:
           -
             fields:
               2c081cde-5e2c-475d-84bc-9c45064fad25:
-                required: '0'
+                required: false
                 sortOrder: 3
               5fd7da2d-18bc-461e-b1f7-86c87ee4c7c7:
-                required: '0'
+                required: false
                 sortOrder: 2
               7bc883e8-db09-425f-a3f5-b6a79588dd0b:
-                required: '1'
+                required: true
                 sortOrder: 1
             name: Content
             sortOrder: 1
@@ -837,7 +837,7 @@ matrixBlockTypes:
         handle: VideoSliderText
         instructions: 'Eine kurze Beschreibung des Videos'
         name: 'Video-Karussell Legende'
-        searchable: '1'
+        searchable: true
         settings:
           charLimit: ''
           code: ''
@@ -854,7 +854,7 @@ matrixBlockTypes:
         handle: videoSliderTitle
         instructions: 'Titel des Videos'
         name: 'Video-Karussell Titel'
-        searchable: '1'
+        searchable: true
         settings:
           charLimit: ''
           code: ''
@@ -871,7 +871,7 @@ matrixBlockTypes:
         handle: videoSliderVideo
         instructions: 'URL eines Youtube-Videos'
         name: 'Video-Karussell Video'
-        searchable: '1'
+        searchable: true
         translationKeyFormat: null
         translationMethod: none
         type: dukt\videos\fields\Video
@@ -897,14 +897,14 @@ plugins:
           clientSecret: 0uCV3T2WxPjmoee3_7h91Xra
       tokens:
         youtube:
-          accessToken: ya29.Gl00B64hWZab-AWn7sdFjZmVhlhtleXmnLzrI_TQCl9AuyvSQl97xC64twAQQGx9BhbefRVzDuTF2EHJi3horjXlComwieX9E41n92TJQkFkDRJVsNfdW50YUbVfysw
-          expires: 1561640701
+          accessToken: ya29.Gl00B4U5Ud4z5aRF9_tJU6Yu9CeFIIJOAjxD3pifZmZ6hOnbUqooXrNwIMMkle4vo_M46abeHA7fIFgtihsx_fOKCiU5HV9tDwPMR0WBsdi1uAoFUO8GNPvkCh2l3mI
+          expires: 1561648347
           refreshToken: 1/h_aaH-zGnHYJCo5IJxtfkrdl09zaCcnwd20rF1paffZJ-qin2ZCXBzCqbn4gpn5A
           resourceOwnerId: null
           values:
             values:
-              id_token: eyJhbGciOiJSUzI1NiIsImtpZCI6IjExOGRmMjU0YjgzNzE4OWQxYmMyYmU5NjUwYTgyMTEyYzAwZGY1YTQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTU5MjQ2NDUyNTc5OTAyMzQ3NDYiLCJlbWFpbCI6ImJleW9uZHNpbmdpbmdjb21AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiI1UjlUMWlVTHRSc25MUVRIbnI0Q0pRIiwiaWF0IjoxNTYxNjM3MTAxLCJleHAiOjE1NjE2NDA3MDF9.eN1h8Zb4D3sZtn4tDTHAeVNUguWD_eQ94sKFJ6DYHXY_8E1_OZsE99hNMbR2k9YLZ69hCHUgijqgXhgHuGv3J0rKW90stoMAxXajt3fOF1ys-pRCFFOAtTDyBhuz0pMpzf4sa62cxR9k9TeX05MwV8LYIelGDA-hx-VNMqIEBxm6cDllfG6ttfzGT2iqJVjD-26tha2SHZi6z8E4btieSvP4bsmDKUVEyuy07F5_zM7QrQtc8hzz9WxN6prghMlQ4-TPOXFjFf_Uz7nBv2HahEhaHo8W2yr6swUdXoM1JUJCn7HrS_inP9D5VvlifCY5n8H5SC9aUq6aXGt_g-QSlw
-              scope: 'https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/youtube https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/youtube.readonly'
+              id_token: eyJhbGciOiJSUzI1NiIsImtpZCI6IjExOGRmMjU0YjgzNzE4OWQxYmMyYmU5NjUwYTgyMTEyYzAwZGY1YTQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTU5MjQ2NDUyNTc5OTAyMzQ3NDYiLCJlbWFpbCI6ImJleW9uZHNpbmdpbmdjb21AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiI3a3c1bko2ZWVra2toMm1WckhfdHdnIiwiaWF0IjoxNTYxNjQ0NzQ3LCJleHAiOjE1NjE2NDgzNDd9.KFGtWJ6BXlWNKdXVB69F-8km5dyIDspit_NScgN2-HXQLs3ln3lcx0dNINfSaMAytqTff-OQjbhjHc3z39zQ2RRzJKt8iK-yoOg-iV7v5l4iyIoom1-IQaDCrOcnDVwee8E2HugJZ3Uru1KFNsXj8DnIQpw7Ghg3ESU_cnrBoXpzzN2stuXcMx94VgenfLzaGzyIMEKlUt4N3k8MbQY7HWn9LhH7CCmyRlFmoHwjta1w5zq51vrYlBTwJXki5ylyOsK-xiEQHy5zOnLbSeRnC6UjR2Qu1yDVeFGbfim2r1N02ObWW7BOSHlfIIObH9OOcG3I5hgzvMrZ0pODP4yH-g
+              scope: 'https://www.googleapis.com/auth/youtube.readonly https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/youtube'
               token_type: Bearer
       videosPerPage: 30
 routes:
@@ -1836,4 +1836,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-06-27 14:05:23'
+dateApplied: '2019-06-27 16:41:20'
