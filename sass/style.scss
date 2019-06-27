@@ -649,22 +649,26 @@ header.mini { // footer visible, see JS helpers
 
 /* Video Slider {{{1 */
 
-.video-slider {
-  video {
-    width: 100%;
-    height: 56.25%;
-  }
+.video-slider-title {
+  margin-top: 50px;
 }
 
-/*
 #video-slider {
-  border: 1px solid black;
-  .flickity-viewport {
-    .carousell-cell {
+  margin: 50px 0;
+  .video-embed-receptacle {
+    width: 100%;
+    position: relative;
+    min-height: 56.25%;
+    padding-bottom: 56.25%;
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
     }
   }
 }
-*/
 
 /* End Video Slider }}}1 */
 
@@ -1416,6 +1420,24 @@ body {
 }
 
 /* End Mobile Slide Show }}}2 */
+
+/* Mobile Video-Slider {{{2 */
+
+.video-slider-title {
+  margin-top: 40px;
+}
+
+#video-slider {
+  margin: 40px 0;
+  .flickity-button {
+    display: none;
+  }
+}
+
+.video-slider-legende {
+}
+
+/* End Mobile Video-Slider }}}2 */
 
 /* Mobile Main {{{2 */
 
