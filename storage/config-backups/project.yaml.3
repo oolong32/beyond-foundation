@@ -1,4 +1,4 @@
-dateModified: 1561636694
+dateModified: 1561637123
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -183,6 +183,21 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Url
+  4e99f4f0-5ab6-49e7-b5b8-9f0b28c97b24:
+    contentColumnType: string
+    fieldGroup: 85d8c0e7-6a43-4691-8d57-0ea516983de7
+    handle: videoSlider
+    instructions: 'Mehrere Videos mit Text-Legende.'
+    name: Video-Karusell
+    searchable: true
+    settings:
+      contentTable: '{{%matrixcontent_videoslider}}'
+      localizeBlocks: ''
+      maxBlocks: ''
+      minBlocks: ''
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Matrix
   597d3228-4fef-4e48-b794-3e488a088311:
     contentColumnType: text
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
@@ -797,6 +812,72 @@ matrixBlockTypes:
     handle: link
     name: Link
     sortOrder: 1
+  ad97d8b1-1f47-4695-ad59-af58cd0fdae9:
+    field: 4e99f4f0-5ab6-49e7-b5b8-9f0b28c97b24
+    fieldLayouts:
+      268584da-6044-4427-8639-2e1957e7eecd:
+        tabs:
+          -
+            fields:
+              2c081cde-5e2c-475d-84bc-9c45064fad25:
+                required: false
+                sortOrder: 3
+              5fd7da2d-18bc-461e-b1f7-86c87ee4c7c7:
+                required: false
+                sortOrder: 2
+              7bc883e8-db09-425f-a3f5-b6a79588dd0b:
+                required: true
+                sortOrder: 1
+            name: Content
+            sortOrder: 1
+    fields:
+      2c081cde-5e2c-475d-84bc-9c45064fad25:
+        contentColumnType: text
+        fieldGroup: null
+        handle: VideoSliderText
+        instructions: 'Eine kurze Beschreibung des Videos'
+        name: 'Video-Karussell Legende'
+        searchable: true
+        settings:
+          charLimit: ''
+          code: ''
+          columnType: text
+          initialRows: '4'
+          multiline: ''
+          placeholder: ''
+        translationKeyFormat: null
+        translationMethod: site
+        type: craft\fields\PlainText
+      5fd7da2d-18bc-461e-b1f7-86c87ee4c7c7:
+        contentColumnType: text
+        fieldGroup: null
+        handle: videoSliderTitle
+        instructions: 'Titel des Videos'
+        name: 'Video-Karussell Titel'
+        searchable: true
+        settings:
+          charLimit: ''
+          code: ''
+          columnType: text
+          initialRows: '4'
+          multiline: ''
+          placeholder: ''
+        translationKeyFormat: null
+        translationMethod: site
+        type: craft\fields\PlainText
+      7bc883e8-db09-425f-a3f5-b6a79588dd0b:
+        contentColumnType: string
+        fieldGroup: null
+        handle: videoSliderVideo
+        instructions: 'URL eines Youtube-Videos'
+        name: 'Video-Karussell Video'
+        searchable: true
+        translationKeyFormat: null
+        translationMethod: none
+        type: dukt\videos\fields\Video
+    handle: videoSliderEntry
+    name: Video-Karussell-Eintraege
+    sortOrder: 1
 plugins:
   redactor:
     edition: standard
@@ -816,13 +897,13 @@ plugins:
           clientSecret: 0uCV3T2WxPjmoee3_7h91Xra
       tokens:
         youtube:
-          accessToken: ya29.Gl00B6NSRZFEcmmfl_tn6EAaZRpr80Z4MUCbvesKsYvgxEh47ECXuqX_jbJBWtY5AcrlYy6Vqp4aRWKhztk-wox0vpmbfS1e29mZKtE4m4z9e9VK9LF3ltqb34XLVJY
-          expires: 1561632088
+          accessToken: ya29.Gl00B64hWZab-AWn7sdFjZmVhlhtleXmnLzrI_TQCl9AuyvSQl97xC64twAQQGx9BhbefRVzDuTF2EHJi3horjXlComwieX9E41n92TJQkFkDRJVsNfdW50YUbVfysw
+          expires: 1561640701
           refreshToken: 1/h_aaH-zGnHYJCo5IJxtfkrdl09zaCcnwd20rF1paffZJ-qin2ZCXBzCqbn4gpn5A
           resourceOwnerId: null
           values:
             values:
-              id_token: eyJhbGciOiJSUzI1NiIsImtpZCI6IjExOGRmMjU0YjgzNzE4OWQxYmMyYmU5NjUwYTgyMTEyYzAwZGY1YTQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTU5MjQ2NDUyNTc5OTAyMzQ3NDYiLCJlbWFpbCI6ImJleW9uZHNpbmdpbmdjb21AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJWdGFYUjZqc2N2a3FXNm5uTUxQd3hRIiwiaWF0IjoxNTYxNjI4NDg4LCJleHAiOjE1NjE2MzIwODh9.UDvck4gZuBJiaxCCBTeNWCH12OynVzzcDN1UiEGuxjq1BVHYxAaAEJp5iS5tqwNxyG4jZZ-Usb6ClR67iduEAVx1aFIPTleg0VWPWv5PEyzgp8TwupbZ6ayH0bxuGHcfD7v1kZ9W8JOXKgqTXQY-oXHAYdwEOUdFA7Pr5nNgbjzLAxtfniY92SXN2QHbO8dIUB7JT2JOc_Wgj-n2EgE9iTzxH8GUdd3B1_jrX0tbWSKu1Wfyhdkxjmkow4XzeWejVOoXME7totCw69hSq1F7XB6oZzEHZ47nnNUJEQ8Ia2yQYJ2UzGUsHy-iSOM_-0JNTVT85GTwnIXmx62Xq_09Pw
+              id_token: eyJhbGciOiJSUzI1NiIsImtpZCI6IjExOGRmMjU0YjgzNzE4OWQxYmMyYmU5NjUwYTgyMTEyYzAwZGY1YTQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTU5MjQ2NDUyNTc5OTAyMzQ3NDYiLCJlbWFpbCI6ImJleW9uZHNpbmdpbmdjb21AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiI1UjlUMWlVTHRSc25MUVRIbnI0Q0pRIiwiaWF0IjoxNTYxNjM3MTAxLCJleHAiOjE1NjE2NDA3MDF9.eN1h8Zb4D3sZtn4tDTHAeVNUguWD_eQ94sKFJ6DYHXY_8E1_OZsE99hNMbR2k9YLZ69hCHUgijqgXhgHuGv3J0rKW90stoMAxXajt3fOF1ys-pRCFFOAtTDyBhuz0pMpzf4sa62cxR9k9TeX05MwV8LYIelGDA-hx-VNMqIEBxm6cDllfG6ttfzGT2iqJVjD-26tha2SHZi6z8E4btieSvP4bsmDKUVEyuy07F5_zM7QrQtc8hzz9WxN6prghMlQ4-TPOXFjFf_Uz7nBv2HahEhaHo8W2yr6swUdXoM1JUJCn7HrS_inP9D5VvlifCY5n8H5SC9aUq6aXGt_g-QSlw
               scope: 'https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/youtube https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/youtube.readonly'
               token_type: Bearer
       videosPerPage: 30
@@ -1008,10 +1089,16 @@ sections:
                   417b399c-4166-4897-a491-00dff2058bd5:
                     required: false
                     sortOrder: 1
+                  4e99f4f0-5ab6-49e7-b5b8-9f0b28c97b24:
+                    required: false
+                    sortOrder: 8
                   63060068-23fd-4091-9e13-96d982008822:
                     required: true
                     sortOrder: 6
                   72357970-aa0e-4ab8-bc96-4899cd33dd40:
+                    required: false
+                    sortOrder: 9
+                  a9a8b5f4-4073-4f8b-a242-6f57d71e6404:
                     required: false
                     sortOrder: 7
                   b729c087-ed9f-4371-8cf0-48e6ef2d9e6a:
@@ -1749,4 +1836,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-06-27 14:04:02'
+dateApplied: '2019-06-27 15:06:51'
