@@ -17,7 +17,10 @@
 
 
 <link rel="stylesheet" href="/assets/css/reset.css">
-{% if slug == 'index' %}
+{% if slug == 'index' or slug == 'music-production' %}
+<link rel="stylesheet" href="/assets/css/flickity.css">
+{% endif %}
+{% if slug == 'music-production' %}
 <link rel="stylesheet" href="/assets/css/flickity.css">
 {% endif %}
 <link rel="stylesheet" href="/assets/css/fonts.css"> 

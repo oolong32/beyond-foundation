@@ -144,6 +144,52 @@
 
     </section>
 
+    <!-- Video Slider -->
+    {% if entry.videoSlider|length > 0 %} {# check for content #}
+
+    <h2 id="{{ entry.title }}-video-slider">Sing Along</h2>
+
+    <section class="single-col">
+    <p class="video-slider-lead">Floofs long woofer sub woofer puggorino, wow very biscit. He made many woofs borkdrive ur givin me a spook vvv ruff, clouds maximum borkdrive mlem.</p>
+    <div id="video-slider">
+
+      <div class="carousel-cell">{#project.video[0].url#} 
+{#
+        <video poster="{{ alias('@assetBasePath') }}/assets/_pic/standbild.svg" paused controls>
+          <source src="{{ alias('@assetBasePath') }}/assets/_mov/test1.mp4" type="video/mp4"></source>
+                Sorry, your browser doesn't support embedded videos, 
+                but you could try to <a href="#">watch it on youtube.</a>
+        </video>
+#}
+        <video src="{{ alias('@assetBasePath') }}/assets/_mov/test1.mp4" paused controls>
+          foo bar
+        </video>
+        <p><strong>Als Gregor Samsa</strong> eines Morgens nach unruhigen Träumen erwachte, fand er sich in seinem Bett zu einem ungeheuren Ungeziefer verwandelt.</p>
+      </div>
+
+      <div class="carousel-cell">
+        <video src="{{ alias('@assetBasePath') }}/assets/_mov/test2.mp4" paused controls>
+          foo bar
+        </video>
+        <p><strong>Foo bar</strong> baz qux.</p>
+      </div>
+
+      <div class="carousel-cell">
+        <video src="{{ alias('@assetBasePath') }}/assets/_mov/test3.mp4" paused controls>
+          foo bar
+        </video>
+        <p><strong>Doggo ipsum</strong> such treat stop it fren vvv ur givin me a spook baz qux.</p>
+      </div>
+
+    </div>
+
+
+    </section>
+
+    {% endif %}
+    <!-- End Video Slider -->
+
+    {# fold this while i work on the video slider {{{ #}
     <!-- Start Artists -->
     {% if entry.artists|length %}
 
@@ -232,12 +278,34 @@
     {% include 'includes/footer' %}
   </footer>
 
+  {# end temporary fold }}} #}
+
   {# accordion.js nur für sprungmarkenreparatur … #}
   <script src="{{ alias('@assetBasePath') }}/assets/js/jquery.min.js"></script>
   <script src="{{ alias('@assetBasePath') }}/assets/js/jquery-ui.min.js"></script>
   <script src="{{ alias('@assetBasePath') }}/assets/js/mendAnchors.js"></script>
+  <script src="{{ alias('@assetBasePath') }}/assets/js/flickity.js"></script>
+  <script src="{{ alias('@assetBasePath') }}/assets/js/flickity-fade.js"></script>
   <script>
-    console.log('I & I is at {{ slug }}' );
+    console.log('I & I is at {{ slug }}, indeed' );
+
+    // initialize slider aka. «carousel»
+  
+    window.addEventListener('DOMContentLoaded', (event) => {
+      var carousel = document.querySelector('#video-slider');
+      var videoSliderFlkty = new Flickity(carousel, {
+        // options
+        cellAlign: 'center',
+        fade: true,
+        draggable: false,
+        wrapAround: true,
+        autoPlay: false,
+        prevNextButtons: true,
+        pageDots: true,
+        adaptiveHeight: true
+      });
+    });
+    
   </script>
 
 {% endblock %}

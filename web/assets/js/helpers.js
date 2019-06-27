@@ -61,6 +61,8 @@ hamburger.addEventListener('click', e => {
 }); 
 
 // mute all videos
+// probably not needed
+/*
 window.onload = function () {
   let videos = document.querySelectorAll('video');
   for (video of videos) {
@@ -68,3 +70,4 @@ window.onload = function () {
     video.classList.add('shut-up');
   }
 }
+*/

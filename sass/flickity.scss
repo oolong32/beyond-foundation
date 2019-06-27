@@ -136,3 +136,19 @@ https://flickity.metafizzy.co
 .flickity-page-dots .dot.is-selected {
   opacity: 1;
 }
+
+/* custom styles */
+#video-slider {
+  .flickity-viewport {
+    .carousel-cell {
+      // see sass/flickity.scss
+      width: 100%;
+//      padding-bottom: 56.25%; // 16:9
+      video {
+        margin: 0 auto;
+        width: 100%;
+        height:100%;
+      }
+    }
+  }
+}

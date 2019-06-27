@@ -119,3 +119,11 @@ https://flickity.metafizzy.co
 
 .flickity-page-dots .dot.is-selected {
   opacity: 1; }
+
+/* custom styles */
+#video-slider .flickity-viewport .carousel-cell {
+  width: 100%; }
+  #video-slider .flickity-viewport .carousel-cell video {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%; }

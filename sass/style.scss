@@ -647,6 +647,27 @@ header.mini { // footer visible, see JS helpers
 
 /* End Header Shrink }}}1 */
 
+/* Video Slider {{{1 */
+
+.video-slider {
+  video {
+    width: 100%;
+    height: 56.25%;
+  }
+}
+
+/*
+#video-slider {
+  border: 1px solid black;
+  .flickity-viewport {
+    .carousell-cell {
+    }
+  }
+}
+*/
+
+/* End Video Slider }}}1 */
+
 /* Index Slide Show {{{1 */
 
 .index {
