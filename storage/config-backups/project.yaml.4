@@ -1,4 +1,4 @@
-dateModified: 1561637101
+dateModified: 1561637123
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -186,12 +186,12 @@ fields:
   4e99f4f0-5ab6-49e7-b5b8-9f0b28c97b24:
     contentColumnType: string
     fieldGroup: 85d8c0e7-6a43-4691-8d57-0ea516983de7
-    handle: videoKarusellEintrag
+    handle: videoSlider
     instructions: 'Mehrere Videos mit Text-Legende.'
-    name: Video-Karusell-Eintrag
+    name: Video-Karusell
     searchable: true
     settings:
-      contentTable: '{{%matrixcontent_videokaruselleintrag}}'
+      contentTable: '{{%matrixcontent_videoslider}}'
       localizeBlocks: ''
       maxBlocks: ''
       minBlocks: ''
@@ -820,13 +820,13 @@ matrixBlockTypes:
           -
             fields:
               2c081cde-5e2c-475d-84bc-9c45064fad25:
-                required: '0'
+                required: false
                 sortOrder: 3
               5fd7da2d-18bc-461e-b1f7-86c87ee4c7c7:
-                required: '0'
+                required: false
                 sortOrder: 2
               7bc883e8-db09-425f-a3f5-b6a79588dd0b:
-                required: '1'
+                required: true
                 sortOrder: 1
             name: Content
             sortOrder: 1
@@ -837,7 +837,7 @@ matrixBlockTypes:
         handle: VideoSliderText
         instructions: 'Eine kurze Beschreibung des Videos'
         name: 'Video-Karussell Legende'
-        searchable: '1'
+        searchable: true
         settings:
           charLimit: ''
           code: ''
@@ -854,7 +854,7 @@ matrixBlockTypes:
         handle: videoSliderTitle
         instructions: 'Titel des Videos'
         name: 'Video-Karussell Titel'
-        searchable: '1'
+        searchable: true
         settings:
           charLimit: ''
           code: ''
@@ -871,7 +871,7 @@ matrixBlockTypes:
         handle: videoSliderVideo
         instructions: 'URL eines Youtube-Videos'
         name: 'Video-Karussell Video'
-        searchable: '1'
+        searchable: true
         translationKeyFormat: null
         translationMethod: none
         type: dukt\videos\fields\Video
@@ -1836,4 +1836,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-06-27 14:05:23'
+dateApplied: '2019-06-27 15:06:51'
