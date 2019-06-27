@@ -145,7 +145,7 @@
     </section>
 
     <!-- Video Slider -->
-    {% if 1 > 0 %} {# check for content #}
+    {% if entry.videoSlider|length > 0 %} {# check for content #}
 
     <h2 id="{{ entry.title }}-video-slider">Sing Along</h2>
 
@@ -185,6 +185,7 @@
 
 
     </section>
+
     {% endif %}
     <!-- End Video Slider -->
 
