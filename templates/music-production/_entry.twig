@@ -144,50 +144,41 @@
 
     </section>
 
-    <!-- Video Slider -->
     {% if entry.videoSlider|length > 0 %} {# check for content #}
 
-    <h2 id="{{ entry.title }}-video-slider">Sing Along</h2>
+    <h2 id="{{ entry.title }}-video-slider" class="video-slider-title">Sing Along</h2>
 
-    <section class="single-col">
-    <p class="video-slider-lead">Floofs long woofer sub woofer puggorino, wow very biscit. He made many woofs borkdrive ur givin me a spook vvv ruff, clouds maximum borkdrive mlem.</p>
+    <section class="video-slider-section single-col">
+
+    {{ entry.videoSliderLead }}
+
+    {% set videoSliderEntries = entry.videoSlider.all() %}
+
+    <!-- Start Video Slider -->
     <div id="video-slider">
+      {% for foo in videoSliderEntries %}
 
-      <div class="carousel-cell">{#project.video[0].url#} 
-{#
-        <video poster="{{ alias('@assetBasePath') }}/assets/_pic/standbild.svg" paused controls>
-          <source src="{{ alias('@assetBasePath') }}/assets/_mov/test1.mp4" type="video/mp4"></source>
-                Sorry, your browser doesn't support embedded videos, 
-                but you could try to <a href="#">watch it on youtube.</a>
-        </video>
-#}
-        <video src="{{ alias('@assetBasePath') }}/assets/_mov/test1.mp4" paused controls>
-          foo bar
-        </video>
-        <p><strong>Als Gregor Samsa</strong> eines Morgens nach unruhigen Träumen erwachte, fand er sich in seinem Bett zu einem ungeheuren Ungeziefer verwandelt.</p>
-      </div>
+        <div class="carousel-cell">
 
-      <div class="carousel-cell">
-        <video src="{{ alias('@assetBasePath') }}/assets/_mov/test2.mp4" paused controls>
-          foo bar
-        </video>
-        <p><strong>Foo bar</strong> baz qux.</p>
-      </div>
+          {% set videoSliderVideo = foo.videoSliderVideo %}
+          <div class="video-embed-receptacle">
+            {{  videoSliderVideo.getEmbed() }}
+          </div>
 
-      <div class="carousel-cell">
-        <video src="{{ alias('@assetBasePath') }}/assets/_mov/test3.mp4" paused controls>
-          foo bar
-        </video>
-        <p><strong>Doggo ipsum</strong> such treat stop it fren vvv ur givin me a spook baz qux.</p>
-      </div>
+          <p class="video-slider-legende">
+            <strong>
+              {{ foo.videoSliderTitle|length ? foo.videoSliderTitle ~ ' ' : '' }}
+            </strong>
+            {{ foo.VideoSliderText|length ? foo.VideoSliderText : '' }}
+          </p>
+        </div> <!-- End Carousel Cell -->
+      {% endfor %}
 
-    </div>
-
+    </div> <!-- End Video Slider -->
 
     </section>
 
     {% endif %}
-    <!-- End Video Slider -->
 
     {# fold this while i work on the video slider {{{ #}
     <!-- Start Artists -->
@@ -296,7 +287,7 @@
       var videoSliderFlkty = new Flickity(carousel, {
         // options
         cellAlign: 'center',
-        fade: true,
+        fade: false,
         draggable: false,
         wrapAround: true,
         autoPlay: false,
