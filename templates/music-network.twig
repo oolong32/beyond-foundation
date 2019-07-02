@@ -78,7 +78,7 @@
 
       <section class="alternating-grid-text-large">
       <div class="image-cell">
-        <img src="{{ entry.coverImage[0].getUrl() }}" alt="{#{{ entry.trackArtist }}: #}{{ entry.trackTitle }}">
+        <img src="/{{ entry.coverImage[0].getUrl() }}" alt="{#{{ entry.trackArtist }}: #}{{ entry.trackTitle }}">
       </div>
       <div class="text-cell">
         <h3 class="player-track-title">Winning Song of the Latest Creativity Award</h3>
@@ -89,7 +89,7 @@
           <p class="time normal">{# gets content by javascript #}</p>
           <audio class="audio-player" controls="controls" paused> {# audio is not displayed by way of css #}
             Your browser does not support the <code>audio</code> element.
-            <source src="{{ entry.audioTrack[0].getUrl() }}">
+            <source src="/{{ entry.audioTrack[0].getUrl() }}">
           </audio>
         </div>
 
@@ -143,7 +143,7 @@
 
         // audio player
         var sound = new Howl({
-          src: [  '{{ entry.audioTrack[0].getUrl() }}' ]
+          src: [  '/{{ entry.audioTrack[0].getUrl() }}' ]
         });
         
         // Check for audio loaded, pause and display time
