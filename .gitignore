@@ -10,6 +10,6 @@ web/assets/fonts
 /uploads
 .tern-project
 web/.well-known/
-project.yaml
-project.yaml.*
+config/project.yaml
+config/project.yaml.orig
 storage/config-backups/
