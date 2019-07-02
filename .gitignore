@@ -11,4 +11,5 @@ web/assets/fonts
 .tern-project
 web/.well-known/
 config/project.yaml
+config/project.yaml.orig
 storage/config-backups/
