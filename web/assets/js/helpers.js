@@ -49,16 +49,18 @@ window.addEventListener('scroll', e => {
 // end collapse header on scroll
 
 // toggle class of hamburger, i.e. toggle menu on touch devices
-hamburger.addEventListener('click', e => {
-  navOver.classList.toggle('visible');
-  main.classList.toggle('noScroll');
-  header.classList.toggle('overlay-header');
-  footer.classList.toggle('noScroll');
-  if (navOver.classList.contains('visible')) {
-    window.scrollTo(0, 0);
-  }
-  // if (!shrinkHead) { header.classList.toggle('shrink'); } // only toggle shrinked header if still expanded
-}); 
+if (hamburger) { // there are pages without hamburgers, e.g. the intro
+  hamburger.addEventListener('click', e => {
+    navOver.classList.toggle('visible');
+    main.classList.toggle('noScroll');
+    header.classList.toggle('overlay-header');
+    footer.classList.toggle('noScroll');
+    if (navOver.classList.contains('visible')) {
+      window.scrollTo(0, 0);
+    }
+    // if (!shrinkHead) { header.classList.toggle('shrink'); } // only toggle shrinked header if still expanded
+  }); 
+}
 
 // mute all videos
 // probably not needed
