@@ -23,9 +23,9 @@
       {{  video.getEmbed() }}
       </div>
     {% elseif entry.heroImage|length %}
-      <img class="full-width" src="{{ alias('@assetBasePath') }}/{{ entry.heroImage[0].getUrl('sixteen2nine') }}" alt="{{ entry.title }}, hero image">
+      <img class="full-width" src="{{ entry.heroImage[0].getUrl('sixteen2nine') }}" alt="{{ entry.title }}, hero image">
     {% else %}
-      <img class="full-width" src="{{ alias('@assetBasePath') }}/assets/_pic/placeholder_16-9.png" alt="{{ entry.title }}, hero image">
+      <img class="full-width" src="/assets/_pic/placeholder_16-9.png" alt="{{ entry.title }}, hero image">
     {% endif %}
       <p class="video-caption full-width">{{ entry.shortDescription }}</p>
 		</section>
@@ -35,9 +35,9 @@
       {{ entry.lead }}
 
       {% if entry.coverImage|length %}
-      <img class="cover-image" src="{{ alias('@assetBasePath') }}/{{ entry.coverImage[0].getUrl() }}" alt="{{ entry.title }}, album cover">
+      <img class="cover-image" src="{{ entry.coverImage[0].getUrl() }}" alt="{{ entry.title }}, album cover">
       {% else %}
-      <img class="cover-image" src="{{ alias('@assetBasePath') }}/assets/_pic/placeholder.png" alt="There seems to be no image of the album cover for this entry.">
+      <img class="cover-image" src="/assets/_pic/placeholder.png" alt="There seems to be no image of the album cover for this entry.">
       {% endif %}
 
       <div id="hear-buy-share" class="order-download">
@@ -47,7 +47,7 @@
           {% if entry.itunesLink|length %}
             <a href="{{ entry.itunesLink }}" target="_blank">
               <div class="itunes">
-                <img src="{{ alias('@assetBasePath') }}/assets/_pic/third-party-icons/apple.svg" alt="">
+                <img src="/assets/_pic/third-party-icons/apple.svg" alt="">
                 <p>iTunes</p>
               </div>
             </a>
@@ -55,7 +55,7 @@
           {% if entry.amazonLinkHear|length %}
             <a href="{{ entry.amazonLinkHear }}" target="_blank">
               <div class="amazon">
-                <img src="{{ alias('@assetBasePath') }}/assets/_pic/third-party-icons/amazon.svg" alt="">
+                <img src="/assets/_pic/third-party-icons/amazon.svg" alt="">
                 <p>Amazon</p>
               </div>
             </a>
@@ -63,7 +63,7 @@
           {% if entry.googlePlayLink|length %}
             <a href="{{ entry.googlePlayLink }}" target="_blank">
               <div class="googleplay">
-                <img src="{{ alias('@assetBasePath') }}/assets/_pic/third-party-icons/gplay.svg" alt="">
+                <img src="/assets/_pic/third-party-icons/gplay.svg" alt="">
                 <p>Google Play</p>
               </div>
             </a>
@@ -71,7 +71,7 @@
           {% if entry.spotifyLink|length %}
             <a href="{{ entry.spotifyLink }}" target="_blank">
               <div class="spotify">
-                <img src="{{ alias('@assetBasePath') }}/assets/_pic/third-party-icons/spotify.svg" alt="">
+                <img src="/assets/_pic/third-party-icons/spotify.svg" alt="">
                 <p>Spotify</p>
               </div>
             </a>
@@ -79,7 +79,7 @@
           {% if entry.iGrooveLink|length %}
             <a href="{{ entry.iGrooveLink }}" target="_blank">
               <div class="igroove">
-                <img src="{{ alias('@assetBasePath') }}/assets/_pic/third-party-icons/igroove.svg" alt="">
+                <img src="/assets/_pic/third-party-icons/igroove.svg" alt="">
                 <p>iGroove</p>
               </div>
             </a>
@@ -96,7 +96,7 @@
           {% if entry.amazonLinkBuy|length %}
             <a href="{{ entry.amazonLinkBuy }}" target="_blank">
               <div class="amazon">
-                <img src="{{ alias('@assetBasePath') }}/assets/_pic/third-party-icons/amazon.svg" alt="">
+                <img src="/assets/_pic/third-party-icons/amazon.svg" alt="">
                 <p>Amazon</p>
               </div>
             </a>
@@ -104,7 +104,7 @@
           {% if entry.exLibrisLink|length %}
             <a href="{{ entry.exLibrisLink }}" target="_blank">
               <div class="exlibris">
-                <img src="{{ alias('@assetBasePath') }}/assets/_pic/third-party-icons/exlibris.svg" alt="">
+                <img src="/assets/_pic/third-party-icons/exlibris.svg" alt="">
                 <p>ex libris</p>
               </div>
             </a>
@@ -112,7 +112,7 @@
           {% if entry.cedeLink|length %}
             <a href="{{ entry.cedeLink }}" target="_blank">
               <div class="cede">
-                <img src="{{ alias('@assetBasePath') }}/assets/_pic/third-party-icons/cede.svg" alt="">
+                <img src="/assets/_pic/third-party-icons/cede.svg" alt="">
                 <p>cede.ch</p>
               </div>
             </a>
@@ -124,7 +124,7 @@
           {% if entry.facebookLink|length %}
             <a href="{{ entry.facebookLink }}" target="_blank">
               <div class="facebook">
-                <img src="{{ alias('@assetBasePath') }}/assets/_pic/third-party-icons/facebook.svg" alt="">
+                <img src="/assets/_pic/third-party-icons/facebook.svg" alt="">
                 <p>Facebook</p>
               </div>
             </a>
@@ -132,7 +132,7 @@
           {% if entry.soundcloudLink|length %}
             <a href="{{ entry.soundcloudLink }}" _target="blank">
               <div class="soundcloud">
-                <img src="{{ alias('@assetBasePath') }}/assets/_pic/third-party-icons/soundcloud.svg" alt="">
+                <img src="/assets/_pic/third-party-icons/soundcloud.svg" alt="">
                 <p>SoundCloud</p>
               </div>
             </a>
@@ -193,9 +193,9 @@
       {% for artist in entry.artists %}
         <div class="artist-teaser">
           {% if artist.portrait|length %}
-            <img src="{{ alias('@assetBasePath') }}/{{ artist.portrait[0].getUrl() }}" alt="{{ artist.title }}">
+            <img src="{{ artist.portrait[0].getUrl() }}" alt="{{ artist.title }}">
           {% else %}
-            <img src="{{ alias('@assetBasePath') }}/assets/_pic/missingPortrait.png"
+            <img src="/assets/_pic/missingPortrait.png"
           {% endif %}
 
           <h3 class="artist-name">{{ artist.title }}</h3>
@@ -231,9 +231,9 @@
         <div class="image-cell">
           <a href="{{ otherAlbum.getUrl() }}" title="{{ otherAlbum.title }}">
           {% if otherAlbum.coverImage|length %}
-          <img src="{{ alias('@assetBasePath') }}/{{ otherAlbum.coverImage[0].getUrl() }}" alt="{{ otherAlbum.title }}">
+          <img src="{{ otherAlbum.coverImage[0].getUrl() }}" alt="{{ otherAlbum.title }}">
           {% else %}
-          <img src="{{ alias('@assetBasePath') }}/assets/_pic/placeholder.png" alt="No image for this entry.">
+          <img src="/assets/_pic/placeholder.png" alt="No image for this entry.">
           {% endif %}
           </a>
         </div> <!-- end image cell -->
@@ -272,11 +272,11 @@
   {# end temporary fold }}} #}
 
   {# accordion.js nur für sprungmarkenreparatur … #}
-  <script src="{{ alias('@assetBasePath') }}/assets/js/jquery.min.js"></script>
-  <script src="{{ alias('@assetBasePath') }}/assets/js/jquery-ui.min.js"></script>
-  <script src="{{ alias('@assetBasePath') }}/assets/js/mendAnchors.js"></script>
-  <script src="{{ alias('@assetBasePath') }}/assets/js/flickity.js"></script>
-  <script src="{{ alias('@assetBasePath') }}/assets/js/flickity-fade.js"></script>
+  <script src="/assets/js/jquery.min.js"></script>
+  <script src="/assets/js/jquery-ui.min.js"></script>
+  <script src="/assets/js/mendAnchors.js"></script>
+  <script src="/assets/js/flickity.js"></script>
+  <script src="/assets/js/flickity-fade.js"></script>
   <script>
     console.log('I & I is at {{ slug }}, indeed' );
 
