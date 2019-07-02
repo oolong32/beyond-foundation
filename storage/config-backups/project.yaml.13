@@ -1,4 +1,4 @@
-dateModified: 1561986067
+dateModified: 1561989706
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -869,11 +869,11 @@ matrixBlockTypes:
         contentColumnType: string
         fieldGroup: null
         handle: videoSliderVideo
-        instructions: 'URL eines Youtube-Videos'
+        instructions: 'URL eines Youtube-Videos.'
         name: 'Video-Karussell Video'
         searchable: true
         translationKeyFormat: null
-        translationMethod: none
+        translationMethod: site
         type: dukt\videos\fields\Video
     handle: videoSliderEntry
     name: Video-Karussell-Eintraege
@@ -897,14 +897,14 @@ plugins:
           clientSecret: '-wMGNor2RVhuiZN2kTTs-VY8'
       tokens:
         youtube:
-          accessToken: ya29.Glw4B4gs7hmRAKNygyM-_XoIrYz5Zd8ghZ1q3YBxBQZejlM3zAEZoP00cOusB0iOuRhv_ojXJhojseDFDHYAu9I2ZhsvkXcHKfv1pVWAngT57ETaGhV-ubYfflzDgw
-          expires: 1561989667
+          accessToken: ya29.Glw4B3KqunTS8WEKTqeaIlkiKuSq3kA8BLRPM0BZfZjEGOEns3CD4gI91IMjJUb7AVAaFX988hI1NJu2RQAS7dVRWrWGffRIhI-qadmX4wuuUwYbyvNY20Wmj0Javg
+          expires: 1561993306
           refreshToken: 1/mVGZFEswkvV6-QEYwPRfe6bFgfc2D2KMpF5T01tv6jvlyjtG_YdyMgXlnou6kGIQ
           resourceOwnerId: null
           values:
             values:
-              id_token: eyJhbGciOiJSUzI1NiIsImtpZCI6IjExOGRmMjU0YjgzNzE4OWQxYmMyYmU5NjUwYTgyMTEyYzAwZGY1YTQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzNDU0NDU5NDgwMTgtdXA3ZWw4MGE4Y2xwcDN1cmU5bWppdGFpcGltZ3AzbzcuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIzNDU0NDU5NDgwMTgtdXA3ZWw4MGE4Y2xwcDN1cmU5bWppdGFpcGltZ3AzbzcuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTU5MjQ2NDUyNTc5OTAyMzQ3NDYiLCJlbWFpbCI6ImJleW9uZHNpbmdpbmdjb21AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJBTlZtSkJwaENuazhKSW5NRnZZTndnIiwiaWF0IjoxNTYxOTg2MDY3LCJleHAiOjE1NjE5ODk2Njd9.MV_tSBf0PFB45We_4krP2Z9yHzjs4Xn7ngCed16b9aHcBjGxzJywj9Do-8D6YaKYbj3ZFP5S1hdWGLM-jtlR7GM-UQXWne0-9pE7gpJxqQZR8xzVBz5WbMtvZsKzxFGcH7TQeVlMAcvVe810rakZAP3mzCEnn-6F6-qhAo5ioPPG4PmDgqJgeVWoagnjXhZ_hoDZRVJDPQqLJztAZwWju3Bc6mU31C-fWe7X9Vu0mTMJgo3DTA0xQB4ScNrCru7Wo2oMalDSL1zeUh6adlwDbTwWpidpnVZEaZjQohLMsp-L7-PLOuA1qC8PyMCQKAlHZdqvMlyfEkkYqCZ_P4H2hA
-              scope: 'https://www.googleapis.com/auth/youtube openid https://www.googleapis.com/auth/youtube.readonly https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile'
+              id_token: eyJhbGciOiJSUzI1NiIsImtpZCI6IjExOGRmMjU0YjgzNzE4OWQxYmMyYmU5NjUwYTgyMTEyYzAwZGY1YTQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzNDU0NDU5NDgwMTgtdXA3ZWw4MGE4Y2xwcDN1cmU5bWppdGFpcGltZ3AzbzcuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIzNDU0NDU5NDgwMTgtdXA3ZWw4MGE4Y2xwcDN1cmU5bWppdGFpcGltZ3AzbzcuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTU5MjQ2NDUyNTc5OTAyMzQ3NDYiLCJlbWFpbCI6ImJleW9uZHNpbmdpbmdjb21AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJ1UGRfNTFJeTcwTnNFcDFmSGVqR1NRIiwibmFtZSI6IkJleW9uZCBTaW5naW5nIiwicGljdHVyZSI6Imh0dHBzOi8vbGg1Lmdvb2dsZXVzZXJjb250ZW50LmNvbS8tQnJZdUI5d1JDN0UvQUFBQUFBQUFBQUkvQUFBQUFBQUFBRjAvX2tLS1VuU3RQWHMvczk2LWMvcGhvdG8uanBnIiwiZ2l2ZW5fbmFtZSI6IkJleW9uZCIsImZhbWlseV9uYW1lIjoiU2luZ2luZyIsImxvY2FsZSI6ImRlIiwiaWF0IjoxNTYxOTg5NzA2LCJleHAiOjE1NjE5OTMzMDZ9.XYv_Yvkno-CA9B6KpilelsycO1NNV0RaccLZK0XBzodV9MqoJBfPS43QN2hXko3d2GA_Ckubs7X5fuNRg2xOew3k3bfL-1uQRoxcxHdrevf5On-Pjjb-vacTKYcBl3gV_W4ienLa0GrD8dy7I5TSjqTMXCcqoJgPlSaXfrd3sJpPv8BGYAHimu2XbsyZdKk5eMKJPfw1XW3lS0INZ68nnUK-UJ79bsTSA1oSSenN2lXakhG_juVet_J1_mkxqnExjhF2ccNxqFtoiBGDTVriBY_kDNAutcRz8tp4TRIOGnwWX7nlK8TPVh4C6zvIfNWV7zAyyuBFgIY4qQ0mahrCoA
+              scope: 'https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/youtube https://www.googleapis.com/auth/userinfo.profile openid https://www.googleapis.com/auth/youtube.readonly'
               token_type: Bearer
       videosPerPage: 30
 routes:
@@ -1836,4 +1836,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-07-01 15:17:27'
+dateApplied: '2019-07-01 19:40:48'

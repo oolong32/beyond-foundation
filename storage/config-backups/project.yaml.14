@@ -1,4 +1,4 @@
-dateModified: 1561981629
+dateModified: 1561987047
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -869,11 +869,11 @@ matrixBlockTypes:
         contentColumnType: string
         fieldGroup: null
         handle: videoSliderVideo
-        instructions: 'URL eines Youtube-Videos'
+        instructions: 'URL eines Youtube-Videos.'
         name: 'Video-Karussell Video'
         searchable: true
         translationKeyFormat: null
-        translationMethod: none
+        translationMethod: site
         type: dukt\videos\fields\Video
     handle: videoSliderEntry
     name: Video-Karussell-Eintraege
@@ -897,14 +897,14 @@ plugins:
           clientSecret: '-wMGNor2RVhuiZN2kTTs-VY8'
       tokens:
         youtube:
-          accessToken: ya29.Glw4B4e_qT49Js8CR5m2yOt3Bq_sZTHujfYuKf1VZGPSKI0sUwilalsGnDEBCjbjCvD1vquxcS_fJkWcIEaijae389_tqjMhy6NJWdfQW8Ag2D9LxCL3h0wexjA9sw
-          expires: 1561985229
+          accessToken: ya29.Glw4B4gs7hmRAKNygyM-_XoIrYz5Zd8ghZ1q3YBxBQZejlM3zAEZoP00cOusB0iOuRhv_ojXJhojseDFDHYAu9I2ZhsvkXcHKfv1pVWAngT57ETaGhV-ubYfflzDgw
+          expires: 1561989667
           refreshToken: 1/mVGZFEswkvV6-QEYwPRfe6bFgfc2D2KMpF5T01tv6jvlyjtG_YdyMgXlnou6kGIQ
           resourceOwnerId: null
           values:
             values:
-              id_token: eyJhbGciOiJSUzI1NiIsImtpZCI6IjExOGRmMjU0YjgzNzE4OWQxYmMyYmU5NjUwYTgyMTEyYzAwZGY1YTQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzNDU0NDU5NDgwMTgtdXA3ZWw4MGE4Y2xwcDN1cmU5bWppdGFpcGltZ3AzbzcuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIzNDU0NDU5NDgwMTgtdXA3ZWw4MGE4Y2xwcDN1cmU5bWppdGFpcGltZ3AzbzcuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTU5MjQ2NDUyNTc5OTAyMzQ3NDYiLCJlbWFpbCI6ImJleW9uZHNpbmdpbmdjb21AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJmcXlDSXNxQWVveEswT3ItUktIUlV3IiwiaWF0IjoxNTYxOTgxNjI5LCJleHAiOjE1NjE5ODUyMjl9.jxWVvfKwLqud9z7pLGmcrIpysfjFvmoNtjtwSDjkP7pOeJsKbqfrtMbl7uwiWd8cTlEMtt12gnFabtGz8VPDbkhk0ssxBlM7OIbf9cVjw6Uv_wAzEjLegWvqFJGf2PewQeky7vuU1KqY3fCQWaDBzRhUpKDVZUPk-ye6hFMGP-CwSUCf0WqF6f_IlmXNwfEGAdoG2ju3x_K06F4RlsV06yasFYUcYJbGxRJeKCBZhBQhwsbjSCjmFp3lhBRoC4KRBckMI06vd-3uS9FSK6MT3LRId8vUoeFRNHEEilt8nC44PdusE4pD21Maw7CC5MkLr699jxiCf9lARCm1AxvQdw
-              scope: 'https://www.googleapis.com/auth/userinfo.profile openid https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/youtube.readonly https://www.googleapis.com/auth/youtube'
+              id_token: eyJhbGciOiJSUzI1NiIsImtpZCI6IjExOGRmMjU0YjgzNzE4OWQxYmMyYmU5NjUwYTgyMTEyYzAwZGY1YTQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzNDU0NDU5NDgwMTgtdXA3ZWw4MGE4Y2xwcDN1cmU5bWppdGFpcGltZ3AzbzcuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIzNDU0NDU5NDgwMTgtdXA3ZWw4MGE4Y2xwcDN1cmU5bWppdGFpcGltZ3AzbzcuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTU5MjQ2NDUyNTc5OTAyMzQ3NDYiLCJlbWFpbCI6ImJleW9uZHNpbmdpbmdjb21AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJBTlZtSkJwaENuazhKSW5NRnZZTndnIiwiaWF0IjoxNTYxOTg2MDY3LCJleHAiOjE1NjE5ODk2Njd9.MV_tSBf0PFB45We_4krP2Z9yHzjs4Xn7ngCed16b9aHcBjGxzJywj9Do-8D6YaKYbj3ZFP5S1hdWGLM-jtlR7GM-UQXWne0-9pE7gpJxqQZR8xzVBz5WbMtvZsKzxFGcH7TQeVlMAcvVe810rakZAP3mzCEnn-6F6-qhAo5ioPPG4PmDgqJgeVWoagnjXhZ_hoDZRVJDPQqLJztAZwWju3Bc6mU31C-fWe7X9Vu0mTMJgo3DTA0xQB4ScNrCru7Wo2oMalDSL1zeUh6adlwDbTwWpidpnVZEaZjQohLMsp-L7-PLOuA1qC8PyMCQKAlHZdqvMlyfEkkYqCZ_P4H2hA
+              scope: 'https://www.googleapis.com/auth/youtube openid https://www.googleapis.com/auth/youtube.readonly https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile'
               token_type: Bearer
       videosPerPage: 30
 routes:
@@ -1836,4 +1836,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-07-01 15:01:07'
+dateApplied: '2019-07-01 16:01:46'
