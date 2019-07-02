@@ -23,7 +23,7 @@
       {{  video.getEmbed() }}
       </div>
     {% elseif entry.heroImage|length %}
-      <img class="full-width" src="{{ entry.heroImage[0].getUrl('sixteen2nine') }}" alt="{{ entry.title }}, hero image">
+      <img class="full-width" src="/{{ entry.heroImage[0].getUrl('sixteen2nine') }}" alt="{{ entry.title }}, hero image">
     {% else %}
       <img class="full-width" src="/assets/_pic/placeholder_16-9.png" alt="{{ entry.title }}, hero image">
     {% endif %}
@@ -35,7 +35,7 @@
       {{ entry.lead }}
 
       {% if entry.coverImage|length %}
-      <img class="cover-image" src="{{ entry.coverImage[0].getUrl() }}" alt="{{ entry.title }}, album cover">
+      <img class="cover-image" src="/{{ entry.coverImage[0].getUrl() }}" alt="{{ entry.title }}, album cover">
       {% else %}
       <img class="cover-image" src="/assets/_pic/placeholder.png" alt="There seems to be no image of the album cover for this entry.">
       {% endif %}
@@ -193,7 +193,7 @@
       {% for artist in entry.artists %}
         <div class="artist-teaser">
           {% if artist.portrait|length %}
-            <img src="{{ artist.portrait[0].getUrl() }}" alt="{{ artist.title }}">
+            <img src="/{{ artist.portrait[0].getUrl() }}" alt="{{ artist.title }}">
           {% else %}
             <img src="/assets/_pic/missingPortrait.png"
           {% endif %}
@@ -231,7 +231,7 @@
         <div class="image-cell">
           <a href="{{ otherAlbum.getUrl() }}" title="{{ otherAlbum.title }}">
           {% if otherAlbum.coverImage|length %}
-          <img src="{{ otherAlbum.coverImage[0].getUrl() }}" alt="{{ otherAlbum.title }}">
+          <img src="/{{ otherAlbum.coverImage[0].getUrl() }}" alt="{{ otherAlbum.title }}">
           {% else %}
           <img src="/assets/_pic/placeholder.png" alt="No image for this entry.">
           {% endif %}
