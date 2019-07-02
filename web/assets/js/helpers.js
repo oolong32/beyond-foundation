@@ -49,7 +49,7 @@ window.addEventListener('scroll', e => {
 // end collapse header on scroll
 
 // toggle class of hamburger, i.e. toggle menu on touch devices
-if (hamburger) { // there are pages without hamburgers, e.g. the intro
+if (hamburger) { // there are pages without hamburgers, e.g. intro
   hamburger.addEventListener('click', e => {
     navOver.classList.toggle('visible');
     main.classList.toggle('noScroll');
