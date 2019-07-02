@@ -56,7 +56,11 @@
       // initialize slider aka. «carousel»
     
       window.addEventListener('DOMContentLoaded', (event) => {
+
         var carousel = document.querySelector('#carousel');
+        var mobileCarousel = document.querySelector('#mobile-carousel');
+        var sloganCarousel = document.querySelector('#slogan');
+
         var flkty = new Flickity(carousel, {
           // options
           fade: true,
@@ -66,7 +70,7 @@
           prevNextButtons: false,
           pageDots: false,
         });
-        var mobileCarousel = document.querySelector('#mobile-carousel');
+
         var mobileFlkty = new Flickity(mobileCarousel, {
           // options
           fade: true,
@@ -76,16 +80,19 @@
           prevNextButtons: false,
           pageDots: false,
         });
-        var sloganCarousel = document.querySelector('#slogan');
-        var sloganFlkty = new Flickity(sloganCarousel, {
-          // options
-          fade: true,
-          draggable: false,
-          wrapAround: true,
-          autoPlay: 2000,
-          prevNextButtons: false,
-          pageDots: false,
-        });
+
+        setTimeout(function() {
+          sloganCarousel.style.opacity = '1';
+          var sloganFlkty = new Flickity(sloganCarousel, {
+            // options
+            fade: true,
+            draggable: false,
+            wrapAround: true,
+            autoPlay: 2000,
+            prevNextButtons: false,
+            pageDots: false,
+          });
+        }, 300);
       });
     </script>
 

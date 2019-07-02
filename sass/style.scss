@@ -678,6 +678,7 @@ header.mini { // footer visible, see JS helpers
   height: 100vh;
   overflow: hidden;
   #slogan {
+    opacity: 0; // prevent FOUT before initialization of carousel
     position: fixed;
     z-index: 200;
     top: 0;
