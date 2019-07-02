@@ -1,4 +1,4 @@
-dateModified: 1561471824
+dateModified: 1561892681
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -183,6 +183,21 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Url
+  4e99f4f0-5ab6-49e7-b5b8-9f0b28c97b24:
+    contentColumnType: string
+    fieldGroup: 85d8c0e7-6a43-4691-8d57-0ea516983de7
+    handle: videoSlider
+    instructions: 'Mehrere Videos mit Text-Legende.'
+    name: Video-Karusell
+    searchable: true
+    settings:
+      contentTable: '{{%matrixcontent_videoslider}}'
+      localizeBlocks: ''
+      maxBlocks: ''
+      minBlocks: ''
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Matrix
   597d3228-4fef-4e48-b794-3e488a088311:
     contentColumnType: text
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
@@ -365,6 +380,24 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Url
+  a9a8b5f4-4073-4f8b-a242-6f57d71e6404:
+    contentColumnType: text
+    fieldGroup: 85d8c0e7-6a43-4691-8d57-0ea516983de7
+    handle: videoSliderLead
+    instructions: 'Ein kurzer Text, der erklärt, was es mit den Videos im Karussell auf sich hat.'
+    name: Video-Karussell-Lead
+    searchable: true
+    settings:
+      availableTransforms: ''
+      availableVolumes: ''
+      cleanupHtml: '1'
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: Simple.json
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
   aac9b682-0ac3-4291-bc12-f31f73e6cad9:
     contentColumnType: text
     fieldGroup: 97dfc979-5ae8-418e-9249-5b4fdebd7c80
@@ -779,6 +812,72 @@ matrixBlockTypes:
     handle: link
     name: Link
     sortOrder: 1
+  ad97d8b1-1f47-4695-ad59-af58cd0fdae9:
+    field: 4e99f4f0-5ab6-49e7-b5b8-9f0b28c97b24
+    fieldLayouts:
+      268584da-6044-4427-8639-2e1957e7eecd:
+        tabs:
+          -
+            fields:
+              2c081cde-5e2c-475d-84bc-9c45064fad25:
+                required: false
+                sortOrder: 3
+              5fd7da2d-18bc-461e-b1f7-86c87ee4c7c7:
+                required: false
+                sortOrder: 2
+              7bc883e8-db09-425f-a3f5-b6a79588dd0b:
+                required: true
+                sortOrder: 1
+            name: Content
+            sortOrder: 1
+    fields:
+      2c081cde-5e2c-475d-84bc-9c45064fad25:
+        contentColumnType: text
+        fieldGroup: null
+        handle: VideoSliderText
+        instructions: 'Eine kurze Beschreibung des Videos'
+        name: 'Video-Karussell Legende'
+        searchable: true
+        settings:
+          charLimit: ''
+          code: ''
+          columnType: text
+          initialRows: '4'
+          multiline: ''
+          placeholder: ''
+        translationKeyFormat: null
+        translationMethod: site
+        type: craft\fields\PlainText
+      5fd7da2d-18bc-461e-b1f7-86c87ee4c7c7:
+        contentColumnType: text
+        fieldGroup: null
+        handle: videoSliderTitle
+        instructions: 'Titel des Videos'
+        name: 'Video-Karussell Titel'
+        searchable: true
+        settings:
+          charLimit: ''
+          code: ''
+          columnType: text
+          initialRows: '4'
+          multiline: ''
+          placeholder: ''
+        translationKeyFormat: null
+        translationMethod: site
+        type: craft\fields\PlainText
+      7bc883e8-db09-425f-a3f5-b6a79588dd0b:
+        contentColumnType: string
+        fieldGroup: null
+        handle: videoSliderVideo
+        instructions: 'URL eines Youtube-Videos'
+        name: 'Video-Karussell Video'
+        searchable: true
+        translationKeyFormat: null
+        translationMethod: none
+        type: dukt\videos\fields\Video
+    handle: videoSliderEntry
+    name: Video-Karussell-Eintraege
+    sortOrder: 1
 plugins:
   redactor:
     edition: standard
@@ -798,14 +897,14 @@ plugins:
           clientSecret: 0uCV3T2WxPjmoee3_7h91Xra
       tokens:
         youtube:
-          accessToken: ya29.Gl0yB2T0EwpHNrhHPeXKEBWfb35xN5SvjRSimdD3qdydY1L9b8JmlEYLcqRAGTRGJAYACo6DDN87CcL3AlKlJdDnBu4XysvIZKxLFeOiroNVCRLQshtzR19dZMC3HKg
-          expires: 1561475424
+          accessToken: ya29.Gl03B7UNjyoZ-gcKL18IumJeDQ-_ccBNSXRDMDnef0ee-t2QwOF-U1P7zXPQcT0OxP9nYDK27NchjjalDGk-S5TbeghOMp4DRA8mnwb7yt4Ki2UZZzh-wqJIJYpq-ug
+          expires: 1561896281
           refreshToken: 1/h_aaH-zGnHYJCo5IJxtfkrdl09zaCcnwd20rF1paffZJ-qin2ZCXBzCqbn4gpn5A
           resourceOwnerId: null
           values:
             values:
-              id_token: eyJhbGciOiJSUzI1NiIsImtpZCI6IjExOGRmMjU0YjgzNzE4OWQxYmMyYmU5NjUwYTgyMTEyYzAwZGY1YTQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTU5MjQ2NDUyNTc5OTAyMzQ3NDYiLCJlbWFpbCI6ImJleW9uZHNpbmdpbmdjb21AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJwV3JkaFpfYzJRQ19WTkprN0JBeXR3IiwiaWF0IjoxNTYxNDcxODI0LCJleHAiOjE1NjE0NzU0MjR9.gwYEVZqenN2MmDP7QsUvZNtG5aP3pVNNfQxS__xT6yK5v5al-j_0Zt2hMEINE2kabWhD7dLlbxs_hlFYTHpp6KpKrMKX0FfM784kZrcj69iCZ52eCfPtDfNVEZ-MZzS4hmNCVirHVwIXGUGtTyTJD0CoCUn0Gx2CyfNgrGf48JsPbEYxD4vJqR1RiXt9bo8S6cJUAaoBp2gi29CNFyQ43DvGxvgcsu4rnL0WJmrabyTfi_YdmFxNQXIJzxmh4juxmaYbX_azYHmVk8mPr0CN-umuCIuSJBqTZATNgOOEXL4OBZ1khjsyW4wwJ9XgPkTnQszaelAYcCfvTUEjJMOR5A
-              scope: 'https://www.googleapis.com/auth/youtube https://www.googleapis.com/auth/youtube.readonly https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile'
+              id_token: eyJhbGciOiJSUzI1NiIsImtpZCI6IjExOGRmMjU0YjgzNzE4OWQxYmMyYmU5NjUwYTgyMTEyYzAwZGY1YTQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTU5MjQ2NDUyNTc5OTAyMzQ3NDYiLCJlbWFpbCI6ImJleW9uZHNpbmdpbmdjb21AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJsVlQtX2ViLV9JcVBPcVluazRsMkZRIiwiaWF0IjoxNTYxODkyNjgxLCJleHAiOjE1NjE4OTYyODF9.cREZ3Xo5X-IIptpumsrjvyTY_tQokZjkIqhd-VsTOR2tk3WVrYM3wzBvbHJRVdjH4exd_87E0jO0-ZxaC4bX1-Ed4lMY9Z0wMrwHFF59PEMRMaDnytPlYw4_HfSbteqFBqr_1tHK9F8y1m20ESEh6dU0YUY_RFM2IgihLJ0G5libOIUM69kMhraWIncnCCCdT5RmROxCjv6s6wrYVvqh7lSP2iYA5G6zBAy08ivnAESg8GWi3ZTml_kxzDX-xlTY4I7Cz_9cydwPU3qQyrFiGKFNcqTTg0875qbxbRx94BkKjXBLcGyLytEhMBaQGEubirNVLghccVMoqiNN_ZcoAg
+              scope: 'https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/youtube.readonly https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/youtube'
               token_type: Bearer
       videosPerPage: 30
 routes:
@@ -836,6 +935,13 @@ routes:
         - '*'
         - '[^\/]+'
     uriPattern: 'tradition.<any:[^\/]+>'
+  8012ab6e-16c9-435a-a5b0-c580a2619276:
+    siteUid: null
+    sortOrder: 13
+    template: music-production/index.twig
+    uriParts:
+      - music
+    uriPattern: music
   8ff3137c-1fbd-4d8a-86df-729b6301cc28:
     siteUid: null
     sortOrder: 1
@@ -983,10 +1089,16 @@ sections:
                   417b399c-4166-4897-a491-00dff2058bd5:
                     required: false
                     sortOrder: 1
+                  4e99f4f0-5ab6-49e7-b5b8-9f0b28c97b24:
+                    required: false
+                    sortOrder: 8
                   63060068-23fd-4091-9e13-96d982008822:
                     required: true
                     sortOrder: 6
                   72357970-aa0e-4ab8-bc96-4899cd33dd40:
+                    required: false
+                    sortOrder: 9
+                  a9a8b5f4-4073-4f8b-a242-6f57d71e6404:
                     required: false
                     sortOrder: 7
                   b729c087-ed9f-4371-8cf0-48e6ef2d9e6a:
@@ -1685,7 +1797,7 @@ siteGroups:
     name: 'Beyond Foundation'
 sites:
   802d4b06-1f71-4c60-8b00-c331a21b5134:
-    baseUrl: 'http://new.beyond-foundation.org/en'
+    baseUrl: 'http://beyond-foundation.org/en'
     handle: beyondFoundation
     hasUrls: true
     language: en
@@ -1724,4 +1836,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-06-25 17:59:33'
+dateApplied: '2019-06-30 14:05:42'

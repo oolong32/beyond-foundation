@@ -1,4 +1,4 @@
-dateModified: 1561637100
+dateModified: 1562021061
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -186,12 +186,12 @@ fields:
   4e99f4f0-5ab6-49e7-b5b8-9f0b28c97b24:
     contentColumnType: string
     fieldGroup: 85d8c0e7-6a43-4691-8d57-0ea516983de7
-    handle: videoKarusellEintrag
+    handle: videoSlider
     instructions: 'Mehrere Videos mit Text-Legende.'
-    name: Video-Karusell-Eintrag
+    name: Video-Karusell
     searchable: true
     settings:
-      contentTable: '{{%matrixcontent_videokaruselleintrag}}'
+      contentTable: '{{%matrixcontent_videoslider}}'
       localizeBlocks: ''
       maxBlocks: ''
       minBlocks: ''
@@ -820,13 +820,13 @@ matrixBlockTypes:
           -
             fields:
               2c081cde-5e2c-475d-84bc-9c45064fad25:
-                required: '0'
+                required: false
                 sortOrder: 3
               5fd7da2d-18bc-461e-b1f7-86c87ee4c7c7:
-                required: '0'
+                required: false
                 sortOrder: 2
               7bc883e8-db09-425f-a3f5-b6a79588dd0b:
-                required: '1'
+                required: true
                 sortOrder: 1
             name: Content
             sortOrder: 1
@@ -837,7 +837,7 @@ matrixBlockTypes:
         handle: VideoSliderText
         instructions: 'Eine kurze Beschreibung des Videos'
         name: 'Video-Karussell Legende'
-        searchable: '1'
+        searchable: true
         settings:
           charLimit: ''
           code: ''
@@ -854,7 +854,7 @@ matrixBlockTypes:
         handle: videoSliderTitle
         instructions: 'Titel des Videos'
         name: 'Video-Karussell Titel'
-        searchable: '1'
+        searchable: true
         settings:
           charLimit: ''
           code: ''
@@ -869,11 +869,11 @@ matrixBlockTypes:
         contentColumnType: string
         fieldGroup: null
         handle: videoSliderVideo
-        instructions: 'URL eines Youtube-Videos'
+        instructions: 'URL eines Youtube-Videos.'
         name: 'Video-Karussell Video'
-        searchable: '1'
+        searchable: true
         translationKeyFormat: null
-        translationMethod: none
+        translationMethod: site
         type: dukt\videos\fields\Video
     handle: videoSliderEntry
     name: Video-Karussell-Eintraege
@@ -893,18 +893,18 @@ plugins:
       enableCache: true
       oauthProviderOptions:
         youtube:
-          clientId: 345445948018-dit38vfsfjbd9k5r50tffb686p14rnsb.apps.googleusercontent.com
-          clientSecret: 0uCV3T2WxPjmoee3_7h91Xra
+          clientId: 345445948018-up7el80a8clpp3ure9mjitaipimgp3o7.apps.googleusercontent.com
+          clientSecret: '-wMGNor2RVhuiZN2kTTs-VY8'
       tokens:
         youtube:
-          accessToken: ya29.Gl00B6NSRZFEcmmfl_tn6EAaZRpr80Z4MUCbvesKsYvgxEh47ECXuqX_jbJBWtY5AcrlYy6Vqp4aRWKhztk-wox0vpmbfS1e29mZKtE4m4z9e9VK9LF3ltqb34XLVJY
-          expires: 1561632088
-          refreshToken: 1/h_aaH-zGnHYJCo5IJxtfkrdl09zaCcnwd20rF1paffZJ-qin2ZCXBzCqbn4gpn5A
+          accessToken: ya29.Glw5BzrrlLy2-_dORQUOBIG5rTj9I4PAjmw8Mmf7i9Mz7Cn-5VrsvsnDESLzDpUUkwXazSwSCiI8cVPLxvpaj8yVtKjJ2KXgrIFBZvW_CjPG9TkpjspAakzRCpNYhw
+          expires: 1562024661
+          refreshToken: 1/mVGZFEswkvV6-QEYwPRfe6bFgfc2D2KMpF5T01tv6jvlyjtG_YdyMgXlnou6kGIQ
           resourceOwnerId: null
           values:
             values:
-              id_token: eyJhbGciOiJSUzI1NiIsImtpZCI6IjExOGRmMjU0YjgzNzE4OWQxYmMyYmU5NjUwYTgyMTEyYzAwZGY1YTQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTU5MjQ2NDUyNTc5OTAyMzQ3NDYiLCJlbWFpbCI6ImJleW9uZHNpbmdpbmdjb21AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJWdGFYUjZqc2N2a3FXNm5uTUxQd3hRIiwiaWF0IjoxNTYxNjI4NDg4LCJleHAiOjE1NjE2MzIwODh9.UDvck4gZuBJiaxCCBTeNWCH12OynVzzcDN1UiEGuxjq1BVHYxAaAEJp5iS5tqwNxyG4jZZ-Usb6ClR67iduEAVx1aFIPTleg0VWPWv5PEyzgp8TwupbZ6ayH0bxuGHcfD7v1kZ9W8JOXKgqTXQY-oXHAYdwEOUdFA7Pr5nNgbjzLAxtfniY92SXN2QHbO8dIUB7JT2JOc_Wgj-n2EgE9iTzxH8GUdd3B1_jrX0tbWSKu1Wfyhdkxjmkow4XzeWejVOoXME7totCw69hSq1F7XB6oZzEHZ47nnNUJEQ8Ia2yQYJ2UzGUsHy-iSOM_-0JNTVT85GTwnIXmx62Xq_09Pw
-              scope: 'https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/youtube https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/youtube.readonly'
+              id_token: eyJhbGciOiJSUzI1NiIsImtpZCI6IjExOGRmMjU0YjgzNzE4OWQxYmMyYmU5NjUwYTgyMTEyYzAwZGY1YTQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzNDU0NDU5NDgwMTgtdXA3ZWw4MGE4Y2xwcDN1cmU5bWppdGFpcGltZ3AzbzcuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIzNDU0NDU5NDgwMTgtdXA3ZWw4MGE4Y2xwcDN1cmU5bWppdGFpcGltZ3AzbzcuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTU5MjQ2NDUyNTc5OTAyMzQ3NDYiLCJlbWFpbCI6ImJleW9uZHNpbmdpbmdjb21AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJGdUtpeFk4b0NPOFZTcHlpSUxFQ3lBIiwiaWF0IjoxNTYyMDIxMDYxLCJleHAiOjE1NjIwMjQ2NjF9.UdR1eqaBJj6eBQRY8fvzoNaipg9JfjYTIRURbIVxbF-u9RRQVSQeJIy5EchLHdT4dGDasZ0OWUk6Z1DL7FmGakM8VLaSI7XmRbEJDeg_0uiD0ujV0iWhGORwCqh10Bqbm8aPgc42U3WR0GthmWyBeFW6JvrwFkrGQ_3NDAwolKbIr5n85k3BAUlNom0vVoo0ZRB9si1JG8csKqz0tsOhNDGW_PPtNe3ZuDHEYIfe2K0vrfWZFj5uYu6O6nvFqIoSb3JZGOOqhy7yQrPvaPFqMmUD00DVfCzcFDDaiSu8OrLaP7CfRlvQmDQn-JYgl_2qLLJiBnrPI74IO2Fdo_4IBw
+              scope: 'https://www.googleapis.com/auth/userinfo.email openid https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/youtube https://www.googleapis.com/auth/youtube.readonly'
               token_type: Bearer
       videosPerPage: 30
 routes:
@@ -1797,7 +1797,7 @@ siteGroups:
     name: 'Beyond Foundation'
 sites:
   802d4b06-1f71-4c60-8b00-c331a21b5134:
-    baseUrl: 'http://new.beyond-foundation.org/en'
+    baseUrl: 'http://beyond-foundation.org/en'
     handle: beyondFoundation
     hasUrls: true
     language: en
@@ -1836,4 +1836,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-06-27 14:05:02'
+dateApplied: '2019-07-02 01:57:11'

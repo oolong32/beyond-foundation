@@ -1,4 +1,4 @@
-dateModified: 1561646480
+dateModified: 1562049337
 email:
   fromEmail: renner@belingthoenen.com
   fromName: 'Beyond Foundation'
@@ -869,11 +869,11 @@ matrixBlockTypes:
         contentColumnType: string
         fieldGroup: null
         handle: videoSliderVideo
-        instructions: 'URL eines Youtube-Videos'
+        instructions: 'URL eines Youtube-Videos.'
         name: 'Video-Karussell Video'
         searchable: true
         translationKeyFormat: null
-        translationMethod: none
+        translationMethod: site
         type: dukt\videos\fields\Video
     handle: videoSliderEntry
     name: Video-Karussell-Eintraege
@@ -893,18 +893,18 @@ plugins:
       enableCache: true
       oauthProviderOptions:
         youtube:
-          clientId: 345445948018-dit38vfsfjbd9k5r50tffb686p14rnsb.apps.googleusercontent.com
-          clientSecret: 0uCV3T2WxPjmoee3_7h91Xra
+          clientId: 345445948018-up7el80a8clpp3ure9mjitaipimgp3o7.apps.googleusercontent.com
+          clientSecret: '-wMGNor2RVhuiZN2kTTs-VY8'
       tokens:
         youtube:
-          accessToken: ya29.Gl00B4U5Ud4z5aRF9_tJU6Yu9CeFIIJOAjxD3pifZmZ6hOnbUqooXrNwIMMkle4vo_M46abeHA7fIFgtihsx_fOKCiU5HV9tDwPMR0WBsdi1uAoFUO8GNPvkCh2l3mI
-          expires: 1561648347
-          refreshToken: 1/h_aaH-zGnHYJCo5IJxtfkrdl09zaCcnwd20rF1paffZJ-qin2ZCXBzCqbn4gpn5A
+          accessToken: ya29.Glw5BzV-i12pFM5G2JqkRu4hCzsBoUqpXqj0ZsMfjYoE5izsW9zT771g7odpmkZMh1QPVsmWMFayzOYf2dPlANDPzbxdzhj7MrQX3lU72pfWMJurrbTfPN9zkurv0Q
+          expires: 1562052937
+          refreshToken: 1/mVGZFEswkvV6-QEYwPRfe6bFgfc2D2KMpF5T01tv6jvlyjtG_YdyMgXlnou6kGIQ
           resourceOwnerId: null
           values:
             values:
-              id_token: eyJhbGciOiJSUzI1NiIsImtpZCI6IjExOGRmMjU0YjgzNzE4OWQxYmMyYmU5NjUwYTgyMTEyYzAwZGY1YTQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIzNDU0NDU5NDgwMTgtZGl0Mzh2ZnNmamJkOWs1cjUwdGZmYjY4NnAxNHJuc2IuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTU5MjQ2NDUyNTc5OTAyMzQ3NDYiLCJlbWFpbCI6ImJleW9uZHNpbmdpbmdjb21AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiI3a3c1bko2ZWVra2toMm1WckhfdHdnIiwiaWF0IjoxNTYxNjQ0NzQ3LCJleHAiOjE1NjE2NDgzNDd9.KFGtWJ6BXlWNKdXVB69F-8km5dyIDspit_NScgN2-HXQLs3ln3lcx0dNINfSaMAytqTff-OQjbhjHc3z39zQ2RRzJKt8iK-yoOg-iV7v5l4iyIoom1-IQaDCrOcnDVwee8E2HugJZ3Uru1KFNsXj8DnIQpw7Ghg3ESU_cnrBoXpzzN2stuXcMx94VgenfLzaGzyIMEKlUt4N3k8MbQY7HWn9LhH7CCmyRlFmoHwjta1w5zq51vrYlBTwJXki5ylyOsK-xiEQHy5zOnLbSeRnC6UjR2Qu1yDVeFGbfim2r1N02ObWW7BOSHlfIIObH9OOcG3I5hgzvMrZ0pODP4yH-g
-              scope: 'https://www.googleapis.com/auth/youtube.readonly https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/youtube'
+              id_token: eyJhbGciOiJSUzI1NiIsImtpZCI6ImFmZGU4MGViMWVkZjlmM2JmNDQ4NmRkODc3YzM0YmE0NmFmYmJhMWYiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzNDU0NDU5NDgwMTgtdXA3ZWw4MGE4Y2xwcDN1cmU5bWppdGFpcGltZ3AzbzcuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIzNDU0NDU5NDgwMTgtdXA3ZWw4MGE4Y2xwcDN1cmU5bWppdGFpcGltZ3AzbzcuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTU5MjQ2NDUyNTc5OTAyMzQ3NDYiLCJlbWFpbCI6ImJleW9uZHNpbmdpbmdjb21AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJsS3NJenF2OExQLUJwY2NfbHR2Vk93IiwiaWF0IjoxNTYyMDQ5MzM3LCJleHAiOjE1NjIwNTI5Mzd9.dBaVaqKgySdUkZyyvIigfR60OFrGY88OW7NIN4nLOQRd-AbxFWplTdd5eJY9TTbylR6MqFTvYk4-eB4Gy9d595xD22uW78_43ewrqu94OpXW2cjF6dukL0pBg9WS2P0lODKWToOQUen3QB1EBj3z4NbPUHYWsWolfJhPV143_yTxVB9alf7-cbd5J8kCTAbPb_O5N8U8z4-73aAU_0ZpU0_jHBXqIInoE2MqOLsrhVPrv-G_XufF88dSdjE3zuT10ocoQZ7c3CYvOeQTuIIZE8b1uGHe4BdbTi_udqyBk7ohAh86RbAdA5yuH7nELEQgGKq2dnjQfbk69Ktwg546lg
+              scope: 'https://www.googleapis.com/auth/youtube.readonly https://www.googleapis.com/auth/youtube https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email openid'
               token_type: Bearer
       videosPerPage: 30
 routes:
@@ -1836,4 +1836,4 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: assets/uploads
-dateApplied: '2019-06-27 17:25:01'
+dateApplied: '2019-07-02 09:45:17'
