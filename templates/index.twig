@@ -22,14 +22,14 @@
     <div id="carousel">
     {% if entry.slideshowImages|length %}
       {% for slideshowImage in entry.slideshowImages %}
-      <img class="carousel-cell" src="{{ alias('@assetBasePath') }}/{{ slideshowImage.getUrl() }}" alt="">
+      <img class="carousel-cell" src="/{{ slideshowImage.getUrl() }}" alt="">
       {% endfor %}
     {% else %}
-      <img class="carousel-cell" src="{{ alias('@assetBasePath') }}/assets/_pic/slideshow/test1.jpg" alt="">
-      <img class="carousel-cell" src="{{ alias('@assetBasePath') }}/assets/_pic/slideshow/test2.jpg" alt="">
-      <img class="carousel-cell" src="{{ alias('@assetBasePath') }}/assets/_pic/slideshow/test3.jpg" alt="">
-      <img class="carousel-cell" src="{{ alias('@assetBasePath') }}/assets/_pic/slideshow/test4.jpg" alt="">
-      <img class="carousel-cell" src="{{ alias('@assetBasePath') }}/assets/_pic/slideshow/test5.jpg" alt="">
+      <img class="carousel-cell" src="/assets/_pic/slideshow/test1.jpg" alt="">
+      <img class="carousel-cell" src="/assets/_pic/slideshow/test2.jpg" alt="">
+      <img class="carousel-cell" src="/assets/_pic/slideshow/test3.jpg" alt="">
+      <img class="carousel-cell" src="/assets/_pic/slideshow/test4.jpg" alt="">
+      <img class="carousel-cell" src="/assets/_pic/slideshow/test5.jpg" alt="">
     {% endif %}
 
     </div>
@@ -37,19 +37,19 @@
     <div id="mobile-carousel">
       {% if entry.slideshowImagesMobile|length %}
       {% for slideshowImageMobile in entry.slideshowImagesMobile %}
-      <img class="carousel-cell" src="{{ alias('@assetBasePath') }}/{{ slideshowImageMobile.getUrl() }}" alt="">
+      <img class="carousel-cell" src="/{{ slideshowImageMobile.getUrl() }}" alt="">
       {% endfor %}
     {% else %}
-      <img class="carousel-cell" src="{{ alias('@assetBasePath') }}/assets/_pic/slideshow/test1.jpg" alt="">
-      <img class="carousel-cell" src="{{ alias('@assetBasePath') }}/assets/_pic/slideshow/test2.jpg" alt="">
-      <img class="carousel-cell" src="{{ alias('@assetBasePath') }}/assets/_pic/slideshow/test3.jpg" alt="">
-      <img class="carousel-cell" src="{{ alias('@assetBasePath') }}/assets/_pic/slideshow/test4.jpg" alt="">
-      <img class="carousel-cell" src="{{ alias('@assetBasePath') }}/assets/_pic/slideshow/test5.jpg" alt="">
+      <img class="carousel-cell" src="/assets/_pic/slideshow/test1.jpg" alt="">
+      <img class="carousel-cell" src="/assets/_pic/slideshow/test2.jpg" alt="">
+      <img class="carousel-cell" src="/assets/_pic/slideshow/test3.jpg" alt="">
+      <img class="carousel-cell" src="/assets/_pic/slideshow/test4.jpg" alt="">
+      <img class="carousel-cell" src="/assets/_pic/slideshow/test5.jpg" alt="">
     {% endif %}
     </div>
 
-    <script src="{{ alias('@assetBasePath') }}/assets/js/flickity.js"></script>
-    <script src="{{ alias('@assetBasePath') }}/assets/js/flickity-fade.js"></script>
+    <script src="/assets/js/flickity.js"></script>
+    <script src="/assets/js/flickity-fade.js"></script>
     <script>
       console.log('I & I is at {{ slug }}, what' );
 
