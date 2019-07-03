@@ -24,6 +24,20 @@
         <h3>{{ entry.leadTitle }}</h3>
         {{ entry.lead }}
       </section> <!-- end row -->
+
+      {# hier video rein … #}
+      
+      {% if entry.video|length %}
+      <section class="single-col">
+        {% set video = entry.video %}
+        <div class="video-container">
+        {{  video.getEmbed() }}
+        </div>
+        {% if entry.shortDescription|length %}
+        <p class="video-caption full-width">{{ entry.shortDescription }}</p>
+        {% endif %}
+      </section>
+      {% endif %}
       
       {% for production in productions %}
       
