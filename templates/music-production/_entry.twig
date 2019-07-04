@@ -180,7 +180,6 @@
 
     {% endif %}
 
-    {# fold this while i work on the video slider {{{ #}
     <!-- Start Artists -->
     {% if entry.artists|length %}
 
@@ -205,6 +204,32 @@
             {% set niceUrl = artist.artistLink|split('/') %}
             <p class="artist-link"><a href="{{ artist.artistLink }}" target="_blank">{{ niceUrl[2] }}</a></p>
           {% endif %}
+
+          <!-- Start Artist’s Video Links -->
+
+          {% if artist.artistVideoLink|length > 0 %}
+            <div class="artist-video-links">
+              {% set artistVideoLinks = artist.artistVideoLink.all() %}
+              {% for videoLink in artistVideoLinks %}
+                <div class="artist-video-link">
+
+                  <a class="button-link" href="{{ videoLink.artistVideoLinkUrl }}" target="_blank">
+                    <img src="/assets/_pic/audio-play.svg" alt="" class="play-button">
+                  </a>
+
+                  <p class="text-link">
+                    <a href="{{ videoLink.artistVideoLinkUrl }}" target="_blank">
+                      {{ videoLink.artistVideoLinkText }}
+                    </a>
+                  </p>
+
+                </div>
+              {% endfor %}
+            </div>
+          {% endif %}
+
+          <!-- End Artist’s Video Links -->
+
         </div>
       {% endfor %}
 
@@ -268,8 +293,6 @@
   <footer>
     {% include 'includes/footer' %}
   </footer>
-
-  {# end temporary fold }}} #}
 
   {# accordion.js nur für sprungmarkenreparatur … #}
   <script src="/assets/js/jquery.min.js"></script>
