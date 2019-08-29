@@ -1174,7 +1174,7 @@ footer {
       main section.alternating-grid-image-large h3,
       main section.alternating-grid-text-large:nth-of-type(2n+1) h3,
       main section.alternating-grid-image-large:nth-of-type(2n+1) h3 {
-        margin-bottom: 0.125rem; }
+        margin-bottom: 0.5rem; }
       main section h3.encouragement-subtitle,
       main section.single-col h3.encouragement-subtitle,
       main section.alternating-grid-text-large h3.encouragement-subtitle,
