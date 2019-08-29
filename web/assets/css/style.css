@@ -607,7 +607,8 @@ main {
     main section.single-col .video-container {
       grid-column: 1/-1;
       position: relative;
-      padding-bottom: 56.25%; }
+      padding-bottom: 56.25%;
+      margin-bottom: 0.5rem; }
       main section.single-col .video-container iframe {
         position: absolute;
         top: 0;
