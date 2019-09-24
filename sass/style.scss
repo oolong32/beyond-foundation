@@ -458,6 +458,7 @@ a.social-media-link:hover svg path { fill: $gold-hover; }
 
 .igroove img,
 .cede img,
+.deezer img,
 .exlibris img {
   width: 50px;
   margin: auto;
@@ -473,17 +474,22 @@ a.social-media-link:hover svg path { fill: $gold-hover; }
   transform: translateY(-7px) scale(1.1);
 }
 
-.itunes,
+.deezer img {
+  width: 90px;
+  margin: auto;
+  transform: translateY(-8px);
+}
 .amazon,
-.googleplay,
-.spotify,
-.igroove,
-.amazon,
-.exlibris,
 .cede,
+.deezer,
+.exlibris,
 .facebook,
-.soundcloud,
+.googleplay,
+.igroove,
 .instagram,
+.itunes,
+.soundcloud,
+.spotify,
 .youtube {
   // …
 }

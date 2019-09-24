@@ -333,6 +333,7 @@ a.social-media-link:hover svg path {
 /* Share, Listen, Download Buttons {{{2 */
 .igroove img,
 .cede img,
+.deezer img,
 .exlibris img {
   width: 50px;
   margin: auto; }
@@ -345,6 +346,11 @@ a.social-media-link:hover svg path {
 
 .igroove img {
   transform: translateY(-7px) scale(1.1); }
+
+.deezer img {
+  width: 90px;
+  margin: auto;
+  transform: translateY(-8px); }
 
 /* End Share, Listen, Download Buttons }}}2 */
 /* End Buttons }}}1 */

@@ -76,8 +76,7 @@
               </div>
             </a>
           {% endif %}
-{#
-          {% if entry.DeezerSmsText|length %}
+          {% if entry.deezerLink|length %}
             <a href="{{ entry.deezerLink }}" target="_blank">
               <div class="deezer">
                 <img src="/assets/_pic/third-party-icons/Deezer_Logo_bw.svg" alt="">
@@ -85,7 +84,6 @@
               </div>
             </a>
           {% endif %}
-#}
           {% if entry.iGrooveLink|length %}
             <a href="{{ entry.iGrooveLink }}" target="_blank">
               <div class="igroove">
